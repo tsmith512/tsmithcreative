@@ -25,4 +25,46 @@ _Wait, is this the same thing as patch mode?_ If you're using patch mode, you're
 already my kinda crazy, but this is so much cooler. Patch mode is a component of
 interactive mode, and I'll explain both.
 
+So this is a thing I have in front of me:
+
+```
+[git:txe:home-page-settings+?] taylor@webchef2:~/www/txe/sites/all/modules/features$ git status
+# On branch home-page-settings
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   ../custom/txex/txex.install
+#       modified:   txex_benefit_content/txex_benefit_content.module.inc
+#       modified:   txex_home_page/txex_home_page.module
+#       modified:   txex_home_page/txex_home_page.pages_default.inc
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       txex_home_page/plugins/
+#       txex_home_page/txex_home_page.module.inc
+no changes added to commit (use "git add" and/or "git commit -a")
+[git:txe:home-page-settings+?] taylor@webchef2:~/www/txe/sites/all/modules/features$
+```
+
+In short, we've got new files, changes in Features code on two features modules,
+changes to module code... All because I banged out something I'm proud of in one
+uninterrupted hour.
+
+Let's break this down:
+
+```
+[git:txe:home-page-settings+?] taylor@webchef2:~/www/txe/sites/all/modules/features$ git add -i
+           staged     unstaged path
+  1:    unchanged        +7/-0 sites/all/modules/custom/txex/txex.install
+  2:    unchanged        +1/-0 sites/all/modules/features/txex_benefit_content/txex_benefit_content.module.inc
+  3:    unchanged        +1/-0 sites/all/modules/features/txex_home_page/txex_home_page.module
+  4:    unchanged       +9/-16 sites/all/modules/features/txex_home_page/txex_home_page.pages_default.inc
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now>
+```
 --------------------------------------------------------------------------------
