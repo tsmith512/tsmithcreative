@@ -1,5 +1,11 @@
 # Git Tips from TSmith
 
+## Staying oriented: Version control information on your command prompt
+
+Lorem ipsum
+
+--------------------------------------------------------------------------------
+
 ## Good commits make a clean history: Commit building with interactive adding
 
 My home is a cluttered place. (Though I insist: at least I will not permit a
@@ -18,3 +24,5 @@ break down a dirty working tree into small, neat, well-documented commits.**
 _Wait, is this the same thing as patch mode?_ If you're using patch mode, you're
 already my kinda crazy, but this is so much cooler. Patch mode is a component of
 interactive mode, and I'll explain both.
+
+--------------------------------------------------------------------------------
