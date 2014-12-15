@@ -12,9 +12,11 @@ But why define a whole "content type" if you're only going to have one?
 
 **[[ CARIS: Is there a generally accepted definition for content type? ]]**
 
-Using a combination of Panels and custom administration forms, it is possible to
-create extremely flexible home page experiences that can even respond to
-context.
+Most of the time, it's an attempt to create a home page that is different from
+any other type of content on the site, but which the site administrators can
+edit using familiar tools. Using a combination of Panels and custom
+administration forms, it is possible to create extremely flexible home page
+functionality that is still easy to edit.
 
 ## Using Panels for the home page
 
