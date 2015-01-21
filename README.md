@@ -110,6 +110,16 @@ returns to normal as they learn to cooperate in new ways.
   - It feels weird and deeply silly at first, stick with it and it'll become
     second nature.
 
+## Promote Travel
+
+Over time, your team will get better at working remotely and it will be a
+freeing, empowering observation. But face-to-face time is still important.
+Encourage your team to:
+
+- _Meet on uncommon ground:_
+  - Send a mix of remote and on-site team members to events where everyone is a
+    guest
+
 [ZOOM]: http://zoom.us
 [HANG]: http://www.google.com/hangouts/
 [GTM]: http://www.gotomeeting.com/online/customer
