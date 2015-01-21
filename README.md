@@ -5,28 +5,29 @@ year, working primarily in-town and on-site. And I needed a change of scenery.
 We had hired our first full-time remote employee over the summer, so I asked
 if I would be allowed to go remote.
 
-That was 2013, this is 2015. Now, I doubt this would even be a major question
-at 4K, thankfully. But at the time, it was scary. Would a personal request to
-skip town end up trashing me professionally? TL;DR: Nope. And I learned a few
-things about working with people along the way.
+That was 2013, this is 2015. Now, I doubt this would even be a major question at
+4K, thankfully. But at the time, it was intimating. Would a personal request to
+skip town end up trashing me professionally? As it happened: not at all. And I
+learned a few things about working with people along the way.
 
 ## Inclusion means equal suffering
 
-When one person is working remotely, it's easy to want to dial her in on the
+When one person is working remotely, it's easy to want to dial her in on that
 conference phone no one knows how to use and have everyone else circle around
-table. That's a horrible experience for everyone: she can't hear what's going
-on, everyone else forgets about her. Dump the Polycom, I don't care how great
-you think it is.
+the table. That's a horrible experience for everyone: she can't hear what's
+going on and everyone else forgets about her. Dump the Polycom, I don't care how
+great you think it is.
 
 Instead, whenever possible, put everyone on the same level: if one person is on
-video chat, everyone uses video chat. If one person has to use the phone, it's
-audio-only for everyone. If someone is stuck at the airport and can only use
-text-chat, then you all should try to _join him_ instead of _excluding him._
+video chat, everyone uses video chat. Even if you are in the same office! If one
+person has to use the phone, try going audio-only for everyone. If someone is
+stuck at the airport and can only use text-chat, see what happens when you
+_join him_ instead of _excluding him._
 
 When everyone works with the same limitations on their communications, they
 communicate more openly with everyone in the group instead of just those that
-have the most realistic presence. As teams get accustomed to this, efficiency
-returns to normal as they learn to cooperate in new ways.
+have the highest fidelity presence. As teams get accustomed to this, efficiency
+returns as they learn to cooperate in new ways.
 
 ### Ways to make this work:
 
@@ -69,6 +70,8 @@ returns to normal as they learn to cooperate in new ways.
 - **Audio Conferencing**
   - Use any of the above and have people disable their video.
   - Avoid sharing phones or conference lines, it gets really noisy.
+  - Many cell phones offer three-way calling, even if the hype on that feature
+    died a long time ago. For very small groups, it is viable.
 - **Text Chat Tips**
   - There are too many good tools here to list, but 4K uses [HipChat][HC] and
     sometimes [Slack][SL].
