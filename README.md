@@ -5,10 +5,10 @@ year, working primarily in-town and on-site. And I needed a change of scenery.
 We had hired our first full-time remote employee over the summer, so I asked
 if I would be allowed to go remote.
 
-That was 2013, this is 2015. Now, I doubt this would even be a major question at
-4K, thankfully. But at the time, it was intimating. Would a personal request to
-skip town end up trashing me professionally? As it happened: not at all. And I
-learned a few things about working with people along the way.
+Now, in 2015, I doubt this would even be a major question at 4K, thankfully. But
+at the time, it was intimating. Would a personal request to skip town end up
+trashing me professionally? As it happened: not at all. And I learned a few
+things about working with people along the way.
 
 ## Inclusion means equal suffering
 
@@ -47,7 +47,7 @@ returns as they learn to cooperate in new ways.
   - **[GoToMeeting][GTM]** wasn't everyone's favorite, but it had the best
     experience when needing to integrate with phone-only callers. It's more
     expensive than Zoom and moderately more difficult to initiate a meeting.
-- **Video Conferencing Tips**
+- **Video Conferencing Usage Strategies**
   - _Everyone sits at their own computer_
     if you haven't hit a participant or bandwidth limitation.
   - _If you need to reduce the meeting participants,_ have people:
@@ -59,11 +59,11 @@ returns as they learn to cooperate in new ways.
       will actually have a stronger presence than two or three people sharing
       a single machine. Watch the shift in participant dynamics.
   - _Everyone must wear a headset_
-    I hated this at first, but it reduces noise tremendously. Also, Apple had
-    the genius idea to put the webcam mic underneath the keyboard, so if anyone
-    on a Mac starts typing, it sounds like an earthquake.
+    I hated this at first, but it reduces noise and clarifies voices tremendously.
+    Also, Apple had the genius idea to put the webcam mic underneath the keyboard,
+    so if anyone on a Mac starts typing, it sounds like an earthquake.
     - I love my [Logitech Gaming Headset G330][LGH]
-    - Use the same Bluetooth headset you use with your phone
+    - I also use the same [Plantronics M165][PM] Bluetooth headset you use with your phone
     - Avoid dangling mics (mics that are on the headphone cable), everyone can
       hear every movement they make
   - _Encourage everyone to be disciplined with the mute function!_
@@ -142,11 +142,31 @@ Encourage your team to:
 - Know when to send your teammate a picture of a puppy and call a timeout.
 - Know when to apologize.
 
+## Be an overt goofball sometimes.
+
+Human interaction is satisfying to many people, and it is largely lost to remote
+employees. Combine that with a tense project and misery ensures. We combat this
+in a number of ways, to bring each other a smile. It's more important than most
+realize.
+
+- [GitHub Selfies][GHS]: drop an animated selfie in a pull request. Our Oakland
+  resident Jon Peck wrote a great post explaining this,
+  ["Bringing smiles to pull requests with GitHub selfies"][GHSP].
+  - ![1](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f724353595764622e676966.gif)
+  - ![2](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f613748747632492e676966.gif)
+  - ![3](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f375545666b44732e676966.gif)
+  - ![4](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f4947644769746e2e676966.gif)
+  - ![5](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f39766364446e582e676966.gif)
+  - ![6](http://gifs.tsmith512.com/images/7AFheqA.gif)
+
 [ZOOM]: http://zoom.us
 [HANG]: http://www.google.com/hangouts/
 [GTM]: http://www.gotomeeting.com/online/customer
-[LGH]: http://www.amazon.com/dp/B002I3OZB2/ref=pe_385040_30332190_TE_M3T1_ST1_dp_3
+[LGH]: http://amzn.com/B002I3OZB2
+[PM]: http://amzn.com/B0093TSSH6
 [HC]: https://www.hipchat.com/
 [SL]: https://slack.com/
 [IFTTT]: https://ifttt.com/
 [Z]: https://zapier.com/
+[GHS]: http://blog.travisthieman.com/github-selfies/
+[GHSP]: http://fourword.fourkitchens.com/article/bringing-smiles-pull-requests-github-selfies
