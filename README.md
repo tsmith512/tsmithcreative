@@ -110,15 +110,34 @@ returns to normal as they learn to cooperate in new ways.
   - It feels weird and deeply silly at first, stick with it and it'll become
     second nature.
 
-## Promote Travel
+## Promote travel
 
 Over time, your team will get better at working remotely and it will be a
 freeing, empowering observation. But face-to-face time is still important.
 Encourage your team to:
 
 - _Meet on uncommon ground:_
-  - Send a mix of remote and on-site team members to events where everyone is a
-    guest
+  Send a mix of remote and on-site team members to events where everyone is a guest.
+- _Bring the troops home:_
+  Periodically, host all-hands-in-house days or weeks. It's refreshing,
+  surprisingly fun, and a great time to capitalize on strength in numbers to
+  power through a code sprint.
+- _You have friends everywhere:_
+  Go visit them, work together in their environments, and see a new town like a local.
+
+## "Be nice" becomes "Communicate empathetically"
+
+- Written communication isn't always _read_ how you would have _said_ it.
+- Be aware of the hearts and minds of your team. In person, it's easier to
+  know when someone has had a rough day.
+- Approach humor and sarcasm gently. When stress increases, avoid both, and
+  wait a while on the send button.
+- If there's a long back-and-forth discussion over email, text chat, or comments
+  in a tool, whether it starts to get heated or not: **change the channel.**
+  You have video chat, use it for diffusion.
+- Even more so than in person, negative emotions are supremely contagious.
+- Know when to send your teammate a picture of a puppy and call a timeout.
+- Know when to apologize.
 
 [ZOOM]: http://zoom.us
 [HANG]: http://www.google.com/hangouts/
