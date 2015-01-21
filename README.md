@@ -142,7 +142,7 @@ Encourage your team to:
 - Know when to send your teammate a picture of a puppy and call a timeout.
 - Know when to apologize.
 
-## Be an overt goofball sometimes.
+## Be a human always and an overt goofball frequently.
 
 Human interaction is satisfying to many people, and it is largely lost to remote
 employees. Combine that with a tense project and misery ensures. We combat this
@@ -158,6 +158,19 @@ realize.
   - ![4](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f39766364446e582e676966.gif)
   - ![5](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f4947644769746e2e676966.gif)
   - ![6](http://gifs.tsmith512.com/images/7AFheqA.gif)
+- Images in your emails: drop an animated gif into an email. Why say with words
+  what you can say like this:
+  - ![No words](http://s3-ec.buzzfed.com/static/enhanced/terminal05/2011/12/21/13/anigif_enhanced-buzz-29550-1324492807-8.gif)
+  - ![Facepalm](http://media.giphy.com/media/siFaJVXkUiJHO/giphy.gif)
+  - ![Kill it with fire](http://media.giphy.com/media/bcnw2S3Rpmi76/giphy.gif)
+  - ![Smoke it](http://media.giphy.com/media/zrjbToGsxj7yM/giphy.gif)
+  - ![Cigar](http://media.giphy.com/media/yotGnlbYMT0oE/giphy.gif)
+  - ![No sense](http://media.giphy.com/media/7jZs4epEzxCco/giphy.gif)
+  - ![Yay](http://media.giphy.com/media/XLdy7UyKmF8Jy/giphy.gif)
+
+_Apparently the lesson here is to use animated gifs like the 90s will live on forever._
+
+- Show off and talk about side projects and adventures.
 
 [ZOOM]: http://zoom.us
 [HANG]: http://www.google.com/hangouts/
