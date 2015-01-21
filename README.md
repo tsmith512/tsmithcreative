@@ -155,8 +155,8 @@ realize.
   - ![1](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f724353595764622e676966.gif)
   - ![2](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f613748747632492e676966.gif)
   - ![3](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f375545666b44732e676966.gif)
-  - ![4](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f4947644769746e2e676966.gif)
-  - ![5](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f39766364446e582e676966.gif)
+  - ![4](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f39766364446e582e676966.gif)
+  - ![5](http://gifs.tsmith512.com/images/687474703a2f2f692e696d6775722e636f6d2f4947644769746e2e676966.gif)
   - ![6](http://gifs.tsmith512.com/images/7AFheqA.gif)
 
 [ZOOM]: http://zoom.us
