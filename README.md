@@ -58,8 +58,8 @@ returns as they learn to cooperate in new ways.
       It's surprising, actually: remote participants with their own computers
       will actually have a stronger presence than two or three people sharing
       a single machine. Watch the shift in participant dynamics.
-  - _Everyone must wear a headset_
-    I hated this at first, but it reduces noise and clarifies voices tremendously.
+  - _Everyone must wear a headset,_
+    which I hated at first, but it reduces noise and clarifies voices tremendously.
     Also, Apple had the genius idea to put the webcam mic underneath the keyboard,
     so if anyone on a Mac starts typing, it sounds like an earthquake.
     - I love my [Logitech Gaming Headset G330][LGH]
