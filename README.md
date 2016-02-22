@@ -12,6 +12,6 @@
 [NTH]: 2014-12-nth-child-math/README.md
 [SG]: 2014-06-scripting-gmail/README.md
 [PORT]: 2013-12-drupal-7-portfolio-experience/README.md
-[IKEA]: 2013-11-idea-raspberry-pi-light/README.md
+[IKEA]: 2013-11-ikea-raspberry-pi-light/README.md
 [TPL]: 2013-08-panels-page-tpl/README.md
 [PMD]: 2013-08-pantheon-multidev/README.md
