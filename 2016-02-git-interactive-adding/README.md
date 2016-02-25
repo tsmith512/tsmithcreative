@@ -20,7 +20,25 @@ interactive mode, and I'll explain both.
 **Patch Mode:** `git add -p` asks if you want to add, skip, or edit each
 individual hunk (a piece in a diff), in order:
 
-[ADD SCREENCAP OF PATCH MODE]
+![Patch Mode](images/patch-mode.gif)
+
+After selecting or rejecting individual hunks, I've built this staging area,
+which would only commit the differences I had selected:
+
+![Staging Area](images/staging-area.gif)
+
+Patch adding is great if:
+
+- You don't have too many modified files
+- Everything is modified (patching doesn't pick up untracked files)
+- All the differences are worth reading/seeing (Features exports, SVGs, compiled
+  CSS or JS assets, etc. usually aren't).
+
+You should try interactive adding if you find yourself wishing you could:
+
+- Pick the Sass changes, but just add all Field Instance or Panels exported settings
+- Pick up changed and untracked Sass partials
+- Pick up only some untracked files, but leave out others
 
 **Interactive Mode:** `git add -i` lists the status of your work tree by file:
 new files or directories, changed files, and deleted files and asks how you want
