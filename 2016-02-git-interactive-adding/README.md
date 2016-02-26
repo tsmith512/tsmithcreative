@@ -1,21 +1,24 @@
 # Cleaner History with Interactive Commit Building in Git
 
-My home is a cluttered place. (Though I insist: at least I will not permit a
-mess which can grow its own messes.) So my quest for tidiness takes other, more
-obscure forms: maintenance of a pristine Git repository history.
+My home is a cluttered place. So my quest for tidiness takes other, more
+obscure forms: maintenance of a _pristine_ Git repository history that explains
+why and how the project took shape as it did.
 
-Sometimes when building a large feature, it's easy to get in the weeds and write
-a ton of code. This happens to me a lot when I'm making design tweaks all over
-the place, or building new functionality in Drupal using Features, or working
-quickly in an caffeinated state. Committing it all at once is quick, but leaves
-other developers (and sometimes myself...) unable to follow my train of thought.
+Sometimes when building a feature, making theming adjustments, or trying to meet
+a deadline, it's easy to get in the weeds and write a ton of code. This happens
+to me a lot when I'm running through a client's change order, tweaking the frontend
+as new features take shape, or building new functionality in Drupal 7
+using Features. Committing it all at once is quick, but leaves other developers
+(and sometimes myself...) unable to follow my train of thought. Being able to
+tell a story with code comments and history is key to maintainability.
 
-**Git's Interactive mode for adding hunks to the staging area makes it easy to
-break down a dirty working tree into small well-documented commits.**
+**Git's Interactive mode for selecting files and diff hunks to the staging area
+makes it easy to break down a dirty working tree into small, well-documented
+commits.**
 
 _Wait, is this the same thing as patch mode?_ If you're using patch mode, you're
-already my kinda crazy, but this is so much cooler. Patch mode is a component of
-interactive mode, and I'll explain both.
+already my kinda crazy. Patch mode is a component of interactive mode, and I'll
+explain both.
 
 **Patch Mode:** `git add -p` asks if you want to add, skip, or edit each
 individual hunk (a piece in a diff), in order:
@@ -31,14 +34,15 @@ Patch adding is great if:
 
 - You don't have too many modified files
 - Everything is modified (patching doesn't pick up untracked files)
-- All the differences are worth reading/seeing (Features exports, SVGs, compiled
-  CSS or JS assets, etc. usually aren't).
+- All the differences are worth reading: I believe in running a `git diff`
+  before committing to double-check, but Features module exports, SVGs, compiled
+  CSS or JS assets, or updated core/contrib files usually aren't worth reading.
 
-You should try interactive adding if you find yourself wishing you could:
+You should try interactive adding if you find yourself wishing you could patch
+in some changes, but easily stage other entire files or untracked files, like:
 
 - Pick the Sass changes, but just add all Field Instance or Panels exported settings
-- Pick up changed and untracked Sass partials
-- Pick up only some untracked files, but leave out others
+- Pick up untracked Sass partials and patch in the line that includes them
 
 **Interactive Mode:** `git add -i` lists the status of your work tree by file:
 new files or directories, changed files, and deleted files and asks how you want
