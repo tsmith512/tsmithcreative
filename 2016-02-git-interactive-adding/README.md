@@ -30,6 +30,9 @@ adjustment. I want only those two lines in this commit, and nothing else.
 
 ![Patch Mode](images/patch-mode.gif)
 
+_\* Don't include compiled CSS/minified assets if you can avoid it, this repo
+includes it because of build process reasons._
+
 After selecting or rejecting individual hunks, I've built this staging area,
 which would only commit the differences I had selected in the Feature module.
 I'll repeat this process for the rest of my unstaged changes.
@@ -95,12 +98,10 @@ to operate on; hitting enter without specifying another file continues to the
 next step. So I marked to `update` both of the Features exports.
 
 Tackling the frontend changes, I'd like to `patch` in the Sass changes, but just
-`update` the compiled CSS output\*. As an example, I'll stage the menu changes but
+`update` the compiled CSS output. As an example, I'll stage the menu changes but
 not fix my colleague's whitespace blunder at the end of the file:
 
 ![Interactive Mode with a Patch and an Update](images/interactive-mode-patch-and-update.gif)
-
-_\* Don't include compiled CSS/minified assets if you can avoid it._
 
 Your options at the prompt are:
 
