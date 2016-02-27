@@ -21,22 +21,54 @@ already my kinda crazy. Patch mode is a component of interactive mode, and I'll
 explain both.
 
 **Patch Mode:** `git add -p` asks if you want to add, skip, or edit each
-individual hunk (a piece in a diff), in order:
+individual hunk (a piece in a diff), in order. In a pre-launch rush, I made a
+lot of quick theming adjustments. Once the frontend looked like I wanted it, I
+wanted to split up the commits sensibly. I'll start with, the field instance
+adjustment. I want only those two lines in this commit, and nothing else.
 
 ![Patch Mode](images/patch-mode.gif)
 
 After selecting or rejecting individual hunks, I've built this staging area,
-which would only commit the differences I had selected:
+which would only commit the differences I had selected in the Feature module.
+I'll repeat this process for the rest of my unstaged changes.
 
-![Staging Area](images/staging-area.gif)
+At each hunk, git asked me what to do, here are those options:
+
+```
+Stage this hunk [y,n,q,a,d,/,j,J,g,e,?]? ?
+y - stage this hunk
+n - do not stage this hunk
+q - quit; do not stage this hunk nor any of the remaining ones
+a - stage this hunk and all later hunks in the file
+d - do not stage this hunk nor any of the later hunks in the file
+g - select a hunk to go to
+/ - search for a hunk matching the given regex
+j - leave this hunk undecided, see next undecided hunk
+J - leave this hunk undecided, see next hunk
+k - leave this hunk undecided, see previous undecided hunk
+K - leave this hunk undecided, see previous hunk
+s - split the current hunk into smaller hunks
+e - manually edit the current hunk
+? - print help
+```
+
+I usually just use `y` and `n`. Using `q` would let me skip the other files once
+I knew I'd picked up the changes I was looking for. Using `s` is great if git
+groups up nearby unrelated changes into a single hunk. Using `e` is fun if you
+want to record multiple changes to a single line or adjacent lines (which `s`
+won't split), but keep in mind you'll be manually editing a diff and it needs to
+apply cleanly.
 
 Patch adding is great if:
 
 - You don't have too many modified files
-- Everything is modified (patching doesn't pick up untracked files)
+- You're committing changes, not new files (patch adding doesn't show you
+  untracked files, the way `git diff` doesn't)
 - All the differences are worth reading: I believe in running a `git diff`
   before committing to double-check, but Features module exports, SVGs, compiled
   CSS or JS assets, or updated core/contrib files usually aren't worth reading.
+  In my example, you saw a diff of a minified CSS file we unfortunately had to
+  track; I don't want to read that.
 
 You should try interactive adding if you find yourself wishing you could patch
 in some changes, but easily stage other entire files or untracked files, like:
