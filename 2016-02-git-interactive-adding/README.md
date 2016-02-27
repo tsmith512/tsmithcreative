@@ -1,20 +1,20 @@
 # Cleaner History with Interactive Commit Building in Git
 
-My home is a cluttered place. So my quest for tidiness takes other, more
+My home is a cluttered place, so my quest for tidiness takes other, more
 obscure forms: maintenance of a _pristine_ Git repository history that explains
 why and how the project took shape as it did.
 
 Sometimes when building a feature, making theming adjustments, or trying to meet
 a deadline, it's easy to get in the weeds and write a ton of code. This happens
-to me a lot when I'm running through a client's change order, tweaking the frontend
+to me a lot when I'm handling a client's change order, tweaking the frontend
 as new features take shape, or building new functionality in Drupal 7
 using Features. Committing it all at once is quick, but leaves other developers
 (and sometimes myself...) unable to follow my train of thought. Being able to
 tell a story with code comments and history is key to maintainability.
 
-**Git's Interactive mode for selecting files and diff hunks to the staging area
-makes it easy to break down a dirty working tree into small, well-documented
-commits.**
+**Git's Interactive mode for selecting files and diff hunks to add to the
+staging area makes it easy to break down a dirty working tree into small,
+well-documented commits.**
 
 _Wait, is this the same thing as patch mode?_ If you're using patch mode, you're
 already my kinda crazy. Patch mode is a component of interactive mode, and I'll
@@ -25,7 +25,7 @@ explain both.
 Patch Mode: `git add -p` asks if you want to add, skip, or edit each
 individual hunk (a piece in a diff), in order. In a pre-launch rush, I made a
 lot of quick theming adjustments. Once the frontend looked like I wanted it, I
-wanted to split up the commits sensibly. I'll start with, the field instance
+wanted to split up the commits sensibly. I'll start with the field instance
 adjustment. I want only those two lines in this commit, and nothing else.
 
 ![Patch Mode](images/patch-mode.gif)
@@ -122,16 +122,16 @@ You can enter the number or the highlighted letter to activate that mode:
 
 - You've seen update and patch.
 - `status` repeats the status list: useful between operations
-- `diff` will let you review diffs of what you have staged: like a file-by-file
-  `git diff --cached`
-- `add untracked` allows easy staging of new files: useful in combination with
-  `patch` when adding and importing new Sass partials, for example.
 - `revert` behaves differently here than if you enter `git revert`: it'll
   "unstage" a file back to HEAD, but _it will leave your changes in the working tree._
+- `add untracked` allows easy staging of new files: useful in combination with
+  `patch` when adding and importing new Sass partials, for example.
+- `diff` will let you review diffs of what you have staged: like a file-by-file
+  `git diff --cached`
 
 ## TL;DR:
 
 Building narrowly focused commits using patch (`git add -p`) or interactive
 (`git add -i`) adding allows you to build a sensible code history that will
-help your teammates and future maintainers understand your process or merge
-your code easily.
+help your teammates and future maintainers understand your thought process.
+Also, breaking up lots of work into multiple commits makes merging easier.
