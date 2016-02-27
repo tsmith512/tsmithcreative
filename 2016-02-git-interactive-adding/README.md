@@ -95,10 +95,12 @@ to operate on; hitting enter without specifying another file continues to the
 next step. So I marked to `update` both of the Features exports.
 
 Tackling the frontend changes, I'd like to `patch` in the Sass changes, but just
-`update` the compiled CSS output. As an example, I'll stage the menu changes but
+`update` the compiled CSS output\*. As an example, I'll stage the menu changes but
 not fix my colleague's whitespace blunder at the end of the file:
 
 ![Interactive Mode with a Patch and an Update](images/interactive-mode-patch-and-update.gif)
+
+_\* Don't include compiled CSS/minified assets if you can avoid it._
 
 Your options at the prompt are:
 
@@ -126,64 +128,9 @@ You can enter the number or the highlighted letter to activate that mode:
 - `revert` behaves differently here than if you enter `git revert`: it'll
   "unstage" a file back to HEAD, but _it will leave your changes in the working tree._
 
-You can which files to add or patch so you don't have to patch
-through something like Features output or preprocessed/minified CSS/JS output\*
-which is a pain to read. _(\* Don't include that in your repo if you can avoid it.)_
+## TL;DR:
 
-Here's a mess:
-
-```
-[git:txe:home-page-settings+?] taylor@webchef2:~/www/txe/sites/all/modules/features$ git status
-# On branch home-page-settings
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#       modified:   ../custom/txex/txex.install
-#       modified:   txex_benefit_content/txex_benefit_content.module.inc
-#       modified:   txex_home_page/txex_home_page.module
-#       modified:   txex_home_page/txex_home_page.pages_default.inc
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#       txex_home_page/plugins/
-#       txex_home_page/txex_home_page.module.inc
-no changes added to commit (use "git add" and/or "git commit -a")
-[git:txe:home-page-settings+?] taylor@webchef2:~/www/txe/sites/all/modules/features$
-```
-
-In short, I've got new files, changes in Features code on two features modules,
-changes to module code... All because I banged out something I'm proud of in one
-uninterrupted hour.
-
-Kicking off git's interactive staging mode shows me the tree again and offers
-some options:
-
-```
-[git:txe:home-page-settings+?] taylor@webchef2:~/www/txe/sites/all/modules/features$ git add -i
-           staged     unstaged path
-  1:    unchanged        +7/-0 sites/all/modules/custom/txex/txex.install
-  2:    unchanged        +1/-0 sites/all/modules/features/txex_benefit_content/txex_benefit_content.module.inc
-  3:    unchanged        +1/-0 sites/all/modules/features/txex_home_page/txex_home_page.module
-  4:    unchanged       +9/-16 sites/all/modules/features/txex_home_page/txex_home_page.pages_default.inc
-
-*** Commands ***
-  1: status       2: update       3: revert       4: add untracked
-  5: patch        6: diff         7: quit         8: help
-What now>
-```
-
-Press [WHAT] to pick files to _patch,_ then hit enter twice to patch just those:
-
-[SCREENCAP OF FILES TO PATCH, THEN PATCH THEM]
-
-Press [WHAT] to pick files to _add,_ (stage completely) then hit enter twice to
-add them:
-
-[SCREENCAP OF FILES TO ADD, THEN ADD THEM]
-
-Build narrowly focused commits this way, commit them, then repeat until you've
-committed your whole working tree. Now you've built a sensible story with your
-code history that will help your teammates/future maintainers understand
-your process or merge your code easily.
+Building narrowly focused commits using patch (`git add -p`) or interactive
+(`git add -i`) adding allows you to build a sensible code history that will
+help your teammates and future maintainers understand your process or merge
+your code easily.
