@@ -94,6 +94,38 @@ of these modes, the next prompt asks you to pick files by number that you want
 to operate on; hitting enter without specifying another file continues to the
 next step. So I marked to `update` both of the Features exports.
 
+Tackling the frontend changes, I'd like to `patch` in the Sass changes, but just
+`update` the compiled CSS output. As an example, I'll stage the menu changes but
+not fix my colleague's whitespace blunder at the end of the file:
+
+![Interactive Mode with a Patch and an Update](images/interactive-mode-patch-and-update.gif)
+
+Your options at the prompt are:
+
+```
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> h
+status        - show paths with changes
+update        - add working tree state to the staged set of changes
+revert        - revert staged set of changes back to the HEAD version
+patch         - pick hunks and update selectively
+diff          - view diff between HEAD and index
+add untracked - add contents of untracked files to the staged set of changes
+```
+
+You can enter the number or the highlighted letter to activate that mode:
+
+- You've seen update and patch.
+- `status` repeats the status list: useful between operations
+- `diff` will let you review diffs of what you have staged: like a file-by-file
+  `git diff --cached`
+- `add untracked` allows easy staging of new files: useful in combination with
+  `patch` when adding and importing new Sass partials, for example.
+- `revert` behaves differently here than if you enter `git revert`: it'll
+  "unstage" a file back to HEAD, but _it will leave your changes in the working tree._
+
 You can which files to add or patch so you don't have to patch
 through something like Features output or preprocessed/minified CSS/JS output\*
 which is a pain to read. _(\* Don't include that in your repo if you can avoid it.)_
