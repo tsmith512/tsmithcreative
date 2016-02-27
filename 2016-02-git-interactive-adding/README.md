@@ -20,7 +20,9 @@ _Wait, is this the same thing as patch mode?_ If you're using patch mode, you're
 already my kinda crazy. Patch mode is a component of interactive mode, and I'll
 explain both.
 
-**Patch Mode:** `git add -p` asks if you want to add, skip, or edit each
+## Patch Mode
+
+Patch Mode: `git add -p` asks if you want to add, skip, or edit each
 individual hunk (a piece in a diff), in order. In a pre-launch rush, I made a
 lot of quick theming adjustments. Once the frontend looked like I wanted it, I
 wanted to split up the commits sensibly. I'll start with, the field instance
@@ -76,9 +78,23 @@ in some changes, but easily stage other entire files or untracked files, like:
 - Pick the Sass changes, but just add all Field Instance or Panels exported settings
 - Pick up untracked Sass partials and patch in the line that includes them
 
-**Interactive Mode:** `git add -i` lists the status of your work tree by file:
-new files or directories, changed files, and deleted files and asks how you want
-to handle it all. You can which files to add or patch so you don't have to patch
+## Interactive Mode
+
+Interactive Mode: `git add -i` launches an interactive prompt, starting with the
+status of your work tree: new files or directories, changed files, and deleted
+files. Then it asks how you want to handle it all. Let's re-run my last commit
+using interactive mode; I'll just `update` the two Features export files, quit
+out of the prompt, and commit. No reading diffs, no messing with unrelated
+files.
+
+![Interactive Mode](images/interactive-mode-1.gif)
+
+The `update` mode just stages the entire file for each file you select. For any
+of these modes, the next prompt asks you to pick files by number that you want
+to operate on; hitting enter without specifying another file continues to the
+next step. So I marked to `update` both of the Features exports.
+
+You can which files to add or patch so you don't have to patch
 through something like Features output or preprocessed/minified CSS/JS output\*
 which is a pain to read. _(\* Don't include that in your repo if you can avoid it.)_
 
