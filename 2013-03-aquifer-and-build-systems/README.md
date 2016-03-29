@@ -4,12 +4,13 @@
 
 Build systems simplify the development process by leveraging a single tool to
 handle dependency management, automate tasks like testing, consolidate steps
-to compile/deploy the product, and [????].
+to compile/deploy the product, reduce repetitive steps, and simplify onboarding.
 
 Using a build system often leads to using an organized directory and file
 structure which can be reused across projects, reinforcing best practices,
 simplifying the process to ramp up new teammates, and making maintainable
-choices [_(StackOverflow by haylem)_][BBTSO].
+choices [_(StackOverflow by haylem)_][BBTSO]. It helps debugging across
+environments as well.
 
 While build systems have been in use in software projects for decades, they're
 newer for web projects. Web development used to be serving static assets (HTML,
