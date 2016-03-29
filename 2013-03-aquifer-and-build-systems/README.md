@@ -168,8 +168,6 @@ future, there will be dedicated Aquifer extensions for different testing
 frameworks or frontend toolchains, but using Run in the meantime reduces the
 number of manual steps.
 
-**MOAR**
-
 ## Using Aquifer for Your Projects
 
 ### How do I get started?
@@ -206,40 +204,10 @@ can generate this for you:
 
 Using a build system streamlines the development process, particularly across
 multiple developers working on a single project. By reducing errors in
-repetitive steps, keeping the code repository lean and well organized, ensuring
-high code quality, and providing a way to prevent database conflicts with the
-code, [Aquifer][AQ] has become a demonstrably valuable part of the Four Kitchens
-development process.
-
---------------------------------------------------------------------------------
-
-Resources:
-
-http://blog.codinghorror.com/the-f5-key-is-not-a-build-process/
-
-- How long does it take for you to get a new team member working productively on your project? If the answer is more than one day, you have a problem. Specifically, you don't have a proper build process in place.
-- A sane software development project has automatic daily builds, performed on a neutral build server. If your team is in the habit of producing those kind of daily builds, it's difficult to accumulate the deep technical debt enumerated in all those emails. If the build server can do it, so can your newly hired coworkers.
-  - Ramping up new folks
-
-http://programmers.stackexchange.com/questions/137329/convince-a-lone-developer-to-use-a-separate-build-tool-instead-of-the-ide-one-cl
-
-- simplifying the deployment process
-- If you're building a distributable locally that means that you have to manually deploy that distributable on your production system, and implies that you probably had to do a fair bit of manual configuration on the production system to get it ready for deployment
-  - (Not really applicable exactly but does speak to Features and Module dependencies)
-- [Not doing this] also allows the potential for any minor configuration differences between your production platform and your development environment to cause obscure, difficult to track down errors.
-  - This is a huge one
-- If you structure your build scripts correctly, then you really only have to pay the cost of writing them once, and can then reuse them almost verbatim across any number of projects. There's a lot to be said in favor of having a one-line build command that builds, configures, deploys, and runs the system automatically.
-  - Aquifer lint, aquifer git
-- testing, safe commits, easy deployments
-- This whole answer: http://programmers.stackexchange.com/a/137528
-- Then, I am sure your team is going to grow.. It is even more important to have automatic test-deploy abilities done.
-
-http://www.joelonsoftware.com/articles/fog0000000043.html
-
-- This is good but for this application it boils down to:
-  - Build in one step
-  - Reducing errors from manual processes
-    - PATCHES!
+repetitive steps, keeping the code repository lean and well organized,
+[enabling a one-step build][JTBC], ensuring high code quality, and providing a
+way to prevent database conflicts with the code, [Aquifer][AQ] has become a
+demonstrably valuable part of the Four Kitchens development process.
 
 [BBTSO]: http://programmers.stackexchange.com/a/137528
 [AQ]: http://aquifer.io/
@@ -257,3 +225,4 @@ http://www.joelonsoftware.com/articles/fog0000000043.html
 [NPMD]: https://github.com/mattgrill/NPM-Doctor
 [AQDS]: http://docs.aquifer.io/sections/directory-structure.html
 [AQG]: https://github.com/aquifer/aquifer-git
+[JTBC]: http://www.joelonsoftware.com/articles/fog0000000043.html
