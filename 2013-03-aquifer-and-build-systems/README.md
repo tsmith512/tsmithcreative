@@ -48,7 +48,7 @@ On my current project, I'm the Product Owner. This means that in addition to
 managing requirements, being the client's advocate to our internal teams and
 contractors, and planning releases, I am also partly the steward of the client's
 money. Anything that can be made "easier" or "faster" equates to more
-functionality for the money spent, and less billables overall.
+functionality for the money spent, and fewer billables overall.
 
 Aside from the technical benefits I outline below, having a build system
 generally, and using Aquifer specifically, has benefited this and other projects
