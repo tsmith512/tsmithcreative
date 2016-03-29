@@ -13,11 +13,11 @@ simplifying the process to ramp up new teammates, and making maintainable choice
 
 While build systems have been in use in software projects for decades, they're
 newer in the realm of web development. Web development used to be primarily
-static assets (HTML, CSS, JS, and images). From there, the industry started
-having the server execute pieces of the source files to adjust the output
-(SHTML, Perl, or PHP) to do things like add modification dates, include reused
-snippets, etc. But over the years, this dynamic content gave rise to full CMS
-based websites. The change may have happened gradually, but these really are
+serving static assets (HTML, CSS, JS, and images). From there, the industry
+started having the server execute pieces of the source files to adjust the
+output (SHTML, Perl, or PHP) to do things like add modification dates, include
+reused snippets, etc. But over the years, this dynamic content gave rise to full
+CMS based websites. The change may have happened gradually, but these really are
 full applications now. They should be managed as such, especially enterprise
 sites or sites with large or revolving development teams.
 
@@ -31,13 +31,13 @@ sites or sites with large or revolving development teams.
 > 
 > - [Aquifer.io][AQ]
 
-At Four Kitchens, we saw several pain points which boiled down to not having a
-build system, particularly around ramping teammates and external contractors on
-and off of projects quickly. We wanted to streamline this process, but
-discovered that in the Drupal world, there were few boilerplates or shell
-scripts that supported a [Drush make][DM] workflow, and none were
-cross-compatible. So [Patrick Coffey][PCGH] started the [Aquifer][AQ] project,
-supported by [many other Web Chefs][AQC].
+At Four Kitchens, we saw several pain points in developing and maintain large
+Drupal sites which boiled down to not having a build system, particularly around
+ramping teammates and external contractors on and off of projects quickly. We
+wanted to streamline this process, but discovered that in the Drupal world,
+there were few boilerplates or shell scripts that supported a [Drush make][DM]
+workflow, and none were cross-compatible. So [Patrick Coffey][PCGH] started the
+[Aquifer][AQ] project, supported by [many other Web Chefs][AQC].
 
 Aquifer is now running on all Drupal 7 and Drupal 8 new builds at Four Kitchens,
 supporting dozens on Web Chefs, contractors, and client-side developers.
