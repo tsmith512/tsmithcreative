@@ -3,23 +3,23 @@
 ## What is a build system?
 
 Build systems simplify the development process by leveraging a single tool to
-handle: dependency management, automate tasks like testing, consolidating steps
-to compile and deploy the product, and [????].
+handle dependency management, automate tasks like testing, consolidate steps
+to compile/deploy the product, and [????].
 
-Using a build system often involves using an organized directory and file
-structure which can be reused across projects, reinforcement of best practices,
-simplifying the process to ramp up new teammates, and making maintainable choices
-[_(StackOverflow by haylem)_][BBTSO].
+Using a build system often leads to using an organized directory and file
+structure which can be reused across projects, reinforcing best practices,
+simplifying the process to ramp up new teammates, and making maintainable
+choices [_(StackOverflow by haylem)_][BBTSO].
 
 While build systems have been in use in software projects for decades, they're
-newer in the realm of web development. Web development used to be primarily
-serving static assets (HTML, CSS, JS, and images). From there, the industry
-started having the server execute pieces of the source files to adjust the
-output (SHTML, Perl, or PHP) to do things like add modification dates, include
-reused snippets, etc. But over the years, this dynamic content gave rise to full
-CMS based websites. The change may have happened gradually, but these really are
-full applications now. They should be managed as such, especially enterprise
-sites or sites with large or revolving development teams.
+newer for web projects. Web development used to be serving static assets (HTML,
+CSS, JS, and images). From there, the industry started having the server execute
+pieces of the source files to adjust the output dynamically (SHTML, Perl, or
+PHP) to do things like add modification dates, include reusable snippets, etc.
+But over the years, this "dynamic content" gave rise to full CMS-based websites.
+The change may have happened gradually, but these really are full applications
+now. They should be managed as such, especially enterprise sites or sites with
+large/revolving development teams.
 
 ## We use Aquifer as a build system for Drupal.
 
@@ -33,11 +33,11 @@ sites or sites with large or revolving development teams.
 
 At Four Kitchens, we saw several pain points in developing and maintain large
 Drupal sites which boiled down to not having a build system, particularly around
-ramping teammates and external contractors on and off of projects quickly. We
-wanted to streamline this process, but discovered that in the Drupal world,
-there were few boilerplates or shell scripts that supported a [Drush make][DM]
-workflow, and none were cross-compatible. So [Patrick Coffey][PCGH] started the
-[Aquifer][AQ] project, supported by [many other Web Chefs][AQC].
+ramping up new developers on projects quickly. We wanted to streamline this
+process, but discovered that in the Drupal world, there are few boilerplates or
+shell scripts that supported a [Drush make][DM] workflow. None were
+cross-compatible. So [Patrick Coffey][PCGH] started the [Aquifer][AQ] project,
+supported by [many other Web Chefs][AQC].
 
 Aquifer is now running on all Drupal 7 and Drupal 8 new builds at Four Kitchens,
 supporting dozens on Web Chefs, contractors, and client-side developers.
@@ -45,21 +45,23 @@ supporting dozens on Web Chefs, contractors, and client-side developers.
 ## Business Value
 
 On my current project, I'm the Product Owner. This means that in addition to
-managing requirements, being the client's advocate to our internal teams and
-contractors, and planning releases, I am also partly the steward of the client's
-money. Anything that can be made "easier" or "faster" equates to more
-functionality for the money spent, and fewer billables overall.
+managing requirements, being the client's advocate, and planning releases, I am
+also the steward of the client's money. Anything that can be made "easier" or
+"faster" equates to more functionality for the money spent, and fewer billables
+overall.
 
-Aside from the technical benefits I outline below, having a build system
-generally, and using Aquifer specifically, has benefited this and other projects
-around Four Kitchens in the following ways:
+Aside from the technical benefits below, having a build system generally, and
+using Aquifer specifically, has benefited this and other projects around Four
+Kitchens in the following ways:
 
-- Fewer manual steps for creating or updating a local development instance ramps
-  teammembers up faster and helps them switch between branches without regressions.
-- Consistent code quality makes code review easier with higher first-pass acceptance.
+- Fewer manual steps for creating or updating a development instance allows
+  teammembers to onboard faster and helps them switch between branches without
+  regressions.
+- Consistent code quality makes code reviews easier with a higher rate of
+  acceptance on the first pass.
 - Eliminating core and contrib code makes code reviews faster and highlights
-  patched code if that is a necessity.
-- Each of the following painpoints grows as the project gets older or bigger,
+  patched code for extra scrutiny if that is a necessity.
+- Each of the following pain-points grows as the project gets older or bigger,
   challenging a site's overall maintainability.
 
 ## Drupal Development Pain Points Solved
@@ -84,8 +86,8 @@ then commit it all as a giant changeset (or, if you're crazy like me, spend more
 time spliting it up).
 
 **New way:** Adjust the `drush.make` file as needed with the newest or preferred
-version of core or a module that you're using; then `build` and deploy. This
-makes changes very visible, yet also quite simple:
+version of the module you're using; then `build` and deploy. This makes changes
+very visible, yet also quite simple:
 
 - You can `git blame` the `drush.make` file to figure out exactly when which
   components were updated and by whom.
@@ -100,15 +102,15 @@ Fear not, the Drupal Update module will still offer notifications as usual.
 
 In the course of Drupal development, you will likely one day need to alter a
 contrib or core file. Doing so in an organized and responsible way is the key to
-not breaking your site.
+maintainability (aka "not breaking your site").
 
-**Old way:** Get the patch from D.o, apply it to the module (or core) _and_ add
-the patch to the repo (preferably in a separate directory so it isn't wiped out
-in an update), and commit it all. Then, if the patched component is ever
-updated, make sure you didn't lose track of the patch, apply it again (hoping it
-applies cleanly), and commit. If you're not using a patch from D.o, but you're
-instead writing code yourself, you need to make sure you're making patches and
-applying them this way!
+**Old way:** Get the patch from D.o, apply it _and_ add the patch to the repo
+(preferably in a separate directory so it isn't wiped out in an update), and
+commit it all. Then, if the patched component is ever updated, make sure you
+didn't lose track of the patch, apply it again (hoping it applies cleanly), and
+commit. If you're not using a patch from D.o but instead writing code yourself,
+you need to make sure you're making patches and applying them this way! There is
+no system in place to ensure developers actually do this but code reviews.
 
 **New way:** You cannot directly edit core or contrib code, because it will be
 downloaded anew on each `build`. Instead, Aquifer will apply all patches in the
@@ -118,15 +120,17 @@ patches directory during build. This way you will:
 - Never have any untracked modification of a contrib or core file which would be
   wiped out in an update.
 - Be notified easily if a patch doesn't apply following an update.
+- Everyone on the team can easily see what has been patched and how.
 
 ### The Refresh: Avoiding Database Config, Keeping Database Sync'd to Code
 
 We all know not to do development or site building work on production. But
 Drupal's database does hold overrides that can occasionally sneak in. If your
 local database doesn't match the code you've checked out, you may not see bugs
-or regressions until they happen in production.
+or regressions until they clash with config in production. Also, there's no way
+to review those overrides in a disciplined way.
 
-**Old way:** Check out the code you're working on. Pull down the Production
+**Old way:** Check out the code you're working on. Copy down the Production
 database or a backup. Run something like `drush features-revert-all` (`fra`) and
 `drush cache-clear all` (`cc all`) multiple times, then an `updb` and assume all
 overrides are cleared, all changes in the code have been applied, and any new
@@ -134,7 +138,7 @@ update hooks have executed. Then, unless you're using the [Master module][MM],
 enable things like `fields_ui`, `views_ui`, `devel` and disable anything that is
 production-specific.
 
-**New way:** Check out the code you're working on. Pull down the Production
+**New way:** Check out the code you're working on. Copy down the Production
 database or a backup. Run `aquifer refresh`. Get to work with confidence that
 your instance is up to date with your code.
 
@@ -176,6 +180,7 @@ Outline:
 - How to get started
 - Can I make an old project use it?
 
+--------------------------------------------------------------------------------
 
 Resources:
 
