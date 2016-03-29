@@ -202,16 +202,14 @@ can generate this for you:
    [Aquifer Git][AQG] to deploy your project to the existing repo for
    deployment.
 
-Outline:
+## TL;DR:
 
-- DONE: Build systems kinda new to web dev
-- DONE: Build systems provide lots of benefit to software development in general
-- DONE: Four Kitchens has built and released Aquifer
-- WIP: It does good things, including:
-- DONE: Here's how I value it from a PO perspective
-- DONE: How to get started
-- DONE: Can I make an old project use it?
-- Some kind of conclusion
+Using a build system streamlines the development process, particularly across
+multiple developers working on a single project. By reducing errors in
+repetitive steps, keeping the code repository lean and well organized, ensuring
+high code quality, and providing a way to prevent database conflicts with the
+code, [Aquifer][AQ] has become a demonstrably valuable part of the Four Kitchens
+development process.
 
 --------------------------------------------------------------------------------
 
