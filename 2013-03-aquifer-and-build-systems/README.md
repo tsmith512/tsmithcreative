@@ -129,6 +129,23 @@ these steps in order:
 - Revert all features
 - Execute a final cache clear all.
 
+### Code Quality and Automated Testing
+
+**Old way:** Install and separately execute additional toolchains for code
+linting and automated testing.
+
+**New way:** [Aquifer Coder][AQCDR] can run lint all PHP and JavaScript in your
+repo (which is only your own code) with `aquifer lint` to ensure adherence to
+Drupal coding style and standards for better consistency and code sharing.
+
+Additionally, use [Aquifer Run][AQR] to execute post-build commands to prepare
+your frontend assets, execute tests, or any other repetitive tasks. In the
+future, there will be dedicated Aquifer extensions for different testing
+frameworks or frontend toolchains, but using Run in the meantime reduces the
+number of manual steps.
+
+**MOAR**
+
 Outline:
 
 - DONE: Build systems kinda new to web dev
@@ -170,7 +187,11 @@ http://www.joelonsoftware.com/articles/fog0000000043.html
 
 [BBTSO]: http://programmers.stackexchange.com/a/137528
 [AQ]: http://aquifer.io/
+[AQC]: https://github.com/aquifer/aquifer/graphs/contributors
 [GIT]: https://git-scm.com/
 [SRG]: http://sixrevisions.com/web-development/easy-git-tutorial/
 [DM]: http://www.drush.org/en/master/make/
 [MM]: https://www.drupal.org/project/master
+[PCGH]: https://github.com/patrickocoffeyo
+[AQCDR]: https://github.com/aquifer/aquifer-coder
+[AQR]: https://github.com/aquifer/aquifer-run
