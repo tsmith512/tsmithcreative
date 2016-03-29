@@ -1,4 +1,4 @@
-# Aquifer and Build Systems
+# Meet Aquifer: A Build System for Easier Drupal Development
 
 ## What is a build system?
 
