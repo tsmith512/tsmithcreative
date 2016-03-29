@@ -42,6 +42,26 @@ supported by [many other Web Chefs][AQC].
 Aquifer is now running on all Drupal 7 and Drupal 8 new builds at Four Kitchens,
 supporting dozens on Web Chefs, contractors, and client-side developers.
 
+## Business Value
+
+On my current project, I'm the Product Owner. This means that in addition to
+managing requirements, being the client's advocate to our internal teams and
+contractors, and planning releases, I am also partly the steward of the client's
+money. Anything that can be made "easier" or "faster" equates to more
+functionality for the money spent, and less billables overall.
+
+Aside from the technical benefits I outline below, having a build system
+generally, and using Aquifer specifically, has benefited this and other projects
+around Four Kitchens in the following ways:
+
+- Fewer manual steps for creating or updating a local development instance ramps
+  teammembers up faster and helps them switch between branches without regressions.
+- Consistent code quality makes code review easier with higher first-pass acceptance.
+- Eliminating core and contrib code makes code reviews faster and highlights
+  patched code if that is a necessity.
+- Each of the following painpoints grows as the project gets older or bigger,
+  challenging a site's overall maintainability.
+
 ## Drupal Development Pain Points Solved
 
 ### Core and Contrib Code in the Repo
@@ -150,9 +170,9 @@ Outline:
 
 - DONE: Build systems kinda new to web dev
 - DONE: Build systems provide lots of benefit to software development in general
-- Four Kitchens has built and released Aquifer
+- DONE: Four Kitchens has built and released Aquifer
 - WIP: It does good things, including:
-- Here's how I value it from a PO perspective
+- DONE: Here's how I value it from a PO perspective
 - How to get started
 - Can I make an old project use it?
 
