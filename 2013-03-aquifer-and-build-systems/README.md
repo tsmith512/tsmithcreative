@@ -32,7 +32,7 @@ sites or sites with large/revolving development teams.
 > 
 > - [Aquifer.io][AQ]
 
-At Four Kitchens, we saw several pain points in developing and maintain large
+At Four Kitchens, we saw several pain points in developing and maintaining large
 Drupal sites which boiled down to not having a build system, particularly around
 ramping up new developers on projects quickly. We wanted to streamline this
 process, but discovered that in the Drupal world, there are few boilerplates or
