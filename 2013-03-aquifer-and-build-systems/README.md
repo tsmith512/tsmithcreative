@@ -1,5 +1,36 @@
 # Aquifer and Build Systems
 
+## What is a build system?
+
+Build systems simplify the development process by leveraging a single tool to
+handle: dependency management, automate tasks like testing, consolidating steps
+to compile and deploy the product, and [????].
+
+Using a build system often involves using an organized directory and file
+structure which can be reused across projects, reinforcement of best practices,
+simplifying the process to ramp up new teammates, and making maintainable choices
+[_(StackOverflow by haylem)_][BBTSO].
+
+While build systems have been in use in software projects for decades, they're
+newer in the realm of web development. Web development used to be primarily
+static assets (HTML, CSS, JS, and images). From there, the industry started
+having the server execute pieces of the source files to adjust the output
+(SHTML, Perl, or PHP) to do things like add modification dates, include reused
+snippets, etc. But over the years, this dynamic content gave rise to full CMS
+based websites. The change may have happened gradually, but these really are
+full applications now. They should be managed as such, especially enterprise
+sites or sites with large or revolving development teams.
+
+## We use Aquifer as a build system for Drupal.
+
+> Aquifer is a command line interface that makes it easy to scaffold, build,
+> test, and deploy your Drupal websites. It provides a default set of tools that
+> allow you to develop, and build Drupal sites using the Drush-make workflow. In
+> addition, Aquifer ships with an extensions system that allows you to add
+> additional tools to your project.
+> 
+> - [Aquifer.io][AQ]
+
 Outline:
 
 - Build systems kinda new to web dev
@@ -39,3 +70,6 @@ http://www.joelonsoftware.com/articles/fog0000000043.html
   - Build in one step
   - Reducing errors from manual processes
     - PATCHES!
+
+[BBTSO]: http://programmers.stackexchange.com/a/137528
+[AQ]: http://aquifer.io/
