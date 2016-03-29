@@ -31,6 +31,17 @@ sites or sites with large or revolving development teams.
 > 
 > - [Aquifer.io][AQ]
 
+At Four Kitchens, we saw several pain points which boiled down to not having a
+build system, particularly around ramping teammates and external contractors on
+and off of projects quickly. We wanted to streamline this process, but
+discovered that in the Drupal world, there were few boilerplates or shell
+scripts that supported a [Drush make][DM] workflow, and none were
+cross-compatible. So [Patrick Coffey][PCGH] started the [Aquifer][AQ] project,
+supported by [many other Web Chefs][AQC].
+
+Aquifer is now running on all Drupal 7 and Drupal 8 new builds at Four Kitchens,
+supporting dozens on Web Chefs, contractors, and client-side developers.
+
 ## Drupal Development Pain Points Solved
 
 ### Core and Contrib Code in the Repo
@@ -88,7 +99,7 @@ patches directory during build. This way you will:
   wiped out in an update.
 - Be notified easily if a patch doesn't apply following an update.
 
-### The Refresh
+### The Refresh: Avoiding Database Config, Keeping Database Sync'd to Code
 
 We all know not to do development or site building work on production. But
 Drupal's database does hold overrides that can occasionally sneak in. If your
