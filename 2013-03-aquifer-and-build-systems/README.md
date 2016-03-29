@@ -211,6 +211,7 @@ Outline:
 - DONE: Here's how I value it from a PO perspective
 - DONE: How to get started
 - DONE: Can I make an old project use it?
+- Some kind of conclusion
 
 --------------------------------------------------------------------------------
 
