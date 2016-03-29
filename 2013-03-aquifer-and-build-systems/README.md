@@ -4,7 +4,7 @@
 
 Build systems simplify the development process by leveraging a single tool to
 handle dependency management, automate tasks like testing, consolidate steps
-to compile/deploy the product, reduce repetitive steps, and simplify onboarding.
+to compile/deploy the product, reduce repetitive steps, and streamline onboarding.
 
 Using a build system often leads to using an organized directory and file
 structure which can be reused across projects, reinforcing best practices,
@@ -17,8 +17,8 @@ newer for web projects. Web development used to be limited to serving static
 assets (HTML, CSS, JS, and images). From there, the industry started having the
 server execute pieces of the source files to adjust the output dynamically
 (SHTML, Perl, or PHP) to do things like add modification dates, include reusable
-snippets, etc. But over the years, this "dynamic content" gave rise to full CMS-
-based websites. The change may have happened gradually, but these really are
+snippets, etc. But over the years, this "dynamic content" gave rise to full
+CMS-based websites. The change may have happened gradually, but these really are
 full applications now. They should be managed as such, especially enterprise
 sites or sites with large/revolving development teams.
 
@@ -30,18 +30,18 @@ sites or sites with large/revolving development teams.
 > addition, Aquifer ships with an extensions system that allows you to add
 > additional tools to your project.
 > 
-> - [Aquifer.io][AQ]
+> [Aquifer.io][AQ]
 
 At Four Kitchens, we saw several pain points in developing and maintaining large
 Drupal sites which boiled down to not having a build system, particularly around
 ramping up new developers on projects quickly. We wanted to streamline this
-process, but discovered that in the Drupal world, there are few boilerplates or
+process, but discovered that in the Drupal world there are few boilerplates or
 shell scripts that supported a [Drush make][DM] workflow. None were
 cross-compatible. So [Patrick Coffey][PCGH] started the [Aquifer][AQ] project,
 supported by [many other Web Chefs][AQC].
 
 Aquifer is now running on all Drupal 7 and Drupal 8 new builds at Four Kitchens,
-supporting dozens on Web Chefs, contractors, and client-side developers.
+supporting dozens of Web Chefs, contractors, and client-side developers.
 
 ## Business Value
 
