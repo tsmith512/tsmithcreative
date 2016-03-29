@@ -170,6 +170,38 @@ number of manual steps.
 
 **MOAR**
 
+## Using Aquifer for Your Projects
+
+### How do I get started?
+
+Check out the [Aquifer Quick-start Guide][AQQSG]. A few hints I'll add:
+
+- We strongly recommend using [nvm][NVM] to manage your [Node.js][NJS] and
+  module versions. Installing Node from Ubuntu or Homebrew packages leads to
+  lots of outdated code and permissions issues, which snowball.
+- Never use `sudo` for anything in this process. Aquifer uses NPM modules to
+  download its extensions and prepare files to be executed by your web server,
+  which may in turn save cached files in some directories. If some part of this
+  process is executed with `sudo`, soon you'll have a mess of files owned by
+  root, pushing you to use `sudo` more, all executing code from the Internet
+  with elevated privileges, which is a major security risk. Web Chef Matt Grill
+  wrote [NPM Doctor][NPMD] to help get yourself out of that spiral.
+
+### Can I use it on a project which already exists?
+
+Yes! Aquifer uses a Drush Make workflow, so what you need is a makefile. Drush
+can generate this for you:
+
+1. In an existing Drupal site, execute `drush make-generate drupal.make`
+2. [Create a new Aquifer project][AQQSG].
+3. Copy in that makefile.
+4. At this point, you'll need to bring in your custom code into the
+   [Aquifer directory structure][AQDS]
+5. From there, `aquifer build` should generate a `build` directory that looks
+   just like your existing docroot. After testing it thoroughly, you can use
+   [Aquifer Git][AQG] to deploy your project to the existing repo for
+   deployment.
+
 Outline:
 
 - DONE: Build systems kinda new to web dev
@@ -177,8 +209,8 @@ Outline:
 - DONE: Four Kitchens has built and released Aquifer
 - WIP: It does good things, including:
 - DONE: Here's how I value it from a PO perspective
-- How to get started
-- Can I make an old project use it?
+- DONE: How to get started
+- DONE: Can I make an old project use it?
 
 --------------------------------------------------------------------------------
 
@@ -220,3 +252,9 @@ http://www.joelonsoftware.com/articles/fog0000000043.html
 [PCGH]: https://github.com/patrickocoffeyo
 [AQCDR]: https://github.com/aquifer/aquifer-coder
 [AQR]: https://github.com/aquifer/aquifer-run
+[AQQSG]: http://docs.aquifer.io/sections/quickstart-guide.html
+[NVM]: https://github.com/creationix/nvm
+[NJS]: https://nodejs.org/
+[NPMD]: https://github.com/mattgrill/NPM-Doctor
+[AQDS]: http://docs.aquifer.io/sections/directory-structure.html
+[AQG]: https://github.com/aquifer/aquifer-git
