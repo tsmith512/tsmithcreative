@@ -31,13 +31,99 @@ sites or sites with large or revolving development teams.
 > 
 > - [Aquifer.io][AQ]
 
+## Drupal Development Pain Points Solved
+
+### Core and Contrib Code in the Repo
+
+**Old way:** Using [git][GIT] or another distributed source control system
+[is essential][SRG], but most Drupal sites are constructed by including Drupal's
+core and all contributed modules and themes in the repository. This makes a huge
+repo full of code you didn't write and aren't responsible for. Then you have to
+sort through that when you review PRs.
+
+**New way:** Build systems would call core and contrib "dependencies." A build
+system fetches dependencies as needed. Aquifer leverages [Drush Make][DM] to
+download the specified versions of core and contrib modules on each `build`.
+This keeps your repo lean, free of code outside your project.
+
+### Managing Updates
+
+**Old way:** Use Drush (or download) updates to modules and/or core as needed,
+then commit it all as a giant changeset (or, if you're crazy like me, spend more
+time spliting it up).
+
+**New way:** Adjust the `drush.make` file as needed with the newest or preferred
+version of core or a module that you're using; then `build` and deploy. This
+makes changes very visible, yet also quite simple:
+
+- You can `git blame` the `drush.make` file to figure out exactly when which
+  components were updated and by whom.
+- Sometimes you don't want to update a module unless it's a security release. In
+  the "old way," you'd either need to remember to reset that module's directory
+  pre-commit or fiddle with locking the module version in the Update config.
+  This way, update what you want and don't update what you don't want to.
+
+Fear not, the Drupal Update module will still offer notifications as usual.
+
+### Managing Patches
+
+In the course of Drupal development, you will likely one day need to alter a
+contrib or core file. Doing so in an organized and responsible way is the key to
+not breaking your site.
+
+**Old way:** Get the patch from D.o, apply it to the module (or core) _and_ add
+the patch to the repo (preferably in a separate directory so it isn't wiped out
+in an update), and commit it all. Then, if the patched component is ever
+updated, make sure you didn't lose track of the patch, apply it again (hoping it
+applies cleanly), and commit. If you're not using a patch from D.o, but you're
+instead writing code yourself, you need to make sure you're making patches and
+applying them this way!
+
+**New way:** You cannot directly edit core or contrib code, because it will be
+downloaded anew on each `build`. Instead, Aquifer will apply all patches in the
+patches directory during build. This way you will:
+
+- Never have confusion about whether a patch was applied or not.
+- Never have any untracked modification of a contrib or core file which would be
+  wiped out in an update.
+- Be notified easily if a patch doesn't apply following an update.
+
+### The Refresh
+
+We all know not to do development or site building work on production. But
+Drupal's database does hold overrides that can occasionally sneak in. If your
+local database doesn't match the code you've checked out, you may not see bugs
+or regressions until they happen in production.
+
+**Old way:** Check out the code you're working on. Pull down the Production
+database or a backup. Run something like `drush features-revert-all` (`fra`) and
+`drush cache-clear all` (`cc all`) multiple times, then an `updb` and assume all
+overrides are cleared, all changes in the code have been applied, and any new
+update hooks have executed. Then, unless you're using the [Master module][MM],
+enable things like `fields_ui`, `views_ui`, `devel` and disable anything that is
+production-specific.
+
+**New way:** Check out the code you're working on. Pull down the Production
+database or a backup. Run `aquifer refresh`. Get to work with confidence that
+your instance is up to date with your code.
+
+Refresh can be customized for your project, but we usually have refresh run
+these steps in order:
+
+- Rebuild registry (refreshes Drupal's autoloader cache, `drush rr`)
+- Set the Master module scope to local (enable all the dev modules)
+- Clear all caches
+- Execute the Master scope change
+- Run all update hooks
+- Revert all features
+- Execute a final cache clear all.
+
 Outline:
 
-- Build systems kinda new to web dev
-- Build systems provide lots of benefit to software development in general
+- DONE: Build systems kinda new to web dev
+- DONE: Build systems provide lots of benefit to software development in general
 - Four Kitchens has built and released Aquifer
-- It does good things, including:
-  - ?
+- WIP: It does good things, including:
 - Here's how I value it from a PO perspective
 - How to get started
 - Can I make an old project use it?
@@ -73,3 +159,7 @@ http://www.joelonsoftware.com/articles/fog0000000043.html
 
 [BBTSO]: http://programmers.stackexchange.com/a/137528
 [AQ]: http://aquifer.io/
+[GIT]: https://git-scm.com/
+[SRG]: http://sixrevisions.com/web-development/easy-git-tutorial/
+[DM]: http://www.drush.org/en/master/make/
+[MM]: https://www.drupal.org/project/master
