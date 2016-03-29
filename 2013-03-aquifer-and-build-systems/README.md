@@ -13,14 +13,14 @@ choices [_(StackOverflow by haylem)_][BBTSO]. It helps debugging across
 environments as well.
 
 While build systems have been in use in software projects for decades, they're
-newer for web projects. Web development used to be serving static assets (HTML,
-CSS, JS, and images). From there, the industry started having the server execute
-pieces of the source files to adjust the output dynamically (SHTML, Perl, or
-PHP) to do things like add modification dates, include reusable snippets, etc.
-But over the years, this "dynamic content" gave rise to full CMS-based websites.
-The change may have happened gradually, but these really are full applications
-now. They should be managed as such, especially enterprise sites or sites with
-large/revolving development teams.
+newer for web projects. Web development used to be limited to serving static
+assets (HTML, CSS, JS, and images). From there, the industry started having the
+server execute pieces of the source files to adjust the output dynamically
+(SHTML, Perl, or PHP) to do things like add modification dates, include reusable
+snippets, etc. But over the years, this "dynamic content" gave rise to full CMS-
+based websites. The change may have happened gradually, but these really are
+full applications now. They should be managed as such, especially enterprise
+sites or sites with large/revolving development teams.
 
 ## We use Aquifer as a build system for Drupal.
 
