@@ -24,6 +24,14 @@ sites or sites with large/revolving development teams.
 
 ## We use Aquifer as a build system for Drupal.
 
+At Four Kitchens, we saw several pain points in developing and maintaining large
+Drupal sites— problems that boiled down to not having a build system, particularly
+around ramping up new developers on projects quickly. We wanted to streamline this
+process, but discovered that in the Drupal world there are few boilerplates or
+shell scripts that supported a [Drush make][DM] workflow. None were
+cross-compatible. So [Patrick Coffey][PCGH] started the [Aquifer][AQ] project,
+supported by [many other Four Kitchens Web Chefs][AQC].
+
 > Aquifer is a command line interface that makes it easy to scaffold, build,
 > test, and deploy your Drupal websites. It provides a default set of tools that
 > allow you to develop, and build Drupal sites using the Drush-make workflow. In
@@ -31,14 +39,6 @@ sites or sites with large/revolving development teams.
 > additional tools to your project.
 > 
 > [Aquifer.io][AQ]
-
-At Four Kitchens, we saw several pain points in developing and maintaining large
-Drupal sites which boiled down to not having a build system, particularly around
-ramping up new developers on projects quickly. We wanted to streamline this
-process, but discovered that in the Drupal world there are few boilerplates or
-shell scripts that supported a [Drush make][DM] workflow. None were
-cross-compatible. So [Patrick Coffey][PCGH] started the [Aquifer][AQ] project,
-supported by [many other Web Chefs][AQC].
 
 Aquifer is now running on all Drupal 7 and Drupal 8 new builds at Four Kitchens,
 supporting dozens of Web Chefs, contractors, and client-side developers.
@@ -95,7 +95,7 @@ very visible, yet also quite simple:
 - Sometimes you don't want to update a module unless it's a security release. In
   the "old way," you'd either need to remember to reset that module's directory
   pre-commit or fiddle with locking the module version in the Update config.
-  This way, update what you want and don't update what you don't want.
+  This way, you can update what you want and not update what you don't want.
 
 Fear not, the Drupal Update module will still offer notifications as usual.
 
