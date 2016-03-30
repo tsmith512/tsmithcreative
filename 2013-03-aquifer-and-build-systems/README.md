@@ -84,10 +84,10 @@ This keeps your repo lean, free of code outside your project.
 
 **Old way:** Use Drush (or download) updates to modules and/or core as needed,
 then commit it all as a giant changeset (or, if you're crazy like me, spend more
-time spliting it up).
+time splitting it up).
 
 **New way:** Adjust the `drush.make` file as needed with the newest or preferred
-version of the module you're using; then `build` and deploy. This makes changes
+version of the module you're using, then `build` and deploy. This makes changes
 very visible, yet also quite simple:
 
 - You can `git blame` the `drush.make` file to figure out exactly when which
@@ -95,7 +95,7 @@ very visible, yet also quite simple:
 - Sometimes you don't want to update a module unless it's a security release. In
   the "old way," you'd either need to remember to reset that module's directory
   pre-commit or fiddle with locking the module version in the Update config.
-  This way, update what you want and don't update what you don't want to.
+  This way, update what you want and don't update what you don't want.
 
 Fear not, the Drupal Update module will still offer notifications as usual.
 
@@ -113,7 +113,7 @@ commit. If you're not using a patch from D.o but instead writing code yourself,
 you need to make sure you're making patches and applying them this way! There is
 no system in place to ensure developers actually do this but code reviews.
 
-**New way:** You cannot directly edit core or contrib code, because it will be
+**New way:** You cannot directly edit core or contrib code because it will be
 downloaded anew on each `build`. Instead, Aquifer will apply all patches in the
 patches directory during build. This way you will:
 
@@ -129,7 +129,7 @@ We all know not to do development or site building work on production. But
 Drupal's database does hold overrides that can occasionally sneak in. If your
 local database doesn't match the code you've checked out, you may not see bugs
 or regressions until they clash with config in production. Also, there's no way
-to review those overrides in a disciplined way.
+to review those overrides in a unified way (at least in D7).
 
 **Old way:** Check out the code you're working on. Copy down the Production
 database or a backup. Run something like `drush features-revert-all` (`fra`) and
@@ -147,7 +147,7 @@ Refresh can be customized for your project, but we usually have refresh run
 these steps in order:
 
 - Rebuild registry (refreshes Drupal's autoloader cache, `drush rr`)
-- Set the Master module scope to local (enable all the dev modules)
+- Set the Master module scope to local (enable all the dev modules/tools automatically)
 - Clear all caches
 - Execute the Master scope change
 - Run all update hooks
@@ -159,9 +159,9 @@ these steps in order:
 **Old way:** Install and separately execute additional toolchains for code
 linting and automated testing.
 
-**New way:** [Aquifer Coder][AQCDR] can run lint all PHP and JavaScript in your
-repo (which is only your own code) with `aquifer lint` to ensure adherence to
-Drupal coding style and standards for better consistency and code sharing.
+**New way:** [Aquifer Coder][AQCDR] can [lint][LINT] all PHP and JavaScript in
+your repo (which is only your own code) with `aquifer lint` to ensure adherence
+to Drupal coding style and standards for better consistency and code sharing.
 
 Additionally, use [Aquifer Run][AQR] to execute post-build commands to prepare
 your frontend assets, execute tests, or any other repetitive tasks. In the
@@ -185,6 +185,9 @@ Check out the [Aquifer Quick-start Guide][AQQSG]. A few hints I'll add:
   root, pushing you to use `sudo` more, all executing code from the Internet
   with elevated privileges, which is a major security risk. Web Chef Matt Grill
   wrote [NPM Doctor][NPMD] to help get yourself out of that spiral.
+- Occasionally, Aquifer can't find your installation of Drush and provides a
+  somewhat cryptic error message about it. Adding a line in the `paths` section
+  of my `aquifer.json` file fixed this: `"drush": "/home/tsmith/.composer/vendor/bin/drush",`.
 
 ### Can I use it on a project which already exists?
 
@@ -227,3 +230,4 @@ demonstrably valuable part of the Four Kitchens development process.
 [AQDS]: http://docs.aquifer.io/sections/directory-structure.html
 [AQG]: https://github.com/aquifer/aquifer-git
 [JTBC]: http://www.joelonsoftware.com/articles/fog0000000043.html
+[LINT]: https://en.wikipedia.org/wiki/Lint_(software)
