@@ -3,6 +3,7 @@
 | Date    | Title                                              | Categories               |
 |---------|----------------------------------------------------|--------------------------|
 | 2016/03 | [Meet Aquifer: A Build System for Easier Drupal Development][AQ] | Drupal, DevOps, PO |
+| 2016/02 | [Clean History: Interactive Adding with Git][IAG]  | Git, Productivity        |
 | 2014/12 | [nth-child Mathematics][NTH]                       | Frontend                 |
 | 2014/06 | [Scripting Gmail to Tame the Email Monster][SG]    | JavaScript, Productivity |
 | 2013/12 | [A Curated Portfolio Experience in Drupal 7][PORT] | Drupal, UX, Frontend     |
@@ -11,6 +12,7 @@
 | 2013/08 | [Gittin' Started with Pantheon's MultiDev][PMD]    | DevOps, Git, Drupal      |
 
 [AQ]: 2016-03-aquifer-and-build-systems/README.md
+[IAG]: 2016-02-git-interactive-adding/README.md
 [NTH]: 2014-12-nth-child-math/README.md
 [SG]: 2014-06-scripting-gmail/README.md
 [PORT]: 2013-12-drupal-7-portfolio-experience/README.md
