@@ -56,7 +56,7 @@ using Aquifer specifically, has benefited this and other projects around Four
 Kitchens in the following ways:
 
 - Fewer manual steps for creating or updating a development instance allows
-  teammembers to onboard faster and helps them switch between branches without
+  team members to onboard faster and helps them switch between branches without
   regressions.
 - Consistent code quality makes code reviews easier with a higher rate of
   acceptance on the first pass.
