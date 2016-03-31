@@ -78,7 +78,7 @@ Patch adding is great if:
 You should try interactive adding if you find yourself wishing you could patch
 in some changes, but easily stage other entire files or untracked files, like:
 
-- Pick the Sass changes, but just add all Field Instance or Panels exported settings
+- Pick the Sass changes, but just add all field instance or Panels exported settings
 - Pick up untracked Sass partials and patch in the line that includes them
 
 ## Interactive Mode
