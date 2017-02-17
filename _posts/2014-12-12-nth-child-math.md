@@ -1,4 +1,7 @@
-# On nth-child, mathematics, and that moment in school when your teacher said you'd use Algebra in real life
+---
+title: On nth-child, mathematics, and that moment in school when your teacher said you'd use Algebra in real life
+layout: post
+---
 
 Recently, I've seen a recurring error with how `:nth-child()` and `:nth-of-type()` selectors are being used, so I wanted to host an anonymous algebra moment on these, my favorite CSS Level 3 selectors.
 

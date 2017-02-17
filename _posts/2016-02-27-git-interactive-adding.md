@@ -1,4 +1,7 @@
-# Cleaner History with Interactive Commit Building in Git
+---
+title: Cleaner History with Interactive Commit Building in Git
+layout: post
+---
 
 My home is a cluttered place, so my quest for tidiness takes other, more
 obscure forms: maintenance of a _pristine_ Git repository history that explains

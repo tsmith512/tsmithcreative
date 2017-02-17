@@ -1,8 +1,11 @@
+---
+title: Rescuing Myself from the Email Monster with JavaScript
+layout: post
+---
+
 Originally written in June, 2014 by [Taylor Smith][TSMITH] for
 [FourWord][FOURWORD], the blog of [Four Kitchens][4K]. See the full script
 on [GitHub][REPO].
-
-# Rescuing Myself from the Email Monster with JavaScript
 
 We here at [Four Kitchens][4K] do love us some email.
 Last week, I self-awarded a prize for having achieved 4,000 unread items in my

@@ -1,4 +1,7 @@
-# Change Page Template Based on Panels Layout
+---
+title: Change Page Template Based on Panels Layout
+layout: post
+---
 
 I frequently use Panels for system pages and custom pages. In `page.tpl.php`,
 the whole Panels layout is dumped into the `$content` variable in the primary

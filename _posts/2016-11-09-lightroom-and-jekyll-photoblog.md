@@ -1,4 +1,7 @@
-# Making a Photoblog with Lightroom, Jekyll, and Gulp
+---
+title: Making a Photoblog with Lightroom, Jekyll, and Gulp
+layout: post
+---
 
 In middle school, I eagerly sweet-talked my Dad, who still maintains that
 computers are a fad, into helping me acquire a “domain name.” It was the start

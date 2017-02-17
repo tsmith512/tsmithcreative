@@ -1,4 +1,7 @@
-# “Levelling Up” the Work from Home Experience
+---
+title: “Levelling Up” the Work from Home Experience
+layout: post
+---
 
 _“Wait, you work from home? That must be ______.”_ People follow that with words
 like: _terrible_, _distracting_, _isolating_, _lonely_, and occasionally

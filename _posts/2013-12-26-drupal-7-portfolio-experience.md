@@ -1,4 +1,7 @@
-# Building a Personalized Portfolio Experience in Drupal 7
+---
+title: Building a Personalized Portfolio Experience in Drupal 7
+layout: post
+---
 
 Happy Holidays, folks!
 

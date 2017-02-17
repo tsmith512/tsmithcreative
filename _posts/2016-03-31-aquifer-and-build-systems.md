@@ -1,4 +1,7 @@
-# Meet Aquifer: A Build System for Easier Drupal Development
+---
+title: "Meet Aquifer: A Build System for Easier Drupal Development"
+layout: post
+---
 
 ## What is a build system?
 
@@ -37,7 +40,7 @@ supported by [many other Four Kitchens Web Chefs][AQC].
 > allow you to develop, and build Drupal sites using the Drush-make workflow. In
 > addition, Aquifer ships with an extensions system that allows you to add
 > additional tools to your project.
-> 
+>
 > [Aquifer.io][AQ]
 
 Aquifer is now running on all Drupal 7 and Drupal 8 new builds at Four Kitchens,

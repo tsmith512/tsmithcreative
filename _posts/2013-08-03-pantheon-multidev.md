@@ -1,4 +1,7 @@
-# Gittin' Started with Pantheon Multidev
+---
+title: Gittin' Started with Pantheon Multidev
+layout: post
+---
 
 Pantheon’s new [Multidev](https://www.getpantheon.com/multidev) technology has
 gotten quite a bit of
