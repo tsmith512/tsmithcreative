@@ -270,9 +270,9 @@ guests log in, what they look at, or other analytics that might be useful in
 keeping the conversation going.
 
 <!-- Images -->
-[Wireframe]: images/portfolio_tour_node.png
-[Sample]: images/portfolio_tour_shot.png
-[SelectionRules]: images/portfolio_tour_redirect_from_user_view.png
-[Menu]: images/main_menu.png
-[Admin]: images/admin_pane.png
-[Guest]: images/guest_pane.png
+[Wireframe]: /assets/portfolio-review-d7/portfolio_tour_node.png
+[Sample]: /assets/portfolio-review-d7/portfolio_tour_shot.png
+[SelectionRules]: /assets/portfolio-review-d7/portfolio_tour_redirect_from_user_view.png
+[Menu]: /assets/portfolio-review-d7/main_menu.png
+[Admin]: /assets/portfolio-review-d7/admin_pane.png
+[Guest]: /assets/portfolio-review-d7/guest_pane.png

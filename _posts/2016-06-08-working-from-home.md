@@ -60,7 +60,7 @@ usually involve delegations of multiple Web Chefs. We also pitch and kick-off
 new work by sending project teams to meet with clients in-person. We’ve even
 crossed paths on vacation!
 
-![Web Chefs on vacation](DSC_7458_0.jpg)
+![Web Chefs on vacation](/assets/wfh-4k/DSC_7458_0.jpg)
 
 And because we don’t see each other in the office, I organize regular social
 gatherings for the Austin-based team members as well. It’s important to
@@ -70,7 +70,7 @@ Greystone Drive. We’ve built a good culture of nurturing our distributed
 workforce, but nurturing the distributed team members who all live in the same
 city has its own kind of considerations.
 
-![Web Chefs in NOLA](DSCF4789_0.jpg)
+![Web Chefs in NOLA](/assets/wfh-4k/DSCF4789_0.jpg)
 
 ## What’s Next?
 

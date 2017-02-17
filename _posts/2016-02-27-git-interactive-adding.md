@@ -28,7 +28,7 @@ lot of quick theming adjustments. Once the frontend looked like I wanted it, I
 wanted to split up the commits sensibly. I'll start with the field instance
 adjustment. I want only those two lines in this commit, and nothing else.
 
-![Patch Mode](images/patch-mode.gif)
+![Patch Mode](/assets/git-interactive-add/patch-mode.gif)
 
 _\* Don't include compiled CSS/minified assets if you can avoid it, this repo
 includes it because of build process reasons._
@@ -90,7 +90,7 @@ using interactive mode; I'll just `update` the two Features export files, quit
 out of the prompt, and commit. No reading diffs, no messing with unrelated
 files.
 
-![Interactive Mode](images/interactive-mode-1.gif)
+![Interactive Mode](/assets/git-interactive-add/interactive-mode-1.gif)
 
 The `update` mode just stages the entire file for each file you select. For any
 of these modes, the next prompt asks you to pick files by number that you want
@@ -101,7 +101,7 @@ Tackling the frontend changes, I'd like to `patch` in the Sass changes, but just
 `update` the compiled CSS output. As an example, I'll stage the menu changes but
 not fix my colleague's whitespace blunder at the end of the file:
 
-![Interactive Mode with a Patch and an Update](images/interactive-mode-patch-and-update.gif)
+![Interactive Mode with a Patch and an Update](/assets/git-interactive-add/interactive-mode-patch-and-update.gif)
 
 Your options at the prompt are:
 
