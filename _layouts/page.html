@@ -1,13 +1,10 @@
 ---
 layout: default
 ---
-{% if page.masthead %}
-  <div class="masthead">
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ page.masthead }}"  class="hero-attach-{% if page.hero_attachment %}{{ page.hero_attachment }}{% else %}center{% endif %}" />
-  </div>
-{% endif %}
+<div class="masthead">
+  <h1>{{ page.title }}</h1>
+</div>
+
 <div class="wrapper">
-  <article>
-      {{ content }}
-  </article>
-</div><!-- /.wrapper -->
+  {{ content }}
+</div>

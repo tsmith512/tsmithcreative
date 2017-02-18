@@ -1,21 +1,22 @@
 ---
 layout: page
 ---
-<header>
-  <h1>{{ page.title }}</h1>
-  <dl class="">
-    <dt>Published</dt>
-    <dd>{{ page.date | date: "%B %e, %Y"}}</dd>
-    <dt>Tags</dt>
-    <dd>
-      <ul class="post-tags">
-        {% for tag in page.tags %}
-          <li>{{ tag }}</li>
-        {% endfor %}
-      </ul>
-    </dd>
-  </dl>
-</header>
-{{ page.tags }}
+<article class="post">
+  <header>
+    <dl>
+      <dt>Published</dt>
+      <dd class="date"><span class="icon icon-calendar-light"></span> {{ page.date | date: "%B %e, %Y"}}</dd>
+      <dt>Tags</dt>
+      <dd class="tags">
+        <ul>
+          <li><span class="icon icon-tags-light"></span></li>
+          {% for tag in page.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      </dd>
+    </dl>
+  </header>
 
-{{ content }}
+  {{ content }}
+</article>

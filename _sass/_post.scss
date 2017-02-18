@@ -2,5 +2,35 @@
  * @file _post.scss
  * Individual page styles for a single blog post
  */
-.post-content {
+.post {
+
+  header {
+    dl {
+      font-family: $gotham;
+      color: #999;
+
+      dt {
+        display: none;
+      }
+
+      dd {
+        margin: 0;
+
+        &.date {
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
 }
