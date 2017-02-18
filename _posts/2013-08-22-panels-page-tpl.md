@@ -1,6 +1,7 @@
 ---
 title: Change Page Template Based on Panels Layout
 layout: post
+tags: [drupal, development]
 ---
 
 I frequently use Panels for system pages and custom pages. In `page.tpl.php`,

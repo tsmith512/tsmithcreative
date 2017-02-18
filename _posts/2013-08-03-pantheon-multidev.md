@@ -1,6 +1,7 @@
 ---
 title: Gittin' Started with Pantheon Multidev
 layout: post
+tags: [drupal, development]
 ---
 
 Pantheon’s new [Multidev](https://www.getpantheon.com/multidev) technology has

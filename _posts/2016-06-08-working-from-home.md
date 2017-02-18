@@ -1,6 +1,7 @@
 ---
 title: “Levelling Up” the Work from Home Experience
 layout: post
+tags: [work life, management]
 ---
 
 _“Wait, you work from home? That must be ______.”_ People follow that with words

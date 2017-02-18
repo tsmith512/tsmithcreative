@@ -1,6 +1,7 @@
 ---
 title: Making a Photoblog with Lightroom, Jekyll, and Gulp
 layout: post
+tags: [photography, development]
 ---
 
 In middle school, I eagerly sweet-talked my Dad, who still maintains that

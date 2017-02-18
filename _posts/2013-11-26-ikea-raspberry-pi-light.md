@@ -1,6 +1,7 @@
 ---
 title: Node.js + RPi + IKEA = Trophy Lighting
 layout: post
+tags: [development, home automation]
 ---
 
 Combining my love for lighting and IKEA furniture with a need to find a new way to tinker with a Raspberry Pi, built a remote-controllable shelf light.

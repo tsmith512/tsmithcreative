@@ -1,6 +1,7 @@
 ---
 title: "Meet Aquifer: A Build System for Easier Drupal Development"
 layout: post
+tags: [drupal, management]
 ---
 
 ## What is a build system?

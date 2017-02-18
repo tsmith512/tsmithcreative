@@ -1,6 +1,7 @@
 ---
 title: Rescuing Myself from the Email Monster with JavaScript
 layout: post
+tags: [work life, development]
 ---
 
 Originally written in June, 2014 by [Taylor Smith][TSMITH] for

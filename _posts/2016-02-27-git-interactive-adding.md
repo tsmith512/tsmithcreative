@@ -1,6 +1,7 @@
 ---
 title: Cleaner History with Interactive Commit Building in Git
 layout: post
+tags: [development]
 ---
 
 My home is a cluttered place, so my quest for tidiness takes other, more

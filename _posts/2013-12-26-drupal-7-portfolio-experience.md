@@ -1,6 +1,7 @@
 ---
 title: Building a Personalized Portfolio Experience in Drupal 7
 layout: post
+tags: [drupal, design, development]
 ---
 
 Happy Holidays, folks!
