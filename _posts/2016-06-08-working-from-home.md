@@ -4,8 +4,8 @@ layout: post
 tags: [work life, management]
 ---
 
-_“Wait, you work from home? That must be ______.”_ People follow that with words
-like: _terrible_, _distracting_, _isolating_, _lonely_, and occasionally
+_“Wait, you work from home? That must be \_\_\_\_\_\_.”_ People follow that with
+words like: _terrible_, _distracting_, _isolating_, _lonely_, and occasionally
 _“awesome because you don’t have to wear pants!”_
 
 When I started at Four Kitchens in 2012, everyone worked in the office. Working
