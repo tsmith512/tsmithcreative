@@ -7,11 +7,26 @@ layout: page
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+      <!-- @TODO: These images will be much larger than necessary. -->
+      {% assign masthead = "assets/masthead/" | append: post.slug | append: ".jpg" %}
+      <img src="{{ masthead | masthead_image }}" alt="" />
       <h2>
         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       </h2>
+      <div class="post-meta">
+        <dl>
+          <dt><span class="icon icon-calendar-light">Published</span></dt>
+          <dd class="date">{{ post.date | date: "%B %e, %Y"}}</dd>
+          <dt><span class="icon icon-tags-light">Tags</span></dt>
+          <dd class="tags">
+            <ul>
+              {% for tag in post.tags %}
+              <li>{{ tag }}</li>
+              {% endfor %}
+            </ul>
+          </dd>
+        </dl>
+      </div>
     </li>
   {% endfor %}
 </ul>

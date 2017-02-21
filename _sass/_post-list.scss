@@ -1,0 +1,40 @@
+/**
+ *  @file _post-list.scss
+ *  The blog post listing on blog.html
+ */
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint(600px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+    margin: 0 -0.5rem;
+  }
+
+  > li {
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+
+    @include breakpoint(600px) {
+      flex: 1 1 40%;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  h2 {
+    // margin-top: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  dl {
+    margin: 1rem;
+  }
+}

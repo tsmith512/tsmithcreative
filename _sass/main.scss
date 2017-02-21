@@ -29,8 +29,10 @@ $max-lines: 680px;
 // Individual components
 @import "site-header";
 @import "masthead";
-@import "paginator";
+@import "post-list";
+@import "post-meta";
 @import "post";
+@import "paginator";
 @import "page";
 @import "media";
 @import "site-footer";

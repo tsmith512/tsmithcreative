@@ -5,38 +5,4 @@
 .post {
   max-width: 680px;
   margin: 0 auto;
-
-  header {
-    dl {
-      font-family: $gotham;
-      color: #999;
-
-      dt {
-        float: left;
-        clear: right;
-      }
-
-      dd {
-        margin: 0;
-
-        &.date {
-          text-transform: uppercase;
-        }
-      }
-    }
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      li {
-        display: inline-block;
-        background: #999;
-        color: white;
-        padding: 0 0.125rem;
-      }
-    }
-  }
-
 }
