@@ -77,7 +77,7 @@ git checkout -b devel
 git push pantheon devel
 ```
 
-![Git Branhes on the Multidev Pantheon Dashboard](/assets/pantheon-multidev/gettingstartedwithmultidev-branches.png)
+![Git Branhes on the Multidev Pantheon Dashboard](/assets/blog/pantheon-multidev/gettingstartedwithmultidev-branches.png)
 
 From the *Multidev* environment tab, select *Git Branches* and create an
 environment for your new branch. Repeat this step for feature branches.
@@ -95,7 +95,7 @@ Click *Create Environment* and select a source to clone database and files. Once
 the environment is constructed, you will be directed to the *Cloud Environments*
 tab:
 
-![Running Environments on the Multidev Pantheon Dashboard](/assets/pantheon-multidev/gettingstartedwithmultidev-environments.png)
+![Running Environments on the Multidev Pantheon Dashboard](/assets/blog/pantheon-multidev/gettingstartedwithmultidev-environments.png)
 
 These resulting environments are as fully-featured as the three standard
 environments. Clicking the “Merge into master” button reveals the git commands

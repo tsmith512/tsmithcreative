@@ -39,7 +39,7 @@ My gripes with Gmail Filters:
 
 Checkout [Google Apps Script][GSCRIPT] and create a new blank project.
 
-![Google Apps Script: New Project](/assets/script-gmail/gscript-new.png)
+![Google Apps Script: New Project](/assets/blog/script-gmail/gscript-new.png)
 
 This is just JavaScript, but it runs server-side within Google Apps and can be
 run on regular intervals or on specific triggers. You do not have to be logged
@@ -105,7 +105,7 @@ indicate that the sender will be unavailable, they are archived immediately:
 
 _Regex on line 2 [visualized][RXWFH]:_
 
-![Whereabouts Regular Expressions](/assets/script-gmail/regex-whereabouts.png)
+![Whereabouts Regular Expressions](/assets/blog/script-gmail/regex-whereabouts.png)
 
 **Google Calendar** emails can be identified by what the subject line starts with:
 
@@ -118,7 +118,7 @@ _Regex on line 2 [visualized][RXWFH]:_
 
 _Regex [visualized][RXGCAL]:_
 
-![Google Calendar Regular Expressions](/assets/script-gmail/regex-gcal.png)
+![Google Calendar Regular Expressions](/assets/blog/script-gmail/regex-gcal.png)
 
 **Client** emails get sorted as well. We're a little lax in the formatting of
 those tags, but regex makes that easier:
@@ -131,7 +131,7 @@ those tags, but regex makes that easier:
 
 _Regex [visualized][RXFPL]:_
 
-![FPL Regular Expressions](/assets/script-gmail/regex-fpl.png)
+![FPL Regular Expressions](/assets/blog/script-gmail/regex-fpl.png)
 
 This matches `[fpl]`, `[full plate]`, `[full plate living]`, `[fullplateliving]`,
 and various others, as well as any email sent to/from `@fullplateliving.org`.
@@ -223,7 +223,7 @@ having an `@` in the `to` field. All other filters were exported and deleted.
 Using the Label settings, "Prefilter" can be hidden from your inbox view so you
 don't see it.
 
-![Prefilter](/assets/script-gmail/gmail-all-filter.png)
+![Prefilter](/assets/blog/script-gmail/gmail-all-filter.png)
 
 **Unexpected benefit:** I noticed that this "Prefilter" label is applied to all
 outbound email as well (perhaps because it matches only against the `to` field),
@@ -252,7 +252,7 @@ otherwise).
 Now I have two functions that can be run on a regular basis, so let's do so.
 Under the "Resources" menu, click "Current project's triggers" and add these:
 
-![Triggers](/assets/script-gmail/gscript-triggers.png)
+![Triggers](/assets/blog/script-gmail/gscript-triggers.png)
 
 - `autoArchive()` can run hourly (or less frequently, honestly).
 - `batchIncoming()` must run very frequently. I chose 5 minutes instead of 1 so

@@ -169,11 +169,11 @@ ever do anything more complicated. Are there any more mature GPIO libraries for
 Node.js? Join in the comments.
 
 
-[DIODER]: /assets/ikea-rpi/dsc_1332.jpg
-[Cable management]: /assets/ikea-rpi/dsc_1346.jpg
-[Cable tangle]: /assets/ikea-rpi/dsc_1349.jpg
-[RPiPST]: /assets/ikea-rpi/dsc_1352.jpg
-[PowerTail Switch]: /assets/ikea-rpi/dsc_1353.jpg
-[RPi Pinout]: /assets/ikea-rpi/gpio-pinout-rev2.jpg
-[The litesite]: /assets/ikea-rpi/lightsite.png
-[IKEA]: /assets/ikea-rpi/ikea.png
+[DIODER]: /assets/blog/ikea-rpi/dsc_1332.jpg
+[Cable management]: /assets/blog/ikea-rpi/dsc_1346.jpg
+[Cable tangle]: /assets/blog/ikea-rpi/dsc_1349.jpg
+[RPiPST]: /assets/blog/ikea-rpi/dsc_1352.jpg
+[PowerTail Switch]: /assets/blog/ikea-rpi/dsc_1353.jpg
+[RPi Pinout]: /assets/blog/ikea-rpi/gpio-pinout-rev2.jpg
+[The litesite]: /assets/blog/ikea-rpi/lightsite.png
+[IKEA]: /assets/blog/ikea-rpi/ikea.png
