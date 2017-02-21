@@ -55,7 +55,11 @@ img {
 .wrapper {
   @extend %clearfix;
   max-width: $max-width;
-  margin: 1rem auto;
+  margin: 1rem;
+
+  @include breakpoint($max-width) {
+    margin: 1rem auto;
+  }
 }
 
 blockquote {

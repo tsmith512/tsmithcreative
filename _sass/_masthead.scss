@@ -4,10 +4,15 @@
  */
 
 .masthead {
-  margin-bottom: 1rem;
-
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAI0lEQVQIWxXHQREAAAyDMGoF/5pqZbvyCgEOQCWboS1Rb1gPlfEJZ9/Nd0IAAAAASUVORK5CYII=');
   margin-bottom: 2rem;
+
+  background-size: cover;
+  background-position: center center;
+
+  text-align: center;
+  @include breakpoint($max-width) {
+    text-align: left;
+  }
 
   .wrapper {
     margin-top: 0;
@@ -22,32 +27,21 @@
 
     color: black;
     background: white;
-    font-size: 6rem;
+    box-shadow: -10px 0 0 white, 10px 0 0 white;
+
+    font-size: 3rem;
+    @include breakpoint($max-lines) {
+      font-size: 4.5rem;
+    }
+    @include breakpoint($max-width) {
+      font-size: 6rem;
+    }
     line-height: 1.35;
     letter-spacing: 1px;
 
-    position: relative;
-    left: 10px;
-    margin-right: 10px;
-    box-shadow: -10px 0 0 white, 10px 0 0 white;
-  }
-
-  img {
-    display: block;
-    width: 100%;
-
-    @include breakpoint($masthead-box) {
-      position: absolute;
-      z-index: 1;
-
-      &.hero-attach-center {
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
-      &.hero-attach-bottom {
-        bottom: 0;
-      }
+    @include breakpoint($max-width) {
+      position: relative;
+      left: 10px;
     }
   }
 }
