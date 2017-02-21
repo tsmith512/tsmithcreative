@@ -3,6 +3,8 @@
  * Individual page styles for a single blog post
  */
 .post {
+  max-width: 680px;
+  margin: 0 auto;
 
   header {
     dl {
@@ -10,7 +12,8 @@
       color: #999;
 
       dt {
-        display: none;
+        float: left;
+        clear: right;
       }
 
       dd {
@@ -29,6 +32,9 @@
 
       li {
         display: inline-block;
+        background: #999;
+        color: white;
+        padding: 0 0.125rem;
       }
     }
   }

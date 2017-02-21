@@ -4,12 +4,11 @@ layout: page
 <article class="post">
   <header>
     <dl>
-      <dt>Published</dt>
-      <dd class="date"><span class="icon icon-calendar-light"></span> {{ page.date | date: "%B %e, %Y"}}</dd>
-      <dt>Tags</dt>
+      <dt><span class="icon icon-calendar-light">Published</span></dt>
+      <dd class="date">{{ page.date | date: "%B %e, %Y"}}</dd>
+      <dt><span class="icon icon-tags-light">Tags</span></dt>
       <dd class="tags">
         <ul>
-          <li><span class="icon icon-tags-light"></span></li>
           {% for tag in page.tags %}
             <li>{{ tag }}</li>
           {% endfor %}

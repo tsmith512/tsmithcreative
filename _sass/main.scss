@@ -18,6 +18,9 @@ $gotham: "Gotham SSm A", "Gotham SSm B", "Century Gothic", Helvetica, Arial, san
 $archer: "Archer SSm A", "Archer SSm B", Georgia, Times, serif;
 $tungsten: "Tungsten Narrow A", "Tungsten Narrow B", "Arial Narrow", Helvetica, Arial, sans-serif;
 
+$max-width: 960px;
+$max-lines: 680px;
+
 // Global stuff
 @import "normalize";
 @import "global";
@@ -29,4 +32,5 @@ $tungsten: "Tungsten Narrow A", "Tungsten Narrow B", "Arial Narrow", Helvetica, 
 @import "paginator";
 @import "post";
 @import "page";
+@import "media";
 @import "site-footer";
