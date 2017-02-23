@@ -5,4 +5,10 @@
 .post {
   max-width: 680px;
   margin: 0 auto;
+
+  .summary {
+    font-family: $gotham;
+    font-size: 1.25em;
+    color: #666;
+  }
 }

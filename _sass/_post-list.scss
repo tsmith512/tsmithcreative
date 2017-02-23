@@ -7,25 +7,17 @@
   margin: 0;
   padding: 0;
 
-  @include breakpoint(600px) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: stretch;
-    margin: 0 -0.5rem;
+  > li {
+    overflow: hidden;
+    margin-bottom: 1em;
+    border: 1px solid #eee;
   }
 
-  > li {
-    margin-bottom: 1rem;
-    border: 1px solid #eee;
-
-    @include breakpoint(600px) {
-      flex: 1 1 40%;
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-    }
+  img {
+    float: left;
+    display: block;
+    max-width: 40%;
+    margin-right: 1em;
   }
 
   h2 {
@@ -36,5 +28,10 @@
 
   dl {
     margin: 1rem;
+  }
+
+  p {
+    // Don't wrap around the floated image:
+    overflow: hidden;
   }
 }

@@ -1,5 +1,6 @@
 ---
 title: Node.js + RPi + IKEA = Trophy Lighting
+summary: My first foray into home automation, using Express to expose an API to control a set of shelf lights.
 layout: post
 tags: [development, home automation]
 ---

@@ -1,5 +1,6 @@
 ---
 title: “Levelling Up” the Work from Home Experience
+summary: As Four Kitchens went fully remote, we improved on the telecommuting experience by building on lessons learned working from home.
 layout: post
 tags: [work life, management]
 ---
