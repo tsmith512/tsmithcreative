@@ -24,7 +24,11 @@ layout: page
   {% if page.images %}
     <ul>
       {% for image in page.images %}
-        <li><img src="{{ image.img }}" alt="{{ image.alt }}" title="{{ image.title }}"></li>
+        <li>
+          <a href="{{ image.img }}">
+            <img src="{{ image.img | replace: "assets", "gfx/thumbs" }}" alt="{{ image.alt }}" title="{{ image.title }}">
+          </a>
+        </li>
       {% endfor %}
     </ul>
   {% endif %}

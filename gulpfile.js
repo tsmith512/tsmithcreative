@@ -36,6 +36,8 @@ const glob = require('glob');
 const gulpicon = require('gulpicon/tasks/gulpicon');
 const gulpiconConfig = require('./_icons/config.js');
 const gulpiconFiles = glob.sync('./_icons/*.svg');
+const imagemin = require('gulp-imagemin');
+const resize = require('gulp-image-resize');
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
@@ -69,10 +71,18 @@ gulp.task('sass', 'Compile Sass to CSS', () => {
 
 gulp.task('icons', false, gulpicon(gulpiconFiles, gulpiconConfig));
 
-gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons'], () => {
+gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'graphics-project-thumbnails'], () => {
   return gulp.src('./_gfx/**/*.*')
     // .pipe(imagemin())
     .pipe(gulp.dest('./_site/gfx/'));
+});
+
+
+gulp.task('graphics-project-thumbnails', 'Rebuild gallery thumbnails for project images', () => {
+  return gulp.src('assets/projects/**/*.*')
+    .pipe(resize({width: 250, height: 250, crop: true, upscale: false}))
+    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/thumbs/projects/'))
 });
 
 /*
@@ -109,7 +119,7 @@ gulp.task('default', false, ['help']);
 
 gulp.task('watch', 'Watch-run sass, jekyll, js, graphics, and icons tasks', () => {
   gulp.watch(['./_sass/**/*.scss'], ['sass']);
-  gulp.watch(['./*.*', './**/*.html', './**/*.yml', './**/*.markdown', './**/*.md', './**/*.rb', '!./node_modules/**', '!./_site/**'], ['jekyll']);
-  gulp.watch(['./_gfx/**/*.*'], ['graphics']);
+  gulp.watch(['./*.*', './assets/**/*.*', './**/*.html', './**/*.yml', './**/*.markdown', './**/*.md', './**/*.rb', '!./node_modules/**', '!./_site/**'], ['jekyll']);
+  gulp.watch(['./_gfx/**/*.*', './assets/**/*.*'], ['graphics']);
   gulp.watch(['./_icons/**/*.*'], ['icons']);
 });
