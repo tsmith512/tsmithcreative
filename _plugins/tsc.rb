@@ -23,7 +23,21 @@ module Jekyll
       end
     end
   end
+
+  # Create a thumbnail image for a blog post or project from its slug.
+  # Can take a JPG or a PNG named for a slug in the thumbnail directory.
+  module ThumbnailGenerate
+    def thumbnail_image(input)
+      thumbnail = "assets/thumbnail/#{input}"
+      if (File.exist?("#{thumbnail}.jpg"))
+        "<img src='/#{thumbnail}.jpg' alt=''/>"
+      elsif (File.exist?("#{thumbnail}.png"))
+        "<img src='/#{thumbnail}.png' alt=''/>"
+      end
+    end
+  end
 end
 
 Liquid::Template.register_filter(Jekyll::MediaWrapper)
 Liquid::Template.register_filter(Jekyll::MastheadCheckExists)
+Liquid::Template.register_filter(Jekyll::ThumbnailGenerate)

@@ -3,7 +3,7 @@
  * Individual page styles for a single blog post
  */
 .post {
-  max-width: 680px;
+  max-width: $max-lines;
   margin: 0 auto;
 
   .summary {

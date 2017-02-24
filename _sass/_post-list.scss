@@ -3,35 +3,39 @@
  *  The blog post listing on blog.html
  */
 .post-list {
+  max-width: $max-lines;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   > li {
     overflow: hidden;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #eee;
     margin-bottom: 1em;
-    border: 1px solid #eee;
   }
 
   img {
-    float: left;
     display: block;
-    max-width: 40%;
-    margin-right: 1em;
+    margin-bottom: 1em;
+
+    @include breakpoint(480px) {
+      float: left;
+      max-width: 33%;
+      margin: 0 1em 0 0;
+    }
+  }
+
+  img + .post-description {
+    // Don't allow content to wrap around hte image.
+    overflow: hidden;
   }
 
   h2 {
-    // margin-top: 0;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-top: 0;
   }
 
   dl {
-    margin: 1rem;
-  }
-
-  p {
-    // Don't wrap around the floated image:
-    overflow: hidden;
+    margin: 1rem 0;
   }
 }
