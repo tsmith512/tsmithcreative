@@ -7,8 +7,10 @@ p.media {
   // These are paragraphs that wrap only an image tag in a post.
   text-align: center;
 
-  margin-left: -(($max-width - $max-lines) / 2);
-  margin-right: -(($max-width - $max-lines) / 2);
+  @include breakpoint($max-width + 16) {
+    margin-left: -(($max-width - $max-lines) / 2);
+    margin-right: -(($max-width - $max-lines) / 2);
+  }
 
   img {
     position: relative;
@@ -31,7 +33,10 @@ p.media {
 }
 
 pre.highlight {
-  overflow-x: scroll;
-  margin-left: -(($max-width - $max-lines) / 2);
-  margin-right: -(($max-width - $max-lines) / 2);
+  overflow-x: auto;
+
+  @include breakpoint($max-width + 16) {
+    margin-left: -(($max-width - $max-lines) / 2);
+    margin-right: -(($max-width - $max-lines) / 2);
+  }
 }
