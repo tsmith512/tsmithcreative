@@ -34,9 +34,11 @@ $max-lines: 680px;
 @import "project-list";
 @import "post-meta";
 @import "post";
+@import "project";
 @import "paginator";
 @import "page";
 @import "media";
+@import "gallery";
 @import "site-footer";
 
 // Special page styles

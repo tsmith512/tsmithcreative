@@ -14,7 +14,9 @@ layout: page
   {% assign portfolio = site.projects | reverse %}
   {% for project in portfolio %}
     <li>
-      {{ project.slug | thumbnail_image }}
+      <a class="post-link" href="{{ project.url | relative_url }}">
+        {{ project.slug | thumbnail_image }}
+      </a>
       <div class="project-description">
         <h2>
           <a class="post-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a>

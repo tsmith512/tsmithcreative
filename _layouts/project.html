@@ -17,21 +17,27 @@ layout: page
     </dl>
   </header>
 
-  <section class="summary">
-    {{ page.summary }}
-  </section>
-
-  {% if page.images %}
-    <ul>
-      {% for image in page.images %}
-        <li>
-          <a href="{{ image.img }}">
-            <img src="{{ image.img | replace: "assets", "gfx/thumbs" }}" alt="{{ image.alt }}" title="{{ image.title }}">
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+  {% if page.summary %}
+    <section class="summary">
+      {{ page.summary }}
+    </section>
   {% endif %}
 
-  {{ content }}
+  {% if page.images %}
+    <div class="gallery">
+      <ul>
+        {% for image in page.images %}
+          <li>
+            <a href="{{ image.img }}">
+              <img src="{{ image.img | replace: "assets", "gfx/thumbs" }}" alt="{{ image.alt }}" title="{{ image.title }}">
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  <div class="project-write-up">
+    {{ content | fix_hr }}
+  </div>
 </article>
