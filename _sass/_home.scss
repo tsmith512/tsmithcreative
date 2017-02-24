@@ -1,0 +1,45 @@
+/**
+ * @file _home.scss
+ * Styles specific to the home page
+ */
+
+.home {
+  min-height: 100vh;
+  background-image: url('/gfx/home-background.jpg');
+  background-size: cover;
+  background-position: center;
+
+  article {
+
+    @include breakpoint($max-width) {
+      max-width: $max-lines;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+
+
+    text-align: center;
+
+    h1 {
+      font-family: $tungsten;
+      font-size: 8em;
+      color: white;
+      margin: 0;
+    }
+
+    p {
+      font-family: $gotham;
+    }
+  }
+
+  @include breakpoint($max-width) {
+    .site-footer {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
