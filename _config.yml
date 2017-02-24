@@ -26,3 +26,14 @@ keep_files:
 
 # Site settings
 permalink: /blog/:year/:slug/
+
+defaults:
+  - scope:
+      type: projects
+    values:
+      layout: project
+
+collections:
+  projects:
+    output: true
+    permalink: /project/:slug/

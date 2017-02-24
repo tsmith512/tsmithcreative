@@ -1,0 +1,33 @@
+---
+layout: page
+---
+<article class="project">
+  <header class="post-meta">
+    <dl>
+      <dt><span class="icon icon-calendar-light">Published</span></dt>
+      <dd class="date">{{ page.date | date: "%B %e, %Y"}}</dd>
+      <dt><span class="icon icon-tags-light">Tags</span></dt>
+      <dd class="tags">
+        <ul>
+          {% for tag in page.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      </dd>
+    </dl>
+  </header>
+
+  <section class="summary">
+    {{ page.summary }}
+  </section>
+
+  {% if page.images %}
+    <ul>
+      {% for image in page.images %}
+        <li><img src="{{ image.img }}" alt="{{ image.alt }}" title="{{ image.title }}"></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {{ content }}
+</article>

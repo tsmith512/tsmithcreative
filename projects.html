@@ -1,0 +1,41 @@
+---
+title: Project Archives
+# This doesn't show up in nav menus
+permalink: /archives/
+layout: page
+---
+
+<p class="major-intro">
+  Many old projects which I nearly discarded in the migration, but sometimes it
+  is important to remember where you've been.
+</p>
+
+<ul class="project-list">
+  {% assign portfolio = site.projects | reverse %}
+  {% for project in portfolio %}
+    <li>
+      {{ project.slug | thumbnail_image }}
+      <div class="project-description">
+        <h2>
+          <a class="post-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a>
+        </h2>
+        <div class="post-meta">
+          <dl>
+            <dt><span class="icon icon-calendar-light">Published</span></dt>
+            <dd class="date">{{ project.date | date: "%B %e, %Y"}}</dd>
+            <dt><span class="icon icon-tags-light">Tags</span></dt>
+            <dd class="tags">
+              <ul>
+                {% for tag in project.tags %}
+                <li>{{ tag }}</li>
+                {% endfor %}
+              </ul>
+            </dd>
+          </dl>
+
+          <p class="summary">{{ project.summary }}</p>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
