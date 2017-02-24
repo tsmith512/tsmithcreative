@@ -25,6 +25,7 @@
     "gulp-uglify": "^1.5.4",
     "gulp-util": "^3.0.7",
     "gulpicon": "^0.1.2",
+    "photoswipe": "^4.1.1",
     "run-sequence": "^1.2.2"
   }
 }
