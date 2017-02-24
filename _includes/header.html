@@ -1,3 +1,11 @@
 <header class="site-header">
   <h1><a href="/{{ site.baseurl }}"><span>{{ site.title }}</span></a></h1>
+
+  <nav>
+    <ul>
+      <li><a href="/blog"{% if page.url contains "/blog" %} class="active"{% endif %}>Blog</a></li>
+      <li><a href="/projects">Portfolio</a></li>
+      <li><a href="http://www.google.com">Photos</a></li>
+    </ul>
+  </nav>
 </header>
