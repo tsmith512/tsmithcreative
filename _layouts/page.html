@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign masthead = "assets/masthead/" | append: page.slug | append: ".jpg" %}
-<div class="masthead" style="background-image: url('{{ masthead | masthead_image }}');">
+<div {{ masthead | masthead_image_style }}>
   <div class="wrapper">
     <h1>{{ page.title }}</h1>
   </div>

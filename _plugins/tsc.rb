@@ -11,15 +11,15 @@ module Jekyll
   end
 
   # Determine if there is a masthead image for a particular slug or not, and
-  # output the appropriate value. To be used in a CSS url() call for the image.
-  module MastheadCheckExists
-    def masthead_image(input)
+  # output classes and/or a CSS background override for div.masthead.
+  module MastheadGenerate
+    def masthead_image_style(input)
       if (File.exist?(input))
         # `input` doesn't have a leading slash so that Ruby can find this file
         # in the working directory.
-        "/" + input
+        "class='masthead masthead-override' style='background-image: url(\"/#{input}\");'"
       else
-        "/assets/masthead/DEFAULT.jpg"
+        "class='masthead masthead-default'"
       end
     end
   end
@@ -39,5 +39,5 @@ module Jekyll
 end
 
 Liquid::Template.register_filter(Jekyll::MediaWrapper)
-Liquid::Template.register_filter(Jekyll::MastheadCheckExists)
+Liquid::Template.register_filter(Jekyll::MastheadGenerate)
 Liquid::Template.register_filter(Jekyll::ThumbnailGenerate)

@@ -6,8 +6,16 @@
 .masthead {
   margin-bottom: 2rem;
 
-  background-size: cover;
   background-position: center center;
+  &.masthead-default {
+    background-image: url('/gfx/masthead-default.jpg');
+    background-repeat: repeat;
+  }
+
+  &.masthead-override {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
   text-align: center;
   @include breakpoint($max-width + 16) {
