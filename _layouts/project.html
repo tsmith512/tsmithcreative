@@ -1,0 +1,43 @@
+---
+layout: page
+---
+<article class="project">
+  <header class="post-meta">
+    <dl>
+      <dt><span class="icon icon-calendar-light">Published</span></dt>
+      <dd class="date">{{ page.date | date: "%B %e, %Y"}}</dd>
+      <dt><span class="icon icon-tags-light">Tags</span></dt>
+      <dd class="tags">
+        <ul>
+          {% for tag in page.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      </dd>
+    </dl>
+  </header>
+
+  {% if page.summary %}
+    <section class="summary">
+      {{ page.summary }}
+    </section>
+  {% endif %}
+
+  {% if page.images %}
+    <div class="gallery">
+      <ul>
+        {% for image in page.images %}
+          <li>
+            <a href="{{ image.img }}" title="{{ image.title }}" data-size="{{ image.width }}x{{ image.height }}">
+              <img src="{{ image.img | replace: "assets", "gfx/thumbs" }}" alt="{{ image.alt }}" width="200" height="200">
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  <div class="project-write-up">
+    {{ content | fix_hr }}
+  </div>
+</article>

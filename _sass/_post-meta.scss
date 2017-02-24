@@ -26,11 +26,14 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    overflow: hidden; // Don't wrap around the tag icon
+    line-height: 1.25;
 
     li {
       display: inline-block;
       background: #f0f0f0;
       padding: 0 0.25em;
+      margin-bottom: 0.25em;
     }
   }
 }

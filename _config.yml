@@ -18,6 +18,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - package.json
+  - gulpfile.js
+  - README.md
 keep_files:
   - css   # Don't clobber site CSS, this way I don't have to store compiled CSS
   - js    # Don't clobber site JS, which is built with Gulp and includes Photoswipe
@@ -26,3 +28,15 @@ keep_files:
 
 # Site settings
 permalink: /blog/:year/:slug/
+
+defaults:
+  - scope:
+      type: projects
+    values:
+      layout: project
+      photoswipe: true
+
+collections:
+  projects:
+    output: true
+    permalink: /project/:slug/

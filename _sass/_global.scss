@@ -16,6 +16,7 @@ body {
   font-family: $archer;
   font-size: 100%;
   line-height: 1.5;
+  color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -60,6 +61,13 @@ img {
   @include breakpoint($max-width) {
     margin: 1rem auto;
   }
+}
+
+.major-intro {
+  text-align: center;
+  font-family: $gotham;
+  max-width: $max-lines;
+  margin: 1em auto 2em auto;
 }
 
 blockquote {

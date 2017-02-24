@@ -1,5 +1,7 @@
 // Pull in other libraries
 @import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "../node_modules/photoswipe/src/css/main.scss";
+@import "../node_modules/photoswipe/src/css/default-skin/default-skin.scss";
 
 // Variables
 $masthead-box: 420px;
@@ -31,11 +33,15 @@ $max-lines: 680px;
 @import "site-header";
 @import "masthead";
 @import "post-list";
+@import "project-list";
 @import "post-meta";
 @import "post";
+@import "project";
 @import "paginator";
 @import "page";
 @import "media";
+@import "gallery";
+@import "photoswipe";
 @import "site-footer";
 
 // Special page styles

@@ -1,0 +1,38 @@
+/**
+ * @file _project.scss
+ * Full display of project items
+ */
+.project {
+  .summary {
+    max-width: $max-lines;
+    font-family: $gotham;
+    font-size: 1.25em;
+    color: #666;
+  }
+
+  .project-write-up {
+    float: left;
+    max-width: $max-lines;
+  }
+
+  .project-details {
+    float: right;
+    max-width: calc(100% - #{$max-lines} - 1em);
+
+    font-family: $gotham;
+    color: #999;
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 1em;
+    }
+
+    strong {
+      display: block;
+    }
+  }
+}
