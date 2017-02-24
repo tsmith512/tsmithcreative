@@ -19,6 +19,7 @@ Add your own CSS file to the editor by adding your stylesheet to the `$styles`
 variable on the `mce_css` hook:
 
 ``` php
+<?php
 function theme_custom_editor_css($styles) {
   // Append <theme_root>/css/editor.css to the end of
   // the style list for TinyMCE
@@ -39,6 +40,7 @@ set of label/value pairs for styles. You should be sure to include these classes
 in the editor CSS file you specified above.
 
 ``` php
+<?php
 function theme_custom_editor_options($options) {
   // Add a select list of custom inline classes next to the
   // block-level element menu. Be sure to define these in
