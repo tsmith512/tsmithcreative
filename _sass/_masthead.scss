@@ -8,8 +8,8 @@
 
   background-position: center center;
   &.masthead-default {
-    background-image: url('/gfx/masthead-default.jpg');
     background-repeat: repeat;
+    background-image: url('/gfx/masthead-default.jpg');
   }
 
   &.masthead-override {
