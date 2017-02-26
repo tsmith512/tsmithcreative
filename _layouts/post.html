@@ -6,6 +6,14 @@ layout: page
     <dl>
       <dt><span class="icon icon-calendar-light">Published</span></dt>
       <dd class="date">{{ page.date | date: "%B %e, %Y"}}</dd>
+      {% if page.citation %}
+        <dt><span class="icon icon-penpaper-light">Appears On</span></dt>
+        <dd class="citation"><a href="{{ page.citation[1]}}">
+          {% case page.citation[0] %}
+            {% when "4K" %} Originally written for and appears on the Four Kitchens Blog
+          {% endcase %}
+        </a></dd>
+      {% endif %}
       <dt><span class="icon icon-tags-light">Tags</span></dt>
       <dd class="tags">
         <ul>

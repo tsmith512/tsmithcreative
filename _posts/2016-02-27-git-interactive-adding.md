@@ -3,6 +3,7 @@ title: Cleaner History with Interactive Commit Building in Git
 summary: Git offers two ways to build more targeted commits from a dirty working tree, allowing developers to illustrate and annotate thought processes, leading to more maintainable repositories.
 layout: post
 tags: [development]
+citation: [4K, "https://www.fourkitchens.com/blog/article/cleaner-history-interactive-commit-building-git"]
 ---
 
 My home is a cluttered place, so my quest for tidiness takes other, more

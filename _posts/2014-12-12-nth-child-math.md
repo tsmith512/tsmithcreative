@@ -3,6 +3,7 @@ title: On nth-child, mathematics, and that moment in school when your teacher sa
 summary: CSS's nth-child and nth-of-type are powerful, but recently I've seen them used improperly by mistakenly using the multiplier as the offset.
 layout: post
 tags: [frontend, development]
+citation: [4K, "https://www.fourkitchens.com/blog/article/nth-child-mathematics-and-moment-school-when-your-teacher-said-youd-use-algebra-real-life"]
 ---
 
 Recently, I've seen a recurring error with how `:nth-child()` and `:nth-of-type()` selectors are being used, so I wanted to host an anonymous algebra moment on these, my favorite CSS Level 3 selectors.

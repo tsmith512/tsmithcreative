@@ -3,6 +3,7 @@ title: Making a Photoblog with Lightroom, Jekyll, and Gulp
 summary: Combining Lightroom's Publishing options with Jekyll for static site building for an easy, highly performant photoblog.
 layout: post
 tags: [photography, development]
+citation: [4K, "https://www.fourkitchens.com/blog/article/making-performant-photoblog-lightroom-jekyll-and-gulp"]
 ---
 
 In middle school, I eagerly sweet-talked my Dad, who still maintains that

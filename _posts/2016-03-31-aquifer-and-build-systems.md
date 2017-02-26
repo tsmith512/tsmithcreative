@@ -3,6 +3,7 @@ title: "Meet Aquifer: A Build System for Easier Drupal Development"
 summary: Enterprise CMS-based websites are applications that deserve build systems for smarter dependency management, auditable changes, and automation of repeatable steps for reliability.
 layout: post
 tags: [drupal, management]
+citation: [4K, "https://www.fourkitchens.com/blog/article/meet-aquifer-build-system-easier-drupal-development"]
 ---
 
 ## What is a build system?
