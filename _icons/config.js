@@ -36,7 +36,8 @@ module.exports = {
   colors: {
     main: "#999999",
     blue: "#3347af",
-    light: "#CCCCCC"
+    light: "#CCCCCC",
+    white: "#FFFFFF"
   },
 
   dynamicColorOnly: true,
@@ -49,20 +50,28 @@ module.exports = {
   customselectors: {
     "fpx-main": [".fpx"],
     "fpx-blue": [".fpx:hover"],
+    "fpx-white": [".home .fpx:hover"],
     "behance-main": [".behance"],
     "behance-blue": [".behance:hover"],
+    "behance-white": [".home .behance:hover"],
     "drupal-main": [".drupal"],
     "drupal-blue": [".drupal:hover"],
+    "drupal-white": [".home .drupal:hover"],
     "facebook-main": [".facebook"],
     "facebook-blue": [".facebook:hover"],
+    "facebook-white": [".home .facebook:hover"],
     "github-main": [".github"],
     "github-blue": [".github:hover"],
+    "github-white": [".home .github:hover"],
     "linkedin-main": [".linkedin"],
     "linkedin-blue": [".linkedin:hover"],
+    "linkedin-white": [".home .linkedin:hover"],
     "twitter-main": [".twitter"],
     "twitter-blue": [".twitter:hover"],
+    "twitter-white": [".home .twitter:hover"],
     "rss-main": [".rss"],
     "rss-blue": [".rss:hover"],
+    "rss-white": [".home .rss:hover"],
   },
 
   compressPNG: true
