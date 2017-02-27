@@ -7,9 +7,18 @@
   min-height: 100vh;
   background-image: url('/gfx/home-background.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: left bottom;
+
+  .site-header {
+    position: static;
+  }
 
   article {
+    background: white;
+    margin: 2em;
+    border-top: 0.25em solid #ddd;
+    border-bottom: 0.25em solid #ddd;
+    padding: 1em;
 
     @include breakpoint($max-width) {
       max-width: $max-lines;
@@ -17,25 +26,41 @@
       top: 50%;
       left: 50%;
       transform: translateY(-50%) translateX(-50%);
+      margin: 0 auto;
     }
 
-
-    text-align: center;
+    // text-align: center;
 
     h1 {
       font-family: $tungsten;
-      font-size: 8em;
-      color: white;
+      font-size: 4em;
       margin: 0;
+
+      span {
+        display: inline-block; // To prevent a break in the middle of this line.
+      }
+    }
+
+    .avatar {
+      // flex-basis: calc(25% - 0.5em);
+    }
+
+    img {
+      display: block;
     }
 
     p {
       font-family: $gotham;
+      margin-bottom: 0; // Padding on this container.
     }
   }
 
-  @include breakpoint($max-width) {
-    .site-footer {
+  .site-footer {
+    .copy {
+      color: white;
+    }
+
+    @include breakpoint($max-width) {
       position: absolute;
       bottom: 0;
       left: 50%;

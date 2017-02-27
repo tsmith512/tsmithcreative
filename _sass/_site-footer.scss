@@ -6,12 +6,11 @@
   @extend %clearfix;
   margin: 2rem 1rem;
   padding: 1rem 0;
-  border-top: 2px solid black;
+  border-top: 2px solid #ddd;
 
   @include breakpoint($masthead-box) {
     margin: 2rem;
     max-width: 960px;
-    border-top: 2px solid #ddd;
   }
 
   @include breakpoint($masthead-banner-full) {
