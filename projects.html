@@ -1,0 +1,41 @@
+---
+title: Portfolio
+layout: page
+---
+
+{% assign portfolio = site.projects | where_exp: "project", "project.portfolio > 0" | sort: "portfolio", "first" %}
+
+<ul class="portfolio-list">
+  {% for project in portfolio %}
+    <li>
+      <div class="main-thumbnail">
+        <a href="{{ project.url | relative_url }}">{{ project.slug | thumbnail_image }}</a>
+      </div>
+      <div class="project-title">
+        <h2>
+          <a class="post-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a>
+        </h2>
+      </div>
+      <div class="post-meta">
+        <dl>
+          <dt><span class="icon icon-calendar-light">Published</span></dt>
+          <dd class="date">{{ project.date | date: "%B %e, %Y"}}</dd>
+          <dt><span class="icon icon-tags-light">Tags</span></dt>
+          <dd class="tags">
+            <ul>
+              {% for tag in project.tags %}
+              <li>{{ tag }}</li>
+              {% endfor %}
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <div class="project-details">
+        <p class="summary">{{ project.summary }}</p>
+        {% if project.problem %}
+          <p class="problem">{{ project.problem }}</p>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

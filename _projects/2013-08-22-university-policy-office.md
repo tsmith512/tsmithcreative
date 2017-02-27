@@ -3,30 +3,39 @@ title: "University Policy Office"
 summary: "User flows, wireframing, user testing, and development of administrative dashboard for policy document drafting, routing, publishing, and historical tracking."
 date: 2013-08-22 21:54:59
 tags: [admin experience, ux, project ownership, drupal]
+portfolio: 3
+problem: >
+  The University of Texas at Austin's Policy Office has a complex workflow for
+  the drafting and review of policy documents. Documents must have a rich audit
+  history as they are circulated to various departments who may or may not be
+  allowed to edit, may or may not be allowed to request changes, or simply
+  offer comments. This "routing" history, along with each approved and published
+  revision of the document must be available for the UPO and legal teams, while
+  the most recent approved version must be easily accessible to the public.
 images:
   - img: /assets/projects/legacy/upo-1.png
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1063
     height: 623
   - img: /assets/projects/legacy/policy_dashboard_d_-_drafts_to_review.png
-    alt: 
-    title: 
+    alt:
+    title:
     width: 934
     height: 640
   - img: /assets/projects/legacy/upo-2.png
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1063
     height: 623
   - img: /assets/projects/legacy/policy_node_-_node_view_b_-_routing_sheet_-_cropped.png
-    alt: 
-    title: 
+    alt:
+    title:
     width: 700
     height: 640
   - img: /assets/projects/legacy/upo-3.png
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1063
     height: 1523
 

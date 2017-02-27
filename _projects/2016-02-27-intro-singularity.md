@@ -1,36 +1,42 @@
 ---
 title: "Intro to Singularity"
-summary: "Embrace your content and free yourself from predefined media queries or clumsy layouts with Singularity Grids."
+summary: "A presentation on the Singularity Grid system: embrace your content and free yourself from predefined media queries, presentational classes, and clumsy layouts."
 date: 2016-02-27 18:35:20
 tags: [frontend, presentation]
+portfolio: 5
+problem: >
+  Too many grid systems require strict adherence to their own conventions like
+  preset media queries which don't truly support your content or design,
+  presentational classes which litter markup and can be difficult to insert in
+  Drupal 7, or strict layouts which don't allow proper content prioritization.
 images:
   - img: /assets/projects/legacy/1456619495216screensave.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1920
     height: 979
   - img: /assets/projects/legacy/1456619540220screensave.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1920
     height: 935
   - img: /assets/projects/legacy/1456619570750screensave.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1920
     height: 935
   - img: /assets/projects/legacy/1456619595053screensave.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1920
     height: 935
   - img: /assets/projects/legacy/1456619621759screensave.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1920
     height: 935
   - img: /assets/projects/legacy/img_0910.jpg
-    alt: 
+    alt:
     title: SANDCamp 2016, San Diego, California
     width: 2016
     height: 1512

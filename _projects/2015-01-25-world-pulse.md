@@ -2,7 +2,17 @@
 title: "World Pulse"
 summary: "Design and frontend development a powerful online community of women and allies building solutions to today’s biggest challenges."
 date: 2015-01-25 12:09:39
-tags: [design, drupal, frontend]
+tags: [design, drupal, frontend, internationalization]
+portfolio: 2
+problem: >
+  World Pulse was running on a heavily customized, but overgrown Drupal 6
+  installation. The design and user experience made sharing content unintuitive
+  and cumbersome, particularly on mobile devices. Further, internationalization
+  was not supported. World Pulse's mission to change the world by empowering
+  community leaders across the globe but primarily in developing nations
+  depends on a site that is fast, enables easy onboarding, can be used on
+  low-power and mobile devices, and is easy for a small team of administrators
+  to maintain.
 images:
   - img: /assets/projects/legacy/1422466748983screensave.png
     alt:

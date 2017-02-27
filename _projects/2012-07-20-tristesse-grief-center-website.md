@@ -5,18 +5,18 @@ date: 2012-07-20 00:00:00
 tags: [volunteer, drupal, design]
 images:
   - img: /assets/projects/legacy/tgca.png
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1263
     height: 1065
   - img: /assets/projects/legacy/tgcb.png
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1280
     height: 963
   - img: /assets/projects/legacy/tgcc.png
-    alt: 
-    title: 
+    alt:
+    title:
     width: 941
     height: 841
 
