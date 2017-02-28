@@ -2,9 +2,9 @@
   'use strict';
 
   var form = document.getElementById("contact-form");
-  if (form.length && form.addEventListener) {
+  if (form && form.addEventListener) {
     form.addEventListener("submit", tscEmailHandler, false); //Modern browsers
-  } else if(form.length && form.attachEvent) {
+  } else if(form && form.attachEvent) {
     form.attachEvent('onsubmit', tscEmailHandler); //Old IE
   }
 
