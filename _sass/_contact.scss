@@ -68,21 +68,22 @@ form {
 
   .links {
     li {
-      display: inline-block;
+      display: block;
+      margin-bottom: 1em;
     }
 
     a {
       display: block;
-      text-indent: 100%;
+      text-indent: calc(48px + 1em);
       white-space: nowrap;
       overflow: hidden;
 
-      width: 48px;
       height: 48px;
-
-      background-position: center center;
+      line-height: 48px;
+      background-position: left center;
       background-size: contain;
     }
+
   }
 
 }
