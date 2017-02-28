@@ -1,0 +1,97 @@
+/**
+ * @file _global.scss
+ * Global styles and defaults. Applied immediately after the normalize.
+ */
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $archer;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.15;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, a:link {
+  color: #3347af;
+}
+
+a:hover, a:active {
+  color: #3957f1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.2s ease-out;
+
+  &[data-src] {
+    opacity: 0;
+  }
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.wrapper {
+  @extend %clearfix;
+  max-width: $max-width;
+  margin: 1rem;
+
+  @include breakpoint($max-width) {
+    margin: 1rem auto;
+  }
+}
+
+.major-intro {
+  text-align: center;
+  font-family: $gotham;
+  max-width: $max-lines;
+  margin: 1em auto 2em auto;
+}
+
+blockquote {
+  position: relative;
+  margin: 1em 2em;
+}
+
+blockquote:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -2em;
+
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
+
+  // This is boosted from .icon styles and the SVG from icon-quote-light
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M13%2014.725c0-5.141%203.892-10.519%2010-11.725l.984%202.126c-2.215.835-4.163%203.742-4.38%205.746%202.491.392%204.396%202.547%204.396%205.149%200%203.182-2.584%204.979-5.199%204.979-3.015%200-5.801-2.305-5.801-6.275zm-13%200c0-5.141%203.892-10.519%2010-11.725l.984%202.126c-2.215.835-4.163%203.742-4.38%205.746%202.491.392%204.396%202.547%204.396%205.149%200%203.182-2.584%204.979-5.199%204.979-3.015%200-5.801-2.305-5.801-6.275z%22%20fill%3D%22%23CCCCCC%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  overflow: hidden;
+  text-indent: 100%;
+}

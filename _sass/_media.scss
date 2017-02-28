@@ -1,0 +1,42 @@
+/**
+ * @file _media.scss
+ * Style for media embeds
+ */
+
+p.media {
+  // These are paragraphs that wrap only an image tag in a post.
+  text-align: center;
+
+  @include breakpoint($max-width + 16) {
+    margin-left: -(($max-width - $max-lines) / 2);
+    margin-right: -(($max-width - $max-lines) / 2);
+  }
+
+  img {
+    position: relative;
+    border: 5px solid white;
+
+    &:after {
+      content: " ";
+      display: block;
+
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+
+      border: 1px solid #eee;
+      border-radius: 3px;
+    }
+  }
+}
+
+pre.highlight {
+  overflow-x: auto;
+
+  @include breakpoint($max-width + 16) {
+    margin-left: -(($max-width - $max-lines) / 2);
+    margin-right: -(($max-width - $max-lines) / 2);
+  }
+}

@@ -1,0 +1,90 @@
+/**
+ * @file _home.scss
+ * Styles specific to the home page
+ */
+
+.home {
+  min-height: 100vh;
+
+  // The checker color pattern
+  background-image: url('/gfx/masthead-default.jpg');
+
+  // That 1200px wide is 900px tall, which is actually needed for this image
+  // since it's really about the viewport height at this point, but width makes
+  // a better test, according to my site's analytics.
+  @include breakpoint(720px) {
+    background-image: url('/gfx/home/1200/home-background.jpg');
+    background-size: cover;
+    background-position: left bottom;
+  }
+  @include breakpoint(1600px) {
+    background-image: url('/gfx/home/1600/home-background.jpg');
+  }
+  @include breakpoint(1800px) {
+    background-image: url('/gfx/home/1800/home-background.jpg');
+  }
+
+  .site-header {
+    position: static;
+  }
+
+  article {
+    background: white;
+    margin: 2em;
+    border-top: 0.25em solid #ddd;
+    border-bottom: 0.25em solid #ddd;
+    padding: 1em;
+
+    @include breakpoint($max-width) {
+      max-width: $max-lines;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      margin: 0 auto;
+    }
+
+    // text-align: center;
+
+    h1 {
+      font-family: $tungsten;
+      font-size: 4em;
+      margin: 0;
+
+      span {
+        display: inline-block; // To prevent a break in the middle of this line.
+      }
+    }
+
+    .avatar {
+      // flex-basis: calc(25% - 0.5em);
+    }
+
+    img {
+      display: block;
+    }
+
+    p {
+      font-family: $gotham;
+      margin-bottom: 0; // Padding on this container.
+    }
+  }
+
+  .site-footer {
+    border-top: 0;
+
+    .copy {
+      color: white;
+    }
+
+    @include breakpoint(720px) {
+      position: absolute;
+      bottom: 0;
+      width: calc(100% - 4em);
+    }
+    @include breakpoint(1000px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

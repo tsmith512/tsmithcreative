@@ -1,0 +1,99 @@
+/**
+ * @file _contact.scss
+ * Styles for the contact page and the form that sits on it.
+ */
+form {
+  label {
+    display: block;
+    font-family: $gotham;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  input, textarea {
+    width: 100%;
+    margin-bottom: 2em;
+    padding: .25em 0;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  input {
+    border: 0;
+    border-bottom: 1px solid #999;
+
+    &:focus {
+      border-bottom-color: #333;
+    }
+  }
+
+  textarea {
+    border: 1px solid #eee;
+    border-bottom: 1px solid #999;
+    padding: 1em;
+
+    &:focus {
+      border-bottom-color: #333;
+    }
+  }
+}
+
+.contact {
+  .form-wrapper {
+    @include breakpoint(620px) {
+      float: left;
+      width: 60%;
+    }
+    @include breakpoint($max-width) {
+      width: $max-lines;
+    }
+  }
+
+  aside {
+    @include breakpoint(620px) {
+      float: right;
+      width: calc(40% - 1em);
+    }
+    @include breakpoint($max-width) {
+      width: calc(100% - #{$max-lines} - 1em);
+    }
+
+    ul, li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 1em;
+    border: 1em solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+  }
+
+  .links {
+    li {
+      display: block;
+      margin-bottom: 1em;
+    }
+
+    a {
+      display: block;
+      padding-left: calc(48px + 1em);
+      white-space: nowrap;
+      overflow: hidden;
+
+      height: 48px;
+      line-height: 48px;
+      background-position: left center;
+      background-size: contain;
+    }
+
+  }
+
+}

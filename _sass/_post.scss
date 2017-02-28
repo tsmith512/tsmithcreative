@@ -1,0 +1,14 @@
+/**
+ * @file _post.scss
+ * Individual page styles for a single blog post
+ */
+.post {
+  max-width: $max-lines;
+  margin: 0 auto;
+
+  .summary {
+    font-family: $gotham;
+    font-size: 1.25em;
+    color: #666;
+  }
+}

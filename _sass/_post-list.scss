@@ -1,0 +1,41 @@
+/**
+ *  @file _post-list.scss
+ *  The blog post listing on blog.html
+ */
+.post-list {
+  max-width: $max-lines;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+
+  > li {
+    overflow: hidden;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1em;
+  }
+
+  img {
+    display: block;
+    margin-bottom: 1em;
+
+    @include breakpoint(480px) {
+      float: left;
+      max-width: 33%;
+      margin: 0 1em 0 0;
+    }
+  }
+
+  img + .post-description {
+    // Don't allow content to wrap around hte image.
+    overflow: hidden;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  dl {
+    margin: 1rem 0;
+  }
+}
