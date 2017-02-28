@@ -43,13 +43,23 @@ form {
 
 .contact {
   .form-wrapper {
-    float: left;
-    width: $max-lines;
+    @include breakpoint(620px) {
+      float: left;
+      width: 60%;
+    }
+    @include breakpoint($max-width) {
+      width: $max-lines;
+    }
   }
 
   aside {
-    float: right;
-    width: calc(100% - #{$max-lines} - 1em);
+    @include breakpoint(620px) {
+      float: right;
+      width: calc(40% - 1em);
+    }
+    @include breakpoint($max-width) {
+      width: calc(100% - #{$max-lines} - 1em);
+    }
 
     ul, li {
       list-style: none;

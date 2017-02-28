@@ -11,13 +11,23 @@
   }
 
   .project-write-up {
-    float: left;
-    max-width: $max-lines;
+    @include breakpoint(780px) {
+      float: left;
+      width: 60%;
+    }
+    @include breakpoint($max-width) {
+      width: $max-lines;
+    }
   }
 
   .project-details {
-    float: right;
-    max-width: calc(100% - #{$max-lines} - 1em);
+    @include breakpoint(780px) {
+      float: right;
+      width: calc(40% - 1em);
+    }
+    @include breakpoint($max-width) {
+      width: calc(100% - #{$max-lines} - 1em);
+    }
 
     font-family: $gotham;
     color: #999;
