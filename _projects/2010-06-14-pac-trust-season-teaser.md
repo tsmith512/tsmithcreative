@@ -5,33 +5,33 @@ date: 2010-06-14 00:00:00
 tags: [print, design, theatre]
 images:
   - img: /assets/projects/legacy/teaser_card_2010-2011_-_draft_10_for_web.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 563
     height: 1350
   - img: /assets/projects/legacy/teaser_card_2010-2011_-_draft_10_for_web2.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 563
     height: 1350
   - img: /assets/projects/legacy/front_detail_1.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 563
     height: 394
   - img: /assets/projects/legacy/front_detail_2.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 563
     height: 394
   - img: /assets/projects/legacy/back_detail_1.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 563
     height: 394
   - img: /assets/projects/legacy/back_detail_2.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 563
     height: 394
 
@@ -48,4 +48,4 @@ Awarded a Gold Medal at the 2011 OSU Creative Lightning Awards.
 *   **Printing Methods:** Digital by J. D. Young in Tulsa, Oklahoma
 *   **Paper:** Sappi LOE Glossy 80# Cover
 *   **Size:** 9in x 3.75in
-*   [Download the Teaser Card PDF](/sites/default/files/tulsapactrust-teasercard-forweb.pdf)
+*   [Download the Teaser Card PDF](/assets/pdf/tpact-season-rack-card.pdf)

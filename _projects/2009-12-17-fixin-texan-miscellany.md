@@ -5,58 +5,58 @@ date: 2009-12-17 00:00:00
 tags: [book design, student work]
 images:
   - img: /assets/projects/legacy/01_-_stack.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1000
     height: 665
   - img: /assets/projects/legacy/02_-_front_cover.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1000
     height: 665
   - img: /assets/projects/legacy/03_-_back_covers.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1000
     height: 665
   - img: /assets/projects/legacy/04_-_standing.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1000
     height: 665
   - img: /assets/projects/legacy/05_-_first_spread.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1000
     height: 665
   - img: /assets/projects/legacy/06_-_von_rosengerg_story.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1000
     height: 665
   - img: /assets/projects/legacy/07_-_insects_spread.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1000
     height: 665
   - img: /assets/projects/legacy/08_-_colophon.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1000
     height: 665
   - img: /assets/projects/legacy/09_-_rivers_map_folded_inside.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1000
     height: 665
   - img: /assets/projects/legacy/10_-_rivers_map_display.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1000
     height: 665
   - img: /assets/projects/legacy/11_-_book_standing_with_maps.jpg
-    alt: 
-    title: 
+    alt:
+    title:
     width: 1000
     height: 665
 
@@ -75,4 +75,4 @@ Awarded a Gold Medal at the 24th Annual Brass Ring Awards. Accepted to the 42nd 
 *   **Typefaces:** Absara, Buckboard
 *   **Paper:** Mohawk Via Felt (Warm White, Jute) with covers and specials on Mohawk Proterra (Chili Antique, Iris Antique, Black Antique)
 *   **Size:** 8.5in x 7in, 32 pages
-*   [Download _Fixin' To_ Mockup PDF](/sites/default/files/fixinto-mockup.pdf) _(Certain texturization, effects, and art details are simulated and not consistent with the final printed piece.)_
+*   [Download _Fixin' To_ Mockup PDF](/assets/pdf/tu-fixinto-book.pdf) _(Certain texturization, effects, and art details are simulated and not consistent with the final printed piece.)_
