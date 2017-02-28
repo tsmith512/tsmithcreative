@@ -1,0 +1,88 @@
+/**
+ * @file _contact.scss
+ * Styles for the contact page and the form that sits on it.
+ */
+form {
+  label {
+    display: block;
+    font-family: $gotham;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  input, textarea {
+    width: 100%;
+    margin-bottom: 2em;
+    padding: .25em 0;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  input {
+    border: 0;
+    border-bottom: 1px solid #999;
+
+    &:focus {
+      border-bottom-color: #333;
+    }
+  }
+
+  textarea {
+    border: 1px solid #eee;
+    border-bottom: 1px solid #999;
+    padding: 1em;
+
+    &:focus {
+      border-bottom-color: #333;
+    }
+  }
+}
+
+.contact {
+  .form-wrapper {
+    float: left;
+    width: $max-lines;
+  }
+
+  aside {
+    float: right;
+    width: calc(100% - #{$max-lines} - 1em);
+
+    ul, li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 1em;
+    border: 1em solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+  }
+
+  .links {
+    li {
+      display: inline-block;
+    }
+
+    a {
+      display: block;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+
+      width: 48px;
+      height: 48px;
+
+      background-position: center center;
+      background-size: contain;
+    }
+  }
+
+}
