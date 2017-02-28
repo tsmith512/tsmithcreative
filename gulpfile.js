@@ -81,8 +81,21 @@ gulp.task('graphics-project-thumbnails', 'Rebuild gallery thumbnails for project
     .pipe(gulp.dest('_site/gfx/thumbs/projects/'))
 });
 
+gulp.task('graphics-home-page', 'Derivatives of that home page background', () => {
+  return gulp.src('./_gfx/home-background.jpg')
+    .pipe(resize({width: 1800, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/home/1800'))
+    .pipe(resize({width: 1600, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/home/1600'))
+    .pipe(resize({width: 1200, crop: false, upscale: false})) // is 899px
+    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/home/1200'))
+});
+
 gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'graphics-project-thumbnails'], () => {
-  return gulp.src('./_gfx/**/*.*')
+  return gulp.src(['./_gfx/**/*.*', '!./_gfx/home-background.jpg'])
   // .pipe(imagemin())
   .pipe(gulp.dest('./_site/gfx/'));
 });
