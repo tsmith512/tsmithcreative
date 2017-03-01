@@ -157,10 +157,6 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
     params: {
       Bucket: 'tsmithcreative'
     },
-
-    // @TODO: This is for testing only. Remove and invalidate these.
-    accessKeyId: 'AKIAI4FBVYJ5XP3ONPOA',
-    secretAccessKey: '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'
   });
 
   // define custom headers
