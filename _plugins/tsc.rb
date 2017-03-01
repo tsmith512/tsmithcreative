@@ -35,6 +35,14 @@ module Jekyll
         "<img src='/#{thumbnail}.png' alt=''/>"
       end
     end
+    def thumbnail_image_src(input)
+      thumbnail = "assets/thumbnail/#{input}"
+      if (File.exist?("#{thumbnail}.jpg"))
+        "/#{thumbnail}.jpg"
+      elsif (File.exist?("#{thumbnail}.png"))
+        "/#{thumbnail}.png"
+      end
+    end
   end
 
   # Projects contain a writeup and a bullet-list of some basic details.
