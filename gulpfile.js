@@ -28,6 +28,7 @@ const gulp = require('gulp-help')(require('gulp'), {
 const gutil = require('gulp-util');
 
 const autoprefixer = require('gulp-autoprefixer');
+const awspublish = require('gulp-awspublish');
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const eslint = require('gulp-eslint');
@@ -146,6 +147,43 @@ gulp.task('jekyll', 'Run jekyll build', (cb) => {
 
 gulp.task('build', 'Run all site-generating tasks: sass, js, graphics, icons, htaccess then jekyll', (cb) => {
   runSequence(['sass', 'graphics', 'icons', 'js'], 'jekyll', cb);
+});
+
+gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
+  // create a new publisher using S3 options
+  // http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#constructor-property
+  var publisher = awspublish.create({
+    region: 'us-west-1',
+    params: {
+      Bucket: 'tsmithcreative'
+    },
+
+    // @TODO: This is for testing only. Remove and invalidate these.
+    accessKeyId: 'AKIAI4FBVYJ5XP3ONPOA',
+    secretAccessKey: '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'
+  });
+
+  // define custom headers
+  var headers = {
+    'Cache-Control': 'max-age=315360000, no-transform, public'
+  };
+
+  return gulp.src('./_site/**/*.*')
+    // publisher will add Content-Length, Content-Type and headers specified above
+    // If not specified it will set x-amz-acl to public-read by default
+    .pipe(publisher.publish(headers))
+
+    .pipe(publisher.sync('bar', [/^foo\/bar/, 'baz.txt']))
+
+    // create a cache file to speed up consecutive uploads
+    .pipe(publisher.cache())
+
+     // print upload updates to console
+    .pipe(awspublish.reporter());
+});
+
+gulp.task('publish', 'Build the site and publish to S3', (cb) => {
+  runSequence(['build'], 'publish-s3', cb);
 });
 
 /*
