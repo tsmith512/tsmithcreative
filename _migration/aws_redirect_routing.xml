@@ -30,7 +30,7 @@
     <Redirect>
       <Protocol>http</Protocol>
       <HostName>www.tsmith512.com</HostName>
-      <ReplaceKeyWith>/?utm_source=tsmithcreative&utm_medium=website&utm_campaign=old_link_redirection</ReplaceKeyPrefixWith>
+      <ReplaceKeyWith>?utm_source=tsmithcreative&amp;utm_medium=website&amp;utm_campaign=old_link_redirection</ReplaceKeyWith>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
