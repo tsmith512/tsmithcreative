@@ -2,7 +2,7 @@
 title: "Policy of Truth"
 summary: "A Four Kitchens presentation and case study on Workbench (Moderation and Access) for basic and complex Workflows in Drupal"
 date: 2013-06-23 09:49:21
-tags: [presentation, admin experience, ux, project ownership, drupal]
+tags: [presentation, admin experience, ux, product ownership, drupal]
 images:
   - img: /assets/projects/legacy/pt-1.jpg
     alt: 
