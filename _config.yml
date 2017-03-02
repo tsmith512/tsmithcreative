@@ -35,6 +35,10 @@ defaults:
     values:
       layout: project
       photoswipe: true
+  - scope:
+      type: posts
+    values:
+      commenting: true
 
 collections:
   projects:
