@@ -30,4 +30,11 @@ layout: page
   </section>
 
   {{ content }}
+
+  <hr />
+
+  {% if page.commenting %}
+    <div id="disqus_thread"></div>
+  {% endif %}
+
 </article>

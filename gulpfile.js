@@ -169,7 +169,7 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
     // If not specified it will set x-amz-acl to public-read by default
     .pipe(publisher.publish(headers))
 
-    .pipe(publisher.sync('bar', [/^foo\/bar/, 'baz.txt']))
+    .pipe(publisher.sync())
 
     // create a cache file to speed up consecutive uploads
     .pipe(publisher.cache())
