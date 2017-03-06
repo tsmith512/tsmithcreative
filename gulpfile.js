@@ -29,6 +29,7 @@ const gutil = require('gulp-util');
 
 const autoprefixer = require('gulp-autoprefixer');
 const awspublish = require('gulp-awspublish');
+const awspublishRouter = require("gulp-awspublish-router");
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const eslint = require('gulp-eslint');
@@ -161,10 +162,57 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
 
   // define custom headers
   var headers = {
-    'Cache-Control': 'max-age=315360000, no-transform, public'
+    'Cache-Control': 'max-age=86400, no-transform, public'
   };
 
   return gulp.src('./_site/**/*.*')
+    .pipe(awspublishRouter({
+      cache: {
+          // cache for 24 hours by default
+          cacheTime: 86400
+      },
+
+      routes: {
+        // Cache static project assets for a month
+        "^assets/.+": {
+          cacheTime: 2592000
+        },
+
+        // 24 hours for HTML files
+        "\\.html$": {
+          cacheTime: 86400
+        },
+
+        // Project writeups can last 6 months
+        "^project/.+\\.html": {
+          cacheTime: 15552000
+        },
+
+        // 3 hours for the blog home page
+        "^blog/index\\.html$": {
+          cacheTime: 10800
+        },
+
+        // 3 hours for the RSS feed
+        "^feed\\.xml$": {
+          cacheTime: 10800
+        },
+
+        // 3 hours for the blog home page
+        "^blog/\\d{4}/\\.+/index\\.html$": {
+          cacheTime: 10800
+        },
+
+        // 6 months for the error pages
+        "^(403|404).+": {
+          cacheTime: 15552000
+        },
+
+        // pass-through for anything that wasn't matched by routes above, to
+        // be uploaded with default options
+        "^.+$": "$&"
+      }
+    }))
     // publisher will add Content-Length, Content-Type and headers specified above
     // If not specified it will set x-amz-acl to public-read by default
     .pipe(publisher.publish(headers))
