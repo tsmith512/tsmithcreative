@@ -39,6 +39,7 @@ defaults:
       type: posts
     values:
       commenting: true
+      layout: post
 
 collections:
   projects:
