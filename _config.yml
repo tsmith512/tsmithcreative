@@ -15,6 +15,7 @@ keep_files:
   - css   # Don't clobber site CSS, this way I don't have to store compiled CSS
   - js    # Don't clobber site JS, which is built with Gulp and includes Photoswipe
   - gfx   # Don't clobber site graphics/images/assets
+  - assets # Don't clobber page/post assets; they're minimized with Gulp now
   - .htaccess
 
 # Site settings

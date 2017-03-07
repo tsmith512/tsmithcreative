@@ -138,6 +138,12 @@ gulp.task('js', 'JS/Photoswipe aggregation/minify, custom JS linting', ['js-phot
 
 */
 
+gulp.task('assets', 'Copy and compress if possible all project/post assets', () => {
+  return gulp.src(['./_assets/**/*.*'])
+  .pipe(imagemin())
+  .pipe(gulp.dest('./_site/assets/'));
+});
+
 gulp.task('jekyll', 'Run jekyll build', (cb) => {
   const spawn = require('child_process').spawn;
   const jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'});
