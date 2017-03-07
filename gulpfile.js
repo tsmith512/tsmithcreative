@@ -98,7 +98,7 @@ gulp.task('graphics-home-page', 'Derivatives of that home page background', () =
 
 gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'graphics-project-thumbnails', 'graphics-home-page'], () => {
   return gulp.src(['./_gfx/**/*.*', '!./_gfx/home-background.jpg'])
-  // .pipe(imagemin())
+  .pipe(imagemin())
   .pipe(gulp.dest('./_site/gfx/'));
 });
 
