@@ -14,7 +14,7 @@ module Jekyll
   # output classes and/or a CSS background override for div.masthead.
   module MastheadGenerate
     def masthead_image_style(input)
-      if (File.exist?(input))
+      if (File.exist?("_#{input}"))
         # `input` doesn't have a leading slash so that Ruby can find this file
         # in the working directory.
         "class='masthead masthead-override' style='background-image: url(\"/#{input}\");'"
@@ -29,17 +29,17 @@ module Jekyll
   module ThumbnailGenerate
     def thumbnail_image(input)
       thumbnail = "assets/thumbnail/#{input}"
-      if (File.exist?("#{thumbnail}.jpg"))
+      if (File.exist?("_#{thumbnail}.jpg"))
         "<img src='/#{thumbnail}.jpg' alt=''/>"
-      elsif (File.exist?("#{thumbnail}.png"))
+      elsif (File.exist?("_#{thumbnail}.png"))
         "<img src='/#{thumbnail}.png' alt=''/>"
       end
     end
     def thumbnail_image_src(input)
       thumbnail = "assets/thumbnail/#{input}"
-      if (File.exist?("#{thumbnail}.jpg"))
+      if (File.exist?("_#{thumbnail}.jpg"))
         "/#{thumbnail}.jpg"
-      elsif (File.exist?("#{thumbnail}.png"))
+      elsif (File.exist?("_#{thumbnail}.png"))
         "/#{thumbnail}.png"
       end
     end
