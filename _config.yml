@@ -1,4 +1,6 @@
 title: Taylor Smith
+baseurl: ""
+url: "https://www.tsmithcreative.com"
 
 # Build settings
 markdown: kramdown
