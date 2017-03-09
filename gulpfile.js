@@ -103,7 +103,7 @@ gulp.task('graphics-home-page', 'Derivatives of that home page background', () =
 
 gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'graphics-project-thumbnails', 'graphics-home-page', 'favicons'], () => {
   return gulp.src(['./_gfx/**/*.*', '!./_gfx/home-background.jpg'])
-  .pipe(imagemin())
+  .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
   .pipe(gulp.dest('./_site/gfx/'));
 });
 
@@ -222,7 +222,7 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
         // Favicon for a year
         "^favicon.+": {
           cacheTime: 31536000
-        }
+        },
 
         // pass-through for anything that wasn't matched by routes above, to
         // be uploaded with default options
