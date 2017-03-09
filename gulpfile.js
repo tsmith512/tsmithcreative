@@ -179,8 +179,8 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
   return gulp.src('./_site/**/*.*')
     .pipe(awspublishRouter({
       cache: {
-          // cache for 24 hours by default
-          cacheTime: 86400
+          // cache for 1 week by default
+          cacheTime: 604800
       },
 
       routes: {
@@ -229,9 +229,8 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
         "^.+$": "$&"
       }
     }))
-    // publisher will add Content-Length, Content-Type and headers specified above
-    // If not specified it will set x-amz-acl to public-read by default
-    .pipe(publisher.publish(headers))
+
+    .pipe(publisher.publish())
 
     .pipe(publisher.sync())
 
