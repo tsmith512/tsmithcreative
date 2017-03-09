@@ -4,6 +4,7 @@ title: Taylor Smith
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-sitemap
 exclude:
   - node_modules # Apparently this is magic sauce to make Jekyll less super slow
   - Gemfile
