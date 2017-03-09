@@ -76,6 +76,11 @@ gulp.task('sass', 'Compile Sass to CSS', () => {
 // IMAGES
 gulp.task('icons', false, gulpicon(gulpiconFiles, gulpiconConfig));
 
+gulp.task('favicons', 'Copy favicons into position', () => {
+  return gulp.src(['./_favicon/*.*'])
+  .pipe(gulp.dest('./_site/'));
+});
+
 gulp.task('graphics-project-thumbnails', 'Rebuild gallery thumbnails for project images', () => {
   return gulp.src('assets/projects/**/*.*')
     .pipe(resize({width: 200, height: 200, crop: true, upscale: false}))
@@ -96,7 +101,7 @@ gulp.task('graphics-home-page', 'Derivatives of that home page background', () =
     .pipe(gulp.dest('_site/gfx/home/1200'))
 });
 
-gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'graphics-project-thumbnails', 'graphics-home-page'], () => {
+gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'favicons', 'graphics-project-thumbnails', 'graphics-home-page'], () => {
   return gulp.src(['./_gfx/**/*.*', '!./_gfx/home-background.jpg'])
   .pipe(imagemin())
   .pipe(gulp.dest('./_site/gfx/'));
@@ -213,6 +218,11 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
         "^(403|404).+": {
           cacheTime: 15552000
         },
+
+        // Favicon for a year
+        "^favicon.+": {
+          cacheTime: 31536000
+        }
 
         // pass-through for anything that wasn't matched by routes above, to
         // be uploaded with default options
