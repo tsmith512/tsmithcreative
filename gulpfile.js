@@ -101,7 +101,7 @@ gulp.task('graphics-home-page', 'Derivatives of that home page background', () =
     .pipe(gulp.dest('_site/gfx/home/1200'))
 });
 
-gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'favicons', 'graphics-project-thumbnails', 'graphics-home-page'], () => {
+gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'graphics-project-thumbnails', 'graphics-home-page', 'favicons'], () => {
   return gulp.src(['./_gfx/**/*.*', '!./_gfx/home-background.jpg'])
   .pipe(imagemin())
   .pipe(gulp.dest('./_site/gfx/'));

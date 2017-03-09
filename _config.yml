@@ -18,7 +18,9 @@ keep_files:
   - gfx   # Don't clobber site graphics/images/assets
   - assets # Don't clobber page/post assets; they're minimized with Gulp now
   - .htaccess
-  - favicon*
+  - favicon.ico
+  - favicon-16x16.png
+  - favicon-32x32.png
 
 # Site settings
 permalink: /blog/:year/:slug/
