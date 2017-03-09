@@ -76,6 +76,11 @@ gulp.task('sass', 'Compile Sass to CSS', () => {
 // IMAGES
 gulp.task('icons', false, gulpicon(gulpiconFiles, gulpiconConfig));
 
+gulp.task('favicons', 'Copy favicons into position', () => {
+  return gulp.src(['./_favicon/*.*'])
+  .pipe(gulp.dest('./_site/'));
+});
+
 gulp.task('graphics-project-thumbnails', 'Rebuild gallery thumbnails for project images', () => {
   return gulp.src('assets/projects/**/*.*')
     .pipe(resize({width: 200, height: 200, crop: true, upscale: false}))
@@ -96,9 +101,9 @@ gulp.task('graphics-home-page', 'Derivatives of that home page background', () =
     .pipe(gulp.dest('_site/gfx/home/1200'))
 });
 
-gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'graphics-project-thumbnails', 'graphics-home-page'], () => {
+gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'graphics-project-thumbnails', 'graphics-home-page', 'favicons'], () => {
   return gulp.src(['./_gfx/**/*.*', '!./_gfx/home-background.jpg'])
-  // .pipe(imagemin())
+  .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
   .pipe(gulp.dest('./_site/gfx/'));
 });
 
@@ -138,6 +143,12 @@ gulp.task('js', 'JS/Photoswipe aggregation/minify, custom JS linting', ['js-phot
 
 */
 
+gulp.task('assets', 'Copy and compress if possible all project/post assets', () => {
+  return gulp.src(['./_assets/**/*.*'])
+  .pipe(imagemin())
+  .pipe(gulp.dest('./_site/assets/'));
+});
+
 gulp.task('jekyll', 'Run jekyll build', (cb) => {
   const spawn = require('child_process').spawn;
   const jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'});
@@ -168,8 +179,8 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
   return gulp.src('./_site/**/*.*')
     .pipe(awspublishRouter({
       cache: {
-          // cache for 24 hours by default
-          cacheTime: 86400
+          // cache for 1 week by default
+          cacheTime: 604800
       },
 
       routes: {
@@ -208,14 +219,18 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
           cacheTime: 15552000
         },
 
+        // Favicon for a year
+        "^favicon.+": {
+          cacheTime: 31536000
+        },
+
         // pass-through for anything that wasn't matched by routes above, to
         // be uploaded with default options
         "^.+$": "$&"
       }
     }))
-    // publisher will add Content-Length, Content-Type and headers specified above
-    // If not specified it will set x-amz-acl to public-read by default
-    .pipe(publisher.publish(headers))
+
+    .pipe(publisher.publish())
 
     .pipe(publisher.sync())
 
