@@ -1,9 +1,12 @@
 title: Taylor Smith
+baseurl: ""
+url: "https://www.tsmithcreative.com"
 
 # Build settings
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-sitemap
 exclude:
   - node_modules # Apparently this is magic sauce to make Jekyll less super slow
   - Gemfile
@@ -15,7 +18,11 @@ keep_files:
   - css   # Don't clobber site CSS, this way I don't have to store compiled CSS
   - js    # Don't clobber site JS, which is built with Gulp and includes Photoswipe
   - gfx   # Don't clobber site graphics/images/assets
+  - assets # Don't clobber page/post assets; they're minimized with Gulp now
   - .htaccess
+  - favicon.ico
+  - favicon-16x16.png
+  - favicon-32x32.png
 
 # Site settings
 permalink: /blog/:year/:slug/
