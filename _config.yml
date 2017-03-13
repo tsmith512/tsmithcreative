@@ -37,6 +37,7 @@ defaults:
       type: posts
     values:
       commenting: true
+      highlighting: true
 
 collections:
   projects:
