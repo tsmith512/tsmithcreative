@@ -145,7 +145,7 @@ gulp.task('js', 'JS/Photoswipe aggregation/minify, custom JS linting', ['js-phot
 
 gulp.task('assets', 'Copy and compress if possible all project/post assets', () => {
   return gulp.src(['./_assets/**/*.*'])
-  .pipe(imagemin())
+  .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
   .pipe(gulp.dest('./_site/assets/'));
 });
 
