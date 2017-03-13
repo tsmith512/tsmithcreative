@@ -21,6 +21,10 @@ layout: compress
     {% endif %}
 
     <script defer src="/js/all.js"></script>
+    {% if page.highlighting %}
+    <script>document.addEventListener("DOMContentLoaded", function(event) {loadCSS('/css/code.css');});</script>
+    {% endif %}
+
     {% if page.photoswipe %}
       <script defer src="/js/photoswipe.all.js"></script>
     {% endif %}
