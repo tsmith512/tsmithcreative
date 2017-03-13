@@ -184,14 +184,19 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
       },
 
       routes: {
+        // Cache site components for a month
+        "^(css|js|gfx)/.+": {
+          cacheTime: 2592000
+        },
+
         // Cache static project assets for a month
         "^assets/.+": {
           cacheTime: 2592000
         },
 
-        // 24 hours for HTML files
+        // 1 week for HTML files
         "\\.html$": {
-          cacheTime: 86400
+          cacheTime: 604800
         },
 
         // Project writeups can last 6 months
@@ -209,9 +214,9 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
           cacheTime: 10800
         },
 
-        // 3 hours for the blog home page
+        // 6 months for blog posts, I can invalidate manually
         "^blog/\\d{4}/\\.+/index\\.html$": {
-          cacheTime: 10800
+          cacheTime: 15552000
         },
 
         // 6 months for the error pages
