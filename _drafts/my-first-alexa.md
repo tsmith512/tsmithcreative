@@ -251,6 +251,17 @@ Assistant and Amazon:
 If everything goes according to plan, you'll see and hear one of the responses
 explained above.
 
+Save the project and follow the instructions to enable the skill on your own
+account and give it a shot:
+
+<p class="media">
+  <video src="/assets/blog/alexa-hass-octoprint/alexa-hass-octopi-final.mp4" poster="/assets/blog/alexa-hass-octoprint/alexa-hass-octopi-final.jpg" width="854" height="480" preload="none" controls>
+  Video couldn't be embedded, but you can <a href="/assets/blog/alexa-hass-octoprint/alexa-hass-octopi-final.mp4">download it</a> instead.
+  </video>
+</p>
+
+_I once won an Oscar for my cell phone steady-cam skills..._
+
 ---
 
 All in, this took me less than two hours to set up because documentation on both
@@ -259,7 +270,7 @@ framework to extend means I could get Alexa to tell me anything from Home
 Assistant or execute commands not compatible with Home Skills. Check out my Hass
 Alexa config [for another example that pulls a weather report][HCW].
 
-From a user experience perspective, I wish "invocation name" wasn't a thing.
+From a user experience perspective, I think "invocation name" is a weakness.
 Except for built-in skills, everything you ask Alexa to do must include
 "ask/tell _Service Name_..." I don't know the solution to this problem, but
 ultimately it _feels_ like similar UX issues of [discoverability][NNGFD] that
