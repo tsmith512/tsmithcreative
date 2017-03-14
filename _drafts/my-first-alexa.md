@@ -161,17 +161,17 @@ Home Assistant's [Alexa Component documentation][HASSAE] outlines the steps
 required. It's pretty straightforward, though slightly outdated. Here's a
 picture guide as of March 2017. (Amazon changes this frequently, I gather.)
 
-![AWS Dev Console](/assets/blog/alexa-hass-octoprint/aws-dev-console-login.jpg)
+![AWS Dev Console](/assets/blog/alexa-hass-octoprint/aws-dev-console-login.png)
 
 - Login to or sign up for the [Amazon Developer Console][ADC]
 - Click "Alexa" in the top navigation bar, then "Get Started" under "Alexa
   Skills Kit"
 
-![AWS Skills List](/assets/blog/alexa-hass-octoprint/skills-list.jpg)
+![AWS Skills List](/assets/blog/alexa-hass-octoprint/skills-list.png)
 
 - Click "Add a new skill" in the top right
 
-![Create a New Skill](/assets/blog/alexa-hass-octoprint/new-skill.jpg)
+![Create a New Skill](/assets/blog/alexa-hass-octoprint/new-skill.png)
 
 - For **Skill Type** keep "Custom Interaction Model" selected.
 - The **Name** is the skill name as shown in the Alexa app and the Developer
@@ -183,7 +183,7 @@ picture guide as of March 2017. (Amazon changes this frequently, I gather.)
 Then click next to configure the **intents**, or the things Home Assistant can
 do. Each intent has a name, and `slots` for variables to pass to the skill.
 
-![Intents](/assets/blog/alexa-hass-octoprint/intents.jpg)
+![Intents](/assets/blog/alexa-hass-octoprint/intents.png)
 
 Remember the Intent name we used above? Repeat that here to link this up to the
 Home Assistant configuration: `PrinterStatusIntent`
@@ -209,7 +209,7 @@ PrinterStatusIntent about the printer
 
 Then click next to work through the endpoint configuration:
 
-![Intents](/assets/blog/alexa-hass-octoprint/intents.jpg)
+![Intents](/assets/blog/alexa-hass-octoprint/configuration.png)
 
 - For **Endpoint**, I selected "HTTPS." It's easy to hook up an AWS Lambda
   resource, but since Home Assistant has an Alexa API built-in, it was easier to
@@ -223,7 +223,7 @@ Then click next to work through the endpoint configuration:
 
 Next up is SSL configuration:
 
-![SSL](/assets/blog/alexa-hass-octoprint/ssl.jpg)
+![SSL](/assets/blog/alexa-hass-octoprint/ssl.png)
 
 If you created an SSL certificate in Part 1 above, copy the whole text of the
 `.pem` file into this text field:
@@ -240,12 +240,12 @@ ZXhhczEPMA0GA1UEBwwGQXVzdGluMRUwEwYDVQQKDAxUYXlsb3IgU21pdGgxFTAT
 Click next for the testing options, the final step required to make this skill
 run for personal use.
 
-![Testing On](/assets/blog/alexa-hass-octoprint/test.jpg)
+![Testing On](/assets/blog/alexa-hass-octoprint/test.png)
 
 On this page, you can send a test request and see the full exchange between Home
 Assistant and Amazon:
 
-![Testing On](/assets/blog/alexa-hass-octoprint/test-results.jpg)
+![Testing On](/assets/blog/alexa-hass-octoprint/test-results.png)
 
 If everything goes according to plan, you'll see and hear one of the responses
 explained above.
