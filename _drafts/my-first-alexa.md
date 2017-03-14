@@ -8,12 +8,12 @@ tags: [home automation, conversational interfaces, 3d printing]
 
 On a scale of 1 to 10, I currently rate my "Alexa Skill" skills at a whopping
 "learning to put legos together." My home automation setup is built using
-[Home Assistant](HASS) (my [configuration on GitHub](HC)). One of the many
-[components it integrates with](HASSAE) is the Amazon Echo.
+[Home Assistant][HASS] (my [configuration on GitHub][HC]). One of the many
+[components it integrates with][HASSAE] is the Amazon Echo.
 
 It offers two styles: integration via the Home Skills API for switching my
 lights and powering custom commands via the Skills API. I've set up both as
-documented on the [component page](HASSAE).
+documented on the [component page][HASSAE].
 
 For my first foray into custom commands, I wanted Alexa to be able to tell me
 about the status of 3D printing jobs. Seemed simple enough. Let's walk through
@@ -26,16 +26,15 @@ include a custom weather report, too.
 ### Part 1: Home Assistant's OctoPrint Component
 
 For this, I'll need Hass to monitor the [OctoPrint][OP] instance that runs my
-printer. Setting up Hass's OctoPrinti sensors is easy, and is done in three
-parts:
+printer. This part is easy, and done in three parts:
 
 ![My Home Assistant](/assets/blog/alexa-hass-octoprint/home-assistant.png)
 
-1. Set up the ["OctoPrint Hub" component](HASSOP1), which just provides the API
-   access.
-2. Set up the "[OctoPrint Binary Sensor](HASSOP2)," which gives simple "yes/no"
+1. Set up the ["OctoPrint Hub" component][HASSOP1], which just provides the API
+   access and authentication.
+2. Set up the "[OctoPrint Binary Sensor][HASSOP2]," which gives simple "yes/no"
    answers about status, which makes crafting the status message easier.
-3. Set up the "[OctoPrint Sensor](HASSOP3)," which gives more detailed
+3. Set up the "[OctoPrint Sensor][HASSOP3]," which gives more detailed
    information as numbers and strings.
 4. _Bonus:_ setting up the camera feed so the Home Assistant window can show you
    the print surface is also pretty simple.
@@ -73,7 +72,7 @@ camera:
 ```
 
 Links to relevant parts of my configuration:
-[OctoPrint Hub](HCPI), [the binary senors](HCBN), [regular sensors](HCS), and [webcam](HCCAM).
+[OctoPrint Hub][HCPI], [the binary senors][HCBN], [regular sensors][HCS], and [webcam][HCCAM].
 
 Now that Home Assistant knows the metrics we want to use, it needs to be
 reachable from the Internet.
@@ -139,8 +138,8 @@ alexa:
         {% endif %}.
 {% endraw %}```
 
-This sets up a simple response to the `PrinterStatusIntent` using Home
-Assistant's [templating](HASST) engine. Remember that intent name, we'll use it
+This sets up a simple response to the `PrinterStatusIntent` intent using Home
+Assistant's [templating][HASST] engine. Remember that intent name, we'll use it
 again on the Amazon configuration. The response reads something like:
 
 > The printer is **printing** and the job is **80%** complete.
@@ -149,7 +148,7 @@ Or, if the printer isn't printing but Home Assistant and OctoPrint are connected
 
 > The printer is **operational** and not currently printing.
 
-[My Alexa configuration file](HCALX).
+[My Alexa configuration file][HCALX].
 
 Once this is saved, restart Home Assistant and you'll have the Alexa skill
 response ready to test from Amazon. The skill will not appear in the Hass UI.
@@ -158,13 +157,13 @@ response ready to test from Amazon. The skill will not appear in the Hass UI.
 
 ### Part 4: Alexa Skills Configuration
 
-Home Assistant's [Alexa Component documentation](HASSAE) outlines the steps
-required and it's pretty straightforward, though slightly outdated. Here's a
-picture guide as of March 2017.
+Home Assistant's [Alexa Component documentation][HASSAE] outlines the steps
+required. It's pretty straightforward, though slightly outdated. Here's a
+picture guide as of March 2017. (Amazon changes this frequently, I gather.)
 
 ![AWS Dev Console](/assets/blog/alexa-hass-octoprint/aws-dev-console-login.jpg)
 
-- Log in to or sign up for [Amazon developer console](ADC)
+- Login to or sign up for the [Amazon Developer Console][ADC]
 - Click "Alexa" in the top navigation bar, then "Get Started" under "Alexa
   Skills Kit"
 
@@ -178,7 +177,7 @@ picture guide as of March 2017.
 - The **Name** is the skill name as shown in the Alexa app and the Developer
   Console; it's an administrative title.
 - The **Invocation Name** is the skill you request verbally, e.g. "Alexa, ask
-  _Hathi_ for...". _(All my computers are named for [Jungle Book characters](JB);
+  _Hathi_ for...". _(All my computers are named for [Jungle Book characters][JB];
   Colonel Hathi is the elephant leader.)_
 
 Then click next to configure the **intents**, or the things Home Assistant can
@@ -186,8 +185,8 @@ do. Each intent has a name, and `slots` for variables to pass to the skill.
 
 ![Intents](/assets/blog/alexa-hass-octoprint/intents.jpg)
 
-In our first example, we'll set up a skill to get the status of the 3D printer.
-There are no variable slots for this skill:
+Remember the Intent name we used above? Repeat that here to link this up to the
+Home Assistant configuration: `PrinterStatusIntent`
 
 ``` js
 {
@@ -200,8 +199,8 @@ There are no variable slots for this skill:
 ```
 
 The "utterances" are the things a user can say to trigger the intent, after the
-"Alexa, ask _Invocation Name_." This becomes "Alexa, ask Hathi about the
-printer." or "Alexa, ask Hathi for the printer status."
+"Alexa, ask _Invocation Name_." This becomes "Alexa, ask Hathi for the printer
+status," or "Alexa, ask Hathi about the printer."
 
 ```
 PrinterStatusIntent printer status
@@ -216,7 +215,7 @@ Then click next to work through the endpoint configuration:
   resource, but since Home Assistant has an Alexa API built-in, it was easier to
   have AWS connect directly.
   - _Note_ if you're unable to get HTTPS going on Home Assistant, or you can't
-    forward port 443, there is a [Lambda Proxy function in the Hass forums](LPX).
+    forward port 443, there is a [Lambda Proxy function in the Hass forums][LPX].
 - Select the sensible region for your endpoint.
 - Enter your endpoint URL in the displayed field: `https://YOUR_HOST/api/alexa?api_password=YOUR_API_PASSWORD`
 - Do not enable **Account Linking**. That's if AWS would need account-specific
@@ -224,7 +223,7 @@ Then click next to work through the endpoint configuration:
 
 Next up is SSL configuration:
 
-![SSL](/assets/blog/alexa-hass-octoprint/intents.jpg)
+![SSL](/assets/blog/alexa-hass-octoprint/ssl.jpg)
 
 If you created an SSL certificate in Part 1 above, copy the whole text of the
 `.pem` file into this text field:
@@ -270,19 +269,20 @@ framework to extend means I could get Alexa to tell me anything from Home
 Assistant or execute commands not compatible with Home Skills. Check out my Hass
 Alexa config [for another example that pulls a weather report][HCW].
 
-From a user experience perspective, I think "invocation name" is a weakness.
-Except for built-in skills, everything you ask Alexa to do must include
-"ask/tell _Service Name_..." I don't know the solution to this problem, but
-ultimately it _feels_ like similar UX issues of [discoverability][NNGFD] that
-emerge in hidden navigation and [gesture-heavy interfaces][NNGSW]: you have to
-already know how to use it. No guest could walk into my place and intuit how to
-get info from Home Assistant.
+From a user experience perspective, I think saying the "invocation name" is a
+hindrance. Except for built-in skills, everything you ask Alexa to do must
+include "ask/tell _Service Name_..." I don't know the solution to this problem,
+but ultimately it _feels_ like similar UX issues of [discoverability][NNGFD]
+that emerge in hidden navigation and [gesture-heavy interfaces][NNGSW]: you have
+to already know how to use it. No guest could walk into my place and intuit how
+to get info from Home Assistant.
 
 There's promise though, the Home Skills API doesn't need a separate invocation
-name (name devices obviously), and Amazon has noticed this issue. In late 2016,
-they announced an initiative to create [a new built-in library][ADI] of intents
-and slots and easier ways to trigger them. [A preview][ADIP] of this library has
-already been released for US developers.
+name for its services (though you should pick obvious names for devices), and
+Amazon has noticed this issue. In late 2016, they announced an initiative to
+create [a new built-in library][ADI] of intents and slots and easier ways to
+trigger them. [A preview][ADIP] of this library has already been released for US
+developers.
 
 [HASS]: https://home-assistant.io/
 [HC]: https://github.com/tsmith512/home-assistant-config
