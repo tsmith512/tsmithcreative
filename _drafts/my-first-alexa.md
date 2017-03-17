@@ -161,15 +161,18 @@ Home Assistant's [Alexa Component documentation][HASSAE] outlines the steps
 required. It's pretty straightforward, though slightly outdated. Here's a
 picture guide as of March 2017. (Amazon changes this frequently, I gather.)
 
+- Login to or sign up for the [Amazon Developer Console][ADC]
+
 ![AWS Dev Console](/assets/blog/alexa-hass-octoprint/aws-dev-console-login.png)
 
-- Login to or sign up for the [Amazon Developer Console][ADC]
 - Click "Alexa" in the top navigation bar, then "Get Started" under "Alexa
   Skills Kit"
 
 ![AWS Skills List](/assets/blog/alexa-hass-octoprint/skills-list.png)
 
 - Click "Add a new skill" in the top right
+
+Next, we'll set up the skill basics:
 
 ![Create a New Skill](/assets/blog/alexa-hass-octoprint/new-skill.png)
 
