@@ -23,16 +23,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.15;
 }
 
-a {
-  text-decoration: none;
-}
 
 a, a:link {
-  color: #3347af;
+  color: #3957f1;
 }
 
 a:hover, a:active {
-  color: #3957f1;
+  color: lighten(#3957f1, 10%);
 }
 
 iframe {
