@@ -38,7 +38,7 @@ but I've tried to separate concerns as much as possible.
 
 In 2015, I tracked our trip with a [terrible pile of PHP scripts\*][ORIGINAL]
 created in great haste before we left. After the trip, I left the service
-running and continued to improve it. Over time, I've built it into a Silex
+running and continued to improve it. Over time, I've built it into a [Silex][SILEX]
 application with MySQL for data storage and a [set of API endpoints][API] which
 exposes location history data and [GeoJSON][GJ].
 
@@ -58,56 +58,44 @@ and more. Currently, I'm only using the city names, but the application stores
 the entire response serialized in the database in case I want to use more of it
 in future updates.
 
-An example of a geocoded response:
+An example of a geocoded response as provided by the
+[`GeocoderServiceProver`][GSP] for Silex:
 
 ```
-array(15) {
-  ["latitude"]=>
-  float(36.15685900)
-  ["longitude"]=>
-  float(-95.99151600)
-  ["bounds"]=>
-  array(4) {
-    ["south"]=>
-    float(36.15685900)
-    ["west"]=>
-    float(-95.99151600)
-    ["north"]=>
-    float(36.15685900)
-    ["east"]=>
-    float(-95.99151600)
-  }
-  ["streetNumber"]=>
-  string(1) "1"
-  ["streetName"]=>
-  string(19) "South Boston Avenue"
-  ["cityDistrict"]=>
-  NULL
-  ["city"]=>
-  string(5) "Tulsa"
-  ["zipcode"]=>
-  string(5) "74103"
-  ["county"]=>
-  string(12) "Tulsa County"
-  ["countyCode"]=>
-  string(12) "TULSA COUNTY"
-  ["region"]=>
-  string(8) "Oklahoma"
-  ["regionCode"]=>
-  string(2) "OK"
-  ["country"]=>
-  string(13) "United States"
-  ["countryCode"]=>
-  string(2) "US"
-  ["timezone"]=>
-  NULL
-}
+Array
+(
+    [latitude] => 36.15685900
+    [longitude] => -95.99151600
+    [bounds] => Array
+        (
+            [south] => 36.15685900
+            [west] => -95.99151600
+            [north] => 36.15685900
+            [east] => -95.99151600
+        )
+
+    [streetNumber] => 1
+    [streetName] => South Boston Avenue
+    [cityDistrict] => 
+    [city] => Tulsa
+    [zipcode] => 74103
+    [county] => Tulsa County
+    [countyCode] => TULSA COUNTY
+    [region] => Oklahoma
+    [regionCode] => OK
+    [country] => United States
+    [countryCode] => US
+    [timezone] => 
+)
 ```
+
+The data is mostly for my own use in the location tracker, but it is used in one
+place on the blog:
+
+![Where Are They Now?][WHERE]
 
 **Google Geocoder's job:** Provide the city names used in the frontend for
 "Where are they now?".
-
-!! @TODO: "Where are they now" doesn't show the city name yet. !!
 
 ### [Amazon Web Services][AWS]
 
@@ -144,8 +132,8 @@ and scripts) for the frontend theme.
 ![S3 Storage Bucket Contents][S3LT]
 
 **AWS's jobs:** Make sure the crazies can't figure out where I sleep. Prevent
-overloading my backend application server. Serve static assets via an HTTPS-
-capable CDN.
+overloading my backend application server. Serve static assets via an
+HTTPS-capable CDN.
 
 !! @TODO: You aren't using an HTTPS-capable CDN yet. !!
 
@@ -225,9 +213,12 @@ through the desert, and sell it off in Salt Lake. How hard can it be?
 [TRACKER]: https://github.com/tsmith512/location-tracker
 [TRACKERUI]: /assets/blog/building-travelogue/location-history.png
 [ORIGINAL]: https://github.com/tsmith512/location-tracker/commit/26fbff80d704be926d8fe999809f439ccb163708
+[SILEX]: https://silex.sensiolabs.org/
 [API]: http://docs.locationtrackerapi.apiary.io/
 [GJ]: http://geojson.org/
 [GGCD]: https://developers.google.com/maps/documentation/geocoding/intro
+[GSP]: https://github.com/geocoder-php/GeocoderServiceProvider
+[WHERE]: /assets/blog/building-travelogue/where-are-they-now.png
 [AWS]: https://aws.amazon.com/
 [RMNP]: /assets/blog/building-travelogue/very-precise.png
 [AAG]: https://aws.amazon.com/api-gateway/
