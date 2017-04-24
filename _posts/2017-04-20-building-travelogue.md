@@ -7,7 +7,7 @@ summary: >
 tags: [development, aws, design, writing, photography]
 ---
 
-_From the Travelogue:_
+_From [the Travelogue][31DAYS]:_
 
 > A while back, two friends from Tulsa, introduced me to a little BBC television
 > program called Top Gear. Periodically, these three glorious Brits would be
@@ -21,13 +21,13 @@ _From the Travelogue:_
 
 I was almost surprised by the enthusiasm generated among my friends and family
 at our upcoming lunacy. Everyone wanted to know how I'd be sharing our
-adventures. For that trip, back in 2015, I had a Tumblr blog and would post
-screenshots of static maps as we went along.
+adventures. For that trip, back in 2015, I had a Tumblr blog for photos and
+text, and I'd include screenshots of static maps as we went along.
 
 But we've been planning a second trip for the past six months, which has given
 me time to up my blogging game.
 
-## The Sum of its Parts
+## Under the Hood
 
 ![Diagram of the Applications][DIAGRAM]
 
@@ -49,6 +49,8 @@ every 30 minutes) and provide these data for the frontend to display our
 progress in real-time.
 
 _\* Yes, all keys and credentials in this commit have since been invalidated._
+
+--------------------------------------------------------------------------------
 
 ### [Google Maps Geocoder API][GGCD]
 
@@ -97,6 +99,8 @@ place on the blog:
 **Google Geocoder's job:** Provide the city names used in the frontend for
 "Where are they now?".
 
+--------------------------------------------------------------------------------
+
 ### [Amazon Web Services][AWS]
 
 So this location tracker has sensitive information: precisely where I've been
@@ -114,10 +118,12 @@ on isn't very powerful.
 requests which are passed to a [Lambda function][AL] I wrote to
 [fetch data from the backend application and anonymize it][LAMBDA].
 
-- Only the endpoints used by the blog are whitelisted
+- Only the endpoints used by the blog are whitelisted: a list of trips, trip
+  details including the actual route, and the latest location
 - Only `GET` and `OPTIONS` (for CORS) requests are permitted
-- If a response contains coordinate pairs in Austin or Tulsa, they are rewritten
-  to be at the [State Capitol][TXC] or the [Center of the Universe][COTU].
+- If a response contains coordinate pairs in Austin or Tulsa, they are replaced
+  with the [State Capitol][TXC] or the [Center of the Universe][COTU],
+  respectively.
 
 Also, API Gateway can cache responses to reduce the load on my server while
 we're actually traveling and site traffic will be marginally higher. This kicks
@@ -135,7 +141,7 @@ and scripts) for the frontend theme.
 overloading my backend application server. Serve static assets via an
 HTTPS-capable CDN.
 
-!! @TODO: You aren't using an HTTPS-capable CDN yet. !!
+--------------------------------------------------------------------------------
 
 ### [Google My Maps][GMM]
 
@@ -150,18 +156,22 @@ accommodations, and points of interest we intend to visit.
 **My Maps's job:** Let me collect the route and POI data to be added to the map
 and export it to a standard format.
 
+--------------------------------------------------------------------------------
+
 ### [Mapbox][MB]
 
 Mapbox allows [rich map design options][MBS] and their free tier is more than
 enough to support my small audience. Using Mapbox, I compile the customized base
 map as a "Style" which also includes overlays of our route and accommodations I
-imported from "My Maps" as _custom datasets._ This way, all those layers are
+imported from "My Maps" as _custom tileset._ This way, all those layers are
 loaded as a single map.
 
 ![The Mapbox composit in the editor][TQMB]
 
 **Mapbox's job:** Design and provide the visual map for the frontend with
 route/POI data already imported.
+
+--------------------------------------------------------------------------------
 
 ### My Phone
 
@@ -174,6 +184,8 @@ I also use the [Tumblr Android app][TAPP] to write the shorter posts and upload
 single images and videos.
 
 **My phone's job:** Passively record and submit location data, post content.
+
+--------------------------------------------------------------------------------
 
 ### [Tumblr][TUMBLR]
 
@@ -209,6 +221,14 @@ All that's left is to buy an offroader off Craigslist, drive it a thousand miles
 through the desert, and sell it off in Salt Lake. How hard can it be?
 
 
+![Olympic National Park][ONP]
+
+It worked out okay the first time. Follow along on the [Travelogue][TL].
+
+_(Yes, this is where my Favicon came from.)_
+
+
+[31DAYS]: http://travelogue.news/post/125199590921/thirty-one-days
 [DIAGRAM]: /assets/blog/building-travelogue/diagram.png
 [TRACKER]: https://github.com/tsmith512/location-tracker
 [TRACKERUI]: /assets/blog/building-travelogue/location-history.png
@@ -242,3 +262,5 @@ through the desert, and sell it off in Salt Lake. How hard can it be?
 [TASKERTASK]: https://github.com/tsmith512/location-tracker/blob/master/tasker/task.xml
 [TASKER]: http://tasker.dinglisch.net/
 [TAPP]: https://play.google.com/store/apps/details?id=com.tumblr&hl=en
+[TL]: http://travelogue.news/
+[ONP]: /assets/blog/building-travelogue/olympic-national-park.jpg
