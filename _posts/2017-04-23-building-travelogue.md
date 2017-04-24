@@ -9,7 +9,7 @@ tags: [development, aws, design, writing, photography]
 
 _From [the Travelogue][31DAYS]:_
 
-> A while back, two friends from Tulsa, introduced me to a little BBC television
+> A while back, two friends from Tulsa introduced me to a little BBC television
 > program called Top Gear. Periodically, these three glorious Brits would be
 > sent by "the Producers" _(prah-DEU-suhz)_ on special adventures: buy used cars
 > sight-unseen over the Internet for a pittance, then drive them over a long
@@ -91,8 +91,8 @@ Array
 )
 ```
 
-The data is mostly for my own use in the location tracker, but it is used in one
-place on the blog:
+These data are mostly for my own use in the location tracker, but are used in
+one place on the blog:
 
 ![Where Are They Now?][WHERE]
 
