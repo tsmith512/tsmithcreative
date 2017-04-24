@@ -3,7 +3,7 @@ title: Location-tracking Roadtrip Blog
 summary: >
   Combining automatic location tracking, geocoding, route planning, map design,
   and a custom theme frontend on a Tumblr blog to bring friends and family along
-  on the ride of a lifetime. Twice.
+  on one hell of a ride.
 tags: [development, aws, design, writing, photography]
 ---
 
