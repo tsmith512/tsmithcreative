@@ -1,6 +1,6 @@
 ---
 title: What are Story Points? [Video]
-summary: Use story points to estimate task complexity, leading to a predictable velocity team's velocity, avoiding pitfalls of hours-based estimates.
+summary: Use story points to estimate task complexity, leading to a more predictable velocity and avoiding pitfalls of hours-based estimates.
 layout: post
 tags: [scrum, product ownership, management]
 ---
