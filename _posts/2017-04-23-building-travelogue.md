@@ -205,8 +205,6 @@ re-centers the map view to where we were when I made the post.
 
 ![The Frontend][SITE]
 
-_(Spacing slimmed down to show more features.)_
-
 **Tumblr's job:** Tie all the pieces together into the frontend experience.
 
 ## Ready to Roll
@@ -229,7 +227,7 @@ _(Yes, this is where my Favicon came from.)_
 
 
 [31DAYS]: http://travelogue.news/post/125199590921/thirty-one-days
-[DIAGRAM]: /assets/blog/building-travelogue/diagram.png
+[DIAGRAM]: /assets/blog/building-travelogue/diagram-noshadow.png
 [TRACKER]: https://github.com/tsmith512/location-tracker
 [TRACKERUI]: /assets/blog/building-travelogue/location-history.png
 [ORIGINAL]: https://github.com/tsmith512/location-tracker/commit/26fbff80d704be926d8fe999809f439ccb163708
@@ -257,7 +255,7 @@ _(Yes, this is where my Favicon came from.)_
 [TUMBLR]: https://www.tumblr.com/about
 [TDASH]: /assets/blog/building-travelogue/tumblr-dash.png
 [TTHEME]: https://github.com/tsmith512/travelogue-tumblr
-[SITE]: /assets/blog/building-travelogue/final.png
+[SITE]: /assets/blog/building-travelogue/final-noshadow.png
 [4K]: https://www.fourkitchens.com/
 [TASKERTASK]: https://github.com/tsmith512/location-tracker/blob/master/tasker/task.xml
 [TASKER]: http://tasker.dinglisch.net/
