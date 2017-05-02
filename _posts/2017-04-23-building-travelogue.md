@@ -163,7 +163,7 @@ and export it to a standard format.
 Mapbox allows [rich map design options][MBS] and their free tier is more than
 enough to support my small audience. Using Mapbox, I compile the customized base
 map as a "Style" which also includes overlays of our route and accommodations I
-imported from "My Maps" as _custom tileset._ This way, all those layers are
+imported from "My Maps" as a _custom tileset._ This way, all those layers are
 loaded as a single map.
 
 ![The Mapbox composit in the editor][TQMB]
