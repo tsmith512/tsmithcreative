@@ -166,7 +166,7 @@ map as a "Style" which also includes overlays of our route and accommodations I
 imported from "My Maps" as a _custom tileset._ This way, all those layers are
 loaded as a single map.
 
-![The Mapbox composit in the editor][TQMB]
+![The Mapbox composite in the editor][TQMB]
 
 **Mapbox's job:** Design and provide the visual map for the frontend with
 route/POI data already imported.
@@ -197,7 +197,7 @@ handles photos and video gracefully, and supports fully customized themes.
 
 [The frontend][TTHEME] loads the Mapbox map, pulls the route and current
 location data from the AWS API proxy, and displays in the custom theme a
-chronological listing of all posts I've made: longform text posts, individual
+chronological listing of all posts I've made: long-form text posts, individual
 photos with captions, photosets (galleries with a lightbox), quotes (because the
 funniest part of all this is the banter), and the occasional video (because some
 things have to be seen to be believed). Each post has a "Show on Map" link which
@@ -215,9 +215,8 @@ I love projects that tie multiple interests together, and I especially
 appreciate the opportunity to help people use the web to tell their stories.
 This project has hit all of those spots.
 
-All that's left is to buy an offroader off Craigslist, drive it a thousand miles
-through the desert, and sell it off in Salt Lake. How hard can it be?
-
+All that's left is to buy an off-roader off Craigslist, drive it a thousand
+miles through the desert, and sell it off in Salt Lake. How hard can it be?
 
 ![Olympic National Park][ONP]
 
