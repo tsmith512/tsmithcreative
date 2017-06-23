@@ -131,6 +131,14 @@ patches directory during build. This way you will:
 
 ### The Refresh: Avoiding Database Config, Keeping Database Sync'd to Code
 
+{% update 2017-06 %}
+  `refresh` is no longer a built-in command because it varies by project. Using
+  [Aquifer's `run`](https://github.com/aquifer/aquifer-run) extension, which is
+  now built-in for 1.0.0, we define the same refresh job, tailored to the
+  project, and any other useful scripts. Execution is now `aquifer run refresh`
+  or whatever name you use for the script.
+{% endupdate %}
+
 We all know not to do development or site building work on production. But
 Drupal's database does hold overrides that can occasionally sneak in. If your
 local database doesn't match the code you've checked out, you may not see bugs
@@ -146,8 +154,9 @@ enable things like `fields_ui`, `views_ui`, `devel` and disable anything that is
 production-specific.
 
 **New way:** Check out the code you're working on. Copy down the Production
-database or a backup. Run `aquifer refresh`. Get to work with confidence that
-your instance is up to date with your code.
+database or a backup. Run ~~`aquifer refresh`~~ `aquifer run refresh`
+ _(see update above)_. Get to work with confidence that your instance is up to
+ date with your code.
 
 Refresh can be customized for your project, but we usually have refresh run
 these steps in order:
