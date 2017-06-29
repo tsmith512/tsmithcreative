@@ -248,7 +248,7 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
 });
 
 gulp.task('publish', 'Build the site and publish to S3', (cb) => {
-  runSequence(['build'], 'publish-s3', cb);
+  runSequence(['assets', 'build'], 'publish-s3', cb);
 });
 
 /*
