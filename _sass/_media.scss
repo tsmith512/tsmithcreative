@@ -21,6 +21,21 @@ p.media {
       box-shadow: none;
     }
   }
+
+  .update &, .collapsed & {
+    margin-left: -1em;
+    margin-right: -1em;
+
+    img {
+      display: block;
+      box-shadow: none;
+      border: none;
+    }
+
+    &:last-child {
+      margin-bottom: -1em;
+    }
+  }
 }
 
 pre.highlight {
