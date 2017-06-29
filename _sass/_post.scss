@@ -34,4 +34,59 @@
       margin-bottom: 0;
     }
   }
+
+  .collapsed {
+    background: #ebf1f7; // #f6f6f6;
+    color: #082c50;
+    border: 1px solid #c1d0de; // #eee;
+    margin: 1em -1em;
+    padding: 1em;
+
+    .collapsed-intro {
+      display: block;
+      font-family: $gotham;
+      font-weight: normal; // HTML is H2, so it's bold by default
+      text-transform: uppercase;
+      font-size: 0.75em;
+      margin: 0;
+
+      a {
+        display: block;
+        color: #134e8a;
+        text-decoration: none;
+        &:hover {
+          color: lighten(#134e8a, 10%);
+        }
+
+        &:before {
+          content: "\25bc ";
+          margin-right: 0.5em;
+        }
+      }
+
+    }
+
+    .collapsed-content {
+      display: none;
+    }
+
+    &.open {
+      .collapsed-intro {
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid #134e8a;
+        margin-bottom: 0.5em;
+        a:before {
+          content: "\25b2 ";
+        }
+      }
+
+      .collapsed-content {
+        display: block;
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
