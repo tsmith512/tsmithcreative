@@ -100,7 +100,7 @@ module Jekyll
       collapsed = Liquid::Template.parse(markdownContent).render context
 
       output  = "<div class=\"collapsed\">"
-      output +=   "<h2 class=\"collapsed-intro\"><a href=\"#\" class=\"collapsed-toggle\">#{@title}:</a></h2> "
+      output +=   "<h2 class=\"collapsed-intro\"><a href=\"#\" class=\"collapsed-toggle\">#{@title}</a></h2> "
       output +=   "<div class=\"collapsed-content\">"
       output +=     collapsed
       output +=   "</div>"
