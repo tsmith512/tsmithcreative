@@ -82,7 +82,7 @@ gulp.task('favicons', 'Copy favicons into position', () => {
 });
 
 gulp.task('graphics-project-thumbnails', 'Rebuild gallery thumbnails for project images', () => {
-  return gulp.src('assets/projects/**/*.*')
+  return gulp.src('_assets/projects/**/*.*')
     .pipe(resize({width: 200, height: 200, crop: true, upscale: false}))
     .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
     .pipe(gulp.dest('_site/gfx/thumbs/projects/'))
