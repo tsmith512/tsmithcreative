@@ -193,6 +193,31 @@ At its heart, the frontend is just a Tumblr blog. I picked Tumblr because it has
 a good mobile editing experience, an even better desktop editing experience,
 handles photos and video gracefully, and supports fully customized themes.
 
+{% update 2017-06 %}
+I partially rescind this recommendation. Tumblr's Android application and
+desktop interface are both quite buggy, especially on slow internet connections
+we had in remote places. Despite usable connections for Instagram, Facebook, and
+other media-upload capable sites/applications, Tumblr uploads consistently
+failed. And the mobile app's failure response is to indicate that it will try
+again "later" automatically, but at an unknown interval, _once._ A subsequent
+failure ends with an attempted-humorous but useless error message like,
+"Something annoying happened. Try again later." There is no way to see, change,
+or clear the failure retry queue; the best way to force a retry is to make a
+blank text post which causes both to be attempted immediately, then delete the
+blank post.
+
+Further, while the post date and time can be altered on the web, they can't be
+changed on the mobile app, and delayed uploads on mobile will be timestamped for
+the submission time, not the capture/writing time, so matching up post times
+with location timestamps was inconsistent until I could get my laptop to wifi to
+fix them.
+
+During the trip, I ditched Tumblr's video service altogether for a superior
+experience with Vimeo. At least Tumblr handled Vimeo embeds pretty well.
+
+That said, I haven't found a better alternative yet, but I'll be looking.
+{% endupdate %}
+
 ![Tumblr Dashboard][TDASH]
 
 [The frontend][TTHEME] loads the Mapbox map, pulls the route and current
@@ -223,6 +248,12 @@ miles through the desert, and sell it off in Salt Lake. How hard can it be?
 It worked out okay the first time. Follow along on the [Travelogue][TL].
 
 _(Yes, this is where my Favicon came from.)_
+
+{% update 2017-06 %}
+We lived. ;-)
+
+![Grand Canyon](/assets/blog/building-travelogue/grand-canyon.jpg)
+{% endupdate %}
 
 
 [31DAYS]: http://travelogue.news/post/125199590921/thirty-one-days
