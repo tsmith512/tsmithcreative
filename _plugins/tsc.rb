@@ -6,7 +6,11 @@ module Jekyll
   # identify such paragraphs and add a media class to them.
   module MediaWrapper
     def media_wrap(input)
-      input.gsub(/<p>(<img[^>]+>)<\/p>/, '<p class="media">\1</p>')
+      input
+        .gsub(/<p>((<img[^>]+>\s*){2,})<\/p>/) {
+          |contents| '<div class="media-n-up">' + contents.gsub(/(<img[^>]+>)/, '<div>\1</div>') + '</div>'
+        }
+        .gsub(/<p>(<img[^>]+>)<\/p>/, '<p class="media">\1</p>')
     end
   end
 
