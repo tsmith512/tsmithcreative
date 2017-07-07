@@ -266,6 +266,6 @@ gulp.task('watch', 'Watch-run sass, jekyll, js, graphics, and icons tasks', () =
   gulp.watch(['./_sass/**/*.scss'], ['sass']);
   gulp.watch(['./*.*', './assets/**/*.*', './**/*.html', './**/*.yml', './**/*.markdown', './**/*.md', './**/*.rb', '!./node_modules/**', '!./_site/**'], ['jekyll']);
   gulp.watch(['./**/*.js', '!./_site/**', '!./node_modules/**'], ['js']);
-  gulp.watch(['./_gfx/**/*.*', './assets/**/*.*'], ['graphics']);
+  gulp.watch(['./_gfx/**/*.*', './_assets/**/*.*'], ['graphics']);
   gulp.watch(['./_icons/**/*.*'], ['icons']);
 });

@@ -113,10 +113,10 @@ music used in this project.
 
 ### Music
 
-- TITLE: Real Ride<br />
-  ARTIST: NICOLAI HEIDLAS<br />
+- _Title:_ Real Ride<br />
+  _Artist:_ Nicolai Heidlas<br />
   [https://soundcloud.com/nicolai-heidlas/real-ride-upbeat-poprock-background-music](https://soundcloud.com/nicolai-heidlas/real-ride-upbeat-poprock-background-music)
 
-- TITLE: Get Up!<br />
-  ARTIST: NICOLAI HEIDLAS<br />
+- _Title:_ Get Up!<br />
+  _Artist:_ Nicolai Heidlas<br />
   [https://soundcloud.com/nicolai-heidlas/get-up-upbeat-pop-background-music](https://soundcloud.com/nicolai-heidlas/get-up-upbeat-pop-background-music)
