@@ -3,7 +3,7 @@
  * Style for media embeds
  */
 
-p.media {
+.media {
   // These are paragraphs that wrap only an image tag in a post.
   text-align: center;
 
@@ -35,6 +35,32 @@ p.media {
     &:last-child {
       margin-bottom: -1em;
     }
+  }
+}
+
+.media-n-up {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+
+  border: 2px solid white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.25);
+
+  @include breakpoint($max-width + 16) {
+    margin-left: -(($max-width - $max-lines) / 2);
+    margin-right: -(($max-width - $max-lines) / 2);
+  }
+
+  div {
+    flex: 1;
+    padding: 2px;
+  }
+
+  img {
+    display: block;
   }
 }
 
