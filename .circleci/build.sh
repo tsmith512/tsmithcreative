@@ -26,8 +26,5 @@ echo INSTALL NODE DEPENDENCIES
 npm install -g gulp
 npm install
 
-echo INSTALL GRAPHICSMAGICK
-sudo apt-get install graphicsmagick --force-yes
-
 echo GULP: BUILD/PUBLISH TO STAGING
 gulp publish-staging
