@@ -6,14 +6,14 @@ set -ex
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 
 # Load NVM
-export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Enter the repo directory
 cd ~/repo
 
 # Get Node
-nvm install
+nvm install $(cat ~/repo/.nvmrc)
 nvm use
 
 # Get Node Dependencies
