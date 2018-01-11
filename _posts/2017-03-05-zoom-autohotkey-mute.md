@@ -28,7 +28,7 @@ pressing `F9`, though this assignment could be easily changed.
 ```
 ; A system-wide mute toggle for Zoom Meetings.
 
-F9::
+$F9::
    ; Zoom appears not to accept ControlSend when in the background, so
    ; we isolate the Zoom and current windows, switch over to Zoom, send
    ; its own mute-toggle hotkey, and then switch back.
@@ -41,7 +41,13 @@ F9::
    ;
    ; If we aren't sharing our screen, pull the Zoom window:
    if (zoom_window = "0x0") {
-      WinGet, zoom_window, ID, ahk_class ZPContentViewWndClass
+      zoom_window := WinExist("ahk_class ZPContentViewWndClass")
+   }
+   ;
+   ; Do we know we have a zoom_window? If not, bail.
+   if (zoom_window = "0x0") {
+      Send {F9}
+      return
    }
    ;
    ; Whichever we have, switch over to it:
