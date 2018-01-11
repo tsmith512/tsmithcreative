@@ -8,7 +8,7 @@ jobs:
     docker:
       # specify the version you desire here
        - image: circleci/ruby:2.3.4
-      
+
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -22,21 +22,22 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "package.json" }}
+          - deps-{{ checksum "Gemfile.lock" }}
+          - deps-{{ checksum "package.json" }}
 
       - run:
-          name: install dependencies
+          name: Install Ruby/Jekyll dependencies
           command: |
             bundle install --jobs=4 --retry=3 --path vendor/bundle
 
       - run:
-          name: install graphicsmagick
+          name: Install GraphicsMagick
           command: |
             sudo apt-get update
             sudo apt-get install graphicsmagick --force-yes
 
       - run:
-          name: Run build script
+          name: Install Node/project dependencies
           command: |
             chmod +x ~/repo/.circleci/build.sh
             ~/repo/.circleci/build.sh
@@ -44,10 +45,20 @@ jobs:
       - save_cache:
           paths:
             - ./vendor/bundle
+          key: deps-{{ checksum "Gemfile.lock" }}
+
+      - save_cache:
+          paths:
             - ~/repo/node_modules
             - ~/.nvm
-          key: v1-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "package.json" }}
-        
+          key: deps-{{ checksum "package.json" }}
+
+
+      - run:
+          name: Build and deploy the site
+          command: |
+            chmod +x ~/repo/.circleci/deploy.sh
+            ~/repo/.circleci/deploy.sh
 
       # collect reports
       - store_test_results:
