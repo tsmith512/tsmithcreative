@@ -25,6 +25,3 @@ set -e
 echo INSTALL NODE DEPENDENCIES
 npm install -g gulp
 npm install
-
-echo GULP: BUILD/PUBLISH TO STAGING
-gulp publish-staging
