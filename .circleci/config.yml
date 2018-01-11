@@ -1,0 +1,57 @@
+# Ruby CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-ruby/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+       - image: circleci/ruby:2.3.4
+      
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/postgres:9.4
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "package.json" }}
+
+      - run:
+          name: install dependencies
+          command: |
+            bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+      - run:
+          name: install graphicsmagick
+          command: |
+            sudo apt-get update
+            sudo apt-get install graphicsmagick --force-yes
+
+      - run:
+          name: Run build script
+          command: |
+            chmod +x ~/repo/.circleci/build.sh
+            ~/repo/.circleci/build.sh
+
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+            - ~/repo/node_modules
+            - ~/.nvm
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "package.json" }}
+        
+
+      # collect reports
+      - store_test_results:
+          path: /tmp/test-results
+      - store_artifacts:
+          path: /tmp/test-results
+          destination: test-results
