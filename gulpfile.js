@@ -247,8 +247,51 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
     .pipe(awspublish.reporter());
 });
 
+gulp.task('publish-staging-s3', 'Sync the site to S3 staging bucket', (cb) => {
+  // create a new publisher using S3 options
+  // http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#constructor-property
+  var publisher = awspublish.create({
+    region: 'us-west-1',
+    params: {
+      Bucket: 'tsmithcreative-staging'
+    },
+  });
+
+  // define custom headers
+  var headers = {
+    'Cache-Control': 'max-age=86400, no-transform, public'
+  };
+
+  return gulp.src('./_site/**/*.*')
+    .pipe(awspublishRouter({
+      cache: {
+          // cache for 1 week by default
+          cacheTime: 86400
+      },
+
+      routes: {
+        // pass-through for anything that wasn't matched by routes above, to
+        // be uploaded with default options
+        "^.+$": "$&"
+      }
+    }))
+
+    .pipe(publisher.publish())
+    .pipe(publisher.sync())
+
+    // create a cache file to speed up consecutive uploads
+    .pipe(publisher.cache())
+
+     // print upload updates to console
+    .pipe(awspublish.reporter());
+});
+
 gulp.task('publish', 'Build the site and publish to S3', (cb) => {
   runSequence(['assets', 'build'], 'publish-s3', cb);
+});
+
+gulp.task('publish-staging', 'Build the site and publish to S3', (cb) => {
+  runSequence(['assets', 'build'], 'publish-staging-s3', cb);
 });
 
 /*
