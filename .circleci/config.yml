@@ -22,7 +22,7 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - deps-{{ checksum "Gemfile.lock" }}
+          - deps-{{ checksum "Gemfile" }}
           - deps-{{ checksum "package.json" }}
 
       - run:
@@ -45,7 +45,7 @@ jobs:
       - save_cache:
           paths:
             - ./vendor/bundle
-          key: deps-{{ checksum "Gemfile.lock" }}
+          key: deps-{{ checksum "Gemfile" }}
 
       - save_cache:
           paths:
