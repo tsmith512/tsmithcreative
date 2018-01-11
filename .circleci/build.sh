@@ -1,24 +1,25 @@
 #!/bin/bash
 
-set -ex
+set -e
 
-# Get NVM
+echo DOWNLOAD NVM
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 
-# Load NVM
+echo LOAD NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
-# Enter the repo directory
 cd ~/repo
 
-# Get Node
+echo DOWNLOAD NODE VERSION
 nvm install $(cat ~/repo/.nvmrc)
+
+echo LOAD NODE VERSION
 nvm use
 
-# Get Node Dependencies
+echo INSTALL NODE DEPENDENCIES
 npm install -g gulp
 npm install
 
-# Build and deploy to the staging bucket
+echo GULP: BUILD/PUBLISH TO STAGING
 gulp publish-staging
