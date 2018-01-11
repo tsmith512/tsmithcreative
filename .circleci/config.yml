@@ -8,7 +8,7 @@ jobs:
     docker:
       # specify the version you desire here
        - image: circleci/ruby:2.3.4
-      
+
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -22,7 +22,8 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "package.json" }}
+          - deps-{{ checksum "Gemfile.lock" }}
+          - deps-{{ checksum "package.json" }}
 
       - run:
           name: Install Ruby/Jekyll dependencies
@@ -44,9 +45,14 @@ jobs:
       - save_cache:
           paths:
             - ./vendor/bundle
+          key: deps-{{ checksum "Gemfile.lock" }}
+
+      - save_cache:
+          paths:
             - ~/repo/node_modules
             - ~/.nvm
-          key: v1-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "package.json" }}
+          key: deps-{{ checksum "package.json" }}
+
 
       - run:
           name: Build and deploy the site
