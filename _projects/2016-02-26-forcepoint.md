@@ -60,7 +60,7 @@ images:
 
 ---
 
-Forcepoint, powered by Raytheon, is the new face of Websense, an enterprise software company developing products and solutions to safeguard users, data, and networks against insider threats and outside attackers, in the cloud, on the road, in the office. As part of the rebranding effort, Raytheon\|Websense wanted:
+Forcepoint, powered by Raytheon, is the new face of Websense, an enterprise software company developing products and solutions to safeguard users, data, and networks against insider threats and outside attackers, in the cloud, on the road, and in the office. As part of the rebranding effort, Raytheon\|Websense wanted:
 
 - To get off a very outdated and inflexible CMS
 - To unify management of multilingual and localized content

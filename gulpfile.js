@@ -82,7 +82,7 @@ gulp.task('favicons', 'Copy favicons into position', () => {
 });
 
 gulp.task('graphics-project-thumbnails', 'Rebuild gallery thumbnails for project images', () => {
-  return gulp.src('assets/projects/**/*.*')
+  return gulp.src('_assets/projects/**/*.*')
     .pipe(resize({width: 200, height: 200, crop: true, upscale: false}))
     .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
     .pipe(gulp.dest('_site/gfx/thumbs/projects/'))
@@ -125,7 +125,8 @@ gulp.task('js-all', false, () => {
   return gulp.src([
     './node_modules/fg-loadcss/src/loadCSS.js',
     './node_modules/fg-loadcss/src/cssrelpreload.js',
-    './_js/contact.js'
+    './_js/contact.js',
+    './_js/collapsed-content.js'
   ])
     .pipe(concat('all.js'))
     .pipe(uglify({mangle: false}))
@@ -247,7 +248,7 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
 });
 
 gulp.task('publish', 'Build the site and publish to S3', (cb) => {
-  runSequence(['build'], 'publish-s3', cb);
+  runSequence(['assets', 'build'], 'publish-s3', cb);
 });
 
 /*
@@ -265,6 +266,7 @@ gulp.task('watch', 'Watch-run sass, jekyll, js, graphics, and icons tasks', () =
   gulp.watch(['./_sass/**/*.scss'], ['sass']);
   gulp.watch(['./*.*', './assets/**/*.*', './**/*.html', './**/*.yml', './**/*.markdown', './**/*.md', './**/*.rb', '!./node_modules/**', '!./_site/**'], ['jekyll']);
   gulp.watch(['./**/*.js', '!./_site/**', '!./node_modules/**'], ['js']);
-  gulp.watch(['./_gfx/**/*.*', './assets/**/*.*'], ['graphics']);
+  gulp.watch(['./_gfx/**/*.*', './_assets/**/*.*'], ['graphics']);
   gulp.watch(['./_icons/**/*.*'], ['icons']);
+  gulp.watch(['./_assets/**/*.*'], ['assets']);
 });

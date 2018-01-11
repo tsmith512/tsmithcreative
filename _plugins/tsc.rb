@@ -6,7 +6,11 @@ module Jekyll
   # identify such paragraphs and add a media class to them.
   module MediaWrapper
     def media_wrap(input)
-      input.gsub(/<p>(<img[^>]+>)<\/p>/, '<p class="media">\1</p>')
+      input
+        .gsub(/<p>((<img[^>]+>\s*){2,})<\/p>/) {
+          |contents| '<div class="media-n-up">' + contents.gsub(/(<img[^>]+>)/, '<div>\1</div>') + '</div>'
+        }
+        .gsub(/<p>(<img[^>]+>)<\/p>/, '<p class="media">\1</p>')
     end
   end
 
@@ -52,9 +56,68 @@ module Jekyll
       input.sub(/<hr \/>/, '</div><div class="project-details">')
     end
   end
+
+  # Make an HTML wrapper around an "update" area indicating that a post has
+  # changed since it was first published. Usage:
+  # {% update 2017-06 %}
+  #   ... content ...
+  # {% endupdate %}
+  class UpdateBlock < Liquid::Block
+    def initialize(tag, markup, tokens)
+      @date = markup.strip
+      super
+    end
+
+    def render(context)
+      contents = super
+
+      site = context.registers[:site]
+      converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
+      markdownContent = converter.convert(contents)
+      update = Liquid::Template.parse(markdownContent).render context
+
+      output = "<div class=\"update\">"
+      output += "<span class=\"update-intro\">Update #{@date}:</span> "
+      output += update
+      output += "</div>"
+
+      output
+    end
+  end
+
+  # Make an HTML wrapper around a "collapsible" area
+  # {% collapsible Title %}
+  #   ... content ...
+  # {% endcollapsible %}
+  class CollapsedBlock < Liquid::Block
+    def initialize(tag, markup, tokens)
+      @title = markup.strip
+      super
+    end
+
+    def render(context)
+      contents = super
+
+      site = context.registers[:site]
+      converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
+      markdownContent = converter.convert(contents)
+      collapsed = Liquid::Template.parse(markdownContent).render context
+
+      output  = "<div class=\"collapsed\">"
+      output +=   "<h2 class=\"collapsed-intro\"><a href=\"#\" class=\"collapsed-toggle\">#{@title}</a></h2> "
+      output +=   "<div class=\"collapsed-content\">"
+      output +=     collapsed
+      output +=   "</div>"
+      output += "</div>"
+
+      output
+    end
+  end
 end
 
 Liquid::Template.register_filter(Jekyll::MediaWrapper)
 Liquid::Template.register_filter(Jekyll::MastheadGenerate)
 Liquid::Template.register_filter(Jekyll::ThumbnailGenerate)
 Liquid::Template.register_filter(Jekyll::SeparateHorizRules)
+Liquid::Template.register_tag("update", Jekyll::UpdateBlock)
+Liquid::Template.register_tag("collapsed", Jekyll::CollapsedBlock)

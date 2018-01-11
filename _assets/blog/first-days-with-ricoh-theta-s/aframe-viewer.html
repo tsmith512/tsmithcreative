@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test A</title>
+  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-entity camera="userHeight: 1.6" look-controls="reverseMouseDrag: true">
+    </a-entity>
+
+    <!-- Photosphere Background -->
+    <a-sky src="" rotation="0 0 0"></a-sky>
+  </a-scene>
+  <script>
+    document.querySelector('a-sky').setAttribute('src', window.location.hash.slice(1));
+  </script>
+</body>
+</html>

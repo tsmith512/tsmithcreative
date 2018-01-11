@@ -37,6 +37,7 @@ defaults:
       type: posts
     values:
       commenting: true
+      layout: post
       highlighting: true
 
 collections:
