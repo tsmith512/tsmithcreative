@@ -14,5 +14,10 @@ nvm use
 # With nvm out of the way, go back into exit-on-error mode
 set -e
 
-echo GULP: BUILD/PUBLISH TO STAGING
-gulp publish-staging
+if [ $(git symbolic-ref HEAD --short) = "master" ]; then
+  echo On master branch: building and deploying to production
+  gulp publish
+else
+  echo Not on master: building and deploying to staging instance
+  gulp publish-staging
+fi
