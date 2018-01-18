@@ -4,18 +4,6 @@
  */
 
 .masthead {
-  margin-bottom: 2rem;
-
-  background-position: center center;
-  &.masthead-default {
-    background-repeat: repeat;
-    background-image: url('/gfx/masthead-default.jpg');
-  }
-
-  &.masthead-override {
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 
   text-align: center;
   @include breakpoint($max-width + 16) {
@@ -24,8 +12,7 @@
 
   .wrapper {
     margin-top: 0;
-    padding-top: 200px;
-    padding-bottom: 2rem;
+    margin-bottom: 0;
   }
 
   h1 {
@@ -33,9 +20,7 @@
     font-family: $tungsten;
     font-weight: lighter;
 
-    color: black;
-    background: white;
-    box-shadow: -10px 0 0 white, 10px 0 0 white;
+    color: #222;
 
     font-size: 3rem;
     @include breakpoint($max-lines) {
@@ -44,12 +29,10 @@
     @include breakpoint($max-width + 16) {
       font-size: 6rem;
     }
-    line-height: 1.35;
+    line-height: 1.15;
     letter-spacing: 1px;
 
     @include breakpoint($max-width + 16) {
-      position: relative;
-      left: 10px;
     }
   }
 }
