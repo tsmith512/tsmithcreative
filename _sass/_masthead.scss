@@ -35,4 +35,10 @@
     @include breakpoint($max-width + 16) {
     }
   }
+
+  .summary {
+    font-family: $gotham;
+    font-size: 1.25em;
+    color: #666;
+  }
 }
