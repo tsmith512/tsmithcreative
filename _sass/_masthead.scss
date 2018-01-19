@@ -4,41 +4,69 @@
  */
 
 .masthead {
+  overflow: hidden;
+  border-top: 1px solid #444;
 
-  text-align: center;
-  @include breakpoint($max-width + 16) {
-    text-align: left;
+  @include breakpoint($max-lines + 40px) {
+    background: {
+      color: #eee;
+      image: url(/gfx/masthead.jpg);
+      position: center center;
+      repeat: no-repeat;
+      size: cover;
+    }
   }
 
-  .wrapper {
-    margin-top: 0;
-    margin-bottom: 0;
+  .masthead-content {
+    background: white;
+    @include breakpoint($max-lines + 40px) {
+      margin: 2rem auto;
+    }
+    @include breakpoint(min-height 680px) {
+      margin: 4rem auto;
+    }
+    @include breakpoint(min-height 800px) {
+      margin: 6rem auto;
+    }
+    @include breakpoint(min-height 900px) {
+      margin: 8rem auto;
+    }
+    max-width: $max-lines;
+    max-width: calc(#{$max-lines} + 2rem);
+    padding: 1rem;
   }
 
   h1 {
-    display: inline;
+    margin: 0;
     font-family: $tungsten;
     font-weight: lighter;
 
     color: #222;
 
-    font-size: 3rem;
+    text-align: center;
     @include breakpoint($max-lines) {
-      font-size: 4.5rem;
+      text-align: left;
+    }
+
+    font-size: 2.5rem;
+    @include breakpoint($max-lines) {
+      font-size: 3rem;
     }
     @include breakpoint($max-width + 16) {
-      font-size: 6rem;
+      font-size: 4.5rem;
     }
     line-height: 1.15;
     letter-spacing: 1px;
-
-    @include breakpoint($max-width + 16) {
-    }
   }
 
   .summary {
     font-family: $gotham;
     font-size: 1.25em;
     color: #666;
+
+    text-align: center;
+    @include breakpoint($max-lines) {
+      text-align: left;
+    }
   }
 }
