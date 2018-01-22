@@ -4,9 +4,9 @@
  */
 
 .site-header {
-  background: #222;
-  border-bottom: 1px solid black;
-  padding: 1rem;
+  background: #111;
+  border-bottom: 2px solid black;
+  padding: 0.5rem 0;
   width: 100%;
 
   .home & {
@@ -34,7 +34,7 @@
     margin: 0 auto;
     @include breakpoint($nav-split) {
       margin: 0;
-      margin-top: 1rem;
+      margin-top: 0.75rem;
       position: absolute;
     }
 
@@ -64,8 +64,8 @@
 
     @include breakpoint($nav-split) {
       text-align: right;
-      margin-top: -1em;
-      margin-bottom: 0.5em;
+      margin-top: -0.5em;
+      margin-bottom: 0.5rem;
     }
 
     ul, li {

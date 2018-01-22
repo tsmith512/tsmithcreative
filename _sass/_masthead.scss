@@ -5,30 +5,49 @@
 
 .masthead {
   overflow: hidden;
-  border-top: 1px solid #444;
+  margin-bottom: 2rem;
 
   @include breakpoint($max-lines + 40px) {
+    position: relative;
     background: {
-      color: #eee;
+      color: #222;
       image: url(/gfx/masthead.jpg);
       position: center center;
       repeat: no-repeat;
       size: cover;
     }
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -30px;
+      right: -30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5) inset;
+    }
+  }
+
+  $types: page post project;
+  @each $type in $types {
+    &.masthead-#{$type} { background-image: url("/assets/masthead/default/#{$type}.jpg"); }
   }
 
   .masthead-content {
     background: white;
+    box-shadow: 0 0 30px rgba(0,0,0,0.25);
     @include breakpoint($max-lines + 40px) {
       margin: 2rem auto;
+      border-top: .25em solid #ddd;
+      border-bottom: .25em solid #ddd;
     }
-    @include breakpoint(min-height 680px) {
+    @include breakpoint((min-width ($max-lines + 40px)) (min-height 680px)) {
       margin: 4rem auto;
     }
-    @include breakpoint(min-height 800px) {
+    @include breakpoint((min-width ($max-lines + 40px)) (min-height 800px)) {
       margin: 6rem auto;
     }
-    @include breakpoint(min-height 900px) {
+    @include breakpoint((min-width ($max-lines + 40px)) (min-height 900px)) {
       margin: 8rem auto;
     }
     max-width: $max-lines;
