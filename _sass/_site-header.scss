@@ -49,7 +49,7 @@
       background-repeat: no-repeat;
 
       opacity: 0.5;
-      &:hover { opacity: 1; }
+      .home &, &:hover { opacity: 1; }
     }
 
     span {
@@ -82,7 +82,7 @@
       display: block;
       font-family: $gotham;
       text-transform: uppercase;
-      color: #EEE;
+      color: #aaa;
       border-top: 0.5em solid transparent;
       text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
       padding: 1.5em 0.5em 1em;
@@ -99,10 +99,12 @@
         }
       }
 
-      @include breakpoint(max-width ($nav-split - 1)) {
-        &.active, &:hover {
-          font-weight: bold;
-        }
+      &:hover {
+        color: #CCC;
+      }
+
+      &.active {
+        color: #FFF;
       }
 
       @include breakpoint($nav-split) {
