@@ -102,3 +102,8 @@ hr {
   border: 2px solid #eee;
   margin: 1em 0;
 }
+
+abbr[title] {
+  border-bottom: 1px dashed black;
+  text-decoration: none;
+}
