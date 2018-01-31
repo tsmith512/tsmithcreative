@@ -37,6 +37,8 @@
     background: white;
     box-shadow: 0 0 30px rgba(0,0,0,0.25);
     @include breakpoint($max-lines + 40px) {
+      position: relative;
+      z-index: 100;
       margin: 2rem auto;
       border-top: .25em solid #ddd;
       border-bottom: .25em solid #ddd;
