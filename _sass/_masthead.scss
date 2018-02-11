@@ -28,9 +28,14 @@
     }
   }
 
-  $types: page post project;
-  @each $type in $types {
-    &.masthead-#{$type} { background-image: url("/assets/masthead/default/#{$type}.jpg"); }
+  $types: '2009' '2010' '2011' '2012' '2013' '2014' '2015' '2016' '2017' '2018' 'page';
+  $sizes: 720 960 1280 1600 1920;
+  @each $size in $sizes {
+    @include breakpoint("#{$size}px") {
+      @each $type in $types {
+        &.masthead-#{$type} { background-image: url("/gfx/masthead/#{$size}/#{$type}.jpg"); }
+      }
+    }
   }
 
   .masthead-content {

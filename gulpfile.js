@@ -101,7 +101,26 @@ gulp.task('graphics-home-page', 'Derivatives of that home page background', () =
     .pipe(gulp.dest('_site/gfx/home/1200'))
 });
 
-gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'graphics-project-thumbnails', 'graphics-home-page', 'favicons'], () => {
+gulp.task('graphics-mastheads', 'Derivatives of masthead banner backgrounds', () => {
+  return gulp.src('./_gfx/masthead/*.jpg')
+    .pipe(resize({width: 1920, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/masthead/1920'))
+    .pipe(resize({width: 1600, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/masthead/1600'))
+    .pipe(resize({width: 1280, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/masthead/1280'))
+    .pipe(resize({width: 960, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/masthead/960'))
+    .pipe(resize({width: 720, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/masthead/720'))
+});
+
+gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'graphics-project-thumbnails', 'graphics-home-page', 'graphics-mastheads', 'favicons'], () => {
   return gulp.src(['./_gfx/**/*.*', '!./_gfx/home-background.jpg'])
   .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
   .pipe(gulp.dest('./_site/gfx/'));
