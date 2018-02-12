@@ -89,6 +89,7 @@
     font-family: $gotham;
     font-size: 1.25em;
     color: #666;
+    margin-bottom: 0;
 
     text-align: center;
     @include breakpoint($max-lines) {
