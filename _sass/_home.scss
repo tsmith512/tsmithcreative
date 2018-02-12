@@ -6,21 +6,21 @@
 .home {
   min-height: 100vh;
 
-  // The checker color pattern
-  background-image: url('/gfx/masthead-default.jpg');
+  // The grey pattern
+  background-image: url('/gfx/home-pattern.gif');
 
   // That 1200px wide is 900px tall, which is actually needed for this image
   // since it's really about the viewport height at this point, but width makes
   // a better test, according to my site's analytics.
-  @include breakpoint(720px) {
+  @include breakpoint((min-width 720px) (min-height 800px)) {
     background-image: url('/gfx/home/1200/home-background.jpg');
     background-size: cover;
     background-position: left bottom;
   }
-  @include breakpoint(1600px) {
+  @include breakpoint((min-width 1600px) (min-height 800px)) {
     background-image: url('/gfx/home/1600/home-background.jpg');
   }
-  @include breakpoint(1800px) {
+  @include breakpoint((min-width 1800px) (min-height 800px)) {
     background-image: url('/gfx/home/1800/home-background.jpg');
   }
 

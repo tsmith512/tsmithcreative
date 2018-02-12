@@ -4,10 +4,22 @@
  */
 
 .site-header {
-  position: absolute;
-  z-index: 1000;
-  padding: 1em;
+  background: #111;
+  border-bottom: 2px solid black;
+  padding: 0.5rem 0;
   width: 100%;
+
+  .home & {
+    position: absolute;
+    z-index: 1000;
+    background: transparent;
+    border: none;
+  }
+
+  .wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
   @include breakpoint(max-width ($nav-split - 1)) {
     text-align: center;
@@ -22,6 +34,7 @@
     margin: 0 auto;
     @include breakpoint($nav-split) {
       margin: 0;
+      margin-top: 0.75rem;
       position: absolute;
     }
 
@@ -36,7 +49,7 @@
       background-repeat: no-repeat;
 
       opacity: 0.5;
-      &:hover { opacity: 1; }
+      .home &, &:hover { opacity: 1; }
     }
 
     span {
@@ -51,7 +64,8 @@
 
     @include breakpoint($nav-split) {
       text-align: right;
-      margin-top: -1em;
+      margin-top: -0.5em;
+      margin-bottom: 0.5rem;
     }
 
     ul, li {
@@ -68,24 +82,34 @@
       display: block;
       font-family: $gotham;
       text-transform: uppercase;
-      color: white;
+      color: #aaa;
       border-top: 0.5em solid transparent;
       text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
-      padding: 0.5em;
+      padding: 1.5em 0.5em 1em;
 
       @include breakpoint($max-lines) {
         padding: 1.5em 1em 1em 1em;
       }
 
-      @include breakpoint(max-width ($nav-split - 1)) {
-        &.active, &:hover {
-          font-weight: bold;
+      @include breakpoint(max-width (580px)) {
+        &.tsp {
+          // This is a separate website with a separate/low-priority focus
+          // hide the link on smaller screens before collapsing the nav
+          display: none;
         }
+      }
+
+      &:hover {
+        color: #CCC;
+      }
+
+      &.active {
+        color: #FFF;
       }
 
       @include breakpoint($nav-split) {
         &.active {
-          border-top-color: rgba(255,255,255,0.5);
+          border-top-color: #EEE;
         }
 
         &:hover {
