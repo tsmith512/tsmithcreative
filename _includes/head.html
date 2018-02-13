@@ -19,7 +19,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
+  <meta name="description" content="{{ description | escape }}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/print.css" | prepend: site.baseurl }}" media="print">
@@ -31,8 +31,8 @@
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <meta property="og:title" content="{{ title }}">
-  {% if description %}<meta property="og:description" content="{{ description }}">{% endif %}
+  <meta property="og:title" content="{{ title | escape }}">
+  {% if description %}<meta property="og:description" content="{{ description | escape }}">{% endif %}
   {% if hero %}<meta property="og:image" content="{{ hero | prepend: site.baseurl | prepend: site.url }}">{% endif %}
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <meta property="og:type" content="website">
