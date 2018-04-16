@@ -4,52 +4,96 @@
  */
 
 .masthead {
+  overflow: hidden;
   margin-bottom: 2rem;
 
-  background-position: center center;
-  &.masthead-default {
-    background-repeat: repeat;
-    background-image: url('/gfx/masthead-default.jpg');
+  @include breakpoint($max-lines + 40px) {
+    position: relative;
+    background: {
+      color: #222;
+      image: url(/gfx/masthead.jpg);
+      position: center center;
+      repeat: no-repeat;
+      size: cover;
+    }
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -30px;
+      right: -30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5) inset;
+    }
   }
 
-  &.masthead-override {
-    background-size: cover;
-    background-repeat: no-repeat;
+  $types: '2009' '2010' '2011' '2012' '2013' '2014' '2015' '2016' '2017' '2018' 'page';
+  $sizes: 720 960 1280 1600 1920;
+  @each $size in $sizes {
+    @include breakpoint("#{$size}px") {
+      @each $type in $types {
+        &.masthead-#{$type} { background-image: url("/gfx/masthead/#{$size}/#{$type}.jpg"); }
+      }
+    }
   }
 
-  text-align: center;
-  @include breakpoint($max-width + 16) {
-    text-align: left;
-  }
-
-  .wrapper {
-    margin-top: 0;
-    padding-top: 200px;
-    padding-bottom: 2rem;
+  .masthead-content {
+    background: white;
+    box-shadow: 0 0 30px rgba(0,0,0,0.25);
+    @include breakpoint($max-lines + 40px) {
+      position: relative;
+      z-index: 100;
+      margin: 2rem auto;
+      border-top: .25em solid #ddd;
+      border-bottom: .25em solid #ddd;
+    }
+    @include breakpoint((min-width ($max-lines + 40px)) (min-height 680px)) {
+      margin: 4rem auto;
+    }
+    @include breakpoint((min-width ($max-lines + 40px)) (min-height 800px)) {
+      margin: 6rem auto;
+    }
+    @include breakpoint((min-width ($max-lines + 40px)) (min-height 900px)) {
+      margin: 8rem auto;
+    }
+    max-width: $max-lines;
+    max-width: calc(#{$max-lines} + 2rem);
+    padding: 1rem;
   }
 
   h1 {
-    display: inline;
+    margin: 0;
     font-family: $tungsten;
     font-weight: lighter;
 
-    color: black;
-    background: white;
-    box-shadow: -10px 0 0 white, 10px 0 0 white;
+    color: #222;
 
-    font-size: 3rem;
+    text-align: center;
     @include breakpoint($max-lines) {
+      text-align: left;
+    }
+
+    font-size: 2.5rem;
+    @include breakpoint($max-lines) {
+      font-size: 3rem;
+    }
+    @include breakpoint($max-width + 16) {
       font-size: 4.5rem;
     }
-    @include breakpoint($max-width + 16) {
-      font-size: 6rem;
-    }
-    line-height: 1.35;
+    line-height: 1.15;
     letter-spacing: 1px;
+  }
 
-    @include breakpoint($max-width + 16) {
-      position: relative;
-      left: 10px;
+  .summary {
+    font-family: $gotham;
+    font-size: 1.25em;
+    color: #666;
+    margin-bottom: 0;
+
+    text-align: center;
+    @include breakpoint($max-lines) {
+      text-align: left;
     }
   }
 }

@@ -1,27 +1,7 @@
 ---
-layout: page
+layout: detail
 ---
-<article class="project">
-  <header class="post-meta">
-    <dl>
-      <dt><span class="icon icon-calendar-light">Published</span></dt>
-      <dd class="date">{{ page.date | date: "%B %e, %Y"}}</dd>
-      <dt><span class="icon icon-tags-light">Tags</span></dt>
-      <dd class="tags">
-        <ul>
-          {% for tag in page.tags %}
-            <li>{{ tag }}</li>
-          {% endfor %}
-        </ul>
-      </dd>
-    </dl>
-  </header>
-
-  {% if page.summary %}
-    <section class="summary">
-      {{ page.summary }}
-    </section>
-  {% endif %}
+<div class="project">
 
   {% if page.images %}
     <div class="gallery">
@@ -40,4 +20,4 @@ layout: page
   <div class="project-write-up">
     {{ content | fix_hr }}
   </div>
-</article>
+</div>
