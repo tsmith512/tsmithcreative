@@ -67,7 +67,7 @@ the [Meredith Farming Shop Tour][MVR] and
 
 ![Aerate](/assets/blog/drupalcon-nashville/aerate-noshadow.png)
 
-We also had stickers for the newly released [Aerate][AE] frontend performance
+We also had info about the newly released [Aerate][AE] frontend performance
 auditing tool. Evan Willhite, its maintainer, was also at the booth ready to
 talk, but I think with all the hubbub over the VR demos, Aerate didn't get as
 much attention as I wish it had.
