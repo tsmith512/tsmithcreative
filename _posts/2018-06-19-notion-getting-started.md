@@ -133,27 +133,25 @@ _(Update: Worked perfectly except that images were not inlcuded in the export. F
   - Notion does have a way to set a reminder by adding a date/time inline on a
     page, but that's not a replacement for time- or location-based reminders in
     Todoist offers.
-- **A native application.** It's yet another Electron app, but of Electron apps
-  hogging system resources, it is lighter than I expected.
-- **A platform with integrations.** Aside from printing single pages and the
-  Markdown export, there's not a collection of inbound or outbound integrations
-  like you get with ON/EN/TD. I would love to see a bulk PDF export, a more
+- **A platform with integrations.** Notion offers several importers from other
+  systems, but there isn't (yet?) a collection of inbound/outbound importers
+  like ON/EN/TD have built. I would love to see a bulk PDF export, a more
   organized Markdown archive (currently, it's a flat directory with
-  hash-prefixed names), or maybe an "Email to Notion" importer like TripIt.
-  Also, the Android app does not receive "Shares" from other apps; i.e. you
-  cannot "Share" _to_ Notion from other apps.
+  hash-prefixed names), or maybe an "Email to Notion" importer. Also, the
+  Android app does not receive "Shares" from other apps; i.e. you cannot "Share"
+  _to_ Notion from other apps.
 - **Tag based.** I don't care about tags, but you might. I'm a very "put stuff
-  in its place and come back to it later" person: the notebook and hierarchical,
-  ordered page structure is _perfect_ for me. People who like Evernote's
-  encouraged system of "use a limited hierarchy of date-ordered pages and tag
-  'em all" may have more trouble.
-- **Stored locally.** Evernote was always cloud-only; OneNote went that way in
-  its latest release (to the great disappointment of many). Like the others,
-  Notion is offline-capable, but stored remotely. I miss local storage of user
-  data! These data are _extremely_ valuable, so durable and usable backups are
-  critically important to me and I don't see any of these platforms offering a
-  solid safety net here. But since Notion is the youngest, I'm inclined to take
-  a harder look.
+  in its place and it'll be there when you get back" person: the notebook and
+  hierarchical, ordered page structure is _perfect_ for me. People who like
+  Evernote's encouraged system of "use a simpler hierarchy of date-ordered pages
+  and tag 'em all" may have more trouble.
+- **Stored locally.** Evernote/Todoist were always cloud-only; OneNote made that
+  switch in its latest release (to the great disappointment of many). Like the
+  others, Notion is offline-capable, but stored remotely. I miss local storage
+  of user data! These data are _extremely_ valuable, so durable and usable
+  backups are critically important to me and I don't see any of these platforms
+  offering a solid safety net here. But since Notion is the youngest, I'm
+  inclined to take a harder look.
 
 ## This is what I've been looking for!
 
