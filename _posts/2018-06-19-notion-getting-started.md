@@ -99,7 +99,7 @@ three view styles for the database:
 ![A kanban board of project tasks](/assets/blog/notion/pm.png)
 
 **Simple writing:** I drafted this blog post in Notion. With its easy export to
-Markdown, I'll be able to drop them right into my site repo.
+Markdown, I'll be able to drop it right into my site repo.
 
 ![A blog post draft in Notion](/assets/blog/notion/draft.png)
 
