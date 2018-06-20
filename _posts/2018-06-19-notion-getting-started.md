@@ -40,40 +40,28 @@ Calendar, or Table!
 **Pages are built with blocks:** plain text, bullet lists, checkbox/to-do lists,
 headers, images, links with previews, embeds, etc&hellip;
 
-<p class="media">
-  <video src="/assets/blog/notion/blocks.gif.mp4" autoplay loop muted width="960">
-  <img src="/assets/blog/notion/blocks.gif" alt="Blocks options for new content" />
-  </video>
-</p>
+![Blocks options for new content](/assets/blog/notion/blocks.gif)
 
 **Text formatting is flexible enough, but still structured.** It's not a "full
 WYSIWYG" editor like OneNote. I like that! Giving me the tools to express ideas
 without turning editing into a free-for-all helps me feel like I'm making
 progress instead of making a mess. Hotkeys and Markdown-style make it faster.
 
-  ![Formatting text in Notion](/assets/blog/notion/formatting.gif)
+![Formatting text in Notion](/assets/blog/notion/formatting.gif)
 
 **Pages can have "databases"** which can be viewed as a table, Kanban board, or
 calendar. "Rows" in these databases are themselves pages, but inherit a
 customizable data model allowing you to add properties to visualize on
 the table/board/calendar displays.
 
-<p class="media">
-  <video src="/assets/blog/notion/database.gif.mp4" autoplay loop muted>
-  <img src="/assets/blog/notion/database.gif" alt="Database viewed as a Kanban board" />
-  </video>
-</p>
+![Database viewed as a Kanban board](/assets/blog/notion/database.gif)
 
 **Content can be put into columns.** Notion's ability to group content with
 columns helps keep bits of text and reference material logically grouped. (In
 truth, OneNote does do columns — you can put text frames next to each other —
 but it can get messy.)
 
-<p class="media">
-  <video src="/assets/blog/notion/columns.gif.mp4" autoplay loop muted>
-  <img src="/assets/blog/notion/columns.gif" alt="Creating columns in Notion's editor" />
-  </video>
-</p>
+![Creating columns in Notion's editor](/assets/blog/notion/columns.gif)
 
 **Lightweight interface.** Despite all it can do, its interface is sparse and
 content-focused, reducing distractions.
@@ -99,11 +87,7 @@ also a page on its own with all the details.
 **Researching:** I gathered design research for a theatrical production this
 fall, then I reviewed it with the director.
 
-<p class="media">
-  <video src="/assets/blog/notion/research.gif.mp4" controls loop muted>
-  <img src="/assets/blog/notion/research.gif" alt="A research page" />
-  </video>
-</p>
+![A research page](/assets/blog/notion/research.png)
 
 **Project management:** For that same production, I'll be creating multiple
 pieces. Using another "database" page, I listed each piece needed. I set up all
@@ -123,35 +107,37 @@ _(Update: Worked perfectly except that images were not inlcuded in the export. F
 
 ## What Notion is Not
 
-- **A "todo list" application** like Todoist. Though Notion may take issue with
-  this stance because it can be used to _make_ to-do lists within a page.
-  - At their cores, Todoist is a set of _dated tasks_ while Notion is a set of
-    _pages_ (or collection of databases) that you can _write dates on_. Within a
-    database or on a page, you _can_ make a to-do list, but:
-  - Notion doesn't have a way to show you a list of "dated items" across an
-    entire notebook.
-  - Notion does have a way to set a reminder by adding a date/time inline on a
-    page, but that's not a replacement for time- or location-based reminders in
-    Todoist offers.
-- **A platform with integrations.** Notion offers several importers from other
-  systems, but there isn't (yet?) a collection of inbound/outbound importers
-  like ON/EN/TD have built. I would love to see a bulk PDF export, a more
-  organized Markdown archive (currently, it's a flat directory with
-  hash-prefixed names), or maybe an "Email to Notion" importer. Also, the
-  Android app does not receive "Shares" from other apps; i.e. you cannot "Share"
-  _to_ Notion from other apps.
-- **Tag based.** I don't care about tags, but you might. I'm a very "put stuff
-  in its place and it'll be there when you get back" person: the notebook and
-  hierarchical, ordered page structure is _perfect_ for me. People who like
-  Evernote's encouraged system of "use a simpler hierarchy of date-ordered pages
-  and tag 'em all" may have more trouble.
-- **Stored locally.** Evernote/Todoist were always cloud-only; OneNote made that
-  switch in its latest release (to the great disappointment of many). Like the
-  others, Notion is offline-capable, but stored remotely. I miss local storage
-  of user data! These data are _extremely_ valuable, so durable and usable
-  backups are critically important to me and I don't see any of these platforms
-  offering a solid safety net here. But since Notion is the youngest, I'm
-  inclined to take a harder look.
+**A "todo list" application** like Todoist. Though Notion may take issue with
+this stance because it can be used to _make_ to-do lists.
+- At their cores, Todoist is a set of _dated tasks_ while Notion is a set of
+  _pages_ (or collection of databases) that you can _write dates on_. Within a
+  database or on a page, you _can_ make a to-do list, but:
+- Notion doesn't have a way to show you a list of "dated items" across an
+  entire notebook.
+- Notion does have a way to set a reminder by adding a date/time inline on a
+  page, but that's not a replacement for time- or location-based reminders in
+  Todoist offers for specific tasks.
+
+**A platform with integrations.** Notion offers several importers from other
+systems, but there isn't (yet?) a collection of inbound/outbound integrations
+like ON/EN/TD have. I would love to see a bulk PDF export, a more organized
+Markdown archive (currently, it's a flat directory with hash-prefixed names), or
+maybe an "Email to Notion" importer. Also, the Android app does not receive
+"Shares" from other apps; i.e. you cannot "Share" _to_ Notion from other apps.
+
+**Tag based.** I don't care about tags, but you might. I'm a very "put stuff in
+its place and it'll be there when you get back" person: the notebook and
+hierarchical, ordered page structure is _perfect_ for me. People who like
+Evernote's encouraged system of "use a simpler hierarchy of date-ordered pages
+and tag 'em all" may have more trouble.
+
+**Stored locally.** Evernote/Todoist were always cloud-only; OneNote made that
+switch in its latest release (to the great disappointment of many). Like the
+others, Notion is offline-capable, but stored remotely. I miss local storage of
+user data! These data are _extremely_ valuable, so durable and usable backups
+are critically important to me and I don't see any of these platforms offering a
+solid safety net here. But since Notion is the youngest, I'm inclined to take a
+harder look.
 
 ## This is what I've been looking for!
 
