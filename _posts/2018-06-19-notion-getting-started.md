@@ -100,7 +100,7 @@ also a page on its own with all the details.
 fall, then I reviewed it with the director.
 
 <p class="media">
-  <video src="/assets/blog/notion/research.gif.mp4" autoplay loop muted>
+  <video src="/assets/blog/notion/research.gif.mp4" controls loop muted>
   <img src="/assets/blog/notion/research.gif" alt="A research page" />
   </video>
 </p>
@@ -160,9 +160,9 @@ _(Update: Worked perfectly except that images were not inlcuded in the export. F
 I'm incredibly excited about this product. In just over a week, I've started
 using [Notion][N] on a lot of projects and it seems to have a good answer to
 anything I throw at it. It has many features I've been looking for in my
-years-long quest to find _"the"_ notes application for me, and many I didn't
-expect to find that now I can't be without. I'll definitely still use Todoist as
-a counterpart, but in combination I think I finally have a winning pair of
+years-long quest to find _"the"_ notes application for me. And many I didn't
+expect to find which now I can't be without. I'll absolutely still use Todoist
+as a counterpart, but in combination I think I finally have a winning pair of
 applications for productivity and reference.
 
 [N]: https://notion.so
