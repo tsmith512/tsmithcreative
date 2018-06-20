@@ -14,7 +14,7 @@ image caught my eye. You see:
   "notebook" hierarchy, freeform pages, and handwriting, sometimes it can be
   too unstructured.
 - I find [Evernote][EV]'s simultaneous feature bloat and limitations on content
-  off putting.
+  off-putting.
 - [Google Keep][GK] is a great bulletin board, but it isn't an organizational
   solution for a large volume of interrelated content.
 
@@ -103,7 +103,7 @@ Markdown, I'll be able to drop it right into my site repo.
 
 ![A blog post draft in Notion](/assets/blog/notion/draft.png)
 
-_(Update: Worked perfectly except that images were not inlcuded in the export. Fixed them manually.)_
+_(Update: Worked perfectly except that images were not included in the export. Fixed them manually.)_
 
 ## What Notion is Not
 
@@ -125,7 +125,7 @@ Markdown archive (currently, it's a flat directory with hash-prefixed names), or
 maybe an "Email to Notion" importer. Also, the Android app does not receive
 "Shares" from other apps; i.e. you cannot "Share" _to_ Notion from other apps.
 
-**Tag based.** I don't care about tags, but you might. I'm a very "put stuff in
+**Tag-based.** I don't care about tags, but you might. I'm a very "put stuff in
 its place and it'll be there when you get back" person: the notebook and
 hierarchical, ordered page structure is _perfect_ for me. People who like
 Evernote's encouraged system of "use a simpler hierarchy of date-ordered pages
