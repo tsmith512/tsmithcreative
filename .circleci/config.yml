@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-       - image: circleci/ruby:2.3.4
+       - image: circleci/ruby:2.3.6-stretch
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
