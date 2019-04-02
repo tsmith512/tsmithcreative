@@ -72,7 +72,7 @@ requirements over years.
 
 ![Facepalm](/assets/blog/swccdc-2019/facepalm.jpg)
 
-_Photo by Kate V. Not entirely sure what precipitated this, could be anything._
+_Photo by Kate V. — Not entirely sure what precipitated this, could be anything._
 
 Next, we determined what the "answer" needed to be. From "What do you need to
 learn?" to "What do you need to do/create to demonstrate that?"
@@ -138,7 +138,7 @@ It was an incredibly busy day for Blue Teams. And injects is just part of it.
 
 ![Grading injects](/assets/blog/swccdc-2019/inject-grading.jpg)
 
-_Photo by Kate V. Austin and Brady grading an inject in person._
+_Photo by Kate V. — Austin and Brady grading an inject in person._
 
 ## Real-world Encounters
 
@@ -218,7 +218,7 @@ props to everyone who rose to that occasion.
 
 ![Retro panel of game organizers](/assets/blog/swccdc-2019/retro-panel.jpg)
 
-_Photo by Kate V. Organizers speak to students post-game._
+_Photo by Kate V. — Organizers speak to students post-game._
 
 
 # Congratulations
