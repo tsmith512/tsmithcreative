@@ -34,7 +34,7 @@ and swag, we had a number of cool demos!
 
 Our Frontend team talked up
 **[Emulsify](https://github.com/fourkitchens/emulsify)**, a component-driven
-prototyping tool using Pattern Lab v2 tlso serves as a starterkit Drupal 8
+prototyping tool using Pattern Lab v2 that also serves as a starter-kit Drupal 8
 theme. We also had some examples from real client work on display.
 
 UX Strategist Emily was our **UX Fortune Teller**, offering 10-15 minute private
@@ -92,14 +92,14 @@ Take Todd's 2012 presentation slide deck,
 So when I saw Joe from Aten talking about this, I thought it was a bit of a
 challenge.
 
-He acknowledged that the RFP process does have issues. How does a 50 page
+He acknowledged that the RFP process does have issues. How does a 50-page
 document without much important information actually help anyone? They're costly
 to issue and respond to. Further, they're designed to produce comparisons for
 specific kinds of goods and services across vendors, but they are very poorly
 suited to soliciting creative work because their nature removes personality and
 innovation.
 
-Ultimately, Joe agreed to avoid them if you can, but had some great ideas for
+Ultimately, Joe agreed to avoid them if you can but had some great ideas for
 how to better navigate the process. Some highlights:
 
 - Reduce prescriptive requirements because they are very limiting. You're
@@ -113,7 +113,7 @@ how to better navigate the process. Some highlights:
 - Separate or eliminate the boilerplate. Otherwise, put your entire product
   discussion in an appendix to keep it together and just fill in the blanks on
   the RFP.
-- **Definitely share the budget.** This helps us right-size the approach, saves
+- **Definitely, share the budget.** This helps us right-size the approach, saves
   everyone time if the vendor isn't a good fit on price, and ultimately allows
   you to not have to judge solely on price. You need an apples-to-apples
   comparison. If each RFP takes a different approach because they don't know the
@@ -135,9 +135,9 @@ OHSU's two *primary* requirements were:
 
 - Globally locked down theme beyond changing out certain graphics and setting up
   a content hierarchy that suits the particular site.
-- Different kinds of users with access to manage different sets content — some
-  are department specific or need oversight. Some don't need oversight and work
-  across multiple departments.
+- Different kinds of users with access to manage different sets of content —
+  some are department specific or need oversight. Some don't need oversight and
+  work across multiple departments.
 
 This describes exactly what Four Kitchens built for Texas Exes (an alumni org
 for Univ. of Texas) in 2014, which I did with a lightweight implementation of
@@ -157,7 +157,7 @@ and some custom code make it shine. Further:
 
 **[Drupal as a Data Warehouse: Everybody Into the Data Lake!](https://events.drupal.org/seattle2019/sessions/drupal-data-warehouse-everybody-data-lake) with Gail Radecki _(AAAAI)_, Ezra Wolfe _(EthosCE)_, and Devin Zuczek _(DLC Solutions)_.**
 
-This case-study was presented by engineers and one of the clients for EthosCE,
+This case study was presented by engineers and one of the clients for EthosCE,
 an LMS for publishers or professional associations who offer, among other
 things, continuing medical education and reports for accreditations and grants.
 
@@ -165,7 +165,7 @@ EthosCE's Drupal-based platform and collects oodles of data through quizzes and
 webforms. All these data need to be reported *on* by end-clients, but neither
 EthosCE nor the clients can justify the expense of additional ETL products:
 
-- On the EthosCE side it would be expensive at scale and result in an increased
+- On the EthosCE side, it would be expensive at scale and result in an increased
   cost to their clients.
 - On the client end, most are non-profits and are very budget conscious.
   Further, "why do we have to pay more to access our own data?" is a difficult
