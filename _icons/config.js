@@ -71,5 +71,7 @@ module.exports = {
     "rss-white": [".home .rss:hover"],
   },
 
-  compressPNG: true
+  // See https://github.com/filamentgroup/gulpicon/issues/11.
+  // this doesn't seem to work, but PNG is only loaded as a fallback anyway
+  compressPNG: false
 };
