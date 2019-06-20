@@ -58,7 +58,7 @@ This is largely dervived from my two previous videos,
 [What are Story Points?](/blog/2017/what-are-story-points/)
 and [What are Thin Vertical Slices?](/blog/2017/what-are-thin-vertical-slices/).
 
----
+<hr />
 
 At Four Kitchens, we use Scrum to manage most of our projects. In doing so,
 we've learned to break down business requirements into *thin vertical slices*
