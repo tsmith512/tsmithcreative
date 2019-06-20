@@ -25,6 +25,9 @@ module.exports = {
   // folder name (within dest) for png output
   pngfolder: "png",
 
+  // There's something about compressing PNGs that causes an error, see filamentgroup/gulpicon#11
+  compressPNG: false,
+
   // prefix for CSS classnames
   cssprefix: ".icon-",
 
@@ -69,7 +72,5 @@ module.exports = {
     "rss-main": [".rss"],
     "rss-blue": [".rss:hover"],
     "rss-white": [".home .rss:hover"],
-  },
-
-  compressPNG: true
+  }
 };
