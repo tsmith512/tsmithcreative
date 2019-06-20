@@ -23,5 +23,5 @@ nvm use
 set -e
 
 echo INSTALL NODE DEPENDENCIES
-npm install -g gulp
+npm install -g gulp@3
 npm install
