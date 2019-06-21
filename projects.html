@@ -39,3 +39,39 @@ layout: page
     </li>
   {% endfor %}
 </ul>
+
+<hr />
+
+<ul class="project-list">
+  {% assign projectB = site.projects | where: "slug", "intro-singularity" | first %}
+  {% assign projectA = site.posts | where: "slug", "building-travelogue" | first %}
+  {% assign portfolio = site.projects | where: "slug", "university-policy-office" | push: projectA | push: projectB %}
+  {% for project in portfolio %}
+    <li>
+      <a class="post-link" href="{{ project.url | relative_url }}">
+        {{ project.slug | thumbnail_image }}
+      </a>
+      <div class="project-description">
+        <h2>
+          <a class="post-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a>
+        </h2>
+        <div class="post-meta">
+          <dl>
+            <dt><span class="icon icon-calendar-light">Published</span></dt>
+            <dd class="date">{{ project.date | date: "%B %e, %Y"}}</dd>
+            <dt><span class="icon icon-tags-light">Tags</span></dt>
+            <dd class="tags">
+              <ul>
+                {% for tag in project.tags %}
+                <li>{{ tag }}</li>
+                {% endfor %}
+              </ul>
+            </dd>
+          </dl>
+
+          <p class="summary">{{ project.summary }}</p>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

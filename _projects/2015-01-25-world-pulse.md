@@ -3,7 +3,7 @@ title: "World Pulse"
 summary: "Design and frontend development a powerful online community of women and allies building solutions to today’s biggest challenges."
 date: 2015-01-25 12:09:39
 tags: [design, drupal, frontend, internationalization]
-portfolio: 2
+portfolio: 3
 problem: >
   World Pulse was running on a heavily customized, but overgrown Drupal 6
   installation. The design and user experience made sharing content unintuitive
