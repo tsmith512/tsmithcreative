@@ -54,12 +54,6 @@ images:
 
 _Thank you to the Drupal Association and DrupalCon Seattle 2019 organizers for accepting and recording this session._
 
-This is largely dervived from my two previous videos,
-[What are Story Points?](/blog/2017/what-are-story-points/)
-and [What are Thin Vertical Slices?](/blog/2017/what-are-thin-vertical-slices/).
-
-<hr />
-
 At Four Kitchens, we use Scrum to manage most of our projects. In doing so,
 we've learned to break down business requirements into *thin vertical slices*
 of functionality, usually written as user stories. This way, teams can ensure
@@ -92,7 +86,14 @@ particular project management tools.
 ---
 
 * [**View the presentation examples and slides**](https://tsmith512.github.io/estimate-with-points-and-slices/)
-* Presented at:
-  * [DrupalCon Seattle](https://events.drupal.org/seattle2019/sessions/estimating-iteration-story-points-and-thin-vertical-slices), April 2019
-  * DrupalCamp Colorado, August 2018
-* _Presentation designed using [Reveal.js](http://lab.hakim.se/reveal-js/), a jQuery presentation framework._
+
+_References:_
+* [What are Story Points?](/blog/2017/what-are-story-points/)
+* [What are Thin Vertical Slices?](/blog/2017/what-are-thin-vertical-slices/).
+* [StoryPoints.info](http://storypoints.info)
+
+_Presented at:_
+* [DrupalCon Seattle](https://events.drupal.org/seattle2019/sessions/estimating-iteration-story-points-and-thin-vertical-slices), April 2019
+* DrupalCamp Colorado, August 2018
+
+_Presentation designed using [Reveal.js](http://lab.hakim.se/reveal-js/), a jQuery presentation framework._
