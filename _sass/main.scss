@@ -48,9 +48,3 @@ $max-lines: 680px;
 
 // Special page styles
 @import "home";
-
-// For Todd
-.masthead,
-body.layout-page .wrapper img {
-  filter: grayscale(1);
-}
