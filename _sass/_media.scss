@@ -66,11 +66,9 @@
 
 pre.highlight {
   overflow-x: auto;
+  font-size: 0.825em;
 
   @include breakpoint($max-width + 16) {
-    margin-left: -(($max-width - $max-lines) / 2);
-    margin-right: -(($max-width - $max-lines) / 2);
-
     li & {
       margin-left: 0;
       margin-right: 0;
