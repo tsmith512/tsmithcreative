@@ -1,9 +1,13 @@
 ---
 title: Projects
 layout: page
+summary: >
+  A portfolio from a variety of recent projects.
 ---
 
-{% assign portfolio = site.projects | where_exp: "project", "project.portfolio > 0" | sort: "portfolio", "first" %}
+{% assign projectB = site.projects | where: "slug", "forcepoint" | first %}
+{% assign projectA = site.projects | where: "slug", "estimate-to-iterate" | first %}
+{% assign portfolio = site.projects | where: "slug", "support-tiers-of-service" | push: projectA | push: projectB %}
 
 <ul class="portfolio-list">
   {% for project in portfolio %}
@@ -44,8 +48,8 @@ layout: page
 
 <ul class="project-list">
   {% assign projectB = site.projects | where: "slug", "intro-singularity" | first %}
-  {% assign projectA = site.posts | where: "slug", "building-travelogue" | first %}
-  {% assign portfolio = site.projects | where: "slug", "university-policy-office" | push: projectA | push: projectB %}
+  {% assign projectA = site.posts | where: "slug", "travelogue-revisited" | first %}
+  {% assign portfolio = site.posts | where: "slug", "the-audience-awakening" | push: projectA | push: projectB %}
   {% for project in portfolio %}
     <li>
       <a class="post-link" href="{{ project.url | relative_url }}">
