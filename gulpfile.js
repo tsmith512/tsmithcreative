@@ -142,6 +142,7 @@ gulp.task('js-photoswipe-assets', false, () => {
 
 gulp.task('js-all', false, () => {
   return gulp.src([
+    './node_modules/fg-loadcss/src/loadCSS.js',
     './node_modules/fg-loadcss/src/cssrelpreload.js',
     './_js/contact.js',
     './_js/collapsed-content.js'

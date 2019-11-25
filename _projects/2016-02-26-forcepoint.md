@@ -3,7 +3,6 @@ title: "Forcepoint"
 summary: "Product ownership and frontend development for an internationalized, localized, responsive website for Forcepoint, powered by Raytheon, the new face of Websense."
 date: 2016-02-26 13:23:03
 tags: [drupal, product ownership, frontend, internationalization]
-portfolio: 2
 problem: >
   Websense's public facing website was powered by an outdated and inflexible CMS.
   As they prepared for the joint venture with Raytheon to launch Forcepoint,
