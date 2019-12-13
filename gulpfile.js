@@ -187,7 +187,7 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
   var publisher = awspublish.create({
     region: 'us-west-1',
     params: {
-      Bucket: 'tsmithcreative'
+      Bucket: 'tsmith.com'
     },
   });
 
