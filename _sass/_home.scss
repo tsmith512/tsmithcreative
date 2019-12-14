@@ -12,16 +12,22 @@
   // That 1200px wide is 900px tall, which is actually needed for this image
   // since it's really about the viewport height at this point, but width makes
   // a better test, according to my site's analytics.
-  @include breakpoint((min-width 720px) (min-height 800px)) {
+  @include breakpoint((min-width 960px) (min-height 800px)) {
     background-image: url('/gfx/home/1200/home-background.jpg');
     background-size: cover;
-    background-position: left bottom;
+    background-position: 20% 30%;
   }
-  @include breakpoint((min-width 1600px) (min-height 800px)) {
+  @include breakpoint((min-width 1100px) (min-height 800px)) {
+    background-position: 25% 30%;
+  }
+  @include breakpoint((min-width 1500px) (min-height 800px)) {
     background-image: url('/gfx/home/1600/home-background.jpg');
   }
-  @include breakpoint((min-width 1800px) (min-height 800px)) {
+  @include breakpoint((min-width 1700px) (min-height 800px)) {
     background-image: url('/gfx/home/1800/home-background.jpg');
+  }
+  @include breakpoint((min-width 2200px) (min-height 800px)) {
+    background-image: url('/gfx/home/2400/home-background.jpg');
   }
 
   .site-header {
@@ -29,24 +35,39 @@
   }
 
   article {
-    margin: 2em;
+    margin: 2em auto;
+    max-width: $max-lines;
 
-    @include breakpoint($max-width) {
-      max-width: $max-lines;
+      // left: 50%;
+      // transform: translateY(-50%) translateX(-50%);
+
+    @include breakpoint((min-width 960px) (min-height 800px)) {
       position: absolute;
-      left: 50%;
       top: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      @include breakpoint(1400px) {
-        top: 45%;
-        transform: translateY(-45%) translateX(-50%);
-      }
-      @include breakpoint(1800px) {
-        top: 30%;
-        transform: translateY(-30%) translateX(-50%);
-      }
-      margin: 0 auto;
+      left: 50%;
+      transform: translateY(-50%) translateX(-25%);
     }
+
+    @include breakpoint((min-width 960px) (min-height 1100px)) {
+      transform: translateY(-90%) translateX(-25%);
+    }
+
+    @include breakpoint((min-width 1300px) (min-height 800px)) {
+      transform: translateY(-90%) translateX(-30%);
+    }
+
+    @include breakpoint((min-width 1600px) (min-height 800px)) {
+      transform: translateY(-90%) translateX(-50%);
+    }
+
+      // @include breakpoint(1400px) {
+      //   top: 45%;
+      //   transform: translateY(-45%) translateX(-50%);
+      // }
+      // @include breakpoint(1800px) {
+      //   top: 30%;
+      //   transform: translateY(-30%) translateX(-50%);
+      // }
 
     .content {
       background: white;
