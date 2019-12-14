@@ -90,6 +90,9 @@ gulp.task('graphics-project-thumbnails', 'Rebuild gallery thumbnails for project
 
 gulp.task('graphics-home-page', 'Derivatives of that home page background', () => {
   return gulp.src('./_gfx/home-background.jpg')
+    .pipe(resize({width: 2400, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/home/2400'))
     .pipe(resize({width: 1800, crop: false, upscale: false}))
     .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
     .pipe(gulp.dest('_site/gfx/home/1800'))

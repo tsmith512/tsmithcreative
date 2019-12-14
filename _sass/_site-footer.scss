@@ -30,7 +30,7 @@
     @include breakpoint($footer-two-column) {
       float: left;
       text-align: left;
-      padding-top: 8px; // To better match the visual height of the social icons on the right
+      margin-top: 8px; // To better match the visual height of the social icons on the right
     }
   }
 
