@@ -9,10 +9,10 @@
   // The grey pattern
   background-image: url('/gfx/home-pattern.gif');
 
-  // That 1200px wide is 900px tall, which is actually needed for this image
-  // since it's really about the viewport height at this point, but width makes
-  // a better test, according to my site's analytics.
-  @include breakpoint((min-width 960px) (min-height 800px)) {
+  // Lots of repositioning the background-position here and the article
+  // transform a little later in this file to accomplish putting, as much as
+  // possible, the text box over the sky instead of over the edge of a rockface.
+  @include breakpoint((min-width 960px) (min-height 700px)) {
     background-image: url('/gfx/home/1200/home-background.jpg');
     background-size: cover;
     background-position: 20% 30%;
@@ -35,39 +35,35 @@
   }
 
   article {
-    margin: 2em auto;
+    margin: 2em;
     max-width: $max-lines;
 
-      // left: 50%;
-      // transform: translateY(-50%) translateX(-50%);
+    @include breakpoint($max-lines) {
+      margin: 2em auto;
+    }
 
-    @include breakpoint((min-width 960px) (min-height 800px)) {
+    @include breakpoint((min-width 960px) (min-height 700px)) {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translateY(-50%) translateX(-25%);
     }
 
+    @include breakpoint((min-width 1100px) (min-height 700px)) {
+      transform: translateY(-50%) translateX(-15%);
+    }
+
     @include breakpoint((min-width 960px) (min-height 1100px)) {
       transform: translateY(-90%) translateX(-25%);
     }
 
-    @include breakpoint((min-width 1300px) (min-height 800px)) {
+    @include breakpoint((min-width 1300px) (min-height 700px)) {
       transform: translateY(-90%) translateX(-30%);
     }
 
-    @include breakpoint((min-width 1600px) (min-height 800px)) {
+    @include breakpoint((min-width 1600px) (min-height 700px)) {
       transform: translateY(-90%) translateX(-50%);
     }
-
-      // @include breakpoint(1400px) {
-      //   top: 45%;
-      //   transform: translateY(-45%) translateX(-50%);
-      // }
-      // @include breakpoint(1800px) {
-      //   top: 30%;
-      //   transform: translateY(-30%) translateX(-50%);
-      // }
 
     .content {
       background: white;
@@ -79,7 +75,8 @@
     h1 {
       font-family: $tungsten;
       font-size: 4em;
-      @include breakpoint(600px) { font-size: 6em; }
+      @include breakpoint(600px) { font-size: 5em; }
+      @include breakpoint((min-width 900px) (min-height 900px)) { font-size: 5em; }
       margin: 0;
       color: white;
 
