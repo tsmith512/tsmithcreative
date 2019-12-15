@@ -3,49 +3,86 @@
  * Styles specific to the home page
  */
 
+$background-swap: (min-width 960px) (min-height 700px);
+
 .home {
   min-height: 100vh;
 
   // The grey pattern
   background-image: url('/gfx/home-pattern.gif');
 
-  // That 1200px wide is 900px tall, which is actually needed for this image
-  // since it's really about the viewport height at this point, but width makes
-  // a better test, according to my site's analytics.
-  @include breakpoint((min-width 720px) (min-height 800px)) {
+  // Lots of repositioning the background-position here and the article
+  // transform a little later in this file to accomplish putting, as much as
+  // possible, the text box over the sky instead of over the edge of a rockface.
+  @include breakpoint($background-swap) {
     background-image: url('/gfx/home/1200/home-background.jpg');
     background-size: cover;
-    background-position: left bottom;
+    background-position: 20% 30%;
   }
-  @include breakpoint((min-width 1600px) (min-height 800px)) {
+  @include breakpoint((min-width 1100px) (min-height 800px)) {
+    background-position: 25% 30%;
+  }
+  @include breakpoint((min-width 1500px) (min-height 800px)) {
     background-image: url('/gfx/home/1600/home-background.jpg');
   }
-  @include breakpoint((min-width 1800px) (min-height 800px)) {
+  @include breakpoint((min-width 1700px) (min-height 800px)) {
     background-image: url('/gfx/home/1800/home-background.jpg');
+  }
+  @include breakpoint((min-width 2200px) (min-height 800px)) {
+    background-image: url('/gfx/home/2400/home-background.jpg');
   }
 
   .site-header {
     position: static;
+
+    @include breakpoint($background-swap) {
+      // Show darker logo because the background photo is sky
+      h1 a {
+        background-image: url('/gfx/logo-dark.svg');
+      }
+
+      // Show darker links because the background photo is sky
+      nav a {
+        color: #3347af;
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+
+        &:hover {
+          border-top-color: #3347af;
+          color: #3957f1;
+        }
+      }
+    }
   }
 
   article {
     margin: 2em;
+    max-width: $max-lines;
 
-    @include breakpoint($max-width) {
-      max-width: $max-lines;
+    @include breakpoint($max-lines) {
+      margin: 2em auto;
+    }
+
+    @include breakpoint($background-swap) {
       position: absolute;
-      left: 50%;
       top: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      @include breakpoint(1400px) {
-        top: 45%;
-        transform: translateY(-45%) translateX(-50%);
-      }
-      @include breakpoint(1800px) {
-        top: 30%;
-        transform: translateY(-30%) translateX(-50%);
-      }
-      margin: 0 auto;
+      left: 50%;
+      transform: translateY(-50%) translateX(-25%);
+    }
+
+    @include breakpoint((min-width 1100px) (min-height 700px)) {
+      transform: translateY(-50%) translateX(-15%);
+    }
+
+    @include breakpoint((min-width 960px) (min-height 1100px)) {
+      transform: translateY(-90%) translateX(-25%);
+    }
+
+    @include breakpoint((min-width 1300px) (min-height 700px)) {
+      transform: translateY(-90%) translateX(-30%);
+    }
+
+    @include breakpoint((min-width 1600px) (min-height 700px)) {
+      transform: translateY(-90%) translateX(-50%);
     }
 
     .content {
@@ -58,9 +95,18 @@
     h1 {
       font-family: $tungsten;
       font-size: 4em;
-      @include breakpoint(600px) { font-size: 6em; }
+      @include breakpoint(600px) { font-size: 5em; }
+      @include breakpoint((min-width 900px) (min-height 900px)) { font-size: 5em; }
       margin: 0;
       color: white;
+
+      @include breakpoint($background-swap) {
+        color: #31324c;
+
+        span {
+          color: #50517c;
+        }
+      }
 
       span {
         display: inline-block; // To prevent a break in the middle of this line.
@@ -78,6 +124,10 @@
     p {
       font-family: $gotham;
     }
+
+    .fade {
+      opacity: 0.5;
+    }
   }
 
   .site-footer {
@@ -85,6 +135,7 @@
 
     .copy {
       color: white;
+      text-shadow: 1px 1px 0 black;
     }
 
     @include breakpoint(720px) {

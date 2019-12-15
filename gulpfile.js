@@ -90,6 +90,9 @@ gulp.task('graphics-project-thumbnails', 'Rebuild gallery thumbnails for project
 
 gulp.task('graphics-home-page', 'Derivatives of that home page background', () => {
   return gulp.src('./_gfx/home-background.jpg')
+    .pipe(resize({width: 2400, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/home/2400'))
     .pipe(resize({width: 1800, crop: false, upscale: false}))
     .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
     .pipe(gulp.dest('_site/gfx/home/1800'))
@@ -187,7 +190,7 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
   var publisher = awspublish.create({
     region: 'us-west-1',
     params: {
-      Bucket: 'tsmithcreative'
+      Bucket: 'tsmith.com'
     },
   });
 
