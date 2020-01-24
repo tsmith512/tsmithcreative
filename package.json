@@ -1,7 +1,7 @@
 {
   "name": "tsmithcreative",
   "version": "1.0.0",
-  "description": "The source repository for tsmithcretive.com, the portfolio/blog site of Taylor Smith.",
+  "description": "The source repository for tsmith.com, the portfolio/blog site of Taylor Smith.",
   "repository": {
     "type": "git",
     "url": "ssh://git@kaa.tsmithcreative.com/project/tsmithcreative.git"
