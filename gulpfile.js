@@ -180,8 +180,8 @@ gulp.task('jekyll', 'Run jekyll build', (cb) => {
   });
 });
 
-gulp.task('build', 'Run all site-generating tasks: sass, js, graphics, icons, htaccess then jekyll', (cb) => {
-  runSequence(['sass', 'graphics', 'icons', 'js'], 'jekyll', cb);
+gulp.task('build', 'Run all site-generating tasks: assets, [sass, js, graphics, icons], then jekyll', (cb) => {
+  runSequence('assets', ['sass', 'graphics', 'icons', 'js'], 'jekyll', cb);
 });
 
 gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
