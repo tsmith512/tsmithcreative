@@ -1,0 +1,16 @@
+# Image derivatives config for jekyll_picture_tag
+media_presets:
+  wide: 'min-width: 960px' # On wide viewports, media pops out beyond the paragraph measure
+  medium: 'min-width: 641px' # The max-width of images matches the paragraph measure/content width
+  narrow: 'max-width: 640px' # 1-col 100% width layout -- i.e. phones and tiny screens
+markup_presets:
+  default:
+    quality: 80
+    formats: [webp, original]
+    widths: [400, 540, 680, 960, 1440, 1920] # @TODO: Those last two are max-size * hi-dpi... keep?
+    sizes:
+      wide: 960px
+      medium: 680px
+      narrow: 100vw
+    fallback_width: 960 # Desktop width @1x
+    link_source: false # @TODO: WOULD LIKE TO CHANGE THIS
