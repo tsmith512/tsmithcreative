@@ -12,7 +12,7 @@ tags: [development, wordpress, presentation]
 
 I wrote about
 [this blog and its underlying technology]({% post_url 2017-04-23-building-travelogue %})
-before. In late 2018, I completed did a hurried MVP migration to WordPress.
+before. In late 2018, I completed a hurried MVP migration to WordPress.
 Since then, I continued making a steady stream of updates and building
 additional trinkets for our next adventure: driving from Austin to Anchorage.
 
@@ -30,6 +30,6 @@ email. Also two new gadgets:
 - Magic roadtrip planning spreadsheet
 - A Slack API and Symfony powered Craigslist ad scraper to archive listings
 
-![Revised Architecture](/assets/blog/travelogue-revisited/seward.jpg)
+![We made it. Again.](/assets/blog/travelogue-revisited/seward.jpg)
 
 _We made it. Again._
