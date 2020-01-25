@@ -18,7 +18,7 @@ director as a student. This year's show is *Spring Awakening* and Rick is up to
 his usual tricks of incorporating unexpected elements to educational (and "how
 the hell are we gonna pull this one off?") effect.
 
-![Show Poster](/assets/blog/audence-awakening/spring-awakening-poster.jpg)
+{% picture /blog/audence-awakening/spring-awakening-poster.jpg --alt Show Poster %}
 
 ## Theatre of the Oppressed
 
