@@ -255,7 +255,7 @@ _(Yes, this is where my Favicon came from.)_
 {% update 2017-06 %}
 We lived. ;-)
 
-![Grand Canyon](/assets/blog/building-travelogue/grand-canyon.jpg)
+{% picture /blog/building-travelogue/grand-canyon.jpg --alt Grand Canyon %}
 {% endupdate %}
 
 

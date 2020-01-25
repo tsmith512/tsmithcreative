@@ -13,7 +13,7 @@ instead of avoiding failure using bravado, the team has actually increased the
 odds of failure by not discussing how to be adaptable or recognize patterns to
 anticipate trouble. Build this conversation into the beginning of a project.
 
-![Collaborating at the Whiteboard](/assets/blog/premortem/step1-board-collaborate.jpg)
+{% picture /blog/premortem/step1-board-collaborate.jpg --alt Collaborating at the Whiteboard %}
 
 _Images in this post have had client-identifying details blanked out._
 
@@ -59,7 +59,7 @@ The facilitator can seed the brainstorm with couple general ideas:
 - Sticky notes on a whiteboard, clustered by similar themes/outcomes.
 - Add a title (shorthand is fine) and a count of notes in each group.
 
-![Step 1 completed on whiteboard](/assets/blog/premortem/step1-board-finished.jpg)
+{% picture /blog/premortem/step1-board-finished.jpg --alt Step 1 completed on whiteboard %}
 
 ## 2. Sabotage the project to ensure failure.
 
@@ -95,7 +95,7 @@ briefly.
 - Each poster should have methods to drive toward that failure.
 - Have one participant from each group present their responses.
 
-![Another outcome poster](/assets/blog/premortem/step2-poster-finished-B.jpg)
+{% picture /blog/premortem/step2-poster-finished-B.jpg --alt Another outcome poster %}
 
 In the past, we've seen things like:
 
@@ -109,7 +109,7 @@ In the past, we've seen things like:
     <abbr title="User Acceptance Testing">UAT</abbr>
   - Something that boils down to "go faster by cutting corners"
 
-![Presenting an outcome poster](/assets/blog/premortem/step2-poster-presenting.jpg)
+{% picture /blog/premortem/step2-poster-presenting.jpg --alt Presenting an outcome poster %}
 
 _This may surface specific technical requirements._ If it's too "in the weeds"
 then gloss over those to keep the conversation moving, but make sure to capture
@@ -143,7 +143,7 @@ recognition. These lessons are only valuable if they're put in practice:
 In our experience, the answer is always yes to some. If no one speaks, I would
 believe that there's a lack of honesty, trust, or empowerment in the room.
 
-![Another poster](/assets/blog/premortem/step2-poster-finished-A.jpg)
+{% picture /blog/premortem/step2-poster-finished-A.jpg --alt Another poster %}
 
 Mark these as they are identified, but the aim is an organic conversation to
 **understand how an organization may have to change** in order to realize the

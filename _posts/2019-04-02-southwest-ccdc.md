@@ -12,7 +12,7 @@ Two weeks ago, I volunteered for the
 college teams to form mock IT organizations (a "Blue Team") for a fictional
 enterprise-scale company.
 
-![Communications closet patching](/assets/blog/swccdc-2019/comms.jpg)
+{% picture /blog/swccdc-2019/comms.jpg --alt Communications closet patching %}
 
 _Photo by Kate V._
 
@@ -26,7 +26,7 @@ are lost when Red Team accomplishes an objective, but half of those points can
 be regained by identifying and formally reporting on the incident. Finally, for
 critical services under SLA, points are lost for extended outages.
 
-![The Build Lab](/assets/blog/swccdc-2019/buildlab.jpg)
+{% picture /blog/swccdc-2019/buildlab.jpg --alt The Build Lab %}
 
 _Build Lab — Brady imaging computers the night before the game. Ten years ago, I
 took "Business & Society" in this room. My only class ever in what was then
@@ -43,7 +43,7 @@ fences went down, not only would they start losing points because of the
 critical SLA on the fence, but also the dinosaurs would escape and attack the
 team room!
 
-![Organizers in dinosaur costumes](/assets/blog/swccdc-2019/dinosaurs.jpg)
+{% picture /blog/swccdc-2019/dinosaurs.jpg --alt Organizers in dinosaur costumes %}
 
 I was brought on board to project manage injects, assist in writing and grading
 them, and to "stage manage" their execution during the game. I also threw
@@ -70,7 +70,7 @@ was occasionally part of that objective. Professionals often inherit
 over-engineered solutions or have to tame systems that were built on shifting
 requirements over years.
 
-![Facepalm](/assets/blog/swccdc-2019/facepalm.jpg)
+{% picture /blog/swccdc-2019/facepalm.jpg --alt Facepalm %}
 
 _Photo by Kate V. — Not entirely sure what precipitated this, could be anything._
 
@@ -124,19 +124,19 @@ storyboarded the injects to balance cadence.
 
 Compiled index in Confluence:
 
-![An index in confluence](/assets/blog/swccdc-2019/confluence.jpg)
+{% picture /blog/swccdc-2019/confluence.jpg --alt An index in confluence %}
 
 Storyboarding:
 
-![The timeline post-up on a whiteboard](/assets/blog/swccdc-2019/timeline.jpg)
+{% picture /blog/swccdc-2019/timeline.jpg --alt The timeline post-up on a whiteboard %}
 
 Calendar for easy visualization:
 
-![Google Calendar screenshot displaying all injects](/assets/blog/swccdc-2019/calendar.jpg)
+{% picture /blog/swccdc-2019/calendar.jpg --alt Google Calendar screenshot displaying all injects %}
 
 It was an incredibly busy day for Blue Teams. And injects is just part of it.
 
-![Grading injects](/assets/blog/swccdc-2019/inject-grading.jpg)
+{% picture /blog/swccdc-2019/inject-grading.jpg --alt Grading injects %}
 
 _Photo by Kate V. — Austin and Brady grading an inject in person._
 
@@ -178,7 +178,7 @@ happen overnight. We hinted with an inject "Create a Disaster Recovery Plan"
 late on Day 1 and then distributed a fake weather report shortly thereafter.
 That night, their rooms "flooded."
 
-![Ethernet cables pulled and piled in a corner](/assets/blog/swccdc-2019/flooded.jpg)
+{% picture /blog/swccdc-2019/flooded.jpg --alt Ethernet cables pulled and piled in a corner %}
 
 We pulled all the ethernet cables and piled them in the corner. I worried about
 this one. It wasn't just a matter of "plug computers into the switch" — multiple
@@ -216,7 +216,7 @@ props to everyone who rose to that occasion.
 ---
 
 
-![Retro panel of game organizers](/assets/blog/swccdc-2019/retro-panel.jpg)
+{% picture /blog/swccdc-2019/retro-panel.jpg --alt Retro panel of game organizers %}
 
 _Photo by Kate V. — Organizers speak to students post-game._
 
@@ -229,6 +229,6 @@ from each of them. Also, the rest of the game organizers and volunteers are
 super sharp, were a joy to work with, and I learned so much from them in these
 few days. Thank you for this experience!
 
-![Velociraptor waiting for the elevator](/assets/blog/swccdc-2019/elevator.jpg)
+{% picture /blog/swccdc-2019/elevator.jpg --alt Velociraptor waiting for the elevator %}
 
 _Photo by Kate V._

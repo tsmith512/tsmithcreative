@@ -18,7 +18,7 @@ image caught my eye. You see:
 - [Google Keep][GK] is a great bulletin board, but it isn't an organizational
   solution for a large volume of interrelated content.
 
-![Sample 'today' page in Notion](/assets/blog/notion/today-noshadow.png)
+{% picture /blog/notion/today-noshadow.png --alt Sample 'today' page in Notion %}
 
 _(Image lifted from [Notion.so's product page][NP]; the same one from that_ The
 Verge _post.)_
@@ -66,7 +66,7 @@ but it can get messy.)
 **Lightweight interface.** Despite all it can do, its interface is sparse and
 content-focused, reducing distractions.
 
-![The application interface is sparse](/assets/blog/notion/interface.png)
+{% picture /blog/notion/interface.png --alt The application interface is sparse %}
 
 **Android app!** A must have. The Android app makes accessing all this
 delightfully easy, and content is displayed responsively! Unlike OneNote, where
@@ -82,12 +82,12 @@ because it means contacts won't have to create an account.
 both in a table and on a calendar. Each trip is both a "row" in the database and
 also a page on its own with all the details.
 
-![My Travel Plans page](/assets/blog/notion/travel-plans.png)
+{% picture /blog/notion/travel-plans.png --alt My Travel Plans page %}
 
 **Researching:** I gathered design research for a theatrical production this
 fall, then I reviewed it with the director.
 
-![A research page](/assets/blog/notion/research.png)
+{% picture /blog/notion/research.png --alt A research page %}
 
 **Project management:** For that same production, I'll be creating multiple
 pieces. Using another "database" page, I listed each piece needed. I set up all
@@ -96,12 +96,12 @@ three view styles for the database:
 - a Kanban board so my director and I can track progress as I work, and
 - a calendar to visualize the review and delivery dates.
 
-![A kanban board of project tasks](/assets/blog/notion/pm.png)
+{% picture /blog/notion/pm.png --alt A kanban board of project tasks %}
 
 **Simple writing:** I drafted this blog post in Notion. With its easy export to
 Markdown, I'll be able to drop it right into my site repo.
 
-![A blog post draft in Notion](/assets/blog/notion/draft.png)
+{% picture /blog/notion/draft.png --alt A blog post draft in Notion %}
 
 _(Update: Worked perfectly except that images were not included in the export. Fixed them manually.)_
 

@@ -17,7 +17,7 @@ This is what you really wanted to know: the annual [Four Kitchens][4K] _Four Kit
 shirt is on temporary re-brand for cultural relevance: may I present to you
 **Four Chickens!** Hope you got one at the booth because we're fresh out.
 
-![The Shirt](/assets/blog/drupalcon-nashville/chickens.jpg)
+{% picture /blog/drupalcon-nashville/chickens.jpg --alt The Shirt %}
 
 _\* Nashville's primary culinary export is its famous hot chicken. It's damn tasty._
 
@@ -34,7 +34,7 @@ technology and displayed on the web using open source libraries, built-in
 browser APIs, and devices that many audiences will find approachable if not
 already something they own.
 
-![Booth Shenanigans](/assets/blog/drupalcon-nashville/booth-collage.jpg)
+{% picture /blog/drupalcon-nashville/booth-collage.jpg --alt Booth Shenanigans %}
 
 We had a few scans from our own Web Chefs over the past few weeks, I'd even 3D
 printed a few of them. I'll be selling limited edition Todds and Aarons on Etsy\*.
@@ -50,7 +50,7 @@ upload it to our Drupal 8 (Contenta distribution) site and compose it into a
 
 #### [EditVR][EVR]
 
-![EditVR](/assets/blog/drupalcon-nashville/editvr-noshadow.png)
+{% picture /blog/drupalcon-nashville/editvr-noshadow.png --alt EditVR %}
 
 Four Kitchens also unveiled [EditVR][EVR], a decoupled, Drupal-backed
 React-fronted VR editor to combine 360 photographs, annotations, sounds, and
@@ -65,7 +65,7 @@ the [Meredith Farming Shop Tour][MVR] and
 
 #### [Aerate][AE]
 
-![Aerate](/assets/blog/drupalcon-nashville/aerate-noshadow.png)
+{% picture /blog/drupalcon-nashville/aerate-noshadow.png --alt Aerate %}
 
 We also had info about the newly released [Aerate][AE] frontend performance
 auditing tool. Evan Willhite, its maintainer, was also at the booth ready to
@@ -82,7 +82,7 @@ but I found the effort worth it. I paid more attention to what was presented
 when my laptop wasn't in front of my face with notifications and the temptation
 to "let me Google that thing the presenter just said."
 
-![Handwritten Notes](/assets/blog/drupalcon-nashville/notes.jpg)
+{% picture /blog/drupalcon-nashville/notes.jpg --alt Handwritten Notes %}
 
 _I use a [RocketBook][RBN] notebook so that I can take a quick picture with my
 phone and the page lands in OneNote with a dated backup in Google Drive, hence
@@ -340,7 +340,7 @@ even some standing-room-only crowds, congratulations to Patrick Coffey, Mike
 Minecki, Joel Travieso, Jeff Tomlinson, Adam Erickson, Trasi Judd, and Randy
 Oest (top-left to bottom-right).
 
-![4K Presenters](/assets/blog/drupalcon-nashville/presentations.jpg)
+{% picture /blog/drupalcon-nashville/presentations.jpg --alt 4K Presenters %}
 
 Check out _[We’re Going to Nashville! Web Chefs Heat Things Up with Talks at DrupalCon][SESFK]_ on the 4K blog for a summary of all our sessions.
 
@@ -357,7 +357,7 @@ sure I follow through. So here's what I want to do:
 - Research OG Menu's new equivalent
 - Propose a session to DrupalCamp Colorado in Denver this August
 
-![Booth Group](/assets/blog/drupalcon-nashville/booth-group.jpg)
+{% picture /blog/drupalcon-nashville/booth-group.jpg --alt Booth Group %}
 
 [4K]: https://www.fourkitchens.com
 [IS3]: https://itseez3d.com/
