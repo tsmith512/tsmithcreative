@@ -13,4 +13,6 @@ markup_presets:
       medium: 680px
       narrow: 100vw
     fallback_width: 960 # Desktop width @1x
-    link_source: false # @TODO: WOULD LIKE TO CHANGE THIS
+    link_source: true
+    attributes:
+      a: 'class="media-link"'

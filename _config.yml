@@ -42,6 +42,7 @@ defaults:
       commenting: true
       layout: post
       highlighting: true
+      photoswipe: true
 
 collections:
   projects:
