@@ -134,10 +134,25 @@ and tag 'em all" may have more trouble.
 **Stored locally.** Evernote/Todoist were always cloud-only; OneNote made that
 switch in its latest release (to the great disappointment of many). Like the
 others, Notion is offline-capable, but stored remotely. I miss local storage of
-user data! These data are _extremely_ valuable, so durable and usable backups
+user data! <del>These data are _extremely_ valuable, so durable and usable backups
 are critically important to me and I don't see any of these platforms offering a
 solid safety net here. But since Notion is the youngest, I'm inclined to take a
-harder look.
+harder look.</del>
+
+{% update 2020-01 %}
+
+Notion has always had a Markdown/CSV export option, but I have discovered that
+Notion now allows HTML exports (and PDF for Enterprise users) for an entire
+workspace. And the HTML looks good. With that and Markdown/CSV exports too,
+Notion now offers the strongest backup tool of these options because the archive
+is: locally stored, readable without the source application, an open format, and
+a stable safeguard against "oops my cloud service disappeared."
+
+I would love it if they could do some kind of automated backup but even in its
+current iteration as a manual step, this solidifies Notion as a safe place for
+important data for me.
+
+{% endupdate %}
 
 ## This is what I've been looking for!
 
