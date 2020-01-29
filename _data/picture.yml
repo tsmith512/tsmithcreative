@@ -1,8 +1,10 @@
 # Image derivatives config for jekyll_picture_tag
 media_presets:
   wide: 'min-width: 960px' # On wide viewports, media pops out beyond the paragraph measure
-  medium: 'min-width: 641px' # The max-width of images matches the paragraph measure/content width
-  narrow: 'max-width: 640px' # 1-col 100% width layout -- i.e. phones and tiny screens
+  medium: 'min-width: 640px' # The max-width of images matches the paragraph measure/content width
+  narrow: 'max-width: 639px' # 1-col 100% width layout -- i.e. phones and tiny screens
+  mini: 'max-width: 479px' # Below this, listing thumbnails go above their content
+
 markup_presets:
   default:
     quality: 80
@@ -16,3 +18,12 @@ markup_presets:
     link_source: true
     attributes:
       a: 'class="media-link"'
+  thumbnail:
+    quality: 70
+    formats: [webp, original]
+    widths: [250, 500]
+    sizes:
+      mini: 100vw
+      narrow: 200px
+      medium: 225px
+    fallback_width: 500 # Default
