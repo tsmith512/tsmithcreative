@@ -52,9 +52,12 @@ summary: >
   {% assign portfolio = site.posts | where: "slug", "the-audience-awakening" | push: projectA | push: projectB %}
   {% for project in portfolio %}
     <li>
-      <a class="post-link" href="{{ project.url | relative_url }}">
-        {{ project.slug | thumbnail_image }}
-      </a>
+      {% assign thumbnail_src = project.slug | thumbnail_image_src | remove_first: "assets/" %}
+      {% if thumbnail_src != "" %}
+        <a class="post-link" href="{{ project.url | relative_url }}">
+          {% picture portfolio_preview {{ thumbnail_src }} %}
+        </a>
+      {% endif %}
       <div class="project-description">
         <h2>
           <a class="post-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a>

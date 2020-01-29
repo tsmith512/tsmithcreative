@@ -4,6 +4,9 @@ media_presets:
   medium: 'min-width: 640px' # The max-width of images matches the paragraph measure/content width
   narrow: 'max-width: 639px' # 1-col 100% width layout -- i.e. phones and tiny screens
   mini: 'max-width: 479px' # Below this, listing thumbnails go above their content
+  portfolio_1c: 'max-width: 559px'
+  portfolio_2c: 'min-width: 560px'
+  portfolio_3c: 'min-width: 800px'
 
 markup_presets:
   default:
@@ -26,4 +29,13 @@ markup_presets:
       mini: 100vw
       narrow: 200px
       medium: 225px
+    fallback_width: 500 # Default
+  portfolio_preview:
+    quality: 90
+    formats: [webp, original]
+    widths: [320, 400, 500]
+    sizes:
+      portfolio_1c: 100vw
+      portfolio_3c: 320px # The 3-col layout has a total max-width of 800px
+      portfolio_2c: 400px
     fallback_width: 500 # Default
