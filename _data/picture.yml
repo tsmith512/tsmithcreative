@@ -2,6 +2,7 @@
 media_presets:
   wide: 'min-width: 960px' # On wide viewports, media pops out beyond the paragraph measure
   medium: 'min-width: 640px' # The max-width of images matches the paragraph measure/content width
+  hero_projects: 'min-width: 480px' # The query for the hero project listing between mini and wide
   narrow: 'max-width: 639px' # 1-col 100% width layout -- i.e. phones and tiny screens
   mini: 'max-width: 479px' # Below this, listing thumbnails go above their content
   portfolio_1c: 'max-width: 559px'
@@ -30,7 +31,15 @@ markup_presets:
       narrow: 200px
       medium: 225px
     fallback_width: 500 # Default
-  portfolio_preview:
+  portfolio_hero: # The three big items at the top of the projects page
+    quality: 90
+    formats: [webp, original]
+    widths: [320, 400, 500]
+    sizes:
+      mini: 100vw
+      wide: 380px
+      hero_projects: 40vw
+  portfolio_preview: # The jobs at the bottom of the projects page and the archive list
     quality: 90
     formats: [webp, original]
     widths: [320, 400, 500]

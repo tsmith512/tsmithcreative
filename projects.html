@@ -13,7 +13,12 @@ summary: >
   {% for project in portfolio %}
     <li>
       <div class="main-thumbnail">
-        <a href="{{ project.url | relative_url }}">{{ project.slug | thumbnail_image }}</a>
+        {% assign thumbnail_src = project.slug | thumbnail_image_src | remove_first: "assets/" %}
+        {% if thumbnail_src != "" %}
+          <a href="{{ project.url | relative_url }}">
+            {% picture portfolio_hero {{ thumbnail_src }} %}
+          </a>
+        {% endif %}
       </div>
       <div class="project-title">
         <h2>

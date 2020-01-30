@@ -28,7 +28,7 @@
   .main-thumbnail {
     @include breakpoint(480px) {
       float: left;
-      max-width: 40%;
+      width: 40%;
       margin-right: 1em;
     }
   }
