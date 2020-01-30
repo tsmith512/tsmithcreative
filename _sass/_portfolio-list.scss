@@ -35,7 +35,10 @@
 
   .project-title {
     h2 {
-      font-size: 4em;
+      font-size: 3em;
+      @include breakpoint(700px) {
+        font-size: 4em;
+      }
       font-family: $tungsten;
       font-weight: lighter;
       margin: 0 0 0.125em 0;
@@ -52,7 +55,7 @@
   }
 
   dl {
-    margin: 1em 0;
+    margin: 0 0 1em 0;
   }
 
   .project-details {
