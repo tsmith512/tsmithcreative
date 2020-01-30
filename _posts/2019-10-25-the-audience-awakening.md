@@ -51,7 +51,7 @@ And yet, a friend of mine who does advocacy work in Tulsa (my second home)
 shared this on Facebook yesterday, from the Oklahoma Maternal and Child Health
 Service:
 
-{% picture /blog/audence-awakening/omchs-lets-talk.jpg --alt Let's Talk Month %}
+{% picture mini /blog/audence-awakening/omchs-lets-talk.jpg --alt Let's Talk Month %}
 
 One theme of this show is the need for honest, truthful conversations between
 adults and "coming of age" adolescents. One *factual* conversation about "where

@@ -50,7 +50,7 @@ upload it to our Drupal 8 (Contenta distribution) site and compose it into a
 
 #### [EditVR][EVR]
 
-{% picture /blog/drupalcon-nashville/editvr.png --alt EditVR --img class="noshadow" %}
+{% picture mini /blog/drupalcon-nashville/editvr.png --alt EditVR --img class="noshadow" %}
 
 Four Kitchens also unveiled [EditVR][EVR], a decoupled, Drupal-backed
 React-fronted VR editor to combine 360 photographs, annotations, sounds, and
@@ -65,7 +65,7 @@ the [Meredith Farming Shop Tour][MVR] and
 
 #### [Aerate][AE]
 
-{% picture /blog/drupalcon-nashville/aerate.png --alt Aerate --img class="noshadow" %}
+{% picture mini /blog/drupalcon-nashville/aerate.png --alt Aerate --img class="noshadow" %}
 
 We also had info about the newly released [Aerate][AE] frontend performance
 auditing tool. Evan Willhite, its maintainer, was also at the booth ready to

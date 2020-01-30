@@ -22,6 +22,18 @@ markup_presets:
     link_source: true
     attributes:
       a: 'class="media-link"'
+  mini:
+    quality: 80
+    formats: [webp, original]
+    widths: [300, 480]
+    sizes:
+      mini: 90vw
+    size: 480px
+    fallback_width: 480
+    link_source: true
+    attributes:
+      a: 'class="media-link"'
+      img: class="mini"
   thumbnail:
     quality: 70
     formats: [webp, original]

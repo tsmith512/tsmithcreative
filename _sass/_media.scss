@@ -20,6 +20,9 @@
       border: none;
       box-shadow: none;
     }
+    &.mini {
+      max-width: 480px;
+    }
   }
 
   .update &, .collapsed & {
