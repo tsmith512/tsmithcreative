@@ -22,10 +22,10 @@
 
     // Get the <li> of the link (Element)
     var parent = this.parentNode;
-    //@TODO: Need to check and see what element this is.
 
-    // PSEUDO CODE: If it is a gallery, do:
-
+    // If the parent element is a list item, then we're in a gallery, we should
+    // build out the inventory and determine the current index.
+    if (parent.nodeName == "LI") {
       // Get the <ul> of the link (Element)
       var list = parent.parentNode;
 
@@ -42,7 +42,7 @@
         // Include only elements
         if (photoLink.nodeType !== 1) { continue; }
 
-        var size = photoLink.getAttribute('data-size').split('x');
+        var size = photoLink.getAttribute('data-size') ? photoLink.getAttribute('data-size').split('x') : [0,0];
 
         var item = {
           src: photoLink.getAttribute('href'),
@@ -53,7 +53,18 @@
 
         items.push(item);
       }
-    // END OF GALLERY SPECIAL STUFF.
+    }
+    // The parent element wasn't a list item, so we're opening a single image.
+    // We don't need to gather a gallery inventory, but we do need to set some
+    // defaults to pass along.
+    else {
+      var size = this.getAttribute('data-size') ? this.getAttribute('data-size').split('x') : [0,0];
+      var items = [{
+        src: this.getAttribute('href'),
+        w: parseInt(size[0], 10),
+        h: parseInt(size[1], 10),
+      }];
+    }
 
     // define options
     var options = {
@@ -99,40 +110,8 @@
 
   // Loop through photos in the album and attach the above initializer
   // @TODO: NEED TO ADD GALLERY LINKS AS WELL AS PICTURE TAG MEDIA LINKS.
-  var photos = document.querySelectorAll('.gallery a');
+  var photos = document.querySelectorAll('.gallery a, .media-link');
   for (var i = 0; i < photos.length; i++) {
     photos[i].addEventListener('click', launchLightbox, false);
   }
-/*
-  function launchMediaLightbox(e) {
-    e.preventDefault();
-
-    var pswpElement = document.querySelectorAll('.pswp')[0];
-
-    var items = [{
-      src: this.getAttribute('href'),
-      w: 1,
-      h: 1
-    }];
-
-    console.log(items);
-
-    var options = {
-      shareButtons: []
-    };
-
-    var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
-
-
-
-
-    gallery.init();
-  }
-
-  // Loop through photos in the album and attach the above initializer
-  var mediaLinks = document.querySelectorAll('.media-link');
-  for (var i = 0; i < mediaLinks.length; i++) {
-    mediaLinks[i].addEventListener('click', launchMediaLightbox, false);
-  }
-*/
 })();
