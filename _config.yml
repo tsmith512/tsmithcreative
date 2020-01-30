@@ -59,3 +59,4 @@ picture:
   # @TODO: This is stupid, brittle, and environmentally specific. Should I just
   # move _assets -> assets? Catch this in an output filter? Something else?
   output: "assets/generated"
+  suppress_warnings: true
