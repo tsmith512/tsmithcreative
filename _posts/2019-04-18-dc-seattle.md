@@ -13,7 +13,7 @@ in Seattle! Here's how it happened.
 
 ## Washington Funtimes
 
-![Hiking Photos](/assets/blog/drupalcon-seattle/washington-hiking.jpg)
+{% picture /blog/drupalcon-seattle/washington-hiking.jpg --alt Hiking Photos %}
 
 At a friend's recommendation, I did the
 [Rattlesnake Ledge hike](https://www.alltrails.com/explore/recording/recording-apr-06-03-01-pm--3)
@@ -22,7 +22,7 @@ and also discovered
 each about an hour east of town through totally stunning scenery. I also hit up
 a handful of things in town with friends, too.
 
-![Seattle Photos](/assets/blog/drupalcon-seattle/seattle-funtimes.jpg)
+{% picture /blog/drupalcon-seattle/seattle-funtimes.jpg --alt Seattle Photos %}
 
 ## DrupalCon
 
@@ -30,7 +30,7 @@ a handful of things in town with friends, too.
 "The Games Area") was our booth theme this year. In addition to our usual games
 and swag, we had a number of cool demos!
 
-![4K Booth Photos](/assets/blog/drupalcon-seattle/booth-time.jpg)
+{% picture /blog/drupalcon-seattle/booth-time.jpg --alt 4K Booth Photos %}
 
 Our Frontend team talked up
 **[Emulsify](https://github.com/fourkitchens/emulsify)**, a component-driven
@@ -81,7 +81,7 @@ page about the ER offered a list of services and awards they'd received.
 
 She closed with a [classic XKCD example](https://xkcd.com/773/), "University Website"
 
-![The XKCD Comic called "University Website"](/assets/blog/drupalcon-seattle/xkcd-univ-website.png)
+{% picture mini /blog/drupalcon-seattle/xkcd-univ-website.png --alt The XKCD Comic called "University Website" %}
 
 
 **[Ignore the Naysayers: Your RFP Can Be Brilliant!](https://events.drupal.org/seattle2019/sessions/ignore-naysayers-your-rfp-can-be-great) with Joe Crespo _(Aten Design)_**
@@ -197,7 +197,7 @@ warehouse product.
 [Session page](https://events.drupal.org/seattle2019/sessions/estimating-iteration-story-points-and-thin-vertical-slices)
 | [My write-up]({% link _projects/2019-05-10-estimate-to-iterate.md %})
 
-![Me giving a presentation](/assets/blog/drupalcon-seattle/my-pres.jpg)
+{% picture /blog/drupalcon-seattle/my-pres.jpg --alt Me giving a presentation %}
 
 
 I'm pleased with how my session went. It was scheduled for very late in the day,
@@ -216,4 +216,4 @@ Resources:
 
 Thanks to DrupalCon organizers for accepting my talk!
 
-![4K Group Photo in the Booth](/assets/blog/drupalcon-seattle/group-photo.jpg)
+{% picture /blog/drupalcon-seattle/group-photo.jpg --alt 4K Group Photo in the Booth %}

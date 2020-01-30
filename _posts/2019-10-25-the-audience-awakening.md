@@ -18,7 +18,7 @@ director as a student. This year's show is *Spring Awakening* and Rick is up to
 his usual tricks of incorporating unexpected elements to educational (and "how
 the hell are we gonna pull this one off?") effect.
 
-![Show Poster](/assets/blog/audence-awakening/spring-awakening-poster.jpg)
+{% picture /blog/audence-awakening/spring-awakening-poster.jpg --alt Show Poster %}
 
 ## Theatre of the Oppressed
 
@@ -51,7 +51,7 @@ And yet, a friend of mine who does advocacy work in Tulsa (my second home)
 shared this on Facebook yesterday, from the Oklahoma Maternal and Child Health
 Service:
 
-![Let's Talk Month](/assets/blog/audence-awakening/omchs-lets-talk.jpg)
+{% picture mini /blog/audence-awakening/omchs-lets-talk.jpg --alt Let's Talk Month %}
 
 One theme of this show is the need for honest, truthful conversations between
 adults and "coming of age" adolescents. One *factual* conversation about "where
@@ -76,7 +76,7 @@ the *truth* of the issue.
 
 I hashed out a flow diagram.
 
-![Application flowchart](/assets/blog/audence-awakening/flow-diagram.png)
+{% picture /blog/audence-awakening/flow-diagram.png --alt Application flowchart %}
 
 An aside: the appropriateness of audience smartphone use is another major
 ongoing discussion in the industry. And I love the imagery here: the stereotype
@@ -129,7 +129,7 @@ of time, I started there and tried to write cleaner code this time, even if a
 lot of the frontend still boils down to direct DOM manipulation. I got a
 prototype working in just a couple of hours.
 
-![Showing the vote screen in front of the stage](/assets/blog/audence-awakening/voting-in-rehearsal.jpg)
+{% picture /blog/audence-awakening/voting-in-rehearsal.jpg --alt Showing the vote screen in front of the stage %}
 
 I spent the next week making functional adjustments in conjunction with the
 student stage manager and student assistant director. I also matched the
@@ -149,12 +149,12 @@ each with their own display, plus an additional display for testing.
 logo, basic instructions, questions, buttons for voting, answers for the
 audience, and design elements from the set.
 
-![Participant with phone in her lap](/assets/blog/audence-awakening/participant.jpg)
+{% picture /blog/audence-awakening/participant.jpg --alt Participant with phone in her lap %}
 
 **Presenters:** The read-only/unattended display used on the projector. It
 shows questions, answers, and the distribution of the results.
 
-![Photo of a laptop and projector backstage](/assets/blog/audence-awakening/presenters.jpg)
+{% picture /blog/audence-awakening/presenters.jpg --alt Photo of a laptop and projector backstage %}
 
 We had every intention of using the primary long-throw projector from the booth,
 but given how the scenic design worked, putting this in the passthrough behind
@@ -163,7 +163,7 @@ the orchestra was surprisingly better. And it looks ridiculous, very theatre.
 **Admins:** This is the stage manager's console to advance through the stages of
 the application.
 
-![Screenshot of the admin display](/assets/blog/audence-awakening/admins.jpg)
+{% picture /blog/audence-awakening/admins.jpg --alt Screenshot of the admin display %}
 
 **Debuggers:** A testing mode just for me. It shows the three other displays
 side-by-side and buttons to force an all-client reload, pull a game state
@@ -171,13 +171,13 @@ data-dump, or add votes for testing. And because all Admin interactions run
 through Socket, I can watch the SM manipulate the system from this screen while
 it happens — his display syncs up with this.
 
-![Screenshot of the debug display showing multiple connections](/assets/blog/audence-awakening/debug-assembly.jpg)
+{% picture /blog/audence-awakening/debug-assembly.jpg --alt Screenshot of the debug display showing multiple connections %}
 
 The 250 connections demo shown here was during an impromptu demo in an
 all-school assembly. Rick gave me five minutes' notice on that one. But it
 worked! 🎉
 
-![Heroku's metrics](/assets/blog/audence-awakening/heroku-metrics.jpg)
+{% picture /blog/audence-awakening/heroku-metrics.jpg --alt Heroku's metrics %}
 
 As anticipated, Heroku's metrics dashboard confirmed that even the smallest
 Standard Dyno was well beyond what I needed. Which is to say: yes, it's hosted
@@ -185,7 +185,7 @@ on Heroku with automatic deploys from GitHub. That and the debugger's reload
 button made it easy to update code live during rehearsals and push application
 updates to other consoles.
 
-![Poll open during an open final dress rehearsal](/assets/blog/audence-awakening/open-dress.jpg)
+{% picture /blog/audence-awakening/open-dress.jpg --alt Poll open during an open final dress rehearsal %}
 
 *Preview night / open final dress rehearsal. A few audience members are voting.*
 
@@ -196,6 +196,6 @@ technical and design execution — this application only serves to help reinforc
 a point that the show creates, but I like its place in the message. I'm super
 grateful for yet another journey with the SAS team through a great show.
 
-![Postshow screen on debugger](/assets/blog/audence-awakening/debug-postshow.jpg)
+{% picture /blog/audence-awakening/debug-postshow.jpg --alt Postshow screen on debugger %}
 
 *Spring Awakening was performed with special permission from Music Theatre International.*
