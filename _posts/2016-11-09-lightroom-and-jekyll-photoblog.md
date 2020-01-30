@@ -31,17 +31,17 @@ directory structure.
 [Jeffrey Friedl’s Folder Publish](http://regex.info/blog/lightroom-goodies/folder-publisher)
 plugin accomplishes exactly this.
 
-![Screenshot](/assets/blog/lightroom-jekyll/image00.png)
+{% picture /blog/lightroom-jekyll/image00.png --alt Screenshot %}
 
 I add images to the aptly named “photos to include” collection that Folder
 Publisher provides, and Lightroom automatically handles making new folders of
 converted and resized JPEGs, maintaining that original structure:
 
-![Screenshot](/assets/blog/lightroom-jekyll/image02.png)
+{% picture mini /blog/lightroom-jekyll/image02.png --alt Screenshot %}
 
 Using SourceTree, I commit the parent directory to a Git repository:
 
-![Screenshot](/assets/blog/lightroom-jekyll/image05.png)
+{% picture mini /blog/lightroom-jekyll/image05.png --alt Screenshot %}
 
 ## Image Processing and Indexing with [Gulp](http://gulpjs.com/)
 
@@ -68,12 +68,12 @@ sorting all of it by exposure time, and then
 [storing it in a YAML file](https://github.com/tsmith512/tsmithphotos/blob/master/source/index.yml)
 so that galleries can be built automatically.
 
-![Screenshot](/assets/blog/lightroom-jekyll/image04.png)
+{% picture mini /blog/lightroom-jekyll/image04.png --alt Screenshot %}
 
 Finally, another task creates a new post in the site for any folder that doesn’t
 already have one, since my post and directory names are built the same way.
 
-![screenshot](/assets/blog/lightroom-jekyll/image01.png)
+{% picture mini /blog/lightroom-jekyll/image01.png --alt screenshot %}
 
 Other gulp tasks build out the Sass into stylesheets, _aggregate/minify/lint JS_,
 nd copy other files directly into the `_site` output directory.

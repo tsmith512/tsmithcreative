@@ -19,7 +19,7 @@ additional trinkets for our next adventure: driving from Austin to Anchorage.
 During a 4K Test Kitchen session, I took my colleagues on a tour of the system
 and what I built to keep telling the story.
 
-![Revised Architecture](/assets/blog/travelogue-revisited/new-architecture-noshadow.png)
+{% picture mini /blog/travelogue-revisited/new-architecture.png --alt Revised Architecture --img class="noshadow" %}
 
 The system still relies on the same original components. The primary change
 since its original launch is a migration from Tumblr to WordPress. Since that
@@ -30,6 +30,6 @@ email. Also two new gadgets:
 - Magic roadtrip planning spreadsheet
 - A Slack API and Symfony powered Craigslist ad scraper to archive listings
 
-![We made it. Again.](/assets/blog/travelogue-revisited/seward.jpg)
+{% picture /blog/travelogue-revisited/seward.jpg --alt We made it. Again. %}
 
 _We made it. Again._

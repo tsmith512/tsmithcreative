@@ -174,7 +174,7 @@ gulp.task('assets', 'Copy and compress if possible all project/post assets', () 
 
 gulp.task('jekyll', 'Run jekyll build', (cb) => {
   const spawn = require('child_process').spawn;
-  const jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'});
+  const jekyll = spawn('bundle', ['exec', 'jekyll', 'build', '--trace'], {stdio: 'inherit'});
   jekyll.on('exit', (code) => {
     cb(code === 0 ? null : 'ERROR: Jekyll process exited with code: ' + code);
   });
