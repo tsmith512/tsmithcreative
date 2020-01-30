@@ -34,7 +34,7 @@ jobs:
           name: Install ImageMagick and output format handlers
           command: |
             sudo apt-get update
-            sudo apt-get install imagemagick libpng-dev libwebp-dev webp --force-yes
+            sudo apt-get install imagemagick graphicsmagick libpng-dev libwebp-dev webp --force-yes
 
       - run:
           name: Install Node/project dependencies
