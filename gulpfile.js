@@ -58,7 +58,6 @@ gulp.task('sass', 'Compile Sass to CSS', () => {
   return gulp.src('./_sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
       cascade: false
     }))
     // Run CleanCSS, but mostly just for minification. Starting light here.
