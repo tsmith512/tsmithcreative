@@ -34,6 +34,20 @@ markup_presets:
     attributes:
       a: 'class="media-link"'
       img: class="mini"
+  gallery:
+    quality: 80
+    formats: [webp, jpg]
+    widths: [120, 240, 480]
+    sizes:
+      mini: 33vw
+      narrow: 25vw
+      medium: 240px
+    size: 240
+    fallback_width: 240
+    link_source: true
+    attributes:
+      a: 'class-"gallery-link"'
+    nomarkdown: false
   thumbnail:
     quality: 80
     formats: [webp, original]

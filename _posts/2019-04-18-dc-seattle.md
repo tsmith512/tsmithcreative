@@ -15,6 +15,8 @@ in Seattle! Here's how it happened.
 
 {% picture /blog/drupalcon-seattle/washington-hiking.jpg --alt Hiking Photos %}
 
+{% include gallery.html gallery=page.galleries.a %}
+
 At a friend's recommendation, I did the
 [Rattlesnake Ledge hike](https://www.alltrails.com/explore/recording/recording-apr-06-03-01-pm--3)
 and also discovered
@@ -23,6 +25,8 @@ each about an hour east of town through totally stunning scenery. I also hit up
 a handful of things in town with friends, too.
 
 {% picture /blog/drupalcon-seattle/seattle-funtimes.jpg --alt Seattle Photos %}
+
+{% include gallery.html gallery=page.galleries.b %}
 
 ## DrupalCon
 
