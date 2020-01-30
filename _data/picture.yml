@@ -11,7 +11,7 @@ media_presets:
 
 markup_presets:
   default:
-    quality: 80
+    quality: 85
     formats: [webp, original]
     widths: [400, 540, 680, 960, 1440, 1920] # @TODO: Those last two are max-size * hi-dpi... keep?
     sizes:
@@ -23,7 +23,7 @@ markup_presets:
     attributes:
       a: 'class="media-link"'
   mini:
-    quality: 80
+    quality: 85
     formats: [webp, original]
     widths: [300, 480]
     sizes:
@@ -35,7 +35,7 @@ markup_presets:
       a: 'class="media-link"'
       img: class="mini"
   thumbnail:
-    quality: 70
+    quality: 80
     formats: [webp, original]
     widths: [250, 500]
     sizes:
@@ -44,7 +44,7 @@ markup_presets:
       medium: 225px
     fallback_width: 500 # Default
   portfolio_hero: # The three big items at the top of the projects page
-    quality: 90
+    quality: 95
     formats: [webp, original]
     widths: [320, 400, 500]
     sizes:

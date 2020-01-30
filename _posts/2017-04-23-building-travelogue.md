@@ -35,7 +35,7 @@ me time to up my blogging game.
 
 ## Under the Hood
 
-{% picture /blog/building-travelogue/diagram.png --alt Diagram of the application --img class="noshadow" %}
+{% picture mini /blog/building-travelogue/diagram.png --alt Diagram of the application --img class="noshadow" %}
 
 
 This is perhaps a more complex amalgamation of services than it could have been,

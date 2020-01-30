@@ -95,7 +95,7 @@ briefly.
 - Each poster should have methods to drive toward that failure.
 - Have one participant from each group present their responses.
 
-{% picture /blog/premortem/step2-poster-finished-B.jpg --alt Another outcome poster %}
+{% picture mini /blog/premortem/step2-poster-finished-B.jpg --alt Another outcome poster %}
 
 In the past, we've seen things like:
 
@@ -143,7 +143,7 @@ recognition. These lessons are only valuable if they're put in practice:
 In our experience, the answer is always yes to some. If no one speaks, I would
 believe that there's a lack of honesty, trust, or empowerment in the room.
 
-{% picture /blog/premortem/step2-poster-finished-A.jpg --alt Another poster %}
+{% picture mini /blog/premortem/step2-poster-finished-A.jpg --alt Another poster %}
 
 Mark these as they are identified, but the aim is an organic conversation to
 **understand how an organization may have to change** in order to realize the
