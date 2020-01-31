@@ -19,29 +19,18 @@
     margin: 0;
     padding: 0;
 
-    // display: flex;
-    // flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   li {
-    padding: 0.5em;
-    float: left;
-
-    // For the gallery in a project header
     width: 50%;
-    @include breakpoint(max-width 479px) {
-      &:nth-child(2n+1) { clear: left; }
-    }
+    @include breakpoint(480px 639px) { width: 33.3%; }
+    @include breakpoint(640px) { width: 25%; }
 
-    @include breakpoint(480px 639px) {
-      width: 33.3%;
-      &:nth-child(3n+1) { clear: left; }
-    }
-
-    @include breakpoint(640px) {
-      width: 25%;
-      &:nth-child(4n+1) { clear: left; }
-    }
+    padding: 0.5em;
   }
 
   a {
