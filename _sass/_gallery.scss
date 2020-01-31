@@ -6,6 +6,14 @@
   @extend %clearfix;
   margin: 2em -0.5em;
 
+  // On posts, these should expand beyond the bounds like other images (see _media)
+  .post & {
+    @include breakpoint($max-width + 16) {
+      margin-left: -(($max-width - $max-lines) / 2);
+      margin-right: -(($max-width - $max-lines) / 2);
+    }
+  }
+
   ul {
     list-style: none;
     margin: 0;
