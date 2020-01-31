@@ -37,11 +37,12 @@ markup_presets:
   gallery:
     quality: 80
     formats: [webp, jpg]
-    widths: [120, 240, 480]
+    widths: [180, 240, 480]
     sizes:
-      mini: 33vw
-      narrow: 25vw
-      medium: 240px
+      mini: 50vw
+      narrow: 33vw
+      wide: 240px
+      medium: 25vw
     size: 240
     fallback_width: 240
     link_source: true
