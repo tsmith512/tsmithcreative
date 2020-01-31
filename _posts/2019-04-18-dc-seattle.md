@@ -5,6 +5,57 @@ summary: >
   (machine learning) brain in a (content editor) box, a focus on accessibility
   and inclusion, and other great sessions.
 tags: [events, drupal, management]
+galleries:
+  a:
+    - src: /blog/drupalcon-seattle/pre/IMG_20190406_125039008.jpg
+      alt: Forest trail
+      caption: Rattlesnake Ledge hike
+    - src: /blog/drupalcon-seattle/pre/IMG_20190406_132325012.jpg
+      alt: View showing mountain in rain
+      caption: Rattlesnake Ledge
+    - src: /blog/drupalcon-seattle/pre/IMG_20190406_132954.jpg
+      alt: Rattlesnake Ledge
+      caption: View from the top of Rattlesnake Ledge
+    - src: /blog/drupalcon-seattle/pre/IMG_20190406_133725019.jpg
+      alt: A dumb selfie
+    - src: /blog/drupalcon-seattle/pre/IMG_20190406_155325033.jpg
+      alt: Snoqualmie Falls
+      caption: Snoqualmie Falls
+    - src: /blog/drupalcon-seattle/pre/IMG_20190406_224749.jpg
+      alt: City view of Seattle from Capital Hill
+    - src: /blog/drupalcon-seattle/pre/IMG_20190407_142025063.jpg
+      alt: View of the Wallace Falls Upper Falls
+      caption: Wallace Falls
+    - src: /blog/drupalcon-seattle/pre/IMG_20190407_142120064.jpg
+      alt: Wallace Falls Lower Falls
+      caption: Wallace Falls
+    - src: /blog/drupalcon-seattle/pre/IMG_20190407_143815071.jpg
+      alt: Waterfalls
+    - src: /blog/drupalcon-seattle/pre/IMG_20190407_144210072.jpg
+      alt: Trail in fog
+  b:
+    - src: /blog/drupalcon-seattle/pre/IMG_20190408_192304.jpg
+      alt: Indoor climber at Seattle Bouldering Project
+      caption: Anthony at Seattle Bouldering Project
+    - src: /blog/drupalcon-seattle/pre/IMG_20190408_195000001.jpg
+      alt: Me at Seattle Bouldering Project
+      caption: Web Chef Boulders
+    - src: /blog/drupalcon-seattle/pre/IMG_20190412_113847.jpg
+      alt: Seattle's Gum Wall
+      caption: Gross.
+    - src: /blog/drupalcon-seattle/pre/IMG_20190412_164631.jpg
+      alt: Puttputt golf game at a bar
+  c:
+    - src: /blog/drupalcon-seattle/booth/IMG_20190409_170406079.jpg
+      alt: Strategist dresses in fortune teller costume
+    - src: /blog/drupalcon-seattle/booth/IMG_20190409_175534089.jpg
+      alt: People in circus-themed trade booth with man pointing at screen
+    - src: /blog/drupalcon-seattle/booth/IMG_20190409_185421093.jpg
+      alt: Me having my face painted by the Four Kitchens Operations Director
+    - src: /blog/drupalcon-seattle/booth/IMG_20190411_091230101.jpg
+      alt: Employee in a company jacket juggling mini basketballs
+    - src: /blog/drupalcon-seattle/booth/IMG_20190411_094138104.jpg
+      alt: Founder in a company jacket playing ping-pong
 ---
 
 My thanks to the Drupal Association, DrupalCon organizers, Four Kitchens, fellow
@@ -12,8 +63,6 @@ presenters and colleagues, and to my good friends who showed me an amazing time
 in Seattle! Here's how it happened.
 
 ## Washington Funtimes
-
-{% picture /blog/drupalcon-seattle/washington-hiking.jpg --alt Hiking Photos %}
 
 {% include gallery.html gallery=page.galleries.a %}
 
@@ -24,8 +73,6 @@ and also discovered
 each about an hour east of town through totally stunning scenery. I also hit up
 a handful of things in town with friends, too.
 
-{% picture /blog/drupalcon-seattle/seattle-funtimes.jpg --alt Seattle Photos %}
-
 {% include gallery.html gallery=page.galleries.b %}
 
 ## DrupalCon
@@ -34,7 +81,7 @@ a handful of things in town with friends, too.
 "The Games Area") was our booth theme this year. In addition to our usual games
 and swag, we had a number of cool demos!
 
-{% picture /blog/drupalcon-seattle/booth-time.jpg --alt 4K Booth Photos %}
+{% include gallery.html gallery=page.galleries.c %}
 
 Our Frontend team talked up
 **[Emulsify](https://github.com/fourkitchens/emulsify)**, a component-driven

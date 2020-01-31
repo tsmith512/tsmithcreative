@@ -76,7 +76,7 @@ the *truth* of the issue.
 
 I hashed out a flow diagram.
 
-{% picture /blog/audence-awakening/flow-diagram.png --alt Application flowchart %}
+{% picture mini /blog/audence-awakening/flow-diagram.png --alt Application flowchart %}
 
 An aside: the appropriateness of audience smartphone use is another major
 ongoing discussion in the industry. And I love the imagery here: the stereotype
