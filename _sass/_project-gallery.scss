@@ -1,8 +1,8 @@
 /**
-* @file _gallery.scss
+* @file _project-gallery.scss
 * Photoswipe gallery display, largely ripped off from tsmithphotos.com
 */
-.gallery {
+.project-gallery {
   @extend %clearfix;
   margin: 2em -0.5em;
 
@@ -16,6 +16,7 @@
     padding: 0.5em;
     float: left;
 
+    // For the gallery in a project header
     width: 50%;
     @include breakpoint(480px) { width: 33.3%; }
     @include breakpoint(640px) { width: 25%; }
@@ -30,8 +31,5 @@
     &:hover {
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
-  }
-
-  a:hover img {
   }
 }
