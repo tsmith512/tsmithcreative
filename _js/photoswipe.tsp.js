@@ -97,14 +97,6 @@
       }
     });
 
-    // @TODO: CAN THIS GO AWAY? I THINK SO.
-    gallery.listen('imageLoadComplete', function(index, item) {
-      // index - index of a slide that was loaded
-      // item - slide object
-      console.log(item);
-      console.log(item.container.querySelector('img'));
-    });
-
     gallery.init();
   }
 
