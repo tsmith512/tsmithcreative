@@ -6,6 +6,10 @@
   max-width: $max-lines;
   margin: 0 auto;
 
+  li {
+    margin-bottom: 1em;
+  }
+
   .update {
     background: #ebf7ed; // #f6f6f6;
     color: #085014;
