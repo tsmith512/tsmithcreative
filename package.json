@@ -14,6 +14,7 @@
   ],
   "devDependencies": {
     "breakpoint-sass": "^2.7.0",
+    "del": "^5.1.0",
     "eslint": "^6",
     "fg-loadcss": "^2",
     "glob": "~7.1",

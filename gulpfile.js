@@ -32,6 +32,7 @@ const awspublish = require('gulp-awspublish');
 const awspublishRouter = require("gulp-awspublish-router");
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
+const del = require('del');
 const eslint = require('gulp-eslint');
 const fs = require('fs');
 const glob = require('glob');
@@ -179,8 +180,18 @@ gulp.task('jekyll', 'Run jekyll build', (cb) => {
   });
 });
 
+gulp.task('clean', 'Wipe the site root directory', () => {
+  return del([
+    '_site/**/*'
+  ]);
+})
+
 gulp.task('build', 'Run all site-generating tasks: assets, [sass, js, graphics, icons], then jekyll', (cb) => {
   runSequence('assets', ['sass', 'graphics', 'icons', 'js'], 'jekyll', cb);
+});
+
+gulp.task('build-clean', 'Wipe the site root and rebuild', (cb) => {
+  runSequence('clean', 'build', cb);
 });
 
 gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
@@ -308,11 +319,11 @@ gulp.task('publish-staging-s3', 'Sync the site to S3 staging bucket', (cb) => {
 });
 
 gulp.task('publish', 'Build the site and publish to S3', (cb) => {
-  runSequence(['assets', 'build'], 'publish-s3', cb);
+  runSequence('build', 'publish-s3', cb);
 });
 
 gulp.task('publish-staging', 'Build the site and publish to S3', (cb) => {
-  runSequence(['assets', 'build'], 'publish-staging-s3', cb);
+  runSequence('build', 'publish-staging-s3', cb);
 });
 
 /*
