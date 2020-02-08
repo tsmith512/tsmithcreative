@@ -35,7 +35,8 @@ me time to up my blogging game.
 
 ## Under the Hood
 
-![Diagram of the Applications][DIAGRAM]
+{% picture mini /blog/building-travelogue/diagram.png --alt Diagram of the application --img class="noshadow" %}
+
 
 This is perhaps a more complex amalgamation of services than it could have been,
 but I've tried to separate concerns as much as possible.
@@ -231,7 +232,7 @@ funniest part of all this is the banter), and the occasional video (because some
 things have to be seen to be believed). Each post has a "Show on Map" link which
 re-centers the map view to where we were when I made the post.
 
-![The Frontend][SITE]
+{% picture /blog/building-travelogue/final.png --alt The site frontend --img class="noshadow" %}
 
 **Tumblr's job:** Tie all the pieces together into the frontend experience.
 
@@ -255,12 +256,11 @@ _(Yes, this is where my Favicon came from.)_
 {% update 2017-06 %}
 We lived. ;-)
 
-![Grand Canyon](/assets/blog/building-travelogue/grand-canyon.jpg)
+{% picture /blog/building-travelogue/grand-canyon.jpg --alt Grand Canyon %}
 {% endupdate %}
 
 
 [31DAYS]: https://www.routenotfound.com/2015/07/27/thirty-one-days/
-[DIAGRAM]: /assets/blog/building-travelogue/diagram-noshadow.png
 [TRACKER]: https://github.com/tsmith512/location-tracker
 [TRACKERUI]: /assets/blog/building-travelogue/location-history.png
 [ORIGINAL]: https://github.com/tsmith512/location-tracker/commit/26fbff80d704be926d8fe999809f439ccb163708
@@ -288,7 +288,6 @@ We lived. ;-)
 [TUMBLR]: https://www.tumblr.com/about
 [TDASH]: /assets/blog/building-travelogue/tumblr-dash.png
 [TTHEME]: https://github.com/tsmith512/travelogue-tumblr
-[SITE]: /assets/blog/building-travelogue/final-noshadow.png
 [4K]: https://www.fourkitchens.com/
 [TASKERTASK]: https://github.com/tsmith512/location-tracker/blob/master/tasker/task.xml
 [TASKER]: http://tasker.dinglisch.net/

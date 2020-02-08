@@ -12,14 +12,14 @@ tags: [development, wordpress, presentation]
 
 I wrote about
 [this blog and its underlying technology]({% post_url 2017-04-23-building-travelogue %})
-before. In late 2018, I completed did a hurried MVP migration to WordPress.
+before. In late 2018, I completed a hurried MVP migration to WordPress.
 Since then, I continued making a steady stream of updates and building
 additional trinkets for our next adventure: driving from Austin to Anchorage.
 
 During a 4K Test Kitchen session, I took my colleagues on a tour of the system
 and what I built to keep telling the story.
 
-![Revised Architecture](/assets/blog/travelogue-revisited/new-architecture-noshadow.png)
+{% picture mini /blog/travelogue-revisited/new-architecture.png --alt Revised Architecture --img class="noshadow" %}
 
 The system still relies on the same original components. The primary change
 since its original launch is a migration from Tumblr to WordPress. Since that
@@ -30,6 +30,6 @@ email. Also two new gadgets:
 - Magic roadtrip planning spreadsheet
 - A Slack API and Symfony powered Craigslist ad scraper to archive listings
 
-![Revised Architecture](/assets/blog/travelogue-revisited/seward.jpg)
+{% picture /blog/travelogue-revisited/seward.jpg --alt We made it. Again. %}
 
 _We made it. Again._

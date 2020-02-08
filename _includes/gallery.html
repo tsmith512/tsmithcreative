@@ -1,0 +1,12 @@
+{% if include.gallery %}
+<div class="gallery post-gallery">
+  <ul>
+    {% for photo in include.gallery %}
+      <li>
+        {% picture gallery {{ photo.src }} --alt {{ photo.alt | escape }} --a title="{{ photo.caption | escape }}" --a data-size="0x0" %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+

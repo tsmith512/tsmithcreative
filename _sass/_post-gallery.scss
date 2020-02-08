@@ -1,0 +1,50 @@
+/**
+* @file _post-gallery.scss
+*
+* Photoswipe gallery display, like _project-gallery but styled slightly
+* differently to account for, among other things, inconsistently sized images.
+*/
+.post-gallery {
+  @extend %clearfix;
+  margin: 2em -0.5em;
+
+  // To mirror post media:
+  @include breakpoint($max-width + 16) {
+    margin-left: -(($max-width - $max-lines) / 2);
+    margin-right: -(($max-width - $max-lines) / 2);
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li {
+    margin: 0;
+    width: 50%;
+    padding: 0.25em;
+    @include breakpoint(480px 639px) { width: 33.3%; }
+    @include breakpoint(640px) { padding: 0.5em; width: 25%; }
+  }
+
+  a {
+    display: block;
+  }
+
+  img {
+    display: block;
+
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    transition: 0.2s ease-out box-shadow;
+
+    &:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+  }
+}

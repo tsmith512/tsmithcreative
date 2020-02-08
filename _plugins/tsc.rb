@@ -11,6 +11,8 @@ module Jekyll
           |contents| '<div class="media-n-up">' + contents.gsub(/(<img[^>]+>)/, '<div>\1</div>') + '</div>'
         }
         .gsub(/<p>(<img[^>]+>)<\/p>/, '<p class="media">\1</p>')
+        .gsub(/<p>(<a class=\"media-link\"[^>]+>.+?)<\/a>/, '<p class="media">\1</a></p>')
+        .gsub(/^<picture>(.+?)<\/picture>/, '<div class="media"><picture>\1</picture></div>')
     end
   end
 

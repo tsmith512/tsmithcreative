@@ -10,7 +10,12 @@ summary: >
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
-      {{ post.slug | thumbnail_image }}
+      {% assign thumbnail_src = post.slug | thumbnail_image_src | remove_first: "assets/" %}
+      {% if thumbnail_src != "" %}
+        <a href="{{ post.url | relative_url }}">
+          {% picture thumbnail {{ thumbnail_src }} %}
+        </a>
+      {% endif %}
       <div class="post-description">
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>

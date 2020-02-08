@@ -72,22 +72,36 @@ video {
 
 blockquote {
   position: relative;
-  margin: 1em 2em;
+  padding: 1em 2em 0;
+  border-left: 1px solid #ccc;
+  margin: 2em 0 3em 0;
+
+  font-family: $gotham;
+
+  cite {
+    font-size: 0.875em;
+
+    em {
+      font-style: normal;
+    }
+  }
 }
 
 blockquote:before {
   content: " ";
   display: block;
   position: absolute;
-  top: 0;
-  left: -2em;
+  top: -0.25em;
+  left: -1.25em;
 
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 0.5rem solid white;
   margin-right: 0.5rem;
 
   // This is boosted from .icon styles and the SVG from icon-quote-light
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M13%2014.725c0-5.141%203.892-10.519%2010-11.725l.984%202.126c-2.215.835-4.163%203.742-4.38%205.746%202.491.392%204.396%202.547%204.396%205.149%200%203.182-2.584%204.979-5.199%204.979-3.015%200-5.801-2.305-5.801-6.275zm-13%200c0-5.141%203.892-10.519%2010-11.725l.984%202.126c-2.215.835-4.163%203.742-4.38%205.746%202.491.392%204.396%202.547%204.396%205.149%200%203.182-2.584%204.979-5.199%204.979-3.015%200-5.801-2.305-5.801-6.275z%22%20fill%3D%22%23CCCCCC%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+  background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;

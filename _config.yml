@@ -10,6 +10,7 @@ plugins:
 exclude:
   - node_modules # Apparently this is magic sauce to make Jekyll less super slow
   - vendor # CircleCI stores Ruby gems inside the repo; skip this tree
+  - assets # This is a symlink to _assets for JPT's links. Currently, Jekyll doesn't handle asset pipeline
   - Gemfile
   - Gemfile.lock
   - package.json
@@ -28,6 +29,7 @@ keep_files:
 # Site settings
 permalink: /blog/:year/:slug/
 
+# Collections / Content settings
 defaults:
   - scope:
       type: projects
@@ -40,8 +42,21 @@ defaults:
       commenting: true
       layout: post
       highlighting: true
+      photoswipe: true
 
 collections:
   projects:
     output: true
     permalink: /project/:slug/
+
+# Media handling
+picture:
+  source: "assets"
+  # ^^ Because I'm having JPT link to all media assets in blog posts, the
+  # "source" directory needed to be something that exists in the site build, so
+  # I've symlinked repo/assets --> repo/_assets so that JPT can find the images
+  # in the same path structure as the site build so links are also correct.
+  # @TODO: This is stupid, brittle, and environmentally specific. Should I just
+  # move _assets -> assets? Catch this in an output filter? Something else?
+  output: "assets/generated"
+  suppress_warnings: true
