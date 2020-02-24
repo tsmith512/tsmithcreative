@@ -244,6 +244,7 @@ well networked. It was comforting how much smaller the world suddenly seemed.
 I found, though did not attend all of:
 
 - [Product in Austin](http://www.productinaustin.com/), who organize the Product in Austin Slack
+- [ProductCamp Austin](http://productcampaustin.org/), which I attended in February 2020 and loved. Blog post forthcoming.
 - [Austin Developing Product Managers](https://www.meetup.com/Austin-Developing-Product-Managers-Meetup/)
 - [ProductTank](https://www.meetup.com/ProductTank-Austin/)
 - [The Product League](https://www.meetup.com/The-Product-League/)
@@ -363,6 +364,11 @@ progress updates, networking aid, **interview retros,** and facets of the work.
 However, having a book of helpful "things to do that are not applications" with
 an optimistic "self-help book" voice was great for attitude.
 
+Our group got a lot of benefit from the momentum of meeting _every week_ starting
+immediately after the big sorting hat night. If you join PJC, push for that. If
+you are starting a job seekers group on your own: that's my #1 recommendation for
+a successful group. Followed by: have a Slack channel or group chat.
+
 > **"Go to a Job Board and then Leave."**
 >
 > [...] Although this seems counterintuitive, only 3 percent of all jobs are
@@ -424,10 +430,11 @@ have long had trouble making routine use of to-do list applications despite
 
 {% picture /blog/finding-next/bulletjournal.jpg --alt "An open notebook with terrible handwriting next to a keyboard and mouse." %}
 
-So while I'm still in "say yes to everything" mode: as recommended by a former
-colleague, I've continued my efforts to list life _on paper_ in bullet form. I'm
-giving it a trial run in Q1, but so far it has helped with productivity and
-keeping track of things until they are done or intentionally discarded.
+So while I'm still in "say yes to everything" mode: as recommended by both a
+former colleague and a PJC sponsor, I've continued my efforts to list life
+_on paper_ in bullet form. I'm giving it a trial run in Q1, but so far it has
+helped with productivity and keeping track of things until they are done or
+intentionally discarded.
 
 My handwriting leaves much to be desired.
 
@@ -500,7 +507,7 @@ insights in unexpected places.
 {% include gallery.html gallery=page.galleries.e %}
 
 - And to bookend the break, another car-camping overland roadtrip — this time
-  with friends, also soon to start new jobs — to New Mexico to ring in 2020.
+  with friends, also both soon to start new jobs — to New Mexico to ring in 2020.
 
 {% picture mini /blog/finding-next/very-shirt.jpg --alt "Me wearing a new team shirt from Very" %}
 
