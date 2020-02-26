@@ -23,9 +23,6 @@ galleries:
     - src: /blog/finding-next/201911-05.jpg
       alt: The Fountains at The Bellagio, Las Vegas, Nevada
       caption:
-    - src: /blog/finding-next/201911-06.jpg
-      alt: Rock climber
-      caption: Starting Monfi in Reimers Ranch
     - src: /blog/finding-next/201911-08.jpg
       alt: Me and Jen Dary
       caption: So Now You're A Manager Training
@@ -119,6 +116,9 @@ galleries:
     - src: /blog/finding-next/202001-62.jpg
       alt: Me, holding the old radiator and making a weird face
       caption:
+    - src: /blog/finding-next/201911-06.jpg
+      alt: Rock climber
+      caption: Starting Monfi in Reimers Ranch
   e:
     - src: /blog/finding-next/201912-34.jpg
       alt: Two people sitting around a campfire, vehicles in the background
