@@ -276,7 +276,7 @@ My observations hit on a lot of his takeaways, notably:
   cold-call applications led to a phone screen.
 - **Referrals were key to securing a phone screen,** but interviews were not
   guaranteed — and even with referrals, employers still ghosted.
-- A super-crowded market lead to impersonal touches.
+- A super-crowded market led to many impersonal touches.
 - I didn't have much success with recruiters either, though I did have a few
   conversations. Usually, the positions weren't a good fit or the recruiter
   withheld identifying details on their client but then failed to make a good
@@ -312,9 +312,9 @@ My additions:
 - **Interviewers loved hearing about curiosity, framed with storytelling,**
   around the answer to _"Why apply to this role?"_ or _"Why are you leaving your current role?"_.
   They responded best to stories that boiled down to
-  **"I can grow in this _opportunity_** and _here on this team._" Conversely,
-  trying to get ahead of a lay-off may be an honest answer but it is not a
-  sellable story. Both can be true.
+  **"I can grow in this _opportunity_** and _here on this team._ because..."
+  Conversely, trying to get ahead of a lay-off may be an honest answer but
+  it is not a sellable story. Both can be true.
 
 For anyone keeping score, my new job's flow was "Somebody knew somebody who
 offered to float my resume." And I owe a lot of my confidence going into the
