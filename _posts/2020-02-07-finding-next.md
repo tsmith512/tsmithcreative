@@ -312,7 +312,7 @@ My additions:
 - **Interviewers loved hearing about curiosity, framed with storytelling,**
   around the answer to _"Why apply to this role?"_ or _"Why are you leaving your current role?"_.
   They responded best to stories that boiled down to
-  **"I can grow in this _opportunity_** and _here on this team._ because..."
+  **"I can grow in this _opportunity_** and _here on this team_ because..."
   Conversely, trying to get ahead of a lay-off may be an honest answer but
   it is not a sellable story. Both can be true.
 
