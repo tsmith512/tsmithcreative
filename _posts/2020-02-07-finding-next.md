@@ -391,6 +391,8 @@ That said, these helped me find options to look into:
   local startups
 - [FlexJobs](https://www.flexjobs.com/) — remote opportunities everywhere, paid
   membership required
+- [Remotivo](https://remotivo.com/) — remote jobs in Product Design, UX, and
+  Product Management.
 - [Indeed](https://www.indeed.com/) and [LinkedIn](https://www.linkedin.com/)
   have the most listings by far but also the highest percentage of employers who
   don't follow-up one way or another.
