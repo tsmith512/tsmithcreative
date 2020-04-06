@@ -7,6 +7,14 @@ summary: >
 tags: [working remotely, development]
 ---
 
+{% update 2020-03 %}
+**With the recent WFH surge following COVID-19,** this old post has seen a lot
+of traffic. Thankfully, Zoom has added this option natively since I wrote this.
+Visit the Zoom applications's Preferences/Settings &rarr; Keyboard Shortcuts.
+From there, check the "Enable Global Shortcut" box and edit the assignment
+for "Mute/Unmute My Audio." Best wishes to you, your families, and your team.
+{% endupdate %}
+
 We love [Zoom](https://zoom.us) for videoconferencing, but it lacks a hotkey to
 mute _when Zoom isn't in focus._ Which is anytime you're sharing your screen or
 taking meeting notes, so... always. A hardware mute isn't as good because
