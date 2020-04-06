@@ -12,7 +12,11 @@ tags: [working remotely, development]
 of traffic. Thankfully, Zoom has added this option natively since I wrote this.
 Visit the Zoom applications's Preferences/Settings &rarr; Keyboard Shortcuts.
 From there, check the "Enable Global Shortcut" box and edit the assignment
-for "Mute/Unmute My Audio." Best wishes to you, your families, and your team.
+for "Mute/Unmute My Audio."
+
+Thanks to the comment from Tony for pointing this out to me.
+
+Best wishes to you, your families, and your team.
 {% endupdate %}
 
 We love [Zoom](https://zoom.us) for videoconferencing, but it lacks a hotkey to
