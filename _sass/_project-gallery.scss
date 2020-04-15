@@ -1,0 +1,35 @@
+/**
+* @file _project-gallery.scss
+* Photoswipe gallery display, largely ripped off from tsmithphotos.com
+*/
+.project-gallery {
+  @extend %clearfix;
+  margin: 2em -0.5em;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 0.5em;
+    float: left;
+
+    // For the gallery in a project header
+    width: 50%;
+    @include breakpoint(480px) { width: 33.3%; }
+    @include breakpoint(640px) { width: 25%; }
+    @include breakpoint(820px) { width: 20%; }
+  }
+
+  img {
+    display: block;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    transition: 0.2s ease-out box-shadow;
+
+    &:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+  }
+}

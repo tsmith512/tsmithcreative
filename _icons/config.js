@@ -25,6 +25,9 @@ module.exports = {
   // folder name (within dest) for png output
   pngfolder: "png",
 
+  // There's something about compressing PNGs that causes an error, see filamentgroup/gulpicon#11
+  compressPNG: false,
+
   // prefix for CSS classnames
   cssprefix: ".icon-",
 
@@ -48,31 +51,26 @@ module.exports = {
   // of the CSS. If you don't want a prefix path, set to to ""
   cssbasepath: "/gfx/icons",
   customselectors: {
-    "fpx-main": [".fpx"],
-    "fpx-blue": [".fpx:hover"],
-    "fpx-white": [".home .fpx:hover"],
-    "behance-main": [".behance"],
-    "behance-blue": [".behance:hover"],
-    "behance-white": [".home .behance:hover"],
     "drupal-main": [".drupal"],
-    "drupal-blue": [".drupal:hover"],
-    "drupal-white": [".home .drupal:hover"],
+    "drupal-blue": [".drupal:hover, .home .drupal:hover"],
+    "drupal-white": [".home .drupal"],
     "facebook-main": [".facebook"],
-    "facebook-blue": [".facebook:hover"],
-    "facebook-white": [".home .facebook:hover"],
+    "facebook-blue": [".facebook:hover, .home .facebook:hover"],
+    "facebook-white": [".home .facebook"],
     "github-main": [".github"],
-    "github-blue": [".github:hover"],
-    "github-white": [".home .github:hover"],
+    "github-blue": [".github:hover, .home .github:hover"],
+    "github-white": [".home .github"],
     "linkedin-main": [".linkedin"],
-    "linkedin-blue": [".linkedin:hover"],
-    "linkedin-white": [".home .linkedin:hover"],
+    "linkedin-blue": [".linkedin:hover, .home .linkedin:hover"],
+    "linkedin-white": [".home .linkedin"],
     "twitter-main": [".twitter"],
-    "twitter-blue": [".twitter:hover"],
-    "twitter-white": [".home .twitter:hover"],
+    "twitter-blue": [".twitter:hover, .home .twitter:hover"],
+    "twitter-white": [".home .twitter"],
+    "instagram-main": [".instagram"],
+    "instagram-blue": [".instagram:hover, .home .instagram:hover"],
+    "instagram-white": [".home .instagram"],
     "rss-main": [".rss"],
-    "rss-blue": [".rss:hover"],
-    "rss-white": [".home .rss:hover"],
-  },
-
-  compressPNG: true
+    "rss-blue": [".rss:hover, .home .rss:hover"],
+    "rss-white": [".home .rss"],
+  }
 };

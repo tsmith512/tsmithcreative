@@ -1,0 +1,149 @@
+$max-width: 960px;
+$max-lines: 680px;
+$gotham: "Gotham SSm A", "Gotham SSm B", "Century Gothic", Helvetica, Arial, sans-serif;
+$archer: "Archer SSm A", "Archer SSm B", Georgia, Times, serif;
+$tungsten: "Tungsten Narrow A", "Tungsten Narrow B", "Arial Narrow", Helvetica, Arial, sans-serif;
+
+.site-header {
+  background: transparent;
+  border: 0;
+
+  h1 {
+    width: auto;
+    position: static;
+    float: left;
+    margin: 0;
+    a {
+      padding: 0;
+      background-image: none;
+      opacity: 1;
+      span {
+        position: static;
+        clip: unset;
+        color: black !important;
+      }
+    }
+  }
+
+  nav {
+    float: right;
+    a {
+      border-top: 0;
+      padding: 1rem 0 0 0;
+    }
+    a:not(.active) {
+      display: none;
+    }
+    a.active {
+      color: black;
+      text-shadow: none !important;
+    }
+  }
+
+}
+
+.masthead {
+  background-image: none !important;
+  background-color: white !important;
+
+  &:after, .masthead-content {
+    box-shadow: none;
+  }
+
+  .masthead-content {
+    max-width: $max-lines;
+    max-width: calc(#{$max-lines} + 2rem);
+    margin: 2em auto 0;
+    padding: 1rem;
+    border-top: .25em solid #ddd;
+    border-bottom: .25em solid #ddd;
+  }
+
+  .post-meta {
+    dt {
+      display: none;
+    }
+
+    .tags {
+      &:before {
+        content: "Tagged: ";
+        display: inline;
+      }
+      ul {
+        display: inline;
+      }
+      li {
+        padding: 0 !important;
+        display: inline;
+        background: none;
+        &:after {
+          content: ", ";
+        }
+        &:last-child:after {
+          content: ".";
+        }
+      }
+    }
+  }
+
+  h1 {
+    margin: 0;
+    font-weight: lighter;
+
+    color: #222;
+
+    text-align: left !important;
+    font-size: 3rem !important;
+    line-height: 1.15;
+    letter-spacing: 1px;
+  }
+
+  .summary {
+    font-size: 1.25em;
+    color: #666;
+    text-align: left !important;
+  }
+
+}
+
+.media {
+  margin-left: -(($max-width - $max-lines) / 2);
+  margin-right: -(($max-width - $max-lines) / 2);
+
+  img {
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+#disqus_thread {
+  display: none !important;
+}
+
+footer {
+  overflow: hidden;
+  border-top: 0 !important;
+
+  .copy {
+    float: left;
+    text-align: left !important;
+  }
+
+  .links {
+    float: right;
+    text-align: right;
+    margin-top: 0 !important;
+
+    &:before { content: "www.tsmithcreative.com"; }
+
+    ul {
+      display: none;
+    }
+  }
+}
+
+abbr[title]:after {
+  content: " (" attr(title) ")";
+  font-style: italic;
+  font-size: 0.75rem;
+}

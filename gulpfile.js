@@ -32,6 +32,7 @@ const awspublish = require('gulp-awspublish');
 const awspublishRouter = require("gulp-awspublish-router");
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
+const del = require('del');
 const eslint = require('gulp-eslint');
 const fs = require('fs');
 const glob = require('glob');
@@ -58,7 +59,6 @@ gulp.task('sass', 'Compile Sass to CSS', () => {
   return gulp.src('./_sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
       cascade: false
     }))
     // Run CleanCSS, but mostly just for minification. Starting light here.
@@ -84,26 +84,48 @@ gulp.task('favicons', 'Copy favicons into position', () => {
 gulp.task('graphics-project-thumbnails', 'Rebuild gallery thumbnails for project images', () => {
   return gulp.src('_assets/projects/**/*.*')
     .pipe(resize({width: 200, height: 200, crop: true, upscale: false}))
-    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
     .pipe(gulp.dest('_site/gfx/thumbs/projects/'))
 });
 
 gulp.task('graphics-home-page', 'Derivatives of that home page background', () => {
   return gulp.src('./_gfx/home-background.jpg')
+    .pipe(resize({width: 2400, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/home/2400'))
     .pipe(resize({width: 1800, crop: false, upscale: false}))
-    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
     .pipe(gulp.dest('_site/gfx/home/1800'))
     .pipe(resize({width: 1600, crop: false, upscale: false}))
-    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
     .pipe(gulp.dest('_site/gfx/home/1600'))
     .pipe(resize({width: 1200, crop: false, upscale: false})) // is 899px
-    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
     .pipe(gulp.dest('_site/gfx/home/1200'))
 });
 
-gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'graphics-project-thumbnails', 'graphics-home-page', 'favicons'], () => {
+gulp.task('graphics-mastheads', 'Derivatives of masthead banner backgrounds', () => {
+  return gulp.src('./_gfx/masthead/*.jpg')
+    .pipe(resize({width: 1920, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/masthead/1920'))
+    .pipe(resize({width: 1600, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/masthead/1600'))
+    .pipe(resize({width: 1280, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/masthead/1280'))
+    .pipe(resize({width: 960, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/masthead/960'))
+    .pipe(resize({width: 720, crop: false, upscale: false}))
+    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(gulp.dest('_site/gfx/masthead/720'))
+});
+
+gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'graphics-project-thumbnails', 'graphics-home-page', 'graphics-mastheads', 'favicons'], () => {
   return gulp.src(['./_gfx/**/*.*', '!./_gfx/home-background.jpg'])
-  .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+  .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
   .pipe(gulp.dest('./_site/gfx/'));
 });
 
@@ -146,20 +168,30 @@ gulp.task('js', 'JS/Photoswipe aggregation/minify, custom JS linting', ['js-phot
 
 gulp.task('assets', 'Copy and compress if possible all project/post assets', () => {
   return gulp.src(['./_assets/**/*.*'])
-  .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+  .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
   .pipe(gulp.dest('./_site/assets/'));
 });
 
 gulp.task('jekyll', 'Run jekyll build', (cb) => {
   const spawn = require('child_process').spawn;
-  const jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'});
+  const jekyll = spawn('bundle', ['exec', 'jekyll', 'build', '--trace'], {stdio: 'inherit'});
   jekyll.on('exit', (code) => {
     cb(code === 0 ? null : 'ERROR: Jekyll process exited with code: ' + code);
   });
 });
 
-gulp.task('build', 'Run all site-generating tasks: sass, js, graphics, icons, htaccess then jekyll', (cb) => {
-  runSequence(['sass', 'graphics', 'icons', 'js'], 'jekyll', cb);
+gulp.task('clean', 'Wipe the site root directory', () => {
+  return del([
+    '_site/**/*'
+  ]);
+})
+
+gulp.task('build', 'Run all site-generating tasks: assets, [sass, js, graphics, icons], then jekyll', (cb) => {
+  runSequence('assets', ['sass', 'graphics', 'icons', 'js'], 'jekyll', cb);
+});
+
+gulp.task('build-clean', 'Wipe the site root and rebuild', (cb) => {
+  runSequence('clean', 'build', cb);
 });
 
 gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
@@ -168,7 +200,7 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
   var publisher = awspublish.create({
     region: 'us-west-1',
     params: {
-      Bucket: 'tsmithcreative'
+      Bucket: 'tsmith.com'
     },
   });
 
@@ -287,11 +319,11 @@ gulp.task('publish-staging-s3', 'Sync the site to S3 staging bucket', (cb) => {
 });
 
 gulp.task('publish', 'Build the site and publish to S3', (cb) => {
-  runSequence(['assets', 'build'], 'publish-s3', cb);
+  runSequence('build', 'publish-s3', cb);
 });
 
 gulp.task('publish-staging', 'Build the site and publish to S3', (cb) => {
-  runSequence(['assets', 'build'], 'publish-staging-s3', cb);
+  runSequence('build', 'publish-staging-s3', cb);
 });
 
 /*

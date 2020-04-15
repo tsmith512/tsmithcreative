@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-       - image: circleci/ruby:2.3.4
+       - image: circleci/ruby:2.6.5-stretch
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -31,10 +31,10 @@ jobs:
             bundle install --jobs=4 --retry=3 --path vendor/bundle
 
       - run:
-          name: Install GraphicsMagick
+          name: Install ImageMagick and output format handlers
           command: |
             sudo apt-get update
-            sudo apt-get install graphicsmagick --force-yes
+            sudo apt-get install imagemagick graphicsmagick libpng-dev libwebp-dev webp --force-yes
 
       - run:
           name: Install Node/project dependencies

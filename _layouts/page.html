@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
-{% assign masthead = "assets/masthead/" | append: page.slug | append: ".jpg" %}
-<div {{ masthead | masthead_image_style }}>
-  <div class="wrapper">
+<div class="masthead masthead-{{ page.layout }}">
+  <div class="masthead-content">
     <h1>{{ page.title }}</h1>
+    {% if page.summary %}
+      <p class="summary">{{ page.summary }}</p>
+    {% endif %}
   </div>
 </div>
 

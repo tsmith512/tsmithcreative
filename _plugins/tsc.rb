@@ -11,20 +11,8 @@ module Jekyll
           |contents| '<div class="media-n-up">' + contents.gsub(/(<img[^>]+>)/, '<div>\1</div>') + '</div>'
         }
         .gsub(/<p>(<img[^>]+>)<\/p>/, '<p class="media">\1</p>')
-    end
-  end
-
-  # Determine if there is a masthead image for a particular slug or not, and
-  # output classes and/or a CSS background override for div.masthead.
-  module MastheadGenerate
-    def masthead_image_style(input)
-      if (File.exist?("_#{input}"))
-        # `input` doesn't have a leading slash so that Ruby can find this file
-        # in the working directory.
-        "class='masthead masthead-override' style='background-image: url(\"/#{input}\");'"
-      else
-        "class='masthead masthead-default'"
-      end
+        .gsub(/<p>(<a class=\"media-link\"[^>]+>.+?)<\/a>/, '<p class="media">\1</a></p>')
+        .gsub(/^<picture>(.+?)<\/picture>/, '<div class="media"><picture>\1</picture></div>')
     end
   end
 
@@ -116,7 +104,6 @@ module Jekyll
 end
 
 Liquid::Template.register_filter(Jekyll::MediaWrapper)
-Liquid::Template.register_filter(Jekyll::MastheadGenerate)
 Liquid::Template.register_filter(Jekyll::ThumbnailGenerate)
 Liquid::Template.register_filter(Jekyll::SeparateHorizRules)
 Liquid::Template.register_tag("update", Jekyll::UpdateBlock)

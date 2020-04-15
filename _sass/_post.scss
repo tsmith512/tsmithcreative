@@ -6,10 +6,8 @@
   max-width: $max-lines;
   margin: 0 auto;
 
-  .summary {
-    font-family: $gotham;
-    font-size: 1.25em;
-    color: #666;
+  li {
+    margin-bottom: 1em;
   }
 
   .update {

@@ -7,6 +7,12 @@ summary: >
 tags: [development, aws, design, writing, photography]
 ---
 
+{% update 2019-03 %}
+I've swapped out Tumblr for WordPress to build this site, and it has been
+rebranded as _Route Not Found_ from travelogue.
+{% endupdate %}
+
+
 _From [the Travelogue][31DAYS]:_
 
 > A while back, two friends from Tulsa introduced me to a little BBC television
@@ -29,7 +35,8 @@ me time to up my blogging game.
 
 ## Under the Hood
 
-![Diagram of the Applications][DIAGRAM]
+{% picture mini /blog/building-travelogue/diagram.png --alt Diagram of the application --img class="noshadow" %}
+
 
 This is perhaps a more complex amalgamation of services than it could have been,
 but I've tried to separate concerns as much as possible.
@@ -78,7 +85,7 @@ Array
 
     [streetNumber] => 1
     [streetName] => South Boston Avenue
-    [cityDistrict] => 
+    [cityDistrict] =>
     [city] => Tulsa
     [zipcode] => 74103
     [county] => Tulsa County
@@ -87,7 +94,7 @@ Array
     [regionCode] => OK
     [country] => United States
     [countryCode] => US
-    [timezone] => 
+    [timezone] =>
 )
 ```
 
@@ -189,33 +196,30 @@ single images and videos.
 
 ### [Tumblr][TUMBLR]
 
-At its heart, the frontend is just a Tumblr blog. I picked Tumblr because it has
-a good mobile editing experience, an even better desktop editing experience,
-handles photos and video gracefully, and supports fully customized themes.
+At its heart, the frontend is just a <del>Tumblr</del> _WordPress_ blog. I
+_[originally]_ picked Tumblr because _[I thought]_ it has a good mobile editing
+experience, an even better desktop editing experience, handles photos and video
+gracefully, and supports fully customized themes.
 
-{% update 2017-06 %}
-I partially rescind this recommendation. Tumblr's Android application and
-desktop interface are both quite buggy, especially on slow internet connections
-we had in remote places. Despite usable connections for Instagram, Facebook, and
-other media-upload capable sites/applications, Tumblr uploads consistently
-failed. And the mobile app's failure response is to indicate that it will try
-again "later" automatically, but at an unknown interval, _once._ A subsequent
-failure ends with an attempted-humorous but useless error message like,
-"Something annoying happened. Try again later." There is no way to see, change,
-or clear the failure retry queue; the best way to force a retry is to make a
-blank text post which causes both to be attempted immediately, then delete the
-blank post.
+{% update 2017-06 and 2019-03 %}
+2017: I <del>partially</del> _entirely_ rescind this recommendation. Tumblr's
+Android application and desktop interface are both quite buggy, especially on
+slow internet connections we had in remote places. Despite usable connections
+for Instagram, Facebook, and other media-upload capable sites/applications,
+Tumblr uploads _consistently_ failed. And the mobile app's failure response is
+to indicate that it will try again "later" automatically, but at an unknown
+interval, _once._ A subsequent failure ends with a humorous but useless error
+message like, "Something annoying happened. Try again later." There is no way to
+see, change, or clear the failure retry queue; the best way to force a retry is
+to make a blank text post which causes both to be attempted immediately, then
+delete the blank post.
 
-Further, while the post date and time can be altered on the web, they can't be
-changed on the mobile app, and delayed uploads on mobile will be timestamped for
-the submission time, not the capture/writing time, so matching up post times
-with location timestamps was inconsistent until I could get my laptop to wifi to
-fix them.
-
-During the trip, I ditched Tumblr's video service altogether for a superior
-experience with Vimeo. At least Tumblr handled Vimeo embeds pretty well.
-
-That said, I haven't found a better alternative yet, but I'll be looking.
+2019: I've dusted off my old WordPress chops and moved the Travelogue over to a
+self-hosted WordPress install. I used to build WordPress sites almost
+exclusively at the agency from 2010-2013 and haven't messed with it much since.
+It's grown up a lot, and while it's still rough around some edges, what you can
+build with very little effort is staggaring. I should write about the WordPress
+rebuild one day.
 {% endupdate %}
 
 ![Tumblr Dashboard][TDASH]
@@ -228,7 +232,7 @@ funniest part of all this is the banter), and the occasional video (because some
 things have to be seen to be believed). Each post has a "Show on Map" link which
 re-centers the map view to where we were when I made the post.
 
-![The Frontend][SITE]
+{% picture /blog/building-travelogue/final.png --alt The site frontend --img class="noshadow" %}
 
 **Tumblr's job:** Tie all the pieces together into the frontend experience.
 
@@ -252,12 +256,11 @@ _(Yes, this is where my Favicon came from.)_
 {% update 2017-06 %}
 We lived. ;-)
 
-![Grand Canyon](/assets/blog/building-travelogue/grand-canyon.jpg)
+{% picture /blog/building-travelogue/grand-canyon.jpg --alt Grand Canyon %}
 {% endupdate %}
 
 
-[31DAYS]: http://travelogue.news/post/125199590921/thirty-one-days
-[DIAGRAM]: /assets/blog/building-travelogue/diagram-noshadow.png
+[31DAYS]: https://www.routenotfound.com/2015/07/27/thirty-one-days/
 [TRACKER]: https://github.com/tsmith512/location-tracker
 [TRACKERUI]: /assets/blog/building-travelogue/location-history.png
 [ORIGINAL]: https://github.com/tsmith512/location-tracker/commit/26fbff80d704be926d8fe999809f439ccb163708
@@ -285,10 +288,9 @@ We lived. ;-)
 [TUMBLR]: https://www.tumblr.com/about
 [TDASH]: /assets/blog/building-travelogue/tumblr-dash.png
 [TTHEME]: https://github.com/tsmith512/travelogue-tumblr
-[SITE]: /assets/blog/building-travelogue/final-noshadow.png
 [4K]: https://www.fourkitchens.com/
 [TASKERTASK]: https://github.com/tsmith512/location-tracker/blob/master/tasker/task.xml
 [TASKER]: http://tasker.dinglisch.net/
 [TAPP]: https://play.google.com/store/apps/details?id=com.tumblr&hl=en
-[TL]: http://travelogue.news/
+[TL]: https://www.routenotfound.com/
 [ONP]: /assets/blog/building-travelogue/olympic-national-park.jpg
