@@ -71,10 +71,8 @@ pre.highlight {
   overflow-x: auto;
   font-size: 0.825em;
 
-  @include breakpoint($max-width + 16) {
-    li & {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
+  background: #FCFCFC;
+  border: 1px solid #EEE;
+  border-radius: 4px;
+  padding: 0.5em;
 }
