@@ -1,27 +1,22 @@
 ---
-title: "React Native: from \"Hello World\" to Torture Device in 2 weeks"
+title: "React Native: from \"Hello World\" to Noisy Coach in Two Weeks"
 summary: >
-  With a new job comes a needed familiarity with new technologies and tools.
-  For my first experiment with React Native, I made a simple interval timer for
-  climbing hangboard sets to keep me busy during the plague.
+  With a new job comes a needed familiarity with new tools. For my first
+  experiment with React Native, I made a simple interval timer for hangboard
+  sets to get stronger, in tech and in tendons, during the plague.
 tags: [development, fitness, mobile]
 ---
 
-I just hit [my first 90 days at Very]({% post_url 2020-02-07-finding-next %}).
-Having moved from primarily a web development shop to a new team that is much
-more focused on apps, devices, and infrastructure, I want to learn the basics
-for the stacks we use so I can continue to make strategic product
-recommendations. I don't need to reach "production engineer" level, nor do I
-intend to commit code on my client builds, but I want to begin building my
-familiarity with these new-to-me ecosystems.
+[Having recently moved]({% post_url 2020-02-07-finding-next %}) from a web shop
+to a new team that is much more focused on apps and devices, I want to
+familiarize myself with the tech we use so I can continue to make strategic
+product recommendations.
 
-So I set a goal: zero-to-stores with something simple. But what?
+So I set a goal: zero-to-app-stores with something simple. But what?
 
-Well, it's not a revolutionary idea or something that doesn't already exist, but
-I decided to make an interval timer for sets on my climbing hangboard.
-Regardless of what other apps exist, the fitness app I am already using does
-_not_ do these well. So I thought I'd make something to cover the gap because
-the need is simple and it would be something I'd use daily.
+Well, it's not revolutionary, but I decided to make an interval timer for sets
+on my climbing hangboard. Regardless of other apps that may be available, the
+fitness app I already use does _not_ do these well.
 
 {% picture /blog/hello-hangboard/hang.jpg --alt "Me, struggling." %}
 
@@ -31,29 +26,26 @@ think it goes without saying that we're not telling my landlord about this._
 
 # Actual Product Requirements:
 
-- Conveniently run on _a_ mobile device I own (thanks to software testing and
-  roadtrip planning devices, that's actually a broad range of stuff)
+- Conveniently run on _a_ mobile device I own
 - Audio and visual cues to progress through a circuit
 - Able to handle the weird nested patterns of sets I'm seeing, like:
 
 {% picture mini /blog/hello-hangboard/routine.jpg --alt "Handwritten workout with weird pattern" %}
 
-_Most workout/interval timers I've seen are "on" vs "rest" timers that repeat in somewhat irregular or nested patterns which were hard to set timers for or count off correctly in my head._
+_Unlike common "work" vs "rest" timers that repeat, these sets have weird patterns that are hard to set timers for or count off in my head._
 
 ## Professional Development <del>Requirements</del> Goals
 
-- Mobile _app,_ built on a common stack and something Very is currently using
-- Cross-platform (iOS and Android)
-- Built with technology I have enough familiarity with that I can learn
-  something new while also making some measurable progress quickly.
+- Mobile _app,_ built on a common stack and something
+  [Very](https://www.verypossible.com) is currently using
+- Cross-platform
 
-I opted for **[React Native](https://reactnative.dev/).** I haven't used
-React on the web (yet) but it's a hugely popular framework so building
-familiarity with it would be useful. Also, we've increasingly seen clients opt
-for React Native over platform-specific codebases. For many applications,
-maintaining one central JS codebase that leverages open source native components
-is both easier to hire for and less expensive to maintain than entirely
-disparate codebases for different mobile platforms.
+Already knowing some JavaScript, I opted for **[React Native](https://reactnative.dev/).**
+I haven't used React on the web (yet) but it's hugely popular so learning it
+will be useful. Also, we've increasingly seen clients opt for React Native over
+platform-specific codebases. For many applications, maintaining one central JS
+codebase that leverages bindings to native libraries and elements is both easier
+to hire for and less expensive to maintain than entirely disparate codebases.
 
 # Getting Started and Expo
 
@@ -62,10 +54,9 @@ The first page of React Native's
 tutorial directs new developers to [Expo](http://expo.io/) for a quick start.
 
 Expo offers a ready-to-use bundling of tools and services with a baseline set of
-packages/components to get started quickly. It also means you don't need to
-fiddle with Android Studio and Xcode to get started. Expo's local scripts or its
-SaaS platform handle all the bundling and building. This was the perfect setup
-for the "Hello World phase" of the project.
+packages/components. Its local scripts and its SaaS platform handle all the
+bundling and building; no Android Studio or Xcode. Perfect for the "Hello World
+phase."
 
 ``` js
 {% raw %}// DO NOT COPY THIS! This is learning scratchwork, not best practices patterns.
@@ -87,15 +78,24 @@ export default class HelloHangboard extends Component {
 }{% endraw %}
 ```
 
-**Observations on component building:** As an industry, we spent the early
-aughts highlighting the wisdom of separating concerns into separate files: HTML
-for content, CSS for appearance, and JS for interactive function. Bringing CSS
-into JS (and the _multitude_ of _competing_ practices for doing so) and using
-JSX templating for HTML/Content-in-JS both are super outside my comfort zone,
-but I will learn. And I admit: this isn't webpage building! This is interactive
-application scaffolding, so I can see the argument for the consolidation of "UI,
-appearance, function" and separation of _feature_ being more sustainable. An
-immediate plus, though: UI layout with Flexbox is a pretty awesome idea.
+**Observations on Expo:** Expo offers _so much_ "for free." It's also upfront
+about the [limitations](https://docs.expo.io/versions/latest/introduction/why-not-expo/).
+This was a fantastic way to start, limiting the number of new things I had to
+learn _simultaneously._ (Limit the <abbr title="Work In Progress">WIP</abbr>,
+yo!) But I started running into trouble with sounds. Also, compiled binaries,
+which came from Expo's SaaS platform, were _large._
+
+**Observations on component building:** As an industry, we spent a long time
+highlighting the wisdom of separating concerns into separate files: HTML for
+content, CSS for appearance, and JS for interactive function. Bringing CSS into
+JS (and the _multitude_ of _conflicting_ practices for doing so) and using JSX
+templating for HTML/Content-in-JS both felt very odd, but I will learn. And I
+get it now: that was (and still is, to a certain extent) for _webpage_ building,
+which this _isn't_ &mdash; this is application scaffolding. So I can see the
+argument for a consolidation of "UI, appearance, behavior" and opting for
+separation of _feature_ as more sustainable. Hell, that's how I write a backlog.
+
+An immediate plus, though: UI layout with Flexbox is pretty fantastic.
 
 ``` js
 {% raw %}// DO NOT COPY THIS! This is learning scratchwork, not best practices patterns.
@@ -174,61 +174,46 @@ const aboutStyles = StyleSheet.create({
     marginTop: 8,
     marginBottom: 8,
   },
-  [...]
+  // [...]
 };{% endraw %}
 ```
 
-**Observations on Expo:** Expo offers _so much_ "for free." And it's upfront
-about the
-[limitations](https://docs.expo.io/versions/latest/introduction/why-not-expo/)
-of the toolchain. This was a fantastic way to start. It also limited the number
-of new things I had to learn _simultaneously._ (Limit the
-<abbr title="Work In Progress">WIP</abbr>, yo.) But when I got around to
-notification sounds, I had trouble with the audio support in
-[Expo AV](https://docs.expo.io/versions/latest/sdk/av/). Also, my compiled
-release binaries (which come from Expo's SaaS platform) were _huge._
-
-# Leaving Expo
+## Leaving Expo
 
 I "ejected" my app from Expo for a few reasons:
 
-- iOS didn't seem to want to rapidly re-use Expo AV `Audio` objects, though it
-  worked fine on Android.
-- Expo bundles a bunch of packages, components, SDKs, and permissions that I
-  wasn't using. I wanted to see what a slimmer project would look like.
-- I wanted to manage iOS and Android builds myself to learn those toolsets.
-- I wanted to be able to produce iOS and Android builds using our CI/CD provider.
-- I could still use Expo packages (Icons and Keep Awake) as part of a "bare
-  workflow" (React Native without Expo) project.
+- iOS wouldn't rapidly seek/replay [Expo AV](https://docs.expo.io/versions/latest/sdk/av/)
+  `Audio` objects, even though it worked fine on Android.
+- Expo includes a bloat that I _wasn't_ using.
+- I wanted to manage iOS and Android builds myself to learn how, then
+  involve our CI/CD provider.
+- I could still use Expo packages as part of a
+  "<abbr title="React Native without Expo">bare workflow</abbr>" project.
 
 [Running `expo eject`](https://docs.expo.io/versions/latest/bare/customizing/)
-to get to the "bare workflow" is actually quite simple. Expo's scripts generate
-the `android` and `ios` folders with build scripts and configuration for the two
-projects.
+was straightforward. Expo's scripts generate the `android` and `ios` folders
+and set them both up with build scripts and config.
 
 **Observations:**
 
 - Expo Eject left in React Native Unimodules, which accounts for a lot of the
-  bloat. Removing it requires editing platform native code, so I'm marching
-  toward a 1.0 with Unimodules still included.
+  bloat. Removing it will require editing platform-specific code, though.
 - Eject did not produce a good `.gitignore` for the platform-specific builds, so
   I ended up with a few things in version control that I have since learned
-  should be downloaded or generated by package managers and build scrips.
+  should be downloaded or generated.
 
 # Development Environments
 
-All my web development in the past has been done on Linux. I wanted to give
-Windows development a shot, especially since it is easier to connect my phone to
-my PC than a Linux VM/container.
+Normally, I build on Linux. I wanted to give Windows development a shot since it
+is easier to connect my phone to my PC than a Linux VM/container.
 
 {% picture /blog/hello-hangboard/win-dev-env.png --alt "Windows / Android Studio Environment" %}
 
-React Native's [documentation](https://reactnative.dev/docs/environment-setup)
-is pretty good. I got Android development working on my Windows box and iOS
-_and_ Android development working on my Very Macbook quickly.
+React Native's [environment](https://reactnative.dev/docs/environment-setup)
+docs are great. I got Windows (for Android) and macOS (for iOS _and_ Android)
+set up quickly.
 
 {% picture /blog/hello-hangboard/mac-double-dev-env.png --alt "macOS / Xcode/iOS and Android Studio Environment" %}
-
 
 **Observations:**
 
@@ -242,33 +227,30 @@ _Windows Stuff:_
 - Microsoft's tutorial
   ["Set up your Node.js development environment directly on Windows"](https://docs.microsoft.com/en-us/windows/nodejs/setup-on-windows)
   made this really easy.
-- [Git](https://git-scm.com/) for Windows _(as in the canonical git package, not
-  a wrapper app like GitHub Desktop or SourceTree)_ is in a **much** better
-  place than last I checked.
-  - However, it provides &mdash; what I think &mdash; is poor help text and
-    default around config `core.autocrlf`. The recommended default value is
-    `true` which would set CRLF line endings on all text files _on checkout_ and
-    always commit LF endings into the repo. I have always written source files
-    with LF endings only, even on Windows, and want to keep it that way. Setting
-    the value to `input` will leave files as-is in the working tree. Files
-    checked-in to the repo will commit with LF endings, and new files checked
-    out will come out as they're committed.
+- [Git](https://git-scm.com/) for Windows _(as in the canonical git package,)_
+  is in a **much** better place since last I checked.
+  - **However,** it provides &mdash; what I think &mdash; is poor help text and
+    default for config
+    [`core.autocrlf`](https://help.github.com/en/github/using-git/configuring-git-to-handle-line-endings).
+    The default value is `true`, which sets `CRLF` (OS-native) line endings on
+    all text files _on checkout_ and always _commits_ `LF` endings into the
+    repo. I have always written source files with `LF` endings only, even on
+    Windows. Setting that config to `input` will leave files as-is in the
+    working tree. Files will commit with `LF` endings, and new files checked out
+    will come out as they're committed.
 - [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows)
-  works very well, but it does not appear to read `.nvmrc` files correctly.
-- On Windows, all of this works better in PowerShell than in Command prompt or
+  works well, but it does not appear to read `.nvmrc` files correctly?
+- On Windows, all of this works better in PowerShell than Command prompt or
   [Cygwin Bash](https://www.cygwin.com/). I am not currently using
   [WSL](https://docs.microsoft.com/en-us/windows/wsl/wsl2-about).
-
-_Both:_
-
 - I had to edit the environment variable config for Android Studio.
-  Specifically, the `PATH` additions for Windows weren't quite right in React
-  Native's environment tutorials. Watch where Android Studio installs itself,
-  its SDKs, and the Platform Tools  and double-check the `PATH` additions.
+  Specifically, the `PATH` additions for Windows weren't right in React Native's
+  environment tutorials. Watch where Android Studio installs itself, its SDKs,
+  and the Platform Tools.
 
 {% picture mini /blog/hello-hangboard/win-env-var.png --alt "Windows environment variables" %}
 
-_On Windows, Android Studio installed itself **and the Android SDKs/tools** in `%LOCALAPPADATA%` instead of the drive root._
+_On Windows, Android Studio installed itself **and the Android SDKs/tools** in `%LOCALAPPADATA%`, not the drive root._
 
 ``` bash
 [tsmith@macbook][~/Documents/repos/HelloHangboard] →  cat ~/.bash_profile | tail -n 5
@@ -279,21 +261,18 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 
-_On Mac, Android Studio is in my local user's Library &mdash; which is consistent with RN's docs._
+_On Mac, Android Studio is in my local user's Library &mdash; consistent with RN's docs._
 
 # Building Release Packages
 
-My next priority was getting both release and debug packages working with
-Android Studio on Windows (personal devices), followed by release and debug
-packages working on Xcode and macOS (work devices). That wasn't too bad.
-
-Initially, I wasn't sure the names for "app version that wants to connect to the
-JS bundler service" (`debug`) versus "app version that is packaged and ready to
-use on your phone now" (`release`).
+Next, building installable packages. That wasn't bad. Initially, I wasn't sure
+the names for "app version that wants to connect to the JS bundler service"
+(`debug`) versus "app version that is packaged and ready to use on your phone
+now" (`release`).
 
 The ["Running on Device"](https://reactnative.dev/docs/running-on-device)
 tutorial explains how to build both, but there are enough foundational steps
-explained that it feels more clear now in retrospect having done it a few times.
+explained concurrently that it feels clearer in retrospect having done it.
 
 
 _**iOS:**_
@@ -320,9 +299,9 @@ PS C:\Users\tsmith\HelloHangboard\android> .\gradlew assembleRelease
 
 I ran into a conflict between React Native 0.61.4 and Android's SDK 29. The
 connection from the debug release back to the Metro JS bundler is insecure,
-which the upgraded Android SDK disallows by default.
-[Tom from Stack Overflow](https://stackoverflow.com/a/56808180) to the rescue
-with a Manifest to disable this restriction for debug builds, which fixed it.
+which the upgraded Android SDK disallows by default. This broke `debug` builds
+on both platforms. [Tom at Stack Overflow](https://stackoverflow.com/a/56808180)
+offered a Manifest to disable this for `debug` builds only, which fixed it.
 
 ``` xml
 <!-- HelloHangboard/android/app/src/debug/AndroidManifest.xml -->
@@ -335,24 +314,28 @@ with a Manifest to disable this restriction for debug builds, which fixed it.
 </manifest>
 ```
 
-{% picture mini /blog/hello-hangboard/pair.jpg --alt "iPhone X and Pixel 2 side-by-side" %}
+{% picture /blog/hello-hangboard/pair.jpg --alt "iPhone X and Pixel 2 side-by-side" %}
 
-_There it is._
+_And there it is!_
 
-# Building with Bitrise
+## Building with CI/CD
 
-Once that was set, I wanted to get Bitrise, one of our preferred CI/CD platforms
-for apps, building cross-platform builds on commits to master.
+Next, I wanted to get [Bitrise](https://www.bitrise.io/), one of our CI/CD
+platforms, building cross-platform for commits to `master`.
 
-That was fairly straightforward except for two pieces:
+That was fairly straightforward except for code signing, which caused issues
+building locally, too, but quickly became a showstopper:
 
 - Code Signing for Android is a moderate annoyance, but producing and using a
   key locally is well documented, and all you have to do is just keep using it.
+  Uploading that key to Bitrise was easy, but I had to add the signing step to
+  the workflow.
 - Code Signing for iOS is (currently, to me) profoundly difficult to untangle
-  _in you run into a problem._ Xcode seems to imply that it can all be done
+  _if you run into a problem._ Xcode seems to imply that it can all be done
   within the application, but no cert I provisioned within Xcode's Preferences
   would work with Very's Team (nor my "Personal Team" either). And once I got it
-  on Bitrise, I started having Provisioning Profile problems on top of that.
+  on Bitrise, I started having Provisioning Profile problems on top of that. All
+  despite supposed options for these things to be handled automatically.
 
 ![This made me angry.](/assets/blog/hello-hangboard/mad-at-my-computer.gif)
 
@@ -373,9 +356,7 @@ When I threw it all out and started over outside Xcode, it worked fine, first tr
 
 Clearly, iOS Code Signing is the part of this I had the most trouble with, and
 need to study more about. I _felt_ like it should be simple and that I knew what
-was going on &mdash; it just kept not working. And the answer was always "your
-cert and your development team don't match" or "your development team isn't
-allowed to build under this provisioning profile," even though all the IDs
+was going on &mdash; it just kept not working, even though all the IDs
 matched every time.
 
 {% picture /blog/hello-hangboard/bitrise-workflows.png --alt "Side by side workflows in Bitrise" %}
@@ -389,15 +370,16 @@ separate workflows for iOS and Android, I have these basic steps:
 4. Install either Android components/modules and iOS CocoaPods
 5. Override/increment the project version and build code based on the Bitrise build number
 6. Build
-7. Sign
+7. (Android) Sign, which happens post-compile, with the key I made locally.
 8. Save binaries to Bitrise and my S3 backup bucket
 9. Upload directly to App Store Connect and Google Play Console
 
 {% picture mini /blog/hello-hangboard/bitrise-log.png --alt "Bitrise build log" %}
 
-Thanks to the GitHub webhook and Bitrise workflow triggers, any commit on
-`master` will run a third "Workflow" I made called `combo`. That runs the
-`ios` and `android` workflows sequentially to produce both builds.
+With workflow triggers, any commit on `master` will run `ios` and `android`
+workflows sequentially. Once uploaded, they can be easily released to testers.
+
+Or so I thought.
 
 # App Store Connect and Google Play Console
 
@@ -426,11 +408,10 @@ But I can't get a link or an email invite to share, nor can I even get it
 installed on my own device registered with this account. Thankfully side-loading
 apps in Android is easy, so I've just done that and moved on with life.
 
-_Certainly,_ I understand delays and slower processing from any business in this
-time, but I put my first release into Google Play's internal and alpha tracks
-over a week ago and _I'm happy to wait._ However, what is not obvious is from
-this console or any help documentation if _they are waiting on me,_ or
-_I am waiting_ on something from them. And
+_Certainly,_ I understand slower processing from any business in this time, but
+it has been well over a week. _I am happy to wait!_ However, what is _not_
+obvious from this console or any help docs is: _are they waiting on me?_
+Or _I am waiting_ on something from them? And
 [this](https://stackoverflow.com/questions/48256603/where-is-the-opt-in-url)
 [isn't](https://forum.unity.com/threads/i-cant-seem-to-access-my-google-play-alpha-release.507570/)
 [an uncommon](https://www.reddit.com/r/androiddev/comments/9ufgek/why_is_googles_alphabeta_apk_distribution_so_bad/)
@@ -439,7 +420,7 @@ outside "coronatime" either.
 
 {% picture mini /blog/hello-hangboard/play-problem.png --alt "This feels like conflicting language" %}
 
-_This screenshot, from StackOverflow, is what I see too. It feels like conflicting language: Released, full roll-out. No link or email invites until you publish. Which you thought you already did._
+_This screenshot, from StackOverflow, is what I see too. It feels like conflicting language: "Released, full roll-out" versus "No link or email invites until you publish."_
 
 Community responses vary between "it's just a matter of time, you have to wait"
 to "click X magic button in Y console page," but none of Google's official
@@ -447,12 +428,14 @@ documentation clarify how one should resolve what feels like a stall.
 
 # Recap and Roadmap
 
+That was fun. Having little to do most evenings made it happen faster...
+
 **What I've built meets my MVP objectives for:**
 
 - Usable interval timer for the hangboard for me and friends with iPhones
   _(Android friends coming soon, I guess)._
 - First React Native exposure, introduction to how it works, how it builds, and
-  the nature of its cross-platform abilities.
+  an intro to the nature of its cross-platform abilities.
 - First Play Console and App Store Connect process exposure so I can help guide
   clients through this part of the process.
 
@@ -461,28 +444,29 @@ documentation clarify how one should resolve what feels like a stall.
 {% picture mini /blog/hello-hangboard/vanilla-sky.jpg --alt "Me" %}
 
 - _Being able to climb outside again&hellip;_
-- This desperately needs a code review. There are competing examples for how to
-  write ES6 generally and React-specific patterns.
+- This _desperately_ needs a code review. There are competing examples for how
+  to write ES6 generally and React-specific patterns, even within React Native
+  and Expo's tutorials. And even with what I already know, I could start to
+  unify it.
 - After "is it structured to best practices," then "is it written properly?"
-  Lint this code! It compiles but I know but it ain't pretty.
-- Learn more about classes vs functional exports, and why object-oriented
-  class structures seem to have fallen out of style within the JS community.
+  I need to add linting. It compiles but I know but it ain't pretty.
+- Learn more about classes vs functional exports, and why object-oriented class
+  structures seem to have fallen out of style within the JS community just in
+  time for me to start using them.
 - A more sustainable way to handle CSS-in-JS than per-component `StyleSheet`
   objects with no shared attributes.
-- More circuits &mdash; I can't imagine releasing this app publicly in its
-  limited form.
-- The visual design needs _help._
+- More circuits and resources &mdash; I couldn't imagine releasing this app
+  publicly in its limited form.
+- The visual design <del>is super utilitarian</del> needs _help._
 
 React Native did get me from "I wonder what it would be like to build a mobile
 app" to having a compiled app running on both major platforms on physical
-devices in my hands in record time. One day, I'd like to dig more into
-platform-specific native languages and practices, but I can definitely see why
-this approach has gained traction so quickly when it's well-suited. The
-intimidating part was the huge number of moving pieces through many levels of
-abstraction, but the community is active and documentation is evolving quickly
-to help with that.
+devices in my hands in record time. I can definitely see why this approach has
+gained traction so quickly when it's well-suited. The intimidating part was the
+number of moving pieces through many levels of abstraction, but the community is
+active and documentation is evolving quickly to help with that.
 
-In the meantime, I've got my torture device hanging over the stairs and two
-phones to holler at me to use it every day. That might be as far as I get for a
-while. Stay healthy, friends. We'll be back outside together one day, and I'm
-looking forward to it.
+Meanwhile, I've got my sadistic strength trainer hanging over the stairs and two
+phones to holler at me to use it every day. That might be it for a while.
+
+Stay healthy, folks. We'll be back together one day. I'm looking forward to it.
