@@ -119,3 +119,15 @@ abbr[title] {
   border-bottom: 1px dashed black;
   text-decoration: none;
 }
+
+code, kbd, samp, pre {
+  font-family: Consolas, Menlo, monospace;
+}
+
+p, li {
+  // For inline code (just individual words/names/commands in `backticks`),
+  // shrink it slightly so it lines up better with the copy.
+  code {
+    font-size: .875em;
+  }
+}
