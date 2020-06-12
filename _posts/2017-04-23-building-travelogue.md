@@ -125,8 +125,10 @@ on isn't very powerful.
 requests which are passed to a [Lambda function][AL] I wrote to
 [fetch data from the backend application and anonymize it][LAMBDA].
 
-- Only the endpoints used by the blog are whitelisted: a list of trips, trip
-  details including the actual route, and the latest location
+- Only the endpoints used by the blog are allowed: a list of trips, trip
+  details including the actual route, and the latest location. Other endpoints
+  are rejected, and latest location responses that don't correspond to an active
+  trip are dropped.
 - Only `GET` and `OPTIONS` (for CORS) requests are permitted
 - If a response contains coordinate pairs in Austin or Tulsa, they are replaced
   with the [State Capitol][TXC] or the [Center of the Universe][COTU],
