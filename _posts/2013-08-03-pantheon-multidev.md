@@ -22,8 +22,8 @@ code.)
 
 My Git principles, summarized from git-flow:
 
-- `master` (mainline, trunk, etc.) is for _stable, working, released_ code.
-- Every commit to `master` should be releasable, and should be tagged as such. This way, anyone who clones master starts with a stable product.
+- The default branch (mainline, trunk, master, etc.) is for _stable, working, released_ code.
+- Every commit to default should be releasable, and should be tagged as such. This way, anyone who clones master starts with a stable product.
 - All development should happen on a `devel` branch.
 - Features or other work which would involve multiple commits should branch off from dev, then be merged back into dev.
 
@@ -34,13 +34,13 @@ _See how I do this on [Scrummy’s branch view](https://github.com/tsmith512/scr
 
 Pantheon provides *Dev*, *Test*, and *Live* environments. This is superior to
 any other host I’ve used; I’m grateful for this. My personal dealbreaker,
-however: the *Development* environment sits at the branch head of `master`, not
+however: the *Development* environment sits at the default branch head, not
 a branch for active work.
 
-Therefore, to test anything on a Pantheon environment, it had to be merged into
-*master*. This required merging untested, incomplete, and/or unreviewed code
-into master, then stumbling over others while fixing it in subsequent commits on
-master. There’s a word for that: **Subversion**
+Therefore, to test anything on a Pantheon environment, it had to be merged. This
+required merging untested, incomplete, and/or unreviewed code into the default
+branch, then stumbling over others while fixing it in subsequent commits on a
+single branch. There’s a word for that: **Subversion**
 
 I git, therefore I branch. Copiously. Pantheon now embraces this (whether you
 use git-flow, or any other branching strategy).
