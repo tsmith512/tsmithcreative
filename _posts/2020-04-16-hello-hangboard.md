@@ -426,14 +426,35 @@ Community responses vary between "it's just a matter of time, you have to wait"
 to "click X magic button in Y console page," but none of Google's official
 documentation clarify how one should resolve what feels like a stall.
 
+{% update 2020-05 %}
+I did not realize that getting a Closed Alpha on Google Play would involve
+Google reviewing not only the app, but also the store description. In a first
+draft, I used the word "coronavirus" &mdash; in a subsequent draft, I removed
+that but referenced "stay-at-home orders" instead &mdash; as a reason someone
+might want to try training on a hangboard at home. I don't know which version
+they read, because you can't peg drafts of the store listing to releases in the
+app. But whichever it was, _they did not like it._
+
+Google was putting any app mentioning the current situation through extra
+scrutiny, **and rightly so.** But I wish I had known that my draft description
+was going up for review, too, even for an invite-only release. Turns out, on
+review, Google suspended by Play Console account (like, can't log in anymore
+suspended). I had to appeal this decision, promising to rewrite the description.
+Thankfully, there was no objectionable content in the app itself, so that made
+for an easier plea. My account was reinstated and I was able to submit a new
+version with a new description shortly thereafter.
+
+So, _my bad,_ but my critique on the opacity of this process in the UI stands.
+{% endupdate %}
+
 # Recap and Roadmap
 
 That was fun. Having little to do most evenings made it happen faster...
 
 **What I've built meets my MVP objectives for:**
 
-- Usable interval timer for the hangboard for me and friends with iPhones
-  _(Android friends coming soon, I guess)._
+- Usable interval timer for the hangboard for me and friends! <del>with iPhones
+  _(Android friends coming soon, I guess)._</del>
 - First React Native exposure, introduction to how it works, how it builds, and
   an intro to the nature of its cross-platform abilities.
 - First Play Console and App Store Connect process exposure so I can help guide
