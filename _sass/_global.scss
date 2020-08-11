@@ -112,7 +112,7 @@ blockquote:before {
 
 hr {
   border: 2px solid #eee;
-  margin: 1em 0;
+  margin: 2em 0;
 }
 
 abbr[title] {
@@ -130,4 +130,8 @@ p, li {
   code {
     font-size: .875em;
   }
+}
+
+li ul {
+  margin-top: 1em;
 }
