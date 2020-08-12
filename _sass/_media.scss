@@ -7,6 +7,9 @@
   // These are paragraphs that wrap only an image tag in a post.
   text-align: center;
 
+  margin-top: 2em;
+  margin-bottom: 2em;
+
   @include breakpoint($max-width + 16) {
     margin-left: -(($max-width - $max-lines) / 2);
     margin-right: -(($max-width - $max-lines) / 2);
