@@ -7,6 +7,9 @@
   // These are paragraphs that wrap only an image tag in a post.
   text-align: center;
 
+  margin-top: 2em;
+  margin-bottom: 2em;
+
   @include breakpoint($max-width + 16) {
     margin-left: -(($max-width - $max-lines) / 2);
     margin-right: -(($max-width - $max-lines) / 2);
@@ -71,10 +74,8 @@ pre.highlight {
   overflow-x: auto;
   font-size: 0.825em;
 
-  @include breakpoint($max-width + 16) {
-    li & {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
+  background: #FCFCFC;
+  border: 1px solid #EEE;
+  border-radius: 4px;
+  padding: 0.5em;
 }

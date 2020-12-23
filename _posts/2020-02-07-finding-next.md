@@ -23,9 +23,6 @@ galleries:
     - src: /blog/finding-next/201911-05.jpg
       alt: The Fountains at The Bellagio, Las Vegas, Nevada
       caption:
-    - src: /blog/finding-next/201911-06.jpg
-      alt: Rock climber
-      caption: Starting Monfi in Reimers Ranch
     - src: /blog/finding-next/201911-08.jpg
       alt: Me and Jen Dary
       caption: So Now You're A Manager Training
@@ -119,6 +116,9 @@ galleries:
     - src: /blog/finding-next/202001-62.jpg
       alt: Me, holding the old radiator and making a weird face
       caption:
+    - src: /blog/finding-next/201911-06.jpg
+      alt: Rock climber
+      caption: Starting Monfi in Reimers Ranch
   e:
     - src: /blog/finding-next/201912-34.jpg
       alt: Two people sitting around a campfire, vehicles in the background
@@ -207,7 +207,7 @@ galleries:
 
 ---
 
-{% picture /blog/finding-next/terlingua-road.jpg --alt "View from a road into a desert valley at Terlingua, Texas" %}
+{% picture /blog/finding-next/terlingua-road.jpg --alt View from a road into a desert valley at Terlingua, Texas %}
 
 > Well my Dad used to tell me that anybody who ever became somebody got laid off
 > at some point.
@@ -244,6 +244,7 @@ well networked. It was comforting how much smaller the world suddenly seemed.
 I found, though did not attend all of:
 
 - [Product in Austin](http://www.productinaustin.com/), who organize the Product in Austin Slack
+- [ProductCamp Austin](http://productcampaustin.org/), which I attended in February 2020 and loved. Blog post forthcoming.
 - [Austin Developing Product Managers](https://www.meetup.com/Austin-Developing-Product-Managers-Meetup/)
 - [ProductTank](https://www.meetup.com/ProductTank-Austin/)
 - [The Product League](https://www.meetup.com/The-Product-League/)
@@ -261,7 +262,7 @@ Keeping notes left me with interesting data. Inspired by a post
 _[Interviewing 201: Lessons from seven months of interviewing](https://www.linkedin.com/pulse/interviewing-201-lessons-from-seven-months-kellen-freeman/)_
 by Kellen Freeman, I too made a [Sankey diagram](http://sankeymatic.com/build/).
 
-{% picture /blog/finding-next/sankey-diagram.png --alt "Sankey flow diagram showing job application sources and outcomes" %}
+{% picture /blog/finding-next/sankey-diagram.png --alt Sankey flow diagram showing job application sources and outcomes %}
 
 He wrote a series of posts about his search — they're all great reads
 ([part 1](https://www.linkedin.com/pulse/interviewing-201-lessons-from-seven-months-kellen-freeman/),
@@ -275,7 +276,7 @@ My observations hit on a lot of his takeaways, notably:
   cold-call applications led to a phone screen.
 - **Referrals were key to securing a phone screen,** but interviews were not
   guaranteed — and even with referrals, employers still ghosted.
-- A super-crowded market lead to impersonal touches.
+- A super-crowded market led to many impersonal touches.
 - I didn't have much success with recruiters either, though I did have a few
   conversations. Usually, the positions weren't a good fit or the recruiter
   withheld identifying details on their client but then failed to make a good
@@ -311,9 +312,9 @@ My additions:
 - **Interviewers loved hearing about curiosity, framed with storytelling,**
   around the answer to _"Why apply to this role?"_ or _"Why are you leaving your current role?"_.
   They responded best to stories that boiled down to
-  **"I can grow in this _opportunity_** and _here on this team._" Conversely,
-  trying to get ahead of a lay-off may be an honest answer but it is not a
-  sellable story. Both can be true.
+  **"I can grow in this _opportunity_** and _here on this team_ because..."
+  Conversely, trying to get ahead of a lay-off may be an honest answer but
+  it is not a sellable story. Both can be true.
 
 For anyone keeping score, my new job's flow was "Somebody knew somebody who
 offered to float my resume." And I owe a lot of my confidence going into the
@@ -363,6 +364,11 @@ progress updates, networking aid, **interview retros,** and facets of the work.
 However, having a book of helpful "things to do that are not applications" with
 an optimistic "self-help book" voice was great for attitude.
 
+Our group got a lot of benefit from the momentum of meeting _every week_ starting
+immediately after the big sorting hat night. If you join PJC, push for that. If
+you are starting a job seekers group on your own: that's my #1 recommendation for
+a successful group. Followed by: have a Slack channel or group chat.
+
 > **"Go to a Job Board and then Leave."**
 >
 > [...] Although this seems counterintuitive, only 3 percent of all jobs are
@@ -385,6 +391,8 @@ That said, these helped me find options to look into:
   local startups
 - [FlexJobs](https://www.flexjobs.com/) — remote opportunities everywhere, paid
   membership required
+- [Remotivo](https://remotivo.com/) — remote jobs in Product Design, UX, and
+  Product Management.
 - [Indeed](https://www.indeed.com/) and [LinkedIn](https://www.linkedin.com/)
   have the most listings by far but also the highest percentage of employers who
   don't follow-up one way or another.
@@ -422,12 +430,13 @@ which I did use for the diary and continue to use for _everything else._ But I
 have long had trouble making routine use of to-do list applications despite
 [Todoist](https://todoist.com/) being an exceptionally good one.
 
-{% picture /blog/finding-next/bulletjournal.jpg --alt "An open notebook with terrible handwriting next to a keyboard and mouse." %}
+{% picture /blog/finding-next/bulletjournal.jpg --alt An open notebook with terrible handwriting next to a keyboard and mouse. %}
 
-So while I'm still in "say yes to everything" mode: as recommended by a former
-colleague, I've continued my efforts to list life _on paper_ in bullet form. I'm
-giving it a trial run in Q1, but so far it has helped with productivity and
-keeping track of things until they are done or intentionally discarded.
+So while I'm still in "say yes to everything" mode: as recommended by both a
+former colleague and a PJC sponsor, I've continued my efforts to list life
+_on paper_ in bullet form. I'm giving it a trial run in Q1, but so far it has
+helped with productivity and keeping track of things until they are done or
+intentionally discarded.
 
 My handwriting leaves much to be desired.
 
@@ -500,9 +509,9 @@ insights in unexpected places.
 {% include gallery.html gallery=page.galleries.e %}
 
 - And to bookend the break, another car-camping overland roadtrip — this time
-  with friends, also soon to start new jobs — to New Mexico to ring in 2020.
+  with friends, also both soon to start new jobs — to New Mexico to ring in 2020.
 
-{% picture mini /blog/finding-next/very-shirt.jpg --alt "Me wearing a new team shirt from Very" %}
+{% picture mini /blog/finding-next/very-shirt.jpg --alt Me wearing a new team shirt from Very %}
 
 This brings me to [Very](https://www.verypossible.com/). I reached out to a lot
 of folks over the last few months, and I can confirm — y'all are the best. I'm
