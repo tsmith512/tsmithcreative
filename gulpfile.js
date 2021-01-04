@@ -32,6 +32,7 @@ const awspublish = require('gulp-awspublish');
 const awspublishRouter = require("gulp-awspublish-router");
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
+const connect = require('gulp-connect');
 const del = require('del');
 const eslint = require('gulp-eslint');
 const fs = require('fs');
@@ -194,6 +195,10 @@ gulp.task('build-clean', 'Wipe the site root and rebuild', (cb) => {
   runSequence('clean', 'build', cb);
 });
 
+gulp.task('connect', () => {
+  connect.server({ root: '_site' });
+});
+
 gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
   // create a new publisher using S3 options
   // http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#constructor-property
@@ -344,4 +349,5 @@ gulp.task('watch', 'Watch-run sass, jekyll, js, graphics, and icons tasks', () =
   gulp.watch(['./_gfx/**/*.*', './_assets/**/*.*'], ['graphics']);
   gulp.watch(['./_icons/**/*.*'], ['icons']);
   gulp.watch(['./_assets/**/*.*'], ['assets']);
+  connect.server({ root: '_site', debug: true });
 });
