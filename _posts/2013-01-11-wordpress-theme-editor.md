@@ -5,6 +5,14 @@ layout: post
 tags: [admin experience, wordpress]
 ---
 
+{% update 2021-01 %}
+Keeping this around because it's the first blog post I ever wrote, but this is
+not the right way to go anymore. Check out these resources instead:
+
+- [Editor Style](https://codex.wordpress.org/Editor_Style) for the Classic/MCE editor
+- [Theme Support for Editor Styles](https://developer.wordpress.org/block-editor/developers/themes/theme-support/#editor-styles) which enables Editor Style for the Gutenberg/Blocks Editor
+{% endupdate %}
+
 WordPress's visual editor ships with a solid set of styles, but they don't
 always match custom styles from specialized themes. Clients are less intimidated
 by the wysiwyg editor when they see the familiar styles from the front-end
