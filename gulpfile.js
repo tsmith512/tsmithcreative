@@ -228,13 +228,14 @@ gulp.task('publish-s3', 'Sync the site to S3', (cb) => {
         },
 
         // Cache static project assets for a month
+        // @TODO: Setting this to 2 days because I'm making some updates. Had been 2592000
         "^assets/.+": {
-          cacheTime: 2592000
+          cacheTime: 7200
         },
 
-        // 1 week for HTML files
+        // 2 days for HTML files
         "\\.html$": {
-          cacheTime: 604800
+          cacheTime: 7200
         },
 
         // Project writeups can last 6 months
