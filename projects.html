@@ -52,7 +52,7 @@ summary: >
 <hr />
 
 <ul class="project-list">
-  {% assign projectB = site.projects | where: "slug", "intro-singularity" | first %}
+  {% assign projectB = site.posts | where: "slug", "the-hello-worlds-of-christmas" | first %}
   {% assign projectA = site.posts | where: "slug", "travelogue-revisited" | first %}
   {% assign portfolio = site.posts | where: "slug", "the-audience-awakening" | push: projectA | push: projectB %}
   {% for project in portfolio %}
