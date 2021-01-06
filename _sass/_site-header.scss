@@ -91,14 +91,6 @@
         padding: 1.5em 1em 1em 1em;
       }
 
-      @include breakpoint(max-width (580px)) {
-        &.tsp {
-          // This is a separate website with a separate/low-priority focus
-          // hide the link on smaller screens before collapsing the nav
-          display: none;
-        }
-      }
-
       &:hover {
         color: #CCC;
       }

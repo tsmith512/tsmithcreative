@@ -24,6 +24,7 @@
     "gulp-awspublish-router": "~0.2",
     "gulp-clean-css": "~4.2.0",
     "gulp-concat": "~2.6.0",
+    "gulp-connect": "^5.7.0",
     "gulp-eslint": "~6",
     "gulp-help": "~1.6.1",
     "gulp-image-resize": "~0.13.1",

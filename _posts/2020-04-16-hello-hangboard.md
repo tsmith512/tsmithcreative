@@ -5,6 +5,7 @@ summary: >
   experiment with React Native, I made a simple interval timer for hangboard
   sets to get stronger, in tech and in tendons, during the plague.
 tags: [development, fitness, mobile]
+citation: [VERY, "https://www.verypossible.com/insights/hello-hangboard-mobile-app-development-with-react-native"]
 ---
 
 [Having recently moved]({% post_url 2020-02-07-finding-next %}) from a web shop
