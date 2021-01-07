@@ -154,10 +154,12 @@ how to answer it, to solve the laptop charger chain problem
 
 ![Slack convo of an engineer telling me he liked my approach](/assets/blog/advent-of-code-2020/ruby-slack.png)
 
-**A 121% performance boost** from
-[first-solution to final-answer](https://github.com/tsmith512/advent_code/commits/trunk/2020/09/encoding_error.chpl)
-using circular buffers and queues more efficiently in **Chapel**
-([Day 9](https://github.com/tsmith512/advent_code/blob/trunk/2020/09/encoding_error.chpl)).
+**A performance boost** from
+[first-solution to final-answer](https://github.com/tsmith512/advent_code/commit/83a86485243bcbf5c0a34ba178cd37b7f24f018e)
+by refactoring file-seeking for-loops with circular buffers and queues **Chapel**
+([Day 9](https://github.com/tsmith512/advent_code/blob/trunk/2020/09/encoding_error.chpl)),
+reducing execution time from 2.4 seconds to 0.02 seconds.
+
 
 **A Commit Log of Despair** (Python, [Day 19](https://github.com/tsmith512/advent_code/tree/trunk/2020/19)):
 
