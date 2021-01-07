@@ -9,14 +9,14 @@ tags: [development]
 Early in December, someone at [Very](https://www.verypossible.com/) floated a
 link to [Advent of Code](https://adventofcode.com/) and asked who was
 interested. I enjoy writing code for side projects in the free time I definitely
-don't have, so I decided to give it a go.
+_don't_ have, so I decided to give it a go.
 
 ![Advent of Code Home](/assets/blog/advent-of-code-2020/aoc.png)
 
 Day 1 was easy, and while my colleagues were debating which of their
 professional languages to do it in, I thought, "Well, this would be easy in
 **Bash**." [So I did that](https://github.com/tsmith512/advent_code/blob/trunk/2020/01/expense_report.sh).
-I also dragged my [roadtrip group]({% post_url 2019-08-29-travelogue-revisited %})
+I dragged my [roadtrip group]({% post_url 2019-08-29-travelogue-revisited %})
 in on this adventure, too.
 
 ![Bash, Day 1](/assets/blog/advent-of-code-2020/bash.png)
@@ -33,9 +33,9 @@ research and pair programming.
 
 By the end of the year, I'd made it through
 [Part 1 of Day 19](https://github.com/tsmith512/advent_code/blob/bf7ba06dfe55a8dc4977f76a702192b94b197e76/2020/19/message_decoder.py),
-skipping Day 17 because a four dimensional [cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton)
+skipping Day 17 because a four-dimensional [cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton)
 problem seemed really hard to tackle on top of year-end close-out. Then it was
-time to go [hide in a cabin in the woods for New Years](https://tsmithphotos.com/quaranteam-new-year),
+time to go [hide in a cabin in the woods for New Year's](https://tsmithphotos.com/quaranteam-new-year),
 leaving VSCode at home. But this project was an absolute blast, and I do intend
 to finish — at a slower pace.
 
@@ -49,7 +49,7 @@ Check out **[my Advent of Code Repo on GitHub](https://github.com/tsmith512/adve
 ## Language Thoughts
 
 To the extent I was able, given the cycle time, I tried to be as idiomatically
-"proper" in the language-of-the-day. Clearly some languages, their docs,
+"proper" in the language-of-the-day. Clearly, some languages, their docs,
 _and some of the puzzles_ made this easier or harder to pull off.
 
 ![Git one-line log looking at Hello World commits](/assets/blog/advent-of-code-2020/hello-log.png)
@@ -79,10 +79,10 @@ _and some of the puzzles_ made this easier or harder to pull off.
   like a game of Scrabble with only parentheses tiles. But it was cool in its
   own way.
 - Finally, **Kotlin** ([Day 6](https://github.com/tsmith512/advent_code/blob/trunk/2020/06/CustomsPrep.kt))
-  wins first prize as a language I would love to use again. I found it to be
+  wins First Prize as a language I would love to use again. I found it to be
   well-documented with clearly written error messages, making it easy for
   beginners to approach. Its foundation in Java is clear, but I found it much
-  simpler to actually use.
+  simpler to _use._
 
 ### Languages I Didn't
 
@@ -93,21 +93,21 @@ _and some of the puzzles_ made this easier or harder to pull off.
   something incorrectly in ways I had trouble deducing.
 - Confession: my first experiments in the "cgi-bin" days were in **Perl**
   ([Day 08](https://github.com/tsmith512/advent_code/blob/trunk/2020/08/videogame.pl)).
-  Truth be told, I enjoyed writing this, but compared to the other languages we
+  Truth be told, I enjoyed writing this but compared to the other languages we
   explored, I now understand much more clearly all the criticism against Perl.
   And why seasoned engineers are dismayed that Perl was my first language.
 - I found **Haskell** and **F#** to be incredibly difficult to get started with,
-  to the point that I actually bailed on both, though I would like to try
-  Haskell again at some point. Part of the issue with F# is that it was hard to
-  research because search results contained a sea of C# and .NET information
-  mixed in. Haskell is just so far afield from anything else I'd written that I
-  felt like the only way to start would be to read a textbook cover-to-cover.
+  to the point that I bailed on both, though I would like to try Haskell again
+  at some point. Part of the issue with F# is that it was hard to research
+  because search results contained a sea of C# and .NET information mixed in.
+  Haskell is just so far afield from anything else I'd written that I felt like
+  the only way to start would be to read a textbook cover-to-cover.
 
 # Thank You to my Team
 
 Thanks to George and Evan for being sounding boards and pair programming buddies
 late into many nights. Thank you also to Mitchel H, Allie S, Sara P, Brad B,
-Diego M, Gaspar T and Tony S at Very who cheered me on, provided rescues, made
+Diego M, Gaspar T, and Tony S at Very who cheered me on, provided rescues, made
 this a lot of fun, and let me learn from their code, too.
 
 --------------------------------------------------------------------------------
@@ -116,7 +116,7 @@ this a lot of fun, and let me learn from their code, too.
 
 **The Best Hint:** I hit a wall in C. I knew my approach was right but the final
 answer was wrong. I noticed that the program was not doing multiplication
-correctly. Mitchel gave me a well constructed no-words hint that taught be about
+correctly. Mitchel gave me a well-constructed no-words hint that taught me about
 data types (specifically, different sizes).
 
 My code output compared to my calculator:
@@ -126,6 +126,8 @@ My code output compared to my calculator:
 What Mitchel sent me:
 
 ![Animation of a binary calculator showing a bit flip at 33](/assets/blog/advent-of-code-2020/hint.gif)
+
+The answer was that I needed a `unit64_t` instead of an `int` or `long`.
 
 **Accidental Reducer:** That time I finally learned what reducers are by
 accidentally writing one.
