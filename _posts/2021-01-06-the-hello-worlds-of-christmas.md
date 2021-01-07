@@ -154,11 +154,17 @@ how to answer it, to solve the laptop charger chain problem
 
 ![Slack convo of an engineer telling me he liked my approach](/assets/blog/advent-of-code-2020/ruby-slack.png)
 
+**A 121% performance boost** from
+[first-solution to final-answer](https://github.com/tsmith512/advent_code/commits/trunk/2020/09/encoding_error.chpl)
+using circular buffers and queues more efficiently in **Chapel**
+([Day 9](https://github.com/tsmith512/advent_code/blob/trunk/2020/09/encoding_error.chpl)).
+
 **A Commit Log of Despair** (Python, [Day 19](https://github.com/tsmith512/advent_code/tree/trunk/2020/19)):
 
 ![A commit log showing messages in increasing amounts of freakout](/assets/blog/advent-of-code-2020/commit-log-of-doom.png)
 
-Which ultimately resulted in this hilariously horrifying automatically generated regular expression match pattern:
+Which ultimately resulted in this hilariously horrifying automatically generated
+regular expression match pattern. But it did work!
 
 `^(((b(a((a(ab|ba)|b(ba|aa))a|((ab|bb)b|(b|a)(b|a)a)b)|b(a((b|a)a|bb)a|(((b|a)a|ab)a|(b|a)(b|a)b)b))|a(a(aab|b((b|a)a|bb))b|b((((b|a)b|aa)b|((b|a)a|bb)a)b|(b(ab|bb)|abb)a)))a|(a((a((ab|ba)a|(ba|(b|a)b)b)|b((ba|(b|a)b)a|(ab|bb)b))b|(b(aba|baa)|a(aab|aaa))a)|b((ba((b|a)a|bb)|a(a((b|a)a|bb)|b(ba|aa)))a|((a(b|a)(b|a)|b((b|a)a|bb))b|b(ba|aa)a)b))b)b|(a((b((b|a)(b|a)bb|(b((b|a)b|aa)|aba)a)|a(a((ba|aa)a|((b|a)b|aa)b)|b(((b|a)a|bb)b|((b|a)b|aa)a)))a|(((bba|(b|a)(b|a)b)a|aabb)a|(a(b(b|a)(b|a)|aba)|b((ba|aa)a|bab))b)b)|b(a(b(((ba|aa)a|(ab|ba)b)a|(aaa|(ba|aa)b)b)|a((aba|b(ab|bb))a|(b((b|a)a|bb)|a(ab|ba))b))|b((b(ba|aa)b|(abb|b(ab|ba))a)b|(a(b((b|a)a|ab)|a(ab|ba))|b(((b|a)b|aa)a|(ba|(b|a)b)b))a)))a)(((b(a((a(ab|ba)|b(ba|aa))a|((ab|bb)b|(b|a)(b|a)a)b)|b(a((b|a)a|bb)a|(((b|a)a|ab)a|(b|a)(b|a)b)b))|a(a(aab|b((b|a)a|bb))b|b((((b|a)b|aa)b|((b|a)a|bb)a)b|(b(ab|bb)|abb)a)))a|(a((a((ab|ba)a|(ba|(b|a)b)b)|b((ba|(b|a)b)a|(ab|bb)b))b|(b(aba|baa)|a(aab|aaa))a)|b((ba((b|a)a|bb)|a(a((b|a)a|bb)|b(ba|aa)))a|((a(b|a)(b|a)|b((b|a)a|bb))b|b(ba|aa)a)b))b)b|(a((b((b|a)(b|a)bb|(b((b|a)b|aa)|aba)a)|a(a((ba|aa)a|((b|a)b|aa)b)|b(((b|a)a|bb)b|((b|a)b|aa)a)))a|(((bba|(b|a)(b|a)b)a|aabb)a|(a(b(b|a)(b|a)|aba)|b((ba|aa)a|bab))b)b)|b(a(b(((ba|aa)a|(ab|ba)b)a|(aaa|(ba|aa)b)b)|a((aba|b(ab|bb))a|(b((b|a)a|bb)|a(ab|ba))b))|b((b(ba|aa)b|(abb|b(ab|ba))a)b|(a(b((b|a)a|ab)|a(ab|ba))|b(((b|a)b|aa)a|(ba|(b|a)b)b))a)))a)(a((((a(a((b|a)a|bb)|bab)|b(aba|bab))b|(a(b|a)(b|a)(b|a)|b((b|a)(b|a)a|aab))a)a|((b(b(ba|(b|a)b)|a((b|a)b|aa))|a(ba|(b|a)b)(b|a))a|(b(aaa|(ba|aa)b)|a(a(ab|aa)|bba))b)b)b|((((ba|aa)(b|a)b|((ab|bb)b|baa)a)a|(a(aba|bab)|b(b|a)(ba|aa))b)a|((b((b|a)(b|a)b|aaa)|a((ba|aa)a|((b|a)a|bb)b))a|(((ba|aa)a|((b|a)a|bb)b)b|(aaa|b(ab|bb))a)b)b)a)|b(((a((aaa|(ba|(b|a)b)b)a|(aab|bab)b)|b(((ba|bb)a|((b|a)a|bb)b)a|bbab))a|(b(((ba|bb)a|((b|a)a|bb)b)a|(bba|a(ba|bb))b)|a((b(ab|bb)|aab)a|(b|a)(ba|aa)b))b)b|(b(a((((b|a)a|ab)a|(b|a)(b|a)b)b|(aaa|(ab|bb)b)a)|b(a(a(ab|ba)|bbb)|b(aaa|b(ab|bb))))|a((b(b(ba|bb)|a(ab|ba))|a(b(ba|aa)|a((b|a)b|aa)))a|(a((ab|ba)b|aaa)|b((ba|(b|a)b)a|(ab|bb)b))b))a))$`
 
