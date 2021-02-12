@@ -4,7 +4,9 @@ frontend:
     preBuild:
       commands:
         - amazon-linux-extras install epel -y
-        - yum install -y --enablerepo=epel --skip-broken GraphicsMagick GraphicsMagick-devel
+        - wget http://mirror.centos.org/centos/7/os/x86_64/Packages/urw-base35-fonts-legacy-20170801-10.el7.noarch.rpm
+        - yum install -y urw-base35-fonts-legacy-20170801-10.el7.noarch.rpm
+        - yum install -y --enablerepo=epel GraphicsMagick GraphicsMagick-devel
         - yum install -y ImageMagick libpng-devel libwebp-devel libwebp-tools
         - rvm install 2.6.5
         - nvm install 10
