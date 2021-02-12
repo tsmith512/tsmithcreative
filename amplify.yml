@@ -3,8 +3,10 @@ frontend:
   phases:
     preBuild:
       commands:
-        - yum install -y ImageMagick libpng-devel libwebp-devel libwebp-tools
+        - amazon-linux-extras install epel -y
+        - yum-config-manager --enable epel
         - yum install -y --enablerepo=epel GraphicsMagick GraphicsMagick-devel
+        - yum install -y ImageMagick libpng-devel libwebp-devel libwebp-tools
         - rvm install 2.6.5
         - nvm install 10
     build:
