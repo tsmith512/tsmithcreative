@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - yum install -y imagemagick graphicsmagick libpng-dev libwebp-dev webp
+        - yum install -y ImageMagick libpng-devel libwebp-devel libwebp-tools
         - rvm install 2.6.5
         - rvm use 2.6.5
         - gem install bundler -v 1.17.3
