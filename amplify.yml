@@ -4,7 +4,7 @@ frontend:
     preBuild:
       commands:
         - amazon-linux-extras install epel -y
-        - yum install -y --enablerepo=epel GraphicsMagick GraphicsMagick-devel
+        - yum install -y --enablerepo=epel --skip-broken GraphicsMagick GraphicsMagick-devel
         - yum install -y ImageMagick libpng-devel libwebp-devel libwebp-tools
         - rvm install 2.6.5
         - nvm install 10
