@@ -11,7 +11,7 @@ frontend:
         - rvm use 2.6.5
         - nvm use 10
         - gem install bundler -v 1.17.3
-        - bundle install --joobs=4 --retry=3 --path vendor/bundle
+        - bundle install --path vendor/bundle
         - npm install -g gulp@3
         - npm install
         - gulp build
