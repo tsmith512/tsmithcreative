@@ -6,12 +6,12 @@ frontend:
         - yum install -y ImageMagick libpng-devel libwebp-devel libwebp-tools
         - rvm install 2.6.5
         - rvm use 2.6.5
-        - gem install bundler -v 1.17.3
-        - bundle install --joobs=4 --retry=3 --path vendor/bundle
+        - nvm install 10
     build:
       commands:
-        - nvm install
-        - nvm use
+        - gem install bundler -v 1.17.3
+        - bundle install --joobs=4 --retry=3 --path vendor/bundle
+        - nvm use 10
         - npm install -g gulp@3
         - npm install
         - gulp build
