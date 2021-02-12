@@ -8,12 +8,12 @@ frontend:
         - rvm use 2.6.5
         - gem install bundler -v 1.17.3
         - bundle install --joobs=4 --retry=3 --path vendor/bundle
+    build:
+      commands:
         - nvm install
         - nvm use
         - npm install -g gulp@3
         - npm install
-    build:
-      commands:
         - gulp build
   artifacts:
     baseDirectory: _site
