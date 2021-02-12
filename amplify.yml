@@ -1,0 +1,22 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install
+        - nvm use
+        - npm install -g gulp@3
+        - npm install
+        - bundle install --joobs=4 --retry=3 --path vendor/bundle
+        - yum install -y imagemagick graphicsmagick libpng-dev libwebp-dev webp
+    build:
+      commands:
+        - gulp build
+  artifacts:
+    baseDirectory: _site
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - vendor/bundle
