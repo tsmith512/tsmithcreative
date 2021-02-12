@@ -5,13 +5,13 @@ frontend:
       commands:
         - yum install -y ImageMagick libpng-devel libwebp-devel libwebp-tools
         - rvm install 2.6.5
-        - rvm use 2.6.5
         - nvm install 10
     build:
       commands:
+        - rvm use 2.6.5
+        - nvm use 10
         - gem install bundler -v 1.17.3
         - bundle install --joobs=4 --retry=3 --path vendor/bundle
-        - nvm use 10
         - npm install -g gulp@3
         - npm install
         - gulp build
@@ -21,5 +21,5 @@ frontend:
       - '**/*'
   cache:
     paths:
-      - node_modules/**/*
-      - vendor/bundle
+      # - node_modules/**/*
+      # - vendor/bundle
