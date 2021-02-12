@@ -4,6 +4,7 @@ frontend:
     preBuild:
       commands:
         - yum install -y ImageMagick libpng-devel libwebp-devel libwebp-tools
+        - yum install -y --enablerepo=epel GraphicsMagick GraphicsMagick-devel
         - rvm install 2.6.5
         - nvm install 10
     build:
