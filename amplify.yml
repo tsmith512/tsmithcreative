@@ -3,15 +3,15 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm install
-        - nvm use
-        - npm install -g gulp@3
-        - npm install
+        - yum install -y imagemagick graphicsmagick libpng-dev libwebp-dev webp
         - rvm install 2.6.5
         - rvm use 2.6.5
         - gem install bundler -v 1.17.3
         - bundle install --joobs=4 --retry=3 --path vendor/bundle
-        - yum install -y imagemagick graphicsmagick libpng-dev libwebp-dev webp
+        - nvm install
+        - nvm use
+        - npm install -g gulp@3
+        - npm install
     build:
       commands:
         - gulp build
