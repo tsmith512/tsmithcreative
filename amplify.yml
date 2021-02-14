@@ -19,6 +19,10 @@ frontend:
         - npm install -g gulp@3
         - npm install
         - gulp build
+        - mkdir _site/fonts
+        - wget $ASSETS_FOLDER/811484.zip
+        - unzip 811484.zip -d _site/fonts/
+
   artifacts:
     baseDirectory: _site
     files:
