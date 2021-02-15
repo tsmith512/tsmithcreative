@@ -7,6 +7,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-environment-variables
 exclude:
   - node_modules # Apparently this is magic sauce to make Jekyll less super slow
   - vendor # CircleCI stores Ruby gems inside the repo; skip this tree
