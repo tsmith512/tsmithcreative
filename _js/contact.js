@@ -2,7 +2,10 @@
   'use strict';
 
   var form = document.getElementById("contact-form");
-  form.addEventListener("submit", emailHandler);
+
+  if (form) {
+    form.addEventListener("submit", emailHandler);
+  }
 
   function emailHandler(e) {
     e.preventDefault();
@@ -10,7 +13,7 @@
     var message = {
       from: document.getElementById("from").value,
       replyto: document.getElementById("replyto").value,
-      body: document.getElementById("body").value
+      message: document.getElementById("message").value
     };
 
     var xhr = new XMLHttpRequest();
