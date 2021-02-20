@@ -5,15 +5,15 @@ layout: page
 
 <div class="contact">
   <div class="form-wrapper">
-    <form id="contact-form" action="#" method="POST">
+    <form id="contact-form" action="{{ site.env.EMAIL_HANDLER_ENDPOINT }}" method="POST">
       <label for="from">Name:</label>
       <input type="text" id="from" placeholder="Your Name" />
 
       <label for="replyto">Email:</label>
       <input type="email" id="replyto" placeholder="Your Email"/>
 
-      <label for="body">What's Up?</label>
-      <textarea id="body" rows="8" placeholder="Thank you for taking the time. How can I help?"></textarea>
+      <label for="message">What's Up?</label>
+      <textarea id="message" rows="8" placeholder="Thank you for taking the time. How can I help?"></textarea>
 
       <button type="submit">Submit</button>
     </form>

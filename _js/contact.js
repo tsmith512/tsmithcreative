@@ -2,26 +2,26 @@
   'use strict';
 
   var form = document.getElementById("contact-form");
-  if (form && form.addEventListener) {
-    form.addEventListener("submit", tscEmailHandler, false); //Modern browsers
-  } else if(form && form.attachEvent) {
-    form.attachEvent('onsubmit', tscEmailHandler); //Old IE
+
+  if (form) {
+    form.addEventListener("submit", emailHandler);
   }
 
-  function tscEmailHandler(e) {
-    e.preventDefault(); // Overriding the form default action because JSON
+  function emailHandler(e) {
+    e.preventDefault();
+
     var message = {
       from: document.getElementById("from").value,
       replyto: document.getElementById("replyto").value,
-      body: document.getElementById("body").value
+      message: document.getElementById("message").value
     };
 
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://ye6vwj17zi.execute-api.us-east-1.amazonaws.com/tsc_email_endpoint');
+    xhr.open('POST', form.getAttribute("action"));
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onload = function() {
       if (xhr.status === 200) {
-        document.querySelectorAll('.form-wrapper')[0].innerHTML =
+        document.querySelector('.form-wrapper').innerHTML =
           '<h2>Thank you!</h2><p>Your email has been sent, I\'ll get back to you as soon as I can.';
       }
     };
