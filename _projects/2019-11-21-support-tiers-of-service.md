@@ -12,12 +12,12 @@ problem: >
 
 Four Kitchens offers ongoing support services to clients. As the department
 grew, there was significant variability across contracts, leading to different
-terms for each of ~40 concurrent accounts: retainers vs. bill-as-used, monthly
-vs. quarterly vs. annually, rollover allowances, and expiration periods. This
-presented uncertainties in monthly capacity planning, high unbillable overhead,
-inefficiencies in billing, and difficulties for reporting.
+terms for each of ~50 concurrent accounts: retainers vs. bill-as-used, monthly
+vs. quarterly vs. annually, variable rollover allowances, and expiration
+periods. This presented uncertainties in monthly capacity planning, high
+unbillable overhead, inefficiencies in billing, and difficulties for reporting.
 
-## Findings
+## Summarized Findings
 
 In an effort to standardize our offerings, I discovered several opportunities:
 
@@ -44,6 +44,13 @@ partially automated level of service. For a client, this is insurance: a safety
 net during a time of transition and/or a consistent cost for a needed service.
 It also sets a lower expectation on touch-points for account and project
 management.
+
+**One client explained to me** that her tendency to plan out hourly expenditures
+meticulously was due to the fear she would come up short if an urgent security
+release came out and she would be held responsible for an incident. Between this
+insight and the upcoming update automation, I decided to split security update
+coverage out of the hourly billing component of all support tiers. This first
+tier would be flat-rate completely and cover security updates automatically.
 
 For the business, this provides cost splitting across accounts to grow a suite
 of automation and monitoring tools as well as R&D initiatives that allow
@@ -82,9 +89,10 @@ opportunities to propose additional services or audits.
 
 ## Results
 
-The company will begin rolling these plans out to clients as their agreements
-renew beginning in 2020Q1. However, this structure has already allowed the
-department to adjust its qualifications process for new and renewing accounts.
+The company rolled these plans out in 2020H1 and successfully converted about
+50% of their existing contracts to the new plans. Even before that, however,
+this structure allowed the department to adjust its qualifications process for
+new contracts and renewals.
 
 ---
 
