@@ -12,6 +12,7 @@ exclude:
   - node_modules # Apparently this is magic sauce to make Jekyll less super slow
   - vendor # CircleCI stores Ruby gems inside the repo; skip this tree
   - assets # This is a symlink to _assets for JPT's links. Currently, Jekyll doesn't handle asset pipeline
+  - bin
   - Gemfile
   - Gemfile.lock
   - package.json
