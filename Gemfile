@@ -22,6 +22,6 @@ gem "minima", "~> 2.0"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.13"
    gem "jekyll-sitemap", "~> 1.4"
-   gem 'jekyll_picture_tag', "~> 1.8.0"
+   gem 'jekyll_picture_tag', "~> 2.0"
    gem 'jekyll-environment-variables', '~> 1.0.1'
 end
