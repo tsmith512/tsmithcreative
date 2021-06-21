@@ -36,6 +36,6 @@
   },
   "scripts": {
     "prebuild": "bin/setup.sh",
-    "build": "gulp build-clean"
+    "build": "gulp build"
   }
 }
