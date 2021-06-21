@@ -7,7 +7,7 @@ fi
 
 mkdir -p _site/fonts
 wget $ASSETS_FOLDER/811484.zip
-unzip 811475.zip -d _site/fonts/
+unzip 811484.zip -d _site/fonts/
 
 npm install
 gem install bundler -v 1.17.3
