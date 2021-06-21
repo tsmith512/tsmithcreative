@@ -23,6 +23,7 @@ keep_files:
   - js    # Don't clobber site JS, which is built with Gulp and includes Photoswipe
   - gfx   # Don't clobber site graphics/images/assets
   - assets # Don't clobber page/post assets; they're minimized with Gulp now
+  - fonts
   - .htaccess
   - favicon.ico
   - favicon-16x16.png
