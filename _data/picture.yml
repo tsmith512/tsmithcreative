@@ -1,5 +1,5 @@
 # Image derivatives config for jekyll_picture_tag
-media_presets:
+media_queries:
   wide: 'min-width: 960px' # On wide viewports, media pops out beyond the paragraph measure
   medium: 'min-width: 640px' # The max-width of images matches the paragraph measure/content width
   hero_projects: 'min-width: 480px' # The query for the hero project listing between mini and wide
@@ -9,9 +9,9 @@ media_presets:
   portfolio_2c: 'min-width: 560px'
   portfolio_3c: 'min-width: 800px'
 
-markup_presets:
+presets:
   default:
-    quality: 85
+    quality: 90
     formats: [webp, original]
     widths: [400, 540, 680, 960, 1440, 1920] # @TODO: Those last two are max-size * hi-dpi... keep?
     sizes:
@@ -23,7 +23,7 @@ markup_presets:
     attributes:
       a: 'class="media-link"'
   mini:
-    quality: 85
+    quality: 90
     formats: [webp, original]
     widths: [300, 480]
     sizes:

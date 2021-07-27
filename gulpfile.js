@@ -90,35 +90,35 @@ gulp.task('graphics-project-thumbnails', 'Rebuild gallery thumbnails for project
 gulp.task('graphics-home-page', 'Derivatives of that home page background', () => {
   return gulp.src('./_gfx/home-background.jpg')
     .pipe(resize({width: 2400, crop: false, upscale: false}))
-    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(imagemin([imagemin.mozjpeg({quality: 90, progressive: true})]))
     .pipe(gulp.dest('_site/gfx/home/2400'))
     .pipe(resize({width: 1800, crop: false, upscale: false}))
-    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(imagemin([imagemin.mozjpeg({quality: 90, progressive: true})]))
     .pipe(gulp.dest('_site/gfx/home/1800'))
     .pipe(resize({width: 1600, crop: false, upscale: false}))
-    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(imagemin([imagemin.mozjpeg({quality: 90, progressive: true})]))
     .pipe(gulp.dest('_site/gfx/home/1600'))
     .pipe(resize({width: 1200, crop: false, upscale: false})) // is 899px
-    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(imagemin([imagemin.mozjpeg({quality: 90, progressive: true})]))
     .pipe(gulp.dest('_site/gfx/home/1200'))
 });
 
 gulp.task('graphics-mastheads', 'Derivatives of masthead banner backgrounds', () => {
   return gulp.src('./_gfx/masthead/*.jpg')
     .pipe(resize({width: 1920, crop: false, upscale: false}))
-    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(imagemin([imagemin.mozjpeg({quality: 90, progressive: true})]))
     .pipe(gulp.dest('_site/gfx/masthead/1920'))
     .pipe(resize({width: 1600, crop: false, upscale: false}))
-    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(imagemin([imagemin.mozjpeg({quality: 90, progressive: true})]))
     .pipe(gulp.dest('_site/gfx/masthead/1600'))
     .pipe(resize({width: 1280, crop: false, upscale: false}))
-    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(imagemin([imagemin.mozjpeg({quality: 90, progressive: true})]))
     .pipe(gulp.dest('_site/gfx/masthead/1280'))
     .pipe(resize({width: 960, crop: false, upscale: false}))
-    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(imagemin([imagemin.mozjpeg({quality: 90, progressive: true})]))
     .pipe(gulp.dest('_site/gfx/masthead/960'))
     .pipe(resize({width: 720, crop: false, upscale: false}))
-    .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+    .pipe(imagemin([imagemin.mozjpeg({quality: 90, progressive: true})]))
     .pipe(gulp.dest('_site/gfx/masthead/720'))
 });
 
@@ -167,7 +167,7 @@ gulp.task('js', 'JS/Photoswipe aggregation/minify, custom JS linting', ['js-phot
 
 gulp.task('assets', 'Copy and compress if possible all project/post assets', () => {
   return gulp.src(['./_assets/**/*.*'])
-  .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
+  .pipe(imagemin([imagemin.mozjpeg({quality: 90, progressive: true})], {verbose: true}))
   .pipe(gulp.dest('./_site/assets/'));
 });
 

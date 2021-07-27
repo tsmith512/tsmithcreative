@@ -6,8 +6,8 @@ if [ -z "$ASSETS_FOLDER" ]; then
 fi
 
 mkdir -p _site/fonts
-wget $ASSETS_FOLDER/811484.zip
-unzip 811484.zip -d _site/fonts/
+wget -N $ASSETS_FOLDER/811484.zip
+unzip -o 811484.zip -d _site/fonts/
 
 npm install
 gem install bundler -v 1.17.3

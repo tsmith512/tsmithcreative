@@ -5,7 +5,6 @@ summary: >
   road "between consulting gigs." Offered in reflection, gratitude, and the hope
   that this can be useful to someone else seeking new adventures.
 tags: [product management, events, professional development]
-commenting: false
 galleries:
   a:
     - src: /blog/finding-next/201911-04.jpg
