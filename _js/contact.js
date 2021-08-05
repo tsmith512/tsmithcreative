@@ -22,7 +22,11 @@
     xhr.onload = function() {
       if (xhr.status === 200) {
         document.querySelector('.form-wrapper').innerHTML =
-          '<h2>Thank you!</h2><p>Your email has been sent, I\'ll get back to you as soon as I can.';
+          '<h2>Thank you!</h2><p>Your email has been sent, I\'ll get back to you as soon as I can.</p>';
+      }
+      else {
+        document.querySelector('.form-wrapper').innerHTML =
+          '<h2>Sorry.</h2><p>An error occurred sending this email. Would you mind tring one of the social media links instead?</p>';
       }
     };
     xhr.send(JSON.stringify(message));
