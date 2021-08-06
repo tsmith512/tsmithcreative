@@ -22,14 +22,15 @@
   <meta name="description" content="{{ description | escape }}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/print.css" | prepend: site.baseurl }}" media="print">
-  <link rel="preload" href="/gfx/icons/icons.data.svg.css" as="style" onload="this.rel='stylesheet'">
 
   <!-- Prefetch the domain name for typeface provider now; defer loading. Preload CSS is polyfilled by LoadCSS in the footer. -->
   <link rel="dns-prefetch" href="https://cloud.typography.com/">
   <link rel="preload" href="https://cloud.typography.com/6795652/7424152/css/fonts.css" as="style" onload="this.rel='stylesheet'">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <link rel="preload" href="/gfx/icons/icons.data.svg.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="{{ "/css/print.css" | prepend: site.baseurl }}" as="style" media="print" onload="this.rel='stylesheet'">
 
   <meta property="og:title" content="{{ title | escape }}">
   {% if description %}<meta property="og:description" content="{{ description | escape }}">{% endif %}
