@@ -26,8 +26,12 @@
       }
       else {
         document.querySelector('.form-wrapper').innerHTML =
-          '<h2>Sorry.</h2><p>An error occurred sending this email. Would you mind tring one of the social media links instead?</p>';
+          '<h2>Sorry.</h2><p>An error occurred sending this email. Would you mind trying one of the social media links instead?</p>';
       }
+    };
+    xhr.onerror = function() {
+      document.querySelector('.form-wrapper').innerHTML =
+        '<h2>Sorry.</h2><p>An error occurred sending this email. Would you mind trying one of the social media links instead?</p>';
     };
     xhr.send(JSON.stringify(message));
   }
