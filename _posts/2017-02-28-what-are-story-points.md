@@ -2,7 +2,7 @@
 title: What are Story Points? [Video]
 summary: Use story points to estimate task complexity, leading to a more predictable velocity and avoiding pitfalls of hours-based estimates.
 layout: post
-tags: [scrum, product ownership, management]
+tags: [scrum, presentation]
 ---
 
 <iframe src="https://player.vimeo.com/video/206174429" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen><p><a href="https://vimeo.com/206174429">What are Story Points</a> from <a href="https://vimeo.com/user32924569">Taylor Smith</a> on <a href="https://vimeo.com">Vimeo</a>.</p></iframe>

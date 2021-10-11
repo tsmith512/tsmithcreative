@@ -1,7 +1,7 @@
 ---
 title: "Estimating for Iteration: Story Points and Thin Vertical Slices"
 summary: "A presentation on my two favorite parts of Scrum: estimating by complexity and building vertically."
-tags: [product ownership, management, presentation]
+tags: [product management, presentation]
 problem: >
   Humans aren't great at estimating with <del>granularity at scale</del> lots of
   big stuff. And in the midst of a project, our process must be adaptable to

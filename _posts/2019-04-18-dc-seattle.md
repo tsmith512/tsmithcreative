@@ -4,7 +4,7 @@ summary: >
   Another year at DrupalCon, this time with hiking, UX fortune telling, a
   (machine learning) brain in a (content editor) box, a focus on accessibility
   and inclusion, and other great sessions.
-tags: [events, drupal, management]
+tags: [events, drupal, product management, 3d printing]
 galleries:
   a:
     - src: /blog/drupalcon-seattle/pre/IMG_20190406_125039008.jpg

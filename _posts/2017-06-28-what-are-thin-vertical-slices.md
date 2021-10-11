@@ -5,7 +5,7 @@ summary: >
   a quickly releasable product, maximized value to the stakeholders, and a
   workflow that is adaptable to many kinds of change.
 layout: post
-tags: [scrum, product ownership, management]
+tags: [scrum, presentation]
 ---
 
 <iframe src="https://player.vimeo.com/video/223554794" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen><p><a href="https://vimeo.com/223554794">What are Thin Vertical Slices</a> from <a href="https://vimeo.com/tsmith512">Taylor Smith</a> on <a href="https://vimeo.com">Vimeo</a>.</p></iframe>
