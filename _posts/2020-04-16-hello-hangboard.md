@@ -4,7 +4,7 @@ summary: >
   With a new job comes a needed familiarity with new tools. For my first
   experiment with React Native, I made a simple interval timer for hangboard
   sets to get stronger, in tech and in tendons, during the plague.
-tags: [development, fitness, mobile]
+tags: [engineering, side projects]
 citation: [VERY, "https://www.verypossible.com/insights/hello-hangboard-mobile-app-development-with-react-native"]
 ---
 

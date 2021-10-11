@@ -4,7 +4,7 @@ summary: >
   Combining automatic location tracking, geocoding, route planning, map design,
   and a custom theme frontend on a Tumblr blog to bring friends and family along
   on one hell of a ride.
-tags: [development, aws, design, writing, photography]
+tags: [engineering, side projects, travel]
 ---
 
 {% update 2019-03 %}
@@ -262,7 +262,7 @@ We lived. ;-)
 {% endupdate %}
 
 
-[31DAYS]: https://www.routenotfound.com/2015/07/27/thirty-one-days/
+[31DAYS]: https://www.routenotfound.com/2015/07/27/thirty-one-days/?utm_source=tsmithcreative&utm_medium=website&utm_campaign=tsmithcreative
 [TRACKER]: https://github.com/tsmith512/location-tracker
 [TRACKERUI]: /assets/blog/building-travelogue/location-history.png
 [ORIGINAL]: https://github.com/tsmith512/location-tracker/commit/26fbff80d704be926d8fe999809f439ccb163708

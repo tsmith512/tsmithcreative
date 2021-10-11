@@ -4,7 +4,7 @@ summary: >
   When kicking off your next big project, add a "pre-mortem" to the agenda to
   encourage team members/stakeholders to learn from past challenges and
   recognize problems before they derail the project.
-tags: [product ownership, management, workshops]
+tags: [product management, workshops]
 ---
 
 _"Failure is not an option"_ often means "we haven't thought about what could go

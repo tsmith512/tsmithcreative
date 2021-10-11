@@ -4,7 +4,7 @@ summary: >
   I created a Google Sheets template for planning "working roadtrips" that
   automatically calculates driving time and distance from the Google Maps
   Directions API. Have a copy!
-tags: [development, travel]
+tags: [side projects, travel, tools]
 ---
 
 In 2015, as my then-employer was transitioning to fully distributed
@@ -73,7 +73,7 @@ itineraries. For now. They will probably fix that.
 
 Grab two things: my template and a Google Maps Directions API key.
 
-1. [**Magic Roadtrip Spreadsheet Template v1.3**](https://docs.google.com/spreadsheets/d/1F8YS9itFJX2BhPECK2mDxnQXQ03g05iL3ypN2ftldJo/edit?usp=sharing)
+1. [**Magic Roadtrip Spreadsheet Template v1.3**](https://docs.google.com/spreadsheets/d/1F8YS9itFJX2BhPECK2mDxnQXQ03g05iL3ypN2ftldJo/copy?usp=sharing)
   — Under the "File" menu, select "Make a Copy" to save an editable copy in your
   Google Drive.
 2. **Google Maps Directions API Key** — This requires a developer and billing
@@ -243,7 +243,7 @@ Grab a copy, take it for a test drive, and let me know what you think. Plan
 something crazy. Go somewhere you've never heard of. Work from a cabin in the
 woods for a while. See you out there!
 
-_[Magic Roadtrip Spreadsheet Template v1.3](https://docs.google.com/spreadsheets/d/1F8YS9itFJX2BhPECK2mDxnQXQ03g05iL3ypN2ftldJo/edit?usp=sharing)_
+_[Magic Roadtrip Spreadsheet Template v1.3](https://docs.google.com/spreadsheets/d/1F8YS9itFJX2BhPECK2mDxnQXQ03g05iL3ypN2ftldJo/copy?usp=sharing)_
 
 ---
 

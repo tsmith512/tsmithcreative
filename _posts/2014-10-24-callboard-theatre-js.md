@@ -2,7 +2,7 @@
 title: Taking JavaScript to the Theatre
 summary: Callboard is a frontend JS prototype application to help stage managers make preshow calls on a complex schedule.
 layout: post
-tags: [development, theatre, js]
+tags: [engineering, theatre]
 ---
 
 <div class="callout">
@@ -38,7 +38,7 @@ Among others, I defined these events:
 - Top of Show
 - Places
 
-And the warnings that I wanted to give for each:  
+And the warnings that I wanted to give for each:
 _("Ten minutes to top of show!", "Five minutes to the fight rehearsal!", etc.)_
 
 - _Actors to venue:_ Just an item on the schedule, no warnings.

@@ -4,7 +4,7 @@ summary: >
   A combination case study and artist statement on a small web application I
   built to power an audience participation element of St. Andrew's performance
   of Spring Awakening, directed by Rick Garcia.
-tags: [development, theatre]
+tags: [engineering, theatre, side projects]
 ---
 
 My latest bout of all-nighters turning sodas into source code took a

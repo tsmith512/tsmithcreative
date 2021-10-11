@@ -2,7 +2,7 @@
 title: Rescuing Myself from the Email Monster with JavaScript
 summary: Gmail's built-in filters aren't very powerful, but it can be scripted, allowing email to be tagged with regular expressions and matching special characters.
 layout: post
-tags: [work life, development]
+tags: [engineering, tools]
 citation: [4K, "https://www.fourkitchens.com/blog/article/rescuing-myself-email-monster-javascript"]
 ---
 

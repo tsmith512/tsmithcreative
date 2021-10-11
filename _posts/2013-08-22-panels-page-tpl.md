@@ -2,7 +2,7 @@
 title: Change Page Template Based on Panels Layout
 summary: When Panels Everywhere would be too much, there is a way to override Drupal's page template for pages powered by Panels, leaving a more robust template for system pages.
 layout: post
-tags: [drupal, development]
+tags: [drupal, engineering]
 ---
 
 I frequently use Panels for system pages and custom pages. In `page.tpl.php`,

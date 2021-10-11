@@ -4,7 +4,7 @@ summary: >
   A stroll through the archives of graphic design for my school's theatre
   department to celebrate a long partnership and how theatre education can
   resonate far beyond the stage.
-tags: [theatre, education, design]
+tags: [theatre, education, design, photography]
 ---
 
 # Preshow

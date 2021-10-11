@@ -2,7 +2,7 @@
 title: On nth-child, mathematics, and that moment in school when your teacher said you'd use Algebra in real life
 summary: CSS's nth-child and nth-of-type are powerful, but recently I've seen them used improperly by mistakenly using the multiplier as the offset.
 layout: post
-tags: [frontend, development]
+tags: [engineering]
 citation: [4K, "https://www.fourkitchens.com/blog/article/nth-child-mathematics-and-moment-school-when-your-teacher-said-youd-use-algebra-real-life"]
 ---
 

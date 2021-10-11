@@ -2,7 +2,7 @@
 title: Gittin' Started with Pantheon Multidev
 summary: Pantheon now offers development instances for feature branches, allowing code to be reviewed and tested before being merged into master.
 layout: post
-tags: [drupal, development]
+tags: [drupal, engineering, tools]
 citation: [4K, "https://www.fourkitchens.com/blog/article/gittin-started-pantheons-multidev"]
 ---
 

@@ -3,7 +3,7 @@ title: "SWCCDC 2019: Adventures in Project Management and Paleontology"
 summary: >
   Wherein I helped out with a collegiate cybersecurity competition as a project
   manager, stage manager, and creative memo writer for Triassic Park.
-tags: [events, product ownership, writing]
+tags: [events, product management, education]
 ---
 
 Two weeks ago, I volunteered for the

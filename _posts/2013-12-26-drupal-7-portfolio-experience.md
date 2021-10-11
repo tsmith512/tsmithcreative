@@ -2,7 +2,7 @@
 title: Building a Personalized Portfolio Experience in Drupal 7
 summary: Wireframes, content model, and sample code I used to create a personalized portfolio tour to offer potential employers or partners a quick view into relevant material.
 layout: post
-tags: [drupal, design, development]
+tags: [drupal, design, engineering]
 ---
 
 Happy Holidays, folks!

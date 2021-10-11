@@ -3,7 +3,7 @@ title: My First Custom Alexa Skill, Powered by Home Assistant
 summary: >
   Using Home Assistant's built-in Alexa integration, I can ask Alexa about my 3D
   printer or for a better weather report.
-tags: [home automation, conversational interfaces, 3d printing]
+tags: [home automation, 3d printing]
 ---
 
 On a scale of 1 to 10, I currently rate my "Alexa Skill" skills at a whopping
