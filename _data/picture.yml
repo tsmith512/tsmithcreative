@@ -12,6 +12,10 @@ media_queries:
 presets:
   default:
     quality: 90
+    format_quality:
+      webp: 90
+      jpg: 80
+      png: 80
     formats: [webp, original]
     widths: [400, 540, 680, 960, 1440, 1920] # @TODO: Those last two are max-size * hi-dpi... keep?
     sizes:
@@ -24,6 +28,10 @@ presets:
       a: 'class="media-link"'
   mini:
     quality: 90
+    format_quality:
+      webp: 90
+      jpg: 80
+      png: 80
     formats: [webp, original]
     widths: [300, 480]
     sizes:
