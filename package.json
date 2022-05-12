@@ -30,7 +30,6 @@
     "gulp-sass": "~4",
     "gulp-uglify": "~3",
     "gulp-util": "~3.0.7",
-    "gulpicon": "~1",
     "photoswipe": "~4.1.1",
     "run-sequence": "~2"
   },
