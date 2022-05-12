@@ -8,5 +8,7 @@
   ga('send', 'pageview');
 </script>
 
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "124f2da099ca4db3ae89bda400724ada"}'></script>
-<script defer data-domain="tsmith.com" data-api="https://tsmith.com/p/event" src="https://tsmith.com/p/script.js"></script>
+{% if jekyll.environment == "production" %}
+   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "124f2da099ca4db3ae89bda400724ada"}'></script>
+   <script defer data-domain="tsmith.com" data-api="https://tsmith.com/p/event" src="https://tsmith.com/p/script.js"></script>
+{% endif %}
