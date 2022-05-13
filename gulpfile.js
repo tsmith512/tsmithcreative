@@ -35,9 +35,6 @@ const del = require('del');
 const eslint = require('gulp-eslint');
 const fs = require('fs');
 const glob = require('glob');
-const gulpicon = require('gulpicon/tasks/gulpicon');
-const gulpiconConfig = require('./_icons/config.js');
-const gulpiconFiles = glob.sync('./_icons/*.svg');
 const imagemin = require('gulp-imagemin');
 const resize = require('gulp-image-resize');
 const runSequence = require('run-sequence');
@@ -73,8 +70,6 @@ gulp.task('sass', 'Compile Sass to CSS', () => {
 
 
 // IMAGES
-gulp.task('icons', false, gulpicon(gulpiconFiles, gulpiconConfig));
-
 gulp.task('favicons', 'Copy favicons into position', () => {
   return gulp.src(['./_favicon/*.*'])
   .pipe(gulp.dest('./_site/'));
@@ -122,7 +117,7 @@ gulp.task('graphics-mastheads', 'Derivatives of masthead banner backgrounds', ()
     .pipe(gulp.dest('_site/gfx/masthead/720'))
 });
 
-gulp.task('graphics', 'Compress site graphics and aggregate icons', ['icons', 'graphics-project-thumbnails', 'graphics-home-page', 'graphics-mastheads', 'favicons'], () => {
+gulp.task('graphics', 'Compress site graphics', ['graphics-project-thumbnails', 'graphics-home-page', 'graphics-mastheads', 'favicons'], () => {
   return gulp.src(['./_gfx/**/*.*', '!./_gfx/home-background.jpg'])
   .pipe(imagemin([imagemin.mozjpeg({progressive: true})]))
   .pipe(gulp.dest('./_site/gfx/'));
@@ -185,8 +180,8 @@ gulp.task('clean', 'Wipe the site root directory', () => {
   ]);
 })
 
-gulp.task('build', 'Run all site-generating tasks: assets, [sass, js, graphics, icons], then jekyll', (cb) => {
-  runSequence('assets', ['sass', 'graphics', 'icons', 'js'], 'jekyll', cb);
+gulp.task('build', 'Run all site-generating tasks: assets, [sass, js, graphics], then jekyll', (cb) => {
+  runSequence('assets', ['sass', 'graphics', 'js'], 'jekyll', cb);
 });
 
 gulp.task('build-clean', 'Wipe the site root and rebuild', (cb) => {
@@ -208,12 +203,11 @@ gulp.task('connect', () => {
 
 gulp.task('default', false, ['help']);
 
-gulp.task('watch', 'Watch-run sass, jekyll, js, graphics, and icons tasks', () => {
+gulp.task('watch', 'Watch-run sass, jekyll, js, and graphics tasks', () => {
   gulp.watch(['./_sass/**/*.scss'], ['sass']);
   gulp.watch(['./*.*', './assets/**/*.*', './**/*.html', './**/*.yml', './**/*.markdown', './**/*.md', './**/*.rb', '!./node_modules/**', '!./_site/**'], ['jekyll']);
   gulp.watch(['./**/*.js', '!./_site/**', '!./node_modules/**'], ['js']);
   gulp.watch(['./_gfx/**/*.*', './_assets/**/*.*'], ['graphics']);
-  gulp.watch(['./_icons/**/*.*'], ['icons']);
   gulp.watch(['./_assets/**/*.*'], ['assets']);
   connect.server({ root: '_site', debug: true });
 });
