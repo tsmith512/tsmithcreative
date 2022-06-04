@@ -1,6 +1,0 @@
-DON'T PUT ANYTHING IN HERE.
-
-This exists because for some reason grunticons started crashing in Cloudflare Pages
-build environment. Every package that builds this site is so old it all needs to be
-replaced, but my laptop would optimize it locally, so I'm just committing the output
-for now...

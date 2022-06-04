@@ -8,7 +8,3 @@ fi
 mkdir -p _site/fonts
 wget -N $ASSETS_FOLDER/811484.zip
 unzip -o 811484.zip -d _site/fonts/
-
-npm install
-gem install bundler -v 1.17.3
-bundle install --path vendor/bundle
