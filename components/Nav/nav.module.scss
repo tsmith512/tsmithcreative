@@ -1,14 +1,12 @@
-/**
- * @file _site-header.scss
- * Header banner
- */
+@import '../../styles/variables.scss';
 
-.site-header {
+.header {
   background: #111;
   border-bottom: 2px solid black;
   padding: 0.5rem 0;
   width: 100%;
 
+  // @TODO: Not yet implemented...
   .home & {
     position: absolute;
     z-index: 1000;
@@ -21,7 +19,7 @@
     margin-bottom: 0;
   }
 
-  @include breakpoint(max-width ($nav-split - 1)) {
+  @media screen and (max-width: $nav-split - 1) {
     text-align: center;
   }
 
@@ -32,7 +30,7 @@
   h1 {
     width: 80px;
     margin: 0 auto;
-    @include breakpoint($nav-split) {
+    @media (min-width: $nav-split) {
       margin: 0;
       margin-top: 0.75rem;
       position: absolute;
@@ -62,7 +60,7 @@
   nav {
     text-align: center;
 
-    @include breakpoint($nav-split) {
+    @media (min-width: $nav-split) {
       text-align: right;
       margin-top: -0.5em;
       margin-bottom: 0.5rem;
@@ -87,7 +85,7 @@
       text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
       padding: 1.5em 0.5em 1em;
 
-      @include breakpoint($max-lines) {
+      @media (min-width: $max-lines) {
         padding: 1.5em 1em 1em 1em;
       }
 
@@ -99,7 +97,7 @@
         color: #FFF;
       }
 
-      @include breakpoint($nav-split) {
+      @media (min-width: $nav-split) {
         &.active {
           border-top-color: #EEE;
         }

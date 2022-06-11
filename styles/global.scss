@@ -1,7 +1,5 @@
-/**
- * @file _global.scss
- * Global styles and defaults. Applied immediately after the normalize.
- */
+@import 'variables.scss';
+@import "normalize";
 
 html {
   box-sizing: border-box;
@@ -65,7 +63,7 @@ video {
   max-width: $max-width;
   margin: 1rem;
 
-  @include breakpoint($max-width) {
+  @media (min-width: $max-width) {
     margin: 1rem auto;
   }
 }
