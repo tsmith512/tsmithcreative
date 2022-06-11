@@ -1,19 +1,16 @@
-/**
- * @file _site-footer.scss
- * Global site footer
- */
-.site-footer {
-  @extend %clearfix;
+@import '../../styles/variables.scss';
+
+.siteFooter {
   margin: 2rem 1rem;
   padding: 1rem 0;
   border-top: 2px solid #ddd;
 
-  @include breakpoint($masthead-box) {
+  @media (min-width: $masthead-box) {
     margin: 2rem;
     max-width: 960px;
   }
 
-  @include breakpoint($masthead-banner-full) {
+  @media (min-width: $masthead-banner-full) {
     width: 960px;
     margin: 2rem auto 1rem auto;
   }
@@ -27,7 +24,7 @@
 
     text-align: center;
 
-    @include breakpoint($footer-two-column) {
+    @media (min-width: $footer-two-column) {
       float: left;
       text-align: left;
       margin-top: 8px; // To better match the visual height of the social icons on the right
@@ -38,7 +35,7 @@
     text-align: center;
     margin-top: 1rem;
 
-    @include breakpoint($footer-two-column) {
+    @media (min-width: $footer-two-column) {
       float: right;
       text-align: right;
       margin-top: 0;
@@ -56,12 +53,12 @@
 
     a {
       display: block;
-      text-indent: 100%;
+      // text-indent: 100%;
       white-space: nowrap;
       overflow: hidden;
 
-      width: 32px;
-      height: 32px;
+      // width: 32px;
+      // height: 32px;
 
       background-position: center center;
       background-size: contain;

@@ -1,3 +1,5 @@
+<!-- MIGRATION NOTE: I'm deleting lines from this file as they get implemented elsewhere -->
+
 {% comment %}
   Generate a page title for use in the title tag and the social meta tag.
 {% endcomment %}
@@ -14,22 +16,11 @@
 {% assign description = page.summary %}
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
   <title>{{ title }}</title>
   <meta name="description" content="{{ description | escape }}">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-
-  <!-- Prefetch the domain name for typeface provider now; defer loading. Preload CSS is polyfilled by LoadCSS in the footer. -->
-  <link rel="dns-prefetch" href="https://cloud.typography.com/">
-  <link rel="preload" href="https://cloud.typography.com/6795652/7424152/css/fonts.css" as="style" onload="this.rel='stylesheet'">
-
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <link rel="preload" href="/gfx/icons/icons.data.svg.css" as="style" onload="this.rel='stylesheet'">
   <link rel="preload" href="{{ "/css/print.css" | prepend: site.baseurl }}" as="style" media="print" onload="this.rel='stylesheet'">
 
   <meta property="og:title" content="{{ title | escape }}">
@@ -45,10 +36,4 @@
   <link rel="home" type="application/rss+xml" href="/feed.xml" />
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
-
-  {% if page.css %}
-    <style>
-      {{ page.css }}
-    </style>
-  {% endif %}
 </head>

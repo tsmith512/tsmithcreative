@@ -5,7 +5,10 @@ import { useRouter } from 'next/router';
 
 import '../styles/global.scss';
 
-import { Nav } from '../components';
+import {
+  Footer,
+  Nav,
+} from '../components';
 
 const TSmithCreative = ({ Component, pageProps }: AppProps) => {
   // @TODO: This will cause problems if I start using query args or fragments.
@@ -28,7 +31,7 @@ const TSmithCreative = ({ Component, pageProps }: AppProps) => {
 
       <Nav />
       <Component {...pageProps} />
-      <div>Footer</div>
+      <Footer />
       <div>Analytics</div>
     </>
   );
