@@ -1,7 +1,6 @@
 import style from './masthead.module.scss';
 
 interface MastheadProps {
-  children?: any;
   title: string;
   summary?: string;
 }
