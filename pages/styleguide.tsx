@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Article, Media } from '../components';
+import { Article, BrowserFrame, Media } from '../components';
 
 const StyleGuide: NextPage = () => {
   return (
@@ -75,6 +75,14 @@ const StyleGuide: NextPage = () => {
         </p>
 
         <Media type="placeholder" size="mini" alt="Mini" />
+
+        <h3>Browser Frame</h3>
+
+        <p>To wrap embedded sites or draw attention to UI screenshots.</p>
+
+        <BrowserFrame>
+          <iframe src="https://example.com" height="500px"></iframe>
+        </BrowserFrame>
       </div>
     </Article>
   );
