@@ -1,9 +1,6 @@
-/**
- * @file _post-meta.scss
- * Provides post header styles seen both on blog posts themselves and also on
- * blog.html's .post-list view.
- */
-.post-meta {
+@import '../../styles/variables.scss';
+
+.postmeta {
   dl {
     font-family: $gotham;
     color: #999;
@@ -11,6 +8,7 @@
     dt {
       float: left;
       clear: right;
+      margin-right: 0.5rem;
     }
 
     dd {
@@ -27,13 +25,11 @@
     margin: 0;
     padding: 0;
     overflow: hidden; // Don't wrap around the tag icon
-    line-height: 1.25;
 
     li {
       display: inline-block;
       background: #f0f0f0;
-      padding: 0 0.25em;
-      margin-bottom: 0.25em;
+      margin: 0 0.25rem;
     }
   }
 }

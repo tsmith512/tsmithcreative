@@ -1,26 +1,47 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Article, BrowserFrame, Media } from '../components';
+import { ArticleProps } from '../components/Article/Article';
 
 const StyleGuide: NextPage = () => {
+  const sampleProps: ArticleProps = {
+    title: 'Styleguide Page',
+    summary: 'For testing migrated components.',
+    meta: {
+      date: new Date(),
+      citation: {
+        pubTitle: 'TEST',
+        pubUrl: 'https://www.example.com',
+      },
+      tags: ['Tag 1', 'Tag 2', 'Tag 3'],
+    },
+  };
+
   return (
-    <Article title="Styleguide Page" summary="For testing migrated components.">
+    <Article {...sampleProps}>
       <div className="wrapper">
+        <h2>Basic Elements</h2>
+
+        <p><em>Styled HTML or Markdown without specific components.</em></p>
         <p>
           <strong>Space&hellip;</strong> the <em>final frontier.</em> These are
           the voyages of the Starship Enterprise. Its continuing mission: to
-          explore strange new worlds; to seek out new life and new civilizations;
-          to boldly go where no one has gone before.
+          explore <a href="#">strange new worlds</a>; to seek out new life and
+          new civilizations; to boldly go where no one has gone before.
         </p>
-
-        <h2>Basic Elements</h2>
 
         <ul>
           <li>Malcolm Reynolds</li>
           <li>Benjamin Sisko</li>
-          <li><a href="#">James Holden</a></li>
+          <li>James Holden</li>
           <li>Dylan Hunt</li>
         </ul>
+
+        <ol>
+          <li>Earth</li>
+          <li>Mars</li>
+          <li>The Belt</li>
+        </ol>
 
         <blockquote>
           <p>
@@ -48,7 +69,13 @@ const StyleGuide: NextPage = () => {
           <cite>Benjamin Sisko, Deep Space Nine: "In the Pale Moonlight"</cite>
         </blockquote>
 
-        <h2>Media Containers</h2>
+        <hr />
+
+        <h2>Special Content Components</h2>
+
+        <p><em>These are React components available in MDX.</em></p>
+
+        <h3>Media Containers</h3>
 
         <p>
           It was the dawn of the third age of mankind &mdash; ten years after

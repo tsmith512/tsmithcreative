@@ -4,3 +4,4 @@ export { Footer } from './Footer/Footer';
 export { Nav } from './Nav/Nav';
 export { Masthead } from './Masthead/Masthead';
 export { Media } from './Media/Media';
+export { PostMeta } from './PostMeta/PostMeta';
