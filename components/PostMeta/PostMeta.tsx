@@ -6,8 +6,8 @@ interface CitationProps {
 }
 
 export interface PostMetaProps {
-  date?: Date;
-  citation?: CitationProps;
+  date?: number[];
+  citation?: CitationProps | null;
   tags?: string[];
 }
 
@@ -22,7 +22,7 @@ export const PostMeta = (props: PostMetaProps) => {
     <header className={style.postmeta}>
       <dl>
         <dt><span className="icon icon-calendar-light">Published</span></dt>
-        <dd className="date">{props.date && props.date.toDateString()}</dd>
+        <dd className="date">{props.date && new Date(...props.date as []).toDateString()}</dd>
 
         { props.citation && (
           <dt><span className="icon icon-penpaper-light">Appears On</span></dt>

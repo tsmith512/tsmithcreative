@@ -1,5 +1,9 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
+
+import { serialize } from 'next-mdx-remote/serialize';
+import { MDXRemote } from 'next-mdx-remote';
+
 import { Article } from '../../../components';
 import { findPost, getPostMeta, getPosts } from '../../../lib/posts';
 
@@ -16,9 +20,12 @@ export const getStaticProps = async (context: any) => {
     return { notFound: true };
   }
 
+  const postData = getPostMeta(filename);
+
   return {
     props: {
-      post: getPostMeta(filename),
+      meta: postData.data,
+      content: await serialize(postData.content),
     }
   }
 };
@@ -26,7 +33,7 @@ export const getStaticProps = async (context: any) => {
 export const getStaticPaths = async () => {
   const paths = getPosts().map((post) => ({
     params: {
-      year: post.date.getFullYear().toString(),
+      year: post.date[0].toString(),
       slug: post.slug,
     },
   }))
@@ -43,9 +50,9 @@ const BlogPost: NextPage = (props: any) => {
       <Head>
         <title></title>
       </Head>
-      <Article {...props.post.data}>
+      <Article {...props.meta}>
         <div className="wrapper">
-          { props.post.children }
+          <MDXRemote {...props.content} />
         </div>
       </Article>
     </>

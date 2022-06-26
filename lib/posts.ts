@@ -5,6 +5,7 @@ import matter from 'gray-matter';
 
 // @TODO: The shape of this interface should be refactored and it should be in here.
 import { ArticleProps } from '../components/Article/Article';
+import { filterLiquid } from './migrate';
 
 const postDirectory = join(process.cwd(), '_posts');
 
@@ -12,7 +13,8 @@ export interface PostInterface {
   slug: string;
   filename: string;
   url: string;
-  date: Date; // @TODO: requird here for sorting posts but optional on ArticleProps. gross.
+  content: string;
+  date: number[]; // @TODO: requird here for sorting posts but optional on ArticleProps. gross.
   data: ArticleProps;
 }
 
@@ -38,7 +40,7 @@ export const findPost = (year: number | string, slug: string): string | undefine
 export const getPostMeta = (filename: string): PostInterface => {
   let parts = filename.replace(/\.mdx?$/, '').split('-');
   const slug = parts.splice(3).join('-');
-  const [y, m, d] = parts.map(i => parseInt(i));
+  const dateParts = parts.map(i => parseInt(i));
 
   const postFile = join(postDirectory, filename);
 
@@ -49,17 +51,18 @@ export const getPostMeta = (filename: string): PostInterface => {
     slug,
     filename: filename,
     url: `/year/${slug}`,
-    date: new Date(y, m, d),
+    date: dateParts,
+    content: filterLiquid(content) || '',
     data: {
-      children: content,
       title: data.title,
       summary: data.summary,
       meta: {
-        date: new Date(y, m, d),
+        date: dateParts,
+        tags: data?.tags,
         citation: data.hasOwnProperty('citation') ? {
           pubTitle: data?.citation[0] || undefined,
           pubUrl: data?.citation[1] || undefined,
-        } : undefined,
+        } : null,
       }
     },
   };

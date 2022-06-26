@@ -8,7 +8,7 @@ const StyleGuide: NextPage = () => {
     title: 'Styleguide Page',
     summary: 'For testing migrated components.',
     meta: {
-      date: new Date(),
+      date: [new Date().getFullYear(), new Date().getMonth(), new Date().getDate()],
       citation: {
         pubTitle: 'TEST',
         pubUrl: 'https://www.example.com',

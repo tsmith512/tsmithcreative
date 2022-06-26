@@ -12,7 +12,7 @@ export interface ArticleProps {
 export const Article = ({children, ...meta}: ArticleProps) => {
   return(
     <>
-      <Masthead {...meta} graphic={meta?.meta?.date && meta.meta.date.getFullYear()} />
+      <Masthead {...meta} graphic={meta?.meta?.date && meta.meta.date[0]} />
       <div className={style.article}>
         {children}
       </div>
