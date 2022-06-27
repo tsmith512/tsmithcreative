@@ -23,7 +23,8 @@ export const getPosts = (): PostInterface[] => {
 
   const posts = files
     .map((file) => getPostMeta(file))
-    .sort((p1, p2) => (p1.data > p2.data ? -1 : 1));
+    // @TODO: A filename sort will work because alpha on YYYY-MM-DD-slug is date-ordered
+    .sort((p1, p2) => (p1.filename > p2.filename ? -1 : 1));
 
   return posts;
 }
@@ -50,7 +51,7 @@ export const getPostMeta = (filename: string): PostInterface => {
   return {
     slug,
     filename: filename,
-    url: `/year/${slug}`,
+    url: `/blog/${dateParts[0]}/${slug}`,
     date: dateParts,
     content: filterLiquid(content) || '',
     data: {

@@ -21,24 +21,32 @@ export const PostMeta = (props: PostMetaProps) => {
   return(
     <header className={style.postmeta}>
       <dl>
-        <dt><span className="icon icon-calendar-light">Published</span></dt>
-        <dd className="date">{props.date && new Date(...props.date as []).toDateString()}</dd>
-
-        { props.citation && (
-          <dt><span className="icon icon-penpaper-light">Appears On</span></dt>
-        )}
-        { props.citation && (
-          <dd className="citation"><a href={props.citation.pubUrl}>
-            {pubs[props.citation.pubTitle]}
-          </a></dd>
+        { props.date && (
+          <>
+            <dt><span className="icon icon-calendar-light">Published</span></dt>
+            <dd className="date">{props.date && new Date(...props.date as []).toDateString()}</dd>
+          </>
         )}
 
-        <dt><span className="icon icon-tags-light">Tags</span></dt>
-        <dd className="tags">
-          <ul>
-            {props.tags?.map((tag, i) => (<li key={i}>{ tag }</li>))}
-          </ul>
-        </dd>
+        { props.citation && (
+          <>
+            <dt><span className="icon icon-penpaper-light">Appears On</span></dt>
+            <dd className="citation"><a href={props.citation.pubUrl}>
+              {pubs[props.citation.pubTitle]}
+            </a></dd>
+          </>
+        )}
+
+        { props.date && (
+          <>
+            <dt><span className="icon icon-tags-light">Tags</span></dt>
+            <dd className="tags">
+              <ul>
+                {props.tags?.map((tag, i) => (<li key={i}>{ tag }</li>))}
+              </ul>
+            </dd>
+          </>
+        )}
       </dl>
     </header>
   );
