@@ -6,6 +6,7 @@ export interface ArticleProps {
   children?: any;
   title: string;
   summary?: string;
+  thumbnail?: string | false; // @TODO: In a "meta" property is the right place for this, but it isn't used here...
   meta: PostMetaProps;
 }
 

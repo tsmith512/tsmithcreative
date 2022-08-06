@@ -8,6 +8,7 @@ import { ArticleProps } from '../components/Article/Article';
 import { filterLiquid } from './migrate';
 
 const postDirectory = join(process.cwd(), '_posts');
+const thumbsDirectory = join(process.cwd(), '_assets/thumbnail/');
 
 export interface PostInterface {
   slug: string;
@@ -38,6 +39,15 @@ export const findPost = (year: number | string, slug: string): string | undefine
     .shift();
 };
 
+const getThumbnail = (slug: string): string | false => {
+  if (fs.existsSync(join(thumbsDirectory, `${slug}.jpg`))) {
+    return `/assets/thumbnail/${slug}.jpg`;
+  } else if (fs.existsSync(join(thumbsDirectory, `${slug}.png`))) {
+    return `/assets/thumbnail/${slug}.png`;
+  }
+  return false;
+};
+
 export const getPostMeta = (filename: string): PostInterface => {
   let parts = filename.replace(/\.mdx?$/, '').split('-');
   const slug = parts.splice(3).join('-');
@@ -57,6 +67,7 @@ export const getPostMeta = (filename: string): PostInterface => {
     data: {
       title: data.title,
       summary: data.summary,
+      thumbnail: getThumbnail(slug),
       meta: {
         date: dateParts,
         tags: data?.tags,

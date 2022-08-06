@@ -17,9 +17,11 @@ export const PostTeaserList = (props: PostTeaserListInterface) => {
 export const PostTeaser = (post: PostInterface) => {
   return (
     <li className={style.item}>
-      <a href={post.url} className={style.thumbnail}>
-        (Thumbnail)
-      </a>
+      {post.data?.thumbnail && (
+        <a href={post.url} className={style.thumbnail}>
+          <img src={post.data.thumbnail} />
+        </a>
+      )}
       <div className={style.description}>
         <h2><a className={style.link} href={post.url}>{post.data.title}</a></h2>
         {post.data?.summary && (<p>{post.data.summary}</p>)}
