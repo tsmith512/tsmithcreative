@@ -11,7 +11,7 @@ link to [Advent of Code](https://adventofcode.com/) and asked who was
 interested. I enjoy writing code for side projects in the free time I definitely
 _don't_ have, so I decided to give it a go.
 
-![Advent of Code Home](/assets/blog/advent-of-code-2020/aoc.png)
+<Media type="image" src="/assets/blog/advent-of-code-2020/aoc.png" alt="Advent of Code Home" />
 
 Day 1 was easy, and while my colleagues were debating which of their
 professional languages to do it in, I thought, "Well, this would be easy in
@@ -19,7 +19,7 @@ professional languages to do it in, I thought, "Well, this would be easy in
 I dragged my [roadtrip group]({% post_url 2019-08-29-travelogue-revisited %})
 in on this adventure, too.
 
-![Bash, Day 1](/assets/blog/advent-of-code-2020/bash.png)
+<Media type="image" src="/assets/blog/advent-of-code-2020/bash.png" alt="Bash, Day 1" />
 
 Then I hit an interesting question. Do I do Day 2 in Bash again? Or move on to
 something else? Just for kicks, could I do it in **PowerShell**? How hard would
@@ -39,7 +39,7 @@ time to go [hide in a cabin in the woods for New Year's](https://tsmithphotos.co
 leaving VSCode at home. But this project was an absolute blast, and I do intend
 to finish — at a slower pace.
 
-![Chart of Lines by Filetype](/assets/blog/advent-of-code-2020/lines.png)
+<Media type="image" src="/assets/blog/advent-of-code-2020/lines.png" alt="Chart of Lines by Filetype" />
 
 _Picked up enough **R** ([Day 11](https://github.com/tsmith512/advent_code/blob/trunk/2020/11/seatshuffling.r))
 to put this chart together, which I'd like to take to other data visualization projects one day._
@@ -52,7 +52,7 @@ To the extent I was able, given the cycle time, I tried to be as idiomatically
 "proper" in the language-of-the-day. Clearly, some languages, their docs,
 _and some of the puzzles_ made this easier or harder to pull off.
 
-![Git one-line log looking at Hello World commits](/assets/blog/advent-of-code-2020/hello-log.png)
+<Media type="image" src="/assets/blog/advent-of-code-2020/hello-log.png" alt="Git one-line log looking at Hello World commits" />
 
 - The mainstays of my professional work have been **JavaScript**
   ([Day 16](https://github.com/tsmith512/advent_code/tree/trunk/2020/16)) and
@@ -121,38 +121,38 @@ data types (specifically, different sizes).
 
 My code output compared to my calculator:
 
-![Program output showing incorrect multiplication](/assets/blog/advent-of-code-2020/bad-math.png)
+<Media type="image" src="/assets/blog/advent-of-code-2020/bad-math.png" alt="Program output showing incorrect multiplication" />
 
 What Mitchel sent me:
 
-![Animation of a binary calculator showing a bit flip at 33](/assets/blog/advent-of-code-2020/hint.gif)
+<Media type="image" src="/assets/blog/advent-of-code-2020/hint.gif" alt="Animation of a binary calculator showing a bit flip at 33" />
 
 The answer was that I needed a `unit64_t` instead of an `int` or `long`.
 
 **Accidental Reducer:** That time I finally learned what reducers are by
 accidentally writing one.
 
-![A diff showing the removal of a 10 line function replaced by a one-liner](/assets/blog/advent-of-code-2020/diff-reduce.png)
+<Media type="image" src="/assets/blog/advent-of-code-2020/diff-reduce.png" alt="A diff showing the removal of a 10 line function replaced by a one-liner" />
 
 **Marine Navigation:** Finally breaking out graph paper for the TCL
 ([Day 12, Part 2](https://github.com/tsmith512/advent_code/blob/trunk/2020/12/navigate_two.tcl#L46-L70))
 ship navigation puzzle, which was not hard but easier to draw than to code.
 
-![Graph Paper showing the ship and waypoint rotation problem](/assets/blog/advent-of-code-2020/graph.jpg)
+<Media type="image" src="/assets/blog/advent-of-code-2020/graph.jpg" alt="Graph Paper showing the ship and waypoint rotation problem" />
 
 **Zoom Whiteboarding** with George: Planning out which question to answer, and
 how to answer it, to solve the laptop charger chain problem
 ([Day 10, Part 2](https://github.com/tsmith512/advent_code/blob/trunk/2020/10/ChargerConundrum.groovy)).
 
-![Annotations over a code editor on screenshare](/assets/blog/advent-of-code-2020/whiteboarding.png)
+<Media type="image" src="/assets/blog/advent-of-code-2020/whiteboarding.png" alt="Annotations over a code editor on screenshare" />
 
 **Delightful One-Liner Methods** in Kotlin ([Day 6](https://github.com/tsmith512/advent_code/blob/trunk/2020/06/CustomsPrep.kt))
 
-![Two one-liner methods in Kotlin](/assets/blog/advent-of-code-2020/kotlin-snippet.png)
+<Media type="image" src="/assets/blog/advent-of-code-2020/kotlin-snippet.png" alt="Two one-liner methods in Kotlin" />
 
 **On Ruby:** When a Ruby ([Day 15](https://github.com/tsmith512/advent_code/tree/trunk/2020/15)) Engineer told me this:
 
-![Slack convo of an engineer telling me he liked my approach](/assets/blog/advent-of-code-2020/ruby-slack.png)
+<Media type="image" src="/assets/blog/advent-of-code-2020/ruby-slack.png" alt="Slack convo of an engineer telling me he liked my approach" />
 
 **A performance boost** from
 [first-solution to final-answer](https://github.com/tsmith512/advent_code/commit/83a86485243bcbf5c0a34ba178cd37b7f24f018e)
@@ -163,7 +163,7 @@ reducing execution time from 2.4 seconds to 0.02 seconds.
 
 **A Commit Log of Despair** (Python, [Day 19](https://github.com/tsmith512/advent_code/tree/trunk/2020/19)):
 
-![A commit log showing messages in increasing amounts of freakout](/assets/blog/advent-of-code-2020/commit-log-of-doom.png)
+<Media type="image" src="/assets/blog/advent-of-code-2020/commit-log-of-doom.png" alt="A commit log showing messages in increasing amounts of freakout" />
 
 Which ultimately resulted in this hilariously horrifying automatically generated
 regular expression match pattern. But it did work!

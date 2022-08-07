@@ -338,7 +338,7 @@ building locally, too, but quickly became a showstopper:
   on Bitrise, I started having Provisioning Profile problems on top of that. All
   despite supposed options for these things to be handled automatically.
 
-![This made me angry.](/assets/blog/hello-hangboard/mad-at-my-computer.gif)
+<Media type="image" src="/assets/blog/hello-hangboard/mad-at-my-computer.gif" alt="This made me angry." />
 
 When I threw it all out and started over outside Xcode, it worked fine, first try:
 

@@ -40,28 +40,28 @@ Calendar, or Table!
 **Pages are built with blocks:** plain text, bullet lists, checkbox/to-do lists,
 headers, images, links with previews, embeds, etc&hellip;
 
-![Blocks options for new content](/assets/blog/notion/blocks.gif)
+<Media type="image" src="/assets/blog/notion/blocks.gif" alt="Blocks options for new content" />
 
 **Text formatting is flexible enough, but still structured.** It's not a "full
 WYSIWYG" editor like OneNote. I like that! Giving me the tools to express ideas
 without turning editing into a free-for-all helps me feel like I'm making
 progress instead of making a mess. Hotkeys and Markdown-style make it faster.
 
-![Formatting text in Notion](/assets/blog/notion/formatting.gif)
+<Media type="image" src="/assets/blog/notion/formatting.gif" alt="Formatting text in Notion" />
 
 **Pages can have "databases"** which can be viewed as a table, Kanban board, or
 calendar. "Rows" in these databases are themselves pages, but inherit a
 customizable data model allowing you to add properties to visualize on
 the table/board/calendar displays.
 
-![Database viewed as a Kanban board](/assets/blog/notion/database.gif)
+<Media type="image" src="/assets/blog/notion/database.gif" alt="Database viewed as a Kanban board" />
 
 **Content can be put into columns.** Notion's ability to group content with
 columns helps keep bits of text and reference material logically grouped. (In
 truth, OneNote does do columns — you can put text frames next to each other —
 but it can get messy.)
 
-![Creating columns in Notion's editor](/assets/blog/notion/columns.gif)
+<Media type="image" src="/assets/blog/notion/columns.gif" alt="Creating columns in Notion's editor" />
 
 **Lightweight interface.** Despite all it can do, its interface is sparse and
 content-focused, reducing distractions.
