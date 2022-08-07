@@ -6,7 +6,7 @@ interface MediaProps {
   src?: string;
   type?: string;
   size?: string;
-  shadow?: boolean;
+  noshadow?: boolean;
 }
 
 export const Media = (props: MediaProps) => {
@@ -15,7 +15,8 @@ export const Media = (props: MediaProps) => {
 
   let src = props.src;
 
-  if (typeof props.shadow === 'undefined' || props.shadow) {
+  // So the default is "with shadow" -- set `noshadow` prop to hide.
+  if (!!!props.noshadow) {
     mediaClasses.push(style.shadow);
   }
 
