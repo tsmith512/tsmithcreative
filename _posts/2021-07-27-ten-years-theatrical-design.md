@@ -32,7 +32,7 @@ but with _this_ photo" that an art student took of the lead actor.
 _Kindly ignore_ the gratuitous drop shadows and _stretched_ type. 2005 was a
 lot of learnin' ago.
 
-{% picture mini /blog/ten-year-theatre-journey/2005-Company.jpg --alt Company poster %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2005-Company.jpg" alt="Company poster"  />
 
 After designing pieces for each subsequent show, I decided to attend The
 University of Tulsa for graphic design. Rick became one of my first freelance
@@ -63,33 +63,33 @@ backdrops and textiles for use onstage. Then we worked backward, using those to
 create the poster and other pieces. I even took these to a few class critiques.
 Commanding image: "Lady Liberty has turned her back on her people."
 
-{% picture mini /blog/ten-year-theatre-journey/2010-WSS-Poster.jpg --alt West Side Story poster %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2010-WSS-Poster.jpg" alt="West Side Story poster"  />
 
 We ordered the backdrops printed at Lamar Outdoor Advertising (the billboard
 people) in Tulsa.
 
-{% picture mini /blog/ten-year-theatre-journey/2010-WSS-Backdrops-1.jpg --alt West Side Story scenery %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2010-WSS-Backdrops-1.jpg" alt="West Side Story scenery"  />
 
-{% picture mini /blog/ten-year-theatre-journey/2010-WSS-Backdrops-2.jpg --alt West Side Story scenery %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2010-WSS-Backdrops-2.jpg" alt="West Side Story scenery"  />
 
 Lamar found it entertaining because it's a departure from their usual
 _everything._ "They're... vertical! And indoors?" Their team got excited about
 how to adjust the process to produce a good drop.
 
-{% picture mini /blog/ten-year-theatre-journey/2010-WSS-Performance.jpg --alt West Side Story preshow photo %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2010-WSS-Performance.jpg" alt="West Side Story preshow photo"  />
 
 Short of a print job I once ordered that called for a _full truckload_ of paper,
 this remains the largest physical piece I have designed.
 
 ## Chorus Line (2011)
 
-{% picture mini /blog/ten-year-theatre-journey/2011-CL.jpg --alt Chorus Line poster %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2011-CL.jpg" alt="Chorus Line poster"  />
 
 Of all of them, this may be my favorite show wordmark. Simple is good. Peggy did
 a photoshoot of the cast in-character, which personalized the poster and gave
 them an exciting sense of ownership.
 
-{% picture mini /blog/ten-year-theatre-journey/2011-CL-logo.png --alt Chorus Line logo %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2011-CL-logo.png" alt="Chorus Line logo"  />
 
 _A Chorus Line_ has such an individual focus, contrasting the plot's premise
 "these are all interchangeable potential cast members, we just need to pick
@@ -100,7 +100,7 @@ only one --- [one singular sensation](https://www.youtube.com/watch?v=tyZeGOsR9I
 
 ## Scarlet Pimpernel (2012)
 
-{% picture mini /blog/ten-year-theatre-journey/2012-SP.jpg --alt Scarlet Pimpernel poster %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2012-SP.jpg" alt="Scarlet Pimpernel poster"  />
 
 Wherein typography and patterns lean heavily into the _flourish_ of the story of
 a British fop who, alongside his secret society of unassuming dandies, rescued
@@ -110,7 +110,7 @@ was working on.
 
 ## Beauty and the Beast (2013)
 
-{% picture mini /blog/ten-year-theatre-journey/2013-BATB.png --alt Beauty and the Beast poster %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2013-BATB.png" alt="Beauty and the Beast poster"  />
 
 The background is made from photos I took of the set designer's paper models. I
 love how _that_ and the wordmark turned out, creating a darker atmosphere than
@@ -124,18 +124,18 @@ publicity materials, so we kept it that time.
 
 ## Sweeny Todd (2014)
 
-{% picture mini /blog/ten-year-theatre-journey/2014-SW-Poster.jpg --alt Sweeney Todd poster %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2014-SW-Poster.jpg" alt="Sweeney Todd poster"  />
 
 Rick worked with art student Alex L. to create this collage, and the three of us
 collaborated on incorporating his artwork into our publicity designs.
 Opportunities to work directly with the students weren't always possible, but it
 was always rewarding when we could.
 
-{% picture mini /blog/ten-year-theatre-journey/2014-SW-Art.jpg --alt Original collage art %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2014-SW-Art.jpg" alt="Original collage art"  />
 
 ## Les Miserables (2015)
 
-{% picture mini /blog/ten-year-theatre-journey/2015-LM.jpg --alt Les Mis poster %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2015-LM.jpg" alt="Les Mis poster"  />
 
 This was the first photoshoot I did myself of a student in-costume and it was
 fun! The background is a merge of four photos to create the environment. Despite
@@ -148,7 +148,7 @@ _Rick, you know what you made me do on this poster and I'm still mad about it._ 
 Commanding image: "Is justice really blind?" And can she look like a
 stereotypical California beach blonde?
 
-{% picture mini /blog/ten-year-theatre-journey/2016-LB.jpg --alt Legally Blonde poster %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2016-LB.jpg" alt="Legally Blonde poster"  />
 
 A fun yet _stark_ departure from my usual aesthetic. I'm pleased with the
 colors, typography, and how I learned to love polka dots. But the primary visual
@@ -162,7 +162,7 @@ Rick's commanding image was something along the lines of "the limelight he
 chases is also the target on his back," with the specific requirement to include
 a target or bullseye prominently in the visual.
 
-{% picture mini /blog/ten-year-theatre-journey/2017-CMIYC-Poster.jpg --alt Catch Me If You Can Poster %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2017-CMIYC-Poster.jpg" alt="Catch Me If You Can Poster"  />
 
 I _loved_ working on that wordmark. The arrow motif was used in the movie
 collateral, too, but less integrated and with a very different aesthetic. I took
@@ -170,18 +170,18 @@ the arrow edges to form the pilot's wings on the poster. Then I
 [3D printed]({% post_url 2018-01-11-3d-printing-2017 %}) that illustration for
 Celia, our costume designer, to use on the uniform:
 
-{% picture mini /blog/3d-printing-2017/wings-model.png --alt Wings Model in Fustion 360 %}
+<Media type="image" size="mini" src="/assets/blog/3d-printing-2017/wings-model.png" alt="Wings Model in Fustion 360"  />
 
-{% picture mini /blog/3d-printing-2017/delta.jpg --alt Bulk printing on a delta %}
+<Media type="image" size="mini" src="/assets/blog/3d-printing-2017/delta.jpg" alt="Bulk printing on a delta"  />
 
 As it turns out, authentic PanAm wings are both frightfully expensive and too
 small for the stage. This pin was huge up close, but it read well at a distance.
 
-{% picture mini /blog/3d-printing-2017/wings.jpg --alt 3D printed wings for costuming %}
+<Media type="image" size="mini" src="/assets/blog/3d-printing-2017/wings.jpg" alt="3D printed wings for costuming"  />
 
 ## Jesus Christ Superstar (2018)
 
-{% picture mini /blog/ten-year-theatre-journey/2018-JCSS.jpg --alt Jesus Christ Superstar poster %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2018-JCSS.jpg" alt="Jesus Christ Superstar poster"  />
 
 According to the grungy commanding image of this production (and, for that
 matter, a valid scriptural interpretation), Jesus was a protester. The artwork
@@ -194,13 +194,13 @@ the higher power to reach toward.
 
 ## Spring Awakening (2019)
 
-{% picture mini /blog/ten-year-theatre-journey/2019-SA.jpg --alt Spring Awakening poster %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2019-SA.jpg" alt="Spring Awakening poster"  />
 
 The _Spring Awakening_ visual concept came from a piece of surrealist art Rick
 found during his initial research. I really wish we'd been able to stage a
 photoshoot for this one.
 
-{% picture mini /blog/audence-awakening/voting-in-rehearsal.jpg --alt Audience member voting with the audience participation app %}
+<Media type="image" size="mini" src="/assets/blog/audence-awakening/voting-in-rehearsal.jpg" alt="Audience member voting with the audience participation app"  />
 
 Rick also wanted to add an audience participation element into this show, which
 evolved into us [building a web application]({% post_url 2019-10-25-the-audience-awakening %})
@@ -215,7 +215,7 @@ Evita's legacy. We wanted Che(s) to be _in_ the photo to show that tension. And
 this get-together represented the start of a long climb out of the pandemic
 toward getting back on stage. I remember driving home _elated._
 
-{% picture mini /blog/ten-year-theatre-journey/2021-Evita.jpg --alt Evita poster %}
+<Media type="image" size="mini" src="/assets/blog/ten-year-theatre-journey/2021-Evita.jpg" alt="Evita poster"  />
 
 I did this as a socially-distanced photoshoot across the full width of the PAC
 stage looking out toward a house wall. Our focus was the fog _around_ Evita. It

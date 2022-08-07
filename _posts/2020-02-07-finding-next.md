@@ -206,7 +206,7 @@ galleries:
 
 ---
 
-{% picture /blog/finding-next/terlingua-road.jpg --alt View from a road into a desert valley at Terlingua, Texas %}
+<Media type="image" size="" src="/assets/blog/finding-next/terlingua-road.jpg" alt="View from a road into a desert valley at Terlingua, Texas"  />
 
 > Well my Dad used to tell me that anybody who ever became somebody got laid off
 > at some point.
@@ -261,7 +261,7 @@ Keeping notes left me with interesting data. Inspired by a post
 _[Interviewing 201: Lessons from seven months of interviewing](https://www.linkedin.com/pulse/interviewing-201-lessons-from-seven-months-kellen-freeman/)_
 by Kellen Freeman, I too made a [Sankey diagram](http://sankeymatic.com/build/).
 
-{% picture /blog/finding-next/sankey-diagram.png --alt Sankey flow diagram showing job application sources and outcomes %}
+<Media type="image" size="" src="/assets/blog/finding-next/sankey-diagram.png" alt="Sankey flow diagram showing job application sources and outcomes"  />
 
 He wrote a series of posts about his search — they're all great reads
 ([part 1](https://www.linkedin.com/pulse/interviewing-201-lessons-from-seven-months-kellen-freeman/),
@@ -429,7 +429,7 @@ which I did use for the diary and continue to use for _everything else._ But I
 have long had trouble making routine use of to-do list applications despite
 [Todoist](https://todoist.com/) being an exceptionally good one.
 
-{% picture /blog/finding-next/bulletjournal.jpg --alt An open notebook with terrible handwriting next to a keyboard and mouse. %}
+<Media type="image" size="" src="/assets/blog/finding-next/bulletjournal.jpg" alt="An open notebook with terrible handwriting next to a keyboard and mouse."  />
 
 So while I'm still in "say yes to everything" mode: as recommended by both a
 former colleague and a PJC sponsor, I've continued my efforts to list life
@@ -510,7 +510,7 @@ insights in unexpected places.
 - And to bookend the break, another car-camping overland roadtrip — this time
   with friends, also both soon to start new jobs — to New Mexico to ring in 2020.
 
-{% picture mini /blog/finding-next/very-shirt.jpg --alt Me wearing a new team shirt from Very %}
+<Media type="image" size="mini" src="/assets/blog/finding-next/very-shirt.jpg" alt="Me wearing a new team shirt from Very"  />
 
 This brings me to [Very](https://www.verypossible.com/). I reached out to a lot
 of folks over the last few months, and I can confirm — y'all are the best. I'm

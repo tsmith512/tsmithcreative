@@ -132,7 +132,7 @@ page about the ER offered a list of services and awards they'd received.
 
 She closed with a [classic XKCD example](https://xkcd.com/773/), "University Website"
 
-{% picture mini /blog/drupalcon-seattle/xkcd-univ-website.png --alt The XKCD Comic called "University Website" %}
+<Media type="image" size="mini" src="/assets/blog/drupalcon-seattle/xkcd-univ-website.png" alt="The XKCD Comic called "University Website""  />
 
 
 **[Ignore the Naysayers: Your RFP Can Be Brilliant!](https://events.drupal.org/seattle2019/sessions/ignore-naysayers-your-rfp-can-be-great) with Joe Crespo _(Aten Design)_**
@@ -248,7 +248,7 @@ warehouse product.
 [Session page](https://events.drupal.org/seattle2019/sessions/estimating-iteration-story-points-and-thin-vertical-slices)
 | [My write-up]({% link _projects/2019-05-10-estimate-to-iterate.md %})
 
-{% picture /blog/drupalcon-seattle/my-pres.jpg --alt Me giving a presentation %}
+<Media type="image" size="" src="/assets/blog/drupalcon-seattle/my-pres.jpg" alt="Me giving a presentation"  />
 
 
 I'm pleased with how my session went. It was scheduled for very late in the day,
@@ -267,4 +267,4 @@ Resources:
 
 Thanks to DrupalCon organizers for accepting my talk!
 
-{% picture /blog/drupalcon-seattle/group-photo.jpg --alt 4K Group Photo in the Booth %}
+<Media type="image" size="" src="/assets/blog/drupalcon-seattle/group-photo.jpg" alt="4K Group Photo in the Booth"  />

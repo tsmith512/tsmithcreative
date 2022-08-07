@@ -104,7 +104,7 @@ triggered at 7am on weekdays:
 
 The script and automation will both appear in Home Assistant's UI:
 
-{% picture /blog/hass-winter-automations/sunrise-ui.png --alt Script and Automation in Hass UI %}
+<Media type="image" size="" src="/assets/blog/hass-winter-automations/sunrise-ui.png" alt="Script and Automation in Hass UI"  />
 
 Turning on the _script_ will start the sunrise routine immediately.
 

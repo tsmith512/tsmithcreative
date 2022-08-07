@@ -35,7 +35,7 @@ me time to up my blogging game.
 
 ## Under the Hood
 
-{% picture mini /blog/building-travelogue/diagram.png --alt Diagram of the application --img class="noshadow" %}
+<Media type="image" size="mini" src="/assets/blog/building-travelogue/diagram.png" alt="Diagram of the application" noshadow />
 
 
 This is perhaps a more complex amalgamation of services than it could have been,
@@ -234,7 +234,7 @@ funniest part of all this is the banter), and the occasional video (because some
 things have to be seen to be believed). Each post has a "Show on Map" link which
 re-centers the map view to where we were when I made the post.
 
-{% picture /blog/building-travelogue/final.png --alt The site frontend --img class="noshadow" %}
+<Media type="image" size="" src="/assets/blog/building-travelogue/final.png" alt="The site frontend" noshadow />
 
 **Tumblr's job:** Tie all the pieces together into the frontend experience.
 
@@ -258,7 +258,7 @@ _(Yes, this is where my Favicon came from.)_
 {% update 2017-06 %}
 We lived. ;-)
 
-{% picture /blog/building-travelogue/grand-canyon.jpg --alt Grand Canyon %}
+<Media type="image" size="" src="/assets/blog/building-travelogue/grand-canyon.jpg" alt="Grand Canyon"  />
 {% endupdate %}
 
 

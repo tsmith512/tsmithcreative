@@ -29,7 +29,7 @@ libraries or other public spaces can be a gamble. Having a backup plan and a
 hotspot is useful, too. Most of it comes down to what percentage of the day will
 be on video calls.
 
-{% picture /blog/magic-travel-spreadsheet/IMG_20180807_174432103.jpg --alt Working in a hammock in a forest %}
+<Media type="image" size="" src="/assets/blog/magic-travel-spreadsheet/IMG_20180807_174432103.jpg" alt="Working in a hammock in a forest"  />
 
 And in my unsolicited opinion on the virtues of the digital nomad: don't fake
 it. Building good distributed work culture offers the opportunity to re-evaluate
@@ -254,7 +254,7 @@ I know I'm certainly looking forward to travel re-unleashed one day. Until then,
 we must step lightly and acknowledge how leave-no-trace has taken on a whole new
 meaning.
 
-{% picture /blog/magic-travel-spreadsheet/IMG_20181118_110155051.jpg --alt View down from an overlook at a dirt road in Death Valley %}
+<Media type="image" size="" src="/assets/blog/magic-travel-spreadsheet/IMG_20181118_110155051.jpg" alt="View down from an overlook at a dirt road in Death Valley"  />
 
 
 # Template Changelog
