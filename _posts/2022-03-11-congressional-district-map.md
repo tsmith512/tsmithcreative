@@ -394,11 +394,7 @@ to offer.
 
 ## Test it for yourself:
 
-{% capture embed %}
-<iframe src="https://district-map.tsmith.com/map/" style="height: 600px; max-height: 70vh;" allow="geolocation"></iframe>
-{% endcapture %}
-
-{% include browser-frame.html content=embed %}
+<BrowserFrame contents='<iframe src="https://district-map.tsmith.com/map/" style="height: 600px; max-height: 70vh;" allow="geolocation"></iframe>' />
 
 ---
 

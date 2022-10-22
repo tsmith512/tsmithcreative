@@ -11,10 +11,10 @@ export const Nav = () => {
         <nav>
           <ul>
             {/* @TODO: Active flags on site sections. */}
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/projects/">Projects</a></li>
-            <li><a href="/contact/">Contact</a></li>
-            <li><a href="https://tsmith.photos/?utm_source=tsmithcreative&utm_medium=website&utm_campaign=blog">Photos</a></li>
+            <li><Link href="/blog/"><a>Blog</a></Link></li>
+            <li><Link href="/projects/"><a>Projects</a></Link></li>
+            <li><Link href="/contact/"><a>Contact</a></Link></li>
+            <li><Link href="https://tsmith.photos/?utm_source=tsmithcreative&utm_medium=website&utm_campaign=blog"><a>Photos</a></Link></li>
           </ul>
         </nav>
       </div>

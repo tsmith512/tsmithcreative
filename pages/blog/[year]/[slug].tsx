@@ -4,10 +4,10 @@ import Head from 'next/head';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 
-import { Article, Media } from '../../../components';
+import { Article, Media, BrowserFrame } from '../../../components';
 import { findPost, getPostMeta, getPosts } from '../../../lib/posts';
 
-const AllowedComponents = {};
+const AllowedComponents = {Media, BrowserFrame};
 
 export const getStaticProps = async (context: any) => {
 
@@ -52,7 +52,7 @@ const BlogPost: NextPage = (props: any) => {
       </Head>
       <Article {...props.meta}>
         <div className="wrapper">
-          <MDXRemote {...props.content} components={{Media}} />
+          <MDXRemote {...props.content} components={AllowedComponents} />
         </div>
       </Article>
     </>

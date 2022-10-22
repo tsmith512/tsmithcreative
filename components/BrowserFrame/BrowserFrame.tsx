@@ -2,6 +2,7 @@ import style from './browser-frame.module.scss';
 
 interface BrowserFrameProps {
   children?: any;
+  contents?: string;
 }
 
 export const BrowserFrame = (props: BrowserFrameProps) => {
@@ -12,7 +13,7 @@ export const BrowserFrame = (props: BrowserFrameProps) => {
         <div className={style.fill} />
         <div className={style.right} />
       </div>
-      <div className={style.content}>
+      <div className={style.content} dangerouslySetInnerHTML={{ __html: props.contents || ''}}>
         { props.children }
       </div>
     </div>

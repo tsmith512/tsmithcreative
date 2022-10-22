@@ -7,4 +7,4 @@ fi
 
 mkdir -p _site/fonts
 wget -N $ASSETS_FOLDER/811484.zip
-unzip -o 811484.zip -d _site/fonts/
+unzip -o 811484.zip -d public/fonts/

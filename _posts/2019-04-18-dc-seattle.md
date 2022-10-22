@@ -132,7 +132,7 @@ page about the ER offered a list of services and awards they'd received.
 
 She closed with a [classic XKCD example](https://xkcd.com/773/), "University Website"
 
-<Media type="image" size="mini" src="/assets/blog/drupalcon-seattle/xkcd-univ-website.png" alt="The XKCD Comic called "University Website""  />
+<Media type="image" size="mini" src="/assets/blog/drupalcon-seattle/xkcd-univ-website.png" alt="The XKCD Comic called 'University Website'"  />
 
 
 **[Ignore the Naysayers: Your RFP Can Be Brilliant!](https://events.drupal.org/seattle2019/sessions/ignore-naysayers-your-rfp-can-be-great) with Joe Crespo _(Aten Design)_**
