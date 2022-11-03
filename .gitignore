@@ -36,3 +36,4 @@ yarn-error.log*
 
 *.zip
 .env
+public/fonts
