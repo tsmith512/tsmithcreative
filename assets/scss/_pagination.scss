@@ -1,8 +1,3 @@
-/**
- * @file _paginator.scss
- * The pagination links on the main index and /archive/##
- */
-
 .pagination {
   margin-top: 2rem;
   text-align: center;
@@ -18,6 +13,7 @@
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
+    text-decoration: none;
     letter-spacing: 1px;
   }
 
