@@ -1,0 +1,13 @@
+baseURL: 'https://tsmith.com'
+languageCode: 'en-us'
+title: 'Taylor Smith'
+
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+writeStats: true
+
+minify:
+  tdewolff:
+    html:
+      keepComments: true

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" />
+
+  <link rel="canonical" href={canonincalURL} />
+  <meta property="og:url" content={canonincalURL} />
+  <meta name="twitter:url" content={canonincalURL} />
+
+  <link rel="dns-prefetch" href="https://cloud.typography.com/" />
+  <!-- @TODO: Async load this -->
+  <link rel="stylesheet" href="https://cloud.typography.com/6795652/7424152/css/fonts.css" />
+
+  {{ $scss := resources.Get "scss/global.scss" }}
+  {{ $style := $scss | resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+  <title>
+    {{ block "title" . }}
+      {{ .Site.Title }}
+    {{ end }}
+  </title>
+</head>
+<body>
+  {{ partial "global/nav" . }}
+  {{ block "main" . }}
+    <!-- PAGE CONTENT -->
+  {{ end }}
+  {{ partial "global/footer" . }}
+  {{ partial "global/analytics" . }}
+</body>
+</html>

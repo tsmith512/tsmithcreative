@@ -1,5 +1,5 @@
-@import 'variables.scss';
-@import "normalize";
+@import 'variables';
+@import 'normalize';
 
 html {
   box-sizing: border-box;
@@ -137,3 +137,5 @@ p, li {
 li ul {
   margin-top: 1em;
 }
+
+@import 'nav.scss';
