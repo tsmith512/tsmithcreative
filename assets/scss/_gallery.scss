@@ -1,0 +1,131 @@
+$gallery-expand: 720px;
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $max-width + 16) {
+    margin-left: -(($max-width - $max-lines) / 2);
+    margin-right: -(($max-width - $max-lines) / 2);
+  }
+}
+
+.gallery-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  width: calc(50% - 1rem);
+  flex-grow: 1;
+
+  padding: 3px;
+
+  @media screen and (min-width: $gallery-expand) {
+    width: auto;
+    flex-basis: 33%;
+    max-width: 50%;
+  }
+
+  .gallery[data-count = "10"] &,
+  .gallery[data-count = "15"] & {
+    flex-basis: 33%;
+    @media screen and (min-width: $gallery-expand) {
+      flex-basis: 20%;
+    }
+  }
+
+  .gallery[data-count = "4"] &,
+  .gallery[data-count = "8"] &,
+  .gallery[data-count = "12"] &,
+  .gallery[data-count = "28"] & {
+    flex-basis: 33%;
+    @media screen and (min-width: $gallery-expand) {
+      flex-basis: 25%;
+    }
+  }
+
+  .gallery[data-count = "7"] &:nth-child(7n+1),
+  .gallery[data-count = "7"] &:nth-child(7n+2),
+  .gallery[data-count = "7"] &:nth-child(7n+3) {
+    flex-basis: 33%
+  }
+
+  .gallery[data-count = "7"] &:nth-child(7n+4),
+  .gallery[data-count = "7"] &:nth-child(7n+5),
+  .gallery[data-count = "7"] &:nth-child(7n+6),
+  .gallery[data-count = "7"] &:nth-child(7n+7) {
+    flex-basis: 50%;
+
+    @media screen and (min-width: $gallery-expand) {
+      flex-basis: 25%;
+    }
+  }
+
+  .gallery[data-count = "11"] &:nth-child(11n+1),
+  .gallery[data-count = "11"] &:nth-child(11n+2),
+  .gallery[data-count = "11"] &:nth-child(11n+3),
+  .gallery[data-count = "11"] &:nth-child(11n+4) {
+    flex-basis: 50%;
+
+    @media screen and (min-width: $gallery-expand) {
+      flex-basis: 25%;
+    }
+  }
+
+  .gallery[data-count = "11"] &:nth-child(11n+5),
+  .gallery[data-count = "11"] &:nth-child(11n+6),
+  .gallery[data-count = "11"] &:nth-child(11n+7) {
+    flex-basis: 33%;
+  }
+
+  .gallery[data-count = "11"] &:nth-child(11n+8),
+  .gallery[data-count = "11"] &:nth-child(11n+9),
+  .gallery[data-count = "11"] &:nth-child(11n+10),
+  .gallery[data-count = "11"] &:nth-child(11n+11) {
+    flex-basis: 50%;
+
+    @media screen and (min-width: $gallery-expand) {
+      flex-basis: 25%;
+    }
+  }
+
+  .gallery[data-count = "13"] &:nth-child(13n+1),
+  .gallery[data-count = "13"] &:nth-child(13n+2),
+  .gallery[data-count = "13"] &:nth-child(13n+3),
+  .gallery[data-count = "13"] &:nth-child(13n+4) {
+    flex-basis: 25%;
+  }
+
+  .gallery[data-count = "13"] &:nth-child(13n+5),
+  .gallery[data-count = "13"] &:nth-child(13n+6),
+  .gallery[data-count = "13"] &:nth-child(13n+7),
+  .gallery[data-count = "13"] &:nth-child(13n+8),
+  .gallery[data-count = "13"] &:nth-child(13n+9) {
+    // Yes, this math isn't right, but causes a row overflow into the next set
+    // and flexbox evens it all out. Only example of this is on the pets page.
+    flex-basis: 33%;
+
+    @media screen and (min-width: $gallery-expand) {
+      flex-basis: 20%;
+    }
+  }
+
+  .gallery[data-count = "13"] &:nth-child(13n+10),
+  .gallery[data-count = "13"] &:nth-child(13n+11),
+  .gallery[data-count = "13"] &:nth-child(13n+12),
+  .gallery[data-count = "13"] &:nth-child(13n+13) {
+    flex-basis: 25%;
+  }
+}
+
+.gallery-thumbnail {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 3px;
+  overflow: hidden;
+}

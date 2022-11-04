@@ -7,200 +7,200 @@ summary: >
 tags: [product management]
 galleries:
   a:
-    - src: /blog/finding-next/201911-04.jpg
+    - src: 201911-04.jpg
       alt: View of Red Rock Canyon National Conservation Area, Nevada
       caption: Red Rock Canyon
-    - src: /blog/finding-next/201910-02.jpg
+    - src: 201910-02.jpg
       alt: Belayer
       caption:
-    - src: /blog/finding-next/201910-01.jpg
+    - src: 201910-01.jpg
       alt: Rock climber dressed as a tiger on Halloween
       caption: I mean, it was Halloween.
-    - src: /blog/finding-next/201911-03.jpg
+    - src: 201911-03.jpg
       alt: View of Red Rock Canyon National Conservation Area, Nevada
       caption: Red Rock Canyon
-    - src: /blog/finding-next/201911-05.jpg
+    - src: 201911-05.jpg
       alt: The Fountains at The Bellagio, Las Vegas, Nevada
       caption:
-    - src: /blog/finding-next/201911-08.jpg
+    - src: 201911-08.jpg
       alt: Me and Jen Dary
       caption: So Now You're A Manager Training
-    - src: /blog/finding-next/201911-07.jpg
+    - src: 201911-07.jpg
       alt: A visual representation of a team in playdoh
       caption: "'Use Play-Doh to model your current team at work' (I'll let you work out the meaning.)"
-    - src: /blog/finding-next/201911-09.jpg
+    - src: 201911-09.jpg
       alt: Woman waving from a parade dressed as a fairy
       caption: Texas Renaissance Fair
-    - src: /blog/finding-next/201911-10.jpg
+    - src: 201911-10.jpg
       alt: Woman waving from a parade dressed as Renaissance-era nobility
       caption: Texas Renaissance Fair
-    - src: /blog/finding-next/201911-11.jpg
+    - src: 201911-11.jpg
       alt: A group of men in barbarian costume with a woman smiling
       caption: Texas Renaissance Fair, my Barbarian friends
   b:
-    - src: /blog/finding-next/201911-12.jpg
+    - src: 201911-12.jpg
       alt: Kitten with outstretched paw toward camera
       caption: Catsitting for Otto
-    - src: /blog/finding-next/201911-13.jpg
+    - src: 201911-13.jpg
       alt: Kitten playing
       caption:
-    - src: /blog/finding-next/201911-14.jpg
+    - src: 201911-14.jpg
       alt: People gathered around a truck stuck in a riverbed
       caption:
-    - src: /blog/finding-next/201911-16.jpg
+    - src: 201911-16.jpg
       alt: Gathering around a campfire
       caption: Family at the ranch
-    - src: /blog/finding-next/201911-15.jpg
+    - src: 201911-15.jpg
       alt: Bandages on my hand
       caption:
   c:
-    - src: /blog/finding-next/201912-17.jpg
+    - src: 201912-17.jpg
       alt: Overlook of desert mountain terrain of Pinto Canyon Ranch, Marfa, Texas
       caption: Pinto Canyon Ranch, Marfa, Texas
-    - src: /blog/finding-next/201912-18.jpg
+    - src: 201912-18.jpg
       alt: An oasis around a creek in Shafter, Texas
       caption: Shafter, Texas
-    - src: /blog/finding-next/201912-19.jpg
+    - src: 201912-19.jpg
       alt: A view westbound up the winding road along the Rio Grande
       caption: FM 170 along the Rio Grande
-    - src: /blog/finding-next/201912-20.jpg
+    - src: 201912-20.jpg
       alt: Sunset in Big Bend National Park
       caption: Big Bend National Park
-    - src: /blog/finding-next/201912-21.jpg
+    - src: 201912-21.jpg
       alt: Sunset through The Window in Big Bend National Park
       caption: The Window
-    - src: /blog/finding-next/201912-22.jpg
+    - src: 201912-22.jpg
       alt: Stars in the night sky, Big Bend National Park
       caption:
-    - src: /blog/finding-next/201912-23.jpg
+    - src: 201912-23.jpg
       alt: Southern view from The Pinnacles Trail toward Emory Peak, Big Bend National Park
       caption:
-    - src: /blog/finding-next/201912-24.jpg
+    - src: 201912-24.jpg
       alt: Western-ish view from Emory Peak, Big Bend National Park
       caption: Emory Peak
-    - src: /blog/finding-next/201912-25.jpg
+    - src: 201912-25.jpg
       alt: Silly selfie at Emory Peak
       caption: Highest point in the park.
-    - src: /blog/finding-next/201912-26.jpg
+    - src: 201912-26.jpg
       alt: An unusually colored tree along the trail.
       caption:
-    - src: /blog/finding-next/201912-27.jpg
+    - src: 201912-27.jpg
       alt: A tinaja formation in a canyon, Big Bend National Park
       caption: Ernst Tinaja
-    - src: /blog/finding-next/201912-28.jpg
+    - src: 201912-28.jpg
       alt: Desert landscape
       caption:
-    - src: /blog/finding-next/201912-29.jpg
+    - src: 201912-29.jpg
       alt: Trail lined with shrubs in a narrow canyon
       caption:
-    - src: /blog/finding-next/201912-30.jpg
+    - src: 201912-30.jpg
       alt: Looking up at a small creature on the canyon edge
       caption:
-    - src: /blog/finding-next/201912-31.jpg
+    - src: 201912-31.jpg
       alt: A bridge over the Rio Grande marsh under a cloudy night sky
       caption: Rio Grande Villiage Campground Nature Walk
   d:
-    - src: /blog/finding-next/201912-32.jpg
+    - src: 201912-32.jpg
       alt: A Thanksgiving dinner buffet in a friend's kitchen
       caption:
-    - src: /blog/finding-next/201912-33.jpg
+    - src: 201912-33.jpg
       alt: A family gathering by the Christmas tree
       caption: More quality cousin time over this month than I usually get in two years
-    - src: /blog/finding-next/202001-64.jpg
+    - src: 202001-64.jpg
       alt: A board game laid out and ready to play
       caption: Every week it's another complicated board game I've never heard of, but I love it
-    - src: /blog/finding-next/202001-63.jpg
+    - src: 202001-63.jpg
       alt: An old engine bay with a new radiator
       caption:
-    - src: /blog/finding-next/202001-62.jpg
+    - src: 202001-62.jpg
       alt: Me, holding the old radiator and making a weird face
       caption:
-    - src: /blog/finding-next/201911-06.jpg
+    - src: 201911-06.jpg
       alt: Rock climber
       caption: Starting Monfi in Reimers Ranch
   e:
-    - src: /blog/finding-next/201912-34.jpg
+    - src: 201912-34.jpg
       alt: Two people sitting around a campfire, vehicles in the background
       caption: Lincoln National Forest
-    - src: /blog/finding-next/201912-35.jpg
+    - src: 201912-35.jpg
       alt: A desert landscape in winter with snowy mountains in the distance and evidence of a controlled burn in the foreground.
       caption:
-    - src: /blog/finding-next/201912-36.jpg
+    - src: 201912-36.jpg
       alt: A dog standing in the dunes at White Sands National Park
       caption: Miles in White Sands National Park
-    - src: /blog/finding-next/201912-37.jpg
+    - src: 201912-37.jpg
       alt: Sunset behind the mountains with dark sand dunes in the foreground
       caption: Celebrating with the newly promoted White Sands National Park
-    - src: /blog/finding-next/201912-38.jpg
+    - src: 201912-38.jpg
       alt: A view of mountains and sand dune
       caption:
-    - src: /blog/finding-next/201912-39.jpg
+    - src: 201912-39.jpg
       alt: Sunset over a canyon
       caption: San Lorenzo Canyon
-    - src: /blog/finding-next/201912-40.jpg
+    - src: 201912-40.jpg
       alt: Me with my camera, standing on the edge of a canyon
       caption:
-    - src: /blog/finding-next/201912-41.jpg
+    - src: 201912-41.jpg
       alt: The roadtrip friend group
       caption:
-    - src: /blog/finding-next/201912-42.jpg
+    - src: 201912-42.jpg
       alt: Three people sitting in front of a campfire in a canyon
       caption: Happy New Year
-    - src: /blog/finding-next/201912-43.jpg
+    - src: 201912-43.jpg
       alt: A view from the top of the canyon looking down at a campsite illuminated by fire
       caption:
-    - src: /blog/finding-next/201912-44.jpg
+    - src: 201912-44.jpg
       alt: Looking up from the canyon floor at the stars
       caption:
-    - src: /blog/finding-next/202001-45.jpg
+    - src: 202001-45.jpg
       alt: A wolf-dog in the snow at Wild Spirit Wolf Sanctuary
       caption: Wild Spirit Wolf Sanctuary, Ramah, NM
-    - src: /blog/finding-next/202001-46.jpg
+    - src: 202001-46.jpg
       alt: A coyote
       caption:
-    - src: /blog/finding-next/202001-49.jpg
+    - src: 202001-49.jpg
       alt: El Morro National Monument in the distance
       caption: El Morro National Monument
-    - src: /blog/finding-next/202001-47.jpg
+    - src: 202001-47.jpg
       alt: Pictographs at El Morro National Monument
       caption:
-    - src: /blog/finding-next/202001-48.jpg
+    - src: 202001-48.jpg
       alt: An inscription from 1709 at El Morro
       caption:
-    - src: /blog/finding-next/202001-50.jpg
+    - src: 202001-50.jpg
       alt: A cave with an ice floor
       caption: Ice Cave in El Malpais National Monument
-    - src: /blog/finding-next/202001-51.jpg
+    - src: 202001-51.jpg
       alt: My car parked in the snow
       caption:
-    - src: /blog/finding-next/202001-52.jpg
+    - src: 202001-52.jpg
       alt: Sun through the trees in a snowy forest
       caption:
-    - src: /blog/finding-next/202001-53.jpg
+    - src: 202001-53.jpg
       alt: Dog standing in snowy forest, looking into the distance
       caption:
-    - src: /blog/finding-next/202001-54.jpg
+    - src: 202001-54.jpg
       alt: Looking over the dashboard of a car headed down a snowcovered trail
       caption:
-    - src: /blog/finding-next/202001-55.jpg
+    - src: 202001-55.jpg
       alt: Snow-covered lava fields of El Malpais
       caption: Snow-covered lava fields of El Malpais National Monument
-    - src: /blog/finding-next/202001-56.jpg
+    - src: 202001-56.jpg
       alt: Snowcovered trail through the forest
       caption:
-    - src: /blog/finding-next/202001-57.jpg
+    - src: 202001-57.jpg
       alt: Two people walking through a dark tunnel with light in the distance
       caption: Gilman Tunnels at Jemez Pueblo, New Mexico
-    - src: /blog/finding-next/202001-58.jpg
+    - src: 202001-58.jpg
       alt: A frozen waterfall
       caption:
-    - src: /blog/finding-next/202001-59.jpg
+    - src: 202001-59.jpg
       alt: The Soda Dam formation at Jemez Springs, New Mexico
       caption: Soda Dam, Jemez Springs, New Mexico
-    - src: /blog/finding-next/202001-60.jpg
+    - src: 202001-60.jpg
       alt: Scenic mountain highway
       caption:
-    - src: /blog/finding-next/202001-61.jpg
+    - src: 202001-61.jpg
       alt: View of the snow-covered Valles Caldera National Preserve and mountains in the distance
       caption: Valles Caldera National Preserve
 
@@ -447,7 +447,7 @@ There was a lot of goofing off, too. And to Aujla's credit, the 5,000 miles I
 covered in December did offer a lot of time to think about what's next and find
 insights in unexpected places.
 
-{% include gallery.html gallery=page.galleries.a %}
+{{< gallery a >}}
 
 - A Halloween climbing trip to Red Rock Canyon outside Las Vegas.
 - **[Jen Dary's](https://www.beplucky.com/) training
@@ -458,7 +458,7 @@ insights in unexpected places.
 - A group of barbarians headed to the **[Texas Renaissance Fair](https://www.texrenfest.com/)**
   invited me to join because I'd never been.
 
-{% include gallery.html gallery=page.galleries.b %}
+{{< gallery b >}}
 
 - My last week of work was spent house/cat-sitting. Amusing photos ensued.
   **If you work from home, don't work your last day at your home office** if you
@@ -469,7 +469,7 @@ insights in unexpected places.
 - Got my hand chewed up by a dog, resulting in my first trip to an ER and
   learning to drive stick with my pinky.
 
-{% include gallery.html gallery=page.galleries.c %}
+{{< gallery c >}}
 
 - The **solo run to Big Bend,** including: the overland _Pinto Canyon Road_
   that [I read about in _Texas Monthly_](https://www.texasmonthly.com/travel/the-road-to-nowhere/),
@@ -482,7 +482,7 @@ insights in unexpected places.
   _tsmithcreative.com_ because I've received feedback that "creative" in
   that context reads as "I'm a graphic designer in advertising."
 
-{% include gallery.html gallery=page.galleries.d %}
+{{< gallery d >}}
 
 - Recommended by an <abbr title="Austin Developing Product Managers">ADPM</abbr>
   organizer, I **started an accounts/projects list** stretching back to my
@@ -505,7 +505,7 @@ insights in unexpected places.
 - Saw _Star Wars: The Rise of Skywalker_ on opening weekend. I loved it.
 - Built lots of IKEA while watching the original _Star Wars_ trilogiy. Also loved it.
 
-{% include gallery.html gallery=page.galleries.e %}
+{{< gallery e >}}
 
 - And to bookend the break, another car-camping overland roadtrip — this time
   with friends, also both soon to start new jobs — to New Mexico to ring in 2020.

@@ -64,7 +64,7 @@ in Seattle! Here's how it happened.
 
 ## Washington Funtimes
 
-{% include gallery.html gallery=page.galleries.a %}
+{{< gallery a >}}
 
 At a friend's recommendation, I did the
 [Rattlesnake Ledge hike](https://www.alltrails.com/explore/recording/recording-apr-06-03-01-pm--3)
@@ -73,7 +73,7 @@ and also discovered
 each about an hour east of town through totally stunning scenery. I also hit up
 a handful of things in town with friends, too.
 
-{% include gallery.html gallery=page.galleries.b %}
+{{< gallery b >}}
 
 ## DrupalCon
 
@@ -81,7 +81,7 @@ a handful of things in town with friends, too.
 "The Games Area") was our booth theme this year. In addition to our usual games
 and swag, we had a number of cool demos!
 
-{% include gallery.html gallery=page.galleries.c %}
+{{< gallery c >}}
 
 Our Frontend team talked up
 **[Emulsify](https://github.com/fourkitchens/emulsify)**, a component-driven
