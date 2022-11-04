@@ -1,7 +1,3 @@
-/**
- * @file _contact.scss
- * Styles for the contact page and the form that sits on it.
- */
 form {
   label {
     display: block;
@@ -43,21 +39,21 @@ form {
 
 .contact {
   .form-wrapper {
-    @include breakpoint(620px) {
+    @media screen and (min-width: 620px) {
       float: left;
       width: 60%;
     }
-    @include breakpoint($max-width) {
+    @media screen and (min-width: $max-width) {
       width: $max-lines;
     }
   }
 
   aside {
-    @include breakpoint(620px) {
+    @media screen and (min-width: 620px) {
       float: right;
       width: calc(40% - 1em);
     }
-    @include breakpoint($max-width) {
+    @media screen and (min-width: $max-width) {
       width: calc(100% - #{$max-lines} - 1em);
     }
 
@@ -67,33 +63,4 @@ form {
       margin: 0;
     }
   }
-
-  img {
-    display: block;
-    max-width: 200px;
-    margin: 0 auto 1em;
-    border: 1em solid white;
-    box-shadow: 0 0 5px rgba(0,0,0,0.25);
-  }
-
-  .links {
-    li {
-      display: block;
-      margin-bottom: 1em;
-    }
-
-    a {
-      display: block;
-      padding-left: calc(48px + 1em);
-      white-space: nowrap;
-      overflow: hidden;
-
-      height: 48px;
-      line-height: 48px;
-      background-position: left center;
-      background-size: contain;
-    }
-
-  }
-
 }
