@@ -18,7 +18,7 @@ image caught my eye. You see:
 - [Google Keep][GK] is a great bulletin board, but it isn't an organizational
   solution for a large volume of interrelated content.
 
-<Media type="image" size="" src="/assets/blog/notion/today.png" alt="Sample 'today' page in Notion" noshadow />
+{{< media type="image" size="" src="today.png" alt="Sample 'today' page in Notion" noshadow=noshadow >}}
 
 _(Image lifted from [Notion.so's product page][NP]; the same one from that_ The
 Verge _post.)_
@@ -40,33 +40,33 @@ Calendar, or Table!
 **Pages are built with blocks:** plain text, bullet lists, checkbox/to-do lists,
 headers, images, links with previews, embeds, etc&hellip;
 
-<Media type="image" src="/assets/blog/notion/blocks.gif" alt="Blocks options for new content" />
+{{< media type="image" src="blocks.gif" alt="Blocks options for new content" >}}
 
 **Text formatting is flexible enough, but still structured.** It's not a "full
 WYSIWYG" editor like OneNote. I like that! Giving me the tools to express ideas
 without turning editing into a free-for-all helps me feel like I'm making
 progress instead of making a mess. Hotkeys and Markdown-style make it faster.
 
-<Media type="image" src="/assets/blog/notion/formatting.gif" alt="Formatting text in Notion" />
+{{< media type="image" src="formatting.gif" alt="Formatting text in Notion" >}}
 
 **Pages can have "databases"** which can be viewed as a table, Kanban board, or
 calendar. "Rows" in these databases are themselves pages, but inherit a
 customizable data model allowing you to add properties to visualize on
 the table/board/calendar displays.
 
-<Media type="image" src="/assets/blog/notion/database.gif" alt="Database viewed as a Kanban board" />
+{{< media type="image" src="database.gif" alt="Database viewed as a Kanban board" >}}
 
 **Content can be put into columns.** Notion's ability to group content with
 columns helps keep bits of text and reference material logically grouped. (In
 truth, OneNote does do columns — you can put text frames next to each other —
 but it can get messy.)
 
-<Media type="image" src="/assets/blog/notion/columns.gif" alt="Creating columns in Notion's editor" />
+{{< media type="image" src="columns.gif" alt="Creating columns in Notion's editor" >}}
 
 **Lightweight interface.** Despite all it can do, its interface is sparse and
 content-focused, reducing distractions.
 
-<Media type="image" size="" src="/assets/blog/notion/interface.png" alt="The application interface is sparse"  />
+{{< media type="image" size="" src="interface.png" alt="The application interface is sparse"  >}}
 
 **Android app!** A must have. The Android app makes accessing all this
 delightfully easy, and content is displayed responsively! Unlike OneNote, where
@@ -82,12 +82,12 @@ because it means contacts won't have to create an account.
 both in a table and on a calendar. Each trip is both a "row" in the database and
 also a page on its own with all the details.
 
-<Media type="image" size="" src="/assets/blog/notion/travel-plans.png" alt="My Travel Plans page"  />
+{{< media type="image" size="" src="travel-plans.png" alt="My Travel Plans page"  >}}
 
 **Researching:** I gathered design research for a theatrical production this
 fall, then I reviewed it with the director.
 
-<Media type="image" size="" src="/assets/blog/notion/research.png" alt="A research page"  />
+{{< media type="image" size="" src="research.png" alt="A research page"  >}}
 
 **Project management:** For that same production, I'll be creating multiple
 pieces. Using another "database" page, I listed each piece needed. I set up all
@@ -96,12 +96,12 @@ three view styles for the database:
 - a Kanban board so my director and I can track progress as I work, and
 - a calendar to visualize the review and delivery dates.
 
-<Media type="image" size="" src="/assets/blog/notion/pm.png" alt="A kanban board of project tasks"  />
+{{< media type="image" size="" src="pm.png" alt="A kanban board of project tasks"  >}}
 
 **Simple writing:** I drafted this blog post in Notion. With its easy export to
 Markdown, I'll be able to drop it right into my site repo.
 
-<Media type="image" size="" src="/assets/blog/notion/draft.png" alt="A blog post draft in Notion"  />
+{{< media type="image" size="" src="draft.png" alt="A blog post draft in Notion"  >}}
 
 _(Update: Worked perfectly except that images were not included in the export. Fixed them manually.)_
 

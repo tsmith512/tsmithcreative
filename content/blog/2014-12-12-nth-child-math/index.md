@@ -10,7 +10,7 @@ Recently, I've seen a recurring error with how `:nth-child()` and `:nth-of-type(
 
 Frequently, I see `:nth-child()` selectors used for making columns:
 
-<Media type="image" src="/assets/blog/nth-child/01-6-columns.gif" alt="Six Columns" />
+{{< media type="image" src="01-6-columns.gif" alt="Six Columns" >}}
 
 From here, I see a lot of selectors like this:
 
@@ -20,7 +20,7 @@ From here, I see a lot of selectors like this:
 
 Here's why that is **incorrect**: the browser starts counting at 1 (the first item) and checks item each to see if that element matches the pattern (an+b) where "a" is the number you gave it, "n" is a set of all integers, and "b" is the offset that I've seen omitted (which defaults to zero). This is what happens:
 
-<Media type="image" src="/assets/blog/nth-child/02-all-n-values.gif" alt="Six columns with all N values" />
+{{< media type="image" src="02-all-n-values.gif" alt="Six columns with all N values" >}}
 
 As you can see:
 
@@ -32,7 +32,7 @@ As you can see:
 
 What you want is this:
 
-<Media type="image" src="/assets/blog/nth-child/03-correct-n-values.gif" alt="With correct N values" />
+{{< media type="image" src="03-correct-n-values.gif" alt="With correct N values" >}}
 
 - `:nth-child(6n+1)` matches the first column (the first, seventh, thirteenth, nineteenth, ... elements)
 - `:nth-child(6n+6)`, which can be written simply as `:nth-child(6n)`, matches the last column (the sixth, twelfth, eighteenth, ... elements)
@@ -41,13 +41,13 @@ What you want is this:
 
 And this stacks vertically as expected:
 
-<Media type="image" src="/assets/blog/nth-child/04-3-columns-with-correct-n-values.gif" alt="Three columns, multiple rows" />
+{{< media type="image" src="04-3-columns-with-correct-n-values.gif" alt="Three columns, multiple rows" >}}
 
 __But the way I had it__ (usually) __worked! What's wrong with that?__ Two reasons: it doesn't always work, and _pride._ ;-)
 
 Look at it this way:
 
-<Media type="image" src="/assets/blog/nth-child/05-3-columns-with-bad-n-values.gif" alt="Three columns, bad N values" />
+{{< media type="image" src="05-3-columns-with-bad-n-values.gif" alt="Three columns, bad N values" >}}
 
 - By selecting `:nth-child(1n)`, the middle column is selected, too!
   - The reason this may go unnoticed is that the `:nth-child(2n)` is likely written after the _1n_ rule, with the same selector specificity, so it overrides the first.
@@ -55,7 +55,7 @@ Look at it this way:
   - The first column of the second row is also selected. Why? It's the fourth element, which is in the set defined as (2n).
   - That second column on the fourth row is not selected. Why? It's the eleventh element, which is not in the set defined as (2n).
   - Worse, with an odd number of columns, even/odd flips on each row! Count it out:
-  - <Media type="image" src="/assets/blog/nth-child/06-3-columns-indexed-with-2n-shadowing.gif" alt="Three columns, counted out" />
+  - {{< media type="image" src="06-3-columns-indexed-with-2n-shadowing.gif" alt="Three columns, counted out" >}}
   - You'd run into the same changing "rhythm" with other numbers of columns or a different incorrect interval. (This might be your intention, if you were making a pattern, and it's cool that CSS lets us do that so easily, but ya gotta know the rule before you break it.)
 
 ## Why am I pestering you with this?

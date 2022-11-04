@@ -7,54 +7,54 @@ summary: >
 tags: [events, drupal, product management, 3d printing]
 galleries:
   a:
-    - src: /blog/drupalcon-seattle/pre/IMG_20190406_125039008.jpg
+    - src: pre/IMG_20190406_125039008.jpg
       alt: Forest trail
       caption: Rattlesnake Ledge hike
-    - src: /blog/drupalcon-seattle/pre/IMG_20190406_132325012.jpg
+    - src: pre/IMG_20190406_132325012.jpg
       alt: View showing mountain in rain
       caption: Rattlesnake Ledge
-    - src: /blog/drupalcon-seattle/pre/IMG_20190406_132954.jpg
+    - src: pre/IMG_20190406_132954.jpg
       alt: Rattlesnake Ledge
       caption: View from the top of Rattlesnake Ledge
-    - src: /blog/drupalcon-seattle/pre/IMG_20190406_133725019.jpg
+    - src: pre/IMG_20190406_133725019.jpg
       alt: A dumb selfie
-    - src: /blog/drupalcon-seattle/pre/IMG_20190406_155325033.jpg
+    - src: pre/IMG_20190406_155325033.jpg
       alt: Snoqualmie Falls
       caption: Snoqualmie Falls
-    - src: /blog/drupalcon-seattle/pre/IMG_20190406_224749.jpg
+    - src: pre/IMG_20190406_224749.jpg
       alt: City view of Seattle from Capital Hill
-    - src: /blog/drupalcon-seattle/pre/IMG_20190407_142025063.jpg
+    - src: pre/IMG_20190407_142025063.jpg
       alt: View of the Wallace Falls Upper Falls
       caption: Wallace Falls
-    - src: /blog/drupalcon-seattle/pre/IMG_20190407_142120064.jpg
+    - src: pre/IMG_20190407_142120064.jpg
       alt: Wallace Falls Lower Falls
       caption: Wallace Falls
-    - src: /blog/drupalcon-seattle/pre/IMG_20190407_143815071.jpg
+    - src: pre/IMG_20190407_143815071.jpg
       alt: Waterfalls
-    - src: /blog/drupalcon-seattle/pre/IMG_20190407_144210072.jpg
+    - src: pre/IMG_20190407_144210072.jpg
       alt: Trail in fog
   b:
-    - src: /blog/drupalcon-seattle/pre/IMG_20190408_192304.jpg
+    - src: pre/IMG_20190408_192304.jpg
       alt: Indoor climber at Seattle Bouldering Project
       caption: Anthony at Seattle Bouldering Project
-    - src: /blog/drupalcon-seattle/pre/IMG_20190408_195000001.jpg
+    - src: pre/IMG_20190408_195000001.jpg
       alt: Me at Seattle Bouldering Project
       caption: Web Chef Boulders
-    - src: /blog/drupalcon-seattle/pre/IMG_20190412_113847.jpg
+    - src: pre/IMG_20190412_113847.jpg
       alt: Seattle's Gum Wall
       caption: Gross.
-    - src: /blog/drupalcon-seattle/pre/IMG_20190412_164631.jpg
+    - src: pre/IMG_20190412_164631.jpg
       alt: Puttputt golf game at a bar
   c:
-    - src: /blog/drupalcon-seattle/booth/IMG_20190409_170406079.jpg
+    - src: booth/IMG_20190409_170406079.jpg
       alt: Strategist dresses in fortune teller costume
-    - src: /blog/drupalcon-seattle/booth/IMG_20190409_175534089.jpg
+    - src: booth/IMG_20190409_175534089.jpg
       alt: People in circus-themed trade booth with man pointing at screen
-    - src: /blog/drupalcon-seattle/booth/IMG_20190409_185421093.jpg
+    - src: booth/IMG_20190409_185421093.jpg
       alt: Me having my face painted by the Four Kitchens Operations Director
-    - src: /blog/drupalcon-seattle/booth/IMG_20190411_091230101.jpg
+    - src: booth/IMG_20190411_091230101.jpg
       alt: Employee in a company jacket juggling mini basketballs
-    - src: /blog/drupalcon-seattle/booth/IMG_20190411_094138104.jpg
+    - src: booth/IMG_20190411_094138104.jpg
       alt: Founder in a company jacket playing ping-pong
 ---
 
@@ -132,7 +132,7 @@ page about the ER offered a list of services and awards they'd received.
 
 She closed with a [classic XKCD example](https://xkcd.com/773/), "University Website"
 
-<Media type="image" size="mini" src="/assets/blog/drupalcon-seattle/xkcd-univ-website.png" alt="The XKCD Comic called 'University Website'"  />
+{{< media type="image" size="mini" src="xkcd-univ-website.png" alt="The XKCD Comic called 'University Website'"  >}}
 
 
 **[Ignore the Naysayers: Your RFP Can Be Brilliant!](https://events.drupal.org/seattle2019/sessions/ignore-naysayers-your-rfp-can-be-great) with Joe Crespo _(Aten Design)_**
@@ -248,7 +248,7 @@ warehouse product.
 [Session page](https://events.drupal.org/seattle2019/sessions/estimating-iteration-story-points-and-thin-vertical-slices)
 | [My write-up]({% link _projects/2019-05-10-estimate-to-iterate.md %})
 
-<Media type="image" size="" src="/assets/blog/drupalcon-seattle/my-pres.jpg" alt="Me giving a presentation"  />
+{{< media type="image" size="" src="my-pres.jpg" alt="Me giving a presentation"  >}}
 
 
 I'm pleased with how my session went. It was scheduled for very late in the day,
@@ -267,4 +267,4 @@ Resources:
 
 Thanks to DrupalCon organizers for accepting my talk!
 
-<Media type="image" size="" src="/assets/blog/drupalcon-seattle/group-photo.jpg" alt="4K Group Photo in the Booth"  />
+{{< media type="image" size="" src="group-photo.jpg" alt="4K Group Photo in the Booth"  >}}

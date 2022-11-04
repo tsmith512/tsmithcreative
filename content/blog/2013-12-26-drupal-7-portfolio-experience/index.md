@@ -275,9 +275,9 @@ guests log in, what they look at, or other analytics that might be useful in
 keeping the conversation going.
 
 <!-- Images -->
-[Wireframe]: /assets/blog/portfolio-review-d7/portfolio_tour_node.png
-[Sample]: /assets/blog/portfolio-review-d7/portfolio_tour_shot.png
-[SelectionRules]: /assets/blog/portfolio-review-d7/portfolio_tour_redirect_from_user_view.png
-[Menu]: /assets/blog/portfolio-review-d7/main_menu.png
-[Admin]: /assets/blog/portfolio-review-d7/admin_pane.png
-[Guest]: /assets/blog/portfolio-review-d7/guest_pane.png
+[Wireframe]: portfolio_tour_node.png
+[Sample]: portfolio_tour_shot.png
+[SelectionRules]: portfolio_tour_redirect_from_user_view.png
+[Menu]: main_menu.png
+[Admin]: admin_pane.png
+[Guest]: guest_pane.png

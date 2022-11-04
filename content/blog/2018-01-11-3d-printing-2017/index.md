@@ -20,7 +20,7 @@ had designed. This helped me see what was possible, what kinds of prints were
 easy or difficult, and how to optimize settings for A) the printer generally and
 B) individual models specifically.
 
-<Media type="image" size="" src="/assets/blog/3d-printing-2017/trinkets.jpg" alt="Trinkets"  />
+{{< media type="image" size="" src="trinkets.jpg" alt="Trinkets"  >}}
 
 ## Raspberry Pi Case and OctoPrint
 
@@ -28,7 +28,7 @@ I started using [OctoPrint][OP] to manage the printer instead of loading files
 from the SD card. My first print from OctoPrint was [a case][RPCASE] for the
 Raspberry Pi B+ I was using to host it.
 
-<Media type="image" size="" src="/assets/blog/3d-printing-2017/rpi.jpg" alt="Raspberry Pi Case"  />
+{{< media type="image" size="" src="rpi.jpg" alt="Raspberry Pi Case"  >}}
 
 ## Benchy
 
@@ -37,7 +37,7 @@ passage; it's a wildly popular but tricky model to print correctly, so it's
 useful for diagnostics and finer optimizations. I had under extrusion problems
 across the model which I worked on and resolved.
 
-<Media type="image" size="" src="/assets/blog/3d-printing-2017/benchy.jpg" alt="Benchy"  />
+{{< media type="image" size="" src="benchy.jpg" alt="Benchy"  >}}
 
 ## Functional Prints
 
@@ -45,16 +45,16 @@ Most of my printing this year took the form of "if you have a hammer suddenly
 everything looks like a nail." Proudly, I set out to solve my world's problems
 with plastic doodads, mostly designed using [SketchUp][SKU].
 
-<Media type="image" size="" src="/assets/blog/3d-printing-2017/functional.jpg" alt="Functional Prints"  />
+{{< media type="image" size="" src="functional.jpg" alt="Functional Prints"  >}}
 
 _Pictured here:_
 
 - Polaroid Cube mount to attach to a GoPro suction cup mount
 - A dual-phone mount for a Google Pixel and Nexus 5X for the [roadtrip][TQ]
-  <Media type="image" size="" src="/assets/blog/3d-printing-2017/phone.png" alt="Phone Mount"  />
+  {{< media type="image" size="" src="phone.png" alt="Phone Mount"  >}}
 - Pencil cup that attaches to a monitor stand
 - Tablet stand for the 3D printing area which shows the OctoPrint interface
-  <Media type="image" size="" src="/assets/blog/3d-printing-2017/tablet.png" alt="Tablet Stand"  />
+  {{< media type="image" size="" src="tablet.png" alt="Tablet Stand"  >}}
 - Camera strap holder for the cabinet I keep photography stuff in
 
 I also printed cable runners, desktop stuff, memory card cases, and little
@@ -66,14 +66,14 @@ I have a few notable 3D printing projects from this year.
 
 ## The Brake Line Holders
 
-<Media type="image" size="" src="/assets/blog/3d-printing-2017/brakes.jpg" alt="Brake Lines"  />
+{{< media type="image" size="" src="brakes.jpg" alt="Brake Lines"  >}}
 
 I have an ancient pickup that needs a little love. One easy problem: the
 brackets that hold some hydraulic lines had broken. With calipers and many
 rounds of revisions, I printed a set of four that twist into the hole in the
 engine bay wall that will retain those lines in place.
 
-<Media type="image" size="" src="/assets/blog/3d-printing-2017/brakes-model.png" alt="Brake Model"  />
+{{< media type="image" size="" src="brakes-model.png" alt="Brake Model"  >}}
 
 This was the first time I used [OpenSCAD][OSCAD], and I pushed the
 [project to GitHub][BLGH]. I enjoyed being able to use code to build this
@@ -85,7 +85,7 @@ PRs will show
 <span style={{color: "#00cc00"}}>additions</span> and
 <span style={{color: "#ff0000"}}>deletions</span> to the volume:
 
-<Media type="image" size="" src="/assets/blog/3d-printing-2017/stl-diff.png" alt="STL Diff"  />
+{{< media type="image" size="" src="stl-diff.png" alt="STL Diff"  >}}
 
 [This commit][C] enlarged one channel and replaced the clip (which worked with
 the original nylon part but not in PLA) with a solid piece that twists into the
@@ -95,7 +95,7 @@ PLA isn't an ideal material for this purpose because it's brittle and heat
 intolerant but I was prototyping these in winter and they survived a Texas
 summer, still in place almost a year later with no distortion.
 
-<Media type="image" size="" src="/assets/blog/3d-printing-2017/brakes-assembled.jpg" alt="Brake Lines Mounted"  />
+{{< media type="image" size="" src="brakes-assembled.jpg" alt="Brake Lines Mounted"  >}}
 
 ## Theatrical Props for _Catch Me If You Can_
 
@@ -109,7 +109,7 @@ The costume designer couldn't find affordable PanAm pilot wing pins. I mentioned
 that I might not be able to replicate the vintage pins but that I could produce
 plastic ones modeled after the illustration I used in the poster.
 
-<Media type="image" size="mini" src="/assets/blog/3d-printing-2017/cmiyc.jpg" alt="CMYIC Art Sample"  />
+{{< media type="image" size="mini" src="cmiyc.jpg" alt="CMYIC Art Sample"  >}}
 
 This was awesome. Beyond a printed piece, which I make frequently, this felt
 like a more substantial physical output from my graphic design work. Further,
@@ -118,7 +118,7 @@ visibility. Original pins would have been barely visible, but the extra-large
 ones we printed read naturally on stage. They were printed in black PLA which the
 costume designer painted with model paints.
 
-<Media type="image" size="" src="/assets/blog/3d-printing-2017/wings.jpg" alt="CMYIC Wings"  />
+{{< media type="image" size="" src="wings.jpg" alt="CMYIC Wings"  >}}
 
 Getting an SVG from Illustrator into SketchUp requires either buying the premium
 edition of SketchUp or jumping through intermediary applications to do multiple
@@ -126,7 +126,7 @@ file type conversions. I did the first round with SketchUp using the now-defunct
 [Autodesk Fusion 360][A360] instead. It is much more reliable with
 STL export and natively supports SVG imports. It's also free for hobbyists!
 
-<Media type="image" size="" src="/assets/blog/3d-printing-2017/wings-model.png" alt="Wings Model in Fustion 360"  />
+{{< media type="image" size="" src="wings-model.png" alt="Wings Model in Fustion 360"  >}}
 
 I find it less flexible with shape building than SketchUp, but I'm also very new
 to it. SVG import is great. I really dislike that it runs "in the cloud" and
@@ -135,7 +135,7 @@ individually so having an application that can run locally/offline as well as
 let me store working files alongside my STL and GCODE exports would be
 preferable.
 
-<Media type="image" size="" src="/assets/blog/3d-printing-2017/delta.jpg" alt="Bulk printing on a delta"  />
+{{< media type="image" size="" src="delta.jpg" alt="Bulk printing on a delta"  >}}
 
 
 **Shoutout to George** for helping me bulk-print these with his delta printer
@@ -162,7 +162,7 @@ connectors but didn't appear to have a beefier channel for that power to run
 through, so I installed the Mosfet upgrade by following the excellent guide by
 [Brett at Let's Print 3D][MOSFET].
 
-<Media type="image" size="" src="/assets/blog/3d-printing-2017/mosfet.jpg" alt="Mosfet Upgrade"  />
+{{< media type="image" size="" src="mosfet.jpg" alt="Mosfet Upgrade"  >}}
 
 I may need to make the cables from the PSU to the Mosfet board longer because
 I don't think I can put the case back together as-is, but this is connected

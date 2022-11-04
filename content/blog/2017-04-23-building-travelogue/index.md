@@ -35,7 +35,7 @@ me time to up my blogging game.
 
 ## Under the Hood
 
-<Media type="image" size="mini" src="/assets/blog/building-travelogue/diagram.png" alt="Diagram of the application" noshadow />
+{{< media type="image" size="mini" src="diagram.png" alt="Diagram of the application" noshadow=noshadow >}}
 
 
 This is perhaps a more complex amalgamation of services than it could have been,
@@ -234,7 +234,7 @@ funniest part of all this is the banter), and the occasional video (because some
 things have to be seen to be believed). Each post has a "Show on Map" link which
 re-centers the map view to where we were when I made the post.
 
-<Media type="image" size="" src="/assets/blog/building-travelogue/final.png" alt="The site frontend" noshadow />
+{{< media type="image" size="" src="final.png" alt="The site frontend" noshadow=noshadow >}}
 
 **Tumblr's job:** Tie all the pieces together into the frontend experience.
 
@@ -258,41 +258,41 @@ _(Yes, this is where my Favicon came from.)_
 {% update 2017-06 %}
 We lived. ;-)
 
-<Media type="image" size="" src="/assets/blog/building-travelogue/grand-canyon.jpg" alt="Grand Canyon"  />
+{{< media type="image" size="" src="grand-canyon.jpg" alt="Grand Canyon"  >}}
 {% endupdate %}
 
 
 [31DAYS]: https://www.routenotfound.com/2015/07/27/thirty-one-days/?utm_source=tsmithcreative&utm_medium=website&utm_campaign=tsmithcreative
 [TRACKER]: https://github.com/tsmith512/location-tracker
-[TRACKERUI]: /assets/blog/building-travelogue/location-history.png
+[TRACKERUI]: location-history.png
 [ORIGINAL]: https://github.com/tsmith512/location-tracker/commit/26fbff80d704be926d8fe999809f439ccb163708
 [SILEX]: https://silex.sensiolabs.org/
 [API]: http://docs.locationtrackerapi.apiary.io/
 [GJ]: http://geojson.org/
 [GGCD]: https://developers.google.com/maps/documentation/geocoding/intro
 [GSP]: https://github.com/geocoder-php/GeocoderServiceProvider
-[WHERE]: /assets/blog/building-travelogue/where-are-they-now.png
+[WHERE]: where-are-they-now.png
 [AWS]: https://aws.amazon.com/
-[RMNP]: /assets/blog/building-travelogue/very-precise.png
+[RMNP]: very-precise.png
 [AAG]: https://aws.amazon.com/api-gateway/
 [AL]: https://aws.amazon.com/lambda/
 [LAMBDA]: https://github.com/tsmith512/travelogue-tumblr/blob/master/aws/index.js
 [TXC]: https://en.wikipedia.org/wiki/Texas_State_Capitol
 [COTU]: http://www.atlasobscura.com/places/the-center-of-the-universe
-[AAGLT]: /assets/blog/building-travelogue/aws-api-gateway.png
+[AAGLT]: aws-api-gateway.png
 [S3]: https://aws.amazon.com/s3/
-[S3LT]: /assets/blog/building-travelogue/travelogue-s3.png
+[S3LT]: travelogue-s3.png
 [GMM]: https://www.google.com/maps/about/mymaps/
-[TQORGMM]: /assets/blog/building-travelogue/my-my-maps-map.png
+[TQORGMM]: my-my-maps-map.png
 [MB]: https://www.mapbox.com/
 [MBS]: https://www.mapbox.com/mapbox-studio/
-[TQMB]: /assets/blog/building-travelogue/mapbox-map.png
+[TQMB]: mapbox-map.png
 [TUMBLR]: https://www.tumblr.com/about
-[TDASH]: /assets/blog/building-travelogue/tumblr-dash.png
+[TDASH]: tumblr-dash.png
 [TTHEME]: https://github.com/tsmith512/travelogue-tumblr
 [4K]: https://www.fourkitchens.com/
 [TASKERTASK]: https://github.com/tsmith512/location-tracker/blob/master/tasker/task.xml
 [TASKER]: http://tasker.dinglisch.net/
 [TAPP]: https://play.google.com/store/apps/details?id=com.tumblr&hl=en
 [TL]: https://www.routenotfound.com/
-[ONP]: /assets/blog/building-travelogue/olympic-national-park.jpg
+[ONP]: olympic-national-park.jpg

@@ -5,6 +5,8 @@ layout: post
 tags: [engineering, theatre]
 ---
 
+<!-- @TODO: UPDATE IMAGE SOURCES AND CITATION -->
+
 <div class="callout">
 Also appears on <a href="http://fourword.fourkitchens.com/article/callboard-javascript-goes-theatre">FourWord</a>, the blog of <a href="http://www.fourkitchens.com">Four Kitchens</a>. See the full project on <a href="https://github.com/tsmith512/callboard">GitHub</a>.
 </div>
@@ -159,18 +161,18 @@ handful of things I'd like to work on:
     - _(Shoutout to the_ Oklahoma! _crew: in a whole summer, that only happened
       twice, and they got us back on track very quickly.)_
 
-[IMAGE]: /assets/blog/callboard-theatre-js/callboard.jpg
+[IMAGE]: callboard.jpg
 [4K]: http://www.fourkitchens.com
 [ZTP]: http://www.zilker.org
 [CB]: http://www.github.com/tsmith512/callboard
 [DEMO]: http://tsmith512.github.io/callboard
 [CD]: http://countdownjs.org/
 [M]: http://momentjs.com/
-[DISPLAY]: /assets/blog/callboard-theatre-js/displays.png
+[DISPLAY]: displays.png
 [R]: https://github.com/tsmith512/callboard/releases
 [GH]: https://github.com/
 [FORK]: https://help.github.com/articles/fork-a-repo
 [TW]: http://twitter.com/tsmith512
 [GHI]: https://github.com/tsmith512/callboard/issues/new
 [HOMESCREEN]: https://developer.chrome.com/multidevice/android/installtohomescreen
-[BRAIN]: /assets/blog/callboard-theatre-js/brainmissing.jpg
+[BRAIN]: brainmissing.jpg

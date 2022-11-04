@@ -14,7 +14,7 @@ what if that could be "working from anywhere?" As folks start to see distributed
 work in their futures, a few friends have asked me how I put these trips
 together.
 
-<Media type="image" src="/assets/blog/magic-travel-spreadsheet/image.png" alt="Map of five years of roadtrip routes" />
+{{< media type="image" src="image.png" alt="Map of five years of roadtrip routes" >}}
 
 I think it's easier to *have* a plan that I have no real attachment to keeping
 rather than constantly winging it, so I usually make a rough itinerary. I only
@@ -29,7 +29,7 @@ libraries or other public spaces can be a gamble. Having a backup plan and a
 hotspot is useful, too. Most of it comes down to what percentage of the day will
 be on video calls.
 
-<Media type="image" size="" src="/assets/blog/magic-travel-spreadsheet/IMG_20180807_174432103.jpg" alt="Working in a hammock in a forest"  />
+{{< media type="image" size="" src="IMG_20180807_174432103.jpg" alt="Working in a hammock in a forest"  >}}
 
 And in my unsolicited opinion on the virtues of the digital nomad: don't fake
 it. Building good distributed work culture offers the opportunity to re-evaluate
@@ -41,7 +41,7 @@ So in celebration of 5 years since the
 [Pacific Coast Highway](https://tsmithphotos.com/the-pacific-coast-highway?utm_source=tsmithcreative&utm_medium=website&utm_campaign=blog),
 I offer up my itinerary template.
 
-<Media type="image" src="/assets/blog/magic-travel-spreadsheet/image2.png" alt="Sample itinerary spreadsheet" />
+{{< media type="image" src="image2.png" alt="Sample itinerary spreadsheet" >}}
 
 This is a lot less work than it appears — most of it is calculated. I just pick
 a start date and city, then fill in stops along the way (Column D). The
@@ -51,9 +51,10 @@ This makes it easy to play with alternate routes or shift hours between days.
 Last summer, I had to work during a one-way run to Seattle before a vacation,
 here are the routes I compared:
 
+<!-- @TODO: This gets stripped... -->
 <p class="media">
-  <video src="/assets/blog/magic-travel-spreadsheet/roadtrip-spreadsheet-example.mp4" poster="/assets/blog/magic-travel-spreadsheet/roadtrip-spreadsheet-example.png" width="1104" height="720" preload="none" controls>
-  Video couldn't be embedded, but you can <a href="/assets/blog/magic-travel-spreadsheet/roadtrip-spreadsheet-example.mp4">download it</a> instead.
+  <video src="roadtrip-spreadsheet-example.mp4" poster="roadtrip-spreadsheet-example.png" width="1104" height="720" preload="none" controls>
+  Video couldn't be embedded, but you can <a href="roadtrip-spreadsheet-example.mp4">download it</a> instead.
   </video>
 </p>
 
@@ -62,7 +63,7 @@ interesting, but this is great for low-effort feasibility estimates. Besides, th
 value of a scenic route can drop off pretty hard once it's dark out. And for
 being just an estimate, it's surprisingly accurate.
 
-<Media type="image" src="/assets/blog/magic-travel-spreadsheet/image3.png" alt="Route map from the sample itinerary above" />
+{{< media type="image" src="image3.png" alt="Route map from the sample itinerary above" >}}
 
 There's also a link to the full route in the header, but that only works because
 of a bug in Google Maps — on the website, it is not possible to construct
@@ -110,7 +111,7 @@ The magic columns are E and F, and both work using the
 to query Google Maps Directions API and then traverse through the XML response
 to find the answer. To pick apart an example:
 
-<Media type="image" src="/assets/blog/magic-travel-spreadsheet/image4.png" alt="Sample row showing a drive from Austin to Tulsa" />
+{{< media type="image" src="image4.png" alt="Sample row showing a drive from Austin to Tulsa" >}}
 
 The formula for E2 is:
 
@@ -133,9 +134,9 @@ First, it checks if there is a drive on this day — are C2 (Austin, TX) and D2
 query. The response is long and includes the full directions. The spreadsheet
 pulls the summaries at the end of the `leg` element.
 
-<Media type="image" src="/assets/blog/magic-travel-spreadsheet/image5.png" alt="Top of the XML response from GMaps Directions API" />
+{{< media type="image" src="image5.png" alt="Top of the XML response from GMaps Directions API" >}}
 
-<Media type="image" src="/assets/blog/magic-travel-spreadsheet/image6.png" alt="End of the XML response, 754 lines in total" />
+{{< media type="image" src="image6.png" alt="End of the XML response, 754 lines in total" >}}
 
 For "Estimated Hours," it grabs `value` from the `duration`, which comes in
 seconds, and — going back to the cell formula — converts it to hours and adds
@@ -180,7 +181,7 @@ The [`HYPERLINK()`](https://support.google.com/docs/answer/3093313?hl=en)
 function does "make a link to directions from Cx to Dx and label it 'Map Cx to
 Dx'."
 
-<Media type="image" src="/assets/blog/magic-travel-spreadsheet/image7.png" alt="Another sample route, focusing on columns A through D" />
+{{< media type="image" src="image7.png" alt="Another sample route, focusing on columns A through D" >}}
 
 Columns A, B, and C? Those are easy. A and B both "add one to the row above" —
 Google Sheets is smart enough to properly handle `[date] + 1` correctly. C just
@@ -193,21 +194,21 @@ you add your API key and preferences about drive times. All of these are defined
 as [Named Ranges](https://support.google.com/docs/answer/63175) so that they can
 be used in formulas easily:
 
-<Media type="image" src="/assets/blog/magic-travel-spreadsheet/image8.png" alt="Named Ranges in the Config sheet" />
+{{< media type="image" src="image8.png" alt="Named Ranges in the Config sheet" >}}
 
 This is how the formulas in the last section were able to reference `APIKEY`
 instead of writing the key directly into the cell formula *or* doing a
 cross-sheet reference like `Config!B2`. These named ranges are also used in
 conditional formatting, but there's a trick to that.
 
-<Media type="image" src="/assets/blog/magic-travel-spreadsheet/image9.png" alt="Sample route, focusing on conditional formatting applied to mileage and travel time" />
+{{< media type="image" src="image9.png" alt="Sample route, focusing on conditional formatting applied to mileage and travel time" >}}
 
 [Conditional Formatting](https://support.google.com/docs/answer/78413) is
 applied to columns B, E, and F. Column B highlights weekends. Columns E and F
 use the named ranges from "Config" to apply color to ideal/max driving
 distance/time.
 
-<Media type="image" src="/assets/blog/magic-travel-spreadsheet/image10.png" alt="Sample route, with the date column selected to show how weekdays are highlighted" />
+{{< media type="image" src="image10.png" alt="Sample route, with the date column selected to show how weekdays are highlighted" >}}
 
 Conditional formatting to highlight weekends uses `WEEKDAY()` to format `B2:B`
 with this custom formula:
@@ -219,7 +220,7 @@ with this custom formula:
 The `WEEKDAY()` function gets numbers for day-of-the-week. It has different
 modes: in mode `3`, Saturday translates to `5` and Sunday is `6`.
 
-<Media type="image" src="/assets/blog/magic-travel-spreadsheet/image11.png" alt="Configuration of the conditional formatting using named ranges applied to travel time" />
+{{< media type="image" src="image11.png" alt="Configuration of the conditional formatting using named ranges applied to travel time" >}}
 
 For E and F, the conditional formatting compares against the named ranges in the
 Config tab. Neither cross-sheet references (i.e. `Sheet!A1`) nor named ranges
@@ -254,7 +255,7 @@ I know I'm certainly looking forward to travel re-unleashed one day. Until then,
 we must step lightly and acknowledge how leave-no-trace has taken on a whole new
 meaning.
 
-<Media type="image" size="" src="/assets/blog/magic-travel-spreadsheet/IMG_20181118_110155051.jpg" alt="View down from an overlook at a dirt road in Death Valley"  />
+{{< media type="image" size="" src="IMG_20181118_110155051.jpg" alt="View down from an overlook at a dirt road in Death Valley"  >}}
 
 
 # Template Changelog

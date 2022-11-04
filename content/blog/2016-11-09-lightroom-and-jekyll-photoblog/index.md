@@ -31,17 +31,17 @@ directory structure.
 [Jeffrey Friedl’s Folder Publish](http://regex.info/blog/lightroom-goodies/folder-publisher)
 plugin accomplishes exactly this.
 
-<Media type="image" size="" src="/assets/blog/lightroom-jekyll/image00.png" alt="Screenshot"  />
+{{< media type="image" size="" src="image00.png" alt="Screenshot"  >}}
 
 I add images to the aptly named “photos to include” collection that Folder
 Publisher provides, and Lightroom automatically handles making new folders of
 converted and resized JPEGs, maintaining that original structure:
 
-<Media type="image" size="mini" src="/assets/blog/lightroom-jekyll/image02.png" alt="Screenshot"  />
+{{< media type="image" size="mini" src="image02.png" alt="Screenshot"  >}}
 
 Using SourceTree, I commit the parent directory to a Git repository:
 
-<Media type="image" size="mini" src="/assets/blog/lightroom-jekyll/image05.png" alt="Screenshot"  />
+{{< media type="image" size="mini" src="image05.png" alt="Screenshot"  >}}
 
 ## Image Processing and Indexing with [Gulp](http://gulpjs.com/)
 
@@ -68,12 +68,12 @@ sorting all of it by exposure time, and then
 [storing it in a YAML file](https://github.com/tsmith512/tsmithphotos/blob/master/source/index.yml)
 so that galleries can be built automatically.
 
-<Media type="image" size="mini" src="/assets/blog/lightroom-jekyll/image04.png" alt="Screenshot"  />
+{{< media type="image" size="mini" src="image04.png" alt="Screenshot"  >}}
 
 Finally, another task creates a new post in the site for any folder that doesn’t
 already have one, since my post and directory names are built the same way.
 
-<Media type="image" size="mini" src="/assets/blog/lightroom-jekyll/image01.png" alt="screenshot"  />
+{{< media type="image" size="mini" src="image01.png" alt="screenshot"  >}}
 
 Other gulp tasks build out the Sass into stylesheets, _aggregate/minify/lint JS_,
 nd copy other files directly into the `_site` output directory.
@@ -94,7 +94,7 @@ variable `site.data.index` when it starts building the site. A `for` loop over
 with each image and all the metadata generated. I use this loop to
 [create a list of thumbnails and links](https://github.com/tsmith512/tsmithphotos/blob/master/_layouts/post.html#L47-L61):
 
-![](/assets/blog/lightroom-jekyll/image06.png)
+![](image06.png)
 
 Finding individual images can get a little hairier, for example, when trying to
 find the “hero” image for a given post. Rather than being able to lookup an
@@ -105,7 +105,7 @@ filter doesn’t seem to work on custom data.
 Adding both techniques together and nesting them in a loop of all posts in the site is
 [how the home page is generated](https://github.com/tsmith512/tsmithphotos/blob/master/index.html):
 
-![](/assets/blog/lightroom-jekyll/image03.png)
+![](image03.png)
 
 ## Performance Considerations
 

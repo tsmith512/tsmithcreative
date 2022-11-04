@@ -41,7 +41,7 @@ My gripes with Gmail Filters:
 
 Checkout [Google Apps Script][GSCRIPT] and create a new blank project.
 
-<Media type="image" size="" src="/assets/blog/script-gmail/gscript-new.png" alt="Google Apps Script: New Project"  />
+{{< media type="image" size="" src="gscript-new.png" alt="Google Apps Script: New Project"  >}}
 
 This is just JavaScript, but it runs server-side within Google Apps and can be
 run on regular intervals or on specific triggers. You do not have to be logged
@@ -107,7 +107,7 @@ indicate that the sender will be unavailable, they are archived immediately:
 
 _Regex on line 2 [visualized][RXWFH]:_
 
-<Media type="image" size="" src="/assets/blog/script-gmail/regex-whereabouts.png" alt="Whereabouts Regular Expressions"  />
+{{< media type="image" size="" src="regex-whereabouts.png" alt="Whereabouts Regular Expressions"  >}}
 
 **Google Calendar** emails can be identified by what the subject line starts with:
 
@@ -120,7 +120,7 @@ _Regex on line 2 [visualized][RXWFH]:_
 
 _Regex [visualized][RXGCAL]:_
 
-<Media type="image" size="" src="/assets/blog/script-gmail/regex-gcal.png" alt="Google Calendar Regular Expressions"  />
+{{< media type="image" size="" src="regex-gcal.png" alt="Google Calendar Regular Expressions"  >}}
 
 **Client** emails get sorted as well. We're a little lax in the formatting of
 those tags, but regex makes that easier:
@@ -133,7 +133,7 @@ those tags, but regex makes that easier:
 
 _Regex [visualized][RXFPL]:_
 
-<Media type="image" size="" src="/assets/blog/script-gmail/regex-fpl.png" alt="FPL Regular Expressions"  />
+{{< media type="image" size="" src="regex-fpl.png" alt="FPL Regular Expressions"  >}}
 
 This matches `[fpl]`, `[full plate]`, `[full plate living]`, `[fullplateliving]`,
 and various others, as well as any email sent to/from `@fullplateliving.org`.
@@ -225,7 +225,7 @@ having an `@` in the `to` field. All other filters were exported and deleted.
 Using the Label settings, "Prefilter" can be hidden from your inbox view so you
 don't see it.
 
-<Media type="image" size="" src="/assets/blog/script-gmail/gmail-all-filter.png" alt="Prefilter"  />
+{{< media type="image" size="" src="gmail-all-filter.png" alt="Prefilter"  >}}
 
 **Unexpected benefit:** I noticed that this "Prefilter" label is applied to all
 outbound email as well (perhaps because it matches only against the `to` field),
@@ -254,7 +254,7 @@ otherwise).
 Now I have two functions that can be run on a regular basis, so let's do so.
 Under the "Resources" menu, click "Current project's triggers" and add these:
 
-<Media type="image" size="" src="/assets/blog/script-gmail/gscript-triggers.png" alt="Triggers"  />
+{{< media type="image" size="" src="gscript-triggers.png" alt="Triggers"  >}}
 
 - `autoArchive()` can run hourly (or less frequently, honestly).
 - `batchIncoming()` must run very frequently. I chose 5 minutes instead of 1 so

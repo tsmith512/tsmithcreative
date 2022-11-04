@@ -19,7 +19,7 @@ Well, it's not revolutionary, but I decided to make an interval timer for sets
 on my climbing hangboard. Regardless of other apps that may be available, the
 fitness app I already use does _not_ do these well.
 
-<Media type="image" size="" src="/assets/blog/hello-hangboard/hang.jpg" alt="Me, struggling."  />
+{{< media type="image" size="" src="hang.jpg" alt="Me, struggling."  >}}
 
 _**Humble beginnings:** prototype-level design, packing-tape-as-phone-mount, and
 just training up a dead hang before moving onto more challenging holds. And I
@@ -31,7 +31,7 @@ think it goes without saying that we're not telling my landlord about this._
 - Audio and visual cues to progress through a circuit
 - Able to handle the weird nested patterns of sets I'm seeing, like:
 
-<Media type="image" size="mini" src="/assets/blog/hello-hangboard/routine.jpg" alt="Handwritten workout with weird pattern"  />
+{{< media type="image" size="mini" src="routine.jpg" alt="Handwritten workout with weird pattern"  >}}
 
 _Unlike common "work" vs "rest" timers that repeat, these sets have weird patterns that are hard to set timers for or count off in my head._
 
@@ -208,13 +208,13 @@ and set them both up with build scripts and config.
 Normally, I build on Linux. I wanted to give Windows development a shot since it
 is easier to connect my phone to my PC than a Linux VM/container.
 
-<Media type="image" size="" src="/assets/blog/hello-hangboard/win-dev-env.png" alt="Windows / Android Studio Environment"  />
+{{< media type="image" size="" src="win-dev-env.png" alt="Windows / Android Studio Environment"  >}}
 
 React Native's [environment](https://reactnative.dev/docs/environment-setup)
 docs are great. I got Windows (for Android) and macOS (for iOS _and_ Android)
 set up quickly.
 
-<Media type="image" size="" src="/assets/blog/hello-hangboard/mac-double-dev-env.png" alt="macOS / Xcode/iOS and Android Studio Environment"  />
+{{< media type="image" size="" src="mac-double-dev-env.png" alt="macOS / Xcode/iOS and Android Studio Environment"  >}}
 
 **Observations:**
 
@@ -249,7 +249,7 @@ _Windows Stuff:_
   environment tutorials. Watch where Android Studio installs itself, its SDKs,
   and the Platform Tools.
 
-<Media type="image" size="mini" src="/assets/blog/hello-hangboard/win-env-var.png" alt="Windows environment variables"  />
+{{< media type="image" size="mini" src="win-env-var.png" alt="Windows environment variables"  >}}
 
 _On Windows, Android Studio installed itself **and the Android SDKs/tools** in `%LOCALAPPADATA%`, not the drive root._
 
@@ -283,7 +283,7 @@ _**iOS:**_
 [tsmith@macbook][~/Documents/repos/HelloHangboard] → npx react-native run-android
 ```
 
-<Media type="image" size="mini" src="/assets/blog/hello-hangboard/mac-xc-build-conf.png" alt="Xcode Project Scheme Build Configuration"  />
+{{< media type="image" size="mini" src="mac-xc-build-conf.png" alt="Xcode Project Scheme Build Configuration"  >}}
 
 _For Release: In the Project menu in Xcode, select "Edit Schemes" to change the build config, then Build the project._
 
@@ -338,7 +338,7 @@ building locally, too, but quickly became a showstopper:
   on Bitrise, I started having Provisioning Profile problems on top of that. All
   despite supposed options for these things to be handled automatically.
 
-<Media type="image" src="/assets/blog/hello-hangboard/mad-at-my-computer.gif" alt="This made me angry." />
+{{< media type="image" src="mad-at-my-computer.gif" alt="This made me angry." >}}
 
 When I threw it all out and started over outside Xcode, it worked fine, first try:
 
@@ -360,7 +360,7 @@ need to study more about. I _felt_ like it should be simple and that I knew what
 was going on &mdash; it just kept not working, even though all the IDs
 matched every time.
 
-<Media type="image" size="" src="/assets/blog/hello-hangboard/bitrise-workflows.png" alt="Side by side workflows in Bitrise"  />
+{{< media type="image" size="" src="bitrise-workflows.png" alt="Side by side workflows in Bitrise"  >}}
 
 Once that was cleared up, the Bitrise workflow config was not difficult. In
 separate workflows for iOS and Android, I have these basic steps:
@@ -375,7 +375,7 @@ separate workflows for iOS and Android, I have these basic steps:
 8. Save binaries to Bitrise and my S3 backup bucket
 9. Upload directly to App Store Connect and Google Play Console
 
-<Media type="image" size="mini" src="/assets/blog/hello-hangboard/bitrise-log.png" alt="Bitrise build log"  />
+{{< media type="image" size="mini" src="bitrise-log.png" alt="Bitrise build log"  >}}
 
 With workflow triggers, any commit on `master` will run `ios` and `android`
 workflows sequentially. Once uploaded, they can be easily released to testers.
@@ -387,7 +387,7 @@ Or so I thought.
 If Android's Code Signing was an easy hoop to jump through, it was Apple's
 chance to sign when getting into App Store Connect.
 
-<Media type="image" size="mini" src="/assets/blog/hello-hangboard/app-store-testflight.png" alt="Version 1.0.32 on TestFlight"  />
+{{< media type="image" size="mini" src="app-store-testflight.png" alt="Version 1.0.32 on TestFlight"  >}}
 
 I had a Beta Reviewed app on TestFlight and working on my iPhone (and Dad's!)
 within 48 hours.
@@ -395,7 +395,7 @@ within 48 hours.
 Google Play Console, on the other hand, has a rather opaque approach to letting
 me know how long I will be "pending."
 
-<Media type="image" size="mini" src="/assets/blog/hello-hangboard/a-bit-more-time.png" alt="Google Play Console 'A bit more time'"  />
+{{< media type="image" size="mini" src="a-bit-more-time.png" alt="Google Play Console 'A bit more time'"  >}}
 
 I do like how Play Console offers more robust release tracks for Internal,
 (Closed) Alpha, (Open) Beta, and Production releases, but makes it _very_
@@ -403,7 +403,7 @@ difficult to understand what part you're waiting on. At present, I have the
 1.0.32 release "fully rolled out" (their words) in the Internal and closed
 Alpha.
 
-<Media type="image" size="mini" src="/assets/blog/hello-hangboard/play-release-tracks.png" alt="Version 1.0.32 not available on Google Play"  />
+{{< media type="image" size="mini" src="play-release-tracks.png" alt="Version 1.0.32 not available on Google Play"  >}}
 
 But I can't get a link or an email invite to share, nor can I even get it
 installed on my own device registered with this account. Thankfully side-loading
@@ -419,7 +419,7 @@ Or _I am waiting_ on something from them? And
 [question](https://www.reddit.com/r/androiddev/comments/cgb6zy/how_to_set_up_an_app_for_internal_testing/)
 outside "coronatime" either.
 
-<Media type="image" size="mini" src="/assets/blog/hello-hangboard/play-problem.png" alt="This feels like conflicting language"  />
+{{< media type="image" size="mini" src="play-problem.png" alt="This feels like conflicting language"  >}}
 
 _This screenshot, from StackOverflow, is what I see too. It feels like conflicting language: "Released, full roll-out" versus "No link or email invites until you publish."_
 
@@ -463,7 +463,7 @@ That was fun. Having little to do most evenings made it happen faster...
 
 **Things that are needed, in a rough priority order:**
 
-<Media type="image" size="mini" src="/assets/blog/hello-hangboard/vanilla-sky.jpg" alt="Me"  />
+{{< media type="image" size="mini" src="vanilla-sky.jpg" alt="Me"  >}}
 
 - _Being able to climb outside again&hellip;_
 - This _desperately_ needs a code review. There are competing examples for how

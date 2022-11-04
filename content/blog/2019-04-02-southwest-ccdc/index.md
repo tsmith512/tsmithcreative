@@ -12,7 +12,7 @@ Two weeks ago, I volunteered for the
 college teams to form mock IT organizations (a "Blue Team") for a fictional
 enterprise-scale company.
 
-<Media type="image" size="" src="/assets/blog/swccdc-2019/comms.jpg" alt="Communications closet patching"  />
+{{< media type="image" size="" src="comms.jpg" alt="Communications closet patching"  >}}
 
 _Photo by Kate V._
 
@@ -26,7 +26,7 @@ are lost when Red Team accomplishes an objective, but half of those points can
 be regained by identifying and formally reporting on the incident. Finally, for
 critical services under SLA, points are lost for extended outages.
 
-<Media type="image" size="" src="/assets/blog/swccdc-2019/buildlab.jpg" alt="The Build Lab"  />
+{{< media type="image" size="" src="buildlab.jpg" alt="The Build Lab"  >}}
 
 _Build Lab — Brady imaging computers the night before the game. Ten years ago, I
 took "Business & Society" in this room. My only class ever in what was then
@@ -43,7 +43,7 @@ fences went down, not only would they start losing points because of the
 critical SLA on the fence, but also the dinosaurs would escape and attack the
 team room!
 
-<Media type="image" size="" src="/assets/blog/swccdc-2019/dinosaurs.jpg" alt="Organizers in dinosaur costumes"  />
+{{< media type="image" size="" src="dinosaurs.jpg" alt="Organizers in dinosaur costumes"  >}}
 
 I was brought on board to project manage injects, assist in writing and grading
 them, and to "stage manage" their execution during the game. I also threw
@@ -70,7 +70,7 @@ was occasionally part of that objective. Professionals often inherit
 over-engineered solutions or have to tame systems that were built on shifting
 requirements over years.
 
-<Media type="image" size="" src="/assets/blog/swccdc-2019/facepalm.jpg" alt="Facepalm"  />
+{{< media type="image" size="" src="facepalm.jpg" alt="Facepalm"  >}}
 
 _Photo by Kate V. — Not entirely sure what precipitated this, could be anything._
 
@@ -124,7 +124,7 @@ storyboarded the injects to balance cadence.
 
 Compiled index in Confluence:
 
-<Media type="image" size="" src="/assets/blog/swccdc-2019/confluence.jpg" alt="An index in confluence"  />
+{{< media type="image" size="" src="confluence.jpg" alt="An index in confluence"  >}}
 
 Storyboarding:
 
@@ -132,11 +132,11 @@ Storyboarding:
 
 Calendar for easy visualization:
 
-<Media type="image" size="" src="/assets/blog/swccdc-2019/calendar.jpg" alt="Google Calendar screenshot displaying all injects"  />
+{{< media type="image" size="" src="calendar.jpg" alt="Google Calendar screenshot displaying all injects"  >}}
 
 It was an incredibly busy day for Blue Teams. And injects is just part of it.
 
-<Media type="image" size="" src="/assets/blog/swccdc-2019/inject-grading.jpg" alt="Grading injects"  />
+{{< media type="image" size="" src="inject-grading.jpg" alt="Grading injects"  >}}
 
 _Photo by Kate V. — Austin and Brady grading an inject in person._
 
@@ -178,7 +178,7 @@ happen overnight. We hinted with an inject "Create a Disaster Recovery Plan"
 late on Day 1 and then distributed a fake weather report shortly thereafter.
 That night, their rooms "flooded."
 
-<Media type="image" size="" src="/assets/blog/swccdc-2019/flooded.jpg" alt="Ethernet cables pulled and piled in a corner"  />
+{{< media type="image" size="" src="flooded.jpg" alt="Ethernet cables pulled and piled in a corner"  >}}
 
 We pulled all the ethernet cables and piled them in the corner. I worried about
 this one. It wasn't just a matter of "plug computers into the switch" — multiple
@@ -216,7 +216,7 @@ props to everyone who rose to that occasion.
 ---
 
 
-<Media type="image" size="" src="/assets/blog/swccdc-2019/retro-panel.jpg" alt="Retro panel of game organizers"  />
+{{< media type="image" size="" src="retro-panel.jpg" alt="Retro panel of game organizers"  >}}
 
 _Photo by Kate V. — Organizers speak to students post-game._
 
@@ -229,6 +229,6 @@ from each of them. Also, the rest of the game organizers and volunteers are
 super sharp, were a joy to work with, and I learned so much from them in these
 few days. Thank you for this experience!
 
-<Media type="image" size="" src="/assets/blog/swccdc-2019/elevator.jpg" alt="Velociraptor waiting for the elevator"  />
+{{< media type="image" size="" src="elevator.jpg" alt="Velociraptor waiting for the elevator"  >}}
 
 _Photo by Kate V._

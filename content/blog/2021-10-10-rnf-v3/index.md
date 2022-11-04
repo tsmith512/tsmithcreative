@@ -39,13 +39,14 @@ recently compiled an
 <a href="https://www.routenotfound.com/index/?utm_source=tsmithcreative&utm_medium=website&utm_campaign=tsmithcreative" rel="nofollow">
 index of our escapades</a> and it was longer than I'd realized.
 
-<Media type="image" size="mini" src="/assets/blog/rnf-v3/rnfb-post.jpg" alt="Post on the frontend" noshadow />
+{{< media type="image" size="mini" src="rnfb-post.jpg" alt="Post on the frontend" noshadow=noshadow >}}
 
 ## Old Architecture [v2 from 2017]({% post_url 2017-04-23-building-travelogue %})
 
 A refresher of this clutter:
 
-<Media type="image" size="mini" src="/assets/blog/travelogue-revisited/new-architecture.png" alt="Version 2 Architecture" noshadow />
+<!-- @TODO: THIS IS AN IMAGE FROM ANOTHER POST HOW -->
+{{< media type="image" size="mini" src="/assets/blog/travelogue-revisited/new-architecture.png" alt="Version 2 Architecture" noshadow=noshadow >}}
 
 - The location service was _entirely_ unauthenticated.
 - It was built on [Silex][SILEX], a [Symfony][SYMF] 3 off-shoot _well_ beyond EOL.
@@ -61,7 +62,7 @@ Also:
   yearned to dump heavy libraries but that meant writing everything the hard way.
 - The blog used an obsolete Mapbox library.
 
-<Media type="image" size="" src="/assets/blog/rnf-v3/truck-clutch-op-cyl.jpg" alt="Reseating a clutch fluid line"  />
+{{< media type="image" size="" src="truck-clutch-op-cyl.jpg" alt="Reseating a clutch fluid line"  >}}
 
 And this site has always been my playground to fiddle with interesting tech
 and learn new things. As I ramp up as a new Product Manager at Cloudflare,
@@ -74,14 +75,14 @@ _\* CF-speak for "adding a site on our infrastructure," the term originating fro
 
 _In which "Zero Trust" describes both the security products in play and the prudent measure of faith to place in a hooptie._
 
-<Media type="image" size="" src="/assets/blog/rnf-v3/v3-arch.png" alt="Version 3 Architecture" noshadow />
+{{< media type="image" size="" src="v3-arch.png" alt="Version 3 Architecture" noshadow=noshadow >}}
 
 What happens **on my phone** is the same: [Tasker][TASKER]
 pulls a location every half-hour and sends it to the service, batching it for
 later if we're out from under The Cloud. I also submit photos and posts with the
 WordPress app.
 
-<Media type="image" size="" src="/assets/blog/rnf-v3/celica-coolant.jpg" alt="Reseating a radiator hose"  />
+{{< media type="image" size="" src="celica-coolant.jpg" alt="Reseating a radiator hose"  >}}
 
 The **Location Service Worker** is the _key new piece,_ running on the
 [Workers][WORKERS] serverless platform on the Cloudflare Edge:
@@ -96,7 +97,7 @@ The **Location Service Worker** is the _key new piece,_ running on the
 - It's also my first stab at writing a project in [TypeScript][TS], which I quite like!
 - 📝 _Worker [API specification][RNFAPI] and [codebase][RNFLSW]_
 
-<Media type="image" size="" src="/assets/blog/rnf-v3/rnfa-maps.jpg" alt="Admin backend showing all trips" noshadow />
+{{< media type="image" size="" src="rnfa-maps.jpg" alt="Admin backend showing all trips" noshadow=noshadow >}}
 
 I split the **Location Service Frontend** to a separate [React][REACT] app
 on [Pages][PAGES], also Edge-hosted, and secured by ~~a giant No Trespassing sign~~
@@ -109,7 +110,7 @@ _[Access][ACCESS]_:
   with it yet, but it's quick and fun.
 - 📝 _Admin SPA [codebase][RNFLAP]_
 
-<Media type="image" size="" src="/assets/blog/rnf-v3/rnfa-trips.jpg" alt="Admin backend showing a trip edit" noshadow />
+{{< media type="image" size="" src="rnfa-trips.jpg" alt="Admin backend showing a trip edit" noshadow=noshadow >}}
 
 The only remaining server is named **Alfa,** a [Lightsail][LIGHTSAIL] instance
 in AWS, protected by Cloudflare's firewall and propped up by the CDN. Alfa runs
@@ -129,7 +130,7 @@ Also, I restructured the database to expose location history in a `VIEW` which
 joins Waypoints to Trips `BETWEEN` start and end times. Thus, it only contains
 Waypoints during Trips.
 
-<Media type="image" size="" src="/assets/blog/rnf-v3/nye2020.jpg" alt="New Year's Eve 2020, New Mexico"  />
+{{< media type="image" size="" src="nye2020.jpg" alt="New Year's Eve 2020, New Mexico"  >}}
 
 The rest of the stack remains:
 
@@ -150,7 +151,7 @@ The rest of the stack remains:
   [Magic Roadtrip Planning Spreadsheet]({% post_url 2020-08-12-magic-travel-spreadsheet %}),
   [Google My Maps][MYMAPS], and [Caltopo][CALTOPO] for scheming.
 
-<Media type="image" size="" src="/assets/blog/rnf-v3/cassiar-hwy.jpg" alt="Cassiar Highway near Dease Lake, BC"  />
+{{< media type="image" size="" src="cassiar-hwy.jpg" alt="Cassiar Highway near Dease Lake, BC"  >}}
 
 ## So it's that time again?
 
@@ -160,7 +161,7 @@ significant inflation. Who knew that if I'd held onto that little Celica a while
 longer, I could have turned a profit on it?! So we've tabled whatever Great
 Roadtrip #4 will be for a while.
 
-<Media type="image" size="" src="/assets/blog/rnf-v3/nutter-twists.jpg" alt="Nutter Twists Road, Mr Trumbull, AZ"  />
+{{< media type="image" size="" src="nutter-twists.jpg" alt="Nutter Twists Road, Mr Trumbull, AZ"  >}}
 
 Instead, we're going to do a Greatest Hits from the Southwest Offroadtrip this
 October with our usual loadout: Xterra the Younger and his friends, George's
@@ -170,7 +171,7 @@ the 4Runner I still miss.
 
 <p><em><a href="https://www.routenotfound.com/category/tq_sw_hits/?utm_source=tsmithcreative&utm_medium=website&utm_campaign=blog" rel="nofollow">The Southwest Backtrack</a></em></p>
 
-<Media type="image" size="" src="/assets/blog/rnf-v3/salmon-glacier.jpg" alt="Salmon Glacier near Hyder, AK"  />
+{{< media type="image" size="" src="salmon-glacier.jpg" alt="Salmon Glacier near Hyder, AK"  >}}
 
 ---
 
