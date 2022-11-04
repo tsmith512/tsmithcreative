@@ -1,13 +1,11 @@
-@import '../../styles/variables.scss';
-
-.list {
+.post-teaser-list {
   max-width: $max-lines;
   list-style: none;
   margin: 0 auto;
   padding: 0;
 }
 
-.item {
+.post-teaser-item {
   overflow: hidden;
   padding-bottom: 1em;
   border-bottom: 1px solid #eee;
@@ -26,7 +24,7 @@
   }
 }
 
-.thumbnail {
+.post-teaser-thumbnail {
   display: block;
   margin-bottom: 1em;
 
@@ -37,6 +35,6 @@
   }
 }
 
-.description {
+.post-teaser-description {
   overflow: hidden;
 }
