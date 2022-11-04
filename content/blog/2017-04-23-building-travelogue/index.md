@@ -7,10 +7,10 @@ summary: >
 tags: [engineering, side projects, travel]
 ---
 
-{% update 2019-03 %}
+{{< update "2019-03" >}}
 I've swapped out Tumblr for WordPress to build this site, and it has been
 rebranded as _Route Not Found_ from travelogue.
-{% endupdate %}
+{{< /update >}}
 
 
 _From [the Travelogue][31DAYS]:_
@@ -203,7 +203,7 @@ _[originally]_ picked Tumblr because _[I thought]_ it has a good mobile editing
 experience, an even better desktop editing experience, handles photos and video
 gracefully, and supports fully customized themes.
 
-{% update 2017-06 and 2019-03 %}
+{{< update "2017-06 and 2019-03" >}}
 2017: I <del>partially</del> _entirely_ rescind this recommendation. Tumblr's
 Android application and desktop interface are both quite buggy, especially on
 slow internet connections we had in remote places. Despite usable connections
@@ -222,7 +222,7 @@ exclusively at the agency from 2010-2013 and haven't messed with it much since.
 It's grown up a lot, and while it's still rough around some edges, what you can
 build with very little effort is staggaring. I should write about the WordPress
 rebuild one day.
-{% endupdate %}
+{{< /update >}}
 
 ![Tumblr Dashboard][TDASH]
 
@@ -255,11 +255,11 @@ It worked out okay the first time. Follow along on the [Travelogue][TL].
 
 _(Yes, this is where my Favicon came from.)_
 
-{% update 2017-06 %}
+{{< update "2017-06" >}}
 We lived. ;-)
 
 {{< media type="image" size="" src="grand-canyon.jpg" alt="Grand Canyon"  >}}
-{% endupdate %}
+{{< /update >}}
 
 
 [31DAYS]: https://www.routenotfound.com/2015/07/27/thirty-one-days/?utm_source=tsmithcreative&utm_medium=website&utm_campaign=tsmithcreative

@@ -139,7 +139,7 @@ are critically important to me and I don't see any of these platforms offering a
 solid safety net here. But since Notion is the youngest, I'm inclined to take a
 harder look.</del>
 
-{% update 2020-01 %}
+{{< update "2020-01" >}}
 
 Notion has always had a Markdown/CSV export option, but I have discovered that
 Notion now allows HTML exports (and PDF for Enterprise users) for an entire
@@ -152,7 +152,7 @@ I would love it if they could do some kind of automated backup but even in its
 current iteration as a manual step, this solidifies Notion as a safe place for
 important data for me.
 
-{% endupdate %}
+{{< /update >}}
 
 ## This is what I've been looking for!
 

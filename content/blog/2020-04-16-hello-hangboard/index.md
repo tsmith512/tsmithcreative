@@ -427,7 +427,7 @@ Community responses vary between "it's just a matter of time, you have to wait"
 to "click X magic button in Y console page," but none of Google's official
 documentation clarify how one should resolve what feels like a stall.
 
-{% update 2020-05 %}
+{{< update "2020-05" >}}
 I did not realize that getting a Closed Alpha on Google Play would involve
 Google reviewing not only the app, but also the store description. In a first
 draft, I used the word "coronavirus" &mdash; in a subsequent draft, I removed
@@ -446,7 +446,7 @@ for an easier plea. My account was reinstated and I was able to submit a new
 version with a new description shortly thereafter.
 
 So, _my bad,_ but my critique on the opacity of this process in the UI stands.
-{% endupdate %}
+{{< /update >}}
 
 # Recap and Roadmap
 

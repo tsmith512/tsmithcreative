@@ -131,13 +131,13 @@ patches directory during build. This way you will:
 
 ### The Refresh: Avoiding Database Config, Keeping Database Sync'd to Code
 
-{% update 2017-06 %}
+{{< update "2017-06" >}}
   `refresh` is no longer a built-in command because it varies by project. Using
   [Aquifer's `run`](https://github.com/aquifer/aquifer-run) extension, which is
   now built-in for 1.0.0, we define the same refresh job, tailored to the
   project, and any other useful scripts. Execution is now `aquifer run refresh`
   or whatever name you use for the script.
-{% endupdate %}
+{{< /update >}}
 
 We all know not to do development or site building work on production. But
 Drupal's database does hold overrides that can occasionally sneak in. If your

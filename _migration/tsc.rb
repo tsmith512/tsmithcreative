@@ -45,34 +45,6 @@ module Jekyll
     end
   end
 
-  # Make an HTML wrapper around an "update" area indicating that a post has
-  # changed since it was first published. Usage:
-  # {% update 2017-06 %}
-  #   ... content ...
-  # {% endupdate %}
-  class UpdateBlock < Liquid::Block
-    def initialize(tag, markup, tokens)
-      @date = markup.strip
-      super
-    end
-
-    def render(context)
-      contents = super
-
-      site = context.registers[:site]
-      converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
-      markdownContent = converter.convert(contents)
-      update = Liquid::Template.parse(markdownContent).render context
-
-      output = "<div class=\"update\">"
-      output += "<span class=\"update-intro\">Update #{@date}:</span> "
-      output += update
-      output += "</div>"
-
-      output
-    end
-  end
-
   # Make an HTML wrapper around a "collapsible" area
   # {% collapsible Title %}
   #   ... content ...
