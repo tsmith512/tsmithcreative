@@ -16,7 +16,7 @@
 
   {{ $scss := resources.Get "scss/global.scss" }}
   {{ $style := $scss | resources.ToCSS }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
   <title>{{ block "title" . }}{{ .Page.Title }} | {{ .Site.Title }}{{ end }}</title>
 </head>

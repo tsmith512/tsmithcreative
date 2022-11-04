@@ -7,15 +7,15 @@
 
       <li class="post-teaser-item">
         {{ if $thumbnail }}
-          <a href={{ .Permalink }} class="post-teaser-thumbnail">
+          <a href={{ .RelPermalink }} class="post-teaser-thumbnail">
             {{ with $thumbnail }}
-              <img src="{{ .Permalink }}" width="{{ .Width }}" height="{{ .Height }}" />
+              <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" />
             {{ end }}
           </a>
         {{ end }}
 
         <div class="post-teaser-description">
-          <h2><a  href={{ .Permalink }}>{{ .Title }}</a></h2>
+          <h2><a  href={{ .RelPermalink }}>{{ .Title }}</a></h2>
           {{ .Summary }}
           {{ partial "post-meta" . }}
         </div>
