@@ -1,6 +1,4 @@
-@import '../../styles/variables.scss';
-
-.frame {
+.browser-frame {
 
   margin-top: 2em;
   margin-bottom: 2em;
@@ -24,14 +22,15 @@
   }
 }
 
-.header {
+.browser-frame-header {
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
 
+  // @TODO: This gets weird on mobile
   height: (148px / 2);
 
   div {
-    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
   }
@@ -39,14 +38,28 @@
   .left {
     flex: 0 1 (600px / 2);
     background-image: url('/gfx/browser-frame-left.png');
+    background-size: contain;
   }
   .fill {
+    display: none;
     flex: 1 0 auto;
     background-image: url('/gfx/browser-frame-filler.png');
     background-repeat: repeat-x;
+    background-size: cover;
+    @media (min-width: 488px) {
+      display: flex;
+    }
+    @media (min-width: 515px) {
+      background-size: contain;
+    }
   }
   .right {
     flex: 0 1 (288px / 2);
     background-image: url('/gfx/browser-frame-right.png');
+    background-size: contain;
   }
+}
+
+.browser-frame-content {
+
 }

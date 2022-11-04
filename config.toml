@@ -13,7 +13,11 @@ writeStats = true
 [permalinks]
   blog = '/blog/:year/:slug/'
 
-[markup]
-  [markup.highlight]
-    style = 'monokailight'
-    tabWidth = 2
+[markup.highlight]
+  style = 'monokailight'
+  tabWidth = 2
+
+# I have a lot of static HTML from posts about experiments and I'm the only
+# author, so I accept this -- unsafe just allows raw HTML.
+[markup.goldmark.renderer]
+  unsafe = true

@@ -394,7 +394,10 @@ to offer.
 
 ## Test it for yourself:
 
-<BrowserFrame contents='<iframe src="https://district-map.tsmith.com/map/" style="height: 600px; max-height: 70vh;" allow="geolocation"></iframe>' />
+{{% browserframe %}}
+<iframe src="https://district-map.tsmith.com/map/" style="height: 600px; max-height: 70vh;" allow="geolocation"></iframe>
+{{% /browserframe %}}
+
 
 ---
 
