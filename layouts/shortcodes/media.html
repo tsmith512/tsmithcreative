@@ -14,7 +14,12 @@
 {{ $mediaClasses := slice $size $noshadow }}
 
 <figure class="{{ delimit $containerClasses " " }}">
-  <img src="{{ .Get "src" }}" class="{{ delimit $mediaClasses " " }}" alt="{{ .Get "alt" }}" />
+  {{ if eq $type "image"}}
+    {{ $image := $.Page.Resources.GetMatch $src }}
+    {{ with $image }}
+      <img src="{{ .RelPermalink }}" class="{{ delimit $mediaClasses " " }}" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" />
+    {{ end }}
+  {{ end }}
   {{ if $caption }}
     <figcaption>{{ $caption }}</figcaption>
   {{ end }}
