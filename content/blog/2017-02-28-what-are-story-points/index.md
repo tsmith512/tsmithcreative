@@ -14,7 +14,7 @@ will take to build. In this video, I explain the basics.
 
 Check out **[storypoints.info](http://storypoints.info)** to learn more.
 
-{% collapsed Transcript %}
+{{< collapsed "Transcript" >}}
 Good afternoon!
 
 I had some team members ask me about story points recently and I thought I'd
@@ -91,7 +91,7 @@ points and offers a guideline of what kinds of tasks represent what sizes. This
 was informed by the JIRA history of our organization across multiple projects.
 With this as a starting point, when you estimate, hash it out with your team.
 This is just a little intro, it's not a ruler
-{% endcollapsed %}
+{{< /collapsed >}}
 
 ---
 

@@ -277,7 +277,7 @@ uses for Group in the future, but I needed a primer on how Group is different
 from OG as I help clients with their strategies. At a high-level, it's actually
 pretty similar.
 
-{% collapsed Comparison notes on OG vs Group %}
+{{< collapsed "Comparison notes on OG vs Group" >}}
 
 - Both modules:
   - Have the concept of adding content (nodes) and users to groups (i.e.
@@ -326,7 +326,7 @@ pretty similar.
       because it opens the door for a mess in OG, but without that ability
       there's some flexibility lost.
 
-{% endcollapsed %}
+{{< /collapsed >}}
 
 Ultimately, it seems like everything I've built in OG with Drupal 7 would be
 pretty reasonably doable with Group in D8. The big question is what is the new

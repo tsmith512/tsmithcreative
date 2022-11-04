@@ -16,7 +16,7 @@ of the application. When development of a particular ticket is complete, the
 user identified in the ticket or user story should be able to accomplish his or
 her goal as supported by any backend and frontend development needed.
 
-{% collapsed Transcript %}
+{{< collapsed "Transcript" >}}
 Good evenin' folks!
 
 ### Introduction
@@ -188,7 +188,7 @@ for the project's needs, and we did jump ship from traditional scrum in favor of
 wingin' it with kanban-by-short-release-phases, but with those adjustments,
 retaining the notion of user-focused thin vertical slices has still been
 successful.
-{% endcollapsed %}
+{{< /collapsed >}}
 
 
 ---
