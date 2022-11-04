@@ -16,7 +16,12 @@
 
   {{ $scss := resources.Get "scss/global.scss" }}
   {{ $style := $scss | resources.ToCSS }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
+
+  {{ $masthead := resources.Get "scss/masthead-photography.scss" }}
+  {{ $mastheadStyle := $masthead | resources.ExecuteAsTemplate "scss/masthead-photography-processed.scss" . | resources.ToCSS }}
+  <!-- @TODO: That does not keep this CSS from loading and it has heavy dataURIs in it -->
+  <link rel="stylesheet" type="text/css" href="{{ $mastheadStyle.RelPermalink }}" media="screen and (min-width: 720px)" />
 
   <title>{{ block "title" . }}{{ .Page.Title }} | {{ .Site.Title }}{{ end }}</title>
 </head>

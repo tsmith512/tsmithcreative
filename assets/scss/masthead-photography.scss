@@ -1,0 +1,37 @@
+/**
+ * This works with the base _masthead.scss (which makes the space and default
+ * images), but overrides with multiple generated images using Hugo Images.
+ * To make that work, this stylesheet is called and compiled _separately_
+ * and processed as a template.
+ */
+
+{{ $types := seq 2009 now.Year | append "page" }}
+
+{{ $sizes := slice 720 960 1280 1600 1920 }}
+
+// For each year / page type:
+{{ range $year := $types }}
+
+  // Load up the base image from /assets/img/masthead/X
+  {{ $filename := printf "/img/masthead/%s.jpg" (string $year) }}
+  {{ $base := resources.GetMatch $filename }}
+  {{ with $base }}
+
+    // Set up a fallback wtih a dataURI (@TODO: Ultimately use this for a preload)
+    .masthead-{{ $year }} {
+      {{ $blurred := $base.Filter (images.GaussianBlur 10) }}
+      {{ $blurred = $blurred.Resize "100x" }}
+      background-image: url(data:image/jpeg;base64,{{ $blurred.Content | base64Encode }});
+    }
+
+    // And for each size, resize the image and link out to it.
+    {{ range $size := $sizes }}
+      {{ $resized := $base.Resize (printf "%dx" $size) }}
+      @media (min-width: "{{ $size }}px") {
+        .masthead-{{ $year }} { background-image: url("{{ $resized.RelPermalink }}"); }
+      }
+    {{ end }}
+
+  {{ end }}
+
+{{ end }}
