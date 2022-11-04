@@ -21,13 +21,13 @@ way that unified much of Central and West Austin into a new consolidated
 district _and_ a good friend of mine decided to enter the Primaries to represent
 that district.
 
-<Media type="image" size="" src="/assets/blog/cjatx-map/launch-party.jpg" alt="Campaign launch event"  />
+{{< media type="image" size="" src="launch-party.jpg" alt="Campaign launch event" >}}
 
 I produced a few pieces during the campaign, the most interesting for me was
 an interactive district map. As we spoke to potential voters, many --- myself
 included --- wondered, "am I even in this district?"
 
-<Media type="image" size="mini" src="/assets/blog/cjatx-map/map.png" alt="Map of Austin, TX and the 37th Congressional District"  />
+{{< media type="image" size="mini" src="map.png" alt="Map of Austin, TX and the 37th Congressional District"  >}}
 
 I even got to watch as a well-informed friend used the map on her phone to
 realize, "Oh wow, I thought I was still in the 25th. And if I didn't know..."
@@ -35,7 +35,7 @@ Our collective confusion is warranted; the last time our legislature picked
 their own voters, they divvied up Austin
 [this way](https://dvr.capitol.texas.gov/Congress/58/PLANC2100):
 
-<Media type="image" size="mini" src="/assets/blog/cjatx-map/old-districts.png" alt="Outdated Districts of Austin, TX"  />
+{{< media type="image" size="mini" src="old-districts.png" alt="Outdated Districts of Austin, TX"  >}}
 
 ## Finding the Data
 
@@ -51,14 +51,14 @@ Having recently done
 [another deep dive on interactive mapping]({% post_url 2021-10-10-rnf-v3 %}),
 this seemed like a simple job for Mapbox. Here's the overview:
 
-<Media type="image" size="mini" src="/assets/blog/cjatx-map/overview.png" alt="Flowchart of data from senate files through Mapbox tooling to create the static images and interactive map" noshadow />
+{{< media type="image" size="mini" src="overview.png" alt="Flowchart of data from senate files through Mapbox tooling to create the static images and interactive map" noshadow="noshadow" >}}
 
 ## Making a Tileset of Districts
 
 [Mapbox Studio](https://studio.mapbox.com/) can import a Shapefile as a
 custom [Tileset](https://docs.mapbox.com/studio-manual/reference/tilesets/).
 
-<Media type="image" size="" src="/assets/blog/cjatx-map/tileset.png" alt="Custom Tileset in Mapbox Studio"  />
+{{< media type="image" size="" src="tileset.png" alt="Custom Tileset in Mapbox Studio"  >}}
 
 This let me do two things:
 
@@ -75,7 +75,7 @@ simplify some unneeded details.
 I added the tileset in four different ways, as seen in the selected layers.
 From top to bottom:
 
-<Media type="image" size="" src="/assets/blog/cjatx-map/map-layers.png" alt="Custom Map in Mapbox Studio"  />
+{{< media type="image" size="" src="map-layers.png" alt="Custom Map in Mapbox Studio"  >}}
 
 - Text layer to print all districts' numbers on the map.
 - Line layer to draw a bright white border around _only the 37th._
@@ -131,7 +131,7 @@ rotation because my map style is flat.
 
 But what did we want users to do?
 
-<Media type="image" size="" src="/assets/blog/cjatx-map/handheld-cropped.jpg" alt="Showing the district map on a handheld device"  />
+{{< media type="image" size="" src="handheld-cropped.jpg" alt="Showing the district map on a handheld device"  >}}
 
 ### "Am I even in this district?"
 
@@ -264,7 +264,7 @@ geolocation is requested by the user _and_ they give their permission, the
 
 ```
 
-<Media type="image" size="" src="/assets/blog/cjatx-map/handheld-cropped-2.jpg" alt="Showing the district map on a handheld device"  />
+{{< media type="image" size="" src="handheld-cropped-2.jpg" alt="Showing the district map on a handheld device"  >}}
 
 ### `LatLng` Marks the Spot
 
@@ -363,7 +363,7 @@ automatically and we wouldn't need additional hosting infrastructure. Then I
 added `map.chrisjonesatx.com` as a custom domain and turned on Web Analytics to
 get some basic stats.
 
-<Media type="image" size="mini" src="/assets/blog/cjatx-map/cf-pages.png" alt="Cloudflare Pages Dashboard"  />
+{{< media type="image" size="mini" src="cf-pages.png" alt="Cloudflare Pages Dashboard"  >}}
 
 ## Was it useful?
 
@@ -372,7 +372,7 @@ overwhelmingly mobile, largely seeing the embedded map on Wix, and referred from
 Facebook. According to Mapbox, in that same period, the Tilequery API served
 just over four thousand lookups.
 
-<Media type="image" size="mini" src="/assets/blog/cjatx-map/cf-analytics.png" alt="Cloudflare Web Analytics Report"  />
+{{< media type="image" size="mini" src="cf-analytics.png" alt="Cloudflare Web Analytics Report"  >}}
 
 Anecdotally, the Casar campaign for East Austin's 35th District reached out to
 say that they were using _our_ map with _their_ voters, too. Also, within days

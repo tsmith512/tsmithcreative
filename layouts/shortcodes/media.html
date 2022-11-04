@@ -1,0 +1,21 @@
+{{ $alt := .Get "alt" }}
+{{ $caption := .Get "caption" }}
+{{ $src := .Get "src" }}
+
+{{ $type := default "image" (.Get "type") }}
+{{ $size := default "default" (.Get "size") }}
+{{ $noshadow := default "shadow" (.Get "noshadow") }}
+
+{{ $containerClasses := slice "media" }}
+{{ if eq $size "default" }}
+  {{ $containerClasses = $containerClasses | append "default" }}
+{{ end }}
+
+{{ $mediaClasses := slice $size $noshadow }}
+
+<figure class="{{ delimit $containerClasses " " }}">
+  <img src="{{ .Get "src" }}" class="{{ delimit $mediaClasses " " }}" alt="{{ .Get "alt" }}" />
+  {{ if $caption }}
+    <figcaption>{{ $caption }}</figcaption>
+  {{ end }}
+</figure>
