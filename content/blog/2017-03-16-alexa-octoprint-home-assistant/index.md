@@ -41,7 +41,7 @@ printer. This part is easy, and done in three parts:
 
 Replace `192.168.1.49` with the IP address or hostname of your OctoPrint server.
 
-```
+``` yaml
 # Step 1:
 octoprint:
   host: 192.168.1.49
@@ -85,7 +85,7 @@ _Set an HTTP API password._ Repeat after me: _set an API password._
 
 Also, the Alexa Skills API will only connect to HTTPS endpoints.
 
-```
+``` yaml
 # In the root of configuration.yaml
 http:
   api_password: !secret http_password
@@ -122,7 +122,7 @@ do is configure the Hass side of the skill we're building. In this example,
 we'll use the newly configured OctoPrint sensors to announce the 3D printer
 status.
 
-```{% raw %}
+``` yaml
 alexa:
   intents:
   # OCTOPRINT STATUS
@@ -136,7 +136,7 @@ alexa:
         {% else %}
           and not currently printing
         {% endif %}.
-{% endraw %}```
+```
 
 This sets up a simple response to the `PrinterStatusIntent` intent using Home
 Assistant's [templating][HASST] engine. Remember that intent name, we'll use it
@@ -191,7 +191,7 @@ do. Each intent has a name, and `slots` for variables to pass to the skill.
 Remember the Intent name we used above? Repeat that here to link this up to the
 Home Assistant configuration: `PrinterStatusIntent`
 
-``` js
+``` json
 {
   "intents": [
     {

@@ -129,7 +129,7 @@ action into a script so I can also use it to turn the lights on to the
 "appropriate" setting at any time.
 
 ``` yaml
-{% raw %}# In scripts.yaml
+# In scripts.yaml
 
 downstairs_lights_on:
   alias: Downstairs Lights On
@@ -144,7 +144,7 @@ downstairs_lights_on:
           {% elif now().hour < 17 %}daylight
           {% elif now().hour < 19 %}evening
           {% elif now().hour >= 21 %}night
-          {% endif %}{% endraw %}
+          {% endif %}
 ```
 
 The **data template** is evaluated by Home Assistant when the script is called.
@@ -199,7 +199,7 @@ is simple and can be written a few different ways. I combined it into a single
 automation using a service template to give that a shot.
 
 ``` yaml
-{% raw %}# In automation.yaml
+# In automation.yaml
 
 - alias: Christmas Lights Auto
   trigger:
@@ -217,7 +217,7 @@ automation using a service template to give that a shot.
   action:
     service_template: >
       switch.turn_{% if states('sun.sun') == "above_horizon" %}on{% else %}off{% endif %}
-    entity_id: switch.switch_6_0{% endraw %}
+    entity_id: switch.switch_6_0
 ```
 
 The _data template_ in the earlier example passed a scene name to a hardcoded
@@ -236,7 +236,7 @@ consolidating them into a single automation set seemed cleaner.
 
 - I can't tell whether `entity_id` is supposed to be part of service `data` or
   not:
-  ```
+  ``` yaml
   # So is it:
     service: light.turn_on
     entity_id: light.ceiling

@@ -128,7 +128,7 @@ Compiled index in Confluence:
 
 Storyboarding:
 
-{% picture /blog/swccdc-2019/timeline.jpg --alt The timeline post-up on a whiteboard %}
+{{< media type="image" size="" src="timeline.jpg" alt="The timeline post-up on a whiteboard"  >}}
 
 Calendar for easy visualization:
 

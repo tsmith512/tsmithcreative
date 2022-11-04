@@ -59,8 +59,8 @@ packages/components. Its local scripts and its SaaS platform handle all the
 bundling and building; no Android Studio or Xcode. Perfect for the "Hello World
 phase."
 
-``` js
-{% raw %}// DO NOT COPY THIS! This is learning scratchwork, not best practices patterns.
+``` jsx
+// DO NOT COPY THIS! This is learning scratchwork, not best practices patterns.
 
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
@@ -76,7 +76,7 @@ export default class HelloHangboard extends Component {
       </View>
     );
   }
-}{% endraw %}
+}
 ```
 
 **Observations on Expo:** Expo offers _so much_ "for free." It's also upfront
@@ -98,8 +98,8 @@ separation of _feature_ as more sustainable. Hell, that's how I write a backlog.
 
 An immediate plus, though: UI layout with Flexbox is pretty fantastic.
 
-``` js
-{% raw %}// DO NOT COPY THIS! This is learning scratchwork, not best practices patterns.
+``` jsx
+// DO NOT COPY THIS! This is learning scratchwork, not best practices patterns.
 
 import * as React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
@@ -176,7 +176,7 @@ const aboutStyles = StyleSheet.create({
     marginBottom: 8,
   },
   // [...]
-};{% endraw %}
+};
 ```
 
 ## Leaving Expo
@@ -254,7 +254,7 @@ _Windows Stuff:_
 _On Windows, Android Studio installed itself **and the Android SDKs/tools** in `%LOCALAPPADATA%`, not the drive root._
 
 ``` bash
-[tsmith@macbook][~/Documents/repos/HelloHangboard] →  cat ~/.bash_profile | tail -n 5
+→  cat ~/.bash_profile | tail -n 5
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -280,7 +280,7 @@ _**iOS:**_
 
 ``` bash
 # Debug
-[tsmith@macbook][~/Documents/repos/HelloHangboard] → npx react-native run-android
+→ npx react-native run-android
 ```
 
 {{< media type="image" size="mini" src="mac-xc-build-conf.png" alt="Xcode Project Scheme Build Configuration"  >}}
@@ -292,10 +292,10 @@ _**Android:**_
 
 ``` powershell
 # Debug
-PS C:\Users\tsmith\HelloHangboard> npx react-native run-android
+PS> npx react-native run-android
 
 # Release
-PS C:\Users\tsmith\HelloHangboard\android> .\gradlew assembleRelease
+PS> .\gradlew assembleRelease
 ```
 
 I ran into a conflict between React Native 0.61.4 and Android's SDK 29. The
@@ -315,7 +315,8 @@ offered a Manifest to disable this for `debug` builds only, which fixed it.
 </manifest>
 ```
 
-{% picture /blog/hello-hangboard/pair.jpg --alt iPhone X and Pixel 2 side-by-side %}
+{{< media type="image" src="pair.jpg" alt="iPhone X and Pixel 2 side-by-side" >}}
+
 
 _And there it is!_
 
@@ -439,7 +440,7 @@ app. But whichever it was, _they did not like it._
 Google was putting any app mentioning the current situation through extra
 scrutiny, **and rightly so.** But I wish I had known that my draft description
 was going up for review, too, even for an invite-only release. Turns out, on
-review, Google suspended by Play Console account (like, can't log in anymore
+review, Google suspended my Play Console account (like, can't log in anymore
 suspended). I had to appeal this decision, promising to rewrite the description.
 Thankfully, there was no objectionable content in the app itself, so that made
 for an easier plea. My account was reinstated and I was able to submit a new
