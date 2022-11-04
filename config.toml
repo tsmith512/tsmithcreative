@@ -1,0 +1,14 @@
+baseURL = 'https://tsmith.com'
+languageCode = 'en-us'
+title = 'Taylor Smith'
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+writeStats = true
+
+[frontmatter]
+  date = ':filename'
+
+[permalinks]
+  blog = '/blog/:year/:slug/'
