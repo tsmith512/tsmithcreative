@@ -18,11 +18,7 @@
   {{ $style := $scss | resources.ToCSS }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-  <title>
-    {{ block "title" . }}
-      {{ .Site.Title }}
-    {{ end }}
-  </title>
+  <title>{{ block "title" . }}{{ .Page.Title }} | {{ .Site.Title }}{{ end }}</title>
 </head>
 <body>
   {{ partial "global/nav" . }}

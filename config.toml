@@ -12,3 +12,8 @@ writeStats = true
 
 [permalinks]
   blog = '/blog/:year/:slug/'
+
+[markup]
+  [markup.highlight]
+    style = 'monokailight'
+    tabWidth = 2
