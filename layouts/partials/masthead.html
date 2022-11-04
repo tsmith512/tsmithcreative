@@ -1,5 +1,5 @@
-<div class="masthead masthead-page">
-  <!-- @TODO: ^^ The "year" classes -->
+{{ $year := cond (gt .Date.Year 1) .Date.Year "page" }}
+<div class="masthead masthead-{{ $year }}">
   <div class="masthead-content">
     <h1>{{ .Title }}</h1>
 
