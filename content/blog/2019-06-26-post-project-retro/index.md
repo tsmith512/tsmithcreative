@@ -75,7 +75,7 @@ Build this collaboratively so that voting is easy. If the meeting is
 happening in person, do a post-up and dot vote. There are ways to do this in
 Google Docs/Sheets, Trello, or Notion.
 
-[Remember, if anyone's remote, everyone's remote!]({% post_url 2016-06-08-working-from-home %})
+[Remember, if anyone's remote, everyone's remote!]({{< ref "2016-06-08-working-from-home" >}})
 
 ### 2b. (5 minutes) Vote on the issues list for topics to discuss.
 

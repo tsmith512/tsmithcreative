@@ -8,7 +8,7 @@ tags: [side projects, travel, tools]
 ---
 
 In 2015, as my then-employer was transitioning to fully distributed
-["working from home,"]({% post_url 2016-06-08-working-from-home %})
+["working from home,"]({{< ref "2016-06-08-working-from-home" >}})
 I went on a wild roadtrip with some good friends. It got me thinking:
 what if that could be "working from anywhere?" As folks start to see distributed
 work in their futures, a few friends have asked me how I put these trips

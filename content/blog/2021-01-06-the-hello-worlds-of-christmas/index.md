@@ -16,7 +16,7 @@ _don't_ have, so I decided to give it a go.
 Day 1 was easy, and while my colleagues were debating which of their
 professional languages to do it in, I thought, "Well, this would be easy in
 **Bash**." [So I did that](https://github.com/tsmith512/advent_code/blob/trunk/2020/01/expense_report.sh).
-I dragged my [roadtrip group]({% post_url 2019-08-29-travelogue-revisited %})
+I dragged my [roadtrip group]({{< ref "2019-08-29-travelogue-revisited" >}})
 in on this adventure, too.
 
 {{< media type="image" src="bash.png" alt="Bash, Day 1" >}}

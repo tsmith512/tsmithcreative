@@ -11,7 +11,7 @@ tags: [engineering, side projects, travel, presentation]
 <iframe src="https://player.vimeo.com/video/353626268" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen><p><a href="https://vimeo.com/353626268">The Internet is for Making Roadtrips (Four Kitchens - Test Kitchen - August 2019)</a> from <a href="https://vimeo.com/tsmith512">Taylor Smith</a> on <a href="https://vimeo.com">Vimeo</a>.</p></iframe>
 
 I wrote about
-[this blog and its underlying technology]({% post_url 2017-04-23-building-travelogue %})
+[this blog and its underlying technology]({{< ref "2017-04-23-building-travelogue" >}})
 before. In late 2018, I completed a hurried MVP migration to WordPress.
 Since then, I continued making a steady stream of updates and building
 additional trinkets for our next adventure: driving from Austin to Anchorage.

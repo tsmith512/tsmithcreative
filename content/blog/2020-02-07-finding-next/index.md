@@ -424,7 +424,7 @@ doing" is awfully reminiscent of a **[Bullet Journal](https://bulletjournal.com/
 
 I've rebooted the "Funemployment Diary" into a New Year's Experiment: using a
 Bullet Journal. I've written before about
-[Notion for project and work notes]({% post_url 2018-06-20-notion-getting-started %}),
+[Notion for project and work notes]({{< ref "2018-06-20-notion-getting-started" >}}),
 which I did use for the diary and continue to use for _everything else._ But I
 have long had trouble making routine use of to-do list applications despite
 [Todoist](https://todoist.com/) being an exceptionally good one.

@@ -167,7 +167,7 @@ a target or bullseye prominently in the visual.
 I _loved_ working on that wordmark. The arrow motif was used in the movie
 collateral, too, but less integrated and with a very different aesthetic. I took
 the arrow edges to form the pilot's wings on the poster. Then I
-[3D printed]({% post_url 2018-01-11-3d-printing-2017 %}) that illustration for
+[3D printed]({{< ref "2018-01-11-3d-printing-2017" >}}) that illustration for
 Celia, our costume designer, to use on the uniform:
 
 {{< media type="image" size="mini" src="/assets/blog/3d-printing-2017/wings-model.png" alt="Wings Model in Fustion 360"  >}}
@@ -203,7 +203,7 @@ photoshoot for this one.
 {{< media type="image" size="mini" src="/assets/blog/audence-awakening/voting-in-rehearsal.jpg" alt="Audience member voting with the audience participation app"  >}}
 
 Rick also wanted to add an audience participation element into this show, which
-evolved into us [building a web application]({% post_url 2019-10-25-the-audience-awakening %})
+evolved into us [building a web application]({{< ref "2019-10-25-the-audience-awakening" >}})
 together.
 
 ## Evita (2021)

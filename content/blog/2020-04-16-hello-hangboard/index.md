@@ -8,7 +8,7 @@ tags: [engineering, side projects]
 citation: [VERY, "https://www.verypossible.com/insights/hello-hangboard-mobile-app-development-with-react-native"]
 ---
 
-[Having recently moved]({% post_url 2020-02-07-finding-next %}) from a web shop
+[Having recently moved]({{< ref "2020-02-07-finding-next" >}}) from a web shop
 to a new team that is much more focused on apps and devices, I want to
 familiarize myself with the tech we use so I can continue to make strategic
 product recommendations.

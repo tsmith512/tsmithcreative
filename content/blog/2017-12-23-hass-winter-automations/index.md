@@ -270,7 +270,7 @@ with the explosion of new Hass components lately.
 Happy New Year to all!
 
 [HASS]: https://home-assistant.io/
-[HASSPI]: {% post_url 2017-03-16-alexa-octoprint-home-assistant %}
+[HASSPI]: {{< ref "2017-03-16-alexa-octoprint-home-assistant" >}}
 [LIFX]: https://www.lifx.com
 [SCN]: https://github.com/tsmith512/home-assistant-config/blob/master/scene.yaml
 [SSD]: https://home-assistant.io/docs/scripts/

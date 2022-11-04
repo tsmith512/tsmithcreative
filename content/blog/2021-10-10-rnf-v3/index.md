@@ -23,7 +23,7 @@ _Previously on "The Internet is for Doing Roadtrips!"_
 
 {% include gallery.html gallery=page.galleries.finishes %}
 
-In 2019, I [gave a tour of how]({% post_url 2019-08-29-travelogue-revisited %})
+In 2019, I [gave a tour of how]({{< ref "2019-08-29-travelogue-revisited" >}})
 our location-tracking media-heavy roadtrip blog worked.
 
 I stood it up on Tumblr in 2015 for the [Pacific Coast Highway][PCH] "cheap car
@@ -41,7 +41,7 @@ index of our escapades</a> and it was longer than I'd realized.
 
 {{< media type="image" size="mini" src="rnfb-post.jpg" alt="Post on the frontend" noshadow=noshadow >}}
 
-## Old Architecture [v2 from 2017]({% post_url 2017-04-23-building-travelogue %})
+## Old Architecture [v2 from 2017]({{< ref "2017-04-23-building-travelogue" >}})
 
 A refresher of this clutter:
 
@@ -148,7 +148,7 @@ The rest of the stack remains:
 - Frontend maps with [Mapbox GL JS][MAPBOX] and designed in [Mapbox Studio][MAPSTUDIO].
 - I can write short posts via email sent from our emergency satellite beacon.
 - And we're still using my
-  [Magic Roadtrip Planning Spreadsheet]({% post_url 2020-08-12-magic-travel-spreadsheet %}),
+  [Magic Roadtrip Planning Spreadsheet]({{< ref "2020-08-12-magic-travel-spreadsheet" >}}),
   [Google My Maps][MYMAPS], and [Caltopo][CALTOPO] for scheming.
 
 {{< media type="image" size="" src="cassiar-hwy.jpg" alt="Cassiar Highway near Dease Lake, BC"  >}}

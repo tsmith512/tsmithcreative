@@ -48,7 +48,7 @@ designated "PlanC2193," is available as a
 of those is _a Shapefile,_ a vector geography format for GIS software.
 
 Having recently done
-[another deep dive on interactive mapping]({% post_url 2021-10-10-rnf-v3 %}),
+[another deep dive on interactive mapping]({{< ref "2021-10-10-rnf-v3" >}}),
 this seemed like a simple job for Mapbox. Here's the overview:
 
 {{< media type="image" size="mini" src="overview.png" alt="Flowchart of data from senate files through Mapbox tooling to create the static images and interactive map" noshadow="noshadow" >}}
