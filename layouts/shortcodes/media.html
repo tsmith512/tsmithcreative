@@ -6,7 +6,7 @@
 {{ $size := default "default" (.Get "size") }}
 {{ $noshadow := default "shadow" (.Get "noshadow") }}
 
-{{ $containerClasses := slice "media" }}
+{{ $containerClasses := slice "media" "pswp-container" }}
 {{ if eq $size "default" }}
   {{ $containerClasses = $containerClasses | append "default" }}
 {{ end }}
@@ -17,7 +17,14 @@
   {{ if eq $type "image"}}
     {{ $image := $.Page.Resources.GetMatch $src }}
     {{ with $image }}
-      <img src="{{ .RelPermalink }}" class="{{ delimit $mediaClasses " " }}" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" />
+      <a
+        href="{{ .RelPermalink }}"
+        data-pswp-width="{{ .Width }}"
+        data-pswp-height="{{ .Height }}"
+        data-cropped="true"
+      >
+        <img src="{{ .RelPermalink }}" class="{{ delimit $mediaClasses " " }}" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" />
+      </a>
     {{ end }}
   {{ end }}
   {{ if $caption }}

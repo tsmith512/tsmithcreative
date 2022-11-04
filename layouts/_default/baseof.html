@@ -23,6 +23,10 @@
   <!-- @TODO: That does not keep this CSS from loading and it has heavy dataURIs in it -->
   <link rel="stylesheet" type="text/css" href="{{ $mastheadStyle.RelPermalink }}" media="screen and (min-width: 720px)" />
 
+  <!-- @TODO: Load conditionally, lazily -->
+  {{ $photoswipeCss := resources.Get "vendor/photoswipe/dist/photoswipe.css" }}
+  <link rel="stylesheet" type="text/css" href="{{ $photoswipeCss.RelPermalink }}" media="screen" />
+
   <title>{{ block "title" . }}{{ .Page.Title }} | {{ .Site.Title }}{{ end }}</title>
 </head>
 <body>
