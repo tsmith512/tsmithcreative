@@ -8,6 +8,8 @@
 {{ $noshadow := default "shadow" (.Get "noshadow") }}
 
 {{ $containerClasses := slice "media" "pswp-container" }}
+{{ $contentWidths := dict "default" 960 "small" 720 "mini" 480 }}
+{{ $generateWidth := default 960 (index $contentWidths $size) }}
 {{ if eq $size "default" }}
   {{ $containerClasses = $containerClasses | append "default" }}
 {{ end }}
@@ -23,10 +25,14 @@
 <figure class="{{ delimit $containerClasses " " }}">
   {{ if eq $type "image"}}
     {{ $image := $.Page.Resources.GetMatch $src }}
+
+    <!-- If pulling an image from another post... -->
     {{ if $from }}
       {{ $page := $.Site.GetPage $from }}
       {{ $image = $page.Resources.GetMatch $src }}
     {{ end }}
+
+    <!-- Link to original image, display a preview size... -->
     {{ with $image }}
       <a
         href="{{ .RelPermalink }}"
@@ -34,7 +40,14 @@
         data-pswp-height="{{ .Height }}"
         data-cropped="true"
       >
-        <img src="{{ .RelPermalink }}" class="{{ delimit $mediaClasses " " }}" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" />
+        {{ $preview := $image.Fit (printf "%dx%d" $generateWidth $generateWidth) }}
+        <img
+          src="{{ $preview.RelPermalink }}"
+          class="{{ delimit $mediaClasses " " }}"
+          alt="{{ $alt }}"
+          width="{{ $preview.Width }}"
+          height="{{ $preview.Height }}"
+        />
       </a>
     {{ end }}
   {{ end }}
