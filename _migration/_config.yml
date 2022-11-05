@@ -7,30 +7,11 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-environment-variables
 exclude:
-  - node_modules # Apparently this is magic sauce to make Jekyll less super slow
-  - vendor # CircleCI stores Ruby gems inside the repo; skip this tree
-  - assets # This is a symlink to _assets for JPT's links. Currently, Jekyll doesn't handle asset pipeline
-  - bin
-  - Gemfile
-  - Gemfile.lock
-  - package.json
-  - gulpfile.js
-  - README.md
 keep_files:
-  - css   # Don't clobber site CSS, this way I don't have to store compiled CSS
-  - js    # Don't clobber site JS, which is built with Gulp and includes Photoswipe
-  - gfx   # Don't clobber site graphics/images/assets
-  - assets # Don't clobber page/post assets; they're minimized with Gulp now
-  - fonts
-  - .htaccess
   - favicon.ico
   - favicon-16x16.png
   - favicon-32x32.png
-
-# Site settings
-permalink: /blog/:year/:slug/
 
 # Collections / Content settings
 defaults:
@@ -38,12 +19,6 @@ defaults:
       type: projects
     values:
       layout: project
-      photoswipe: true
-  - scope:
-      type: posts
-    values:
-      layout: post
-      highlighting: true
       photoswipe: true
 
 collections:

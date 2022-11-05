@@ -14,6 +14,12 @@
 
 {{ $mediaClasses := slice $size $noshadow }}
 
+{{ if eq $type "placeholder" }}
+  {{ $from = "2020-02-07-finding-next"}}
+  {{ $src = "terlingua-road.jpg" }}
+  {{ $type = "image" }}
+{{ end }}
+
 <figure class="{{ delimit $containerClasses " " }}">
   {{ if eq $type "image"}}
     {{ $image := $.Page.Resources.GetMatch $src }}
