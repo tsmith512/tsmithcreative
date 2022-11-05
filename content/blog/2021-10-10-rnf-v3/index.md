@@ -7,21 +7,24 @@ summary: >
 tags: [engineering, side projects, travel]
 galleries:
   finishes:
-    - src: /blog/building-travelogue/olympic-national-park.jpg
+    - src: olympic-national-park.jpg
       alt: Finish line in Washington
       caption: Hurricane Ridge, Olympic National Park, Port Angeles, WA
-    - src: /blog/building-travelogue/grand-canyon.jpg
+      from: 2017-04-23-building-travelogue
+    - src: grand-canyon.jpg
       alt: Lined up on the North Rim of the Grand Canyon
       caption: Grand Canyon Parashant National Monument, AZ
-    - src: /blog/travelogue-revisited/seward.jpg
+      from: 2017-04-23-building-travelogue
+    - src: seward.jpg
       alt: Finish line in Seward
       caption: Seward, AK
+      from: 2019-08-29-travelogue-revisited
 
 ---
 
 _Previously on "The Internet is for Doing Roadtrips!"_
 
-{% include gallery.html gallery=page.galleries.finishes %}
+{{< gallery finishes >}}
 
 In 2019, I [gave a tour of how]({{< ref "2019-08-29-travelogue-revisited" >}})
 our location-tracking media-heavy roadtrip blog worked.
@@ -45,8 +48,7 @@ index of our escapades</a> and it was longer than I'd realized.
 
 A refresher of this clutter:
 
-<!-- @TODO: THIS IS AN IMAGE FROM ANOTHER POST HOW -->
-{{< media type="image" size="mini" src="/assets/blog/travelogue-revisited/new-architecture.png" alt="Version 2 Architecture" noshadow=noshadow >}}
+{{< media type="image" size="mini" src="new-architecture.png" alt="Version 2 Architecture" noshadow=noshadow from="2019-08-29-travelogue-revisited" >}}
 
 - The location service was _entirely_ unauthenticated.
 - It was built on [Silex][SILEX], a [Symfony][SYMF] 3 off-shoot _well_ beyond EOL.

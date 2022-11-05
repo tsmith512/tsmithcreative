@@ -7,6 +7,10 @@
 >
   {{ range $item := $data }}
     {{ $base := $.Page.Resources.GetMatch $item.src }}
+    {{ if $item.from }}
+      {{ $page := $.Site.GetPage $item.from }}
+      {{ $base = $page.Resources.GetMatch $item.src }}
+    {{ end }}
     {{ with $base }}
       {{ $large := $base.Fit "1600x1600" }}
       <a
@@ -16,7 +20,7 @@
         data-cropped="true"
         class="gallery-link"
       >
-        {{ $thumbnail := $base.Fill "300x300" }}
+        {{ $thumbnail := $base.Fill "300x300 center" }}
         <img
           src="{{ $thumbnail.RelPermalink }}"
           class="gallery-thumbnail"

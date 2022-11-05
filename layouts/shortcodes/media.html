@@ -1,6 +1,7 @@
 {{ $alt := .Get "alt" }}
 {{ $caption := .Get "caption" }}
 {{ $src := .Get "src" }}
+{{ $from := .Get "from" }}
 
 {{ $type := default "image" (.Get "type") }}
 {{ $size := default "default" (.Get "size") }}
@@ -16,6 +17,10 @@
 <figure class="{{ delimit $containerClasses " " }}">
   {{ if eq $type "image"}}
     {{ $image := $.Page.Resources.GetMatch $src }}
+    {{ if $from }}
+      {{ $page := $.Site.GetPage $from }}
+      {{ $image = $page.Resources.GetMatch $src }}
+    {{ end }}
     {{ with $image }}
       <a
         href="{{ .RelPermalink }}"
