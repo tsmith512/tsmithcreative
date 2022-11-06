@@ -7,10 +7,10 @@ summary: >
 tags: [engineering, side projects]
 galleries:
   compared:
-    - src: /blog/cjatx-map/district-pages-compared.jpg
+    - src: district-pages-compared.jpg
       alt: District Map Pages on Chris Jones ATX vs Vote Doggett on Mobile
       caption: Mobile
-    - src: /blog/cjatx-map/framed-district-pages.png
+    - src: framed-district-pages.png
       alt: District Map Pages on Chris Jones ATX vs Vote Doggett on Desktop
       caption: Desktop
 
@@ -89,7 +89,7 @@ exports, which we used for social media and print pieces like door hangers.
 
 _From one of the door-to-door canvassing days:_
 
-{% picture mini /blog/cjatx-map/doorhangers.jpg --alt Holding door hangers we used for door-to-door canvassing %}
+{{< media type="image" size="mini" src="doorhangers.jpg" alt="Holding door hangers we used for door-to-door canvassing" >}}
 
 ## Creating the Map Site
 
@@ -383,7 +383,7 @@ _Texas Tribune's_
 on _all_ Texas redistricting --- which, while very informative, was both verbose
 and difficult to use on a mobile device.
 
-{% include gallery.html gallery=page.galleries.compared %}
+{{< gallery compared >}}
 
 I think that measures in at "well worth the effort" both as a campaign tool and
 an experiment. From my point of view, that can be expanded to my experience

@@ -4,7 +4,9 @@ summary: >
   My first impressions of the Ricoh Theta S and expanding my use of 360 photos,
   photospheres, and/or equirectangular photography, whichever term you prefer.
 tags: [review]
-css: >
+---
+
+<style>
   .iframe-container {
     position: relative;
     height: 0;
@@ -32,7 +34,7 @@ css: >
     width: 100%;
     height: 100%;
   }
----
+</style>
 
 This year, [Four Kitchens][4K] added VR and immersive content offerings to our
 services, so 360 cameras are everywhere. And this May, my friend Evan brought
@@ -42,7 +44,7 @@ that I don't share. Never really knew what to do with 'em.
 
 Until Evan came back with images like this:
 
-<div class="iframe-container"><iframe src="/assets/blog/first-days-with-ricoh-theta-s/aframe-viewer.html#PANO_20170523_113149542.jpg" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
+<div class="iframe-container"><iframe src="aframe-viewer.html#PANO_20170523_113149542.jpg" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
 
 _Photo credit: Evan Mackay. LG 360 Cam R105._
 
@@ -51,7 +53,7 @@ trying to capture each angle without shifting or having anyone walk through the
 scene, then waiting for the stitching process to finish and seeing all the
 stitching errors kinda ruins the magic. And there are always disembodied feet.
 
-<div class="iframe-container"><iframe src="/assets/blog/first-days-with-ricoh-theta-s/aframe-viewer.html#PANO_20160422_122547.jpg" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
+<div class="iframe-container"><iframe src="aframe-viewer.html#PANO_20160422_122547.jpg" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
 
 _Captured with a Nexus 5X. I slipped and fell into the river in the process._
 
@@ -79,7 +81,7 @@ original Samsung Gear was $200 when I made my purchase, but has dropped in price
 now that its successor has been released, which I haven't seen yet. Best Buy had
 the Theta on sale when I grabbed it.
 
-<div class="iframe-container"><iframe src="/assets/blog/first-days-with-ricoh-theta-s/aframe-viewer.html#R0010060.JPG" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
+<div class="iframe-container"><iframe src="aframe-viewer.html#R0010060.JPG" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
 
 ### The Good
 
@@ -174,7 +176,7 @@ This is where taking photospheres with a phone really wins. Because there are
 many source images all taken at a higher resolution, the resulting stitched
 image is larger. Photosphere output on a Google Pixel phone is _40_ megapixels.
 
-<div class="iframe-container"><iframe src="/assets/blog/first-days-with-ricoh-theta-s/aframe-viewer.html#R0010039.JPG" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
+<div class="iframe-container"><iframe src="aframe-viewer.html#R0010039.JPG" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
 
 **Traditional photo editing tools aren't ready.** Photoshop or Lightroom can
 open equirectangular JPEGs and the metadata stays in place, but Lightroom can't
@@ -209,7 +211,7 @@ deal-breaker for me. The Gear shoots in 4K, but it is also a year newer.
 
 ## The Verdict
 
-<div class="iframe-container"><iframe src="/assets/blog/first-days-with-ricoh-theta-s/aframe-viewer.html#R0010015.JPG" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
+<div class="iframe-container"><iframe src="aframe-viewer.html#R0010015.JPG" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
 
 _Taken with the HDR Rendering mode enabled. It did very well with the harsh shadows, but any movement in the scene causes harsh artifacts like the cars driving on the road._
 
@@ -223,7 +225,7 @@ that this was a winning form factor for better stitching and portability, so
 look for devices that follow this geometry. Also, look for devices that offer
 compatibility.
 
-<div class="iframe-container"><iframe src="/assets/blog/first-days-with-ricoh-theta-s/aframe-viewer.html#R0010070.JPG" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
+<div class="iframe-container"><iframe src="aframe-viewer.html#R0010070.JPG" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
 
 As far as the format goes, I haven't decided the best way to integrate these
 alongside my other photography or even embed them in websites. The solution here
@@ -232,7 +234,7 @@ performance. I'll investigate other display options and report back.
 
 Cheers.
 
-<div class="iframe-container"><iframe src="/assets/blog/first-days-with-ricoh-theta-s/aframe-viewer.html#R0010054.JPG" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
+<div class="iframe-container"><iframe src="aframe-viewer.html#R0010054.JPG" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
 
 _It does well in very low light ~~dive bars~~._
 
@@ -250,21 +252,19 @@ at Four Kitchens, and the 4K Tech Stipend program paid for the device._
 [SG360P]: https://www.amazon.com/Samsung-Resolution-Camera-Version-Warranty/dp/B01D9LVL3G/ref=sr_1_4
 [RTSP]: https://www.amazon.com/Ricoh-Theta-Digital-Camera-Black/dp/B014US3FQI/ref=sr_1_3
 [T360M]: https://theta360.com/en/support/story/s/shooting/still/
-[MEX]: /assets/blog/first-days-with-ricoh-theta-s/manual-exposure.png
-[STITCH]: /assets/blog/first-days-with-ricoh-theta-s/stitching.jpg
-[EXCLUDE]: /assets/blog/first-days-with-ricoh-theta-s/exclusion.jpg
-[POCKETABLE]: /assets/blog/first-days-with-ricoh-theta-s/pocketable.jpg
+[MEX]: manual-exposure.png
+[STITCH]: stitching.jpg
+[EXCLUDE]: exclusion.jpg
+[POCKETABLE]: pocketable.jpg
 [PS3d]: https://forums.adobe.com/message/9222081#9222081
-[MIRROR]: /assets/blog/first-days-with-ricoh-theta-s/thetaplus_20170604104805456.jpg
-[PLANET]: /assets/blog/first-days-with-ricoh-theta-s/thetaplus_20170704124158195.jpg
+[MIRROR]: thetaplus_20170604104805456.jpg
+[PLANET]: thetaplus_20170704124158195.jpg
 [STORAGE]: https://www.360images.fr/theta/
 
-{% comment %} Included with the A-Frame iframe viewer {% endcomment %}
-
-[GCPS]: /assets/blog/first-days-with-ricoh-theta-s/PANO_20170523_113149542.jpg
-[SFUK]: /assets/blog/first-days-with-ricoh-theta-s/PANO_20160422_122547.jpg
-[RANCH]: /assets/blog/first-days-with-ricoh-theta-s/R0010060.JPG
-[MUSEUM]: /assets/blog/first-days-with-ricoh-theta-s/R0010039.JPG
-[TRUCK]: /assets/blog/first-days-with-ricoh-theta-s/R0010015.JPG
-[PLT]: /assets/blog/first-days-with-ricoh-theta-s/R0010054.JPG
-[ZTP]: /assets/blog/first-days-with-ricoh-theta-s/R0010070.JPG
+[GCPS]: PANO_20170523_113149542.jpg
+[SFUK]: PANO_20160422_122547.jpg
+[RANCH]: R0010060.JPG
+[MUSEUM]: R0010039.JPG
+[TRUCK]: R0010015.JPG
+[PLT]: R0010054.JPG
+[ZTP]: R0010070.JPG
