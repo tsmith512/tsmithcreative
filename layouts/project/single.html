@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div class="post">
+  <div class="project">
 
     <!-- This is entirely ripped from the gallery shortcode... combine? -->
     {{ if .Params.images }}
@@ -31,6 +31,13 @@
       </div>
     {{ end }}
 
-    {{ .Content }}
+    <div class="project-overview">
+      {{ .Content | replaceRE `(?ms:.+<hr>)` "" | safeHTML }}
+    </div>
+
+    <div class="project-writeup">
+      {{ .Content | replaceRE `(?ms:<hr>.+)` "" | safeHTML }}
+    </div>
+
   </div>
 {{ end }}
