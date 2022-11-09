@@ -1,5 +1,36 @@
 {{ define "main" }}
   <div class="post">
+
+    <!-- This is entirely ripped from the gallery shortcode... combine? -->
+    {{ if .Params.images }}
+      <div class="gallery pswp-container" data-count="{{ len .Params.images }}">
+
+        {{ range $item := .Params.images }}
+          {{ $base := $.Page.Resources.Get $item.img }}
+          {{ with $base }}
+            {{ $large := $base.Fit "1600x1600" }}
+            <a
+              href="{{ $large.RelPermalink }}"
+              data-pswp-width="{{ $large.Width }}"
+              data-pswp-height="{{ $large.Height }}"
+              data-cropped="true"
+              class="gallery-link"
+            >
+              {{ $thumbnail := $base.Fill "400x400 center" }}
+              <img
+                src="{{ $thumbnail.RelPermalink }}"
+                class="gallery-thumbnail"
+                alt="{{ $item.alt }}"
+                width="{{ $thumbnail.Width }}"
+                height="{{ $thumbnail.Height }}"
+                loading="lazy"
+              />
+            </a>
+          {{ end }}
+        {{ end }}
+      </div>
+    {{ end }}
+
     {{ .Content }}
   </div>
 {{ end }}
