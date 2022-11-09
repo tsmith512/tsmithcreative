@@ -35,7 +35,7 @@ me time to up my blogging game.
 
 ## Under the Hood
 
-{{< media type="image" size="mini" src="diagram.png" alt="Diagram of the application" noshadow=noshadow >}}
+{{< media type="image" size="mini" src="diagram.png" alt="Diagram of the application" noshadow="noshadow" >}}
 
 
 This is perhaps a more complex amalgamation of services than it could have been,
@@ -234,7 +234,7 @@ funniest part of all this is the banter), and the occasional video (because some
 things have to be seen to be believed). Each post has a "Show on Map" link which
 re-centers the map view to where we were when I made the post.
 
-{{< media type="image" size="" src="final.png" alt="The site frontend" noshadow=noshadow >}}
+{{< media type="image" size="" src="final.png" alt="The site frontend" noshadow="noshadow" >}}
 
 **Tumblr's job:** Tie all the pieces together into the frontend experience.
 

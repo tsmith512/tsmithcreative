@@ -42,13 +42,13 @@ recently compiled an
 <a href="https://www.routenotfound.com/index/?utm_source=tsmithcreative&utm_medium=website&utm_campaign=tsmithcreative" rel="nofollow">
 index of our escapades</a> and it was longer than I'd realized.
 
-{{< media type="image" size="mini" src="rnfb-post.jpg" alt="Post on the frontend" noshadow=noshadow >}}
+{{< media type="image" size="mini" src="rnfb-post.jpg" alt="Post on the frontend" noshadow="noshadow" >}}
 
 ## Old Architecture [v2 from 2017]({{< ref "2017-04-23-building-travelogue" >}})
 
 A refresher of this clutter:
 
-{{< media type="image" size="mini" src="new-architecture.png" alt="Version 2 Architecture" noshadow=noshadow from="2019-08-29-travelogue-revisited" >}}
+{{< media type="image" size="mini" src="new-architecture.png" alt="Version 2 Architecture" noshadow="noshadow" from="2019-08-29-travelogue-revisited" >}}
 
 - The location service was _entirely_ unauthenticated.
 - It was built on [Silex][SILEX], a [Symfony][SYMF] 3 off-shoot _well_ beyond EOL.
@@ -77,7 +77,7 @@ _\* CF-speak for "adding a site on our infrastructure," the term originating fro
 
 _In which "Zero Trust" describes both the security products in play and the prudent measure of faith to place in a hooptie._
 
-{{< media type="image" size="" src="v3-arch.png" alt="Version 3 Architecture" noshadow=noshadow >}}
+{{< media type="image" size="" src="v3-arch.png" alt="Version 3 Architecture" noshadow="noshadow" >}}
 
 What happens **on my phone** is the same: [Tasker][TASKER]
 pulls a location every half-hour and sends it to the service, batching it for
@@ -99,7 +99,7 @@ The **Location Service Worker** is the _key new piece,_ running on the
 - It's also my first stab at writing a project in [TypeScript][TS], which I quite like!
 - 📝 _Worker [API specification][RNFAPI] and [codebase][RNFLSW]_
 
-{{< media type="image" size="" src="rnfa-maps.jpg" alt="Admin backend showing all trips" noshadow=noshadow >}}
+{{< media type="image" size="" src="rnfa-maps.jpg" alt="Admin backend showing all trips" noshadow="noshadow" >}}
 
 I split the **Location Service Frontend** to a separate [React][REACT] app
 on [Pages][PAGES], also Edge-hosted, and secured by ~~a giant No Trespassing sign~~
@@ -112,7 +112,7 @@ _[Access][ACCESS]_:
   with it yet, but it's quick and fun.
 - 📝 _Admin SPA [codebase][RNFLAP]_
 
-{{< media type="image" size="" src="rnfa-trips.jpg" alt="Admin backend showing a trip edit" noshadow=noshadow >}}
+{{< media type="image" size="" src="rnfa-trips.jpg" alt="Admin backend showing a trip edit" noshadow="noshadow" >}}
 
 The only remaining server is named **Alfa,** a [Lightsail][LIGHTSAIL] instance
 in AWS, protected by Cloudflare's firewall and propped up by the CDN. Alfa runs

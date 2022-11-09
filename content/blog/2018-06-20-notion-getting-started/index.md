@@ -18,7 +18,7 @@ image caught my eye. You see:
 - [Google Keep][GK] is a great bulletin board, but it isn't an organizational
   solution for a large volume of interrelated content.
 
-{{< media type="image" size="" src="today.png" alt="Sample 'today' page in Notion" noshadow=noshadow >}}
+{{< media type="image" size="" src="today.png" alt="Sample 'today' page in Notion" noshadow="noshadow" >}}
 
 _(Image lifted from [Notion.so's product page][NP]; the same one from that_ The
 Verge _post.)_

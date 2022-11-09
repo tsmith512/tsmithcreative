@@ -19,7 +19,7 @@ additional trinkets for our next adventure: driving from Austin to Anchorage.
 During a 4K Test Kitchen session, I took my colleagues on a tour of the system
 and what I built to keep telling the story.
 
-{{< media type="image" size="mini" src="new-architecture.png" alt="Revised Architecture" noshadow=noshadow >}}
+{{< media type="image" size="mini" src="new-architecture.png" alt="Revised Architecture" noshadow="noshadow" >}}
 
 The system still relies on the same original components. The primary change
 since its original launch is a migration from Tumblr to WordPress. Since that
