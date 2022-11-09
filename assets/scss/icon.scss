@@ -1,0 +1,20 @@
+/**
+ * _icon.scss includes the global icon style. This file includes the dataURIs for
+ * the icons I use a lot and will be lazyloaded separately from the global bundle.
+ */
+
+{{ $icons := slice "calendar" "drupal" "facebook" "github" "globe" "instagram" "linkedin" "penpaper" "photos" "quote" "rss" "tags" "twitter" }}
+
+{{ range $icon := $icons}}
+  {{ $image := resources.Get (printf "/icon/%s.svg" $icon)}}
+  .icon-{{ $icon }} {
+    // @TODO: This would be better https://css-tricks.com/probably-dont-base64-svg/
+    // and it loads them all, but the whole payload as-is is 19kb and used on most
+    // pages, so I can revisit later.
+
+    // @TODO: ALSO! This assumes there's no fill attribute on these paths, but means
+    // we can change the appearance with CSS filters later.
+    {{ $data := $image.Content }}
+    background-image: url(data:image/svg+xml;base64,{{ replace $data "<path " "<path fill='#888' " | base64Encode }});
+  }
+{{ end }}

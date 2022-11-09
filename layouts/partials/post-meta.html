@@ -1,20 +1,20 @@
 <div class="post-meta">
   <dl>
     {{ if .Date }}
-      <dt><span className="icon icon-calendar-light">Published</span></dt>
-      <dd className="date">{{ .Date | time.Format ":date_long" }}</dd>
+      <dt><span class="icon icon-calendar">Published</span></dt>
+      <dd class="date">{{ .Date | time.Format ":date_long" }}</dd>
     {{ end }}
 
     {{ if .Params.citation }}
-      <dt><span className="icon icon-penpaper-light">Appears On</span></dt>
-      <dd className="citation"><a href="{{ index .Params.citation 1 }}"></a>
+      <dt><span class="icon icon-penpaper">Appears On</span></dt>
+      <dd class="citation"><a href="{{ index .Params.citation 1 }}"></a>
         {{ index .Params.citation 0 }}
       </a></dd>
     {{ end }}
 
     {{ if (.GetTerms "tags") }}
-      <dt><span className="icon icon-tags-light">Tags</span></dt>
-      <dd className="tags">
+      <dt><span class="icon icon-tags">Tags</span></dt>
+      <dd class="tags">
         <ul>
           {{ range (.GetTerms "tags") }}
             <li>{{ .LinkTitle }}</li>

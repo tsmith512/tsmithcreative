@@ -23,6 +23,11 @@
   <!-- @TODO: That does not keep this CSS from loading and it has heavy dataURIs in it -->
   <link rel="stylesheet" type="text/css" href="{{ $mastheadStyle.RelPermalink }}" media="screen and (min-width: 720px)" />
 
+  {{ $icons := resources.Get "scss/icon.scss" }}
+  {{ $iconStyle := $icons | resources.ExecuteAsTemplate "scss/icons.scss" . | resources.ToCSS }}
+  <!-- @TODO: That does not keep this CSS from loading and it has heavy dataURIs in it -->
+  <link rel="stylesheet" type="text/css" href="{{ $iconStyle.RelPermalink }}" />
+
   <!-- @TODO: Load conditionally, lazily -->
   {{ $photoswipeCss := resources.Get "vendor/photoswipe/dist/photoswipe.css" }}
   <link rel="stylesheet" type="text/css" href="{{ $photoswipeCss.RelPermalink }}" media="screen" />

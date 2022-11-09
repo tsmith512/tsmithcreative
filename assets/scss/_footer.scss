@@ -23,6 +23,10 @@
 
   text-align: center;
 
+  .home & {
+    color: #fff;
+  }
+
   @media (min-width: $footer-two-column) {
     float: left;
     text-align: left;
@@ -56,8 +60,8 @@
     white-space: nowrap;
     overflow: hidden;
 
-    // width: 32px;
-    // height: 32px;
+    width: 28px;
+    height: 28px;
 
     background-position: center center;
     background-size: contain;
