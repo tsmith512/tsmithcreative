@@ -4,37 +4,37 @@ summary: "Wait gradu-what? -- Uh oh."
 date: 2011-04-07 00:00:00
 tags: [print, design, photography]
 images:
-  - img: /assets/projects/legacy/dsc_0208.jpg
+  - img: dsc_0208.jpg
     alt: 
     title: 
     width: 3872
     height: 2592
-  - img: /assets/projects/legacy/dsc_0211.jpg
+  - img: dsc_0211.jpg
     alt: 
     title: 
     width: 3205
     height: 2137
-  - img: /assets/projects/legacy/dsc_0212.jpg
+  - img: dsc_0212.jpg
     alt: 
     title: 
     width: 3872
     height: 2592
-  - img: /assets/projects/legacy/dsc_0213.jpg
+  - img: dsc_0213.jpg
     alt: 
     title: 
     width: 3628
     height: 2419
-  - img: /assets/projects/legacy/dsc_0214.jpg
+  - img: dsc_0214.jpg
     alt: 
     title: 
     width: 3369
     height: 2246
-  - img: /assets/projects/legacy/dsc_0218.jpg
+  - img: dsc_0218.jpg
     alt: 
     title: 
     width: 3872
     height: 2592
-  - img: /assets/projects/legacy/dsc_0220.jpg
+  - img: dsc_0220.jpg
     alt: 
     title: 
     width: 3872

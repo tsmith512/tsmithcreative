@@ -12,27 +12,27 @@ problem: >
   revision of the document must be available for the UPO and legal teams, while
   the most recent approved version must be easily accessible to the public.
 images:
-  - img: /assets/projects/legacy/upo-1.png
+  - img: upo-1.png
     alt:
     title:
     width: 1063
     height: 623
-  - img: /assets/projects/legacy/policy_dashboard_d_-_drafts_to_review.png
+  - img: policy_dashboard_d_-_drafts_to_review.png
     alt:
     title:
     width: 934
     height: 640
-  - img: /assets/projects/legacy/upo-2.png
+  - img: upo-2.png
     alt:
     title:
     width: 1063
     height: 623
-  - img: /assets/projects/legacy/policy_node_-_node_view_b_-_routing_sheet_-_cropped.png
+  - img: policy_node_-_node_view_b_-_routing_sheet_-_cropped.png
     alt:
     title:
     width: 700
     height: 640
-  - img: /assets/projects/legacy/upo-3.png
+  - img: upo-3.png
     alt:
     title:
     width: 1063

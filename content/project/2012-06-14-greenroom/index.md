@@ -4,22 +4,22 @@ summary: "A Theatre Hub for Tulsa."
 date: 2012-06-14 00:00:00
 tags: [drupal, frontend, events, maps]
 images:
-  - img: /assets/projects/legacy/grom1.png
+  - img: grom1.png
     alt: 
     title: 
     width: 1080
     height: 838
-  - img: /assets/projects/legacy/grom2.png
+  - img: grom2.png
     alt: 
     title: 
     width: 1080
     height: 838
-  - img: /assets/projects/legacy/grom3.png
+  - img: grom3.png
     alt: 
     title: 
     width: 1080
     height: 935
-  - img: /assets/projects/legacy/grom4.png
+  - img: grom4.png
     alt: 
     title: 
     width: 1080

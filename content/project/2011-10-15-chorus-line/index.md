@@ -4,42 +4,42 @@ summary: "Logo, poster, and program for St. Andrew's 2011 Fall Musical, Chorus L
 date: 2011-10-15 00:00:00
 tags: [print, design, theatre]
 images:
-  - img: /assets/projects/legacy/logos_a_deliverables-03.jpg
+  - img: logos_a_deliverables-03.jpg
     alt: 
     title: 
     width: 1500
     height: 500
-  - img: /assets/projects/legacy/logos_a_deliverables-02.jpg
+  - img: logos_a_deliverables-02.jpg
     alt: 
     title: 
     width: 1500
     height: 500
-  - img: /assets/projects/legacy/poster_c_d09_final.jpg
+  - img: poster_c_d09_final.jpg
     alt: 
     title: 
     width: 1000
     height: 657
-  - img: /assets/projects/legacy/poster-msp-a-d04.jpg
+  - img: poster-msp-a-d04.jpg
     alt: 
     title: 
     width: 600
     height: 464
-  - img: /assets/projects/legacy/shirt-a-d01b.gif
+  - img: shirt-a-d01b.gif
     alt: 
     title: 
     width: 600
     height: 700
-  - img: /assets/projects/legacy/program_book_a_d06_revised_pages-1.jpg
+  - img: program_book_a_d06_revised_pages-1.jpg
     alt: 
     title: 
     width: 518
     height: 800
-  - img: /assets/projects/legacy/program_book_a_d06_revised_pages-2.jpg
+  - img: program_book_a_d06_revised_pages-2.jpg
     alt: 
     title: 
     width: 518
     height: 800
-  - img: /assets/projects/legacy/program_book_a_d06_revised_pages-13.jpg
+  - img: program_book_a_d06_revised_pages-13.jpg
     alt: 
     title: 
     width: 518

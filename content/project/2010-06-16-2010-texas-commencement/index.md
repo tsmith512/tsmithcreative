@@ -4,42 +4,42 @@ summary: "Electrical work for the The 127th Spring Commencement at the Universit
 date: 2010-06-16 00:00:00
 tags: [theatre, events]
 images:
-  - img: /assets/projects/legacy/img_4630.jpg
+  - img: img_4630.jpg
     alt: 
     title: 
     width: 466
     height: 350
-  - img: /assets/projects/legacy/img_4563.jpg
+  - img: img_4563.jpg
     alt: 
     title: 
     width: 466
     height: 350
-  - img: /assets/projects/legacy/img_4561.jpg
+  - img: img_4561.jpg
     alt: 
     title: 
     width: 466
     height: 350
-  - img: /assets/projects/legacy/img_4557.jpg
+  - img: img_4557.jpg
     alt: 
     title: 
     width: 466
     height: 350
-  - img: /assets/projects/legacy/img_4558.jpg
+  - img: img_4558.jpg
     alt: 
     title: 
     width: 466
     height: 350
-  - img: /assets/projects/legacy/img_4559.jpg
+  - img: img_4559.jpg
     alt: 
     title: 
     width: 466
     height: 350
-  - img: /assets/projects/legacy/img_4624.jpg
+  - img: img_4624.jpg
     alt: 
     title: 
     width: 262
     height: 350
-  - img: /assets/projects/legacy/img_4649.jpg
+  - img: img_4649.jpg
     alt: 
     title: 
     width: 262

@@ -4,22 +4,22 @@ summary: "Signage for the 1st Annual Tulsa Advertising Federation Golf Tournamen
 date: 2010-07-01 00:00:00
 tags: [signage, design, events]
 images:
-  - img: /assets/projects/legacy/0628101304a.jpg
+  - img: 0628101304a.jpg
     alt: 
     title: 
     width: 467
     height: 350
-  - img: /assets/projects/legacy/hinklecreative.jpg
+  - img: hinklecreative.jpg
     alt: 
     title: 
     width: 467
     height: 350
-  - img: /assets/projects/legacy/longestdrive.jpg
+  - img: longestdrive.jpg
     alt: 
     title: 
     width: 467
     height: 350
-  - img: /assets/projects/legacy/mulliganssign.jpg
+  - img: mulliganssign.jpg
     alt: 
     title: 
     width: 450

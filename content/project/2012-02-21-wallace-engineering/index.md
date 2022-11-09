@@ -4,22 +4,22 @@ summary: "A Static Site to WordPress Conversion."
 date: 2012-02-21 00:00:00
 tags: [admin experience, wordpress, frontend]
 images:
-  - img: /assets/projects/legacy/wea.png
+  - img: wea.png
     alt: 
     title: 
     width: 985
     height: 630
-  - img: /assets/projects/legacy/web.png
+  - img: web.png
     alt: 
     title: 
     width: 985
     height: 630
-  - img: /assets/projects/legacy/wec.png
+  - img: wec.png
     alt: 
     title: 
     width: 985
     height: 630
-  - img: /assets/projects/legacy/wed.png
+  - img: wed.png
     alt: 
     title: 
     width: 985

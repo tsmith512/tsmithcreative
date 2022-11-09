@@ -9,32 +9,32 @@ problem: >
   presentational classes which litter markup and can be difficult to insert in
   Drupal 7, or strict layouts which don't allow proper content prioritization.
 images:
-  - img: /assets/projects/legacy/1456619495216screensave.jpg
+  - img: 1456619495216screensave.jpg
     alt:
     title:
     width: 1920
     height: 979
-  - img: /assets/projects/legacy/1456619540220screensave.jpg
+  - img: 1456619540220screensave.jpg
     alt:
     title:
     width: 1920
     height: 935
-  - img: /assets/projects/legacy/1456619570750screensave.jpg
+  - img: 1456619570750screensave.jpg
     alt:
     title:
     width: 1920
     height: 935
-  - img: /assets/projects/legacy/1456619595053screensave.jpg
+  - img: 1456619595053screensave.jpg
     alt:
     title:
     width: 1920
     height: 935
-  - img: /assets/projects/legacy/1456619621759screensave.jpg
+  - img: 1456619621759screensave.jpg
     alt:
     title:
     width: 1920
     height: 935
-  - img: /assets/projects/legacy/img_0910.jpg
+  - img: img_0910.jpg
     alt:
     title: SANDCamp 2016, San Diego, California
     width: 2016

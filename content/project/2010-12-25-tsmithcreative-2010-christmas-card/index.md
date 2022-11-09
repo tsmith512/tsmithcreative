@@ -4,17 +4,17 @@ summary: "A Christmas card from me to you."
 date: 2010-12-25 00:00:00
 tags: [personal, print, design]
 images:
-  - img: /assets/projects/legacy/taylor-smith-tsmithcreative-xmas-card-1.jpg
+  - img: taylor-smith-tsmithcreative-xmas-card-1.jpg
     alt: 
     title: 
     width: 491
     height: 350
-  - img: /assets/projects/legacy/taylor-smith-tsmithcreative-xmas-card-draft-6-2.jpg
+  - img: taylor-smith-tsmithcreative-xmas-card-draft-6-2.jpg
     alt: 
     title: 
     width: 492
     height: 350
-  - img: /assets/projects/legacy/dsc_0049_50_tonemapped.jpg
+  - img: dsc_0049_50_tonemapped.jpg
     alt: 
     title: 
     width: 500

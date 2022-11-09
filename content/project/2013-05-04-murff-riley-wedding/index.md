@@ -4,37 +4,37 @@ summary: "Tradition meets country in my cousin's \"cowboy chic\" wedding in Mosh
 date: 2013-05-04 22:27:31
 tags: [design, print, events]
 images:
-  - img: /assets/projects/legacy/breezi_placeit_winsurface.jpg
+  - img: breezi_placeit_winsurface.jpg
     alt: 
     title: 
     width: 1080
     height: 640
-  - img: /assets/projects/legacy/save-the-date-card-a-d06-printable-1.jpg
+  - img: save-the-date-card-a-d06-printable-1.jpg
     alt: 
     title: 
     width: 2100
     height: 1500
-  - img: /assets/projects/legacy/dsc_0043_0.jpg
+  - img: dsc_0043_0.jpg
     alt: 
     title: 
     width: 2000
     height: 1185
-  - img: /assets/projects/legacy/dsc_0062_0.jpg
+  - img: dsc_0062_0.jpg
     alt: 
     title: 
     width: 2000
     height: 1185
-  - img: /assets/projects/legacy/dsc_0046_0.jpg
+  - img: dsc_0046_0.jpg
     alt: 
     title: 
     width: 2000
     height: 1185
-  - img: /assets/projects/legacy/dsc_0053_0.jpg
+  - img: dsc_0053_0.jpg
     alt: 
     title: 
     width: 2000
     height: 1185
-  - img: /assets/projects/legacy/img_20130504_201518_734.jpg
+  - img: img_20130504_201518_734.jpg
     alt: 
     title: 
     width: 3264

@@ -4,7 +4,7 @@ summary: "A poster proposal for Tulsa Theatre Pops's production of Eye of God."
 date: 2010-09-22 00:00:00
 tags: [print, design, theatre, student work]
 images:
-  - img: /assets/projects/legacy/eyeofgod.jpg
+  - img: eyeofgod.jpg
     alt: 
     title: 
     width: 500

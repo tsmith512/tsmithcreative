@@ -4,17 +4,17 @@ summary: "A typography and legibility sandbox."
 date: 2013-08-20 13:27:09
 tags: [frontend, presentation, design]
 images:
-  - img: /assets/projects/legacy/tsm1.png
+  - img: tsm1.png
     alt:
     title:
     width: 1418
     height: 790
-  - img: /assets/projects/legacy/tsm2.png
+  - img: tsm2.png
     alt:
     title:
     width: 1418
     height: 790
-  - img: /assets/projects/legacy/tsm3.png
+  - img: tsm3.png
     alt:
     title:
     width: 1418

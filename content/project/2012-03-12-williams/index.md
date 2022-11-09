@@ -4,22 +4,22 @@ summary: "A new WordPress Website for The Williams Companies."
 date: 2012-03-12 00:00:00
 tags: [admin experience, wordpress, frontend]
 images:
-  - img: /assets/projects/legacy/williams_b.png
+  - img: williams_b.png
     alt: 
     title: 
     width: 1280
     height: 963
-  - img: /assets/projects/legacy/williams_c.png
+  - img: williams_c.png
     alt: 
     title: 
     width: 1280
     height: 963
-  - img: /assets/projects/legacy/williams_d.png
+  - img: williams_d.png
     alt: 
     title: 
     width: 1263
     height: 963
-  - img: /assets/projects/legacy/williams_a.png
+  - img: williams_a.png
     alt: 
     title: 
     width: 1263

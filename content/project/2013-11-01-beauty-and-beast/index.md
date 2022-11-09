@@ -4,22 +4,22 @@ summary: "Graphic design for the darker side of a theatrical classic: Disney's B
 date: 2013-11-01 15:17:39
 tags: [theatre, print, design]
 images:
-  - img: /assets/projects/legacy/logo-plate-01.png
+  - img: logo-plate-01.png
     alt: 
     title: 
     width: 1800
     height: 1800
-  - img: /assets/projects/legacy/poster-b-d08x-embedded.png
+  - img: poster-b-d08x-embedded.png
     alt: 
     title: 
     width: 792
     height: 1224
-  - img: /assets/projects/legacy/cover-a-d05-november.png
+  - img: cover-a-d05-november.png
     alt: 
     title: 
     width: 1080
     height: 835
-  - img: /assets/projects/legacy/shirt-intent-a-d04.png
+  - img: shirt-intent-a-d04.png
     alt: 
     title: 
     width: 1224

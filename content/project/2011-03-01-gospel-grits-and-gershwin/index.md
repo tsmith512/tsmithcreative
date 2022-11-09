@@ -4,32 +4,32 @@ summary: "Logo, invite, program, and signage for Booker T. Washington's Gospel, 
 date: 2011-03-01 00:00:00
 tags: [design, print, volunteer, events]
 images:
-  - img: /assets/projects/legacy/ggglogo_0.jpg
+  - img: ggglogo_0.jpg
     alt:
     title:
     width: 950
     height: 1007
-  - img: /assets/projects/legacy/dsc_0195_0.jpg
+  - img: dsc_0195_0.jpg
     alt:
     title:
     width: 2400
     height: 1601
-  - img: /assets/projects/legacy/dsc_0197_0.jpg
+  - img: dsc_0197_0.jpg
     alt:
     title:
     width: 2400
     height: 1607
-  - img: /assets/projects/legacy/dsc_0199_0.jpg
+  - img: dsc_0199_0.jpg
     alt:
     title:
     width: 2400
     height: 1607
-  - img: /assets/projects/legacy/gggoutside_0.jpg
+  - img: gggoutside_0.jpg
     alt:
     title:
     width: 2000
     height: 1037
-  - img: /assets/projects/legacy/ggginside_0.jpg
+  - img: ggginside_0.jpg
     alt:
     title:
     width: 2000

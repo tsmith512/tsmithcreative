@@ -4,17 +4,17 @@ summary: "Logo for The University of Tulsa's Newly Restructured Enrichment Progr
 date: 2010-07-20 00:00:00
 tags: [print, branding]
 images:
-  - img: /assets/projects/legacy/hexagon.jpg
+  - img: hexagon.jpg
     alt: 
     title: 
     width: 500
     height: 350
-  - img: /assets/projects/legacy/tools.jpg
+  - img: tools.jpg
     alt: 
     title: 
     width: 500
     height: 350
-  - img: /assets/projects/legacy/typographic.jpg
+  - img: typographic.jpg
     alt: 
     title: 
     width: 500

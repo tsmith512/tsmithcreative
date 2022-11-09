@@ -4,22 +4,22 @@ summary: "A group of French dandies works in secret to ignite the French Revolut
 date: 2012-08-27 09:54:13
 tags: [print, design, theatre]
 images:
-  - img: /assets/projects/legacy/logo-presentation-plate_0.jpg
+  - img: logo-presentation-plate_0.jpg
     alt: 
     title: 
     width: 1080
     height: 640
-  - img: /assets/projects/legacy/poster_a_d07x_16x20_reprint.jpg
+  - img: poster_a_d07x_16x20_reprint.jpg
     alt: 
     title: 
     width: 1600
     height: 2000
-  - img: /assets/projects/legacy/poster_m_d02.jpg
+  - img: poster_m_d02.jpg
     alt: 
     title: 
     width: 1545
     height: 2000
-  - img: /assets/projects/legacy/shirt-intent-a-d05-revised.jpg
+  - img: shirt-intent-a-d05-revised.jpg
     alt: 
     title: 
     width: 2000

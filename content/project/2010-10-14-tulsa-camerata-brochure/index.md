@@ -4,12 +4,12 @@ summary: "A 2010-2011 season brochure for Tulsa Camerata, a chamber music group.
 date: 2010-10-14 00:00:00
 tags: [print, design, events]
 images:
-  - img: /assets/projects/legacy/tulsacamerataoutside.jpg
+  - img: tulsacamerataoutside.jpg
     alt: 
     title: 
     width: 453
     height: 350
-  - img: /assets/projects/legacy/tulsacameratainside.jpg
+  - img: tulsacameratainside.jpg
     alt: 
     title: 
     width: 453

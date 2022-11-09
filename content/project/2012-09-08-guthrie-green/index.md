@@ -4,22 +4,22 @@ summary: "A new Drupal website for Tulsa's newest urban park and outdoor perform
 date: 2012-09-08 00:00:00
 tags: [drupal, frontend]
 images:
-  - img: /assets/projects/legacy/ggr1.png
+  - img: ggr1.png
     alt: 
     title: 
     width: 1263
     height: 1019
-  - img: /assets/projects/legacy/ggr1b.png
+  - img: ggr1b.png
     alt: 
     title: 
     width: 1263
     height: 923
-  - img: /assets/projects/legacy/ggr2.png
+  - img: ggr2.png
     alt: 
     title: 
     width: 1221
     height: 1500
-  - img: /assets/projects/legacy/ggr3.png
+  - img: ggr3.png
     alt: 
     title: 
     width: 1263

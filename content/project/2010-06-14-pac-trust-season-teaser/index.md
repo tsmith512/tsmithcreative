@@ -4,32 +4,32 @@ summary: "2010-2011 Season Teaser Card for Tulsa Performing Arts Center Trust."
 date: 2010-06-14 00:00:00
 tags: [print, design, theatre]
 images:
-  - img: /assets/projects/legacy/teaser_card_2010-2011_-_draft_10_for_web.jpg
+  - img: teaser_card_2010-2011_-_draft_10_for_web.jpg
     alt:
     title:
     width: 563
     height: 1350
-  - img: /assets/projects/legacy/teaser_card_2010-2011_-_draft_10_for_web2.jpg
+  - img: teaser_card_2010-2011_-_draft_10_for_web2.jpg
     alt:
     title:
     width: 563
     height: 1350
-  - img: /assets/projects/legacy/front_detail_1.jpg
+  - img: front_detail_1.jpg
     alt:
     title:
     width: 563
     height: 394
-  - img: /assets/projects/legacy/front_detail_2.jpg
+  - img: front_detail_2.jpg
     alt:
     title:
     width: 563
     height: 394
-  - img: /assets/projects/legacy/back_detail_1.jpg
+  - img: back_detail_1.jpg
     alt:
     title:
     width: 563
     height: 394
-  - img: /assets/projects/legacy/back_detail_2.jpg
+  - img: back_detail_2.jpg
     alt:
     title:
     width: 563

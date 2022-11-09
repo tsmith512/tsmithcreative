@@ -4,32 +4,32 @@ summary: "Tri-fold postcard and poster for the TU School of Art Faculty Show."
 date: 2010-10-25 00:00:00
 tags: [print, design]
 images:
-  - img: /assets/projects/legacy/dsc_0281.jpg
+  - img: dsc_0281.jpg
     alt: 
     title: 
     width: 500
     height: 332
-  - img: /assets/projects/legacy/artpostcardfront.jpg
+  - img: artpostcardfront.jpg
     alt: 
     title: 
     width: 500
     height: 350
-  - img: /assets/projects/legacy/artpostcardfold.jpg
+  - img: artpostcardfold.jpg
     alt: 
     title: 
     width: 500
     height: 350
-  - img: /assets/projects/legacy/artpostcardinsidedetaila.jpg
+  - img: artpostcardinsidedetaila.jpg
     alt: 
     title: 
     width: 500
     height: 350
-  - img: /assets/projects/legacy/artpostcardinsidedetailb.jpg
+  - img: artpostcardinsidedetailb.jpg
     alt: 
     title: 
     width: 500
     height: 350
-  - img: /assets/projects/legacy/artpostcardinsidefull.jpg
+  - img: artpostcardinsidefull.jpg
     alt: 
     title: 
     width: 500

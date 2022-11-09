@@ -4,17 +4,17 @@ summary: "A new website for The Tristesse Grief Center. Designed and Developed i
 date: 2012-07-20 00:00:00
 tags: [volunteer, drupal, design]
 images:
-  - img: /assets/projects/legacy/tgca.png
+  - img: tgca.png
     alt:
     title:
     width: 1263
     height: 1065
-  - img: /assets/projects/legacy/tgcb.png
+  - img: tgcb.png
     alt:
     title:
     width: 1280
     height: 963
-  - img: /assets/projects/legacy/tgcc.png
+  - img: tgcc.png
     alt:
     title:
     width: 941

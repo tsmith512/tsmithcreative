@@ -4,27 +4,27 @@ summary: "A directory, events calendar, and interactive map for Downtown Tulsa w
 tags: [drupal, frontend, events, maps]
 date: 2012-06-05 00:00:00
 images:
-  - img: /assets/projects/legacy/downtown_tulsa_a.png
+  - img: downtown_tulsa_a.png
     alt: 
     title: 
     width: 1263
     height: 1409
-  - img: /assets/projects/legacy/downtown_tulsa_e.png
+  - img: downtown_tulsa_e.png
     alt: 
     title: 
     width: 1263
     height: 963
-  - img: /assets/projects/legacy/downtown_tulsa_f.png
+  - img: downtown_tulsa_f.png
     alt: 
     title: 
     width: 1263
     height: 963
-  - img: /assets/projects/legacy/downtown_tulsa_d.png
+  - img: downtown_tulsa_d.png
     alt: 
     title: 
     width: 1263
     height: 963
-  - img: /assets/projects/legacy/downtown_tulsa_c.png
+  - img: downtown_tulsa_c.png
     alt: 
     title: 
     width: 917

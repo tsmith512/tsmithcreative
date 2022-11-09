@@ -4,42 +4,42 @@ summary: ""
 date: 2010-05-04 00:00:00
 tags: [design, student work]
 images:
-  - img: /assets/projects/legacy/dsc_0302.jpg
+  - img: dsc_0302.jpg
     alt: 
     title: 
     width: 500
     height: 332
-  - img: /assets/projects/legacy/dsc_0308.jpg
+  - img: dsc_0308.jpg
     alt: 
     title: 
     width: 233
     height: 350
-  - img: /assets/projects/legacy/dsc_0448.jpg
+  - img: dsc_0448.jpg
     alt: 
     title: 
     width: 500
     height: 332
-  - img: /assets/projects/legacy/dsc_0450.jpg
+  - img: dsc_0450.jpg
     alt: 
     title: 
     width: 500
     height: 332
-  - img: /assets/projects/legacy/dsc_0452.jpg
+  - img: dsc_0452.jpg
     alt: 
     title: 
     width: 500
     height: 332
-  - img: /assets/projects/legacy/dsc_0462.jpg
+  - img: dsc_0462.jpg
     alt: 
     title: 
     width: 500
     height: 332
-  - img: /assets/projects/legacy/dsc_0463.jpg
+  - img: dsc_0463.jpg
     alt: 
     title: 
     width: 500
     height: 332
-  - img: /assets/projects/legacy/dsc_0469.jpg
+  - img: dsc_0469.jpg
     alt: 
     title: 
     width: 500

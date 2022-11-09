@@ -4,17 +4,17 @@ summary: "A real-time multiplayer Scrum estimation game."
 date: 2013-06-01 14:37:23
 tags: [javascript, scrum, product ownership, frontend, design]
 images:
-  - img: /assets/projects/legacy/sc-1.jpg
+  - img: sc-1.jpg
     alt: 
     title: 
     width: 1080
     height: 640
-  - img: /assets/projects/legacy/sc-2.jpg
+  - img: sc-2.jpg
     alt: 
     title: 
     width: 1080
     height: 640
-  - img: /assets/projects/legacy/sc-3.jpg
+  - img: sc-3.jpg
     alt: 
     title: 
     width: 1080

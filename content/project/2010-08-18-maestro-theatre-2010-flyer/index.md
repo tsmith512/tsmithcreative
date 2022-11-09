@@ -4,7 +4,7 @@ summary: "A time trial design, for immediate distribution."
 date: 2010-08-18 00:00:00
 tags: [print, design, theatre]
 images:
-  - img: /assets/projects/legacy/flyer-for-fall-workshops-2010-fs.jpg
+  - img: flyer-for-fall-workshops-2010-fs.jpg
     alt: 
     title: 
     width: 500

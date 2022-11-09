@@ -4,32 +4,32 @@ summary: "An invitation and program for the ARTSCAPE fundraiser for the Tristess
 date: 2011-04-07 00:00:00
 tags: [design, print, volunteer, events]
 images:
-  - img: /assets/projects/legacy/dsc_0180_0.jpg
+  - img: dsc_0180_0.jpg
     alt: 
     title: 
     width: 2000
     height: 1339
-  - img: /assets/projects/legacy/dsc_0182_0.jpg
+  - img: dsc_0182_0.jpg
     alt: 
     title: 
     width: 2000
     height: 1339
-  - img: /assets/projects/legacy/dsc_0184_0.jpg
+  - img: dsc_0184_0.jpg
     alt: 
     title: 
     width: 2000
     height: 1339
-  - img: /assets/projects/legacy/dsc_0187_0.jpg
+  - img: dsc_0187_0.jpg
     alt: 
     title: 
     width: 2000
     height: 1339
-  - img: /assets/projects/legacy/dsc_0189_0.jpg
+  - img: dsc_0189_0.jpg
     alt: 
     title: 
     width: 2000
     height: 1339
-  - img: /assets/projects/legacy/dsc_0178.jpg
+  - img: dsc_0178.jpg
     alt: 
     title: 
     width: 2000

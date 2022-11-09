@@ -4,27 +4,27 @@ summary: "A folded brochure of general information, scheduling, and a map for Ok
 date: 2010-10-18 00:00:00
 tags: [print, design, events]
 images:
-  - img: /assets/projects/legacy/oktoberfestfront.jpg
+  - img: oktoberfestfront.jpg
     alt: 
     title: 
     width: 269
     height: 350
-  - img: /assets/projects/legacy/oktoberfestinsidea.jpg
+  - img: oktoberfestinsidea.jpg
     alt: 
     title: 
     width: 500
     height: 324
-  - img: /assets/projects/legacy/oktoberfestinsideb.jpg
+  - img: oktoberfestinsideb.jpg
     alt: 
     title: 
     width: 500
     height: 324
-  - img: /assets/projects/legacy/oktoberfestback.jpg
+  - img: oktoberfestback.jpg
     alt: 
     title: 
     width: 272
     height: 350
-  - img: /assets/projects/legacy/tabloid_fold_brochure_-_draft_3b_with_urban_tulsa_weekly-1.jpg
+  - img: tabloid_fold_brochure_-_draft_3b_with_urban_tulsa_weekly-1.jpg
     alt: 
     title: 
     width: 1500

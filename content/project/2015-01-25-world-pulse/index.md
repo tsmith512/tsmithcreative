@@ -13,47 +13,47 @@ problem: >
   low-power and mobile devices, and is easy for a small team of administrators
   to maintain.
 images:
-  - img: /assets/projects/legacy/1422466748983screensave.png
+  - img: 1422466748983screensave.png
     alt:
     title: The new Home Page increases the focus over the old site on explaining what World Pulse is to new traffic.
     width: 1237
     height: 2076
-  - img: /assets/projects/legacy/1422478897935screensave.png
+  - img: 1422478897935screensave.png
     alt:
     title: The Community Page introduces users to the idea of being able to join/participate publicly and read what others have shared.
     width: 1267
     height: 1752
-  - img: /assets/projects/legacy/community.png
+  - img: community.png
     alt:
     title: Early wireframe for the Community Page, with the goal to convert curious new visitors into contributing members by showing them active discussion areas and new content.
     width: 1547
     height: 1690
-  - img: /assets/projects/legacy/1422297655173screensave.png
+  - img: 1422297655173screensave.png
     alt:
     title: "The Leadership Group: groups facilitate the general membership to discuss a particular topic."
     width: 1410
     height: 2122
-  - img: /assets/projects/legacy/community-group.png
+  - img: community-group.png
     alt:
     title: Early wireframe for a generic group, showing how the group's home page is a nexus for not only recent content, but also highlight specific content and the moderators who serve the group.
     width: 1368
     height: 1194
-  - img: /assets/projects/legacy/1422297950741screensave_0.png
+  - img: 1422297950741screensave_0.png
     alt:
     title: Heavily customized node-creation form to usher users through creating a post more easily than through a standard Drupal administration theme.
     width: 1290
     height: 860
-  - img: /assets/projects/legacy/1422467350467screensave-profile.png
+  - img: 1422467350467screensave-profile.png
     alt:
     title: A profile for users which highlights biographical copy, recent contributions and connections, and any participation badges earned.
     width: 1235
     height: 823
-  - img: /assets/projects/legacy/screenshot-www.worldpulse.com_2015-01-26_10-28-52_0.png
+  - img: screenshot-www.worldpulse.com_2015-01-26_10-28-52_0.png
     alt:
     title: The first community contributed post in response to the launch of the new site. This is her first post since 2012.
     width: 1458
     height: 972
-  - img: /assets/projects/legacy/screenshot_2015-01-26-10-35-01.png
+  - img: screenshot_2015-01-26-10-35-01.png
     alt:
     title: Action Prompts call users to participate in editorial initiatives to write about a particular prompt, then aggregate responses
     width: 720

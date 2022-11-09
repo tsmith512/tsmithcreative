@@ -4,57 +4,57 @@ summary: "Graphic and scenic design for St. Andrew's production of West Side Sto
 date: 2010-10-25 00:00:00
 tags: [print, design, theatre]
 images:
-  - img: /assets/projects/legacy/logo.jpg
+  - img: logo.jpg
     alt: 
     title: 
     width: 500
     height: 350
-  - img: /assets/projects/legacy/official_poster_re-spelled_cmyk.jpg
+  - img: official_poster_re-spelled_cmyk.jpg
     alt: 
     title: 
     width: 657
     height: 1000
-  - img: /assets/projects/legacy/poster-detail1.jpg
+  - img: poster-detail1.jpg
     alt: 
     title: 
     width: 500
     height: 350
-  - img: /assets/projects/legacy/backdrops.jpg
+  - img: backdrops.jpg
     alt: 
     title: 
     width: 500
     height: 350
-  - img: /assets/projects/legacy/fgh.jpg
+  - img: fgh.jpg
     alt: 
     title: 
     width: 500
     height: 350
-  - img: /assets/projects/legacy/ground-plan-8-for-portfolio-mockups-a-draft-5-masters-view-1.jpg
+  - img: ground-plan-8-for-portfolio-mockups-a-draft-5-masters-view-1.jpg
     alt: 
     title: 
     width: 500
     height: 257
-  - img: /assets/projects/legacy/ground-plan-8-for-portfolio-mockups-a-draft-5-masters-view-2.jpg
+  - img: ground-plan-8-for-portfolio-mockups-a-draft-5-masters-view-2.jpg
     alt: 
     title: 
     width: 500
     height: 257
-  - img: /assets/projects/legacy/dsc_0118.jpg
+  - img: dsc_0118.jpg
     alt: 
     title: 
     width: 500
     height: 333
-  - img: /assets/projects/legacy/dsc_0140.jpg
+  - img: dsc_0140.jpg
     alt: 
     title: 
     width: 500
     height: 332
-  - img: /assets/projects/legacy/dsc_0174.jpg
+  - img: dsc_0174.jpg
     alt: 
     title: 
     width: 500
     height: 332
-  - img: /assets/projects/legacy/standrewswss-intent.jpg
+  - img: standrewswss-intent.jpg
     alt: 
     title: 
     width: 500

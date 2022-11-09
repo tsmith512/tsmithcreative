@@ -4,22 +4,22 @@ summary: "A Four Kitchens presentation and case study on Workbench (Moderation a
 date: 2013-06-23 09:49:21
 tags: [presentation, admin experience, ux, product ownership, drupal]
 images:
-  - img: /assets/projects/legacy/pt-1.jpg
+  - img: pt-1.jpg
     alt: 
     title: 
     width: 1080
     height: 640
-  - img: /assets/projects/legacy/pt-2.png
+  - img: pt-2.png
     alt: 
     title: 
     width: 1063
     height: 623
-  - img: /assets/projects/legacy/pt-3.png
+  - img: pt-3.png
     alt: 
     title: 
     width: 1063
     height: 580
-  - img: /assets/projects/legacy/pt-4.jpg
+  - img: pt-4.jpg
     alt: 
     title: 
     width: 1080

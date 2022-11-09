@@ -11,47 +11,47 @@ problem: >
   internationalized (translated) content rather than having discrete sites, and
   be able to localize (geographic relavence targeting) their website's offerings.
 images:
-  - img: /assets/projects/legacy/1456514771825screensave.jpg
+  - img: 1456514771825screensave.jpg
     alt:
     title: The home page pulls content from across the site for easy access
     width: 1920
     height: 4385
-  - img: /assets/projects/legacy/1456515163960screensave.jpg
+  - img: 1456515163960screensave.jpg
     alt:
     title: Products feature rich content and relationships across the site to guide visitors, Internationalized
     width: 1920
     height: 5904
-  - img: /assets/projects/legacy/1456515240962screensave.jpg
+  - img: 1456515240962screensave.jpg
     alt:
     title: Products Overview, Internationalized
     width: 1920
     height: 1403
-  - img: /assets/projects/legacy/1456515905384screensave.jpg
+  - img: 1456515905384screensave.jpg
     alt:
     title: Resources Browser surfaces filterable views of Resources which are also featured site-wide
     width: 1920
     height: 955
-  - img: /assets/projects/legacy/screenshot_20160226-113522.jpg
+  - img: screenshot_20160226-113522.jpg
     alt:
     title: Main Menu, Mobile View
     width: 1440
     height: 2560
-  - img: /assets/projects/legacy/screenshot_20160226-113529.jpg
+  - img: screenshot_20160226-113529.jpg
     alt:
     title: Main Menu, Second Level, Mobile View
     width: 1440
     height: 2560
-  - img: /assets/projects/legacy/screenshot_20160226-113643.jpg
+  - img: screenshot_20160226-113643.jpg
     alt:
     title: Case Study showing relationships to Solutions and Products, allowing users to continue to browse relevant content
     width: 1440
     height: 2560
-  - img: /assets/projects/legacy/screenshot_20160226-113952.jpg
+  - img: screenshot_20160226-113952.jpg
     alt:
     title: Home Page, Internationalized, Mobile View
     width: 1440
     height: 2560
-  - img: /assets/projects/legacy/screenshot_20160226-114115.jpg
+  - img: screenshot_20160226-114115.jpg
     alt:
     title: Product Page Header, Internationalized, Mobile View
     width: 1440

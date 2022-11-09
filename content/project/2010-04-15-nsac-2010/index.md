@@ -4,52 +4,52 @@ summary: "A Plansbook and Campaign for TU's NSAC Team."
 date: 2010-04-15 00:00:00
 tags: [design, photography, branding, book design, student work]
 images:
-  - img: /assets/projects/legacy/dsc_0089.jpg
+  - img: dsc_0089.jpg
     alt:
     title:
     width: 500
     height: 332
-  - img: /assets/projects/legacy/dsc_0081.jpg
+  - img: dsc_0081.jpg
     alt:
     title:
     width: 500
     height: 332
-  - img: /assets/projects/legacy/main4-12.jpg
+  - img: main4-12.jpg
     alt:
     title:
     width: 453
     height: 350
-  - img: /assets/projects/legacy/dsc_0079.jpg
+  - img: dsc_0079.jpg
     alt:
     title:
     width: 500
     height: 332
-  - img: /assets/projects/legacy/dsc_0078.jpg
+  - img: dsc_0078.jpg
     alt:
     title:
     width: 500
     height: 332
-  - img: /assets/projects/legacy/cool-old-guy-plansbook-high-quality-print-6.jpg
+  - img: cool-old-guy-plansbook-high-quality-print-6.jpg
     alt:
     title:
     width: 500
     height: 193
-  - img: /assets/projects/legacy/dsc_0073.jpg
+  - img: dsc_0073.jpg
     alt:
     title:
     width: 500
     height: 332
-  - img: /assets/projects/legacy/main4-13.jpg
+  - img: main4-13.jpg
     alt:
     title:
     width: 453
     height: 350
-  - img: /assets/projects/legacy/cool-old-guy-plansbook-high-quality-print-15.jpg
+  - img: cool-old-guy-plansbook-high-quality-print-15.jpg
     alt:
     title:
     width: 500
     height: 193
-  - img: /assets/projects/legacy/dsc_0074.jpg
+  - img: dsc_0074.jpg
     alt:
     title:
     width: 500

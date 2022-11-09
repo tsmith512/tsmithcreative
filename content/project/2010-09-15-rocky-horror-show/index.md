@@ -4,12 +4,12 @@ summary: "A production logo for a performance of The Rocky Horror Show at the Ha
 date: 2010-09-15 00:00:00
 tags: [print, design, theatre, student work]
 images:
-  - img: /assets/projects/legacy/rh-spade.jpg
+  - img: rh-spade.jpg
     alt: 
     title: 
     width: 500
     height: 350
-  - img: /assets/projects/legacy/rh-playingcard.jpg
+  - img: rh-playingcard.jpg
     alt: 
     title: 
     width: 500

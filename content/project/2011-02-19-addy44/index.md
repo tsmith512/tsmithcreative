@@ -4,52 +4,52 @@ summary: "A Winners Book and other printed pieces for ADDY44."
 date: 2011-02-19 00:00:00
 tags: [design, print, volunteer, book design, events]
 images:
-  - img: /assets/projects/legacy/dsc_0442.jpg
+  - img: dsc_0442.jpg
     alt:
     title:
     width: 500
     height: 332
-  - img: /assets/projects/legacy/dsc_0236_7_8-dt.jpg
+  - img: dsc_0236_7_8-dt.jpg
     alt:
     title:
     width: 500
     height: 331
-  - img: /assets/projects/legacy/dsc_0447.jpg
+  - img: dsc_0447.jpg
     alt:
     title:
     width: 500
     height: 332
-  - img: /assets/projects/legacy/2nd-and-denver-dsc_0310_1_2-16.jpg
+  - img: 2nd-and-denver-dsc_0310_1_2-16.jpg
     alt:
     title:
     width: 500
     height: 331
-  - img: /assets/projects/legacy/dsc_0450_0.jpg
+  - img: dsc_0450_0.jpg
     alt:
     title:
     width: 500
     height: 333
-  - img: /assets/projects/legacy/cains-ballroom-overhead-dsc_0227-as-smart-object-1.jpg
+  - img: cains-ballroom-overhead-dsc_0227-as-smart-object-1.jpg
     alt:
     title:
     width: 500
     height: 332
-  - img: /assets/projects/legacy/dsc_0453.jpg
+  - img: dsc_0453.jpg
     alt:
     title:
     width: 500
     height: 332
-  - img: /assets/projects/legacy/addy44book-web-6.jpg
+  - img: addy44book-web-6.jpg
     alt:
     title:
     width: 500
     height: 250
-  - img: /assets/projects/legacy/addy44book-web-12.jpg
+  - img: addy44book-web-12.jpg
     alt:
     title:
     width: 500
     height: 250
-  - img: /assets/projects/legacy/addy44book-web-13.jpg
+  - img: addy44book-web-13.jpg
     alt:
     title:
     width: 500

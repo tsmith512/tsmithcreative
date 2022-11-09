@@ -4,22 +4,22 @@ summary: "Ad Campaign for a Tulsa Weekend Vacation Package."
 date: 2009-11-19 00:00:00
 tags: [design, branding, student work]
 images:
-  - img: /assets/projects/legacy/letter-gate-fold-brochure.jpg
+  - img: letter-gate-fold-brochure.jpg
     alt: 
     title: 
     width: 451
     height: 350
-  - img: /assets/projects/legacy/letter-gate-fold-brochure-2.jpg
+  - img: letter-gate-fold-brochure-2.jpg
     alt: 
     title: 
     width: 453
     height: 350
-  - img: /assets/projects/legacy/newspaper-full-page-aquarium.jpg
+  - img: newspaper-full-page-aquarium.jpg
     alt: 
     title: 
     width: 195
     height: 350
-  - img: /assets/projects/legacy/thanks-and-bounceback-11x6-postcard.jpg
+  - img: thanks-and-bounceback-11x6-postcard.jpg
     alt: 
     title: 
     width: 500

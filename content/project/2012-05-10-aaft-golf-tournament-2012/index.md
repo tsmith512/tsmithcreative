@@ -4,17 +4,17 @@ summary: "An Invitation to the 3rd Annual AAF Tulsa Golf Tournament"
 date: 2012-05-10 00:00:00
 tags: [design, print, events]
 images:
-  - img: /assets/projects/legacy/golf-tournament-flyer-final.jpg
+  - img: golf-tournament-flyer-final.jpg
     alt: 
     title: 
     width: 1000
     height: 1000
-  - img: /assets/projects/legacy/golf-tournament-flyer-final3.jpg
+  - img: golf-tournament-flyer-final3.jpg
     alt: 
     title: 
     width: 750
     height: 500
-  - img: /assets/projects/legacy/golf-tournament-flyer-final2_0.jpg
+  - img: golf-tournament-flyer-final2_0.jpg
     alt: 
     title: 
     width: 750

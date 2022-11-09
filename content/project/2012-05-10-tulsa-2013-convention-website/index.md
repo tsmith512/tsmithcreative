@@ -4,22 +4,22 @@ summary: "A Website for the American Advertising Federation 10th District 2013 S
 date: 2012-05-10 00:00:00
 tags: [volunteer, drupal, frontend, events, maps]
 images:
-  - img: /assets/projects/legacy/t2013a.png
+  - img: t2013a.png
     alt: 
     title: 
     width: 1230
     height: 935
-  - img: /assets/projects/legacy/t2013b.png
+  - img: t2013b.png
     alt: 
     title: 
     width: 1230
     height: 1149
-  - img: /assets/projects/legacy/t2013c.png
+  - img: t2013c.png
     alt: 
     title: 
     width: 1230
     height: 1255
-  - img: /assets/projects/legacy/t2013d.png
+  - img: t2013d.png
     alt: 
     title: 
     width: 1230

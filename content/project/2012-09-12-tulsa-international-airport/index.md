@@ -4,32 +4,32 @@ summary: "A new WordPress website for the Tulsa Airport Authority's two properti
 tags: [frontend, wordpress, admin experience]
 date: 2012-09-12 23:36:47
 images:
-  - img: /assets/projects/legacy/tia1.png
+  - img: tia1.png
     alt: 
     title: 
     width: 1263
     height: 920
-  - img: /assets/projects/legacy/tia2.png
+  - img: tia2.png
     alt: 
     title: 
     width: 1280
     height: 920
-  - img: /assets/projects/legacy/tia3.png
+  - img: tia3.png
     alt: 
     title: 
     width: 1263
     height: 1382
-  - img: /assets/projects/legacy/tia4.png
+  - img: tia4.png
     alt: 
     title: 
     width: 344
     height: 838
-  - img: /assets/projects/legacy/tia5.png
+  - img: tia5.png
     alt: 
     title: 
     width: 344
     height: 838
-  - img: /assets/projects/legacy/tia6.png
+  - img: tia6.png
     alt: 
     title: 
     width: 1280

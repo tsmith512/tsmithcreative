@@ -4,17 +4,17 @@ summary: "New Website for Austin, Texas Lighting Warehouse Olden Lighting."
 date: 2010-10-04 00:00:00
 tags: [photography, wordpress, frontend]
 images:
-  - img: /assets/projects/legacy/home.jpg
+  - img: home.jpg
     alt: 
     title: 
     width: 491
     height: 350
-  - img: /assets/projects/legacy/theatrical.jpg
+  - img: theatrical.jpg
     alt: 
     title: 
     width: 500
     height: 341
-  - img: /assets/projects/legacy/ellipsoidals.jpg
+  - img: ellipsoidals.jpg
     alt: 
     title: 
     width: 500

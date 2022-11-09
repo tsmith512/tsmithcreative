@@ -4,57 +4,57 @@ summary: "A Handmade Book of Texas Stories."
 date: 2009-12-17 00:00:00
 tags: [book design, student work]
 images:
-  - img: /assets/projects/legacy/01_-_stack.jpg
+  - img: 01_-_stack.jpg
     alt:
     title:
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/02_-_front_cover.jpg
+  - img: 02_-_front_cover.jpg
     alt:
     title:
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/03_-_back_covers.jpg
+  - img: 03_-_back_covers.jpg
     alt:
     title:
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/04_-_standing.jpg
+  - img: 04_-_standing.jpg
     alt:
     title:
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/05_-_first_spread.jpg
+  - img: 05_-_first_spread.jpg
     alt:
     title:
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/06_-_von_rosengerg_story.jpg
+  - img: 06_-_von_rosengerg_story.jpg
     alt:
     title:
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/07_-_insects_spread.jpg
+  - img: 07_-_insects_spread.jpg
     alt:
     title:
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/08_-_colophon.jpg
+  - img: 08_-_colophon.jpg
     alt:
     title:
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/09_-_rivers_map_folded_inside.jpg
+  - img: 09_-_rivers_map_folded_inside.jpg
     alt:
     title:
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/10_-_rivers_map_display.jpg
+  - img: 10_-_rivers_map_display.jpg
     alt:
     title:
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/11_-_book_standing_with_maps.jpg
+  - img: 11_-_book_standing_with_maps.jpg
     alt:
     title:
     width: 1000

@@ -4,42 +4,42 @@ summary: "Location Photography and Website to revitalize the online presence of 
 date: 2010-11-13 00:00:00
 tags: [photography, static site, frontend]
 images:
-  - img: /assets/projects/legacy/dsc_0002_3_4.jpg
+  - img: dsc_0002_3_4.jpg
     alt: 
     title: 
     width: 350
     height: 350
-  - img: /assets/projects/legacy/dsc_0029_30_31.jpg
+  - img: dsc_0029_30_31.jpg
     alt: 
     title: 
     width: 350
     height: 350
-  - img: /assets/projects/legacy/dsc_0038_39_40.jpg
+  - img: dsc_0038_39_40.jpg
     alt: 
     title: 
     width: 350
     height: 350
-  - img: /assets/projects/legacy/dsc_0044_5_6.jpg
+  - img: dsc_0044_5_6.jpg
     alt: 
     title: 
     width: 350
     height: 350
-  - img: /assets/projects/legacy/dsc_0056_7_8.jpg
+  - img: dsc_0056_7_8.jpg
     alt: 
     title: 
     width: 350
     height: 350
-  - img: /assets/projects/legacy/dsc_0062_3_4.jpg
+  - img: dsc_0062_3_4.jpg
     alt: 
     title: 
     width: 350
     height: 350
-  - img: /assets/projects/legacy/home_0.jpg
+  - img: home_0.jpg
     alt: 
     title: 
     width: 413
     height: 350
-  - img: /assets/projects/legacy/specials.jpg
+  - img: specials.jpg
     alt: 
     title: 
     width: 413

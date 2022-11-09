@@ -4,37 +4,37 @@ summary: "Another round: Invitation and Program for the ARTSCAPE 2012 Fundraiser
 date: 2012-04-29 00:00:00
 tags: [design, print, volunteer, events]
 images:
-  - img: /assets/projects/legacy/arta.jpg
+  - img: arta.jpg
     alt: 
     title: 
     width: 1000
     height: 714
-  - img: /assets/projects/legacy/artb.jpg
+  - img: artb.jpg
     alt: 
     title: 
     width: 1000
     height: 714
-  - img: /assets/projects/legacy/artc.jpg
+  - img: artc.jpg
     alt: 
     title: 
     width: 1000
     height: 714
-  - img: /assets/projects/legacy/dsc_0047.jpg
+  - img: dsc_0047.jpg
     alt: 
     title: 
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/dsc_0054.jpg
+  - img: dsc_0054.jpg
     alt: 
     title: 
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/dsc_0059.jpg
+  - img: dsc_0059.jpg
     alt: 
     title: 
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/artd.jpg
+  - img: artd.jpg
     alt: 
     title: 
     width: 1000

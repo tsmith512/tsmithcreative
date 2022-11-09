@@ -4,27 +4,27 @@ summary: "A 2011-2012 Season Folded Poster/Brochure Mailer for Tulsa Camerata, a
 date: 2011-09-08 00:00:00
 tags: [print, design, theatre]
 images:
-  - img: /assets/projects/legacy/dsc_0037.jpg
+  - img: dsc_0037.jpg
     alt: 
     title: 
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/dsc_0038.jpg
+  - img: dsc_0038.jpg
     alt: 
     title: 
     width: 1000
     height: 665
-  - img: /assets/projects/legacy/tcb.jpg
+  - img: tcb.jpg
     alt: 
     title: 
     width: 647
     height: 388
-  - img: /assets/projects/legacy/tcc.jpg
+  - img: tcc.jpg
     alt: 
     title: 
     width: 647
     height: 388
-  - img: /assets/projects/legacy/tca.jpg
+  - img: tca.jpg
     alt: 
     title: 
     width: 647
