@@ -1,9 +1,10 @@
 ---
-title: Projects
-menu: main
-summary: A portfolio from a variety of recent projects.
+title: Project Archives
+summary: >
+  Many old projects which I nearly discarded in the migration, but sometimes it
+  is important to remember where you've been.
 photoswipe: false
-url: projects
+url: archives
 cascade:
   photoswipe: true
 ---
