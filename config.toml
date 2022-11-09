@@ -12,6 +12,7 @@ writeStats = true
 
 [permalinks]
   blog = '/blog/:year/:slug/'
+  project = '/project/:slug/'
 
 [markup.highlight]
   style = 'monokailight'
