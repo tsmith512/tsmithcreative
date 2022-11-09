@@ -138,6 +138,20 @@ li ul {
   margin-top: 1em;
 }
 
+.highlight {
+  font-size: 0.75em;
+
+  pre {
+    overflow: hidden;
+  }
+
+  code {
+    padding-bottom: 1em;
+    display: block;
+    overflow-x: auto;
+  }
+}
+
 .update {
   background: #ebf7ed; // #f6f6f6;
   color: #085014;
