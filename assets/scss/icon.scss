@@ -18,3 +18,10 @@
     background-image: url(data:image/svg+xml;base64,{{ replace $data "<path " "<path fill='#888' " | base64Encode }});
   }
 {{ end }}
+
+// Colorize these with CSS filters so I don't need an alternate image!
+// See https://stackoverflow.com/questions/27999597/css-filter-to-make-elements-one-color
+// and https://codepen.io/sosuke/pen/Pjoqqp for this badassery.
+a.icon:hover {
+  filter: brightness(0) invert(45%) sepia(74%) saturate(7491%) hue-rotate(228deg) brightness(99%) contrast(91%)
+}

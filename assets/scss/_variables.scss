@@ -18,3 +18,6 @@ $tungsten: "Tungsten Narrow A", "Tungsten Narrow B", "Arial Narrow", Helvetica, 
 $nav-split: 530px;
 $max-width: 960px;
 $max-lines: 680px;
+
+$link: #3957f1;
+$link-hover:  lighten($link, 10%);

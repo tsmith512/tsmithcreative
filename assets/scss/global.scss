@@ -23,11 +23,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 a, a:link {
-  color: #3957f1;
+  color: $link;
 }
 
 a:hover, a:active {
-  color: lighten(#3957f1, 10%);
+  color: $link-hover;
 }
 
 iframe {

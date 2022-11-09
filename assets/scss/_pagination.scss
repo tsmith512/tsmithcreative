@@ -19,12 +19,12 @@
 
   a {
     color: #fff;
-    background-color: #3347af;
-    text-shadow: 1px 1px 0 #15205a;
-    border: 1px solid #15205a;
+    background-color: $link;
+    text-shadow: 1px 1px 0 darken($link, 15%);
+    border: 1px solid darken($link, 15%);
 
     &:hover, &:active {
-      background-color: #3957f1;
+      background-color: $link-hover;
     }
   }
 

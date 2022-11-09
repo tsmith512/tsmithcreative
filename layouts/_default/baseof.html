@@ -1,37 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico" />
-
-  <link rel="canonical" href={canonincalURL} />
-  <meta property="og:url" content={canonincalURL} />
-  <meta name="twitter:url" content={canonincalURL} />
-
-  <link rel="dns-prefetch" href="https://cloud.typography.com/" />
-  <!-- @TODO: Async load this -->
-  <link rel="stylesheet" href="https://cloud.typography.com/6795652/7424152/css/fonts.css" />
-
-  {{ $scss := resources.Get "scss/global.scss" }}
-  {{ $style := $scss | resources.ToCSS }}
-  <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
-
-  {{ $masthead := resources.Get "scss/masthead-photography.scss" }}
-  {{ $mastheadStyle := $masthead | resources.ExecuteAsTemplate "scss/masthead-photography-processed.scss" . | resources.ToCSS }}
-  <!-- @TODO: That does not keep this CSS from loading and it has heavy dataURIs in it -->
-  <link rel="stylesheet" type="text/css" href="{{ $mastheadStyle.RelPermalink }}" media="screen and (min-width: 720px)" />
-
-  {{ $icons := resources.Get "scss/icon.scss" }}
-  {{ $iconStyle := $icons | resources.ExecuteAsTemplate "scss/icons.scss" . | resources.ToCSS }}
-  <!-- @TODO: That does not keep this CSS from loading and it has heavy dataURIs in it -->
-  <link rel="stylesheet" type="text/css" href="{{ $iconStyle.RelPermalink }}" />
-
-  <!-- @TODO: Load conditionally, lazily -->
-  {{ $photoswipeCss := resources.Get "vendor/photoswipe/dist/photoswipe.css" }}
-  <link rel="stylesheet" type="text/css" href="{{ $photoswipeCss.RelPermalink }}" media="screen" />
-
+  {{ partial "global/head" . }}
   <title>{{ block "title" . }}{{ .Page.Title }} | {{ .Site.Title }}{{ end }}</title>
 </head>
 <body>
