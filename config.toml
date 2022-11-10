@@ -7,6 +7,9 @@ enableGitInfo = true
 enableRobotsTXT = true
 writeStats = true
 
+# Ten minutes
+timeout = 600000
+
 [frontmatter]
   date = ':filename'
 
