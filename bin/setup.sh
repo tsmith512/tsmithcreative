@@ -5,7 +5,7 @@ if [ -z "$ASSETS_FOLDER" ]; then
   exit 1;
 fi
 
-mkdir -p _site/fonts
+mkdir -p public/fonts
 wget -N $ASSETS_FOLDER/811484.zip
 unzip -o 811484.zip -d public/fonts/
 
