@@ -2,7 +2,7 @@
 
 if [ -z "$ASSETS_FOLDER" ]; then
   echo "Assets package not specified"
-  exit 1;
+  export $(grep -v '^#' .env | xargs)
 fi
 
 mkdir -p public/fonts

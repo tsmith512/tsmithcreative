@@ -1,4 +1,6 @@
 {{ $type := .Get 0 }}
 {{ $content := .Get 1 }}
 
-{{ partial $type (.Site.GetPage $content) }}
+{{ with (.Site.GetPage $content) }}
+  {{ partial $type . }}
+{{ end }}
