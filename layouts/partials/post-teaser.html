@@ -1,0 +1,17 @@
+{{ $thumbnail := .Resources.GetMatch "thumbnail.*" }}
+
+<li class="post-teaser-item">
+  {{ if $thumbnail }}
+    <a href={{ .RelPermalink }} class="post-teaser-thumbnail">
+      {{ with $thumbnail }}
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" />
+      {{ end }}
+    </a>
+  {{ end }}
+
+  <div class="post-teaser-description">
+    <h2><a  href={{ .RelPermalink }}>{{ .Title }}</a></h2>
+    {{ .Summary }}
+    {{ partial "post-meta" . }}
+  </div>
+</li>

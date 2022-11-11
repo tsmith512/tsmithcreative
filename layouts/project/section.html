@@ -2,24 +2,8 @@
   {{ .Content }}
 
   <ul class="project-teaser-list">
-    {{ range .Paginator.Pages }}
-      {{ $thumbnail := .Resources.GetMatch "thumbnail.*" }}
-
-      <li class="project-teaser-item">
-        {{ if $thumbnail }}
-          <a href={{ .RelPermalink }} class="project-teaser-thumbnail">
-            {{ with $thumbnail }}
-              <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" />
-            {{ end }}
-          </a>
-        {{ end }}
-
-        <div class="project-teaser-description">
-          <h2><a  href={{ .RelPermalink }}>{{ .Title }}</a></h2>
-          {{ .Summary }}
-          {{ partial "post-meta" . }}
-        </div>
-      </li>
+    {{ range $project := .Paginator.Pages }}
+      {{ partial "project-teaser" $project }}
     {{ end }}
   </ul>
 
