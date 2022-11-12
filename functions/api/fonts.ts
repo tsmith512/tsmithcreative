@@ -14,7 +14,9 @@ export async function onRequest(context) {
 
   const outboundHeaders = {
     accept: 'text/css,*/*;q=0.1',
-    'accept-encoding': 'gzip, deflate, br',
+    // Could not figure out what to do with upstream encoded responses, so
+    // ask for plaintext unencoded.
+    'accept-encoding': '',
     'cache-control': 'no-cache',
     host: 'cloud.typography.com',
     pragma: 'no-cache',
