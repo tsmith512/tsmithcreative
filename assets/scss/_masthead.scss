@@ -1,15 +1,10 @@
 .masthead {
+  position: relative;
   overflow: hidden;
   margin-bottom: 2rem;
 
   @media (min-width: $max-lines + 40px) {
-    position: relative;
-    background: {
-      color: #222;
-      position: center center;
-      repeat: no-repeat;
-      size: cover;
-    }
+    background-color: #222;
 
     &:after {
       content: " ";
@@ -79,5 +74,32 @@
   text-align: center;
   @media (min-width: $max-lines) {
     text-align: left;
+  }
+}
+
+// This is an img with a dataURI in the HTML output with a blurred placeholder
+.masthead-placeholder {
+  display: none;
+
+  @media (min-width: $max-lines + 40px) {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: blur(5px);
+      // Hugo blurs this when it shrinks, too, but a post-blur at-size looks better
+  }
+}
+
+.masthead-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: {
+    position: center center;
+    repeat: no-repeat;
+    size: cover;
   }
 }

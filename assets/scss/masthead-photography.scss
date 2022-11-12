@@ -16,24 +16,13 @@
   {{ $filename := printf "/img/masthead/%s.jpg" (string $year) }}
   {{ $base := resources.GetMatch $filename }}
   {{ with $base }}
-
-    // @TODO this doesn't save you CLS during image load because it doesn't get
-    // used, figure out how to move this into page output instead.
-    //
-    // .masthead-{{ $year }} {
-    //   {{ $blurred := $base.Filter (images.GaussianBlur 10) }}
-    //   {{ $blurred = $blurred.Resize "100x" }}
-    //   background-image: url(data:image/jpeg;base64,{{ $blurred.Content | base64Encode }});
-    // }
-
-    // And for each size, resize the image and link out to it.
     {{ range $size := $sizes }}
       {{ $resized := $base.Resize (printf "%dx" $size) }}
       @media (min-width: "{{ $size }}px") {
-        .masthead-{{ $year }} { background-image: url("{{ $resized.RelPermalink }}"); }
+        .masthead-{{ $year }} .masthead-overlay {
+          background-image: url("{{ $resized.RelPermalink }}");
+        }
       }
     {{ end }}
-
   {{ end }}
-
 {{ end }}

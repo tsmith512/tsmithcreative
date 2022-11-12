@@ -31,7 +31,7 @@
             srcset="{{ $320.RelPermalink }} 320w,
                     {{ $480.RelPermalink }} 480w,
                     {{ $600.RelPermalink }} 600w" />
-          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" />
+          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" />
         </picture>
       {{ end }}
     </a>
