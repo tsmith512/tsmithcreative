@@ -1,11 +1,11 @@
 ---
 title: Privacy Policy & Terms of Service
-layout: page
+summary: For mobile apps and experiments
 ---
 
 ## Hello Hangboard
 
-_Last Updated: 9 April 2020*_
+_Last Updated: 9 April 2020_
 
 ### Privacy Policy
 
