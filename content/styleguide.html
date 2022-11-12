@@ -4,6 +4,7 @@ summary: >
   Quick demo of all the pieces
 date: 2022-11-04
 citation: [TEST, "http://www.example.com/"]
+photoswipe: true
 galleries:
   example:
   - src: olympic-national-park.jpg
@@ -114,4 +115,11 @@ galleries:
   {{< browserframe >}}
     <iframe src="https://example.com" height="500px"></iframe>
   {{< /browserframe >}}
+
+  <h3>Blog Post Teaser</h3>
+
+  <ul class="post-teaser-list">
+    {{< teaser "post-teaser" "2022-03-11-congressional-district-map" >}}
+  </ul>
+
 </div>

@@ -7,9 +7,11 @@
 
     {{ if .Params.citation }}
       <dt><span class="icon icon-penpaper">Appears On</span></dt>
-      <dd class="citation"><a href="{{ index .Params.citation 1 }}"></a>
-        {{ index .Params.citation 0 }}
-      </a></dd>
+      <dd class="citation">
+        Written for and appears on <a href="{{ index .Params.citation 1 }}">
+          {{ $pub := index .Params.citation 0 }}
+          {{ index $.Site.Data.citations $pub | safeHTML }}
+        </a></dd>
     {{ end }}
 
     {{ if (.GetTerms "tags") }}
