@@ -15,7 +15,8 @@ export async function onRequest(context) {
   const outboundHeaders = {
     accept: 'text/css,*/*;q=0.1',
     // Could not figure out what to do with upstream encoded responses, so
-    // ask for plaintext unencoded.
+    // ask for plaintext unencoded. Skip this header on the _output_ to allow
+    // CF to apply gzip or brotli as accepted by the end-client.
     'accept-encoding': '',
     'cache-control': 'no-cache',
     host: 'cloud.typography.com',
@@ -38,7 +39,10 @@ export async function onRequest(context) {
         status: 200,
         headers: {
           'content-type': payload.headers.get('content-type'),
-          'content-encoding': payload.headers.get('content-encoding'),
+          // Yes, vary on user-agent, because the payload is different depending
+          // on browser support. I could probably bucket this, but I don't want
+          // to have to maintain that.
+          'vary': 'Accept-Encoding, User-Agent',
         }
       }
     );
