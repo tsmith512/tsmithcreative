@@ -29,3 +29,18 @@ timeout = 600000
 # author, so I accept this -- unsafe just allows raw HTML.
 [markup.goldmark.renderer]
   unsafe = true
+
+[outputs]
+  home = ['HTML', 'RSS']
+  page = ['HTML']
+  section = ['HTML']
+  taxonomyTerm = ['HTML']
+  taxonomy = ['HTML']
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = 'application/rss'
+    baseName = 'rss'
+
+[services.rss]
+  limit = 10

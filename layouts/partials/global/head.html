@@ -46,3 +46,7 @@
   {{ $photoswipeCss := resources.Get "vendor/photoswipe/dist/photoswipe.css" }}
   <link rel="stylesheet" type="text/css" href="{{ $photoswipeCss.RelPermalink }}" media="screen" />
 {{ end }}
+
+{{ with .OutputFormats.Get "rss" }}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end }}
