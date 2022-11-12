@@ -48,4 +48,4 @@ Awarded a Gold Medal at the 2011 OSU Creative Lightning Awards.
 *   **Printing Methods:** Digital by J. D. Young in Tulsa, Oklahoma
 *   **Paper:** Sappi LOE Glossy 80# Cover
 *   **Size:** 9in x 3.75in
-*   [Download the Teaser Card PDF](/assets/pdf/tpact-season-rack-card.pdf)
+*   [Download the Teaser Card PDF](/pdf/tpact-season-rack-card.pdf)

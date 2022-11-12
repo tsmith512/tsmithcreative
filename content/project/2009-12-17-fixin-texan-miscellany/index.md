@@ -75,4 +75,4 @@ Awarded a Gold Medal at the 24th Annual Brass Ring Awards. Accepted to the 42nd 
 *   **Typefaces:** Absara, Buckboard
 *   **Paper:** Mohawk Via Felt (Warm White, Jute) with covers and specials on Mohawk Proterra (Chili Antique, Iris Antique, Black Antique)
 *   **Size:** 8.5in x 7in, 32 pages
-*   [Download _Fixin' To_ Mockup PDF](/assets/pdf/tu-fixinto-book.pdf) _(Certain texturization, effects, and art details are simulated and not consistent with the final printed piece.)_
+*   [Download _Fixin' To_ Mockup PDF](/pdf/tu-fixinto-book.pdf) _(Certain texturization, effects, and art details are simulated and not consistent with the final printed piece.)_

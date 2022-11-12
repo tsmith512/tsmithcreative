@@ -61,4 +61,4 @@ images:
 
 ---
 
-<p><strong>Logo, Winner Book, and Award Citations for AAF-Tulsa's ADDY44</strong></p><p><strong>Design Applications:</strong> InDesign CS5, Photoshop CS5, Illustrator CS5</p><p><strong>Typefaces:</strong> Fedra Sans Std. Logo uses a Helvetica Medium "a" with Bodoni Poster Compressed "XLIV"</p><p><a title="ADDY44 Winners Book" href="/assets/pdf/aaft-addy44-book.pdf" target="_blank"><em>Download a Screen-Resolution PDF of the Winners Book</em></a></p>
+<p><strong>Logo, Winner Book, and Award Citations for AAF-Tulsa's ADDY44</strong></p><p><strong>Design Applications:</strong> InDesign CS5, Photoshop CS5, Illustrator CS5</p><p><strong>Typefaces:</strong> Fedra Sans Std. Logo uses a Helvetica Medium "a" with Bodoni Poster Compressed "XLIV"</p><p><a title="ADDY44 Winners Book" href="/pdf/aaft-addy44-book.pdf" target="_blank"><em>Download a Screen-Resolution PDF of the Winners Book</em></a></p>

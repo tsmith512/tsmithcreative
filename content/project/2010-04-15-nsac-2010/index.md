@@ -76,4 +76,4 @@ The Plansbook was awarded a Student Gold ADDY at the 44th Tulsa ADDYs in Februar
 *   **Typefaces:** Satisfaction Pro, Absara
 *   **Paper:** Finch Fine Bright White Antique 100lb Cover and 80lb Text
 *   **Size:** 11in x 8.5in, 32 pages plus cover
-*   [Download the Plansbook PDF](/assets/pdf/tu-nsac2010-plansbook.pdf)
+*   [Download the Plansbook PDF](/pdf/tu-nsac2010-plansbook.pdf)

@@ -56,4 +56,4 @@ images:
 
 ---
 
-<ul><li><strong>Minisite, Invitation, 108-Page History and Winners Book, Table Markers, Event Programs, and Award Citations for AAF-Tulsa's ADDY44</strong></li><li><strong>Design Applications:</strong>&nbsp;InDesign CS5, Photoshop CS5, Illustrator CS5</li><li><strong>Typefaces:</strong>&nbsp;Bickham Script Pro, Gotham, Garamond Premiere Pro, Univers</li><li><a title="ADDY45 Winners Book" href="/assets/pdf/aaft-addy45-book.pdf" target="_blank"><em>Download a Screen-Resolution PDF of the Winners Book</em></a></li></ul>
+<ul><li><strong>Minisite, Invitation, 108-Page History and Winners Book, Table Markers, Event Programs, and Award Citations for AAF-Tulsa's ADDY44</strong></li><li><strong>Design Applications:</strong>&nbsp;InDesign CS5, Photoshop CS5, Illustrator CS5</li><li><strong>Typefaces:</strong>&nbsp;Bickham Script Pro, Gotham, Garamond Premiere Pro, Univers</li><li><a title="ADDY45 Winners Book" href="/pdf/aaft-addy45-book.pdf" target="_blank"><em>Download a Screen-Resolution PDF of the Winners Book</em></a></li></ul>

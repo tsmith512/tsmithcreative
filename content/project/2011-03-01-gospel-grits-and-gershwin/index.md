@@ -41,4 +41,4 @@ images:
 
 ---
 
-<ul><li><strong>Event Logo, Invitation with Reply Card, Program, and Signage</strong> for the Booker T. Washington Foundation for Excellence.</li><li><strong>Design Applications:</strong> InDesign CS5, Illustrator CS5</li><li><strong>Typefaces:</strong> Trash Hand and Neutraface</li><li><em><a title="GGG Invite" href="/assets/pdf/tu-ggg-invite.pdf">Download Invitation PDF</a></em></li></ul>
+<ul><li><strong>Event Logo, Invitation with Reply Card, Program, and Signage</strong> for the Booker T. Washington Foundation for Excellence.</li><li><strong>Design Applications:</strong> InDesign CS5, Illustrator CS5</li><li><strong>Typefaces:</strong> Trash Hand and Neutraface</li><li><em><a title="GGG Invite" href="/pdf/tu-ggg-invite.pdf">Download Invitation PDF</a></em></li></ul>
