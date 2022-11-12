@@ -29,5 +29,21 @@ export async function onRequest(context) {
   // fetch() will follow the redirect code from typography.com and the payload
   // will contain the self-hosted, user-agent-dependent CSS response.
 
-  return new Response(await payload.text());
+  if (payload.status == 200) {
+    const response = new Response(
+      await payload.text(),
+      {
+        status: 200,
+        headers: {'content-type': payload.headers.get('content-type')}
+      }
+    );
+
+    return response;
+  }
+
+  return new Response(
+    `Error: ${payload.status} - ${payload.statusText}`, {
+      status: 500
+    }
+  );
 }
