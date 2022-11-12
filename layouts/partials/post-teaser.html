@@ -1,0 +1,38 @@
+{{ $thumbnail := .Resources.GetMatch "thumbnail.*" }}
+
+<li class="post-teaser-item">
+  {{ if $thumbnail }}
+    <a href={{ .RelPermalink }} class="post-teaser-thumbnail">
+      {{ with $thumbnail }}
+        {{ $250 := $thumbnail.Resize "250x250" }}
+        {{ $500 := $thumbnail.Resize "500x500" }}
+        {{ $250wp := $thumbnail.Resize "250x250 webp" }}
+        {{ $500wp := $thumbnail.Resize "500x500 webp" }}
+        {{ $ext := .RelPermalink | replaceRE `.+\.(\w{3,4})$` "$1" | safeHTML }}
+        <picture>
+          <source
+            type="image/webp"
+            sizes="(max-width: 479px) 100vw,
+                   (max-width: 639px) 200px,
+                   225px"
+            srcset="{{ $500wp.RelPermalink }} 500w,
+                    {{ $250wp.RelPermalink }} 250w" />
+          <source
+            type="image/{{ $ext }}"
+            sizes="(max-width: 479px) 100vw,
+                   (max-width: 639px) 200px,
+                   225px"
+            srcset="{{ $500.RelPermalink }} 500w,
+                    {{ $250.RelPermalink }} 250w" />
+          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" />
+        </picture>
+      {{ end }}
+    </a>
+  {{ end }}
+
+  <div class="post-teaser-description">
+    <h2><a  href={{ .RelPermalink }}>{{ .Title }}</a></h2>
+    {{ partial "post-meta" . }}
+    {{ .Summary }}
+  </div>
+</li>

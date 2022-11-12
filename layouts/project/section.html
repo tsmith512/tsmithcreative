@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ .Content }}
+
+  <ul class="project-teaser-list">
+    {{ range $project := .Paginator.Pages }}
+      {{ partial "project-teaser" $project }}
+    {{ end }}
+  </ul>
+
+  {{ partial "pagination.html" . }}
+
+{{ end }}

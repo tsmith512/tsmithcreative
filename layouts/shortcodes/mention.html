@@ -1,0 +1,10 @@
+{{ $content := .Get 0 }}
+
+<!-- @TODO: This could be more cool one day, but for now, just make a UL and add
+a regular post teaser into it. -->
+
+{{ with (.Site.GetPage $content) }}
+  <ul class="post-teaser-list post-teaser-mention">
+    {{ partial "post-teaser" . }}
+  </ul>
+{{ end }}

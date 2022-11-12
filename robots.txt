@@ -1,5 +1,0 @@
-User-agent: Uptimebot
-Disallow: /
-
-User-agent: *
-Disallow:

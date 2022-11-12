@@ -1,0 +1,36 @@
+.pagination {
+  margin-top: 2rem;
+  text-align: center;
+
+  a, span {
+    display: inline-block;
+    background: #f6f6f6;
+    padding: 0.375rem 0.625rem;
+    margin: 0 0.375rem;
+    border-radius: 3px;
+
+    font-family: $gotham;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  a {
+    color: #fff;
+    background-color: $link;
+    text-shadow: 1px 1px 0 darken($link, 15%);
+    border: 1px solid darken($link, 15%);
+
+    &:hover, &:active {
+      background-color: $link-hover;
+    }
+  }
+
+  span {
+    color: #999;
+    text-shadow: 1px 1px 0 #FFF;
+    border: 1px solid #eee;
+  }
+}

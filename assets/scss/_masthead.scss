@@ -1,0 +1,105 @@
+.masthead {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+
+  @media (min-width: $max-lines + 40px) {
+    background-color: #222;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -30px;
+      right: -30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5) inset;
+    }
+  }
+}
+
+.masthead-content {
+  background: white;
+  box-shadow: 0 0 30px rgba(0,0,0,0.25);
+  @media (min-width: $max-lines + 40px) {
+    position: relative;
+    z-index: 100;
+    margin: 2rem auto;
+    border-top: .25em solid #ddd;
+    border-bottom: .25em solid #ddd;
+  }
+  @media (min-width: $max-lines + 40px) and (min-height: 680px) {
+    margin: 4rem auto;
+  }
+  @media (min-width: $max-lines + 40px) and (min-height: 800px) {
+    margin: 6rem auto;
+  }
+  @media (min-width: $max-lines + 40px) and (min-height: 900px) {
+    margin: 8rem auto;
+  }
+  max-width: $max-lines;
+  max-width: calc(#{$max-lines} + 2rem);
+  padding: 1rem;
+
+  h1 {
+    margin: 0;
+    font-family: $tungsten;
+    font-weight: lighter;
+
+    color: #222;
+
+    text-align: center;
+    @media (min-width: $max-lines) {
+      text-align: left;
+    }
+
+    font-size: 2.5rem;
+    @media (min-width: $max-lines) {
+      font-size: 3rem;
+    }
+    @media (min-width: $max-width + 16) {
+      font-size: 4.5rem;
+    }
+    line-height: 1.15;
+    letter-spacing: 1px;
+  }
+}
+
+.masthead-summary {
+  font-family: $gotham;
+  font-size: 1.25em;
+  color: #666;
+  margin-bottom: 0;
+
+  text-align: center;
+  @media (min-width: $max-lines) {
+    text-align: left;
+  }
+}
+
+// This is an img with a dataURI in the HTML output with a blurred placeholder
+.masthead-placeholder {
+  display: none;
+
+  @media (min-width: $max-lines + 40px) {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: blur(5px);
+      // Hugo blurs this when it shrinks, too, but a post-blur at-size looks better
+  }
+}
+
+.masthead-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: {
+    position: center center;
+    repeat: no-repeat;
+    size: cover;
+  }
+}

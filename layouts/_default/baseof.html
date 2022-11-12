@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "global/head" . }}
+  <title>{{ block "title" . }}{{ .Page.Title }} | {{ .Site.Title }}{{ end }}</title>
+</head>
+<body>
+  {{ partial "global/nav" . }}
+  {{ partial "masthead" . }}
+  <div class="wrapper">
+    {{ block "main" . }}
+      <!-- PAGE CONTENT -->
+    {{ end }}
+  </div>
+  {{ partial "global/footer" . }}
+  {{ partial "global/scripts" . }}
+</body>
+</html>

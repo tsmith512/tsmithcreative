@@ -1,0 +1,37 @@
+{{ $data := index .Page.Params.galleries (.Get 0) }}
+
+<div
+  class="gallery pswp-container"
+  data-row
+  data-count="{{ len $data }}"
+>
+  {{ range $item := $data }}
+    {{ $base := $.Page.Resources.GetMatch $item.src }}
+    {{ if $item.from }}
+      {{ $page := $.Site.GetPage $item.from }}
+      {{ $base = $page.Resources.GetMatch $item.src }}
+    {{ end }}
+    {{ with $base }}
+      {{ $large := $base.Fit "1600x1600" }}
+      <a
+        href="{{ $large.RelPermalink }}"
+        data-pswp-width="{{ $large.Width }}"
+        data-pswp-height="{{ $large.Height }}"
+        data-cropped="true"
+        class="gallery-link"
+      >
+        {{ $thumbnail := $base.Fit "400x400 center" }}
+        <div class="gallery-ir">
+          <img
+            src="{{ $thumbnail.RelPermalink }}"
+            class="gallery-thumbnail"
+            alt="{{ $item.alt }}"
+            width="{{ $thumbnail.Width }}"
+            height="{{ $thumbnail.Height }}"
+            loading="lazy"
+          />
+        </div>
+      </a>
+    {{ end }}
+  {{ end }}
+</div>
