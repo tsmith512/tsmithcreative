@@ -43,10 +43,14 @@ export async function onRequest(context) {
           // on browser support. I could probably bucket this, but I don't want
           // to have to maintain that.
           'vary': 'Accept-Encoding, User-Agent',
+          // Allow a short-term cache within a user's own browser only
+          'cache-control': 'private, max-age=604800',
         }
       }
     );
 
+    // @TODO: This could be cached to be faster, but this is good for a 1.0.
+    // Anecdotally, this went from 159ms total with two requests to ~118 with 1.
     return response;
   }
 
