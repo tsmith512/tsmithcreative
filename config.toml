@@ -30,6 +30,11 @@ timeout = 600000
 [markup.goldmark.renderer]
   unsafe = true
 
+[minify]
+  minifyOutput = true
+  [tdewolff.html]
+    keepWhitespace = false
+
 [outputs]
   home = ['HTML', 'RSS']
   page = ['HTML']
