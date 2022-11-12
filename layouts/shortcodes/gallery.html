@@ -20,15 +20,17 @@
         data-cropped="true"
         class="gallery-link"
       >
-        {{ $thumbnail := $base.Fill "400x400 center" }}
-        <img
-          src="{{ $thumbnail.RelPermalink }}"
-          class="gallery-thumbnail"
-          alt="{{ $item.alt }}"
-          width="{{ $thumbnail.Width }}"
-          height="{{ $thumbnail.Height }}"
-          loading="lazy"
-        />
+        {{ $thumbnail := $base.Fit "400x400 center" }}
+        <div class="gallery-ir">
+          <img
+            src="{{ $thumbnail.RelPermalink }}"
+            class="gallery-thumbnail"
+            alt="{{ $item.alt }}"
+            width="{{ $thumbnail.Width }}"
+            height="{{ $thumbnail.Height }}"
+            loading="lazy"
+          />
+        </div>
       </a>
     {{ end }}
   {{ end }}

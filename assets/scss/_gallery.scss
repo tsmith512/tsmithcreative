@@ -120,7 +120,15 @@ $gallery-expand: 720px;
   }
 }
 
+.gallery-ir {
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+}
+
 .gallery-thumbnail {
+  position: absolute;
   display: block;
   height: 100%;
   width: 100%;

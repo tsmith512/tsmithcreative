@@ -141,6 +141,12 @@ li ul {
 .highlight {
   font-size: 0.75em;
 
+  pre[style] {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+  }
+
   pre {
     overflow: hidden;
   }
