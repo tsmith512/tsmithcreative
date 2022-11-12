@@ -4,7 +4,33 @@
   {{ if $thumbnail }}
     <a href={{ .RelPermalink }} class="portfolio-teaser-thumbnail">
       {{ with $thumbnail }}
-        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" />
+        {{ $320 := $thumbnail.Resize "320x320" }}
+        {{ $480 := $thumbnail.Resize "480x480" }}
+        {{ $600 := $thumbnail.Resize "600x600" }}
+        {{ $320wp := $thumbnail.Resize "320x320 webp" }}
+        {{ $480wp := $thumbnail.Resize "480x480 webp" }}
+        {{ $600wp := $thumbnail.Resize "600x600 webp" }}
+        {{ $ext := .RelPermalink | replaceRE `.+\.(\w{3,4})$` "$1" | safeHTML }}
+
+        <picture>
+          <source
+            type="image/webp"
+            sizes="(max-width: 479px) 100vw,
+                   (max-width: 979px) 40vw,
+                   380px"
+            srcset="{{ $320wp.RelPermalink }} 320w,
+                    {{ $480wp.RelPermalink }} 480w,
+                    {{ $600wp.RelPermalink }} 600w" />
+          <source
+            type="image/{{ $ext }}"
+            sizes="(max-width: 479px) 100vw,
+                   (max-width: 979px) 40vw,
+                   380px"
+            srcset="{{ $320.RelPermalink }} 320w,
+                    {{ $480.RelPermalink }} 480w,
+                    {{ $600.RelPermalink }} 600w" />
+          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" />
+        </picture>
       {{ end }}
     </a>
   {{ end }}
