@@ -51,7 +51,7 @@ This makes it easy to play with alternate routes or shift hours between days.
 Last summer, I had to work during a one-way run to Seattle before a vacation,
 here are the routes I compared:
 
-<!-- @TODO: This gets stripped... -->
+<!-- @TODO: Better video handling? -->
 <p class="media">
   <video src="roadtrip-spreadsheet-example.mp4" poster="roadtrip-spreadsheet-example.png" width="1104" height="720" preload="none" controls>
   Video couldn't be embedded, but you can <a href="roadtrip-spreadsheet-example.mp4">download it</a> instead.

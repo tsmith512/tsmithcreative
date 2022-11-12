@@ -5,7 +5,6 @@
 
   {{ $home := resources.Get "scss/home.scss" }}
   {{ $homeStyle := $home | resources.ExecuteAsTemplate "scss/home.scss" . | resources.ToCSS }}
-  <!-- @TODO: That does not keep this CSS from loading and it has heavy dataURIs in it -->
   <link rel="stylesheet" type="text/css" href="{{ $homeStyle.RelPermalink }}" media="screen" />
   <title>{{ block "title" . }}{{ .Site.Title }} | {{ .Site.Params.description }}{{ end }}</title>
 </head>

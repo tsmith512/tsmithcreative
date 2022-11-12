@@ -36,7 +36,6 @@
 
 {{ $icons := resources.Get "scss/icon-art.scss" }}
 {{ $iconStyle := $icons | resources.ExecuteAsTemplate "scss/icon-art.scss" . | resources.ToCSS }}
-<!-- @TODO: That does not keep this CSS from loading and it has heavy dataURIs in it -->
 <link rel="stylesheet" type="text/css" href="{{ $iconStyle.RelPermalink }}"
   media="print" onload="this.media='screen'; this.onload=null;" />
 
@@ -44,7 +43,6 @@
 {{ if not .IsHome }}
   {{ $masthead := resources.Get "scss/masthead-photography.scss" }}
   {{ $mastheadStyle := $masthead | resources.ExecuteAsTemplate "scss/masthead-photography-processed.scss" . | resources.ToCSS }}
-  <!-- @TODO: That does not keep this CSS from loading and it has heavy dataURIs in it -->
   <link rel="stylesheet" type="text/css" href="{{ $mastheadStyle.RelPermalink }}"
     media="print" onload="this.media='screen'; this.onload=null;" />
 {{ end }}
@@ -60,7 +58,6 @@
 {{ if eq .Page.File.TranslationBaseName "contact" }}
   {{ $contact := resources.Get "scss/contact.scss" }}
   {{ $contactStyle := $contact | resources.ExecuteAsTemplate "scss/contact.scss" . | resources.ToCSS }}
-  <!-- @TODO: That does not keep this CSS from loading and it has heavy dataURIs in it -->
   <link rel="stylesheet" type="text/css" href="{{ $contactStyle.RelPermalink }}" />
 {{ end }}
 
