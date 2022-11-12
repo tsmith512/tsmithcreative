@@ -1,11 +1,28 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="/favicon.ico" />
 
-<link rel="canonical" href={canonincalURL} />
-<meta property="og:url" content={canonincalURL} />
-<meta name="twitter:url" content={canonincalURL} />
+<link rel="icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+<link rel="canonical" href="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+<meta name="description" content="{{ .Summary }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Summary }}">
+
+{{ $thumbnail := .Resources.GetMatch "thumbnail.*" }}
+{{ with $thumbnail }}
+  <meta property="og:image" content="{{ .Permalink }}">
+{{ end }}
+
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="og:site_name" content="Taylor Smith">
+<meta name="twitter:site" content="@tsmith512">
 
 <link rel="dns-prefetch" href="https://cloud.typography.com/" />
 <!-- @TODO: Async load this -->

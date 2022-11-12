@@ -1,4 +1,5 @@
 baseURL = 'https://tsmith.com/'
+author = 'Taylor Smith'
 languageCode = 'en-us'
 title = 'Taylor Smith'
 
@@ -9,6 +10,9 @@ writeStats = true
 
 # Ten minutes
 timeout = 600000
+
+[params]
+  description = 'Technical Product Manager'
 
 [frontmatter]
   date = ':filename'
