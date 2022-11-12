@@ -17,12 +17,14 @@
   {{ $base := resources.GetMatch $filename }}
   {{ with $base }}
 
-    // Set up a fallback wtih a dataURI (@TODO: Ultimately use this for a preload)
-    .masthead-{{ $year }} {
-      {{ $blurred := $base.Filter (images.GaussianBlur 10) }}
-      {{ $blurred = $blurred.Resize "100x" }}
-      background-image: url(data:image/jpeg;base64,{{ $blurred.Content | base64Encode }});
-    }
+    // @TODO this doesn't save you CLS during image load because it doesn't get
+    // used, figure out how to move this into page output instead.
+    //
+    // .masthead-{{ $year }} {
+    //   {{ $blurred := $base.Filter (images.GaussianBlur 10) }}
+    //   {{ $blurred = $blurred.Resize "100x" }}
+    //   background-image: url(data:image/jpeg;base64,{{ $blurred.Content | base64Encode }});
+    // }
 
     // And for each size, resize the image and link out to it.
     {{ range $size := $sizes }}

@@ -1,8 +1,4 @@
-$max-width: 960px;
-$max-lines: 680px;
-$gotham: "Gotham SSm A", "Gotham SSm B", "Century Gothic", Helvetica, Arial, sans-serif;
-$archer: "Archer SSm A", "Archer SSm B", Georgia, Times, serif;
-$tungsten: "Tungsten Narrow A", "Tungsten Narrow B", "Arial Narrow", Helvetica, Arial, sans-serif;
+@import 'variables';
 
 .site-header {
   background: transparent;
