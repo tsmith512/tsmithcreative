@@ -9,37 +9,37 @@ problem: >
   building vertically allow a team to prioritize better, be more agile, focus on
   delivering value rapidly, and iterate to improve a product.
 images:
-  - img: /assets/projects/estimate-to-iterate/what-to-do-with-an-epic.png
+  - img: what-to-do-with-an-epic.png
     alt: Breaking down an epic
     title: Breaking down an epic
     width: 1575
     height: 941
-  - img: /assets/projects/estimate-to-iterate/bad-story.png
+  - img: bad-story.png
     alt: Example of a poorly written user story
     title: Example of a poorly written user story
     width: 1575
     height: 875
-  - img: /assets/projects/estimate-to-iterate/slice-of-cake.png
+  - img: slice-of-cake.png
     alt: Slice of cake, not a layer of cake
     title: Slice of cake, not a layer of cake
     width: 1575
     height: 875
-  - img: /assets/projects/estimate-to-iterate/jira-tools.png
+  - img: jira-tools.png
     alt: Showing columns and subtasks in Jira
     title: Showing columns and subtasks in Jira
     width: 1575
     height: 875
-  - img: /assets/projects/estimate-to-iterate/complexity.png
+  - img: complexity.png
     alt: We can agree on complexity
     title: We can agree on complexity
     width: 1575
     height: 875
-  - img: /assets/projects/estimate-to-iterate/version-report.png
+  - img: version-report.png
     alt: Version Report in Jira
     title: Version Report in Jira
     width: 1575
     height: 875
-  - img: /assets/projects/estimate-to-iterate/IMG_20190410_173203099.jpg
+  - img: IMG_20190410_173203099.jpg
     alt: DrupalCon 2019, Seattle, Washington
     title: DrupalCon 2019, Seattle, Washington
     width: 1313
