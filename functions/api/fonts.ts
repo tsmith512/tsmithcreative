@@ -34,7 +34,10 @@ export async function onRequest(context) {
       await payload.text(),
       {
         status: 200,
-        headers: {'content-type': payload.headers.get('content-type')}
+        headers: {
+          'content-type': payload.headers.get('content-type'),
+          'content-encoding': payload.headers.get('content-encoding'),
+        }
       }
     );
 
