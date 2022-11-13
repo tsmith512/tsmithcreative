@@ -10,8 +10,23 @@
 {{ $containerClasses := slice "media" "pswp-container" }}
 {{ $contentWidths := dict "default" 960 "small" 720 "mini" 480 }}
 {{ $generateWidth := default 960 (index $contentWidths $size) }}
+
+{{ $sizesAttrribute := ""}}
+{{ $generateSizes := slice $generateWidth }}
+
 {{ if eq $size "default" }}
   {{ $containerClasses = $containerClasses | append "default" }}
+  {{ $sizesAttrribute = "(max-width: 680px) 100vw, (max-width: 975px) 680px, 960px"}}
+  {{ $generateSizes = $generateSizes | append slice 680 480 }}
+{{ end }}
+
+{{ if eq $size "small" }}
+  {{ $sizesAttrribute = "(max-width: 680px) 100vw, 680px"}}
+  {{ $generateSizes = $generateSizes | append slice 480 }}
+{{ end }}
+
+{{ if eq $size "mini" }}
+  {{ $sizesAttrribute = "(max-width: 480px) 100vw, 480px"}}
 {{ end }}
 
 {{ $mediaClasses := slice $size $noshadow }}
@@ -40,14 +55,24 @@
         data-pswp-height="{{ .Height }}"
       >
         {{ $preview := $image.Fit (printf "%dx%d" $generateWidth $generateWidth) }}
-        <img
-          src="{{ $preview.RelPermalink }}"
-          class="{{ delimit $mediaClasses " " }}"
-          alt="{{ $alt }}"
-          width="{{ $preview.Width }}"
-          height="{{ $preview.Height }}"
-          loading="lazy"
-        />
+        {{ $previewwp := $image.Fit (printf "%dx%d webp" $generateWidth $generateWidth) }}
+
+        <!-- @TODO: GenerateSizes for alternates -->
+        <picture>
+          <source
+            type="image/webp"
+            sizes="{{ $sizesAttrribute }}"
+            srcset="{{ $previewwp.RelPermalink }} {{ $previewwp.Width }}w"
+            />
+          <img
+            src="{{ $preview.RelPermalink }}"
+            class="{{ delimit $mediaClasses " " }}"
+            alt="{{ $alt }}"
+            width="{{ $preview.Width }}"
+            height="{{ $preview.Height }}"
+            loading="lazy"
+          />
+        </picture>
       </a>
     {{ end }}
   {{ end }}

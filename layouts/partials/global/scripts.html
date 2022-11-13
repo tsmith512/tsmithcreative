@@ -5,7 +5,7 @@
 <!-- Call photoswipe JS only if the page needs it -->
 {{ if .Page.Params.photoswipe }}
   {{ $photoswipeJs := resources.Match "js/special/photoswipe.js" | resources.Concat "js/photoswipe.js" | js.Build (dict "minify" true)}}
-  <script src="{{ $photoswipeJs.RelPermalink }}"></script>
+  <script defer src="{{ $photoswipeJs.RelPermalink }}"></script>
 {{ end }}
 
 <script>

@@ -26,7 +26,7 @@
 
 <!-- Global CSS -->
 {{ $scss := resources.Get "scss/global.scss" }}
-{{ $style := $scss | resources.ToCSS (dict "outputStyle" "compressed")}}
+{{ $style := $scss | resources.ToCSS (dict "outputStyle" "compressed") }}
 <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
 
 <!-- Typography.com Webfonts package -->
@@ -34,21 +34,21 @@
   media="print" onload="this.media='all'; this.onload=null;" />
 
 {{ $icons := resources.Get "scss/icon-art.scss" }}
-{{ $iconStyle := $icons | resources.ExecuteAsTemplate "scss/icon-art.scss" . | resources.ToCSS }}
+{{ $iconStyle := $icons | resources.ExecuteAsTemplate "scss/icon-art.scss" . | resources.ToCSS (dict "outputStyle" "compressed") }}
 <link rel="stylesheet" type="text/css" href="{{ $iconStyle.RelPermalink }}"
   media="print" onload="this.media='screen'; this.onload=null;" />
 
 
 {{ if not .IsHome }}
   {{ $masthead := resources.Get "scss/masthead-photography.scss" }}
-  {{ $mastheadStyle := $masthead | resources.ExecuteAsTemplate "scss/masthead-photography-processed.scss" . | resources.ToCSS }}
+  {{ $mastheadStyle := $masthead | resources.ExecuteAsTemplate "scss/masthead-photography-processed.scss" . | resources.ToCSS (dict "outputStyle" "compressed") }}
   <link rel="stylesheet" type="text/css" href="{{ $mastheadStyle.RelPermalink }}"
     media="print" onload="this.media='screen'; this.onload=null;" />
 {{ end }}
 
 
 {{ if .Page.Params.photoswipe }}
-  {{ $photoswipeCss := resources.Get "vendor/photoswipe/dist/photoswipe.css" }}
+  {{ $photoswipeCss := resources.Get "vendor/photoswipe/dist/photoswipe.css" | minify }}
   <link rel="stylesheet" type="text/css" href="{{ $photoswipeCss.RelPermalink }}"
     media="print" onload="this.media='screen'; this.onload=null;" />
 {{ end }}
@@ -56,7 +56,7 @@
 
 {{ if eq .Page.File.TranslationBaseName "contact" }}
   {{ $contact := resources.Get "scss/contact.scss" }}
-  {{ $contactStyle := $contact | resources.ExecuteAsTemplate "scss/contact.scss" . | resources.ToCSS }}
+  {{ $contactStyle := $contact | resources.ExecuteAsTemplate "scss/contact.scss" . | resources.ToCSS (dict "outputStyle" "compressed") }}
   <link rel="stylesheet" type="text/css" href="{{ $contactStyle.RelPermalink }}" />
 {{ end }}
 
