@@ -7,35 +7,33 @@ summary: >
 tags: [side projects, travel, tools]
 ---
 
-In 2015, as my then-employer was transitioning to fully distributed
+In 2015, as my then-employer was transitioning to fully remote
 ["working from home,"]({{< ref "2016-06-08-working-from-home" >}})
 I went on a wild roadtrip with some good friends. It got me thinking:
-what if that could be "working from anywhere?" As folks start to see distributed
+what if that could mean "working from anywhere?" As folks start to see distributed
 work in their futures, a few friends have asked me how I put these trips
 together.
 
 {{< media type="image" src="image.png" alt="Map of five years of roadtrip routes" >}}
 
-I think it's easier to *have* a plan that I have no real attachment to keeping
-rather than constantly winging it, so I usually make a rough itinerary. I only
-find meticulous planning to be important when I'm *working* on the road.
+I think it's easier to *have* a plan that I have no attachment to keeping rather
+than constantly winging it, so I usually make a rough itinerary. I only find
+meticulous planning to be important when I'm *working* on the road.
 
-For those, I work days and drive nights. That adds logistical constraints: the
-drive can't be too late for "a school night" and stop-overs need to be good
+In those cases, I work days and drive nights. That adds logistical constraints:
+the drive can't be too late for "a school night" and stop-overs need to be good
 places where I'll be able to get in a solid day's work in a professional
 environment — often with friends or family, hotel rooms/lobbies, or coworking
 spaces. Call quality can significantly drop off in coffee shops and restaurants;
 libraries or other public spaces can be a gamble. Having a backup plan and a
-hotspot is useful, too. Most of it comes down to what percentage of the day will
-be on video calls.
+hotspot is useful, too.
 
 {{< media type="image" size="" src="IMG_20180807_174432103.jpg" alt="Working in a hammock in a forest"  >}}
 
 And in my unsolicited opinion on the virtues of the digital nomad: don't fake
 it. Building good distributed work culture offers the opportunity to re-evaluate
 what truly makes people productive and collaborative. Let's avoid giving leaders
-reasons to backtrack to "butts-in-specific-chairs" performance monitoring, which
-isn't healthy.
+reasons to backtrack to unhealthy "butts-in-chairs" performance monitoring.
 
 So in celebration of 5 years since the
 [Pacific Coast Highway](https://tsmithphotos.com/the-pacific-coast-highway?utm_source=tsmithcreative&utm_medium=website&utm_campaign=blog),
@@ -86,30 +84,28 @@ Grab two things: my template and a Google Maps Directions API key.
 
 **Once you have a key:**
 
-1. Add your API key in the "Config" tab's B2
-2. Go back to the "Route Plan" tab, and add:
-    - Start date in B2
-    - Start city in C2
-    - Start picking destinations in D
+1. Add your API key in the "Config" tab's cell `B2`
+2. Go back to the "Route Plan" tab and add:
+    - Start date in `B2`
+    - Start city in `C2`
+    - Start picking destinations in column `D`
     - To stay more than one night in a city, just repeat that city name in each row.
 
 Be careful not to drag or cut cells in Column D; that will break formulas. Just
 overwrite or *copy*-then-paste. Columns A through C (except the first row) and E
-through G are all auto-calculated. If you try to edit these, it'll show a
+through G are all auto-calculated. If you try to edit these, there will be a
 warning. To disable that warning, open
 "[Protected Sheets and Ranges](https://support.google.com/docs/answer/1218656)"
-in the Data menu and remove the block you want to edit freely.
-
-That covers the basics. All that remains are your adventures!
+in the _Data_ menu to remove the block so you can edit freely.
 
 ---
 
-# How it works
+## How it works
 
 The magic columns are E and F, and both work using the
 [`IMPORTXML()`](https://support.google.com/docs/answer/3093342?hl=en) function
-to query Google Maps Directions API and then traverse through the XML response
-to find the answer. To pick apart an example:
+to query Google Maps Directions API and traverse the XML response to find the
+answer. To pick apart an example:
 
 {{< media type="image" src="image4.png" alt="Sample row showing a drive from Austin to Tulsa" >}}
 
@@ -131,17 +127,19 @@ The formula for E2 is:
 
 First, it checks if there is a drive on this day — are C2 (Austin, TX) and D2
 (Tulsa, OK) *both* filled in *and* not the same? If so, `IMPORTXML` runs a
-query. The response is long and includes the full directions. The spreadsheet
-pulls the summaries at the end of the `leg` element.
+query. The response includes the full directions with a route summary. The
+spreadsheet pulls the durationg and distances values from there.
 
 {{< media type="image" src="image5.png" alt="Top of the XML response from GMaps Directions API" >}}
 
 {{< media type="image" src="image6.png" alt="End of the XML response, 754 lines in total" >}}
 
-For "Estimated Hours," it grabs `value` from the `duration`, which comes in
-seconds, and — going back to the cell formula — converts it to hours and adds
-10% (`/60/60*1.1`), *then* rounds it to the nearest tenth with
-[`ROUND(value, 1)`](https://support.google.com/docs/answer/3093440?hl=en).
+_See the `xpath_query` argument `"//leg/duration/value"`._
+
+For "Estimated Hours," it grabs `value` from the `duration` (seconds) and —
+looking back at the cell formula — converts it to hours and adds 10%
+(`/60/60*1.1`), *then* rounds it to the nearest tenth with [`ROUND(value,
+1)`](https://support.google.com/docs/answer/3093440?hl=en).
 
 ``` js
 =IF(
@@ -159,12 +157,12 @@ seconds, and — going back to the cell formula — converts it to hours and add
 ```
 
 For "Estimated Miles", the formula is similar, except `IMPORTXML` looks for the
-`value` (in meters) from `distance` instead, then converts it to miles (`/1609`)
+`value` (meters) from `distance` instead, converts it to miles (`/1609`),
 and rounds it.
 
-In both cases, using the numeric `value` instead of the string ("7 hours 2
-minutes" or "452 mi") from `text` allows two things: being able to sum them for
-totals and format them based on length.
+In both cases, using the numeric `value` instead of the `text` string ("7 hours
+2 minutes" or "452 mi") allows two things: being able to sum them for
+totals and apply conditional formatting based on length.
 
 Column G, the map between stops, just does some basic cell references:
 
@@ -183,9 +181,9 @@ Dx'."
 
 {{< media type="image" src="image7.png" alt="Another sample route, focusing on columns A through D" >}}
 
-Columns A, B, and C? Those are easy. A and B both "add one to the row above" —
-Google Sheets is smart enough to properly handle `[date] + 1` correctly. C just
-copies diagonally from the previous row's D.
+Columns A, B, and C? Simpler calculations. A and B both "add one to the row
+above" — Google Sheets is smart enough to properly handle `[date] + 1`
+correctly. C copies diagonally from the previous row's Column D.
 
 ## [Named Ranges](https://support.google.com/docs/answer/63175) and [Conditional Formatting](https://support.google.com/docs/answer/78413)
 
@@ -210,8 +208,9 @@ distance/time.
 
 {{< media type="image" src="image10.png" alt="Sample route, with the date column selected to show how weekdays are highlighted" >}}
 
-Conditional formatting to highlight weekends uses `WEEKDAY()` to format `B2:B`
-with this custom formula:
+Conditional formatting to highlight weekends uses
+[`WEEKDAY()`](https://support.google.com/docs/answer/3092985?hl=en) to format
+`B2:B` with this custom formula:
 
 ``` js
 =AND(WEEKDAY(B2,3)>4,WEEKDAY(B2,3)<7)

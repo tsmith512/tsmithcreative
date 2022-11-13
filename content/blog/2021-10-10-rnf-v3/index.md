@@ -53,8 +53,7 @@ A refresher of this clutter:
 - The location service was _entirely_ unauthenticated.
 - It was built on [Silex][SILEX], a [Symfony][SYMF] 3 off-shoot _well_ beyond EOL.
 - It needed a separate proxy for things like "don't tell the Internet where I
-  sleep" and "don't follow me when we're not traveling." But if anyone ever
-  figured out the hostname for the actual backend...
+  sleep" and "don't follow me when we're not traveling."
 
 Also:
 
@@ -66,7 +65,7 @@ Also:
 
 {{< media type="image" size="" src="truck-clutch-op-cyl.jpg" alt="Reseating a clutch fluid line"  >}}
 
-And this site has always been my playground to fiddle with interesting tech
+And that site has always been my playground to fiddle with interesting tech
 and learn new things. As I ramp up as a new Product Manager at Cloudflare,
 just how much can I orange-cloud\* Route Not Found? It's professional
 development, _I promise._
@@ -91,7 +90,7 @@ The **Location Service Worker** is the _key new piece,_ running on the
 
 - Receives GPS history from my phone
 - Gets information about those waypoints using [Google Maps Geocoding API][GMAPS]
-- Writes/reads these data to the database on _Alfa_ connected via a [Tunnels][TUNNEL] backhaul
+- Writes/reads these data to the database on _Alfa,_ connected via a [Tunnels][TUNNEL] backhaul
 - Does additional filtering on location history
 - Aggregates some interesting stats
 - Requires authentication for operations that read anything unfiltered _or_
@@ -121,11 +120,11 @@ for two extensions:
 
 - **[PostGIS][PGIS]** adds geographic and geometric types, functions,
   and aggregators. Rather than writing code myself in the Worker to do
-  map-math or assemble GeoJSON, Postgres can do it for me, faster,
+  geographic math or assemble GeoJSON, Postgres can do it for me, faster,
   eliminating round-trips to the database.
 - **[PostgREST][PRST]** is a middleware service that exposes a PostgreSQL
   instance via an authenticated HTTP API. Workers can't open raw TCP
-  connections, but they can [`fetch`][FETCH]. A colleague
+  connections (yet!), but they can [`fetch`][FETCH]. A colleague
   [recently wrote a post about this][CFBLOG], which helped me get started.
 
 Also, I restructured the database to expose location history in a `VIEW` which
@@ -177,7 +176,7 @@ the 4Runner I still miss.
 
 ---
 
-_Disclaimer: I am a Cloudflare employee and built this as a way to kick some tires on our product line, some of which is made available to me for free --- although the Free Plan would cover everything but my use of Stream and APO (and Tunnels, assuming I don't get too popular). This is not an endorsement of our wacky hobbies, nor is it product documentation or security guidance._
+_Disclaimer: I am a Cloudflare employee and built this as a way to kick some tires on our product line, some of which is made available to me for free --- although the Free Plan would cover everything but my use of Stream and APO. This is not an endorsement of our wacky hobbies, nor is it product documentation or security guidance._
 
 [PCH]: https://tsmithphotos.com/the-pacific-coast-highway?utm_source=tsmithcreative&utm_medium=website&utm_campaign=blog
 [TQOR]: https://tsmithphotos.com/overland-in-the-southwest?utm_source=tsmithcreative&utm_medium=website&utm_campaign=blog

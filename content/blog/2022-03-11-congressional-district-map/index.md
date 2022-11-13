@@ -17,7 +17,7 @@ galleries:
 ---
 
 For the 2022 midterms, two interesting things happened: Texas redistricted in a
-way that unified much of Central and West Austin into a new consolidated
+way that unified much of Central and West Austin into a new, consolidated
 district _and_ a good friend of mine decided to enter the Primaries to represent
 that district.
 
@@ -29,8 +29,8 @@ included --- wondered, "am I even in this district?"
 
 {{< media type="image" size="mini" src="map.png" alt="Map of Austin, TX and the 37th Congressional District"  >}}
 
-I even got to watch as a well-informed friend used the map on her phone to
-realize, "Oh wow, I thought I was still in the 25th. And if I didn't know..."
+I watched as a well-informed friend used the map on her phone to discover,
+"Oh wow, I thought I was still in the 25th. And if I didn't know..."
 Our collective confusion is warranted; the last time our legislature picked
 their own voters, they divvied up Austin
 [this way](https://dvr.capitol.texas.gov/Congress/58/PLANC2100):
@@ -62,25 +62,19 @@ custom [Tileset](https://docs.mapbox.com/studio-manual/reference/tilesets/).
 
 This let me do two things:
 
-- Add and style district boundaries on the map
+- Add and stylize district boundaries on the map
 - Look up the district for a given location using the
   [Tilequery API](https://docs.mapbox.com/api/maps/tilequery/)
 
 ## Designing a Branded Map
 
-I started with one of the [Mapbox Gallery](https://www.mapbox.com/gallery/)
-examples then customized it to better match the campaign's visual style and
-simplify some unneeded details.
+I started with a [Mapbox Gallery](https://www.mapbox.com/gallery/) example, then
+customized it to better match the campaign's identity and simplify some elements.
 
-I added the tileset in four different ways, as seen in the selected layers.
-From top to bottom:
+I used the tileset to draw and label each district, with additional emphasis on
+the 37th.
 
 {{< media type="image" size="" src="map-layers.png" alt="Custom Map in Mapbox Studio"  >}}
-
-- Text layer to print all districts' numbers on the map.
-- Line layer to draw a bright white border around _only the 37th._
-- Line layer to draw a blue border around all districts.
-- Fill layer to put a bright blue background under _only the 37th._
 
 ### Printed Output
 
@@ -93,17 +87,16 @@ _From one of the door-to-door canvassing days:_
 
 ## Creating the Map Site
 
-I discovered [Parcel.js](https://parceljs.org/) while looking for an easy build
-tool that would help me collect and transpile the Mapbox JS/CSS, my TypeScript,
-light SCSS, and some repetitive HTML. On build, it generates a static site that
-users could either access directly or as an embed on the official campaign
-website on Wix.
+I used [Parcel.js](https://parceljs.org/) as a simple build tool that would
+collect and transpile the Mapbox JS/CSS, my TypeScript, light SCSS, and some
+repetitive HTML. On build, it generates a static site that users can access
+directly or as an embed on the official campaign website on Wix.
 
 ### The Base Map
 
-Loading a map into an HTML element is easy: just add `<div id='map'></div>` to a
-page and make it big. This goes one step further to disable the 3D tilt and
-rotation because my map style is flat.
+Loading a map into an HTML element is easy: just add a container like
+`<div id='map'></div>` to a page. I also disabled the 3D tilt and rotation
+because my map style is flat.
 
 ``` ts
 
@@ -144,25 +137,23 @@ wanted to allow three methods:
 3. Use device geolocation
 
 **Tap:** `mapbox-gl` fires a click event when someone clicks or taps a point on
-the map. That's easy to handle and the `Event` passed to the callback will have
-a `lngLat` object.
+the map. The `Event` passed to the callback will have a `lngLat` object which
+corresponds to the location the user indicated.
 
 ``` ts
-
   map.on('click', (e) => {
     getTxDistrict(e.lngLat);
   });
-
 ```
 
 **Search:** Mapbox provides a great geocoder search control in
 [another library](https://github.com/mapbox/mapbox-gl-geocoder).
-It adds a simple search box in the top right corner that offers autocompletion
-of street addresses and handles all the API interaction out-of-the-box. When a
-result is selected, the `results` payload includes a `center`.
+It adds a simple search box in the top right corner of the map that offers
+autocompletion of street addresses and handles all the API interaction
+out-of-the-box. When a result is selected, the `results` payload includes a
+`center` with coordinates for the given address.
 
 ``` ts
-
   import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
   const map = new Map({ /* ... */ });
   const accessToken = '...';
@@ -181,21 +172,19 @@ result is selected, the `results` payload includes a `center`.
       getTxDistrict({ lng: point[0], lat: point[1] });
     }
   });
-
 ```
 
-**Geolocation:** Implementation was straightforward but UX got a bit tricky. The
-campaign site on Wix wouldn't allow geolocation permission to be passed to the
-embedded iframe, among other problems. I didn't want to show a broken locate
-button --- or worse --- a clickable button that would error out.
+**Geolocation:** Implementation was straightforward but UX was tricky. The
+campaign site on Wix would not allow geolocation permission to be passed to the
+embedded iframe. I didn't want to show a disabled locate button --- or worse ---
+a clickable button that would error out.
 
 Deep in `mapbox-gl`'s own `GeolocateControl`, there is a function to determine
 if a browser or current viewport context allows access to the
 [Geolocation Web API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API).
-I adapted this check from their `checkGeolocationSupport()`.
+I adapted this check from their `checkGeolocationSupport()` function.
 
 ``` ts
-
   const ifGeoSupported = (callback: (x: boolean) => void): void => {
     let supportsGeolocation = false;
 
@@ -213,17 +202,16 @@ I adapted this check from their `checkGeolocationSupport()`.
       callback(supportsGeolocation);
     }
   };
-
 ```
 
 From there, when a user loads the page, _if geolocation is supported_ by the
 browser and device _and also_ the site isn't being accessed through the Wix
 embed, it initializes the `GeolocationControl` and adds it to the map. When
 geolocation is requested by the user _and_ they give their permission, the
-`data` payload will have a `coords` pair, if successful.
+`data` payload will have a `coords` pair with the user's GPS position, if
+successful.
 
 ``` ts
-
   import { Map, GeolocateControl } from 'mapbox-gl';
   const map = new Map({ /* ... */ });
   const accessToken = '...';
@@ -261,7 +249,6 @@ geolocation is requested by the user _and_ they give their permission, the
   };
 
   ifGeoSupported(setupGeolocator);
-
 ```
 
 {{< media type="image" size="" src="handheld-cropped-2.jpg" alt="Showing the district map on a handheld device"  >}}
@@ -270,49 +257,46 @@ geolocation is requested by the user _and_ they give their permission, the
 
 Each of these event handlers passes the coordinates to a simple function that
 makes a [Tilequery API](https://docs.mapbox.com/api/maps/tilequery/) request to
-ask, essentially, "what shapes in the tileset contain this point?"
+ask, essentially, "what shape in the tileset contains this point?"
 
-For example, what district is the Texas Capitol in? (Ours!)
+For example, what district is the Texas Capitol building in? (Ours!)
 
 ``` json
-
-{
+  {
     "type": "FeatureCollection",
     "features": [
-        {
-            "type": "Feature",
-            "id": 37,             // <-- The answer
-            "geometry": {
-              "type": "Point",
-                "coordinates": [
-                  -97.7405,
-                    30.2740
-                ]
-            },
-            "properties": {
-              "District": 37,     // <-- The answer also *
-                "tilequery": {
-                    "distance": 0,
-                    "geometry": "polygon",
-                    "layer": "planc2193-b0e2m6"
-                }
-            }
+      {
+        "type": "Feature",
+        "id": 37,           // <-- The answer
+        "geometry": {
+          "type": "Point",
+            "coordinates": [
+              -97.7405,
+              30.2740
+            ]
+        },
+        "properties": {
+          "District": 37,   // <-- The answer also *
+          "tilequery": {
+            "distance": 0,
+            "geometry": "polygon",
+            "layer": "planc2193-b0e2m6"
+          }
         }
+      }
     ]
-}
-
+  }
 ```
 
 \*_The district number is included both as the numeric ID of the polygon and also as the value for its "District" property._
 
 After receiving the district information, `getTxDistrict` moves a
 [Marker and a Popup](https://docs.mapbox.com/mapbox-gl-js/api/markers/) to the
-search location and adds a message explaining if the search is in our district,
+search location. Then it adds a message explaining if the search is in our district,
 a different district, or if there was an error (likely the search location was
 outside of Texas).
 
 ``` ts
-
   import { Map, Marker, Popup } from 'mapbox-gl';
   const map = new Map({ /* ... */ });
   const accessToken = '...';
@@ -352,16 +336,14 @@ outside of Texas).
         }
       });
   };
-
 ```
 
 ## Static Site Hosting
 
 I hooked up my [repository](https://github.com/tsmith512/cjatx-map) to
-Cloudflare [Pages](https://pages.cloudflare.com/) so that updates would be built
-automatically and we wouldn't need additional hosting infrastructure. Then I
-added `map.chrisjonesatx.com` as a custom domain and turned on Web Analytics to
-get some basic stats.
+Cloudflare [Pages](https://pages.cloudflare.com/) so for simple hosting
+infrastructure and automatic deployments. Then I added `map.chrisjonesatx.com`
+as a custom domain and turned on Web Analytics to get some basic stats.
 
 {{< media type="image" size="mini" src="cf-pages.png" alt="Cloudflare Pages Dashboard"  >}}
 
