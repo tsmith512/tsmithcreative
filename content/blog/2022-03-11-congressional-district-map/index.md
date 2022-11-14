@@ -95,8 +95,9 @@ directly or as an embed on the official campaign website on Wix.
 ### The Base Map
 
 Loading a map into an HTML element is easy: just add a container like
-`<div id='map'></div>` to a page. I also disabled the 3D tilt and rotation
-because my map style is flat.
+`<div id='map'></div>` to a page and target it when initializing a `Map()`
+instance. In the `Map` object options here, I also disabled the 3D tilt and
+rotation because my map style is flat.
 
 ``` ts
 
@@ -122,7 +123,7 @@ because my map style is flat.
 
 ```
 
-But what did we want users to do?
+But what did we want users to _do?_
 
 {{< media type="image" size="" src="handheld-cropped.jpg" alt="Showing the district map on a handheld device"  >}}
 
@@ -138,7 +139,8 @@ wanted to allow three methods:
 
 **Tap:** `mapbox-gl` fires a click event when someone clicks or taps a point on
 the map. The `Event` passed to the callback will have a `lngLat` object which
-corresponds to the location the user indicated.
+corresponds to the location the user indicated. That is easy to pass as-is to
+our custom `getTxDistrict` callback detailed further down.
 
 ``` ts
   map.on('click', (e) => {
@@ -174,7 +176,8 @@ out-of-the-box. When a result is selected, the `results` payload includes a
   });
 ```
 
-**Geolocation:** Implementation was straightforward but UX was tricky. The
+**Geolocation:** Mapbox also has a built-in control for this, but while
+implementation was straightforward, our UX faced a complication. The
 campaign site on Wix would not allow geolocation permission to be passed to the
 embedded iframe. I didn't want to show a disabled locate button --- or worse ---
 a clickable button that would error out.
@@ -182,7 +185,7 @@ a clickable button that would error out.
 Deep in `mapbox-gl`'s own `GeolocateControl`, there is a function to determine
 if a browser or current viewport context allows access to the
 [Geolocation Web API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API).
-I adapted this check from their `checkGeolocationSupport()` function.
+I adapted this check from their `checkGeolocationSupport()` function:
 
 ``` ts
   const ifGeoSupported = (callback: (x: boolean) => void): void => {
@@ -206,10 +209,10 @@ I adapted this check from their `checkGeolocationSupport()` function.
 
 From there, when a user loads the page, _if geolocation is supported_ by the
 browser and device _and also_ the site isn't being accessed through the Wix
-embed, it initializes the `GeolocationControl` and adds it to the map. When
-geolocation is requested by the user _and_ they give their permission, the
-`data` payload will have a `coords` pair with the user's GPS position, if
-successful.
+embed, it initializes the `GeolocationControl` and adds it to the map, which is
+simple out-of-the-box. When geolocation is requested by the user, they will be
+prompted for permissions. If provided, the `data` payload will have a `coords`
+pair with the user's GPS position, if successful.
 
 ``` ts
   import { Map, GeolocateControl } from 'mapbox-gl';
