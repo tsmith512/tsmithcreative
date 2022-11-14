@@ -1,0 +1,155 @@
+@import 'variables';
+
+$background-swap-min-width: 960px;
+$background-swap-min-height: 700px;
+
+{{ $bg := resources.GetMatch "/img/home-background.jpg" }}
+{{ $bg1200 := $bg.Resize "1200x" }}
+{{ $bg1600 := $bg.Resize "1600x" }}
+{{ $bg1800 := $bg.Resize "1800x" }}
+{{ $bg2400 := $bg.Resize "2400x" }}
+
+.home {
+  min-height: 100vh;
+
+  // The grey pattern
+  background-image: url("/gfx/home-pattern.gif");
+
+  // Lots of repositioning the background-position here and the article
+  // transform a little later in this file to accomplish putting, as much as
+  // possible, the text box over the sky instead of over the edge of a rockface.
+  @media screen and (min-width: $background-swap-min-width) {
+    background-image: url("{{ $bg1200.RelPermalink }}");
+    background-size: cover;
+    background-position: 20% 30%;
+  }
+  @media screen and (min-width: 1100px) and (min-height: 800px) {
+    background-position: 25% 30%;
+  }
+  @media screen and (min-width: 1500px) and (min-height: 800px) {
+    background-image: url("{{ $bg1600.RelPermalink }}");
+  }
+  @media screen and (min-width: 1700px) and (min-height: 800px) {
+    background-image: url("{{ $bg1800.RelPermalink }}");
+  }
+  @media screen and (min-width: 2200px) and (min-height: 800px) {
+    background-image: url("{{ $bg2400.RelPermalink }}");
+  }
+
+  .site-header {
+    position: static;
+
+    @media screen and (min-width: $background-swap-min-width) {
+      // Show darker logo because the background photo is sky
+      h1 a {
+        background-image: url('/gfx/logo-dark.svg');
+      }
+
+      // Show darker links because the background photo is sky
+      nav a {
+        color: #3347af;
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+
+        &:hover {
+          border-top-color: #3347af;
+          color: #3957f1;
+        }
+      }
+    }
+  }
+
+  article {
+    margin: 2em;
+    max-width: $max-lines;
+
+    @media screen and (min-width: $max-lines) {
+      margin: 2em auto;
+    }
+
+    @media screen and (min-width: $background-swap-min-width) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-25%);
+    }
+
+    @media screen and (min-width: 1100px) and (min-height: 700px) {
+      transform: translateY(-50%) translateX(-15%);
+    }
+
+    @media screen and (min-width: 960px) and (min-height: 1100px) {
+      transform: translateY(-90%) translateX(-25%);
+    }
+
+    @media screen and (min-width: 1300px) and (min-height: 700px) {
+      transform: translateY(-90%) translateX(-30%);
+    }
+
+    @media screen and (min-width: 1600px) and (min-height: 700px) {
+      transform: translateY(-90%) translateX(-50%);
+    }
+
+    .content {
+      background: white;
+      border-top: 0.25em solid #ddd;
+      border-bottom: 0.25em solid #ddd;
+      padding: 0 1em;
+    }
+
+    h1 {
+      font-family: $tungsten;
+      font-size: 4em;
+      @media screen and (min-width: 600px) { font-size: 5em; }
+      @media screen and (min-width: (min-width 900px) (min-height 900px)) { font-size: 5em; }
+      margin: 0;
+      color: white;
+
+      @media screen and (min-width: $background-swap-min-width) {
+        color: #31324c;
+
+        span {
+          color: #50517c;
+        }
+      }
+
+      span {
+        display: inline-block; // To prevent a break in the middle of this line.
+      }
+    }
+
+    .avatar {
+      // flex-basis: calc(25% - 0.5em);
+    }
+
+    img {
+      display: block;
+    }
+
+    p {
+      font-family: $gotham;
+    }
+
+    .fade {
+      opacity: 0.5;
+    }
+  }
+
+  .site-footer {
+    border-top: 0;
+
+    .copy {
+      color: white;
+      text-shadow: 1px 1px 0 black;
+    }
+
+    @media screen and (min-width: 720px) {
+      position: absolute;
+      bottom: 0;
+      width: calc(100% - 4em);
+    }
+    @media screen and (min-width: 1000px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

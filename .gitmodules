@@ -1,0 +1,3 @@
+[submodule "assets/vendor/photoswipe"]
+	path = assets/vendor/photoswipe
+	url = https://github.com/dimsemenov/PhotoSwipe.git

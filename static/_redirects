@@ -1,0 +1,15 @@
+/feed.xml /rss.xml 301
+
+/email-me /contact/ 301
+/gallery/theatre /pdf/taylor-smith-resume-theatrical.pdf 301
+/file/resume /pdf/taylor-smith-resume.pdf 301
+
+/article/custom-styles-wordpress-visual-editor /blog/2013/wordpress-theme-editor/
+/article/gittin-started-pantheon-multidev-fk /blog/2013/pantheon-multidev/
+/article/change-page-template-based-panels-layout /blog/2013/panels-page-tpl/
+/article/nodejs-rpi-ikea-trophy-lighting /blog/2013/ikea-raspberry-pi-light/
+/article/building-personalized-portfolio-experience-drupal-7 /blog/2013/drupal-7-portfolio-experience/
+/article/rescuing-myself-email-monster-javascript-fk /blog/2014/scripting-gmail/
+/article/callboard /blog/2014/callboard-theatre-js/
+/article/nth-child-mathematics /blog/2014/nth-child-math/
+/article/cleaner-history-interactive-commit-building-git /blog/2016/git-interactive-adding/

@@ -1,0 +1,70 @@
+.site-footer {
+  margin: 2rem 1rem;
+  padding: 1rem 0;
+  border-top: 2px solid #ddd;
+  overflow: hidden;
+
+  @media (min-width: $masthead-box) {
+    margin: 2rem;
+    max-width: 960px;
+  }
+
+  @media (min-width: $masthead-banner-full) {
+    width: 960px;
+    margin: 2rem auto 1rem auto;
+  }
+}
+
+.site-footer-copy {
+  font-family: $gotham;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #999;
+
+  text-align: center;
+
+  .home & {
+    color: #fff;
+  }
+
+  @media (min-width: $footer-two-column) {
+    float: left;
+    text-align: left;
+    margin-top: 8px; // To better match the visual height of the social icons on the right
+  }
+}
+
+.site-footer-links {
+  text-align: center;
+  margin-top: 1rem;
+
+  @media (min-width: $footer-two-column) {
+    float: right;
+    text-align: right;
+    margin-top: 0;
+  }
+
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    // text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    width: 28px;
+    height: 28px;
+
+    background-position: center center;
+    background-size: contain;
+  }
+}

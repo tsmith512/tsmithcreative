@@ -1,0 +1,40 @@
+.post-teaser-list {
+  max-width: $max-lines;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.post-teaser-item {
+  overflow: hidden;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1em;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.post-teaser-thumbnail {
+  display: block;
+  margin-bottom: 1em;
+
+  @media screen and (min-width: 480px) {
+    float: left;
+    max-width: 33%;
+    margin: 0 1em 0 0;
+  }
+}
+
+.post-teaser-description {
+  overflow: hidden;
+}

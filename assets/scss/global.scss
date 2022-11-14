@@ -1,0 +1,253 @@
+@import 'variables';
+@import 'normalize';
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $archer;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.15;
+}
+
+
+a, a:link {
+  color: $link;
+}
+
+a:hover, a:active {
+  color: $link-hover;
+}
+
+iframe {
+  width: 100%;
+  margin: 1em auto;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.2s ease-out;
+
+  &[data-src] {
+    opacity: 0;
+  }
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.wrapper {
+  @extend %clearfix;
+  max-width: $max-width;
+  margin: 1rem;
+
+  @media (min-width: $max-width) {
+    margin: 1rem auto;
+  }
+}
+
+blockquote {
+  position: relative;
+  padding: 1em 2em 0;
+  border-left: 1px solid #ccc;
+  margin: 2em 0 3em 0;
+
+  font-family: $gotham;
+
+  cite {
+    font-size: 0.875em;
+
+    em {
+      font-style: normal;
+    }
+  }
+}
+
+blockquote:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -0.25em;
+  left: -1.25em;
+
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 0.5rem solid white;
+  margin-right: 0.5rem;
+
+  // This is boosted from .icon styles and the SVG from icon-quote-light
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M13%2014.725c0-5.141%203.892-10.519%2010-11.725l.984%202.126c-2.215.835-4.163%203.742-4.38%205.746%202.491.392%204.396%202.547%204.396%205.149%200%203.182-2.584%204.979-5.199%204.979-3.015%200-5.801-2.305-5.801-6.275zm-13%200c0-5.141%203.892-10.519%2010-11.725l.984%202.126c-2.215.835-4.163%203.742-4.38%205.746%202.491.392%204.396%202.547%204.396%205.149%200%203.182-2.584%204.979-5.199%204.979-3.015%200-5.801-2.305-5.801-6.275z%22%20fill%3D%22%23CCCCCC%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  overflow: hidden;
+  text-indent: 100%;
+}
+
+hr {
+  border: 2px solid #eee;
+  margin: 2em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dashed black;
+  text-decoration: none;
+}
+
+code, kbd, samp, pre {
+  font-family: Consolas, Menlo, monospace;
+}
+
+p, li {
+  // For inline code (just individual words/names/commands in `backticks`),
+  // shrink it slightly so it lines up better with the copy.
+  code {
+    font-size: .875em;
+  }
+}
+
+li ul {
+  margin-top: 1em;
+}
+
+.highlight {
+  font-size: 0.75em;
+
+  pre[style] {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+  }
+
+  pre {
+    overflow: hidden;
+  }
+
+  code {
+    padding: 1em 0;
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+.update {
+  background: #ebf7ed; // #f6f6f6;
+  color: #085014;
+  border: 1px solid #c1dec6; // #eee;
+  margin: 1em -1em;
+  padding: 1em;
+
+  .update-intro {
+    display: block;
+    font-family: $gotham;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #138a28;
+    margin-bottom: 0.5em;
+    color: #138a28;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.collapsed {
+  background: #ebf1f7; // #f6f6f6;
+  color: #082c50;
+  border: 1px solid #c1d0de; // #eee;
+  margin: 1em -1em;
+  padding: 1em;
+
+  .collapsed-intro {
+    display: block;
+    font-family: $gotham;
+    font-weight: normal; // HTML is H2, so it's bold by default
+    text-transform: uppercase;
+    font-size: 0.75em;
+    margin: 0;
+
+    a {
+      display: block;
+      color: #134e8a;
+      text-decoration: none;
+      &:hover {
+        color: lighten(#134e8a, 10%);
+      }
+
+      &:before {
+        content: "\25bc ";
+        margin-right: 0.5em;
+      }
+    }
+
+  }
+
+  .collapsed-content {
+    display: none;
+  }
+
+  &.open {
+    .collapsed-intro {
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid #134e8a;
+      margin-bottom: 0.5em;
+      a:before {
+        content: "\25b2 ";
+      }
+    }
+
+    .collapsed-content {
+      display: block;
+    }
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+@import 'nav';
+@import 'icon';
+@import 'masthead';
+@import 'media';
+@import 'gallery';
+@import 'post';
+@import 'portfolio-teaser';
+@import 'post-teaser';
+@import 'post-meta';
+@import 'project';
+@import 'project-teaser';
+@import 'pagination';
+@import 'footer';
+@import 'browser-frame';

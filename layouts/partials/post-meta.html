@@ -1,0 +1,28 @@
+<div class="post-meta">
+  <dl>
+    {{ if .Date }}
+      <dt><span class="icon icon-calendar">Published</span></dt>
+      <dd class="date">{{ .Date | time.Format ":date_long" }}</dd>
+    {{ end }}
+
+    {{ if .Params.citation }}
+      <dt><span class="icon icon-penpaper">Appears On</span></dt>
+      <dd class="citation">
+        Written for and appears on <a href="{{ index .Params.citation 1 }}">
+          {{ $pub := index .Params.citation 0 }}
+          {{ index $.Site.Data.citations $pub | safeHTML }}
+        </a></dd>
+    {{ end }}
+
+    {{ if (.GetTerms "tags") }}
+      <dt><span class="icon icon-tags">Tags</span></dt>
+      <dd class="tags">
+        <ul>
+          {{ range (.GetTerms "tags") }}
+            <li>{{ .LinkTitle }}</li>
+          {{ end }}
+        </ul>
+      </dd>
+    {{ end }}
+  </dl>
+</div>

@@ -1,0 +1,61 @@
+.browser-frame {
+
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  box-shadow: 0 0 8px rgba(0,0,0,0.25);
+
+  padding: 0;
+
+  @media (min-width: $max-width + 16) {
+    margin-left: -(($max-width - $max-lines) / 2);
+    margin-right: -(($max-width - $max-lines) / 2);
+  }
+
+  iframe {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+  }
+}
+
+.browser-frame-header {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+
+  // @TODO: This gets weird on mobile
+  height: (148px / 2);
+
+  div {
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .left {
+    flex: 0 1 (600px / 2);
+    background-image: url('/gfx/browser-frame-left.png');
+    background-size: contain;
+  }
+  .fill {
+    display: none;
+    flex: 1 0 auto;
+    background-image: url('/gfx/browser-frame-filler.png');
+    background-repeat: repeat-x;
+    background-size: cover;
+    @media (min-width: 488px) {
+      display: flex;
+    }
+    @media (min-width: 515px) {
+      background-size: contain;
+    }
+  }
+  .right {
+    flex: 0 1 (288px / 2);
+    background-image: url('/gfx/browser-frame-right.png');
+    background-size: contain;
+  }
+}

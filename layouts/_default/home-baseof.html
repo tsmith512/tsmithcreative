@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "global/head" . }}
+
+  {{ $home := resources.Get "scss/home.scss" }}
+  {{ $homeStyle := $home | resources.ExecuteAsTemplate "scss/home.scss" . | resources.ToCSS }}
+  <link rel="stylesheet" type="text/css" href="{{ $homeStyle.RelPermalink }}" media="screen" />
+  <title>{{ block "title" . }}{{ .Site.Title }} | {{ .Site.Params.description }}{{ end }}</title>
+</head>
+<body class="home">
+  {{ partial "global/nav" . }}
+  <div class="wrapper">
+    {{ block "main" . }}
+      <!-- PAGE CONTENT -->
+    {{ end }}
+  </div>
+  {{ partial "global/footer" . }}
+  {{ partial "global/scripts" . }}
+</body>
+</html>

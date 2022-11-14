@@ -1,0 +1,51 @@
+baseURL = 'https://tsmith.com/'
+author = 'Taylor Smith'
+languageCode = 'en-us'
+title = 'Taylor Smith'
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+writeStats = true
+
+# Ten minutes
+timeout = 600000
+
+[params]
+  description = 'Technical Product Manager'
+
+[frontmatter]
+  date = ':filename'
+
+[permalinks]
+  blog = '/blog/:year/:slug/'
+  project = '/project/:slug/'
+
+[markup.highlight]
+  style = 'monokailight'
+  tabWidth = 2
+
+# I have a lot of static HTML from posts about experiments and I'm the only
+# author, so I accept this -- unsafe just allows raw HTML.
+[markup.goldmark.renderer]
+  unsafe = true
+
+[minify]
+  minifyOutput = true
+  [tdewolff.html]
+    keepWhitespace = false
+
+[outputs]
+  home = ['HTML', 'RSS']
+  page = ['HTML']
+  section = ['HTML']
+  taxonomyTerm = ['HTML']
+  taxonomy = ['HTML']
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = 'application/rss'
+    baseName = 'rss'
+
+[services.rss]
+  limit = 10

@@ -1,0 +1,23 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  overflow: hidden;
+  text-indent: 100%;
+
+  filter: brightness(1.25);
+}
+
+.home .icon {
+  filter: brightness(2);
+}

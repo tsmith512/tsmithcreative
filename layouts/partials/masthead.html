@@ -1,0 +1,22 @@
+{{ $year := cond (gt .Date.Year 1) .Date.Year "page" }}
+
+<div class="masthead masthead-{{ $year }}">
+  <div class="masthead-content">
+    <h1>{{ .Title }}</h1>
+
+    {{ partial "post-meta" . }}
+
+    <section class="masthead-summary">
+      {{ .Summary }}
+    </section>
+
+  </div>
+  {{ $filename := printf "/img/masthead/%s.jpg" (string $year) }}
+  {{ $base := resources.GetMatch $filename }}
+  {{ with $base }}
+    {{ $blurred := $base.Filter (images.GaussianBlur 10) }}
+    {{ $blurred = $blurred.Resize "100x" }}
+    <img src="data:image/jpeg;base64,{{ $blurred.Content | base64Encode }}" class="masthead-placeholder" />
+    <div class="masthead-overlay"></div>
+  {{ end }}
+</div>

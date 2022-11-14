@@ -1,0 +1,69 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+<link rel="canonical" href="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+<meta name="description" content="{{ .Summary }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Summary }}">
+
+{{ $thumbnail := .Resources.GetMatch "thumbnail.*" }}
+{{ with $thumbnail }}
+  <meta property="og:image" content="{{ .Permalink }}">
+{{ end }}
+
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="og:site_name" content="Taylor Smith">
+<meta name="twitter:site" content="@tsmith512">
+
+<!-- Global CSS -->
+{{ $scss := resources.Get "scss/global.scss" }}
+{{ $style := $scss | resources.ToCSS (dict "outputStyle" "compressed") }}
+<link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
+
+<!-- Typography.com Webfonts package -->
+<link rel="stylesheet" href="/api/fonts"
+  media="print" onload="this.media='all'; this.onload=null;" />
+
+{{ $icons := resources.Get "scss/icon-art.scss" }}
+{{ $iconStyle := $icons | resources.ExecuteAsTemplate "scss/icon-art.scss" . | resources.ToCSS (dict "outputStyle" "compressed") }}
+<link rel="stylesheet" type="text/css" href="{{ $iconStyle.RelPermalink }}"
+  media="print" onload="this.media='screen'; this.onload=null;" />
+
+
+{{ if not .IsHome }}
+  {{ $masthead := resources.Get "scss/masthead-photography.scss" }}
+  {{ $mastheadStyle := $masthead | resources.ExecuteAsTemplate "scss/masthead-photography-processed.scss" . | resources.ToCSS (dict "outputStyle" "compressed") }}
+  <link rel="stylesheet" type="text/css" href="{{ $mastheadStyle.RelPermalink }}"
+    media="print" onload="this.media='screen'; this.onload=null;" />
+{{ end }}
+
+
+{{ if .Page.Params.photoswipe }}
+  {{ $photoswipeCss := resources.Get "vendor/photoswipe/dist/photoswipe.css" | minify }}
+  <link rel="stylesheet" type="text/css" href="{{ $photoswipeCss.RelPermalink }}"
+    media="print" onload="this.media='screen'; this.onload=null;" />
+{{ end }}
+
+
+{{ if eq .Page.File.TranslationBaseName "contact" }}
+  {{ $contact := resources.Get "scss/contact.scss" }}
+  {{ $contactStyle := $contact | resources.ExecuteAsTemplate "scss/contact.scss" . | resources.ToCSS (dict "outputStyle" "compressed") }}
+  <link rel="stylesheet" type="text/css" href="{{ $contactStyle.RelPermalink }}" />
+{{ end }}
+
+{{ with .OutputFormats.Get "rss" }}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end }}
+
+{{ if or .Page.Params.noindex .Page.Params.citation }}
+  <meta name="robots" content="noindex" />
+{{ end }}

@@ -1,0 +1,34 @@
+.post-meta {
+  dl {
+    font-family: $gotham;
+    color: #999;
+    margin: 0 auto 1em auto;
+
+    dt {
+      float: left;
+      clear: right;
+      margin-right: 0.5rem;
+    }
+
+    dd {
+      margin: 0;
+
+      &.date {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; // Don't wrap around the tag icon
+
+    li {
+      display: inline-block;
+      background: #f0f0f0;
+      margin: 0 0.25rem;
+    }
+  }
+}
