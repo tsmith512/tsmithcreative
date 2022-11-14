@@ -2,7 +2,7 @@
   dl {
     font-family: $gotham;
     color: #999;
-    margin: 0 auto 1em auto;
+    margin: 0 auto 0.5em auto;
 
     dt {
       float: left;
@@ -28,7 +28,8 @@
     li {
       display: inline-block;
       background: #f0f0f0;
-      margin: 0 0.25rem;
+      margin: 0 0.5rem 0.5rem 0;
+      padding: 0 0.25rem;
     }
   }
 }
