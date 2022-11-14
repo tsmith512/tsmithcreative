@@ -1,15 +1,18 @@
 ---
-title: Writing Sample for PCX
+title: Writing Sample
 summary: >
-  PLACEHOLDER WITTY SUBTITLE
-date: 2022-11-04
+  Technoramblings of a perpetual tinkerer, abridged.
+date: 2022-11-14
 type: blog
 noindex: true
 ---
 
-Howdy PCX Friends!
+## Howdy PCX Friends,
 
-[[ PLACHEOLDER: mini-cover-letter-esque intro]]
+I have been taking things apart since I could hold a screwdriver. Learning how
+things work --- then turning around to talk someone's ear off about it has
+always been a hobby. I enjoy turning my discoveries into blog posts, conference
+presentations, and in-person workshops to teach people new things.
 
 ## Noteworthy Content
 
@@ -52,28 +55,51 @@ and proxy for simpler connections, onboarding, and reduced billing.
 
 ## Upcoming Drafts & Ideas
 
-- Building an e-Ink Digital Photoframe
-  - Long-form, project writeup
-  - Go and TypeScript
-  - Workers, R2 Storage, Workers KV
-- Load H&Co / Typography.com webfont packages faster with Workers
-  - Short tutorial example
-  - Workers in a Pages Function deployment
-  - Cuts of 50-100ms and a redirect (heavily penalized by PageSpeed Insights /
-    Lighthouse) when loading H&Co typefaces
-- Image Variants in Sass with Hugo
-  - Short tutorial example
-  - Sass and Hugo
-  - Store one image in-repo, serve multiple auto-generated sizes as spec'd within
-    a Sass partial. (This is how the masthead photos work on this website.)
-  - Could also be done with CF Image Resizing
+I try to keep a few ideas on deck as well.
+
+**Building an e-Ink Digital Photoframe**
+
+- Long-form, project writeup, more like the RNF v3 post
+- Go and TypeScript with React
+- Workers, R2 Storage, Workers KV
+
+**Load H&Co / Typography.com webfont packages faster with Workers**
+
+- Short tutorial example
+- TypeScript or JS
+- Workers in a Pages Function deployment
+- Cuts of 50-100ms and a redirect (heavily penalized by PageSpeed Insights /
+  Lighthouse) when loading H&Co typefaces
+
+**Image Variants in Sass with Hugo**
+
+- Short tutorial example
+- CSS and Hugo/Go Templates
+- Store one image in-repo, serve multiple auto-generated sizes as spec'd within
+  a Sass partial. (This is how the masthead photos work on this website.)
+- Could also be done with CF Image Resizing
+
+**Sending an email with Amazon SES from a Cloudflare Worker**
+
+- Short tutorial example
+- TypeScript or JS
+- Shows how this site's contact form works.
+- Could potentially be done with CF Email Relay and Email Workers instead; send
+  data to something other than email; and/or be deployed via a Pages Function instead.
 
 ## Colophon
 
 As of this morning, `tsmith.com` is now
 [built with](https://github.com/tsmith512/tsmithcreative) Hugo, the same static
-site generator used by Cloudflare's Developer Docs.
+site generator used by Cloudflare's Developer Docs and (still!) hosted on Pages.
 
-[[ PLACEHOLDER: QUICK WRAP UP ]]
+## Thank You
 
-<img src="/gfx/logo-dark.svg" alt="" style="display: block; filter: saturate(0) brightness(2.5); margin: 2rem auto;">
+I have spent a lot of time learning from DevDocs since I started using our
+products as a customer, and I have enjoyed working closely with many of you
+since I joined the company. I believe the pattern of creating thorough,
+structured, and organized --- yet easily approachable --- content is a key
+differentiator between Cloudflare and our competitors. I am grateful for the
+opportunity to submit this sample for your consideration.
+
+<img src="/gfx/logo-dark.svg" alt="TSmith" style="display: block; filter: saturate(0) brightness(2.5); margin: 2rem auto;">
