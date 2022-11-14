@@ -8,6 +8,10 @@ enableGitInfo = true
 enableRobotsTXT = true
 writeStats = true
 
+# Project archives are 2 or 3 columns, so bump this up from 10. Doesn't really
+# matter on the blog.
+paginate = 12
+
 # Ten minutes
 timeout = 600000
 
