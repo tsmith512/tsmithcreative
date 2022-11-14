@@ -15,7 +15,7 @@ timeout = 600000
   description = 'Technical Product Manager'
 
 [frontmatter]
-  date = ':filename'
+  date = ['date', ':filename']
 
 [permalinks]
   blog = '/blog/:year/:slug/'
