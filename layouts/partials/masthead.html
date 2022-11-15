@@ -16,7 +16,7 @@
   {{ with $base }}
     {{ $blurred := $base.Filter (images.GaussianBlur 10) }}
     {{ $blurred = $blurred.Resize "100x" }}
-    <img src="data:image/jpeg;base64,{{ $blurred.Content | base64Encode }}" class="masthead-placeholder" />
+    <img src="data:image/jpeg;base64,{{ $blurred.Content | base64Encode }}" class="masthead-placeholder" alt="" />
     <div class="masthead-overlay"></div>
   {{ end }}
 </div>
