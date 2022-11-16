@@ -1,13 +1,13 @@
 <!-- The main bundle is super small so it can all just go at once on all pages -->
 {{ $js := resources.Match "js/*.js" | resources.Concat "js/bundle.js" | js.Build (dict "minify" true)}}
-<script src="{{ $js.RelPermalink }}"></script>
+<script async src="{{ $js.RelPermalink }}"></script>
 
 <!-- Call photoswipe JS only if the page needs it -->
 {{ if .Page.Params.photoswipe }}
   {{ $photoswipeJs := resources.Match "js/special/photoswipe.js" | resources.Concat "js/photoswipe.js" | js.Build (dict "minify" true)}}
-  <script defer src="{{ $photoswipeJs.RelPermalink }}"></script>
+  <script async src="{{ $photoswipeJs.RelPermalink }}"></script>
 {{ end }}
 
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "124f2da099ca4db3ae89bda400724ada"}'></script>
+<script async src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "124f2da099ca4db3ae89bda400724ada"}'></script>
 
-<script defer data-domain="tsmith.com" data-api="https://tsmith.com/p/event" src="https://tsmith.com/p/script.js"></script>
+<script async data-domain="tsmith.com" data-api="https://tsmith.com/p/event" src="https://tsmith.com/p/script.js"></script>

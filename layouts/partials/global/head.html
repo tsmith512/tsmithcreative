@@ -29,15 +29,17 @@
 {{ $style := $scss | resources.ToCSS (dict "outputStyle" "compressed") }}
 <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
 
-<!-- Typography.com Webfonts package -->
+<!-- Typography.com Webfonts package. Preload for an onload swap -->
+<link rel="preload" href="/api/fonts" as="style" />
 <link rel="stylesheet" href="/api/fonts"
   media="print" onload="this.media='all'; this.onload=null;" />
+<noscript><link rel="stylesheet" href="/api/fonts" /></noscript>
 
 {{ $icons := resources.Get "scss/icon-art.scss" }}
 {{ $iconStyle := $icons | resources.ExecuteAsTemplate "scss/icon-art.scss" . | resources.ToCSS (dict "outputStyle" "compressed") }}
 <link rel="stylesheet" type="text/css" href="{{ $iconStyle.RelPermalink }}"
   media="print" onload="this.media='screen'; this.onload=null;" />
-
+<noscript><link rel="stylesheet" href="{{ $iconStyle.RelPermalink }}" /></noscript>
 
 {{ if not .IsHome }}
   {{ $masthead := resources.Get "scss/masthead-photography.scss" }}
