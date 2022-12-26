@@ -29,6 +29,10 @@
   {{ $sizesAttrribute = "(max-width: 480px) 100vw, 480px"}}
 {{ end }}
 
+{{ if eq $type "frame" }}
+  {{ $noshadow = "noshadow" }}
+{{ end }}
+
 {{ $mediaClasses := slice $size $noshadow }}
 
 {{ if eq $type "placeholder" }}
@@ -75,6 +79,41 @@
         </picture>
       </a>
     {{ end }}
+  {{ end }}
+  {{ if eq $type "url" }}
+    <img
+      src="{{ $src }}"
+      class="{{ delimit $mediaClasses " " }}"
+      alt="{{ $alt }}"
+      loading="lazy"
+    />
+  {{ end }}
+  {{ if eq $type "frame" }}
+    <div class="browser-frame">
+      <div class="browser-frame-header">
+        <div class="left"></div>
+        <div class="fill"></div>
+        <div class="right"></div>
+      </div>
+      <div class="browser-frame-content">
+        {{ $image := $.Page.Resources.GetMatch $src }}
+        {{ if $from }}
+          {{ $page := $.Site.GetPage $from }}
+          {{ $image = $page.Resources.GetMatch $src }}
+        {{ end }}
+        {{ with $image }}
+          <img
+            src="{{ .RelPermalink }}"
+            width="{{ .Width }}"
+            height="{{ .Height }}"
+            class="{{ $noshadow }}"
+            alt="{{ $alt }}"
+            loading="lazy"
+          />
+        {{ end }}
+
+      </div>
+    </div>
   {{ end }}
   {{ if $caption }}
     <figcaption>{{ $caption }}</figcaption>
