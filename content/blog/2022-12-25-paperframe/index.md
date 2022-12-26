@@ -1,8 +1,8 @@
 ---
 title: Building an e-Paper Digital Photo Frame
 summary: >
-  A side project to build a small fleet of synced photo frames using a Raspberry
-  Pi Zero, Waveshare e-Paper display, and Cloudflare Workers as Christmas gifts.
+  A side project to build a small fleet of synced digital photo frames using a
+  Raspberry Pi Zero and Waveshare e-Paper display.
 tags: [engineering, side proejcts, photography]
 ---
 
@@ -186,8 +186,8 @@ _[Go](https://go.dev/)_ for a few reasons:
 - Ship a single binary to the device
 - No runtime package dependencies
 - Fairly simple syntax with a focus on early-and-often error handling
-- At Cloudflare, a lot of my team's backend services are written in Go, so
-  learning a little may be useful
+- At work, a lot of my team's backend services are written in Go, so learning
+  a little may be useful
 - Selfishly, I also hoped to reuse a lot of the code from that tutorial, at
   least for the hardware interface.
 
