@@ -264,7 +264,7 @@ of the undocumented changes to the screen's command mappings.
 {{< media type="image" src="wild-horses.jpeg" alt="Panel showing the wild horses of Rock Springs, Wyoming" caption="Success, at last! 🎉" >}}
 
 I will say, Go's pattern of writing `if err != nil` checks after just about
-_every line_ of code is _tedious._ Also, the double-negative and the two-value
+every line of code is _tedious._ Also, the double-negative and the two-value
 return pattern did trip me up a few times.
 
 ``` go
@@ -293,8 +293,8 @@ func getImage(id string) (image.Image, error) {
   } else {
     return image, nil
   }
-  // 👀 LIKE THIS ONE ^^ "If ERROR is NOT undefined --> OTHERWISE --> good place.
-  // I'm sorry, but WHAT?!
+  // 👀 LIKE THIS ^^ "If ERROR is NOT undefined --> OTHERWISE --> this is the good place.
+  // That doesn't feel very logically laid out, but I may be missing a best practice.
 }
 ```
 
@@ -335,12 +335,12 @@ And in truth, that will look a little more at home on Smith family shelves.
 I may 3D print a mount for the unit I'll keep for myself that shows the
 electronics. "Circuit-board-chic" isn't too much of a stretch for my messy desk.
 
-## Boxing Day
+## (Un-)Boxing Day
 
-After frantically posting this (to be edited later...) and breaking out the gift
-wrap, it was time to "deploy to production" around the Christmas Tree.
+After breaking out the gift wrap, it was time to "deploy to production" around
+the Christmas Tree.
 
-When my family unwrapped their gifts, Mom quickly plugged theirs in.
+When my family unwrapped their gifts, Mom quickly plugged hers in.
 
 And it didn't work. 😭
 
@@ -357,7 +357,7 @@ holiday hotfix...
 Between a 3D-printed manatee cookie cutter, a Buzz Lightyear costume, the
 Paperframe, [a campaign mapping site]({{< ref 2022-03-11-congressional-district-map >}}),
 another whack at [Advent of Code]({{< ref 2021-01-06-the-hello-worlds-of-christmas >}}),
-printed swag for a few events, and other handmade gifts, I think I can sign off
+printed swag for a few events, and a hand-bound book, I think I can sign off
 from 2022 as a year of great side project adventures. Here's to more in the new
 year. And maybe I'll even join that makerspace anyway.
 
