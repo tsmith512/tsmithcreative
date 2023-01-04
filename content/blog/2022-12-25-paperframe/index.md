@@ -354,7 +354,12 @@ holiday hotfix...
 
 {{< media type="image" src="on-shelf.jpg" alt="On folks' shelf" >}}
 
-Between a 3D-printed manatee cookie cutter, a Buzz Lightyear costume, the
+Ultimately, I am really pleased with how these turned out. It was my first real
+foray into building something for hardware, although my last job involved a lot
+of manufacturing planning so I knew some of the gotchas to watch out for. I'd
+like to make a few more of these now that I have a decent blueprint for it.
+
+And between a 3D-printed manatee cookie cutter, a Buzz Lightyear costume, the
 Paperframe, [a campaign mapping site]({{< ref 2022-03-11-congressional-district-map >}}),
 another whack at [Advent of Code]({{< ref 2021-01-06-the-hello-worlds-of-christmas >}}),
 printed swag for a few events, and a hand-bound book, I think I can sign off
