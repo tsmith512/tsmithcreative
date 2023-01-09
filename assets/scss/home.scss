@@ -81,9 +81,9 @@ $background-swap-min-height: 700px;
       transform: translateY(-90%) translateX(-25%);
     }
 
-    @media screen and (min-width: 1300px) and (min-height: 700px) {
-      transform: translateY(-90%) translateX(-30%);
-    }
+    // @media screen and (min-width: 1300px) and (min-height: 700px) {
+    //   transform: translateY(-90%) translateX(-30%);
+    // }
 
     @media screen and (min-width: 1600px) and (min-height: 700px) {
       transform: translateY(-90%) translateX(-50%);
