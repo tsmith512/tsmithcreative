@@ -1,7 +1,12 @@
 {
-  "devDependencies": {
+  "dependencies": {
     "@cloudflare/workers-types": "^4.20221111.1",
     "aws4fetch": "^1.0.17",
     "typescript": "^4.9.4"
-  }
+  },
+  "name": "tsmithcreative-functions",
+  "version": "1.0.0",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
