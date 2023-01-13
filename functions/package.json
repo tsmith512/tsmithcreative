@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20221111.1",
+    "aws4fetch": "^1.0.17",
+    "typescript": "^4.9.4"
+  }
+}
