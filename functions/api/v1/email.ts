@@ -1,10 +1,5 @@
 import { AwsClient } from 'aws4fetch';
-/*
-const aws = new AwsClient({
-  accessKeyId: AWS_ACCESS_KEY,
-  secretAccessKey: AWS_SECRET_KEY,
-});
-*/
+
 const SES_ENDPOINT = 'https://email.us-east-2.amazonaws.com/v2/email/outbound-emails';
 
 const corsHeaders = new Headers({
@@ -31,17 +26,29 @@ export async function onRequest(context) {
       headers: corsHeaders,
     });
   }
-/*
-  const { from = "", replyto = FROM_ADDRESS, message = "" } = await request.json();
+
+  if (request.method !== 'POST') {
+    return new Response('Bad Request', {
+      status: 400,
+      headers: corsHeaders
+    });
+  }
+
+  const aws = new AwsClient({
+    accessKeyId: context.env.AWS_ACCESS_KEY,
+    secretAccessKey: context.env.AWS_SECRET_KEY,
+  });
+
+  const { from = "", replyto = context.env.FROM_ADDRESS, message = "" } = await request.json();
 
   // @TODO: [Insert some validations here one day...]
 
   const messagePayload = {
     "Destination": {
-      "ToAddresses": [ FROM_ADDRESS ],
+      "ToAddresses": [ context.env.FROM_ADDRESS ],
     },
-    "FromEmailAddress": FROM_ADDRESS,
-    "Source": FROM_ADDRESS,
+    "FromEmailAddress": context.env.FROM_ADDRESS,
+    "Source": context.env.FROM_ADDRESS,
     "ReplyToAddresses": [ replyto ],
 
     "Content": {
@@ -84,5 +91,4 @@ export async function onRequest(context) {
       headers: corsHeaders,
     });
   }
-*/
 }
