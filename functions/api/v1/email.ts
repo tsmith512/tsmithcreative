@@ -77,7 +77,7 @@ export async function onRequest(context) {
   const sesResponse = await fetch(signedRequest);
 
   // Return a simplified response to frontend
-  const { ok, status } = await sesResponse;
+  const { ok, status } = sesResponse;
 
   if (ok) {
     return new Response(`SES responded okay ${status}`, {
@@ -86,6 +86,7 @@ export async function onRequest(context) {
     });
   }
   else {
+    console.log(`SES responded with ${status}: ${await sesResponse.text()}`);
     return new Response(`SES responded with error ${status}`, {
       status: 500,
       headers: corsHeaders,
