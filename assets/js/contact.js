@@ -10,10 +10,13 @@
   function emailHandler(e) {
     e.preventDefault();
 
+    const cfEl = document.querySelector('input[name="cf-turnstile-response"]');
+
     var message = {
       from: document.getElementById("from").value,
       replyto: document.getElementById("replyto").value,
-      message: document.getElementById("message").value
+      message: document.getElementById("message").value,
+      turnstile: (cfEl) ? cfEl.value : false,
     };
 
     var xhr = new XMLHttpRequest();

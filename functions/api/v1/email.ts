@@ -1,6 +1,7 @@
 import { AwsClient } from 'aws4fetch';
 
 const SES_ENDPOINT = 'https://email.us-east-2.amazonaws.com/v2/email/outbound-emails';
+const TURNSTILE_ENDPOINT = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
 
 const corsHeaders = new Headers({
   'Access-Control-Allow-Origin': '*',
@@ -39,9 +40,29 @@ export async function onRequest(context) {
     secretAccessKey: context.env.AWS_SECRET_KEY,
   });
 
-  const { from = "", replyto = context.env.FROM_ADDRESS, message = "" } = await request.json();
+  const {
+    from = "",
+    replyto = context.env.FROM_ADDRESS,
+    message = "",
+    turnstile = false,
+  } = await request.json();
 
-  // @TODO: [Insert some validations here one day...]
+  // Cloudflare Turnstile Verification
+  let tsVerified: any = false;
+
+  if (turnstile) {
+    let tsFormData = new FormData();
+    tsFormData.append('secret', context.env.TURNSTILE_SERVER_KEY);
+    tsFormData.append('response', turnstile);
+    tsFormData.append('remoteip', request.headers.get('CF-Connecting-IP'));
+
+    const tsResponse = await fetch(TURNSTILE_ENDPOINT, {
+      method: 'POST',
+      body: tsFormData,
+    });
+
+    tsVerified = await tsResponse.json();
+  }
 
   const messagePayload = {
     "Destination": {
@@ -60,7 +81,7 @@ export async function onRequest(context) {
         "Body": {
           "Text": {
             "Charset": "UTF-8",
-            "Data": message,
+            "Data": message + "\n\n" + JSON.stringify(tsVerified),
           },
         },
       },

@@ -8,6 +8,10 @@
   <script async src="{{ $photoswipeJs.RelPermalink }}"></script>
 {{ end }}
 
+{{ if .Page.Params.turnstile }}
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+{{ end }}
+
 <script async src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "124f2da099ca4db3ae89bda400724ada"}'></script>
 
 <script async data-domain="tsmith.com" data-api="https://tsmith.com/p/event" src="https://tsmith.com/p/script.js"></script>
