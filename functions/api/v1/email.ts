@@ -81,12 +81,20 @@ export async function onRequest(context) {
         "Body": {
           "Text": {
             "Charset": "UTF-8",
-            "Data": message + "\n\n" + JSON.stringify(tsVerified),
+            "Data": message,
           },
         },
       },
     },
   };
+
+  if (!tsVerified || tsVerified?.success !== true) {
+    console.log(`Failed Turnstile verification: ${JSON.stringify(tsVerified)}`);
+    return new Response(`Turnstile verification error`, {
+      status: 403,
+      headers: corsHeaders,
+    });
+  }
 
   // Build signed request with aws4fetch
   const signedRequest = await aws.sign(SES_ENDPOINT, {

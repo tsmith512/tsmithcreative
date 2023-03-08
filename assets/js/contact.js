@@ -12,6 +12,12 @@
 
     const cfEl = document.querySelector('input[name="cf-turnstile-response"]');
 
+    if (!cfEl) {
+      // @TODO: In a second-pass on this; let's disable the submit button until
+      // the turnstile check passes.
+      return false;
+    }
+
     var message = {
       from: document.getElementById("from").value,
       replyto: document.getElementById("replyto").value,
