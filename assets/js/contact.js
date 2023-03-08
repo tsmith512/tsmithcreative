@@ -7,14 +7,25 @@
     form.addEventListener("submit", emailHandler);
   }
 
+  window.turnstileInit = () => {
+    console.log('turnstile init called');
+    turnstile.render('#turnstileChallenge', {
+      sitekey: '0x4AAAAAAADB0gL0cX6XVDTz',
+      theme: 'light',
+      callback: (token) => {
+        console.log('turnstile success');
+        document.getElementById('submit').disabled = false;
+      },
+    });
+  };
+
   function emailHandler(e) {
     e.preventDefault();
 
     const cfEl = document.querySelector('input[name="cf-turnstile-response"]');
 
     if (!cfEl) {
-      // @TODO: In a second-pass on this; let's disable the submit button until
-      // the turnstile check passes.
+      // @TODO: Fallback? This element won't exist if Turnstile didn't init
       return false;
     }
 

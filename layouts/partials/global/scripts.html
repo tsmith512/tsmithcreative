@@ -9,7 +9,7 @@
 {{ end }}
 
 {{ if .Page.Params.turnstile }}
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileInit" async defer></script>
 {{ end }}
 
 <script async src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "124f2da099ca4db3ae89bda400724ada"}'></script>
