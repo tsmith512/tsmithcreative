@@ -1,13 +1,19 @@
 #/usr/bin/env bash
 
-if [ -z "$ASSETS_FOLDER" ]; then
-  echo "Assets package not specified"
-  export $(grep -v '^#' .env | xargs)
+if [ -f ".env.local" ]; then
+  set -a
+  source <(cat .env.local | sed -e '/^#/d;/^\s*$/d' -e "s/'/'\\\''/g" -e "s/=\(.*\)/='\1'/g")
+  set +a
 fi
 
 mkdir -p public/fonts
-wget -N $ASSETS_FOLDER/811484.zip
-unzip -o 811484.zip -d public/fonts/
+
+curl $WEBFONTS \
+  -L -H "CF-Access-Client-Id: ${R2_CLIENT}" \
+  -H "CF-Access-Client-Secret: ${R2_SECRET}" \
+  -o webfonts.zip
+
+unzip -o -d public/fonts webfonts.zip
 
 hugo
 
