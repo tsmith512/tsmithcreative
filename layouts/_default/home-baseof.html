@@ -5,7 +5,10 @@
 
   {{ $home := resources.Get "scss/home.scss" }}
   {{ $homeStyle := $home | resources.ExecuteAsTemplate "scss/home.scss" . | resources.ToCSS }}
-  <link rel="stylesheet" type="text/css" href="{{ $homeStyle.RelPermalink }}" media="screen" />
+  <style type="text/css">
+    {{ $homeStyle.Content | safeCSS }}
+  </style>
+
   <title>{{ block "title" . }}{{ .Site.Title }} | {{ .Site.Params.description }}{{ end }}</title>
 </head>
 <body class="home">
