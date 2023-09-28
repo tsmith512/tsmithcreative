@@ -1,8 +1,8 @@
 #/usr/bin/env bash
 
-if [ -f ".env.local" ]; then
+if [ -f ".env" ]; then
   set -a
-  source <(cat .env.local | sed -e '/^#/d;/^\s*$/d' -e "s/'/'\\\''/g" -e "s/=\(.*\)/='\1'/g")
+  export $(grep -v '^#' .env | xargs)
   set +a
 fi
 

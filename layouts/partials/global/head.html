@@ -25,9 +25,19 @@
 <meta name="twitter:site" content="@tsmith512">
 
 <!-- Global CSS -->
+{{ $scss := resources.Get "scss/primary.scss" }}
+{{ $style := $scss | resources.ToCSS (dict "outputStyle" "compressed") }}
+<style type="text/css">
+  {{ $style.Content | safeCSS }}
+</style>
+
 {{ $scss := resources.Get "scss/global.scss" }}
 {{ $style := $scss | resources.ToCSS (dict "outputStyle" "compressed") }}
-<link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
+<link rel="preload" as="style" type="text/css" href="{{ $style.RelPermalink }}" />
+<link rel="stylesheet" media="print" href="{{ $style.RelPermalink }}"
+  onload="this.media='all'; this.onload=null;"/>
+<noscript><link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" /></noscript>
+
 
 <!-- Typography.com Webfonts package. Preload for an onload swap -->
 <link rel="preload" href="/api/v1/fonts" as="style" />

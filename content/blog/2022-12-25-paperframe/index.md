@@ -138,26 +138,26 @@ anyone can see what's in the queue and what's currently on display.
 The display I picked does not do greyscale, nor is it particularly high
 resolution. But with heavy-handed edits, I really like the resulting aesthetic.
 
-{{< media type="url" src="https://paperframes.net/api/image/18" alt="Mariscal Canyon, Big Bend National Park" >}}
+{{< media type="url" src="sample-images/mariscal.gif" alt="Mariscal Canyon, Big Bend National Park" >}}
 
 Images must be exactly 800x480 as a black or white bitmap.
 
-{{< media type="url" src="https://paperframes.net/api/image/32" alt="Gene at the Ranch" >}}
+{{< media type="url" src="sample-images/steve.gif" alt="Gene at the Ranch" >}}
 
 
 These restrictions also help unify the look of these very different photos.
 
-{{< media type="url" src="https://paperframes.net/api/image/20" alt="Buckskin Gulch, Vermillion Cliffs National Monument" >}}
+{{< media type="url" src="sample-images/buckskin.gif" alt="Buckskin Gulch, Vermillion Cliffs National Monument" >}}
 
 
 I think it's a cool effect.
 
-{{< media type="url" src="https://paperframes.net/api/image/19" alt="Torpoweap" >}}
+{{< media type="url" src="sample-images/toroweap.gif" alt="Torpoweap" >}}
 
 
 So while I waited on the mail, I played in Photoshop.
 
-{{< media type="url" src="https://paperframes.net/api/image/31" alt="Me at Reimer's Ranch [Travis] County Park" >}}
+{{< media type="url" src="sample-images/reimers.gif" alt="Me at Reimer's Ranch [Travis] County Park" >}}
 
 
 ### Part Two: Hardware

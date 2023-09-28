@@ -1,76 +1,5 @@
 @import 'variables';
-@import 'normalize';
 
-html {
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: $archer;
-  font-size: 100%;
-  line-height: 1.5;
-  color: #333;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.15;
-}
-
-
-a, a:link {
-  color: $link;
-}
-
-a:hover, a:active {
-  color: $link-hover;
-}
-
-iframe {
-  width: 100%;
-  margin: 1em auto;
-}
-
-figure {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  transition: opacity 0.2s ease-out;
-
-  &[data-src] {
-    opacity: 0;
-  }
-}
-
-video {
-  max-width: 100%;
-  height: auto;
-}
-
-%clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-.wrapper {
-  @extend %clearfix;
-  max-width: $max-width;
-  margin: 1rem;
-
-  @media (min-width: $max-width) {
-    margin: 1rem auto;
-  }
-}
 
 blockquote {
   position: relative;
@@ -110,32 +39,6 @@ blockquote:before {
 
   overflow: hidden;
   text-indent: 100%;
-}
-
-hr {
-  border: 2px solid #eee;
-  margin: 2em 0;
-}
-
-abbr[title] {
-  border-bottom: 1px dashed black;
-  text-decoration: none;
-}
-
-code, kbd, samp, pre {
-  font-family: Consolas, Menlo, monospace;
-}
-
-p, li {
-  // For inline code (just individual words/names/commands in `backticks`),
-  // shrink it slightly so it lines up better with the copy.
-  code {
-    font-size: .875em;
-  }
-}
-
-li ul {
-  margin-top: 1em;
 }
 
 .highlight {
@@ -237,17 +140,10 @@ li ul {
 }
 
 
-@import 'nav';
-@import 'icon';
-@import 'masthead';
 @import 'media';
 @import 'gallery';
-@import 'post';
 @import 'portfolio-teaser';
-@import 'post-teaser';
-@import 'post-meta';
 @import 'project';
 @import 'project-teaser';
 @import 'pagination';
-@import 'footer';
 @import 'browser-frame';
