@@ -1,4 +1,5 @@
 {{ $thumbnail := .Resources.GetMatch "thumbnail.*" }}
+{{ $title := .Title }}
 
 <li class="post-teaser-item">
   {{ if $thumbnail }}
@@ -24,7 +25,12 @@
                    225px"
             srcset="{{ $500.RelPermalink }} 500w,
                     {{ $250.RelPermalink }} 250w" />
-          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" />
+          <img
+            src="{{ .RelPermalink }}"
+            alt="{{ $title }}"
+            width="{{ .Width }}"
+            height="{{ .Height }}"
+            loading="lazy" />
         </picture>
       {{ end }}
     </a>
