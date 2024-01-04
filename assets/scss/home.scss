@@ -40,19 +40,20 @@ $background-swap-min-height: 700px;
     position: static;
 
     @media screen and (min-width: $background-swap-min-width) {
-      // Show darker logo because the background photo is sky
+      // See icon-art.scss for how this works. Tacked on the last brightness() to pull it down.
       h1 a {
-        background-image: url('/gfx/logo-dark.svg');
+        filter: invert(38%) sepia(35%) saturate(988%) hue-rotate(137deg) brightness(95%) contrast(88%) brightness(60%);
+
       }
 
       // Show darker links because the background photo is sky
       nav a {
-        color: #3347af;
+        color: $link;
         text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
 
         &:hover {
-          border-top-color: #3347af;
-          color: #3957f1;
+          border-top-color: lighten($link, 5%);
+          color: lighten($link, 5%);
         }
       }
     }
@@ -105,10 +106,10 @@ $background-swap-min-height: 700px;
       color: white;
 
       @media screen and (min-width: $background-swap-min-width) {
-        color: #31324c;
+        color: darken($link, 5%);
 
         span {
-          color: #50517c;
+          color: lighten($link, 5%);
         }
       }
 
