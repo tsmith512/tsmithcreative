@@ -337,12 +337,12 @@ Home Assistant, which includes a link to the video in the payload.
 
 {{< media size="small" type="image" src="20240102161604.png" alt="Home Assistant webhook configuration" >}}
 
-So the inbound trigger setup is the same as above, but we're calling _two_
+So the inbound trigger setup is similar (just a new ID), but we're calling _two_
 services this time:
 
 **Send the link to me:** again using Home Assistant's `notify`, but including
-another `data` property with a link to watch the video on Stream, which will be
-surfaced by the app as a notification action.
+another property with a link to watch the video on Stream, which will be
+surfaced by the app as a notification _action._
 
 ``` yaml
 service: notify.mobile_app_pixel_7a
@@ -355,6 +355,9 @@ data:
         title: Watch
         uri: "{{ trigger.json.link }}"
 ```
+
+**Gotcha:** I didn't see the nested `data` property when I first set this up.
+Actions have to go in `data.data.actions[]` as shown here...
 
 This time, I get a notification with a "Watch" button:
 
