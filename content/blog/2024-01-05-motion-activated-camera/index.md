@@ -25,8 +25,8 @@ But I needed to know two things:
 I didn't see anything obvious in the attic when I went up there. But being only
 halfway unpacked, I had an old computer and conference room webcam in an
 easy-to-reach box. I wondered if I could use these to alert me when uninvited
-guests arrive and to figure out how they get in. A "[game
-camera](https://en.wikipedia.org/wiki/Camera_trap)," essentially.
+guests arrive --- and maybe even figure out how they get in. A
+"[game camera](https://en.wikipedia.org/wiki/Camera_trap)," essentially.
 
 {{< media size="default" type="image" src="PXL_20231227_005359427-r.jpg" alt="Raspberry Pi with webcam in the attic" >}}
 
@@ -36,11 +36,11 @@ _First deployment: Raspberry Pi taped to the roof and the camera taped to the se
 
 I used a [Raspberry Pi (3rd Gen, Model B)](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/)
 running [Motion](https://motion-project.github.io/) and integrated it with
-[Home Assistant](https://www.home-assistant.io/) (which powers all my other home
+[Home Assistant](https://www.home-assistant.io/) (which powers all my home
 automation gizmos) and [Cloudflare Stream](https://www.cloudflare.com/products/cloudflare-stream/)
-(for easy video storage/review).
+(for easy video storage/playback).
 
-Uploading video clips to Stream is a convenience feature not strictly necessary
+Uploading video clips to Stream is a convenience feature not really necessary
 for my mission, but I'm the Product Manager for Stream and this may make a funny
 story for the office.
 
@@ -48,7 +48,7 @@ story for the office.
 
 - When Motion detects movement in the camera's view, it starts recording. It also
   sends a [webhook](https://www.home-assistant.io/docs/automation/trigger/#webhook-trigger)
-  to Home Assistant, which triggers Home Assistant to
+  to Home Assistant, which triggers that to
   [notify](https://www.home-assistant.io/integrations/notify/) my phone that
   we've been boarded.
 - When Motion stops seeing movement, it will end the recording. When the video
@@ -91,13 +91,13 @@ story for the office.
 
 ## Camera and Software
 
-Previously, this [webcam monitored my 3D printer]({{< ref "2018-01-11-3d-printing-2017" >}}). I looked at
+Previously, this webcam [monitored my 3D printer]({{< ref "2018-01-11-3d-printing-2017" >}}). I looked at
 [how OctoPrint handles video](https://octoprint.org/blog/2023/05/24/a-new-camera-stack-for-octopi/)
 for that, which pointed me to projects like
 [mjpg-streamer](https://github.com/jacksonliam/mjpg-streamer) and
 [camera-streamer](https://github.com/ayufan/camera-streamer). But OctoPrint's
-use-case is to either record a print start-to-finish or just show the printer's
-current state on-demand. Not ideal; I need to be alerted.
+use-case is to record a print start-to-finish or show the printer's current
+state on-demand. Not ideal; I need to know when something _happens._
 
 Ultimately, I stumbled on a [tutorial](https://pimylifeup.com/raspberry-pi-webcam-server/)
 that introduced me to [Motion](https://motion-project.github.io/), which can stream
@@ -108,13 +108,13 @@ of just the movement (instead of giving me one long-running video to search thro
 
 As noted, there are three ways I integrate with Motion:
 
-- _"What's up there right now?"_ --- Motion as a raw video source in Home Assistant with its "Motion JPEG" video stream
+- _"What's up there right now?"_ --- Motion as a video source in Home Assistant with its "Motion JPEG" video stream
 - _"Intruder alert!"_ --- Motion &rarr; Home Assistant via webhook when movement is detected
 - _"How did they get in?"_ --- Motion &rarr; Stream _and_ Home Assistant when a new video is captured
 
 ### _What's up there now?_ Watching the MJPEG in Home Assistant
 
-Motion will start a Motion JPEG live stream by default, but it needs to be
+Motion will start a "Motion JPEG" live stream by default, but it needs to be
 configured to allow access from other hosts. See Motion's docs on
 [Live Stream options](https://motion-project.github.io/motion_config.html#OptDetail_Stream)
 for full details, but change this in `/etc/motion/motion.conf`
@@ -137,15 +137,15 @@ a live view.
 
 ### _Intruder Alert!_ Triggering a Notification with a Webhook
 
-Motion allows running scripts or commands on various events. Home Assistant
-allows webhooks to trigger automations.
+Motion allows running commands on various events. Home Assistant allows webhooks
+to trigger automations. Great combo.
 
 **Gotcha:** There are _two_ relevant hooks in Motion,
 [`on_motion_detected`](https://motion-project.github.io/motion_config.html#on_motion_detected)
 and [`on_event_start`](https://motion-project.github.io/motion_config.html#on_event_start).
-The "motion detected" hook will fire on every frame with movement, potentially dozens
-of times per second! My use-case is better suited to the "event start" hook instead,
-which is also when Motion starts recording.
+The "motion detected" hook will fire on every video frame with movement,
+potentially dozens of times per second! My use-case is better suited to the
+"event start" hook instead, which is also when Motion starts recording.
 
 This is a simple cURL command in Motion's config:
 
@@ -241,8 +241,8 @@ Some videos were too big to upload in a single request, so
 was harder than I thought it would be --- good user research.
 
 After some trial and error, I settled on writing the uploader in JavaScript and
-using [`tus-js-client`](https://github.com/tus/tus-js-client). Motion runs as a
-different user than my own account on the system, so my usual recommendation of
+using [`tus-js-client`](https://github.com/tus/tus-js-client). The Motion service
+runs as its own account, so my usual recommendation of
 "[do all Node management with NVM](https://github.com/nvm-sh/nvm)"
 led to _many_ problems.
 
@@ -361,9 +361,9 @@ This time, I get a notification with a "Watch" button:
 {{< media size="small" type="image" src="20240104121628.png" alt="Android notification drawer with an alert that has a Watch action" >}}
 
 **Save the link to a "[Shopping List](https://www.home-assistant.io/integrations/shopping_list)":**
-which is, oddly, the built-in way to use a Home Assistant
+which is, oddly, the only built-in way to create a Home Assistant
 [To-Do List](https://www.home-assistant.io/integrations/todo/) (which cannot be
-used directly?). Create the Shopping List first and use the `entity_id` in the
+used directly?). Create the Shopping List first and use its `entity_id` in the
 `todo.add_item` target.
 
 ``` yaml
@@ -392,7 +392,10 @@ total, it has captured five separate clips across two... "incursions."
   ></iframe>
 </div>
 
-Looks like it might just be one critter, potentially entering near the HVAC coolant line...
+Looks like it might just be one critter, potentially entering near the HVAC
+coolant line... I wonder if the lights I've left on around the camera are a
+deterrant, but I don't have an IR camera. (And would prefer not to have a reason
+to buy one.)
 
 I'm not sure the next steps need to be documented.
 
