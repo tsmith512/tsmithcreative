@@ -9,9 +9,9 @@ tags: [side projects, video]
 I recently moved into an old house which will surely become the subject of many
 blog posts on _fun_ tinkering and gadgetry. But first...
 
-One night, while quietly minding my own business, I heard a a ruckus upstairs.
+One night, while quietly minding my own business, I heard a ruckus upstairs.
 Realizing I had neither pets nor an upstairs, I let out the exasperated sigh of,
-"well I suppose I know what my next project is."
+"Well, I suppose I know what my next project is."
 
 {{< media size="small" type="url" src="rats.gif" alt="Cartoon rats singing" >}}
 
@@ -23,14 +23,14 @@ But I needed to know two things:
 {{< media size="mini" type="image" src="PXL_20240104_211815060-r.jpg" alt="Old webcam with googly eyes" >}}
 
 I didn't see anything obvious in the attic when I went up there. But being only
-half-way unpacked, I had an old computer and conference room webcam in an
+halfway unpacked, I had an old computer and conference room webcam in an
 easy-to-reach box. I wondered if I could use these to alert me when uninvited
 guests arrive and to figure out how they get in. A "[game
 camera](https://en.wikipedia.org/wiki/Camera_trap)," essentially.
 
 {{< media size="default" type="image" src="PXL_20231227_005359427-r.jpg" alt="Raspberry Pi with webcam in the attic" >}}
 
-_First deployment: Raspberry Pi taped to the roof and the camera taped to the sewer vent pipe overlooking the bathroom ceiling._
+_First deployment: Raspberry Pi taped to the roof and the camera taped to the sewer vent pipe over the bathroom ceiling._
 
 ## System Overview
 
@@ -112,7 +112,7 @@ As noted, there are three ways I integrate with Motion:
 - _"Intruder alert!"_ --- Motion &rarr; Home Assistant via webhook when movement is detected
 - _"How did they get in?"_ --- Motion &rarr; Stream _and_ Home Assistant when a new video is captured
 
-### Watch the MJPEG in Home Assistant
+### _What's up there now?_ Watching the MJPEG in Home Assistant
 
 Motion will start a Motion JPEG live stream by default, but it needs to be
 configured to allow access from other hosts. See Motion's docs on
@@ -135,7 +135,7 @@ a live view.
 
 {{< media size="small" type="frame" src="20240103162905.png" alt="Home Assistant overview screen with the MJPEG feed open" >}}
 
-### Trigger a "Motion Detected" Notification via Webhook
+### _Intruder Alert!_ Triggering a Notification with a Webhook
 
 Motion allows running scripts or commands on various events. Home Assistant
 allows webhooks to trigger automations.
@@ -169,16 +169,16 @@ When this fires, my phone goes off:
 
 {{< media size="mini" type="image" src="20240102160320.png" alt="Android notification drawer showing an alert" >}}
 
-### Saving Recordings to Cloudflare Stream and Sharing Links to Home Assistant
+### _How did it get in?_ Saving Recordings to Stream and Sending Links to me
 
 Actual objective here: "I want to be able to watch the recording on my phone."
-But as Stream PM, I thought uploading to us could be a "fun"
+But as a Stream team member, I thought uploading them to us could be a "fun"
 _(read: productive procrastination)_ way to achieve that.
 
 #### Step 1: Motion settings for the video output
 
 Here are relevant _excerpts_ of Motion's config file at
-`/etc/motion/motion.conf`, with a few some notes.
+`/etc/motion/motion.conf`, with some notes.
 
 ``` txt
 # >>> Change this to "off" because systemd starts this service
@@ -237,8 +237,8 @@ I provisioned an API token on Cloudflare's Dash for Stream to use in the script:
 {{< media size="mini" type="frame" src="2024-01-04-231336.png" alt="API Token Creation" >}}
 
 Some videos were too big to upload in a single request, so
-[TUS](https://tus.io/) was the best way to get them posted. This was harder
-than I expected --- good product research.
+[TUS](https://tus.io/) was the best way to get them posted. To be honest, this
+was harder than I thought it would be --- good user research.
 
 After some trial and error, I settled on writing the uploader in JavaScript and
 using [`tus-js-client`](https://github.com/tus/tus-js-client). Motion runs as a
@@ -340,8 +340,9 @@ Home Assistant, which includes a link to the video in the payload.
 So the inbound trigger setup is the same as above, but we're calling _two_
 services this time:
 
-**Send the link to me:** again using `notify`, but including another `data`
-property with a link to watch the video on Stream.
+**Send the link to me:** again using Home Assistant's `notify`, but including
+another `data` property with a link to watch the video on Stream, which will be
+surfaced by the app as a notification action.
 
 ``` yaml
 service: notify.mobile_app_pixel_7a
@@ -355,14 +356,15 @@ data:
         uri: "{{ trigger.json.link }}"
 ```
 
-This time, I get a notification with an "action" button:
+This time, I get a notification with a "Watch" button:
 
 {{< media size="small" type="image" src="20240104121628.png" alt="Android notification drawer with an alert that has a Watch action" >}}
 
 **Save the link to a "[Shopping List](https://www.home-assistant.io/integrations/shopping_list)":**
-which is the built-in default use of a Home Assistant
-[To-Do List](https://www.home-assistant.io/integrations/todo/). Create the
-Shopping List first and use the `entity_id` in the `todo.add_item` target.
+which is, oddly, the built-in way to use a Home Assistant
+[To-Do List](https://www.home-assistant.io/integrations/todo/) (which cannot be
+used directly?). Create the Shopping List first and use the `entity_id` in the
+`todo.add_item` target.
 
 ``` yaml
 service: todo.add_item
@@ -376,7 +378,7 @@ data:
 
 This way I can go back and get the link later if I miss the notification.
 
-## Okay, so did it work?
+## Okay... so did it work?
 
 Unfortunately. I woke up to several notifications a couple days later. In
 total, it has captured five separate clips across two... "incursions."
@@ -390,7 +392,7 @@ total, it has captured five separate clips across two... "incursions."
   ></iframe>
 </div>
 
-Looks like just one critter, potentially entering near the HVAC coolant line...
+Looks like it might just be one critter, potentially entering near the HVAC coolant line...
 
 I'm not sure the next steps need to be documented.
 
