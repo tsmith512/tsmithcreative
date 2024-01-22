@@ -9,11 +9,15 @@ $background-swap-min-height: 700px;
 {{ $bg1800 := $bg.Resize "1800x" }}
 {{ $bg2400 := $bg.Resize "2400x" }}
 
+{{ $bgMobile := resources.GetMatch "/img/home-background-mobile.jpg" }}
+{{ $bgMobile960 := $bgMobile.Resize "x960" }}
+
 .home {
   min-height: 100vh;
 
   // The grey pattern
-  background-image: url("/gfx/home-pattern.gif");
+  background-image: url("{{ $bgMobile960.RelPermalink }}");
+  background-size: cover;
 
   // Lots of repositioning the background-position here and the article
   // transform a little later in this file to accomplish putting, as much as

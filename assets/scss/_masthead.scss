@@ -3,6 +3,15 @@
   overflow: hidden;
   margin-bottom: 2rem;
 
+  @media screen and (min-width: $max-lines + 40px) {
+    // To make space for the overlay of the nav bar
+    padding-top: 2rem;
+  }
+
+  @media screen and (min-width: $max-width) {
+    padding-top: 3rem;
+  }
+
   @media (min-width: $max-lines + 40px) {
     background-color: #222;
 
