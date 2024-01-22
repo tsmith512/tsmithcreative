@@ -51,7 +51,30 @@ Having recently done
 [another deep dive on interactive mapping]({{< ref "2021-10-10-rnf-v3" >}}),
 this seemed like a simple job for Mapbox. Here's the overview:
 
-{{< media type="image" size="mini" src="overview.png" alt="Flowchart of data from senate files through Mapbox tooling to create the static images and interactive map" noshadow="noshadow" >}}
+``` mermaid
+
+  graph TD
+
+  DESIGN(Custom Map Design)
+  SHAPE(Senate Shapefile) --> TILES(Mapbox Tileset)
+
+  DESIGN ---> STUDIO(Mapbox Studio)
+  TILES --> STUDIO
+
+  STUDIO ----> STATIC(Static Images)
+  STUDIO ---> WEB(Website)
+
+  TILES <---> TQ(Tilequery API)
+  TQ <---> WEB
+
+  style DESIGN stroke:#000099,fill:#eef
+  style STUDIO stroke:#000099,fill:#eef
+  style SHAPE stroke:#990000,fill:#fee
+  style TILES stroke:#990000,fill:#fee
+  style WEB stroke:#009900,fill:#efe
+  style STATIC stroke:#009900,fill:#efe
+
+```
 
 ## Making a Tileset of Districts
 

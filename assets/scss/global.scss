@@ -61,6 +61,14 @@ blockquote:before {
   }
 }
 
+pre.mermaid[data-processed] {
+  text-align: center;
+
+  svg {
+    margin: 0 auto;
+  }
+}
+
 .update {
   background: #ebf7ed; // #f6f6f6;
   color: #085014;

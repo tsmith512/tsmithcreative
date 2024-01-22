@@ -47,7 +47,6 @@ $background-swap-min-height: 700px;
       // See icon-art.scss for how this works. Tacked on the last brightness() to pull it down.
       h1 a {
         filter: invert(38%) sepia(35%) saturate(988%) hue-rotate(137deg) brightness(95%) contrast(88%) brightness(60%);
-
       }
 
       // Show darker links because the background photo is sky
