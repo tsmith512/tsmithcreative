@@ -45,6 +45,31 @@ build the backend using familiar tools.
 
 {{< media size="mini" type="image" src="architecture.png" noshadow="noshadow" alt="Architecture" >}}
 
+``` mermaid
+
+  graph LR
+
+  subgraph CW [Cloudflare Workers]
+    W(Worker) --> R2(R2 Storage)
+    W --> KV(Workers KV Datastore)
+  end
+
+  subgraph CP [Cloudflare Pages]
+    R(Next.js SPA)
+  end
+
+  subgraph P [Paperframe Device]
+    C(Client Software) --> W
+  end
+
+  R -.-> W
+
+  style CW fill:#f9f9f9,stroke:#ccc
+  style CP fill:#f9f9f9,stroke:#ccc
+  style P fill:#f9f9f9,stroke:#ccc
+```
+
+
 - Device client: [`paperframe-client`](https://github.com/tsmith512/paperframe-client)
 - Backend Worker: [`paperframe-api`](https://github.com/tsmith512/paperframe-api)
 - Frontend webapp: [`paperframe-admin`](https://github.com/tsmith512/paperframe-admin)
