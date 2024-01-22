@@ -43,8 +43,6 @@ build the backend using familiar tools.
 - **Backend API** for storing and serving the images
 - And the **client software** running on the actual device.
 
-{{< media size="mini" type="image" src="architecture.png" noshadow="noshadow" alt="Architecture" >}}
-
 ``` mermaid
 
   graph LR
