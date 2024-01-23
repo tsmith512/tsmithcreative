@@ -7,7 +7,7 @@ date: 2024-01-22
 menu:
   main:
     name: Now
-    weight: 1
+    weight: 10
 ---
 
 <h2 style="color: #999;">Recently,</h2>
