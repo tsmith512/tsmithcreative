@@ -1,10 +1,16 @@
 @import 'variables';
 
 .site-header {
-  background: #111;
-  border-bottom: 2px solid black;
+  background: #222;
+
   padding: 0.5rem 0;
   width: 100%;
+
+  @media screen and (min-width: $max-lines + 40px) {
+    position: absolute;
+    z-index: 100;
+    background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
+  }
 
   .home & {
     position: absolute;
@@ -37,6 +43,7 @@
 
     a {
       display: block;
+      position: relative;
       width: 100%;
       padding-top: 80%;
 
@@ -45,12 +52,28 @@
       background-position: center center;
       background-repeat: no-repeat;
 
-      opacity: 0.5;
       .home &, &:hover { opacity: 1; }
+
+      &:after {
+        content: " ";
+        .home & { content: none; /* Well this is gross... */ }
+        position: absolute;
+        top: 1px;
+        bottom: -1px;
+        left: 1px;
+        right: -1px;
+        z-index: -1;
+        width: 100%;
+        background-image: url('/gfx/logo.svg');
+        background-size: contain;
+        filter: brightness(0%);
+        opacity: 0.5;
+      }
     }
 
     span {
       position: absolute;
+      top: 0;
       display: block;
       clip: rect(0px 0px 0px 0px);
     }
@@ -87,9 +110,9 @@
       display: block;
       font-family: $gotham;
       text-transform: uppercase;
-      color: #aaa;
+      color: #FFF;
       border-top: 0.5em solid transparent;
-      text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
       padding: 1.5em 0.5em 1em;
 
       @media (min-width: $max-lines) {
@@ -97,16 +120,16 @@
       }
 
       &:hover {
-        color: #CCC;
+        //
       }
 
       &.active {
-        color: #FFF;
+        //
       }
 
       @media (min-width: $nav-split) {
         &.active {
-          border-top-color: #EEE;
+          border-top-color: white;
         }
 
         &:hover {
