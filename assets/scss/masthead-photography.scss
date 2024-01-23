@@ -20,7 +20,7 @@
       {{ $resized := $base.Resize (printf "%dx" $size) }}
       @media (min-width: "{{ $size }}px") {
         .masthead-{{ $year }} .masthead-overlay {
-          background-image: url("/cdn-cgi/image/width={{ $size }},quality=85,format=jpeg{{ $base.RelPermalink }}");
+          background-image: url("{{ $resized.RelPermalink }}");
         }
       }
     {{ end }}
