@@ -246,7 +246,7 @@ warehouse product.
 
 **Estimating for Iteration: Story Points and Thin Vertical Slices** <br />
 [Session page](https://events.drupal.org/seattle2019/sessions/estimating-iteration-story-points-and-thin-vertical-slices)
-| [My write-up]({% link _projects/2019-05-10-estimate-to-iterate.md %})
+| [My write-up]({{< ref "2019-05-10-estimate-to-iterate" >}})
 
 {{< media type="image" size="" src="my-pres.jpg" alt="Me giving a presentation"  >}}
 
