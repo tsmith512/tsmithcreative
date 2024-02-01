@@ -3,7 +3,7 @@ title: Now
 summary: >
   Productions, progressions, plottings, ponderings.
 type: blog
-date: 2024-01-22
+date: 2024-02-01
 menu:
   main:
     name: Now
@@ -13,7 +13,9 @@ menu:
 <h2 style="color: #999;">Recently,</h2>
 
 - Read _[Artificial Condition (Murderbot Diaries #2)](https://bookshop.org/p/books/artificial-condition-martha-wells/9858231?ean=9781250186928),_ Martha Wells
-- [Tracked a rat with a Raspberry Pi and Home Assistant]({{< ref "2024-01-05-motion-activated-camera" >}})
+- Built a [proof-of-concept app and presentation]({{< ref "2024-01-31-stream-ugc-101-vidbin" >}})
+  to demo Stream and accept user generated content for
+  [THAT Conference TX 2024](https://thatconference.com/activities/3mAv9hu2Z98Ht4Bd5GkB).
 
 ---
 
@@ -30,9 +32,6 @@ edited by R.F. Kuang (and hand-annotated as a Christmas gift by
 
 ### Building
 
-- Prototype and slides for a "Pastebin but for Video" using Cloudflare Stream and
-  Next-on-Pages for a presentation at [THAT Conference](https://thatconference.com/tx/2024/),
-  my first speaking engagement since [DrupalCon 2019]({{< ref "2019-04-18-dc-seattle" >}}).
 - Preparing for the 2024 season of the
   [Southwest Collegiate Cyber Defense Competition]({{< ref "2019-04-02-southwest-ccdc" >}})
   as White Team lead.
@@ -51,5 +50,6 @@ lighting electrics and drive for cozier illumination.
 ---
 
 _**This is a Now page.** I stumbled on [this one](https://taylor.town/now) which
-led me to [that one](https://sive.rs/now), where it all started. Now a lot of
-people have one, and [maybe you should, too](https://sive.rs/nowff)._
+led me to [that one](https://sive.rs/now), where it all started. Now,
+a [lot of people have one](https://nownownow.com/), and
+[maybe you should, too](https://sive.rs/nowff)._
