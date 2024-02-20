@@ -17,15 +17,51 @@
   }
 }
 
-.post-teaser-item {
-  overflow: hidden;
-  padding-bottom: 1em;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 1em;
+// POST TYPES:
+.post-standard {}
 
-  &:last-child {
-    border-bottom: none;
+.post-quicktip {
+  border-left: 1px solid #ccc;
+}
+
+.post-teaser-type {
+  position: absolute;
+  overflow: visible;
+  top: -0.5rem;
+  left: -1.5rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+  border: 0.5rem solid white;
+
+  + .post-teaser-description {
+    padding-left: 2rem;
   }
+}
+
+.post-teaser-type-eyebrow {
+  position: absolute;
+  transform: rotate(270deg);
+  top: 5rem;
+  left: -3.5rem;
+  text-indent: 0.25rem;
+  padding: 0 1rem;
+
+  background-color: white;
+  color: #999;
+
+  font-family: $gotham;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+// POST TEASER UI:
+
+.post-teaser-item {
+  @extend %clearfix;
+
+  position: relative;
+  margin-bottom: 4em;
 
   a {
     text-decoration: none;
@@ -37,6 +73,12 @@
   }
 }
 
+// For with inline content, the Summary property will still be used,
+// above the trimmed short body copy, so make it stand out.
+.post-teaser-overview {
+  font-family: $gotham;
+}
+
 .post-teaser-thumbnail {
   display: block;
   margin-bottom: 1em;
@@ -46,8 +88,4 @@
     max-width: 33%;
     margin: 0 1em 0 0;
   }
-}
-
-.post-teaser-description {
-  overflow: hidden;
 }
