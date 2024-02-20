@@ -6,6 +6,8 @@ summary: >
   automated location tracking, geocoding, route planning, map design,
   WordPress tinkering, and a magic spreadsheet.
 tags: [engineering, side projects, travel, presentation]
+format: video
+embed: <iframe src="https://player.vimeo.com/video/353626268" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen><p><a href="https://vimeo.com/353626268">The Internet is for Making Roadtrips (Four Kitchens - Test Kitchen - August 2019)</a> from <a href="https://vimeo.com/tsmith512">Taylor Smith</a> on <a href="https://vimeo.com">Vimeo</a>.</p></iframe>
 ---
 
 <iframe src="https://player.vimeo.com/video/353626268" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen><p><a href="https://vimeo.com/353626268">The Internet is for Making Roadtrips (Four Kitchens - Test Kitchen - August 2019)</a> from <a href="https://vimeo.com/tsmith512">Taylor Smith</a> on <a href="https://vimeo.com">Vimeo</a>.</p></iframe>

@@ -20,7 +20,8 @@
 // POST TYPES:
 .post-standard {}
 
-.post-quicktip {
+.post-quicktip,
+.post-video {
   border-left: 1px solid #ccc;
 }
 
@@ -41,10 +42,10 @@
 
 .post-teaser-type-eyebrow {
   position: absolute;
-  transform: rotate(270deg);
-  top: 5rem;
-  left: -3.5rem;
-  text-indent: 0.25rem;
+  transform-origin: top left;
+  transform: rotate(270deg) translateX(-100%) translateY(-50%);
+  top: 2rem;
+  left: 0;
   padding: 0 1rem;
 
   background-color: white;
@@ -87,5 +88,12 @@
     float: left;
     max-width: 33%;
     margin: 0 1em 0 0;
+  }
+}
+
+.post-teaser-embed {
+  margin: 1rem 0;
+  iframe {
+    margin: 0;
   }
 }

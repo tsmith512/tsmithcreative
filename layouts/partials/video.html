@@ -1,0 +1,20 @@
+{{ $title := .Title }}
+
+<li class="post-teaser-item post-video">
+  <div class="post-teaser-type-eyebrow">Video</div>
+  <div class="post-teaser-type icon icon-video"></div>
+
+  <div class="post-teaser-description">
+    <h2><a  href={{ .RelPermalink }}>{{ .Title }}</a></h2>
+
+    <div class="post-teaser-overview">
+      {{ .Summary }}
+    </div>
+
+    <div class="post-teaser-embed">
+      {{ .Params.embed | safeHTML }}
+    </div>
+
+    {{ partial "post-meta" . }}
+  </div>
+</li>
