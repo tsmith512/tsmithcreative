@@ -7,10 +7,27 @@ summary: >
 layout: post
 tags: [scrum, presentation]
 format: video
-embed: <iframe src="https://player.vimeo.com/video/223554794" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen><p><a href="https://vimeo.com/223554794">What are Thin Vertical Slices</a> from <a href="https://vimeo.com/tsmith512">Taylor Smith</a> on <a href="https://vimeo.com">Vimeo</a>.</p></iframe>
+embed: >
+  <div style="position: relative; padding-top: 56.25%;">
+  <iframe
+    src="https://customer-igynxd2rwhmuoxw8.cloudflarestream.com/500ede74f05dfa69c9cccb9eb881a5c8/iframe?poster=https%3A%2F%2Fcustomer-igynxd2rwhmuoxw8.cloudflarestream.com%2F500ede74f05dfa69c9cccb9eb881a5c8%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+    loading="lazy"
+    style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+    allowfullscreen="true"
+  ></iframe>
+  </div>
 ---
 
-<iframe src="https://player.vimeo.com/video/223554794" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen><p><a href="https://vimeo.com/223554794">What are Thin Vertical Slices</a> from <a href="https://vimeo.com/tsmith512">Taylor Smith</a> on <a href="https://vimeo.com">Vimeo</a>.</p></iframe>
+<div style="position: relative; padding-top: 56.25%;">
+  <iframe
+    src="https://customer-igynxd2rwhmuoxw8.cloudflarestream.com/500ede74f05dfa69c9cccb9eb881a5c8/iframe?poster=https%3A%2F%2Fcustomer-igynxd2rwhmuoxw8.cloudflarestream.com%2F500ede74f05dfa69c9cccb9eb881a5c8%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+    loading="lazy"
+    style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+    allowfullscreen="true"
+  ></iframe>
+</div>
 
 Framing work in thin vertical slices of functionality means focusing on the
 business need behind feature requests instead of stratifying efforts by layer

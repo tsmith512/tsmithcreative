@@ -4,11 +4,27 @@ summary: Use story points to estimate task complexity, leading to a more predict
 layout: post
 tags: [scrum, presentation]
 format: video
-embed: <iframe src="https://player.vimeo.com/video/206174429" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen><p><a href="https://vimeo.com/206174429">What are Story Points</a> from <a href="https://vimeo.com/user32924569">Taylor Smith</a> on <a href="https://vimeo.com">Vimeo</a>.</p></iframe>
+embed: >
+  <div style="position: relative; padding-top: 56.25%;">
+  <iframe
+    src="https://customer-igynxd2rwhmuoxw8.cloudflarestream.com/51b1344f98d1ec94bd402ab707663032/iframe?poster=https%3A%2F%2Fcustomer-igynxd2rwhmuoxw8.cloudflarestream.com%2F51b1344f98d1ec94bd402ab707663032%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+    loading="lazy"
+    style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+    allowfullscreen="true"
+  ></iframe>
+  </div>
 ---
 
-<iframe src="https://player.vimeo.com/video/206174429" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen><p><a href="https://vimeo.com/206174429">What are Story Points</a> from <a href="https://vimeo.com/user32924569">Taylor Smith</a> on <a href="https://vimeo.com">Vimeo</a>.</p></iframe>
-
+<div style="position: relative; padding-top: 56.25%;">
+  <iframe
+    src="https://customer-igynxd2rwhmuoxw8.cloudflarestream.com/51b1344f98d1ec94bd402ab707663032/iframe?poster=https%3A%2F%2Fcustomer-igynxd2rwhmuoxw8.cloudflarestream.com%2F51b1344f98d1ec94bd402ab707663032%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+    loading="lazy"
+    style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+    allowfullscreen="true"
+  ></iframe>
+</div>
 Story points rate the complexity of a task, relative to the complexity of other
 tasks. Over time, a team's average velocity will reveal about how much
 complexity they can build in a given time. This helps predict how long a backlog
