@@ -3,7 +3,8 @@
 
   <ul class="post-teaser-list">
     {{ range $post := .Paginator.Pages }}
-      {{ partial "post-teaser" $post }}
+      {{ $partial := default "post-teaser" $post.Params.format }}
+      {{ partial $partial $post }}
     {{ end }}
   </ul>
 

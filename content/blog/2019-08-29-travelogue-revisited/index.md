@@ -6,9 +6,28 @@ summary: >
   automated location tracking, geocoding, route planning, map design,
   WordPress tinkering, and a magic spreadsheet.
 tags: [engineering, side projects, travel, presentation]
+format: video
+embed: >
+  <div style="position: relative; padding-top: 56.25%;">
+    <iframe
+      src="https://customer-igynxd2rwhmuoxw8.cloudflarestream.com/f382032c94b23fbc6c6ed50db2be9239/iframe?poster=https%3A%2F%2Fcustomer-igynxd2rwhmuoxw8.cloudflarestream.com%2Ff382032c94b23fbc6c6ed50db2be9239%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+      loading="lazy"
+      style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+      allowfullscreen="true"
+    ></iframe>
+  </div>
 ---
 
-<iframe src="https://player.vimeo.com/video/353626268" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen><p><a href="https://vimeo.com/353626268">The Internet is for Making Roadtrips (Four Kitchens - Test Kitchen - August 2019)</a> from <a href="https://vimeo.com/tsmith512">Taylor Smith</a> on <a href="https://vimeo.com">Vimeo</a>.</p></iframe>
+<div style="position: relative; padding-top: 56.25%;">
+  <iframe
+    src="https://customer-igynxd2rwhmuoxw8.cloudflarestream.com/f382032c94b23fbc6c6ed50db2be9239/iframe?poster=https%3A%2F%2Fcustomer-igynxd2rwhmuoxw8.cloudflarestream.com%2Ff382032c94b23fbc6c6ed50db2be9239%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+    loading="lazy"
+    style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+    allowfullscreen="true"
+  ></iframe>
+</div>
 
 I wrote about
 [this blog and its underlying technology]({{< ref "2017-04-23-building-travelogue" >}})

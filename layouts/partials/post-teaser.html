@@ -1,7 +1,7 @@
 {{ $thumbnail := .Resources.GetMatch "thumbnail.*" }}
 {{ $title := .Title }}
 
-<li class="post-teaser-item">
+<li class="post-teaser-item post-standard">
   {{ if $thumbnail }}
     <a href={{ .RelPermalink }} class="post-teaser-thumbnail">
       {{ with $thumbnail }}

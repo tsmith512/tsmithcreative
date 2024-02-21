@@ -3,7 +3,7 @@ title: Now
 summary: >
   Productions, progressions, plottings, ponderings.
 type: blog
-date: 2024-02-01
+date: 2024-02-20
 menu:
   main:
     name: Now
@@ -34,7 +34,10 @@ edited by R.F. Kuang (and hand-annotated as a Christmas gift by
 
 - Preparing for the 2024 season of the
   [Southwest Collegiate Cyber Defense Competition]({{< ref "2019-04-02-southwest-ccdc" >}})
-  as White Team lead.
+  as White Team lead. _(✅ Qualifiers done! Onto Regionals.)_
+- Moving some content around on my website and changing how some of the blog
+  teasers are displayed so the "blog" is a little more varied/interesting.
+  _(Thanks to [Kevin Kipp](https://kevinkipp.com/) for showing me [Adam Argyle's blog](https://nerdy.dev) as inspiration.)_
 
 ---
 
