@@ -20,6 +20,7 @@
 // POST TYPES:
 .post-standard {}
 
+.post-portfolio,
 .post-quicktip,
 .post-video {
   border-left: 1px solid #ccc;
@@ -87,8 +88,19 @@
   @media screen and (min-width: 480px) {
     float: left;
     max-width: 33%;
+    .post-teaser-description & {
+      max-width: calc(33% - 2rem);
+    }
     margin: 0 1em 0 0;
   }
+}
+
+.post-teaser-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem auto;
 }
 
 .post-teaser-embed {

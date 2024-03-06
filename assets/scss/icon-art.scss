@@ -3,7 +3,25 @@
  * the icons I use a lot and will be lazyloaded separately from the global bundle.
  */
 
-{{ $icons := slice "bulb" "calendar" "drupal" "facebook" "github" "globe" "instagram" "linkedin" "penpaper" "photos" "quote" "rss" "tags" "twitter" "video" }}
+{{ $icons := slice
+  "bulb"
+  "calendar"
+  "drupal"
+  "facebook"
+  "github"
+  "globe"
+  "instagram"
+  "linkedin"
+  "paint"
+  "penpaper"
+  "photos"
+  "quote"
+  "rss"
+  "slides"
+  "tags"
+  "twitter"
+  "video"
+}}
 
 {{ range $icon := $icons}}
   {{ $image := resources.Get (printf "/icon/%s.svg" $icon)}}
