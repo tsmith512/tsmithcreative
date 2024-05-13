@@ -29,7 +29,7 @@ images:
     title:
     width: 917
     height: 1500
-format: portfolio
+format: portfolio-dev
 ---
 
 <p>The Downtown Coordinating Council requested of Walsh a new website to serve as a directory of consumer-facing businesses and public events as part of an effort to support the rejuvination of Downtown Tulsa into an extremely active zone. Seven districts, scattered though historic downtown and all within walking distance of each other, host countless art galleries, museums, performance venues, nightlife establishments, fine dining opportunities, centers of worship and education, and many residential options.&nbsp;</p>

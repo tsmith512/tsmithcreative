@@ -24,7 +24,7 @@ images:
     title:
     width: 1080
     height: 1488
-format: portfolio
+format: portfolio-dev
 ---
 
 {{< gallery >}}

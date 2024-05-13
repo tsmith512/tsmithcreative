@@ -24,7 +24,7 @@ images:
     title:
     width: 1263
     height: 963
-format: portfolio
+format: portfolio-dev
 ---
 
 Williams approached Walsh wanting both a visual and functional update to their existing website, based on a proprietary content management system requiring that the IT Department execute content edits. As part of a larger brand refresh, Walsh Branding redesigned their website. WordPress was recommended as a suitable development platform because the site was primarily required to hold static pages. Williams opted to host their site using Automattic's [WordPress VIP](http://vip.wordpress.com/) enterprise hosting solutions, backed by the core WordPress.com server grid and WordPress's most active developers.

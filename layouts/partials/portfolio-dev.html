@@ -1,11 +1,13 @@
+{{/* CONSOLIDATE WITH portfolio.html SOMEHOW */}}
+
 {{ .Page.Store.Set "hasPswp" true }}
 
 {{ $thumbnail := .Resources.GetMatch "masthead.*" }}
 {{ $title := .Title }}
 
-<li class="post-teaser-item post-portfolio">
+<li class="post-teaser-item post-portfolio-dev">
   <div class="post-teaser-type-eyebrow">Portfolio</div>
-  <div class="post-teaser-type icon icon-paint"></div>
+  <div class="post-teaser-type icon icon-code"></div>
 
   <div class="post-teaser-description">
     <h2><a  href={{ .RelPermalink }}>{{ .Title }}</a></h2>
