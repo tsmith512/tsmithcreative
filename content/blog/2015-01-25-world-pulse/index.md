@@ -58,7 +58,7 @@ images:
     title: Action Prompts call users to participate in editorial initiatives to write about a particular prompt, then aggregate responses
     width: 720
     height: 1280
-format: portfolio
+format: portfolio-design
 ---
 
 World Pulse is a powerful online community of women and allies worldwide who speak out about and build solutions to the biggest challenges in their societies. As an organization and social media community, they empower women leaders on the ground by advancing their digital, leadership, and journalism skills to mobilize communities and create real social transformation. World Pulse sought to rebuild their website for several reasons:

@@ -1,17 +1,4 @@
-{{ $title := .Title }}
-
-<li class="post-teaser-item post-quicktip">
-  <div class="post-teaser-type-eyebrow">Quick Tip</div>
-  <div class="post-teaser-type icon icon-bulb"></div>
-  <div class="post-teaser-description">
-    <h2><a  href={{ .RelPermalink }}>{{ .Title }}</a></h2>
-    <div class="post-teaser-overview">
-      {{ .Summary }}
-    </div>
-
-    {{ $content := .Content }}
-    {{ $pieces := split $content "<!-- more -->" }}
-    {{ index $pieces 0 | markdownify }}
-    {{ partial "post-meta" . }}
-  </div>
-</li>
+{{ partial "post-teaser-v2" (dict
+  "ctx" .
+  "type" "quicktip"
+) }}

@@ -54,7 +54,7 @@ images:
     title:
     width: 500
     height: 332
-format: portfolio
+format: portfolio-design
 ---
 
 Every year, The University of Tulsa participates in the American Advertising Federation's [National Student Advertising Competition](http://www.aaf.org/default.asp?id=122). Participant schools prepare a campaign for that year's sponsor, generally to increase brand awareness and market penetration among a college/18-24 demographic (though to match State Farm's insurance brackets, this campaign specifies a target market of 18-25 year-olds). This year's sponsor was State Farm.

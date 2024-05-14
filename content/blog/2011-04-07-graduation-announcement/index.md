@@ -39,7 +39,7 @@ images:
     title:
     width: 3872
     height: 2592
-format: portfolio
+format: portfolio-design
 ---
 
 <p>In the words of a good friend: This makes it real.</p>

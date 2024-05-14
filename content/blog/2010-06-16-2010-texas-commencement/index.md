@@ -44,7 +44,7 @@ images:
     title:
     width: 262
     height: 350
-format: portfolio
+format: portfolio-dev
 ---
 
 My favorite job of the year, this was my third year (2007, 2008, and 2010) to work as an electrician for the University of Texas Spring Commencement. It's the one time of year when my inner Longhorn gets to come out and work on the campus I grew up on, where most of my relatives and scores of friends call their Alma Mater.

@@ -1,18 +1,4 @@
-{{ $title := .Title }}
-
-<li class="post-teaser-item post-slides">
-  <div class="post-teaser-type-eyebrow">Slides</div>
-  <div class="post-teaser-type icon icon-slides"></div>
-
-  <div class="post-teaser-description">
-    <h2><a  href={{ .RelPermalink }}>{{ .Title }}</a></h2>
-
-    {{ .Summary }}
-
-    <div class="post-teaser-embed">
-      {{ .Params.embed | safeHTML }}
-    </div>
-
-    {{ partial "post-meta" . }}
-  </div>
-</li>
+{{ partial "post-teaser-v2" (dict
+  "ctx" .
+  "type" "slides"
+) }}

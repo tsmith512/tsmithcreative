@@ -37,7 +37,7 @@ images:
     title:
     width: 1063
     height: 1523
-format: portfolio
+format: portfolio-pen
 ---
 
 The University Policy Office at The University of Texas at Austin needed a new website as part of its effort to consolidate and modernize several partially overlapping repositories of active and obsolete policy documents into the new Handbook of Operating Procedures. The new site needed to also capture the history of authoring, drafting, routing/revisions, and publication for these policy documents as well as the "kick-off" document for each policy or policy revision, called a Policy Impact Statement (which essentially proposes a policy need and expected outcome, to begin the policy drafting process).

@@ -49,7 +49,7 @@ images:
     title:
     width: 1000
     height: 666
-format: portfolio
+format: portfolio-design
 ---
 
 {{< gallery >}}

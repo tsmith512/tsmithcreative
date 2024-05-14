@@ -44,7 +44,7 @@ images:
     title:
     width: 518
     height: 800
-format: portfolio
+format: portfolio-design
 ---
 
 <p>I was once again thrilled to be asked by Rick Garcia at St. Andrew's to work on the collateral for the 2011 musical, Chrous Line. A very non-traditional show, this musical follows a group of auditioning actors through their auditions with the Director and Dance Captain. The Director begins to ask them about aspects of their lives, which opens the show into a series of monologues and small ensemble scenes spotlighting indiviual characters. This monologue format is very similar to one of Rick's acting education excercises, Talk Theatre, where actors write personal stories and then trade with other actors in the class to perform them.</p>

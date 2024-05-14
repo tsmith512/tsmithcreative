@@ -19,7 +19,7 @@ images:
     title:
     width: 1080
     height: 640
-format: portfolio
+format: portfolio-design
 ---
 
 [Four Kitchens](http://www.fourkitchens.com) follows Scrum project management methodology. One of our project managers wrote a great [4K Scrum Guide](https://github.com/fourkitchens/4K-scrum-guide), if you aren't familiar. To summarize this game's position within the process: during a project, each development story is "estimated" for its complexity with a simple card game. Our team moves around a lot, so we wanted a way to loop in remote players. Agile coach Luis Goncalves has a very thorough explanation of [planning poker on his blog](https://luis-goncalves.com/planning-poker-scrum-poker/).

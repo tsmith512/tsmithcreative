@@ -8,6 +8,7 @@ problem: >
   accounts operated differently. Consulting the team, its project managers,
   business development, and company leadership, I drafted a new approach to
   simplify and streamline.
+format: portfolio-pen
 ---
 
 Four Kitchens offers ongoing support services to clients. As the department
