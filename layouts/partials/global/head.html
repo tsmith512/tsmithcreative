@@ -41,7 +41,7 @@
 
 <!-- Typography.com Webfonts package. Preload for an onload swap -->
 <link rel="preload" href="/api/v1/fonts" as="style" />
-<link rel="stylesheet" href="https://tsmith.com/api/v1/fonts"
+<link rel="stylesheet" href="/api/v1/fonts"
   media="print" onload="this.media='all'; this.onload=null;" />
 <noscript><link rel="stylesheet" href="/api/fonts" /></noscript>
 
@@ -59,7 +59,8 @@
 {{ end }}
 
 
-{{ if .Page.Params.photoswipe }}
+{{ $or := or (.Page.Params.photoswipe) (.Page.Store.Get "hasPswp") }}
+{{ if $or }}
   {{ $photoswipeCss := resources.Get "vendor/photoswipe/dist/photoswipe.css" | minify }}
   <link rel="stylesheet" type="text/css" href="{{ $photoswipeCss.RelPermalink }}"
     media="print" onload="this.media='screen'; this.onload=null;" />

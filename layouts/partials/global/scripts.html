@@ -3,7 +3,8 @@
 <script async src="{{ $js.RelPermalink }}"></script>
 
 <!-- Call photoswipe JS only if the page needs it -->
-{{ if or (.Page.Params.photoswipe) (.Page.Store.Get "hasPswp") }}
+{{ $or := or (.Page.Params.photoswipe) (.Page.Store.Get "hasPswp") }}
+{{ if $or }}
   {{ $photoswipeJs := resources.Match "js/special/photoswipe.js" | resources.Concat "js/photoswipe.js" | js.Build (dict "minify" true)}}
   <script async src="{{ $photoswipeJs.RelPermalink }}"></script>
 {{ end }}

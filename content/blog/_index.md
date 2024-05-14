@@ -9,5 +9,5 @@ summary: >
   case studies, code, experiments, and things to remember.
 photoswipe: true
 cascade:
-  photoswipe: true
+  # photoswipe: true
 ---
