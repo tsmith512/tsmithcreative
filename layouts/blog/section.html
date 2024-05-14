@@ -3,43 +3,43 @@
 
   <ul class="post-teaser-list">
     {{ range $post := .Paginator.Pages }}
-      {{ $partial := default "post-teaser" $post.Params.format }}
+      {{ $format := default "post-teaser" $post.Params.format }}
 
-      {{ if eq $partial "video" }}
+      {{ if eq $format "video" }}
         {{ partial "post-teaser-v2" (dict
           "ctx" .
           "type" "video"
         ) }}
-      {{ else if eq $partial "slides" }}
+      {{ else if eq $format "slides" }}
         {{ partial "post-teaser-v2" (dict
           "ctx" .
           "type" "slides"
         ) }}
-      {{ else if eq $partial "quicktip" }}
+      {{ else if eq $format "quicktip" }}
         {{ partial "post-teaser-v2" (dict
           "ctx" .
           "type" "quicktip"
         ) }}
-      {{ else if eq $partial "portfolio-design" }}
+      {{ else if eq $format "portfolio-design" }}
         {{ .Page.Store.Set "hasPswp" true }}
         {{ partial "post-teaser-v2" (dict
           "ctx" .
           "type" "portfolio-design"
         ) }}
-      {{ else if eq $partial "portfolio-dev" }}
+      {{ else if eq $format "portfolio-dev" }}
         {{ .Page.Store.Set "hasPswp" true }}
         {{ partial "post-teaser-v2" (dict
           "ctx" .
           "type" "portfolio-dev"
         ) }}
-      {{ else if eq $partial "portfolio-pen" }}
+      {{ else if eq $format "portfolio-pen" }}
         {{ .Page.Store.Set "hasPswp" true }}
         {{ partial "post-teaser-v2" (dict
           "ctx" .
           "type" "portfolio-pen"
         ) }}
       {{ else }}
-        {{ partial $partial $post }}
+        {{ partial $format $post }}
       {{ end }}
     {{ end }}
   </ul>
