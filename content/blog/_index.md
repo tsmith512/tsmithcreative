@@ -1,13 +1,13 @@
 ---
-title: Blog
+title: Blog & Portfolio
 menu:
   main:
-    title: Blog
+    name: Blog
     weight: 1
 summary: >
-  Wherein I write about what I'm learning about work, code, little adventures,
-  and side projects.
-photoswipe: false
+  A junk drawer of writing, side projects, client work,
+  case studies, code, experiments, and things to remember.
+photoswipe: true
 cascade:
-  photoswipe: true
+  # photoswipe: true
 ---

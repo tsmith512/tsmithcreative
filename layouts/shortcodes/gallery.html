@@ -1,4 +1,12 @@
-{{ $data := index .Page.Params.galleries (.Get 0) }}
+{{ .Page.Store.Set "hasPswp" true }}
+
+{{ $data := false }}
+{{ if and (isset .Page.Params "galleries") (.Get 0) }}
+  {{ $data = index .Page.Params.galleries (.Get 0) }}
+{{ else }}
+  {{/* Covers an old Projects page property for a single top-level gallery */}}
+  {{ $data = .Page.Params.images }}
+{{ end }}
 
 <div
   class="gallery pswp-container"
@@ -7,6 +15,10 @@
 >
   {{ range $item := $data }}
     {{ $base := $.Page.Resources.GetMatch $item.src }}
+    {{ if $item.img }}
+      {{/* Covers old Projects galleries which used "img" instead of "src" */}}
+      {{ $base = $.Page.Resources.GetMatch $item.img }}
+    {{ end }}
     {{ if $item.from }}
       {{ $page := $.Site.GetPage $item.from }}
       {{ $base = $page.Resources.GetMatch $item.src }}

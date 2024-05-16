@@ -59,7 +59,8 @@
 {{ end }}
 
 
-{{ if .Page.Params.photoswipe }}
+{{ $or := or (.Page.Params.photoswipe) (.Page.Store.Get "hasPswp") }}
+{{ if $or }}
   {{ $photoswipeCss := resources.Get "vendor/photoswipe/dist/photoswipe.css" | minify }}
   <link rel="stylesheet" type="text/css" href="{{ $photoswipeCss.RelPermalink }}"
     media="print" onload="this.media='screen'; this.onload=null;" />
