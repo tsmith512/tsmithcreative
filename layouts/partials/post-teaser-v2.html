@@ -1,0 +1,155 @@
+{{ $title := .Title }}
+
+{{ $class := "" }}
+{{ $icon := "" }}
+{{ $eyebrow := "" }}
+{{ $meta := "last" }}
+{{ $overview := false }}
+{{ $excerpt := false }}
+
+{{ if eq .type "quicktip" }}
+  {{ $class = "text" }}
+  {{ $icon = "bulb" }}
+  {{ $eyebrow = "Quick Tip" }}
+  {{ $meta = "last" }}
+  {{ $overview = true }}
+  {{ $excerpt = true }}
+{{ end }}
+
+{{ if eq .type "slides" }}
+  {{ $class = "media" }}
+  {{ $icon = "slides" }}
+  {{ $eyebrow = "Slides" }}
+{{ end }}
+
+{{ if eq .type "video" }}
+  {{ $class = "media" }}
+  {{ $icon = "video" }}
+  {{ $eyebrow = "Video" }}
+{{ end }}
+
+{{ if eq .type "portfolio-dev" }}
+  {{ $class = "gallery" }}
+  {{ $icon = "code" }}
+  {{ $eyebrow = "Portfolio" }}
+  {{ $meta = "first" }}
+  {{ $overview = true }}
+{{ end }}
+
+{{ if eq .type "portfolio-design" }}
+  {{ $class = "gallery" }}
+  {{ $icon = "paint" }}
+  {{ $eyebrow = "Portfolio" }}
+  {{ $meta = "first" }}
+  {{ $overview = true }}
+{{ end }}
+
+{{ if eq .type "portfolio-pen" }}
+  {{/* There aren't many of these, but will they all have galleries? */}}
+  {{ $class = "text" }}
+  {{ if .ctx.Page.Params.Images }}
+    {{ $class = "gallery" }}
+  {{ end }}
+  {{ $icon = "pen" }}
+  {{ $eyebrow = "Portfolio" }}
+  {{ $meta = "first" }}
+  {{ $overview = true }}
+{{ end }}
+
+
+{{ with .ctx }}
+  <li class="post-teaser-item post-{{ $class }}">
+    <div class="post-teaser-type-eyebrow">{{ $eyebrow }}</div>
+    <div class="post-teaser-type icon icon-{{ $icon }}"></div>
+
+    <div class="post-teaser-description">
+      <h2><a  href={{ .RelPermalink }}>{{ .Title }}</a></h2>
+
+      {{ if eq $meta "first" }}{{ partial "post-meta" . }}{{ end }}
+
+      {{/* If we're doing an overview, it's the summary bolded, before media. */}}
+      {{ if $overview }}
+        <div class="post-teaser-overview">
+          {{ .Summary }}
+        </div>
+      {{ else }}
+        {{ .Summary }}
+      {{ end }}
+
+      {{ if eq $class "media" }}
+        <div class="post-teaser-embed">
+          {{ .Params.embed | safeHTML }}
+        </div>
+      {{ end }}
+
+      {{ if eq $class "gallery"}}
+        {{/* @TODO: This is yet another copy of gallery.html ... */}}
+        {{/* Counter to show 5 or fewer images */}}
+        {{ $data := .Page.Params.images }}
+
+        {{ $i := 0 }}
+
+        <div
+          class="post-teaser-gallery pswp-container"
+          data-row
+          data-count="{{ len $data }}"
+        >
+          {{ range $item := $data }}
+            {{ $i = add $i 1 }}
+            {{ if gt $i 5 }}
+              {{ break }}
+            {{ end }}
+            {{ $base := $.ctx.Page.Resources.GetMatch $item.src }}
+            {{ if $item.img }}
+              {{/* Covers old Projects galleries which used "img" instead of "src" */}}
+              {{ $base = $.ctx.Page.Resources.GetMatch $item.img }}
+            {{ end }}
+
+            {{ if $item.from }}
+              {{ $page := $.Site.GetPage $item.from }}
+              {{ $base = $page.Resources.GetMatch $item.src }}
+            {{ end }}
+
+            {{ with $base }}
+              {{ $large := $base.Fit "1600x1600" }}
+              <a
+                href="{{ $large.RelPermalink }}"
+                data-pswp-width="{{ $large.Width }}"
+                data-pswp-height="{{ $large.Height }}"
+                data-cropped="true"
+                class="gallery-link"
+              >
+                {{ $thumbnail := $base.Fit "400x400 center" }}
+                <div class="gallery-ir">
+                  <img
+                    src="{{ $thumbnail.RelPermalink }}"
+                    class="gallery-thumbnail"
+                    alt="{{ $item.alt }}"
+                    width="{{ $thumbnail.Width }}"
+                    height="{{ $thumbnail.Height }}"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+            {{ end }}
+          {{ end }}
+        </div>
+
+      {{ end }}
+
+      {{/* If we're doing an overview, it's the summary bolded, before media. */}}
+      {{ if $overview }}
+        {{ .Page.Params.problem | markdownify }}
+      {{ end }}
+
+      {{ if $excerpt }}
+        {{ $content := .Content }}
+        {{ $pieces := split $content "<!-- more -->" }}
+        {{ index $pieces 0 | markdownify }}
+      {{ end }}
+
+
+      {{ if eq $meta "last" }}{{ partial "post-meta" . }}{{ end }}
+    </div>
+  </li>
+{{ end }}
