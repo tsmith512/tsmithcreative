@@ -105,6 +105,15 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 1rem auto;
+
+  // The default layout will turn a gallery of 4 into 1 row of 3 and a row of 1.
+  // Fix that. Inherited layouts for 2, 3, and 5 were fine, and 5 is the max in
+  // this context.
+  &[data-count="4"] {
+    .gallery-link {
+      flex-basis: 50%;
+    }
+  }
 }
 
 .post-teaser-embed {
