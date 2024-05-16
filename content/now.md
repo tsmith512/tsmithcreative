@@ -12,11 +12,11 @@ menu:
 
 <h2 style="color: #999;">Recently,</h2>
 
-- Read _[Artificial Condition (Murderbot Diaries #2)](https://bookshop.org/p/books/artificial-condition-martha-wells/9858231?ean=9781250186928),_ Martha Wells
-- Built a [proof-of-concept app and presentation]({{< ref "2024-01-31-stream-ugc-101-vidbin" >}})
-  to demo Stream and accept user generated content for
-  [THAT Conference TX 2024](https://thatconference.com/activities/3mAv9hu2Z98Ht4Bd5GkB).
-
+- Read _[Tomorrow, and Tomorrow, and Tomorrow](https://bookshop.org/p/books/tomorrow-and-tomorrow-and-tomorrow-gabrielle-zevin/17502475),_ Gabrielle Zevin
+- Wrapped up the 2024 season of the
+  [Southwest Collegiate Cyber Defense Competition]({{< ref "2019-04-02-southwest-ccdc" >}})
+  as White Team lead.
+- Put up a lot of window blinds.
 ---
 
 ## Now.
@@ -32,23 +32,22 @@ edited by R.F. Kuang (and hand-annotated as a Christmas gift by
 
 ### Building
 
-- Preparing for the 2024 season of the
-  [Southwest Collegiate Cyber Defense Competition]({{< ref "2019-04-02-southwest-ccdc" >}})
-  as White Team lead. _(✅ Qualifiers done! Onto Regionals.)_
 - Moving some content around on my website and changing how some of the blog
   teasers are displayed so the "blog" is a little more varied/interesting.
   _(Thanks to [Kevin Kipp](https://kevinkipp.com/) for showing me [Adam Argyle's blog](https://nerdy.dev) as inspiration.)_
+- Gearing up for the [Zilker Theatre Productions](https://zilker.org) summer
+  performance of _Legally Blonde,_ opening this July! 
 
 ---
 
 <h2 style="color: #999;">Soon?</h2>
 
-Hanging window blinds.
+I recently joined the [ASMBLY Makerspace](https://asmbly.org/) in Austin. Not
+exactly sure what my next round of projects will be... the planter boxes I
+built worked out well, but I am, as it turns out, bad at plants...
 
-I recently joined the [ASMBLY Makerspace](https://asmbly.org/) in Austin. I
-think I'd like to build a pair of table lamps. Bringing together a very
-elementary start in woodworking with a long-standing knowledge of simple
-lighting electrics and drive for cozier illumination.
+I should blog more... (post ideas: VidBin write-up, Stream feature launches,
+some kind of howto)
 
 ---
 

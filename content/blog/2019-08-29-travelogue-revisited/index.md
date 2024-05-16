@@ -10,7 +10,7 @@ format: video
 embed: >
   <div style="position: relative; padding-top: 56.25%;">
     <iframe
-      src="https://customer-igynxd2rwhmuoxw8.cloudflarestream.com/f382032c94b23fbc6c6ed50db2be9239/iframe?poster=https%3A%2F%2Fcustomer-igynxd2rwhmuoxw8.cloudflarestream.com%2Ff382032c94b23fbc6c6ed50db2be9239%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+      src="https://customer-igynxd2rwhmuoxw8.cloudflarestream.com/f382032c94b23fbc6c6ed50db2be9239/iframe?preload=none&poster=https%3A%2F%2Fcustomer-igynxd2rwhmuoxw8.cloudflarestream.com%2Ff382032c94b23fbc6c6ed50db2be9239%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
       loading="lazy"
       style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
       allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
@@ -21,7 +21,7 @@ embed: >
 
 <div style="position: relative; padding-top: 56.25%;">
   <iframe
-    src="https://customer-igynxd2rwhmuoxw8.cloudflarestream.com/f382032c94b23fbc6c6ed50db2be9239/iframe?poster=https%3A%2F%2Fcustomer-igynxd2rwhmuoxw8.cloudflarestream.com%2Ff382032c94b23fbc6c6ed50db2be9239%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+    src="https://customer-igynxd2rwhmuoxw8.cloudflarestream.com/f382032c94b23fbc6c6ed50db2be9239/iframe?preload=true&poster=https%3A%2F%2Fcustomer-igynxd2rwhmuoxw8.cloudflarestream.com%2Ff382032c94b23fbc6c6ed50db2be9239%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
     loading="lazy"
     style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
     allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"

@@ -10,7 +10,7 @@ format: video
 embed: >
   <div style="position: relative; padding-top: 56.25%;">
   <iframe
-    src="https://customer-igynxd2rwhmuoxw8.cloudflarestream.com/9f9e3b02b91f135e26e6d3412ae52fe8/iframe?preload=true&poster=https%3A%2F%2Fcustomer-igynxd2rwhmuoxw8.cloudflarestream.com%2F9f9e3b02b91f135e26e6d3412ae52fe8%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D9m45s%26height%3D600&startTime=1m28s"
+    src="https://customer-igynxd2rwhmuoxw8.cloudflarestream.com/9f9e3b02b91f135e26e6d3412ae52fe8/iframe?preload=none&poster=https%3A%2F%2Fcustomer-igynxd2rwhmuoxw8.cloudflarestream.com%2F9f9e3b02b91f135e26e6d3412ae52fe8%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D9m45s%26height%3D600&startTime=1m28s"
     style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
     allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
     allowfullscreen="true"
