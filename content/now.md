@@ -3,7 +3,7 @@ title: Now
 summary: >
   Productions, progressions, plottings, ponderings.
 type: blog
-date: 2024-02-20
+date: 2024-05-15
 menu:
   main:
     name: Now
