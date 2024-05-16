@@ -15,8 +15,12 @@ menu:
 - Read _[Tomorrow, and Tomorrow, and Tomorrow](https://bookshop.org/p/books/tomorrow-and-tomorrow-and-tomorrow-gabrielle-zevin/17502475),_ Gabrielle Zevin
 - Wrapped up the 2024 season of the
   [Southwest Collegiate Cyber Defense Competition]({{< ref "2019-04-02-southwest-ccdc" >}})
-  as White Team lead.
-- Put up a lot of window blinds.
+  as White Team lead, and passed on the team lead torch. I'll find new ways to
+  help next season!
+- Moved some ancient content around on the site to surface some old portfolio
+  pieces in the blog feed --- with more variation in the list view.
+  _(Thanks to [Kevin Kipp](https://kevinkipp.com/) for showing me [Adam Argyle's blog](https://nerdy.dev) as inspiration.)_
+
 ---
 
 ## Now.
@@ -26,17 +30,13 @@ do this? How? What ever happened to blogs?
 
 ### Reading
 
-_[The Best American Science Fiction and Fantasy 2023](https://www.goodreads.com/book/show/127654222-the-best-american-science-fiction-and-fantasy-2023),_
-edited by R.F. Kuang (and hand-annotated as a Christmas gift by
-[Evan Griffith](https://www.evangriffithbooks.com/))
+_[The Strange Wonders of Roots](https://bookshop.org/p/books/the-strange-wonders-of-roots-evan-griffith/20611594?ean=9780063287969),_
+[Evan Griffith](https://www.evangriffithbooks.com/). (I got my hands on a pre-release copy!)
 
 ### Building
 
-- Moving some content around on my website and changing how some of the blog
-  teasers are displayed so the "blog" is a little more varied/interesting.
-  _(Thanks to [Kevin Kipp](https://kevinkipp.com/) for showing me [Adam Argyle's blog](https://nerdy.dev) as inspiration.)_
 - Gearing up for the [Zilker Theatre Productions](https://zilker.org) summer
-  performance of _Legally Blonde,_ opening this July! 
+  performance of _Legally Blonde,_ opening this July!
 
 ---
 
