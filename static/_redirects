@@ -1,3 +1,4 @@
+# (2022) Jekyll --> Hugo Migration
 /feed.xml /rss.xml 301
 
 /email-me /contact/ 301
@@ -5,6 +6,7 @@
 /file/resume /pdf/taylor-smith-resume.pdf 301
 /resume /pdf/taylor-smith-resume.pdf 301
 
+# (2017) Drupal --> Jekyll/S3 Migration
 /article/custom-styles-wordpress-visual-editor /blog/2013/wordpress-theme-editor/
 /article/gittin-started-pantheon-multidev-fk /blog/2013/pantheon-multidev/
 /article/change-page-template-based-panels-layout /blog/2013/panels-page-tpl/
@@ -15,6 +17,7 @@
 /article/nth-child-mathematics /blog/2014/nth-child-math/
 /article/cleaner-history-interactive-commit-building-git /blog/2016/git-interactive-adding/
 
+# (2024) Selected portfolio projects --> blog posts reorg
 /project/nsac-2010/                        /blog/2010/nsac-2010/                      301
 /project/2010-texas-commencement/          /blog/2010/2010-texas-commencement/        301
 /project/graduation-announcement/          /blog/2011/graduation-announcement/        301
