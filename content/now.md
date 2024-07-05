@@ -3,7 +3,7 @@ title: Now
 summary: >
   Productions, progressions, plottings, ponderings.
 type: blog
-date: 2024-06-21
+date: 2024-07-05
 menu:
   main:
     name: Now
@@ -29,18 +29,12 @@ do this? How? What ever happened to blogs?
 
 ### Reading
 
-Listening to Scalzi's [Redshirts](https://www.audible.com/pd/Redshirts-Audiobook/B007SP2LPM)
-narrated by Wil Wheaton and reading
-[The Guncle](https://bookshop.org/p/books/the-guncle-steven-rowley/16519843) as
-part of Proudflare's annual book club.
+TJ Klune's _[In the Lives of Puppets](https://bookshop.org/p/books/in-the-lives-of-puppets-tj-klune/18484876)_
 
 ### Building
 
-- Gearing up for the [Zilker Theatre Productions](https://zilker.org) summer
-  performance of _Legally Blonde,_ opening this July!
-- I should blog more... (post ideas: VidBin write-up, ~~Stream feature launches~~
-  [yes]({{< ref 2024-06-20-stream-ai-generated-captions>}}),
-  ~~some kind of howto~~ [also yes]({{< ref 2024-06-21-obs-from-scratch>}}))
+- [Zilker Theatre Productions](https://zilker.org)'s summer performance of
+  _Legally Blonde_ opens on July 12th!
 
 ---
 
@@ -49,7 +43,6 @@ part of Proudflare's annual book club.
 I recently joined the [ASMBLY Makerspace](https://asmbly.org/) in Austin. Not
 exactly sure what my next round of projects will be... the planter boxes I
 built worked out well, but I am, as it turns out, bad at plants...
-
 
 ---
 
