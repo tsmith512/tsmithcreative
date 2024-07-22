@@ -29,12 +29,12 @@ do this? How? What ever happened to blogs?
 
 ### Reading
 
-TJ Klune's _[In the Lives of Puppets](https://bookshop.org/p/books/in-the-lives-of-puppets-tj-klune/18484876)_
+Blake Crouch's _[Dark Matter](https://bookshop.org/p/books/dark-matter-blake-crouch/7376172)_
 
 ### Building
 
 - [Zilker Theatre Productions](https://zilker.org)'s summer performance of
-  _Legally Blonde_ opens on July 12th!
+  _Legally Blonde_ runs until August 17th!
 
 ---
 
