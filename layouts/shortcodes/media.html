@@ -90,6 +90,12 @@
       loading="lazy"
     />
   {{ end }}
+  {{ if eq $type "mp4" }}
+    {{/* It'd be better to hoist autoplay up to the caller as an option */}}
+    <video controls loop muted autoplay class="{{ delimit $mediaClasses " " }}">
+      <source src="{{ $src }}" type="video/mp4">
+    </video>
+  {{ end }}
   {{ if eq $type "frame" }}
     <div class="browser-frame">
       <div class="browser-frame-header">

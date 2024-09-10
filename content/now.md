@@ -12,13 +12,10 @@ menu:
 
 <h2 style="color: #999;">Recently,</h2>
 
-- Read _[The Strange Wonders of Roots](https://bookshop.org/p/books/the-strange-wonders-of-roots-evan-griffith/20611594?ean=9780063287969),_
-  [Evan Griffith](https://www.evangriffithbooks.com/) 💙
-- Finally finished Melissa Perri's _[Escaping the Build Trap](https://www.oreilly.com/library/view/escaping-the-build/9781491973783/)_
-  which is maybe the first professional development book I've read cover-to-cover
-  and it took me a year to do it. I need to figure out how to work more of this
-  into my regular habits.
-- Our team launched [Automated Captions](https://blog.cloudflare.com/stream-automatic-captions-with-ai)!
+- Read _[Wool](https://bookshop.org/p/books/wool-hugh-howey/15022022),_
+  Hugh Howey. Woah.
+- Closed the [Zilker Theatre Productions](https://zilker.org)'s summer
+  performance of _Legally Blonde._
 
 ---
 
@@ -29,20 +26,22 @@ do this? How? What ever happened to blogs?
 
 ### Reading
 
-Blake Crouch's _[Dark Matter](https://bookshop.org/p/books/dark-matter-blake-crouch/7376172)_
+[Borne](https://bookshop.org/p/books/borne-jeff-vandermeer/15879530?ean=9780374537654), Jeff Vandermeer. Birthday gift from Evan!
 
 ### Building
 
-- [Zilker Theatre Productions](https://zilker.org)'s summer performance of
-  _Legally Blonde_ runs until August 17th!
+Apparently, getting into [entry-level ESP32 projects]({{< ref 2024-09-10-esp32-leak-detector>}})
+and wondering what comes next.
+
+Prototyping and documenting some research onto how we might add multilingual
+support on our new [Automated Captions](https://blog.cloudflare.com/stream-automatic-captions-with-ai)
+feature.
 
 ---
 
 <h2 style="color: #999;">Soon?</h2>
 
-I recently joined the [ASMBLY Makerspace](https://asmbly.org/) in Austin. Not
-exactly sure what my next round of projects will be... the planter boxes I
-built worked out well, but I am, as it turns out, bad at plants...
+Not quite sure...
 
 ---
 
