@@ -1,5 +1,5 @@
 ---
-title: Leak Detector for Home Automation
+title: Leak Detector Notifications with an ESP32
 summary: >
   Using an ESP32 and two leak sensors with ESPHome and Home Assistant to warn me
   if the air conditioner tries to flood the house again.
@@ -103,7 +103,7 @@ In the thick of "side project mania" --- during which _carefully reading_
 documentation isn't my strong suit --- I did get stuck on three steps that
 seemed harder to learn than I would have expected.
 
-For "_how to use Docker or Docker Compose to install and run it_" follow
+For "_how to use Docker or Docker Compose to install and run ESPHome_" follow
 the "Installation" section of
 _[Getting Started with the ESPHome Command Line](https://esphome.io/guides/getting_started_command_line#installation)._
 
