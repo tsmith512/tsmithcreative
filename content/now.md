@@ -3,7 +3,7 @@ title: Now
 summary: >
   Productions, progressions, plottings, ponderings.
 type: blog
-date: 2024-02-20
+date: 2024-07-05
 menu:
   main:
     name: Now
@@ -12,14 +12,10 @@ menu:
 
 <h2 style="color: #999;">Recently,</h2>
 
-- Read _[Tomorrow, and Tomorrow, and Tomorrow](https://bookshop.org/p/books/tomorrow-and-tomorrow-and-tomorrow-gabrielle-zevin/17502475),_ Gabrielle Zevin
-- Wrapped up the 2024 season of the
-  [Southwest Collegiate Cyber Defense Competition]({{< ref "2019-04-02-southwest-ccdc" >}})
-  as White Team lead, and passed on the team lead torch. I'll find new ways to
-  help next season!
-- Moved some ancient content around on the site to surface some old portfolio
-  pieces in the blog feed --- with more variation in the list view.
-  _(Thanks to [Kevin Kipp](https://kevinkipp.com/) for showing me [Adam Argyle's blog](https://nerdy.dev) as inspiration.)_
+- Read _[Wool](https://bookshop.org/p/books/wool-hugh-howey/15022022),_
+  Hugh Howey. Woah.
+- Closed the [Zilker Theatre Productions](https://zilker.org)'s summer
+  performance of _Legally Blonde._
 
 ---
 
@@ -30,24 +26,22 @@ do this? How? What ever happened to blogs?
 
 ### Reading
 
-_[The Strange Wonders of Roots](https://bookshop.org/p/books/the-strange-wonders-of-roots-evan-griffith/20611594?ean=9780063287969),_
-[Evan Griffith](https://www.evangriffithbooks.com/). (I got my hands on a pre-release copy!)
+[Borne](https://bookshop.org/p/books/borne-jeff-vandermeer/15879530?ean=9780374537654), Jeff Vandermeer. Birthday gift from Evan!
 
 ### Building
 
-- Gearing up for the [Zilker Theatre Productions](https://zilker.org) summer
-  performance of _Legally Blonde,_ opening this July!
+Apparently, getting into [entry-level ESP32 projects]({{< ref 2024-09-10-esp32-leak-detector>}})
+and wondering what comes next.
+
+Prototyping and documenting some research onto how we might add multilingual
+support on our new [Automated Captions](https://blog.cloudflare.com/stream-automatic-captions-with-ai)
+feature.
 
 ---
 
 <h2 style="color: #999;">Soon?</h2>
 
-I recently joined the [ASMBLY Makerspace](https://asmbly.org/) in Austin. Not
-exactly sure what my next round of projects will be... the planter boxes I
-built worked out well, but I am, as it turns out, bad at plants...
-
-I should blog more... (post ideas: VidBin write-up, Stream feature launches,
-some kind of howto)
+Not quite sure...
 
 ---
 

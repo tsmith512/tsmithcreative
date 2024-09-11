@@ -5,6 +5,13 @@
       <dd class="date">{{ .Date | time.Format ":date_long" }}</dd>
     {{ end }}
 
+    {{ if .Params.authors }}
+      <dt><span class="icon icon-penpaper">Additional Authors</span></dt>
+      <dd class="citation">
+        {{ .Params.authors | safeHTML }}
+      </dd>
+    {{ end }}
+
     {{ if .Params.citation }}
       <dt><span class="icon icon-penpaper">Appears On</span></dt>
       <dd class="citation">
