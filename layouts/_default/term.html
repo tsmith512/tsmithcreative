@@ -1,0 +1,49 @@
+{{ define "main" }}
+  {{ .Content }}
+
+  <ul class="post-teaser-list">
+    {{ range $post := .Paginator.Pages }}
+      {{ $format := default "post-teaser" $post.Params.format }}
+
+      {{ if eq $format "video" }}
+        {{ partial "post-teaser-v2" (dict
+          "ctx" .
+          "type" "video"
+        ) }}
+      {{ else if eq $format "slides" }}
+        {{ partial "post-teaser-v2" (dict
+          "ctx" .
+          "type" "slides"
+        ) }}
+      {{ else if eq $format "quicktip" }}
+        {{ partial "post-teaser-v2" (dict
+          "ctx" .
+          "type" "quicktip"
+        ) }}
+      {{ else if eq $format "portfolio-design" }}
+        {{ .Page.Store.Set "hasPswp" true }}
+        {{ partial "post-teaser-v2" (dict
+          "ctx" .
+          "type" "portfolio-design"
+        ) }}
+      {{ else if eq $format "portfolio-dev" }}
+        {{ .Page.Store.Set "hasPswp" true }}
+        {{ partial "post-teaser-v2" (dict
+          "ctx" .
+          "type" "portfolio-dev"
+        ) }}
+      {{ else if eq $format "portfolio-pen" }}
+        {{ .Page.Store.Set "hasPswp" true }}
+        {{ partial "post-teaser-v2" (dict
+          "ctx" .
+          "type" "portfolio-pen"
+        ) }}
+      {{ else }}
+        {{ partial $format $post }}
+      {{ end }}
+    {{ end }}
+  </ul>
+
+  {{ partial "pagination.html" . }}
+
+{{ end }}
