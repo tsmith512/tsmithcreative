@@ -4,7 +4,7 @@ summary: >
   With one click, users can now generate video captions effortlessly using
   Stream’s newest feature: AI-generated captions for on-demand videos and
   recordings of live streams.
-tags: [product, video]
+tags: [product management, video]
 authors: Co-authored with Mickie Betz and Ben Krebsbach
 citation: [CF, "https://blog.cloudflare.com/stream-automatic-captions-with-ai"]
 ---

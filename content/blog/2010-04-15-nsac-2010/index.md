@@ -2,7 +2,7 @@
 title: "NSAC 2010"
 summary: "A Plansbook and Campaign for TU's NSAC Team."
 date: 2010-04-15 00:00:00
-tags: [design, photography, branding, book design, student work]
+tags: [design, photography, student work]
 images:
   - img: dsc_0089.jpg
     alt:

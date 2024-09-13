@@ -3,7 +3,7 @@ title: "First Week with Notion for Notes and Project Management"
 summary: >
   I finally found what I've been looking for in a notes and writing app. Bonus:
   it comes with surprisingly robust project management features!
-tags: [review, tools]
+tags: [review]
 ---
 
 Recently, _The Verge_ ran an article about a product called [Notion][N],

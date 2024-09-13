@@ -4,7 +4,7 @@ summary: >
   A branded map with geolocation, geocoding, and a custom tileset built from
   Senate redistricting data to help potential voters answer the question, "Am I
   even in this new district?"
-tags: [engineering, side projects]
+tags: [frontend, side project, maps]
 galleries:
   compared:
     - src: district-pages-compared.jpg

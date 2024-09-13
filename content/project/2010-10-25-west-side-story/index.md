@@ -2,7 +2,7 @@
 title: "West Side Story"
 summary: "Graphic and scenic design for St. Andrew's production of West Side Story."
 date: 2010-10-25 00:00:00
-tags: [print, design, theatre]
+tags: [design, theatre]
 images:
   - img: logo.jpg
     alt: 

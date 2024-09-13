@@ -3,7 +3,7 @@ title: Building an e-Paper Digital Photo Frame
 summary: >
   A side project to build a small fleet of synced digital photo frames using a
   Raspberry Pi Zero and Waveshare e-Paper display.
-tags: [engineering, side proejcts, photography]
+tags: [side project, photography]
 ---
 
 Digital photo frames offer some fun nostalgia, but I don't particularly love

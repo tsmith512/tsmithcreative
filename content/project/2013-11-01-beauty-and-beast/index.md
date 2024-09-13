@@ -2,7 +2,7 @@
 title: "Beauty and the Beast"
 summary: "Graphic design for the darker side of a theatrical classic: Disney's Beauty and the Beast"
 date: 2013-11-01 15:17:39
-tags: [theatre, print, design]
+tags: [theatre, design]
 images:
   - img: logo-plate-01.png
     alt: 

@@ -3,7 +3,7 @@ title: Motion-Activated Camera on a Raspberry Pi
 summary: >
   Using an old webcam to watch for movement, capture clips of animal activity,
   upload videos to Cloudflare Stream, and send notifications with Home Assistant webhooks.
-tags: [side projects, video]
+tags: [side project, video, home automation]
 ---
 
 I recently moved into an old house which will surely become the subject of many

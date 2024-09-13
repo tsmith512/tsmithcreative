@@ -2,7 +2,7 @@
 title: "Murff / Riley Wedding"
 summary: "Tradition meets country in my cousin's \"cowboy chic\" wedding in Moshiem, Texas."
 date: 2013-05-04 22:27:31
-tags: [design, print, events]
+tags: [design, event]
 images:
   - img: breezi_placeit_winsurface.jpg
     alt: 

@@ -2,7 +2,7 @@
 title: "Greenroom"
 summary: "A Theatre Hub for Tulsa."
 date: 2012-06-14 00:00:00
-tags: [drupal, frontend, events, maps]
+tags: [drupal, frontend, event, theatre, maps]
 images:
   - img: grom1.png
     alt:

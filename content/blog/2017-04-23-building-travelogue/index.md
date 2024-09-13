@@ -4,7 +4,7 @@ summary: >
   Combining automatic location tracking, geocoding, route planning, map design,
   and a custom theme frontend on a Tumblr blog to bring friends and family along
   on one hell of a ride.
-tags: [engineering, side projects, travel]
+tags: [side project, travel, maps]
 ---
 
 {{< update "2019-03" >}}

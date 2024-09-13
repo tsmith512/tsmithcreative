@@ -2,7 +2,7 @@
 title: "Sweeney Todd"
 summary: ""
 date: 2014-10-28 18:00:35
-tags: [theatre, print, design]
+tags: [theatre, design]
 images:
   - img: sweeney-todd-square_1.jpg
     alt: 

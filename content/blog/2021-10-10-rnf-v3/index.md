@@ -4,7 +4,7 @@ summary: >
   In which the roadtrip travel blog gets yet another round of pre-trip
   wrenching: new delivery infrastructure, a total rewrite of the location and
   mapping stack, and a handful of WordPress tweaks.
-tags: [engineering, side projects, travel]
+tags: [side project, travel, maps]
 galleries:
   finishes:
     - src: olympic-national-park.jpg

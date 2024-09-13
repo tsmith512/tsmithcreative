@@ -2,7 +2,7 @@
 title: "Rocky Horror Show"
 summary: "A production logo for a performance of The Rocky Horror Show at the Hard Rock Casino's new venue, The Joint."
 date: 2010-09-15 00:00:00
-tags: [print, design, theatre, student work]
+tags: [design, theatre, student work]
 images:
   - img: rh-spade.jpg
     alt: 

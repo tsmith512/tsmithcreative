@@ -4,7 +4,7 @@ summary: >
   Overview of Cloudflare Stream and walkthrough of building an app on Pages
   and Workers to accept user generated content (UGC) easily. Let's build a
   "PasteBin but for video" together, without needing any video expertise!
-tags: [presentation, video]
+tags: [presentation, tutorial, event, video]
 citation: ["THAT24", "https://thatconference.com/activities/3mAv9hu2Z98Ht4Bd5GkB"]
 format: video
 embed: >

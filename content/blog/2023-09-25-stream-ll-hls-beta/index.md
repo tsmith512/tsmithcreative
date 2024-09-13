@@ -4,7 +4,7 @@ summary: >
   Cloudflare Stream’s LL-HLS support enters open beta today. You can deliver
   video to your audience faster, reducing the latency a viewer may experience on
   their player to as little as 3 seconds.
-tags: [product, video]
+tags: [product management, video]
 citation: [CF, "https://blog.cloudflare.com/cloudflare-stream-low-latency-hls-open-beta/"]
 ---
 

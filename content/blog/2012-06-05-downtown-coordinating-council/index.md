@@ -1,7 +1,7 @@
 ---
 title: "Downtown Coordinating Council"
 summary: "A directory, events calendar, and interactive map for Downtown Tulsa with moderated community submissions."
-tags: [drupal, frontend, events, maps]
+tags: [drupal, frontend, event, maps]
 date: 2012-06-05 00:00:00
 images:
   - img: downtown_tulsa_a.png

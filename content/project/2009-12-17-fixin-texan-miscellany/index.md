@@ -2,7 +2,7 @@
 title: "Fixin' To: A Texan Miscellany"
 summary: "A Handmade Book of Texas Stories."
 date: 2009-12-17 00:00:00
-tags: [book design, student work]
+tags: [student work]
 images:
   - img: 01_-_stack.jpg
     alt:

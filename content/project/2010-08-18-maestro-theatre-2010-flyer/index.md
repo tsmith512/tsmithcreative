@@ -2,7 +2,7 @@
 title: "Maestro Theatre 2010 Flyer"
 summary: "A time trial design, for immediate distribution."
 date: 2010-08-18 00:00:00
-tags: [print, design, theatre]
+tags: [design, theatre]
 images:
   - img: flyer-for-fall-workshops-2010-fs.jpg
     alt: 

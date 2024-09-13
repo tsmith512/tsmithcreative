@@ -1,8 +1,8 @@
 ---
-title: "TSmithCreative 2010 Christmas Card"
+title: "2010 Christmas Card"
 summary: "A Christmas card from me to you."
 date: 2010-12-25 00:00:00
-tags: [personal, print, design]
+tags: [student work]
 images:
   - img: taylor-smith-tsmithcreative-xmas-card-1.jpg
     alt: 

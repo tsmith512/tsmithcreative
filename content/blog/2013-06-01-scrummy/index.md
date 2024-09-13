@@ -2,7 +2,7 @@
 title: "Scrummy"
 summary: "A real-time multiplayer Scrum estimation game."
 date: 2013-06-01 14:37:23
-tags: [javascript, scrum, product ownership, frontend, design]
+tags: [frontend, design, side project, product ownership]
 images:
   - img: sc-1.jpg
     alt:

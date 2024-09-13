@@ -5,7 +5,7 @@ summary: >
   improvement on process and client/team dynamics within a project. At the end
   of a project, use a different format to distill key insights so the business
   can repeat wins and know, specifically, "what to change" for next time.
-tags: [product management, workshops]
+tags: [product management, workshopping]
 ---
 
 One of Scrum's most important regular rituals is the retrospective. A "sprint

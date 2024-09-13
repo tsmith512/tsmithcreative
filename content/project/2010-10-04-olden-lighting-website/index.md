@@ -2,7 +2,7 @@
 title: "Olden Lighting Website"
 summary: "New Website for Austin, Texas Lighting Warehouse Olden Lighting."
 date: 2010-10-04 00:00:00
-tags: [photography, wordpress, frontend]
+tags: [design, wordpress, frontend]
 images:
   - img: home.jpg
     alt: 

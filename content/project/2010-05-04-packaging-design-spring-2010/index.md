@@ -2,7 +2,7 @@
 title: "Packaging Design, Spring 2010"
 summary: ""
 date: 2010-05-04 00:00:00
-tags: [design, student work]
+tags: [student work]
 images:
   - img: dsc_0302.jpg
     alt: 

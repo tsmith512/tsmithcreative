@@ -3,7 +3,7 @@ title: Winterizing my Home Assistant Config
 summary: >
   There's no sun in the morning or at night, so let's make some artificial
   sunlight with Home Assistant and scripts that use data and service templates.
-tags: [side projects, home automation]
+tags: [side project, home automation]
 ---
 
 "Days are so terribly short in winter!" sounds better than "I'm a night owl who

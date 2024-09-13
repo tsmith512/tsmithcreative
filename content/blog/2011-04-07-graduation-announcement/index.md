@@ -2,7 +2,7 @@
 title: "Graduation Announcement"
 summary: "Wait gradu-what? -- Uh oh."
 date: 2011-04-07 00:00:00
-tags: [print, design, photography]
+tags: [design, photography, student work]
 images:
   - img: dsc_0208.jpg
     alt:

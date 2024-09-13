@@ -2,7 +2,7 @@
 title: "The Scarlet Pimpernel"
 summary: "A group of French dandies works in secret to ignite the French Revolution during the Reign of Terror."
 date: 2012-08-27 09:54:13
-tags: [print, design, theatre]
+tags: [design, theatre]
 images:
   - img: logo-presentation-plate_0.jpg
     alt: 
