@@ -77,6 +77,6 @@
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end }}
 
-{{ if or .Page.Params.noindex .Page.Params.citation (eq .Type "tags") }}
+{{ if or .Page.Params.noindex .Page.Params.citation (eq .Type "tags") (eq .Page.Type "project") }}
   <meta name="robots" content="noindex" />
 {{ end }}
