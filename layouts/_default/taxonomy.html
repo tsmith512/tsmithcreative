@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ .Content }}
+
+  <ul>
+    {{ range .Data.Terms.Alphabetical }}
+      <li><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle | title }}</a> {{ .WeightedPages | len }}</li>
+    {{ end }}
+  </ul>
+
+{{ end }}

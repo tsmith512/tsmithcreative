@@ -4,7 +4,7 @@ summary: >
   A grab bag of links, lessons I learned, and recommendations I received on the
   road "between consulting gigs." Offered in reflection, gratitude, and the hope
   that this can be useful to someone else seeking new adventures.
-tags: [product management]
+tags: [product management, travel, working remotely]
 galleries:
   a:
     - src: 201911-04.jpg

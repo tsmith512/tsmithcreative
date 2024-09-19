@@ -3,7 +3,7 @@ title: "The Many \"Hello, Worlds\" of Christmas"
 summary: >
   In which a few friends and colleagues take on Advent of Code 2020, and two of
   us decided to do each day in a different language because we're crazy.
-tags: [engineering]
+tags: [side project]
 ---
 
 Early in December, someone at [Very](https://www.verypossible.com/) floated a

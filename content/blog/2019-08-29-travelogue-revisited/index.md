@@ -5,7 +5,7 @@ summary: >
   Travelogue, I took coworkers on a tour of the architecture and odds-n-ends:
   automated location tracking, geocoding, route planning, map design,
   WordPress tinkering, and a magic spreadsheet.
-tags: [engineering, side projects, travel, presentation]
+tags: [side project, travel, maps, presentation]
 format: video
 embed: >
   <div style="position: relative; padding-top: 56.25%;">

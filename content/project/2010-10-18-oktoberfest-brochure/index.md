@@ -2,7 +2,7 @@
 title: "Oktoberfest Brochure"
 summary: "A folded brochure of general information, scheduling, and a map for Oktoberfest 2010."
 date: 2010-10-18 00:00:00
-tags: [print, design, events]
+tags: [student work, design, event]
 images:
   - img: oktoberfestfront.jpg
     alt: 

@@ -2,7 +2,7 @@
 title: "AAFT Golf Tournament 2012"
 summary: "An Invitation to the 3rd Annual AAF Tulsa Golf Tournament"
 date: 2012-05-10 00:00:00
-tags: [design, print, events]
+tags: [design, event]
 images:
   - img: golf-tournament-flyer-final.jpg
     alt: 

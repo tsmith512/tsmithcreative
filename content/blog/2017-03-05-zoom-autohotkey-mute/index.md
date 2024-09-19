@@ -4,7 +4,7 @@ summary: >
   Leading meetings involves a lot of typing on screen shares. Zoom lacks a
   global hotkey for mute that is accessible while the meeting window is not in
   focus, but I found a way to add one.
-tags: [working remotely, tools]
+tags: [working remotely]
 ---
 
 {{< update "2020-03" >}}

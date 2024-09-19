@@ -3,7 +3,7 @@ title: "Ricoh Theta S: Getting started with 360 photography"
 summary: >
   My first impressions of the Ricoh Theta S and expanding my use of 360 photos,
   photospheres, and/or equirectangular photography, whichever term you prefer.
-tags: [review]
+tags: [review, photography]
 ---
 
 <style>

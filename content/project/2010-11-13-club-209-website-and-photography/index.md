@@ -2,7 +2,7 @@
 title: "Club 209 Website and Photography"
 summary: "Location Photography and Website to revitalize the online presence of Club 209. "
 date: 2010-11-13 00:00:00
-tags: [photography, static site, frontend]
+tags: [photography, frontend]
 images:
   - img: dsc_0002_3_4.jpg
     alt: 

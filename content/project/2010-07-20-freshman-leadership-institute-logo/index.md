@@ -2,7 +2,7 @@
 title: "Freshman Leadership Institute Logo"
 summary: "Logo for The University of Tulsa's Newly Restructured Enrichment Program, The Freshman Leadership Institute."
 date: 2010-07-20 00:00:00
-tags: [print, branding]
+tags: [student work]
 images:
   - img: hexagon.jpg
     alt: 

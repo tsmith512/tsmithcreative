@@ -67,16 +67,18 @@
 {{ end }}
 
 
-{{ if eq .Page.File.TranslationBaseName "contact" }}
+{{ with .Page.File }}
+{{ if eq .TranslationBaseName "contact" }}
   {{ $contact := resources.Get "scss/contact.scss" }}
   {{ $contactStyle := $contact | resources.ExecuteAsTemplate "scss/contact.scss" . | resources.ToCSS (dict "outputStyle" "compressed") }}
   <link rel="stylesheet" type="text/css" href="{{ $contactStyle.RelPermalink }}" />
+{{ end }}
 {{ end }}
 
 {{ with .OutputFormats.Get "rss" }}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end }}
 
-{{ if or .Page.Params.noindex .Page.Params.citation }}
+{{ if or .Page.Params.noindex .Page.Params.citation (eq .Type "tags") (eq .Page.Type "project") }}
   <meta name="robots" content="noindex" />
 {{ end }}

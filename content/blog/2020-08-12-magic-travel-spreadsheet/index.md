@@ -4,7 +4,7 @@ summary: >
   I created a Google Sheets template for planning "working roadtrips" that
   automatically calculates driving time and distance from the Google Maps
   Directions API. Have a copy!
-tags: [side projects, travel, tools]
+tags: [side project, travel, maps]
 ---
 
 In 2015, as my then-employer was transitioning to fully remote

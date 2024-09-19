@@ -2,7 +2,7 @@
 title: Custom Styles in WordPress Visual Editor
 summary: Using custom, theme-specific stylesheets and classes in the WordPress visual editor helps administrators understand how their content will be formatted on the frontend.
 layout: post
-tags: [engineering, wordpress]
+tags: [tutorial, wordpress]
 ---
 
 {{< update "2021-01" >}}

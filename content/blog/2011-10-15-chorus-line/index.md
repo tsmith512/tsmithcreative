@@ -2,7 +2,7 @@
 title: "Chorus Line"
 summary: "Logo, poster, and program for St. Andrew's 2011 Fall Musical, Chorus Line."
 date: 2011-10-15 00:00:00
-tags: [print, design, theatre]
+tags: [design, theatre]
 images:
   - img: logos_a_deliverables-03.jpg
     alt:

@@ -2,7 +2,7 @@
 title: "Tulsa Camerata Brochure"
 summary: "A 2010-2011 season brochure for Tulsa Camerata, a chamber music group."
 date: 2010-10-14 00:00:00
-tags: [print, design, events]
+tags: [student work, design]
 images:
   - img: tulsacamerataoutside.jpg
     alt: 

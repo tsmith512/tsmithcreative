@@ -2,7 +2,7 @@
 title: "ADDY44"
 summary: "A Winners Book and other printed pieces for ADDY44."
 date: 2011-02-19 00:00:00
-tags: [design, print, volunteer, book design, events]
+tags: [design, event]
 images:
   - img: dsc_0442.jpg
     alt:

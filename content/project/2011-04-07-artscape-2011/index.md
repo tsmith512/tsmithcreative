@@ -2,7 +2,7 @@
 title: "ARTSCAPE 2011"
 summary: "An invitation and program for the ARTSCAPE fundraiser for the Tristesse Grief Center."
 date: 2011-04-07 00:00:00
-tags: [design, print, volunteer, events]
+tags: [design, event]
 images:
   - img: dsc_0180_0.jpg
     alt: 

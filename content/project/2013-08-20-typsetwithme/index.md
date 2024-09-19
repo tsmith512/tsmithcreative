@@ -2,7 +2,7 @@
 title: "TypesetWith.Me"
 summary: "A typography and legibility sandbox."
 date: 2013-08-20 13:27:09
-tags: [frontend, presentation, design]
+tags: [side project, frontend]
 images:
   - img: tsm1.png
     alt:

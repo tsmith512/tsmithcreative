@@ -5,7 +5,7 @@ summary: >
   a quickly releasable product, maximized value to the stakeholders, and a
   workflow that is adaptable to many kinds of change.
 layout: post
-tags: [scrum, presentation]
+tags: [scrum, product ownership, presentation]
 format: video
 embed: >
   <div style="position: relative; padding-top: 56.25%;">

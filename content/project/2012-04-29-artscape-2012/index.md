@@ -2,7 +2,7 @@
 title: "ARTSCAPE 2012"
 summary: "Another round: Invitation and Program for the ARTSCAPE 2012 Fundraiser for the Tristesse Grief Center."
 date: 2012-04-29 00:00:00
-tags: [design, print, volunteer, events]
+tags: [design, event]
 images:
   - img: arta.jpg
     alt: 

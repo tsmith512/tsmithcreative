@@ -4,7 +4,7 @@ summary: >
   That time I went with Four Kitchens to Nashville for a week of hot chicken,
   Drupal, exciting sessions, professional development, and showcasing our VR/AR
   work.
-tags: [events, drupal, 3d printing]
+tags: [event, drupal, 3d printing]
 ---
 
 Many thanks to all for a great week in Nashville. Learned a lot and got excited

@@ -2,7 +2,7 @@
 title: "2010 Texas Commencement"
 summary: "Electrical work for the The 127th Spring Commencement at the University of Texas at Austin."
 date: 2010-06-16 00:00:00
-tags: [theatre, events]
+tags: [theatre, event]
 images:
   - img: img_4630.jpg
     alt:

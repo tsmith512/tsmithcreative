@@ -2,7 +2,7 @@
 title: "University Policy Office"
 summary: "User flows, wireframing, user testing, and development of administrative dashboard for policy document drafting, routing, publishing, and historical tracking."
 date: 2013-08-22 21:54:59
-tags: [admin experience, ux, product ownership, drupal]
+tags: [admin experience, product ownership, drupal]
 problem: >
   The University of Texas at Austin's Policy Office has a complex workflow for
   the drafting and review of policy documents. Documents must have a rich audit

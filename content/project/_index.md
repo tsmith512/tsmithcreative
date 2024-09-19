@@ -7,4 +7,6 @@ photoswipe: false
 url: archives
 cascade:
   photoswipe: true
+  sitemap:
+    disable: true
 ---

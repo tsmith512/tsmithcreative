@@ -2,7 +2,7 @@
 title: "Tulsa 2013 Convention Website"
 summary: "A Website for the American Advertising Federation 10th District 2013 Spring Convention in Tulsa."
 date: 2012-05-10 00:00:00
-tags: [volunteer, drupal, frontend, events, maps]
+tags: [drupal, frontend, event, maps]
 images:
   - img: t2013a.png
     alt: 

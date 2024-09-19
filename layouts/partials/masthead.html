@@ -2,7 +2,11 @@
 
 <div class="masthead masthead-{{ $year }}">
   <div class="masthead-content">
-    <h1>{{ .Title }}</h1>
+    {{ if eq .Type "tags" }}
+      <h1>{{ .Title | title }}</h1>
+    {{ else }}
+      <h1>{{ .Title }}</h1>
+    {{ end }}
 
     {{ partial "post-meta" . }}
 

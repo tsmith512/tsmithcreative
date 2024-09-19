@@ -2,7 +2,7 @@
 title: Node.js + RPi + IKEA = Trophy Lighting
 summary: My first foray into home automation, using Express to expose an API to control a set of shelf lights.
 layout: post
-tags: [engineering, home automation]
+tags: [home automation]
 ---
 
 Combining my love for lighting and IKEA furniture with a need to find a new way to tinker with a Raspberry Pi, built a remote-controllable shelf light.

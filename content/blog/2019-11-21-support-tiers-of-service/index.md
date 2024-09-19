@@ -1,7 +1,7 @@
 ---
 title: "Streamlining Support Services"
 summary: "A plan to streamline operations and significantly reduce overhead for Support and Continuous Improvement services."
-tags: [case study, product management, process improvement]
+tags: [product management]
 problem: >
   Helping a Support Department operating with inconsistent contracts that cause
   significant unbillable overhead and management challenges as each of ~40

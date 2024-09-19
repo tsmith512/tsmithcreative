@@ -2,7 +2,7 @@
 title: "Visual Thinking: Faculty Show 2010"
 summary: "Tri-fold postcard and poster for the TU School of Art Faculty Show."
 date: 2010-10-25 00:00:00
-tags: [print, design]
+tags: [student work, design]
 images:
   - img: dsc_0281.jpg
     alt: 

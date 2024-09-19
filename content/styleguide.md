@@ -20,6 +20,8 @@ galleries:
     alt: Finish line in Seward
     caption: Seward, AK
     from: 2019-08-29-travelogue-revisited
+sitemap:
+  disable: true
 ---
 
 ## Basic Elements

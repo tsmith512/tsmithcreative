@@ -2,7 +2,7 @@
 title: Taking JavaScript to the Theatre
 summary: Callboard is a frontend JS prototype application to help stage managers make preshow calls on a complex schedule.
 layout: post
-tags: [engineering, theatre]
+tags: [side project, theatre]
 ---
 
 <!-- @TODO: UPDATE IMAGE SOURCES AND CITATION -->

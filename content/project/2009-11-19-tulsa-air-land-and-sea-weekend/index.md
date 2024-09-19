@@ -2,7 +2,7 @@
 title: "Tulsa Air, Land, and Sea Weekend"
 summary: "Ad Campaign for a Tulsa Weekend Vacation Package."
 date: 2009-11-19 00:00:00
-tags: [design, branding, student work]
+tags: [student work]
 images:
   - img: letter-gate-fold-brochure.jpg
     alt: 

@@ -2,7 +2,7 @@
 title: "Intro to Singularity"
 summary: "A presentation on the Singularity Grid system: embrace your content and free yourself from predefined media queries, presentational classes, and clumsy layouts."
 date: 2016-02-27 18:35:20
-tags: [engineering, presentation]
+tags: [frontend, presentation]
 problem: >
   Too many grid systems require strict adherence to their own conventions like
   preset media queries which don't truly support your content or design,

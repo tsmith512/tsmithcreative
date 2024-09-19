@@ -2,7 +2,7 @@
 title: "Tulsa Camerata Poster Mailer"
 summary: "A 2011-2012 Season Folded Poster/Brochure Mailer for Tulsa Camerata, a Chamber Music Group."
 date: 2011-09-08 00:00:00
-tags: [print, design, theatre]
+tags: [design]
 images:
   - img: dsc_0037.jpg
     alt: 

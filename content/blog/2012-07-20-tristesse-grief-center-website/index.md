@@ -2,7 +2,7 @@
 title: "Tristesse Grief Center Website"
 summary: "A new website for The Tristesse Grief Center. Designed and Developed in memory of Joanne Benitez."
 date: 2012-07-20 00:00:00
-tags: [volunteer, drupal, design]
+tags: [drupal, design]
 images:
   - img: tgca.png
     alt:

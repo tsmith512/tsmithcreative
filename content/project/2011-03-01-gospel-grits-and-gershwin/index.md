@@ -2,7 +2,7 @@
 title: "Gospel, Grits, and Gershwin"
 summary: "Logo, invite, program, and signage for Booker T. Washington's Gospel, Grits, and Gershwin 2011."
 date: 2011-03-01 00:00:00
-tags: [design, print, volunteer, events]
+tags: [design, event, student work]
 images:
   - img: ggglogo_0.jpg
     alt:

@@ -2,7 +2,7 @@
 title: "ADDY45"
 summary: "AAF Tulsa Celebrates their 75th Anniversary and the 45th Annual ADDY Awards in Style."
 date: 2012-01-21 00:00:00
-tags: [design, print, volunteer, book design, events]
+tags: [design, event, student work]
 images:
   - img: cover-image.gif
     alt:

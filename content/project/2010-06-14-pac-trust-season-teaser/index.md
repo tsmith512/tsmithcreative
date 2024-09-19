@@ -2,7 +2,7 @@
 title: "PAC Trust Season Teaser"
 summary: "2010-2011 Season Teaser Card for Tulsa Performing Arts Center Trust."
 date: 2010-06-14 00:00:00
-tags: [print, design, theatre]
+tags: [student work, design, theatre]
 images:
   - img: teaser_card_2010-2011_-_draft_10_for_web.jpg
     alt:

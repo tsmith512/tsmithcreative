@@ -2,7 +2,7 @@
 title: "TAF Golf Tournament"
 summary: "Signage for the 1st Annual Tulsa Advertising Federation Golf Tournament."
 date: 2010-07-01 00:00:00
-tags: [signage, design, events]
+tags: [student work, design, event]
 images:
   - img: 0628101304a.jpg
     alt: 
