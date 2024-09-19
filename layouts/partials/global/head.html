@@ -67,10 +67,12 @@
 {{ end }}
 
 
-{{ if eq .Page.File.TranslationBaseName "contact" }}
+{{ with .Page.File }}
+{{ if eq .TranslationBaseName "contact" }}
   {{ $contact := resources.Get "scss/contact.scss" }}
   {{ $contactStyle := $contact | resources.ExecuteAsTemplate "scss/contact.scss" . | resources.ToCSS (dict "outputStyle" "compressed") }}
   <link rel="stylesheet" type="text/css" href="{{ $contactStyle.RelPermalink }}" />
+{{ end }}
 {{ end }}
 
 {{ with .OutputFormats.Get "rss" }}

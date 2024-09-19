@@ -8,6 +8,8 @@ menu:
   main:
     name: Now
     weight: 10
+sitemap:
+  changefreq: "weekly"
 ---
 
 <h2 style="color: #999;">Recently,</h2>
