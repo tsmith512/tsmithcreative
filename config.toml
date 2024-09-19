@@ -5,7 +5,7 @@ title = 'Taylor Smith'
 
 enableEmoji = true
 enableGitInfo = true
-enableRobotsTXT = true
+enableRobotsTXT = false
 writeStats = true
 
 # Project archives are 2 or 3 columns, so bump this up from 10. Doesn't really
