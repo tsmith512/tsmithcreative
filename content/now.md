@@ -3,7 +3,7 @@ title: Now
 summary: >
   Productions, progressions, plottings, ponderings.
 type: blog
-date: 2024-07-05
+date: 2024-09-19
 menu:
   main:
     name: Now
@@ -37,11 +37,14 @@ Prototyping and documenting some research onto how we might add multilingual
 support on our new [Automated Captions](https://blog.cloudflare.com/stream-automatic-captions-with-ai)
 feature.
 
+Stuck on the design work for panels I want to laser cut to build a lightbox in
+an old bookshelf. But I recently had a breakthrough on the concept.
+
 ---
 
 <h2 style="color: #999;">Soon?</h2>
 
-Not quite sure...
+Halloween is coming...
 
 ---
 
