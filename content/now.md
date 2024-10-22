@@ -3,7 +3,7 @@ title: Now
 summary: >
   Productions, progressions, plottings, ponderings.
 type: blog
-date: 2024-09-19
+date: 2024-09-22
 menu:
   main:
     name: Now
@@ -14,10 +14,8 @@ sitemap:
 
 <h2 style="color: #999;">Recently,</h2>
 
-- Read _[Wool](https://bookshop.org/p/books/wool-hugh-howey/15022022),_
-  Hugh Howey. Woah.
-- Closed the [Zilker Theatre Productions](https://zilker.org)'s summer
-  performance of _Legally Blonde._
+- Read [Borne](https://bookshop.org/p/books/borne-jeff-vandermeer/15879530?ean=9780374537654), Jeff Vandermeer. Birthday gift from Evan!
+- Two months of no-news-is-good-news from my [ESP32 leak detector]({{< ref 2024-09-10-esp32-leak-detector>}}).
 
 ---
 
@@ -28,25 +26,32 @@ do this? How? What ever happened to blogs?
 
 ### Reading
 
-[Borne](https://bookshop.org/p/books/borne-jeff-vandermeer/15879530?ean=9780374537654), Jeff Vandermeer. Birthday gift from Evan!
+- [Agony Hill](https://bookshop.org/p/books/agony-hill-a-mystery-sarah-stewart-taylor/20390022),
+  Sarah Stewart Taylor. I met Sarah and picked up my copy at the inaugural
+  [New Hampshire Book Festival](https://www.nhbookfestival.org/)
+- [Product Roadmaps Relaunched](https://bookshop.org/p/books/product-roadmaps-relaunched-how-to-set-direction-while-embracing-uncertainty-c-todd-lombardo/8137741?ean=9781491971727)
+  as my next professional development read
 
 ### Building
 
-Apparently, getting into [entry-level ESP32 projects]({{< ref 2024-09-10-esp32-leak-detector>}})
-and wondering what comes next.
+A fairly last-minute Halloween costume that will involve very minor 3D printing
+and wiring.
+
+I completed the design for the laser cut panels and have half-installed them into
+the bookcase --- they're missing a good backing material, but it was enough to
+prototype the WLED / ESP32 setup.
 
 Prototyping and documenting some research onto how we might add multilingual
 support on our new [Automated Captions](https://blog.cloudflare.com/stream-automatic-captions-with-ai)
 feature.
 
-Stuck on the design work for panels I want to laser cut to build a lightbox in
-an old bookshelf. But I recently had a breakthrough on the concept.
-
 ---
 
 <h2 style="color: #999;">Soon?</h2>
 
-Halloween is coming...
+- Resurrecting the truck!
+- Replace the front door and door frame.
+- Clean out the shed...
 
 ---
 
